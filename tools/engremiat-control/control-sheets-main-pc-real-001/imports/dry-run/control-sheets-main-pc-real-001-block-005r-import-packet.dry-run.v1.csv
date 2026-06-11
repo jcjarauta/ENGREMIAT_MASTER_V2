@@ -1,0 +1,7 @@
+﻿"target_tab","source_csv","planned_rows","planned_columns","destination","write_allowed_now","requires_future_authorization","dry_run_ok","reason"
+"STG_ENG_GATES","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_GATES.seed.v1.csv","4","11","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"
+"STG_ENG_RUNS","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_RUNS.seed.v1.csv","4","12","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"
+"STG_ENG_DICTIONARY","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_DICTIONARY.seed.v1.csv","6","10","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"
+"STG_ENG_MANUALS","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_MANUALS.seed.v1.csv","4","10","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"
+"STG_ENG_PROJECTS","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_PROJECTS.seed.v1.csv","2","11","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"
+"STG_ENG_TASKS","C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_TASKS.seed.v1.csv","4","11","GOOGLE_SHEETS_STAGING_TAB","False","True","True","READY_FOR_VALIDATION"

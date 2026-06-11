@@ -1,0 +1,36 @@
+﻿{
+    "ok":  true,
+    "objective":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "title":  "Consolidar Sheets como primer espacio de control y supervision humana",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-001-20260611-221105",
+    "repo_root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "branch":  "main",
+    "head":  "19122d2",
+    "remote_url":  "https://github.com/jcjarauta/ENGREMIAT_MASTER_V2.git",
+    "stage_blocks":  8,
+    "strategic_purpose":  "Construir el primer espacio de control y supervision humana de Engremiat en Sheets.",
+    "operating_principle":  "Sheets es la capa principal de control humano; Telegram sera una capa futura encima del modelo consolidado.",
+    "mode":  "LOCAL_ONLY_CONTRACT_NO_GOOGLE_API_NO_WORKER_NO_WRITE_NO_PUSH",
+    "safety":  {
+                   "google_api_call":  false,
+                   "real_sheet_read":  false,
+                   "real_sheet_write":  false,
+                   "apps_script_execution":  false,
+                   "worker_execution":  false,
+                   "secret_content_read":  false,
+                   "secret_values_printed":  false,
+                   "commit":  false,
+                   "push":  false
+               },
+    "functions":  [
+                      "SYSTEM_STATUS",
+                      "HUMAN_GATES",
+                      "RUN_HISTORY",
+                      "TASK_QUEUE",
+                      "OPERATIONAL_DICTIONARY",
+                      "HUMAN_MANUAL",
+                      "RISK_SUPERVISION",
+                      "TELEGRAM_BRIDGE_READY"
+                  ],
+    "recommended_next":  "CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_002_BINDING_AND_SPREADSHEET_AUDIT_NO_SECRET_EXPOSURE"
+}

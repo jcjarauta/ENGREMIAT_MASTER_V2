@@ -1,0 +1,16 @@
+﻿CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_007_AUTHORIZATION_REQUIRED_BEGIN
+gate=READY_FOR_HUMAN_AUTHORIZATION_NO_EXECUTE
+planned_scope=STAGING_TABS_ONLY
+final_tabs_allowed=False
+staging_tabs_allowed=True
+real_execution_allowed_now=False
+real_import_allowed_now=False
+worker_execute_now=False
+google_api_call=False
+real_sheet_write=False
+push=False
+authorization_required=True
+authorization_status=PENDING_EXPLICIT_HUMAN_AUTHORIZATION
+authorization_phrase_required=
+SI, AUTORIZO IMPORT STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH
+CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_007_AUTHORIZATION_REQUIRED_END

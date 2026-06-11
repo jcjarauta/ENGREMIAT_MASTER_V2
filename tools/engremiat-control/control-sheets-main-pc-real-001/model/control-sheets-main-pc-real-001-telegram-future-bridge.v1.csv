@@ -1,0 +1,7 @@
+﻿"telegram_layer","sheets_source","rule"
+"read_status","SYSTEM_STATUS","solo leer estado consolidado"
+"show_gates","HUMAN_GATES","mostrar decisiones pendientes"
+"task_input","TASK_QUEUE","crear tarea pasando por gate humano si es sensible"
+"run_query","RUN_HISTORY","resumir ultimo run sin inventar estado"
+"help_manual","HUMAN_MANUAL","responder desde manual consolidado"
+"risk_alert","RISK_SUPERVISION","bloquear acciones no autorizadas"

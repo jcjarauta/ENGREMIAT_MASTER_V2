@@ -1,0 +1,7 @@
+﻿"tab","final_tab","layer","purpose","human_editable","columns"
+"STG_ENG_GATES","ENG_GATES","control","Registrar gates, decisiones, bloqueos y autorizaciones humanas.","True","gate_id,phase,status,decision,readiness,blockers,authorization_required,authorization_status,created_at,source_report,notes"
+"STG_ENG_RUNS","ENG_RUNS","operations","Registrar ejecuciones, resultados, logs y evidencias.","False","run_id,phase,block,ok,decision,readiness,mode,report_json,dashboard_html,created_at,recommended_next,notes"
+"STG_ENG_DICTIONARY","ENG_DICTIONARY","knowledge","Diccionario operativo de conceptos, campos, decisiones y contratos.","True","term_id,term,definition,domain,source,status,owner,created_at,updated_at,notes"
+"STG_ENG_MANUALS","ENG_MANUALS","human_interface","Manual operativo por funcion, comando, gate o flujo.","True","manual_id,title,section,content,applies_to,status,human_action,created_at,updated_at,notes"
+"STG_ENG_PROJECTS","ENG_PROJECTS","portfolio","Controlar proyectos, objetivos, estado y proximo paso.","True","project_id,project_title,objective,status,readiness,current_phase,next_action,owner,created_at,updated_at,notes"
+"STG_ENG_TASKS","ENG_TASKS","execution","Cola humana/sistema de tareas, prioridades y evidencias.","True","task_id,project_id,title,status,priority,assigned_to,requires_human,evidence_path,created_at,due_at,notes"

@@ -1,0 +1,20 @@
+﻿CONTROL_SHEETS_MAIN_PC_REAL_001_GIT_SCOPE_READONLY_BEGIN
+git_ok=True
+scoped_changes_count=1
+out_of_scope_changes_count=12
+--- scoped_changes ---
+?? tools/engremiat-control/control-sheets-main-pc-real-001/
+--- out_of_scope_changes ---
+?? .engremiat-terminal/
+?? .tmp-control-sheets-main-pc-real-001-block-002.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-002r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-003.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-003r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-004.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-005.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-005r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-006.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-007.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-008.ps1
+?? tools/engremiat-control/config/
+CONTROL_SHEETS_MAIN_PC_REAL_001_GIT_SCOPE_READONLY_END

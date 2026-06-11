@@ -1,0 +1,41 @@
+﻿{
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "block":  "BLOCK_006_VALIDATE_PACKET_NO_GOOGLE_API",
+    "ok":  true,
+    "decision":  "PACKET_VALIDATED_READY_FOR_BLOCK_007_REAL_STAGING_IMPORT_GATE_PREP_NO_EXECUTE",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-006-20260611-222633",
+    "readiness":  100,
+    "gate":  "OPEN_READY_FOR_BLOCK_007_PREPARE_REAL_STAGING_IMPORT_GATE_NO_EXECUTE",
+    "mode":  "LOCAL_ONLY_PACKET_VALIDATION_NO_GOOGLE_API_NO_WRITE",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "checks_count":  18,
+    "checks_ok_count":  18,
+    "checks_fail_count":  0,
+    "import_actions_count":  6,
+    "valid_actions_count":  6,
+    "planned_rows_total":  24,
+    "real_execution_allowed_now":  false,
+    "real_import_allowed_now":  false,
+    "requires_explicit_human_authorization_before_write":  true,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "secret_content_read":  false,
+    "secret_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "checks_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\validation\\control-sheets-main-pc-real-001-block-006-checks.v1.csv",
+    "validation_json":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\validation\\control-sheets-main-pc-real-001-block-006-validation.v1.json",
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "warning_count":  0,
+    "warnings":  [
+
+                 ],
+    "recommended_next":  "CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_007_REAL_STAGING_IMPORT_GATE_PREP_NO_EXECUTE"
+}

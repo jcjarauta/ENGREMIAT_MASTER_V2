@@ -1,0 +1,65 @@
+﻿{
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "block":  "BLOCK_002R_CREATE_MINIMAL_BINDING_NO_SECRET_EXPOSURE",
+    "ok":  true,
+    "decision":  "BINDING_CREATED_AND_AUDIT_READY_FOR_BLOCK_003_LOCAL_SCHEMA_AND_TAB_MODEL",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-002R-20260611-221556",
+    "readiness":  100,
+    "gate":  "OPEN_READY_FOR_BLOCK_003_LOCAL_SCHEMA_AND_TAB_MODEL_NO_GOOGLE_API",
+    "mode":  "LOCAL_ONLY_INTERACTIVE_BINDING_CREATE_NO_GOOGLE_API_NO_SECRET_EXPOSURE",
+    "root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "binding_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\config\\control-sheets-binding.local.json",
+    "binding_created":  true,
+    "binding_exists":  true,
+    "binding_ok":  true,
+    "binding_keys":  [
+                         "created_at",
+                         "created_by",
+                         "expected_final_tabs",
+                         "expected_staging_tabs",
+                         "id_masked_for_logs",
+                         "purpose",
+                         "schema",
+                         "secret_policy",
+                         "spreadsheet_id",
+                         "spreadsheet_name"
+                     ],
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_printed_in_output":  false,
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "expected_staging_tabs":  [
+                                  "STG_ENG_GATES",
+                                  "STG_ENG_RUNS",
+                                  "STG_ENG_DICTIONARY",
+                                  "STG_ENG_MANUALS",
+                                  "STG_ENG_PROJECTS",
+                                  "STG_ENG_TASKS"
+                              ],
+    "expected_final_tabs":  [
+                                "ENG_GATES",
+                                "ENG_RUNS",
+                                "ENG_DICTIONARY",
+                                "ENG_MANUALS",
+                                "ENG_PROJECTS",
+                                "ENG_TASKS"
+                            ],
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "secret_content_read":  false,
+    "secret_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "warning_count":  0,
+    "warnings":  [
+
+                 ],
+    "recommended_next":  "CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_003_LOCAL_SCHEMA_AND_TAB_MODEL"
+}

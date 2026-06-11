@@ -1,0 +1,5 @@
+﻿"option_id","title","recommendation","requires_human_authorization","phrase_required","scope","risk","notes"
+"NEXT-001","Autorizar import real a tabs STG","HIGH_IF_HUMAN_READY","True","SI, AUTORIZO IMPORT STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH","STAGING_TABS_ONLY","MEDIUM_CONTROLLED","Ejecutaria escritura real solo a STG_*; no tabs finales; no push."
+"NEXT-002","Cerrar Git local de la etapa primero","HIGH_IF_WANT_CHECKPOINT","False","","LOCAL_GIT_SCOPE_ONLY","LOW","Antes de tocar Sheets real, consolidar evidencia local con commit scoped."
+"NEXT-003","Ampliar dashboard humano antes de importar","MEDIUM","False","","LOCAL_ONLY_DASHBOARD","LOW","Mejorar supervision visual para usarlo como esqueleto de Telegram."
+"NEXT-004","Pausar y valorar siguiente objetivo","VALID","False","","STRATEGY_REVIEW","LOW","La etapa de 8 bloques queda cerrada y lista para decision."

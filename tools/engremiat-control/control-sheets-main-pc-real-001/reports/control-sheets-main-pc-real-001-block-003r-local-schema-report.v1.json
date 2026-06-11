@@ -1,0 +1,54 @@
+﻿{
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "block":  "BLOCK_003R_LOCAL_SCHEMA_AND_TAB_MODEL_REPAIRED",
+    "ok":  true,
+    "decision":  "LOCAL_SCHEMA_AND_TAB_MODEL_READY_FOR_BLOCK_004_SEED_CONTROL_DATA",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-003R-20260611-221935",
+    "readiness":  100,
+    "gate":  "OPEN_READY_FOR_BLOCK_004_SEED_CONTROL_DATA_NO_GOOGLE_API",
+    "mode":  "LOCAL_ONLY_SCHEMA_AND_TAB_MODEL_NO_GOOGLE_API_NO_WRITE",
+    "root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "binding_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\config\\control-sheets-binding.local.json",
+    "binding_exists":  true,
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "tabs_count":  6,
+    "columns_count":  65,
+    "staging_tabs":  [
+                         "STG_ENG_GATES",
+                         "STG_ENG_RUNS",
+                         "STG_ENG_DICTIONARY",
+                         "STG_ENG_MANUALS",
+                         "STG_ENG_PROJECTS",
+                         "STG_ENG_TASKS"
+                     ],
+    "final_tabs":  [
+                       "ENG_GATES",
+                       "ENG_RUNS",
+                       "ENG_DICTIONARY",
+                       "ENG_MANUALS",
+                       "ENG_PROJECTS",
+                       "ENG_TASKS"
+                   ],
+    "schema_json":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\schema\\control-sheets-main-pc-real-001-local-schema.v1.json",
+    "columns_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\schema\\control-sheets-main-pc-real-001-columns.v1.csv",
+    "tabs_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\schema\\control-sheets-main-pc-real-001-tabs.v1.csv",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "secret_content_read":  false,
+    "secret_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "warning_count":  0,
+    "warnings":  [
+
+                 ],
+    "recommended_next":  "CONTROL_SHEETS_MAIN_PC_REAL_001_BLOCK_004_SEED_CONTROL_DATA_LOCAL_ONLY"
+}

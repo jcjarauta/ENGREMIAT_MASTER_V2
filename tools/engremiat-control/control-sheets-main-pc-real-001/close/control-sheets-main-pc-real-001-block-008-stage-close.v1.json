@@ -1,0 +1,157 @@
+﻿{
+    "schema":  "engremiat.control.sheets.stage_close.v1",
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "block":  "BLOCK_008_STAGE_CLOSE_OR_HUMAN_AUTH_DECISION",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-008-20260611-222953",
+    "created_at":  "2026-06-11T22:29:53",
+    "ok":  true,
+    "decision":  "CONTROL_SHEETS_MAIN_PC_REAL_001_STAGE_CLOSED_READY_FOR_HUMAN_DECISION",
+    "readiness":  100,
+    "gate":  "CLOSED_READY_FOR_DECISION_IMPORT_REAL_OR_GIT_CLOSE",
+    "stage_blocks":  8,
+    "completed_blocks":  8,
+    "stage_objective":  "Construir primer espacio de control y supervision humana en Sheets como esqueleto para ampliar despues a Telegram.",
+    "current_result":  "Modelo local + seed + dry-run + validation + real staging gate prepared no execute.",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "planned_scope":  "STAGING_TABS_ONLY",
+    "final_tabs_allowed":  false,
+    "staging_tabs_allowed":  true,
+    "planned_rows_total":  24,
+    "import_actions_count":  6,
+    "checks_ok_count":  18,
+    "checks_fail_count":  0,
+    "authorization_required":  true,
+    "authorization_status":  "PENDING_EXPLICIT_HUMAN_AUTHORIZATION",
+    "authorization_phrase_required":  "SI, AUTORIZO IMPORT STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH",
+    "real_execution_allowed_now":  false,
+    "real_import_allowed_now":  false,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "secret_content_read":  false,
+    "secret_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "git_status_readonly_ok":  true,
+    "scoped_changes_count":  1,
+    "out_of_scope_changes_count":  12,
+    "recommended_decision":  "VALORAR: autorizar import STG real o cerrar Git local primero.",
+    "recommended_next":  "DECISION_POINT_IMPORT_STAGING_REAL_OR_LOCAL_GIT_CLOSE",
+    "block_status":  [
+                         {
+                             "block":  "001",
+                             "name":  "contract",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Contrato de espacio de control humano."
+                         },
+                         {
+                             "block":  "002R",
+                             "name":  "binding",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Binding local minimo sin secretos."
+                         },
+                         {
+                             "block":  "003R",
+                             "name":  "schema",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Modelo local 6 tabs y 65 columnas."
+                         },
+                         {
+                             "block":  "004",
+                             "name":  "seed",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Datos semilla: 6 CSV, 24 filas."
+                         },
+                         {
+                             "block":  "005R",
+                             "name":  "dry_run_packet",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Paquete dry-run staging preparado."
+                         },
+                         {
+                             "block":  "006",
+                             "name":  "validation",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "18 checks OK, 0 fallos."
+                         },
+                         {
+                             "block":  "007",
+                             "name":  "real_gate_prep",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Gate real preparado, pendiente autorizacion."
+                         },
+                         {
+                             "block":  "008",
+                             "name":  "stage_close",
+                             "status":  "OK",
+                             "readiness":  100,
+                             "real_write":  "False",
+                             "notes":  "Cierre de etapa sin ejecutar import real."
+                         }
+                     ],
+    "next_options":  [
+                         {
+                             "option_id":  "NEXT-001",
+                             "title":  "Autorizar import real a tabs STG",
+                             "recommendation":  "HIGH_IF_HUMAN_READY",
+                             "requires_human_authorization":  "True",
+                             "phrase_required":  "SI, AUTORIZO IMPORT STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH",
+                             "scope":  "STAGING_TABS_ONLY",
+                             "risk":  "MEDIUM_CONTROLLED",
+                             "notes":  "Ejecutaria escritura real solo a STG_*; no tabs finales; no push."
+                         },
+                         {
+                             "option_id":  "NEXT-002",
+                             "title":  "Cerrar Git local de la etapa primero",
+                             "recommendation":  "HIGH_IF_WANT_CHECKPOINT",
+                             "requires_human_authorization":  "False",
+                             "phrase_required":  "",
+                             "scope":  "LOCAL_GIT_SCOPE_ONLY",
+                             "risk":  "LOW",
+                             "notes":  "Antes de tocar Sheets real, consolidar evidencia local con commit scoped."
+                         },
+                         {
+                             "option_id":  "NEXT-003",
+                             "title":  "Ampliar dashboard humano antes de importar",
+                             "recommendation":  "MEDIUM",
+                             "requires_human_authorization":  "False",
+                             "phrase_required":  "",
+                             "scope":  "LOCAL_ONLY_DASHBOARD",
+                             "risk":  "LOW",
+                             "notes":  "Mejorar supervision visual para usarlo como esqueleto de Telegram."
+                         },
+                         {
+                             "option_id":  "NEXT-004",
+                             "title":  "Pausar y valorar siguiente objetivo",
+                             "recommendation":  "VALID",
+                             "requires_human_authorization":  "False",
+                             "phrase_required":  "",
+                             "scope":  "STRATEGY_REVIEW",
+                             "risk":  "LOW",
+                             "notes":  "La etapa de 8 bloques queda cerrada y lista para decision."
+                         }
+                     ],
+    "blockers":  [
+
+                 ],
+    "warnings":  [
+
+                 ]
+}

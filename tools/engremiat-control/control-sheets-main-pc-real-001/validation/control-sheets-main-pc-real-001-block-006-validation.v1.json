@@ -1,0 +1,199 @@
+﻿{
+    "schema":  "engremiat.control.sheets.packet_validation.v1",
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "block":  "BLOCK_006_VALIDATE_PACKET_NO_GOOGLE_API",
+    "run_id":  "CONTROL-SHEETS-MAIN-PC-REAL-001-BLOCK-006-20260611-222633",
+    "created_at":  "2026-06-11T22:26:33",
+    "ok":  true,
+    "decision":  "PACKET_VALIDATED_READY_FOR_BLOCK_007_REAL_STAGING_IMPORT_GATE_PREP_NO_EXECUTE",
+    "readiness":  100,
+    "gate":  "OPEN_READY_FOR_BLOCK_007_PREPARE_REAL_STAGING_IMPORT_GATE_NO_EXECUTE",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "checks_count":  18,
+    "checks_ok_count":  18,
+    "checks_fail_count":  0,
+    "actions_count":  6,
+    "packet_rows_count":  6,
+    "planned_rows_total":  24,
+    "real_execution_allowed_now":  false,
+    "real_import_allowed_now":  false,
+    "requires_explicit_human_authorization_before_write":  true,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "secret_content_read":  false,
+    "secret_values_printed":  false,
+    "git_write":  false,
+    "blockers":  [
+
+                 ],
+    "warnings":  [
+
+                 ],
+    "checks":  [
+                   {
+                       "check_id":  "FILE_EXISTS",
+                       "name":  "Required file exists",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "FILE_EXISTS",
+                       "name":  "Required file exists",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "FILE_EXISTS",
+                       "name":  "Required file exists",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.csv",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "PACKET_JSON_PARSE",
+                       "name":  "Packet JSON parse",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ACTIONS_CSV_PARSE",
+                       "name":  "Actions CSV parse",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "PACKET_CSV_PARSE",
+                       "name":  "Packet CSV parse",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.csv",
+                       "message":  "OK",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "WRITE_ALLOWED_FALSE",
+                       "name":  "Real write disabled now",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "write_allowed_now must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "FUTURE_AUTH_REQUIRED",
+                       "name":  "Future explicit authorization required",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "requires_future_explicit_human_authorization must be True",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "GOOGLE_API_FALSE",
+                       "name":  "Google API not called",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "google_api_call must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "REAL_READ_FALSE",
+                       "name":  "Real sheet read disabled",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "real_sheet_read must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "REAL_WRITE_FALSE",
+                       "name":  "Real sheet write disabled",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "real_sheet_write must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "SECRET_PRINT_FALSE",
+                       "name":  "Secret values not printed",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.json",
+                       "message":  "secret_values_printed must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ACTIONS_COUNT_6",
+                       "name":  "Six staging actions present",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "actions_count=6",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "PACKET_ROWS_COUNT_6",
+                       "name":  "Six packet rows present",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.csv",
+                       "message":  "packet_rows_count=6",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ALL_ACTIONS_DRY_RUN_OK",
+                       "name":  "All actions dry-run OK",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "dry_run_ok must be True for all actions",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ALL_ACTIONS_NO_WRITE",
+                       "name":  "All actions disable real write",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "real_sheet_write must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ALL_PACKET_ROWS_NO_WRITE",
+                       "name":  "All packet rows disable write now",
+                       "ok":  "True",
+                       "severity":  "BLOCKER",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-packet.dry-run.v1.csv",
+                       "message":  "write_allowed_now must be False",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   },
+                   {
+                       "check_id":  "ROWS_TOTAL_24",
+                       "name":  "Planned rows total validated",
+                       "ok":  "True",
+                       "severity":  "WARNING",
+                       "evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\imports\\dry-run\\control-sheets-main-pc-real-001-block-005r-import-actions.dry-run.v1.csv",
+                       "message":  "rows_total_from_actions=24 packet_total=24",
+                       "checked_at":  "2026-06-11T22:26:33"
+                   }
+               ]
+}
