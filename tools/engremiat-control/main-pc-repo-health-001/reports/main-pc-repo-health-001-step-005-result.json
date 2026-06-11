@@ -1,0 +1,20 @@
+﻿{
+    "ok":  true,
+    "decision":  "OPERATIONAL_READINESS_OK_READY_FOR_HEALTH_CLOSE",
+    "run_id":  "MAIN-PC-REPO-HEALTH-001-STEP005-20260611-215537",
+    "readiness":  100,
+    "mode":  "READONLY_OPERATIONAL_READINESS_NO_WORKERS_NO_COMMIT_NO_PUSH",
+    "repo_root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "branch":  "main",
+    "head":  "9094082",
+    "failed_check_count":  0,
+    "health_artifacts_dirty_count":  1,
+    "status_after_outside_health_count":  0,
+    "readiness_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\main-pc-repo-health-001\\reports\\main-pc-repo-health-001-step-005-readiness.csv",
+    "next_options_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\main-pc-repo-health-001\\reports\\main-pc-repo-health-001-step-005-next-options.csv",
+    "dashboard_html":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\main-pc-repo-health-001\\dashboard\\main-pc-repo-health-001-step-005.html",
+    "commit":  false,
+    "push":  false,
+    "worker_execution":  false,
+    "recommended_next":  "MAIN_PC_REPO_HEALTH_001_STEP_006_CLOSE_AND_COMMIT_HEALTH_ARTIFACTS"
+}

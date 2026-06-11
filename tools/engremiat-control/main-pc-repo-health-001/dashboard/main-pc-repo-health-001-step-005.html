@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>MAIN_PC_REPO_HEALTH_001 · Step 005</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f7f7; color: #222; }
+    .card { background: white; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin-bottom: 18px; }
+    .ok { color: #0a7a2f; font-weight: bold; }
+    .warn { color: #a65f00; font-weight: bold; }
+    code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #efefef; }
+  </style>
+</head>
+<body>
+  <h1>MAIN_PC_REPO_HEALTH_001 · Step 005</h1>
+  <div class="card">
+    <p><b>Decision:</b> <span class="ok">OPERATIONAL_READINESS_OK_READY_FOR_HEALTH_CLOSE</span></p>
+    <p><b>Readiness:</b> 100</p>
+    <p><b>Branch:</b> main</p>
+    <p><b>Head:</b> 9094082</p>
+    <p><b>Failed checks:</b> 0</p>
+    <p><b>Status outside health:</b> 0</p>
+    <p><b>Health artifacts dirty:</b> 1</p>
+  </div>
+  <div class="card">
+    <h2>Readiness checks</h2>
+    <table>
+      <tr><th>Check</th><th>OK</th><th>Readiness</th><th>Evidence</th></tr>
+      <tr><td>repo_base</td><td>True</td><td>100</td><td><code>step-001</code></td></tr>
+<tr><td>structure_and_scripts</td><td>True</td><td>100</td><td><code>step-002</code></td></tr>
+<tr><td>dashboards_and_entrypoints</td><td>True</td><td>100</td><td><code>step-003</code></td></tr>
+<tr><td>packages_nodeline_json</td><td>True</td><td>100</td><td><code>step-004</code></td></tr>
+<tr><td>workers_real_deferred</td><td>True</td><td>100</td><td><code>policy: no workers reales en health</code></td></tr>
+<tr><td>git_remote_validated</td><td>True</td><td>100</td><td><code>head=9094082 branch=main</code></td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h2>Siguiente objetivo</h2>
+    <table>
+      <tr><th>Option</th><th>Objective</th><th>Recommendation</th><th>Risk</th></tr>
+      <tr><td>A</td><td><code>MAIN_PC_REPO_HEALTH_001_STEP_006_CLOSE_AND_COMMIT_HEALTH_ARTIFACTS</code></td><td>Cerrar etapa health y commitear artefactos locales de validacion</td><td>low</td></tr>
+<tr><td>B</td><td><code>CONTROL_SHEETS_MAIN_PC_REAL_001</code></td><td>Retomar Sheets real desde MAIN PC con workers preparados, manteniendo gates</td><td>medium</td></tr>
+<tr><td>C</td><td><code>MAIN_PC_OPERATOR_BOOTSTRAP_001</code></td><td>Preparar arranque operativo del repo en MAIN PC antes de workers reales</td><td>low-medium</td></tr>
+    </table>
+  </div>
+</body>
+</html>

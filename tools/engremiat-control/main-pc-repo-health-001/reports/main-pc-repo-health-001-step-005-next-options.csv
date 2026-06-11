@@ -1,0 +1,4 @@
+﻿"option","objective","recommendation","risk","worker_execution"
+"A","MAIN_PC_REPO_HEALTH_001_STEP_006_CLOSE_AND_COMMIT_HEALTH_ARTIFACTS","Cerrar etapa health y commitear artefactos locales de validacion","low","False"
+"B","CONTROL_SHEETS_MAIN_PC_REAL_001","Retomar Sheets real desde MAIN PC con workers preparados, manteniendo gates","medium","deferred_until_gate"
+"C","MAIN_PC_OPERATOR_BOOTSTRAP_001","Preparar arranque operativo del repo en MAIN PC antes de workers reales","low-medium","False"

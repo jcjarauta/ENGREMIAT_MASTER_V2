@@ -1,0 +1,5 @@
+﻿"relative_path","length","has_content"
+"dashboard-master/refresh-master-dashboard.cmd","100","True"
+"packages/migration/ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452/launchers/00_OPEN_HANDOFF_DOCS.cmd","224","True"
+"packages/migration/ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452/launchers/01_RUN_PREFLIGHT_READONLY_ON_OLD_PC.cmd","389","True"
+"packages/migration/ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452/launchers/02_CREATE_EXPORT_PACKAGE_AFTER_FREEZE.cmd","579","True"

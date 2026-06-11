@@ -1,0 +1,7 @@
+﻿"check","ok","readiness","evidence"
+"repo_base","True","100","step-001"
+"structure_and_scripts","True","100","step-002"
+"dashboards_and_entrypoints","True","100","step-003"
+"packages_nodeline_json","True","100","step-004"
+"workers_real_deferred","True","100","policy: no workers reales en health"
+"git_remote_validated","True","100","head=9094082 branch=main"
