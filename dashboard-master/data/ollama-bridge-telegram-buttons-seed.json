@@ -1,0 +1,57 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 09:02:37",
+    "purpose":  "Semilla de botones básicos Telegram para controlar ramas pausadas, pendientes y bloqueadas del puente Ollama",
+    "buttons":  [
+                    {
+                        "id":  "BTN_QUEUE_STATUS",
+                        "label":  "Estado cola",
+                        "action":  "SHOW_QUEUE_STATUS",
+                        "kind":  "READONLY",
+                        "description":  "Muestra ramas DONE, PENDING, PAUSED, BLOCKED"
+                    },
+                    {
+                        "id":  "BTN_PAUSED_BRANCHES",
+                        "label":  "Ramas pausadas",
+                        "action":  "SHOW_PAUSED_BRANCHES",
+                        "kind":  "READONLY",
+                        "description":  "Lista ramas pausadas y motivo"
+                    },
+                    {
+                        "id":  "BTN_RETRY_OLLAMA",
+                        "label":  "Reintentar Ollama",
+                        "action":  "RETRY_LOCAL_AI_BRANCH",
+                        "kind":  "LOCAL_AI_WITH_CONFIRMATION",
+                        "description":  "Reintenta ejecución de Ollama"
+                    },
+                    {
+                        "id":  "BTN_RESUME_BRANCH",
+                        "label":  "Reanudar rama",
+                        "action":  "RESUME_BRANCH",
+                        "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION",
+                        "description":  "Reanuda rama pausada y ejecuta siguiente acción segura"
+                    },
+                    {
+                        "id":  "BTN_PAUSE_BRANCH",
+                        "label":  "Pausar rama",
+                        "action":  "PAUSE_BRANCH",
+                        "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION",
+                        "description":  "Pausar rama sin bloquear la cola global"
+                    },
+                    {
+                        "id":  "BTN_COPY_REPORT",
+                        "label":  "Reporte ChatGPT",
+                        "action":  "COPY_BRANCH_REPORT_TO_CHATGPT",
+                        "kind":  "BRIDGE_READONLY",
+                        "description":  "Prepara reporte para enviar a ChatGPT"
+                    },
+                    {
+                        "id":  "BTN_NEXT_SAFE_BRANCH",
+                        "label":  "Siguiente segura",
+                        "action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                        "kind":  "QUEUE_CONTROL",
+                        "description":  "Continua la siguiente rama segura disponible"
+                    }
+                ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_006_FINALIZE_AUTOMATION_FLOW"
+}

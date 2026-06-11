@@ -1,0 +1,37 @@
+﻿{
+    "node_id":  "MAIN_NODE",
+    "machine_name":  "DESKTOP-PVRVE56",
+    "role":  "Coordinacion, desarrollo principal, workers futuros, IA local y dashboards.",
+    "root_path":  "C:\\ENGREMIAT",
+    "status":  "PREPARED",
+    "allowed_actions":  [
+                            "manuals",
+                            "contracts",
+                            "benchmarks",
+                            "receive_migration_package",
+                            "local_validation"
+                        ],
+    "blocked_actions":  [
+                            "repo_copy_until_legacy_close",
+                            "push_until_repo_validated",
+                            "secrets_migration_without_inventory",
+                            "telegram_real_until_gate"
+                        ],
+    "sync_policy":  {
+                        "mode":  "manual_until_validated",
+                        "source":  "MAIN_NODE",
+                        "target":  "THIS_NODE",
+                        "allowed":  false
+                    },
+    "backup_policy":  {
+                          "required":  true,
+                          "destination":  "BACKUP_NODE",
+                          "hash_required":  true
+                      },
+    "secrets_policy":  {
+                           "secrets_allowed":  false,
+                           "inventory_required_before_transfer":  true,
+                           "print_secrets":  false
+                       },
+    "activation_gate":  "READONLY_PREFLIGHT_REQUIRED"
+}

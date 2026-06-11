@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_089_GOVERNED_LOOP_HUMAN_REVIEW_GATE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_089_APPLY_GOVERNED_AUTOMATION_LOOP_GATE_DECISION",
+    "created_at":  "2026-06-05T10:22:06",
+    "loop_id":  "phase-089-governed-loop-001",
+    "cycle":  5,
+    "gate_status":  "WAITING_HUMAN_REAL_AUTOMATION_BOUNDARY_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "CREATE_REAL_AUTOMATION_BOUNDARY_GATE",
+    "allowed_decisions":  [
+                              "CREATE_REAL_AUTOMATION_BOUNDARY_GATE",
+                              "REPEAT_GOVERNED_LOOP_SIMULATION",
+                              "ADD_HEALTH_LIMITS_BEFORE_BOUNDARY",
+                              "HOLD",
+                              "REJECT_REAL_AUTOMATION_BOUNDARY"
+                          ],
+    "human_note":  "Recomendado: CREATE_REAL_AUTOMATION_BOUNDARY_GATE. No activa automatización real; solo define la frontera de seguridad previa.",
+    "worker_real_execution_allowed":  false,
+    "worker_stub_execution_allowed":  false,
+    "operator_execution_allowed":  false,
+    "automation_real_execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "governed_loop_simulation_executed":  true,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "governed_loop_simulation_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_090_VALIDATE_GOVERNED_LOOP_AND_CREATE_REAL_AUTOMATION_BOUNDARY_GATE"
+}

@@ -1,0 +1,60 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_070_HUMAN_IDEA_SEED_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_070_CREATE_FIRST_HUMAN_IDEA_SEED_FOR_PREVENTA_DIGITAL_PRODUCT_NO_EXECUTION",
+    "created_at":  "2026-06-05T08:58:36",
+    "status":  "SEED_CREATED_LOCKED_NOT_EXECUTABLE",
+    "editable_by_human":  true,
+    "seed_origin":  "PHASE_069_TEMPLATE_EXAMPLE_AND_CURRENT_HUMAN_STRATEGY",
+    "idea_title":  "Buscador inverso de financiacion y preventa para productos digitales ENGREMIAT",
+    "target_user":  "Personas, asociaciones, cooperativas, pequenos equipos, nodos locales y comunidades que tienen ideas utiles pero no saben convertirlas en proyecto financiable o preventa.",
+    "user_problem":  "Las ideas utiles suelen quedarse sin forma financiable: falta detectar si son vendibles, adaptables, presentables, financiables, reutilizables y que equipo humano o worker hace falta.",
+    "proposed_solution":  "Un flujo guiado de ENGREMIAT que recibe una idea, la normaliza, analiza si puede convertirse en producto digital, preventa o proyecto financiable, y genera micro work packets gobernados con gates humanos.",
+    "digital_product_type":  "Dashboard local + plantilla interactiva + contratos JSON + paquetes de trabajo + ruta de preventa/financiacion",
+    "why_financiable_or_presellable":  "Ayuda a reducir incertidumbre, crear propuestas presentables, validar demanda inicial, ordenar requisitos, generar material para preventa y detectar oportunidades de financiacion sin ejecutar nada automaticamente.",
+    "expected_social_or_local_value":  "Facilita que comunidades pequenas creen proyectos utiles, conecten perfiles humanos, aprovechen datos abiertos y aprendan marketing/onboarding/preventa de forma gobernada.",
+    "available_assets":  [
+                             "ENGREMIAT_PROMPTER",
+                             "ENGREMIAT_CONTROL",
+                             "ENGREMIAT_INTERNAL_REFERENCE",
+                             "ENGREMIAT_EXTERNAL_SUPPORT_LINE_CLOSED",
+                             "concept_test_blueprint_069",
+                             "local dashboards",
+                             "JSON contracts and gates"
+                         ],
+    "constraints":  [
+                        "sin IA real en esta prueba",
+                        "sin APIs externas",
+                        "sin Gmail real",
+                        "sin Google Sheets real",
+                        "sin navegador",
+                        "sin CDP",
+                        "sin clipboard",
+                        "sin worker real",
+                        "sin operador",
+                        "revision humana obligatoria",
+                        "solo archivos locales y Git seguro"
+                    ],
+    "first_success_signal":  "ENGREMIAT convierte esta idea en un paquete gobernado, con readiness, workers en draft, senales necesarias, micro work packets y dashboard local comprensible.",
+    "human_notes":  [
+                        "La fuerza de esta linea es convertir financiacion/preventa en motor economico de ENGREMIAT.",
+                        "El sistema debe aprender de marketing, onboarding y conceptos comerciales sin depender de ejecucion externa.",
+                        "Primero probar concepto local y luego decidir si se conecta a OpenData, Sheets, Gmail o workers reales."
+                    ],
+    "next_expected_phase":  "START_PHASE_071_PROMPTER_NORMALIZE_IDEA_SEED_TO_PROJECT_PACKET_NO_AI_CALL",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "concept_test_real_execution_allowed":  false,
+                   "seed_executable":  false,
+                   "human_review_required":  true
+               }
+}

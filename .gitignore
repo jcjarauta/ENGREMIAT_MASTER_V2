@@ -1,0 +1,20 @@
+﻿# ENGREMIAT safe gitignore
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.tmp
+*.bak
+*.zip
+*.7z
+*.rar
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*secret*
+*token*
+*credential*
+MAIN_PC_IMPORT_PREP_001/

@@ -1,0 +1,49 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_109G_WORKER_RETURN_CONTRACT_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:32:16",
+    "required_json_keys":  [
+                               "ok",
+                               "review_summary",
+                               "financing_angles",
+                               "digital_product_candidates",
+                               "risks",
+                               "required_human_inputs",
+                               "recommended_next_step",
+                               "integration_allowed_now",
+                               "human_review_required"
+                           ],
+    "required_defaults":  {
+                              "integration_allowed_now":  false,
+                              "human_review_required":  true
+                          },
+    "forbidden_content":  [
+                              "execute_external_api",
+                              "run_browser",
+                              "run_cdp",
+                              "use_clipboard",
+                              "execute_worker_real",
+                              "execute_operator",
+                              "commit_directly",
+                              "push_directly"
+                          ],
+    "validation_policy":  "HUMAN_REVIEW_BEFORE_INTEGRATION",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "package_builder_dry_run_executed":  true,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               }
+}

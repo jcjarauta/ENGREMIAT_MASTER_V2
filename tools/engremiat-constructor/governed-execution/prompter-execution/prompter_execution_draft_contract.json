@@ -1,0 +1,29 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_EXECUTION_DRAFT_CONTRACT",
+    "ok":  true,
+    "draft_id":  "prompter-execution-draft-phase-003",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "execution_mode":  "DRAFT_ONLY_LOCAL_NO_AI_CALL",
+    "purpose":  "Prepare Prompter continuation package without executing external AI or real workers.",
+    "inputs":  {
+                   "handoff_index":  "prompter/prompter_handoffs.index.json",
+                   "matrix":  "commercial-matrix/*.need_project_solution_matrix.json",
+                   "control_observable":  "control/observable/constructor_control_observable_index.json"
+               },
+    "outputs":  [
+                    "next_phase_prompt",
+                    "solution_builder_scope",
+                    "demo_scope",
+                    "proposal_scope",
+                    "worker_brief_queue_item"
+                ],
+    "safety":  {
+                   "local_only":  true,
+                   "external_ai_call_allowed":  false,
+                   "external_api_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "real_prompter_execution_allowed":  false
+               },
+    "next_recommended_action":  "CREATE_CONSTRUCTOR_TO_CONTROL_LOCAL_QUEUE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

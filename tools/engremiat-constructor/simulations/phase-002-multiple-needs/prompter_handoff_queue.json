@@ -1,0 +1,38 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_HANDOFF_QUEUE_SIM",
+    "ok":  true,
+    "items_count":  5,
+    "items":  [
+                  {
+                      "need_id":  "phase002-need-001",
+                      "template":  "training-game",
+                      "prompter_action":  "CREATE_DEMO_AND_GRANT_SCOPE",
+                      "worker_real_allowed":  false
+                  },
+                  {
+                      "need_id":  "phase002-need-002",
+                      "template":  "community-software",
+                      "prompter_action":  "CREATE_PRODUCT_DEMO_SCOPE",
+                      "worker_real_allowed":  false
+                  },
+                  {
+                      "need_id":  "phase002-need-003",
+                      "template":  "service-package",
+                      "prompter_action":  "CREATE_SERVICE_PROPOSAL",
+                      "worker_real_allowed":  false
+                  },
+                  {
+                      "need_id":  "phase002-need-004",
+                      "template":  "internal-tool",
+                      "prompter_action":  "CREATE_PARTNER_BRIEF",
+                      "worker_real_allowed":  false
+                  },
+                  {
+                      "need_id":  "phase002-need-005",
+                      "template":  "training-game",
+                      "prompter_action":  "CREATE_BACKLOG_CARD",
+                      "worker_real_allowed":  false
+                  }
+              ],
+    "updated_at":  "2026-06-05T20:25:28"
+}

@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_PLAN",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_AND_MATCHING",
+    "block":  "BLOCK_001_CREATE_DEMAND_RADAR_PLAN",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "objective":  "Normalize simulated demand signals and match them against Engremiat reusable solution patterns.",
+    "planned_blocks":  8,
+    "decision_types":  [
+                           "BUILD_NEW_PROJECT",
+                           "ADAPT_EXISTING_PROJECT",
+                           "CREATE_DEMO_ONLY",
+                           "CREATE_PROPOSAL_ONLY",
+                           "ADD_TO_BACKLOG",
+                           "REJECT_OR_HOLD"
+                       ],
+    "safety":  {
+                   "local_only":  true,
+                   "simulation_only":  true,
+                   "external_ai_call_allowed":  false,
+                   "external_api_allowed":  false,
+                   "web_search_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "customer_contact_allowed":  false,
+                   "remote_repo_creation_allowed":  false
+               },
+    "updated_at":  "2026-06-05T21:28:47"
+}

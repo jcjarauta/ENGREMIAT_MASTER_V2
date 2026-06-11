@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F002_NORMALIZED_PROJECT_PACKET_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-002-onboarding_kit",
+    "project_title":  "Kit de onboarding para nuevos nodos ENGREMIAT",
+    "problem":  "La entrada al sistema puede ser confusa si no hay pasos, roles y límites claros.",
+    "solution":  "Un kit digital que guía primeros pasos, roles, tareas seguras, gates y métricas de participación.",
+    "target_user":  "Personas o grupos que quieren empezar a participar en un nodo ENGREMIAT.",
+    "product_type":  "Guía interactiva + checklist + dashboard local + micro work packets",
+    "financing_or_presell_reason":  "Puede ofrecerse como paquete de acompañamiento para comunidades, escuelas, asociaciones o cooperativas.",
+    "status":  "NORMALIZED_DRY_RUN_NO_AI_CALL",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

@@ -1,0 +1,46 @@
+﻿{
+    "version":  "1.0",
+    "entity":  "hyper",
+    "required_fields":  [
+                            "id",
+                            "name",
+                            "status",
+                            "priority",
+                            "risk",
+                            "dependencies",
+                            "gates",
+                            "evidence",
+                            "next_action"
+                        ],
+    "allowed_status":  [
+                           "BACKLOG",
+                           "READY",
+                           "RUNNING",
+                           "BLOCKED",
+                           "DONE",
+                           "LOCKED"
+                       ],
+    "allowed_risk":  [
+                         "low",
+                         "medium",
+                         "high"
+                     ],
+    "gate_types":  [
+                       "human_authorization",
+                       "git_remote",
+                       "browser",
+                       "autohotkey",
+                       "clipboard",
+                       "enter",
+                       "external_process",
+                       "dangerous_write"
+                   ],
+    "evidence_types":  [
+                           "report_json",
+                           "summary_txt",
+                           "stdout",
+                           "stderr",
+                           "dashboard",
+                           "manual_note"
+                       ]
+}

@@ -1,0 +1,33 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "ENGREMIAT Demand Radar Matching Result",
+    "type":  "object",
+    "required":  [
+                     "match_id",
+                     "demand_id",
+                     "score",
+                     "decision",
+                     "recommended_template",
+                     "status"
+                 ],
+    "properties":  {
+                       "match_id":  {
+                                        "type":  "string"
+                                    },
+                       "demand_id":  {
+                                         "type":  "string"
+                                     },
+                       "score":  {
+                                     "type":  "integer"
+                                 },
+                       "decision":  {
+                                        "type":  "string"
+                                    },
+                       "recommended_template":  {
+                                                    "type":  "string"
+                                                },
+                       "status":  {
+                                      "type":  "string"
+                                  }
+                   }
+}

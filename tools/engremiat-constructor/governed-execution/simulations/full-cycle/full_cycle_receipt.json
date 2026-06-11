@@ -1,0 +1,9 @@
+﻿{
+    "type":  "ENGREMIAT_FULL_CYCLE_SIMULATION_RECEIPT",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "receipt_decision":  "SIMULATION_RECEIPT_CREATED",
+    "requires_human_gate":  true,
+    "next_recommended_action":  "CREATE_PHASE_004_UNLOCK_GATE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

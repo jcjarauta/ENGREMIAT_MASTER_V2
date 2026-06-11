@@ -1,0 +1,38 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_ASSEMBLY_RETURN_MARKER_V1",
+    "ok":  true,
+    "phase":  "RETURN-TO-ENGREMIAT-CONTROL-AUTOMATION-CORE-ASSEMBLY",
+    "decision":  "READY_TO_RETURN_TO_AUTOMATION_CORE_ASSEMBLY",
+    "created_at":  "2026-06-06T07:56:39.5098945+02:00",
+    "validated_foundations":  [
+                                  "HEALTH_SANITATION_REUSABLE_PACKAGE_CLOSED",
+                                  "OFFICIAL_BRIDGE_V1_END_TO_END_VALIDATED",
+                                  "LOCAL_REPO_JSON_SNAPSHOT_TO_CONTROL_BRIDGE_INBOX_B2_VALIDATED",
+                                  "CONTROL_DASHBOARD_RENDER_OK",
+                                  "B2_INTERNAL_IMPORT_GATE_RESIDUALS_COMMITTED"
+                              ],
+    "active_bridge_pattern":  "LOCAL_REPO_JSON_SNAPSHOT_TO_CONTROL_BRIDGE_INBOX_B2",
+    "blocked_bridge_pattern":  "PUBLIC_WEBAPP_POST_EXEC_401_AUTH_REQUIRED",
+    "current_head":  "28ff9e1 [ENGREMIAT_CONTROL] Commit B2 internal import gate residuals",
+    "remote_synced":  true,
+    "remaining_untracked_preserved":  [
+                                          "?? tools/engremiat-control/automation-tests/phase-238g-240g-repair-create-google-sheets-test-sheet/STATUS_LOG_TO_SEND_240G_REPAIR_GOOGLE_SHEETS_TEST_SHEET.txt",
+                                          "?? tools/engremiat-control/automation-tests/phase-244g-246g-repair-appsheet-bridge-create-test-tab/",
+                                          "?? tools/engremiat-control/automation-tests/phase-247g-249g-repair-apps-script-bridge-contract/STATUS_LOG_TO_SEND_249G_REPAIR_APPS_SCRIPT_BRIDGE_CONTRACT.txt",
+                                          "?? tools/engremiat-control/automation-tests/phase-250g-252g-direct-test-apps-script-webapp-post-auth-repair/",
+                                          "?? tools/engremiat-control/bridge-locator/",
+                                          "?? tools/engremiat-control/local-context-scan/",
+                                          "?? tools/engremiat-control/repo-bridge-snapshot-locator/",
+                                          "?? tools/engremiat-control/reports/engremiat_local_physical_context_scan_light_report_20260605-220352.json"
+                                      ],
+    "safety":  {
+                   "no_gcloud":  true,
+                   "no_local_google_token":  true,
+                   "google_api_call_allowed":  false,
+                   "external_actions_executed":  false,
+                   "no_webapp_exec":  true,
+                   "no_browser_cdp_clipboard":  true,
+                   "no_real_worker":  true
+               },
+    "next":  "CREATE_AUTOMATION_CORE_ASSEMBLY_BASELINE_V1"
+}

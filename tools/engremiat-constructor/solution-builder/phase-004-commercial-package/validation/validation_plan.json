@@ -1,0 +1,39 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_VALIDATION_PLAN",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "validation_id":  "validation-plan-phase-004-001",
+    "validation_mode":  "HUMAN_REVIEW_LOCAL_ONLY",
+    "validation_dimensions":  [
+                                  "need_clarity",
+                                  "willingness_to_pay",
+                                  "grant_fit",
+                                  "demo_feasibility",
+                                  "human_load",
+                                  "reuse_potential",
+                                  "social_impact"
+                              ],
+    "questions_count":  6,
+    "questions":  [
+                      "La necesidad es suficientemente concreta para una demo?",
+                      "La entidad objetivo pagaria por discovery, demo o piloto?",
+                      "La solucion encaja mejor como preventa, subvencion o partner?",
+                      "Que parte requiere humanos externos?",
+                      "Que metricas harian que el piloto sea aceptable?",
+                      "Que parte puede reutilizarse en otros sectores?"
+                  ],
+    "minimum_acceptance":  {
+                               "need_clarity_min":  7,
+                               "demo_feasibility_min":  7,
+                               "reuse_potential_min":  7,
+                               "human_load_max":  6
+                           },
+    "blocked_actions":  [
+                            "customer_contact",
+                            "external_submission",
+                            "external_ai_call",
+                            "real_worker_execution"
+                        ],
+    "next_recommended_action":  "SIMULATE_COMMERCIAL_DELIVERY",
+    "updated_at":  "2026-06-05T21:22:39"
+}

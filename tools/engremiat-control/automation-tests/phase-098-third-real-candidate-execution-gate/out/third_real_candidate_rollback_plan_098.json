@@ -1,0 +1,33 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_098_THIRD_REAL_CANDIDATE_ROLLBACK_PLAN_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_098_REVIEW_THIRD_REAL_AUTOMATION_CANDIDATE_DECISION",
+    "created_at":  "2026-06-05T11:02:45",
+    "rollback_status":  "DEFINED_FOR_NEXT_PHASE",
+    "rollback_mode":  "HOLD_OR_DELETE_LOCAL_OUTPUTS_BEFORE_COMMIT_IF_VALIDATION_FAILS",
+    "rollback_steps":  [
+                           "stop on validation failure",
+                           "do not commit failed timeline outputs",
+                           "remove invalid local timeline outputs",
+                           "write compact failure report",
+                           "keep Git clean or explicit dirty report"
+                       ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "third_real_candidate_execution_gate_only":  true,
+                   "candidate_execution_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_099_APPLY_THIRD_REAL_CANDIDATE_EXECUTION_GATE_DECISION"
+}

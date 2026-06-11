@@ -1,0 +1,45 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_CONTROL_OBSERVABLE_PROJECT",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "origin_need_id":  "need-2026-001",
+    "origin_source_type":  "subvencion",
+    "template_type":  "training-game",
+    "status":  "BOOTSTRAPPED",
+    "phase":  "001_PROJECT_BOOTSTRAP",
+    "readiness":  88,
+    "validation_ok":  true,
+    "commercial_status":  "hypothesis",
+    "funding_status":  "grant_candidate",
+    "internal_reuse":  true,
+    "external_offer":  true,
+    "health":  {
+                   "readiness":  62,
+                   "risk":  "medium",
+                   "human_load":  "medium",
+                   "technical_load":  "low",
+                   "automation_allowed":  false
+               },
+    "paths":  {
+                  "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+                  "project_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\ENGREMIAT_PROJECT.json",
+                  "validation_report":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\reports\\validation_report.json",
+                  "remote_gate":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\control\\remote_repo_gate.json",
+                  "readme":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\README.md",
+                  "roadmap":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\ROADMAP.md",
+                  "commercial_brief":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\commercial\\commercial_brief_auto.md",
+                  "prompter_handoff":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\prompts\\prompter_handoff.md"
+              },
+    "safety":  {
+                   "local_only":  true,
+                   "remote_repo_creation_allowed":  false,
+                   "external_api_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "browser_allowed":  false,
+                   "clipboard_allowed":  false
+               },
+    "control_decision":  "OBSERVABLE_READY_FOR_DASHBOARD_CARD",
+    "next_recommended_action":  "CREATE_CONTROL_DASHBOARD_CARD_LOCAL",
+    "updated_at":  "2026-06-05T20:20:51"
+}

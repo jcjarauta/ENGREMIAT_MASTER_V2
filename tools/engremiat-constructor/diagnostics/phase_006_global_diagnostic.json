@@ -1,0 +1,33 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_GLOBAL_DIAGNOSTIC",
+    "ok":  true,
+    "decision":  "PHASE_006_AUTOMATION_BY_GATES_CLOSED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_AUTOMATION_BY_GATES",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "readiness":  96,
+    "required_reports_count":  7,
+    "ok_reports_count":  7,
+    "failed_checks_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "checks":  {
+                   "reports_ok":  true,
+                   "plan_ready":  true,
+                   "policy_ready":  true,
+                   "unlock_template_ready":  true,
+                   "unlock_queue_ready":  true,
+                   "simulation_ready":  true,
+                   "phase7_gate_ready":  true,
+                   "real_actions_blocked":  true,
+                   "external_ai_blocked":  true,
+                   "external_api_blocked":  true,
+                   "worker_real_blocked":  true,
+                   "remote_repo_blocked":  true
+               },
+    "capabilities_count":  13,
+    "unlock_queue_items":  5,
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_MULTI_PROJECT_MULTI_REPO_FACTORY",
+    "next_recommended_action":  "DECIDE_COMMIT_PHASE_006_OR_START_PHASE_007",
+    "updated_at":  "2026-06-05T21:37:32"
+}

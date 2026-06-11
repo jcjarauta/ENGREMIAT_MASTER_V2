@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENGREMIAT_CONTROL Dashboard</title>
+  <style>body{font-family:Arial,sans-serif;margin:0;background:#f6f7f9;color:#1f2937;line-height:1.45;}header{padding:24px 32px;background:#111827;color:white;}main{padding:24px 32px;max-width:1280px;margin:0 auto;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}.card{background:#fff;border:1px solid #d9dee7;border-radius:14px;padding:18px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.04);}.metric{font-size:30px;font-weight:700;margin:8px 0;}code{background:#eef2f7;padding:2px 6px;border-radius:5px;}.muted{color:#64748b;}.ok{color:#166534;font-weight:700;}.warn{color:#92400e;font-weight:700;}li{margin:5px 0;}</style>
+</head>
+<body>
+<header><h1>ENGREMIAT_CONTROL</h1><p>Dashboard funcional local · PoC 001 · generado: 2026-06-06T14:33:42</p></header>
+<main>
+<section class="card" id="estado-general"><h2>Estado general</h2><div class="grid">
+<div><div class="muted">PoC activa</div><div class="metric">001</div><code>POC-001-LOCAL-PROJECT-ANALYSIS-FINANCIABILITY-PRESELL</code></div>
+<div><div class="muted">Dominio</div><div class="metric">financiabilidad_preventa</div><code>LOCAL_ONLY</code></div>
+<div><div class="muted">Proyecto</div><div class="metric">diagnostico-financiabilidad-demanda</div><code>FINANCIABILITY-PRESELL-CHECKLIST-TEMPLATE-001</code></div>
+<div><div class="muted">Seguridad</div><div class="metric ok">OK</div><code>NO_EXTERNAL_ACTIONS</code></div>
+</div></section>
+<section class="card" id="scoring"><h2>Scoring local</h2><div class="grid">
+<div><div class="muted">Readiness</div><div class="metric">78/100</div><code>HIGH</code></div>
+<div><div class="muted">Financiabilidad</div><div class="metric">80/100</div><code>heuristic_v1</code></div>
+<div><div class="muted">Preventa</div><div class="metric">75/100</div><code>heuristic_v1</code></div>
+<div><div class="muted">Carga humana</div><div class="metric">76/100</div><code>review_needed</code></div>
+<div><div class="muted">Riesgo</div><div class="metric warn">MEDIUM</div><code>local_estimate</code></div>
+</div></section>
+<section class="card" id="bloqueos"><h2>Bloqueos actuales</h2><ul>
+<li>No hay validacion externa de demanda.</li>
+<li>No hay oferta de preventa redactada para revision humana.</li>
+<li>No hay scoring comparativo con otros proyectos.</li>
+<li>IA externa, worker real y acciones reales siguen bloqueados.</li>
+</ul></section>
+<section class="card" id="siguiente-accion"><h2>Siguiente acción recomendada</h2><p><code>POC_001_COMPARATIVE_SCORING_OR_VALUE_PROPOSITION_DRAFT</code></p><p class="muted">Decisión: <code>CONTINUE_LOCAL_REFINEMENT</code></p></section>
+<section class="card" id="artefactos"><h2>Artefactos principales</h2><ul>
+<li><strong>poc_final:</strong> <code>tools/engremiat-control/reports/poc_001_local_project_analysis_financiability_presell_final.json</code></li>
+<li><strong>dashboard_binding:</strong> <code>tools/engremiat-control/reports/poc_001_main_dashboard_html_binding_final.json</code></li>
+<li><strong>scoring_final:</strong> <code>tools/engremiat-control/reports/poc_001_scoring_and_dashboard_refinement_final.json</code></li>
+</ul></section>
+<section class="card" id="historial"><h2>Historial de PoC 001</h2><p>PoC cerrada, vinculada al dashboard y refinada con scoring local.</p><p><code>LOCAL_ONLY · MANUAL_WORKER · HUMAN_REVIEW_REQUIRED · NO_EXTERNAL_ACTIONS</code></p></section>
+<!-- ENGREMIAT_POC_001_COMPARATIVE_SCORING_BEGIN -->
+<section id="engremiat-poc-001-comparative-scoring" class="card">
+  <h2>Ranking comparativo · Oportunidades PoC 001</h2>
+  <p><strong>Top recomendado:</strong> <code>asistente-onboarding-comunidades</code> · <strong>Score:</strong> <code>60.6</code></p>
+  <div class="grid">
+    <div class="card"><strong>asistente-onboarding-comunidades</strong><br><span class="metric">60.6</span><br><code>MEDIUM</code><br><small>KEEP_AS_CANDIDATE</small></div>
+    <div class="card"><strong>plantilla-impacto-social-proyecto</strong><br><span class="metric">63.6</span><br><code>MEDIUM</code><br><small>KEEP_AS_CANDIDATE</small></div>
+    <div class="card"><strong>mapa-oportunidades-opendata-local</strong><br><span class="metric">60.9</span><br><code>MEDIUM</code><br><small>KEEP_AS_CANDIDATE</small></div>
+    <div class="card"><strong>diagnostico-financiabilidad-demanda</strong><br><span class="metric">67.9</span><br><code>MEDIUM</code><br><small>KEEP_AS_CANDIDATE</small></div>
+    <div class="card"><strong>kit-preventa-producto-digital</strong><br><span class="metric">71.5</span><br><code>MEDIUM</code><br><small>KEEP_AS_CANDIDATE</small></div>
+  </div>
+  <p><code>LOCAL_HEURISTIC_NO_EXTERNAL_DATA · NO_EXTERNAL_ACTIONS</code></p>
+</section>
+<!-- ENGREMIAT_POC_001_COMPARATIVE_SCORING_END -->
+<!-- ENGREMIAT_POC_001_VALUE_PROPOSITION_BEGIN -->
+<section id="engremiat-poc-001-value-proposition" class="card">
+  <h2>Propuesta de valor · PoC 001</h2>
+  <p><strong>Proyecto:</strong> <code>asistente-onboarding-comunidades</code></p>
+  <p>Un asistente local de onboarding que ayuda a comunidades, cooperativas y equipos pequeños a convertir una intención colectiva en un proyecto estructurado, medible y accionable.</p>
+  <h3>Promesa</h3>
+  <ul>
+    <li>convertir una idea inicial en un mapa de proyecto</li>
+    <li>detectar bloqueos, carga humana y siguiente acción</li>
+    <li>generar evidencia local revisable</li>
+    <li>preparar el proyecto para análisis de financiabilidad/preventa sin acciones externas</li>
+  </ul>
+  <h3>Evidencia necesaria antes de cualquier acción real</h3>
+  <ul>
+    <li>validar si el usuario objetivo entiende la propuesta</li>
+    <li>crear ejemplo con una comunidad real pero sin contacto externo todavía</li>
+    <li>comparar con otros proyectos candidatos</li>
+    <li>definir precio, preventa o intercambio solo en fase posterior</li>
+    <li>validar lenguaje y entregables antes de publicación</li>
+  </ul>
+  <p><strong>Siguiente acción local:</strong> <code>POC_001_VALUE_PROPOSITION_HUMAN_REVIEW_GATE</code></p>
+  <p><code>LOCAL_DRAFT · NO_PUBLICATION · NO_EXTERNAL_ACTIONS</code></p>
+</section>
+<!-- ENGREMIAT_POC_001_VALUE_PROPOSITION_END -->
+</main></body></html>
+
+

@@ -1,0 +1,62 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_108G_FIRST_LOCAL_BEHAVIOR_TEST_SPEC_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:29:43",
+    "test_id":  "PROMPTER_LOCAL_BEHAVIOR_TEST_001_PACKAGE_BUILDER_DRY_RUN",
+    "test_name":  "ENGREMIAT_PROMPTER_PACKAGE_BUILDER_DRY_RUN",
+    "status":  "SPEC_READY_NOT_EXECUTED",
+    "objective":  "Comprobar que engremiat_prompter puede transformar un objetivo humano en un paquete local de trabajo para worker, respetando normas internas.",
+    "input_mode":  "LOCAL_STATIC_TEST_INPUT",
+    "expected_behavior":  [
+                              "read local objective",
+                              "apply internal rules",
+                              "produce work_context_package",
+                              "produce return_contract",
+                              "produce worker_prompt_draft",
+                              "produce human_gate",
+                              "keep integration_allowed_now_false",
+                              "keep worker_execution_allowed_false"
+                          ],
+    "allowed_scope":  [
+                          "read test input JSON",
+                          "read accepted rules validator result",
+                          "write local package builder dry-run outputs",
+                          "write local validation report",
+                          "write local dashboard",
+                          "commit and push safe local files"
+                      ],
+    "forbidden_scope":  [
+                            "real_ai_call",
+                            "ollama_call",
+                            "external_api_call",
+                            "browser_or_cdp",
+                            "clipboard",
+                            "gmail_read",
+                            "google_sheets_write",
+                            "real_worker_execution",
+                            "operator_execution",
+                            "git_branch_create"
+                        ],
+    "execution_allowed_now":  false,
+    "integration_allowed_now":  false,
+    "human_review_required":  true,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "integration_allowed_now":  false,
+                   "first_prompter_behavior_test_execution_allowed_now":  false,
+                   "gate_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_109G_REVIEW_FIRST_PROMPTER_LOCAL_BEHAVIOR_TEST_GATE"
+}

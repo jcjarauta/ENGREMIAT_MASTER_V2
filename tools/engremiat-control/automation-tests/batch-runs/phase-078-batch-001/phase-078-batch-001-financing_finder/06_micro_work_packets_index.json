@@ -1,0 +1,23 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F006_MICRO_WORK_PACKETS_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-001-financing_finder",
+    "micro_packet_count":  5,
+    "micro_packets_executable":  false,
+    "packets":  [
+                    "problem_definition",
+                    "offer_draft",
+                    "signals_plan",
+                    "validation_gate",
+                    "dashboard_summary"
+                ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

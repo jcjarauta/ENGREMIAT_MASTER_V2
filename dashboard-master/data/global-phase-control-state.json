@@ -1,0 +1,51 @@
+﻿{
+    "type":  "GLOBAL_PHASE_CONTROL_STATE",
+    "version":  4,
+    "updated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "human_filter_enabled":  true,
+    "browser_must_not_execute_actions":  true,
+    "active_phase_id":  "PHASE-003",
+    "active_next_block":  "HYPER_006_TELEGRAM_CONTROL_PREP_001",
+    "phases":  [
+                   {
+                       "id":  "PHASE-001",
+                       "title":  "Visión jerárquica global",
+                       "status":  "done",
+                       "next_block":  "HYPER_008_PANEL_TREE_RENDER_001",
+                       "human_required":  false,
+                       "reason":  ""
+                   },
+                   {
+                       "id":  "PHASE-002",
+                       "title":  "Cola dinámica y evidencias",
+                       "status":  "done",
+                       "next_block":  "HYPER_008_PANEL_QUEUE_EVIDENCE_001",
+                       "human_required":  false,
+                       "reason":  ""
+                   },
+                   {
+                       "id":  "PHASE-003",
+                       "title":  "Gate pre-Telegram",
+                       "status":  "ready",
+                       "next_block":  "HYPER_006_TELEGRAM_CONTROL_PREP_001",
+                       "human_required":  false,
+                       "reason":  ""
+                   },
+                   {
+                       "id":  "PHASE-004",
+                       "title":  "Reactivación tras intervención humana",
+                       "status":  "paused",
+                       "next_block":  "HYPER_008_ACTION_INTENTS_001",
+                       "human_required":  true,
+                       "reason":  "Esperando contexto humano cuando haga falta."
+                   },
+                   {
+                       "id":  "PHASE-005",
+                       "title":  "Git noise classification",
+                       "status":  "blocked",
+                       "next_block":  "HYPER_007_REPAIR_GIT_NOISE_OUTPUT",
+                       "human_required":  true,
+                       "reason":  "MISSING_EXTRACTED_JSON. No bloquea cola global."
+                   }
+               ]
+}

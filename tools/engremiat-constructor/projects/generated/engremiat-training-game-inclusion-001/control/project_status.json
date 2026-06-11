@@ -1,0 +1,16 @@
+﻿{
+    "type":  "ENGREMIAT_PROJECT_STATUS",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "origin_need_id":  "need-2026-001",
+    "template_type":  "training-game",
+    "status":  "BOOTSTRAPPED",
+    "phase":  "001_PROJECT_BOOTSTRAP",
+    "readiness":  62,
+    "git_executed":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "next_recommended_action":  "VALIDATE_GENERATED_PROJECT_STRUCTURE",
+    "updated_at":  "2026-06-05T12:45:40"
+}

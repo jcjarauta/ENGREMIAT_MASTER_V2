@@ -1,0 +1,37 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "ENGREMIAT Prompter Execution Draft Contract",
+    "type":  "object",
+    "required":  [
+                     "draft_id",
+                     "project_id",
+                     "execution_mode",
+                     "inputs",
+                     "outputs",
+                     "safety",
+                     "updated_at"
+                 ],
+    "properties":  {
+                       "draft_id":  {
+                                        "type":  "string"
+                                    },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "execution_mode":  {
+                                              "type":  "string"
+                                          },
+                       "inputs":  {
+                                      "type":  "object"
+                                  },
+                       "outputs":  {
+                                       "type":  "array"
+                                   },
+                       "safety":  {
+                                      "type":  "object"
+                                  },
+                       "updated_at":  {
+                                          "type":  "string"
+                                      }
+                   }
+}

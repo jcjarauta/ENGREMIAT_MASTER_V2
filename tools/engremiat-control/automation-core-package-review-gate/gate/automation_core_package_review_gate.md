@@ -1,0 +1,24 @@
+﻿# ENGREMIAT CONTROL · Automation Core package review gate
+
+- type: ENGREMIAT_CONTROL_AUTOMATION_CORE_PACKAGE_REVIEW_GATE_001
+- phase: AUTOMATION_CORE_PACKAGE_REVIEW_GATE
+- ok: True
+- generated_at: 2026-06-06T07:54:43.7674390Z
+- repair_created: True
+- review_gate_ready: True
+- source_contract: tools/engremiat-control/automation-core-package-review-gate/contract/automation_core_package_review_gate_contract.json
+- package_id: automation-core-local-decision-package-001
+- package_status: queued_but_not_executable
+- human_review_required: True
+- current_review_decision: PENDING_HUMAN_REVIEW
+- recommended_decision: APPROVE_FOR_LOCAL_SIMULATION_ONLY
+- allowed_next_decisions: HOLD_PACKAGE, APPROVE_FOR_LOCAL_SIMULATION_ONLY, REQUEST_PACKAGE_REWRITE, ARCHIVE_PACKAGE
+- decision_effects: {"HOLD_PACKAGE":"Mantiene el paquete en cola no ejecutable.","APPROVE_FOR_LOCAL_SIMULATION_ONLY":"Permite crear una simulacion local stub, sin worker real.","REQUEST_PACKAGE_REWRITE":"Devuelve el paquete a reescritura local.","ARCHIVE_PACKAGE":"Archiva el paquete sin ejecutarlo."}
+- package_can_be_executable_now: False
+- queued_but_not_executable: True
+- gates: {"local_only":true,"external_actions_executed":false,"google_api_call_allowed":false,"real_worker_allowed":false,"decision_auto_execution_allowed":false,"worker_execution_allowed":false,"simulation_real_execution_allowed":false,"human_review_required":true}
+- next_if_approved_for_local_simulation_only: AUTOMATION_CORE_LOCAL_SIMULATION_GATE
+- next_if_hold_package: AUTOMATION_CORE_PACKAGE_REVIEW_GATE_HOLD
+- next_if_request_package_rewrite: AUTOMATION_CORE_PACKAGE_REWRITE
+- next_if_archive_package: AUTOMATION_CORE_PACKAGE_ARCHIVE
+- next: AUTOMATION_CORE_LOCAL_SIMULATION_GATE_OR_PACKAGE_REWRITE

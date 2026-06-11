@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F002_NORMALIZED_PROJECT_PACKET_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-074-r3-smoke",
+    "project_title":  "Buscador inverso de financiacion y preventa para productos digitales ENGREMIAT",
+    "problem":  "Las ideas utiles suelen quedarse sin forma financiable: falta detectar si son vendibles, adaptables, presentables, financiables, reutilizables y que equipo humano o worker hace falta.",
+    "solution":  "Un flujo guiado de ENGREMIAT que recibe una idea, la normaliza, analiza si puede convertirse en producto digital, preventa o proyecto financiable, y genera micro work packets gobernados con gates humanos.",
+    "target_user":  "Personas, asociaciones, cooperativas, pequenos equipos, nodos locales y comunidades que tienen ideas utiles pero no saben convertirlas en proyecto financiable o preventa.",
+    "product_type":  "Dashboard local + plantilla interactiva + contratos JSON + paquetes de trabajo + ruta de preventa/financiacion",
+    "financing_or_presell_reason":  "Ayuda a reducir incertidumbre, crear propuestas presentables, validar demanda inicial, ordenar requisitos, generar material para preventa y detectar oportunidades de financiacion sin ejecutar nada automaticamente.",
+    "status":  "NORMALIZED_DRY_RUN_NO_AI_CALL",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

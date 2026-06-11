@@ -1,0 +1,18 @@
+﻿{
+    "type":  "TELEGRAM_CONTROL_PAYLOAD_TEMPLATE",
+    "version":  1,
+    "generated_at":  "2026-06-02T11:35:42.6213300+02:00",
+    "destination":  "Telegram UI future",
+    "current_delivery":  "ChatGPT/operator proposal only",
+    "browser_execution_allowed":  false,
+    "telegram_send_allowed":  false,
+    "template":  {
+                     "message_type":  "status|next_phase|blocker|authorization_request",
+                     "title":  "ENGREMIAT",
+                     "summary":  "Texto corto para móvil",
+                     "selected_hyper":  "HIPER-006",
+                     "selected_phase":  "PHASE-ID",
+                     "recommended_action":  "Acción recomendada",
+                     "human_reply_expected":  "ACEPTAR|PAUSAR|BLOQUEAR|CONTINUAR"
+                 }
+}

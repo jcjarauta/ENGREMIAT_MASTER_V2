@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_BLOCK_004_CREATE_MINIMAL_PROJECT_TEMPLATES_001",
+    "ok":  true,
+    "decision":  "MINIMAL_PROJECT_TEMPLATES_CREATED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_LOCAL_PROJECT_FACTORY",
+    "block":  "BLOCK_004_CREATE_MINIMAL_PROJECT_TEMPLATES",
+    "templates_count":  6,
+    "templates":  [
+                      "internal-tool",
+                      "digital-product",
+                      "grant-project",
+                      "training-game",
+                      "community-software",
+                      "service-package"
+                  ],
+    "created_files_count":  80,
+    "template_index_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\templates\\templates.index.json",
+    "templates_doc_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\docs\\templates_contract.md",
+    "control_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_status.json",
+    "report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\reports\\engremiat_constructor_phase_001_block_004_report.json",
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "next_recommended_action":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_BLOCK_005_CREATE_LOCAL_BOOTSTRAP_ENGINE",
+    "updated_at":  "2026-06-05T12:43:32"
+}

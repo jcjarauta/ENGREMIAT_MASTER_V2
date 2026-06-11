@@ -1,0 +1,31 @@
+﻿{
+    "registry_version":  "v1",
+    "created_at":  "2026-06-11T18:08:00",
+    "active_architecture":  "THREE_NODE_REPLICABLE_ARCHITECTURE",
+    "nodes":  [
+                  {
+                      "node_id":  "MAIN_NODE",
+                      "status":  "PREPARED",
+                      "contract":  "C:\\ENGREMIAT\\architecture\\onboarding\\examples\\MAIN_NODE.example.json",
+                      "role":  "future_main"
+                  },
+                  {
+                      "node_id":  "LEGACY_NODE",
+                      "status":  "PLANNED",
+                      "contract":  "C:\\ENGREMIAT\\architecture\\onboarding\\examples\\LEGACY_NODE.example.json",
+                      "role":  "current_source_until_migration"
+                  },
+                  {
+                      "node_id":  "BACKUP_NODE",
+                      "status":  "PLANNED",
+                      "contract":  "C:\\ENGREMIAT\\architecture\\onboarding\\examples\\BACKUP_NODE.example.json",
+                      "role":  "backup_and_recovery"
+                  }
+              ],
+    "onboarding":  {
+                       "template":  "C:\\ENGREMIAT\\architecture\\onboarding\\node-contract.template.v1.json",
+                       "schema":  "C:\\ENGREMIAT\\architecture\\schemas\\engremiat-node-contract.schema.v1.json",
+                       "validator":  "C:\\ENGREMIAT\\architecture\\onboarding\\validators\\validate-node-contract.ps1",
+                       "rule":  "No active node without validated contract."
+                   }
+}

@@ -1,0 +1,39 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_REPEATABLE_DRY_RUN_BATCH_RUNNER_SPEC_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_077_CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE",
+    "created_at":  "2026-06-05T09:44:00",
+    "runner_spec_status":  "SPEC_READY_NOT_EXECUTED",
+    "runner_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\runner\\run-repeatable-local-dry-run-074.ps1",
+    "execution_mode":  "LOCAL_DRY_RUN_BATCH_ONLY",
+    "run_ids":  [
+                    "phase-078-batch-001-financing-finder",
+                    "phase-078-batch-002-onboarding-kit",
+                    "phase-078-batch-003-opendata-signal-pack"
+                ],
+    "aggregate_outputs_expected":  [
+                                       "batch_run_index_078.json",
+                                       "batch_aggregate_metrics_078.json",
+                                       "batch_health_gate_078.json",
+                                       "batch_dashboard_078.html"
+                                   ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "batch_real_execution_allowed":  false,
+                   "batch_gate_only":  true,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_078_APPLY_REPEATABLE_DRY_RUN_BATCH_GATE_DECISION"
+}

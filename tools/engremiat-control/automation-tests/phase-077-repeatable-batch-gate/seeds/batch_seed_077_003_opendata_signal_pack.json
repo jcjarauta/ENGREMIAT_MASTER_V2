@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_BATCH_SEED_003",
+    "ok":  true,
+    "idea_title":  "Pack de señales OpenData para oportunidades locales",
+    "target_user":  "Equipos que necesitan saber qué datos reales harían más financiable o útil una propuesta.",
+    "user_problem":  "Se proponen proyectos sin saber qué señales del entorno deberían consultar.",
+    "proposed_solution":  "Un contrato de señales necesarias por proyecto: territorio, entidades, subvenciones, eventos, necesidades y demanda.",
+    "digital_product_type":  "Contrato JSON de señales + dashboard + ruta futura OpenData",
+    "why_financiable_or_presellable":  "Permite vender análisis inicial o preparar propuestas mejor justificadas.",
+    "expected_social_or_local_value":  "Mejora el alineamiento entre proyectos, territorio y necesidades reales.",
+    "available_assets":  [
+                             "ENGREMIAT_OPENDATA conceptual",
+                             "ENGREMIAT_CONTROL",
+                             "repeatable runner",
+                             "señales necesarias"
+                         ],
+    "constraints":  [
+                        "sin IA real",
+                        "sin APIs externas",
+                        "sin worker real",
+                        "sin operador",
+                        "sin navegador",
+                        "sin Gmail",
+                        "sin Sheets real",
+                        "revisión humana"
+                    ],
+    "first_success_signal":  "El runner produce señales necesarias y micro paquetes sin consultar APIs externas."
+}

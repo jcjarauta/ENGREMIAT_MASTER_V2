@@ -1,0 +1,46 @@
+﻿{
+    "type":  "DASHBOARD_EXECUTABLE_ACTIONS",
+    "version":  1,
+    "updated_at":  "2026-06-02T09:50:01.3448601+02:00",
+    "branch":  "DASHBOARD_EXECUTABLE_FUNCTIONS",
+    "state":  "DASHBOARD_ACTION_SUMMARY_PUBLISHED_TO_DATA",
+    "actions":  [
+                    {
+                        "id":  "view_action_summary",
+                        "label":  "Ver resumen accionable",
+                        "mode":  "readonly",
+                        "data_source":  "dashboard-master/data/dashboard-action-summary.json",
+                        "status":  "ready"
+                    },
+                    {
+                        "id":  "view_runtime_queue",
+                        "label":  "Ver cola runtime",
+                        "mode":  "readonly",
+                        "data_source":  "queues/ollama-bridge-runtime-queue.json",
+                        "status":  "ready"
+                    },
+                    {
+                        "id":  "view_branch_state",
+                        "label":  "Ver estado de ramas",
+                        "mode":  "readonly",
+                        "data_source":  "state/ollama-bridge/branch-state-store.json",
+                        "status":  "ready"
+                    },
+                    {
+                        "id":  "continue_next_safe_action",
+                        "label":  "Continuar siguiente acción segura",
+                        "mode":  "proposal_only",
+                        "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_IMPL_009_DASHBOARD_HTML_READONLY_INTEGRATION",
+                        "status":  "proposal_ready"
+                    }
+                ],
+    "safety":  {
+                   "git_actions":  false,
+                   "push_actions":  false,
+                   "fetch_actions":  false,
+                   "merge_actions":  false,
+                   "telegram_actions":  false,
+                   "ollama_actions":  false,
+                   "external_actions":  false
+               }
+}

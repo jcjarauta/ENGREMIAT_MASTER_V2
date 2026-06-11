@@ -1,0 +1,204 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 08:54:40",
+    "contract_id":  "OLLAMA_BRIDGE_CAPABILITIES_CONTRACT_V1",
+    "purpose":  "Definir posibilidades, limites y estados del puente Master/Ollama para descolapsar ramas bloqueadas sin bloquear toda la cola.",
+    "current_decision":  "USE_MICROBLOCKS_BEFORE_LONG_OLLAMA_RUNS",
+    "bridge_principles":  [
+                              "Ollama no debe bloquear el desarrollo global.",
+                              "Cada rama puede pausarse de forma independiente.",
+                              "Si Ollama falla, la rama queda PAUSED y se continua con otra rama segura.",
+                              "Todo fallo de Ollama debe dejar reporte para ChatGPT y humano.",
+                              "Toda salida de Ollama debe validarse antes de aplicarse.",
+                              "Ollama propone; el Master valida; el humano desbloquea si hace falta.",
+                              "Telegram futuro debe exponer botones simples para estado, pausa, reintento y reporte."
+                          ],
+    "branch_states":  [
+                          {
+                              "state":  "PENDING",
+                              "meaning":  "La rama esta pendiente de ejecucion.",
+                              "allowed_next":  [
+                                                   "RUN_LOCAL_AI",
+                                                   "PAUSE_BRANCH",
+                                                   "SKIP_TO_OTHER_SAFE_BRANCH"
+                                               ],
+                              "telegram_button":  "Pendiente"
+                          },
+                          {
+                              "state":  "RUNNING_LOCAL_AI",
+                              "meaning":  "Ollama esta trabajando en una tarea acotada.",
+                              "allowed_next":  [
+                                                   "VALIDATE_OUTPUT",
+                                                   "TIMEOUT_AND_PAUSE",
+                                                   "FAIL_AND_PAUSE"
+                                               ],
+                              "telegram_button":  "En proceso"
+                          },
+                          {
+                              "state":  "PAUSED",
+                              "meaning":  "La rama queda congelada sin bloquear el resto.",
+                              "allowed_next":  [
+                                                   "SHOW_REPORT",
+                                                   "RETRY_LOCAL_AI",
+                                                   "REQUEST_HUMAN_REVIEW",
+                                                   "RESUME_BRANCH"
+                                               ],
+                              "telegram_button":  "Pausada"
+                          },
+                          {
+                              "state":  "BLOCKED",
+                              "meaning":  "La rama necesita intervencion humana o decision externa.",
+                              "allowed_next":  [
+                                                   "REQUEST_HUMAN_DECISION",
+                                                   "COPY_REPORT_TO_CHATGPT",
+                                                   "MOVE_TO_PAUSED"
+                                               ],
+                              "telegram_button":  "Bloqueada"
+                          },
+                          {
+                              "state":  "READY_FOR_HUMAN_REVIEW",
+                              "meaning":  "Ollama genero salida valida pero requiere revision humana.",
+                              "allowed_next":  [
+                                                   "APPROVE_OUTPUT",
+                                                   "REJECT_OUTPUT",
+                                                   "REQUEST_REPAIR"
+                                               ],
+                              "telegram_button":  "Revisar"
+                          },
+                          {
+                              "state":  "DONE",
+                              "meaning":  "La rama ha terminado o queda cerrada.",
+                              "allowed_next":  [
+                                                   "CONTINUE_NEXT_BRANCH",
+                                                   "COMMIT_IF_STAGE_COMPLETE"
+                                               ],
+                              "telegram_button":  "Hecho"
+                          }
+                      ],
+    "ollama_task_types":  [
+                              {
+                                  "id":  "NORMALIZE_JSON",
+                                  "title":  "Normalizar JSON",
+                                  "use_when":  "Hay datos brutos y se necesita una salida estructurada.",
+                                  "max_risk":  "LOW",
+                                  "requires_validation":  true,
+                                  "safe_auto_apply":  false
+                              },
+                              {
+                                  "id":  "CLASSIFY_GIT_NOISE",
+                                  "title":  "Clasificar ruido Git",
+                                  "use_when":  "Hay muchos untracked y el script deterministic falla o seria fragil.",
+                                  "max_risk":  "LOW",
+                                  "requires_validation":  true,
+                                  "safe_auto_apply":  false
+                              },
+                              {
+                                  "id":  "PROPOSE_REPAIR",
+                                  "title":  "Proponer reparacion",
+                                  "use_when":  "Hay stderr, fallo repetido o bloqueo localizado.",
+                                  "max_risk":  "MEDIUM",
+                                  "requires_validation":  true,
+                                  "safe_auto_apply":  false
+                              },
+                              {
+                                  "id":  "SUMMARIZE_REPORT",
+                                  "title":  "Resumir reporte",
+                                  "use_when":  "Hay logs largos y hay que preparar contexto para ChatGPT/humano.",
+                                  "max_risk":  "LOW",
+                                  "requires_validation":  true,
+                                  "safe_auto_apply":  true
+                              },
+                              {
+                                  "id":  "ROUTE_NEXT_BRANCH",
+                                  "title":  "Proponer siguiente rama",
+                                  "use_when":  "Una rama queda pausada y hay que continuar sin colapsar la cola.",
+                                  "max_risk":  "LOW",
+                                  "requires_validation":  true,
+                                  "safe_auto_apply":  false
+                              }
+                          ],
+    "failure_policy":  {
+                           "timeout":  "PAUSE_BRANCH_AND_WRITE_REPORT",
+                           "invalid_json":  "PAUSE_BRANCH_AND_REQUEST_REPAIR",
+                           "empty_output":  "PAUSE_BRANCH_AND_REQUEST_HUMAN_REVIEW",
+                           "model_missing":  "PAUSE_LOCAL_AI_BRANCH_AND_CONTINUE_SAFE_BRANCH",
+                           "command_missing":  "MARK_LOCAL_AI_UNAVAILABLE_AND_CONTINUE_SAFE_BRANCH",
+                           "repeated_failure_count_before_protocol":  2
+                       },
+    "validation_policy":  {
+                              "must_be_json_when_schema_required":  true,
+                              "must_preserve_input_paths":  true,
+                              "must_not_invent_files":  true,
+                              "must_include_confidence":  true,
+                              "must_include_human_review_required":  true,
+                              "must_include_safe_to_commit_now":  true,
+                              "unsafe_outputs_are_paused":  true
+                          },
+    "telegram_basic_buttons":  [
+                                   {
+                                       "id":  "BTN_QUEUE_STATUS",
+                                       "label":  "Estado cola",
+                                       "action":  "SHOW_QUEUE_STATUS",
+                                       "kind":  "READONLY"
+                                   },
+                                   {
+                                       "id":  "BTN_PAUSED",
+                                       "label":  "Pausadas",
+                                       "action":  "SHOW_PAUSED_BRANCHES",
+                                       "kind":  "READONLY"
+                                   },
+                                   {
+                                       "id":  "BTN_RETRY_OLLAMA",
+                                       "label":  "Reintentar Ollama",
+                                       "action":  "RETRY_LOCAL_AI_BRANCH",
+                                       "kind":  "LOCAL_AI_WITH_CONFIRMATION"
+                                   },
+                                   {
+                                       "id":  "BTN_RESUME_BRANCH",
+                                       "label":  "Reanudar rama",
+                                       "action":  "RESUME_BRANCH",
+                                       "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION"
+                                   },
+                                   {
+                                       "id":  "BTN_PAUSE_BRANCH",
+                                       "label":  "Pausar rama",
+                                       "action":  "PAUSE_BRANCH",
+                                       "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION"
+                                   },
+                                   {
+                                       "id":  "BTN_REPORT_CHATGPT",
+                                       "label":  "Reporte ChatGPT",
+                                       "action":  "COPY_BRANCH_REPORT_TO_CHATGPT",
+                                       "kind":  "BRIDGE_READONLY"
+                                   },
+                                   {
+                                       "id":  "BTN_NEXT_SAFE",
+                                       "label":  "Siguiente segura",
+                                       "action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                                       "kind":  "QUEUE_CONTROL"
+                                   }
+                               ],
+    "next_microblocks":  [
+                             {
+                                 "id":  "OLLAMA_BRIDGE_DESIGN_002_BRANCH_STATE_SCHEMA",
+                                 "title":  "Definir schema de estado por rama",
+                                 "goal":  "Crear estructura reusable para ramas PENDING, PAUSED, BLOCKED, DONE."
+                             },
+                             {
+                                 "id":  "OLLAMA_BRIDGE_DESIGN_003_TIMEOUT_AND_PAUSE_POLICY",
+                                 "title":  "Definir politica de timeout y pausa",
+                                 "goal":  "Evitar que Ollama bloquee el desarrollo."
+                             },
+                             {
+                                 "id":  "OLLAMA_BRIDGE_DESIGN_004_OUTPUT_VALIDATOR_SCHEMA",
+                                 "title":  "Definir validador de salida Ollama",
+                                 "goal":  "Validar JSON antes de usarlo."
+                             },
+                             {
+                                 "id":  "OLLAMA_BRIDGE_DESIGN_005_TELEGRAM_BUTTON_SEED",
+                                 "title":  "Definir botones Telegram basicos",
+                                 "goal":  "Preparar interfaz movil para pausa, reintento y reporte."
+                             }
+                         ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_002_BRANCH_STATE_SCHEMA"
+}

@@ -1,0 +1,12 @@
+﻿{
+    "type":  "LINE_OF_WORK_AUTONOMY_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:58:12",
+    "decision":  "FIRST_AUTONOMOUS_LINE_AUTHORIZED",
+    "first_line_authorized_id":  null,
+    "pending_lines_count":  null,
+    "authorized_lines_count":  0,
+    "autonomous_flow_queue_count":  0,
+    "human_friction_target":  "authorization_and_review_only",
+    "next_recommended_action":  "HYPER_038_RUN_AUTOMATED_ARTIFACT_FLOW_001"
+}

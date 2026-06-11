@@ -1,0 +1,27 @@
+﻿{
+    "type":  "DASHBOARD_ACTION_SUMMARY_DATA",
+    "version":  1,
+    "published_at":  "2026-06-02T09:50:01.2938631+02:00",
+    "source_summary_json_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\dashboard-executable-functions\\dashboard-action-summary.json",
+    "source_summary_md_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\dashboard-executable-functions\\dashboard-action-summary.md",
+    "active_branch":  "DASHBOARD_EXECUTABLE_FUNCTIONS",
+    "active_branch_state":  "DASHBOARD_EXECUTABLE_FUNCTIONS_SMOKE_OK",
+    "queue_status":  "DASHBOARD_FUNCTIONS_SMOKE_REPAIRED_OK",
+    "queue_next":  "HYPER_OLLAMA_BRIDGE_IMPL_007_DASHBOARD_ACTION_SUMMARY",
+    "dashboard_functions_smoke":  "OK",
+    "git_noise_branch_status":  "PAUSED_NOT_BLOCKING_GLOBAL_QUEUE",
+    "current_focus":  "DASHBOARD_EXECUTABLE_FUNCTIONS",
+    "recommended_now":  "Consolidar funciones readonly del dashboard y preparar integración visual en el centro operativo.",
+    "detected_blockers":  "git_noise_branch=PAUSED_NOT_BLOCKING_GLOBAL_QUEUE",
+    "safe_to_continue":  true,
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_IMPL_009_DASHBOARD_HTML_READONLY_INTEGRATION",
+    "safety":  {
+                   "git_actions":  false,
+                   "push_actions":  false,
+                   "fetch_actions":  false,
+                   "merge_actions":  false,
+                   "telegram_actions":  false,
+                   "ollama_actions":  false,
+                   "external_actions":  false
+               }
+}

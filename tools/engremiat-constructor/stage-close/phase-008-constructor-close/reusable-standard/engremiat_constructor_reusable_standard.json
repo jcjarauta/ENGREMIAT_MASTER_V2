@@ -1,0 +1,38 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_REUSABLE_STANDARD",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "standard_version":  "v1-local-mvp",
+    "core_flow":  [
+                      "need_intake",
+                      "project_factory",
+                      "control_prompter_integration",
+                      "governed_execution",
+                      "solution_builder",
+                      "demand_radar",
+                      "automation_gates",
+                      "multi_project_factory",
+                      "stage_close"
+                  ],
+    "reusable_components":  [
+                                "need_schema",
+                                "project_schema",
+                                "templates",
+                                "local_bootstrap",
+                                "control_observable_index",
+                                "prompter_handoff",
+                                "commercial_package",
+                                "demand_radar",
+                                "permission_matrix",
+                                "multi_project_factory_policy"
+                            ],
+    "safety_defaults":  {
+                            "local_only":  true,
+                            "external_ai_call_allowed":  false,
+                            "external_api_allowed":  false,
+                            "worker_real_allowed":  false,
+                            "remote_repo_creation_allowed":  false,
+                            "customer_contact_allowed":  false
+                        },
+    "updated_at":  "2026-06-05T21:41:04"
+}

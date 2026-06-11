@@ -1,0 +1,43 @@
+﻿{
+    "phase":  "NEW_PC_NORMALIZATION_007_CREATE_MAIN_NODE_FOLDER_STRUCTURE_SAFE",
+    "ok":  true,
+    "decision":  "MAIN_NODE_FOLDER_STRUCTURE_CREATED_REPO_NOT_MIGRATED",
+    "created_at":  "2026-06-10T19:49:00",
+    "role":  "MAIN_NODE",
+    "computer":  "DESKTOP-PVRVE56",
+    "user":  "pc",
+    "main_root":  "C:\\ENGREMIAT",
+    "repo_dir":  "C:\\ENGREMIAT\\ENGREMIAT_MASTER",
+    "repo_copy":  false,
+    "migration_started":  false,
+    "git_write":  false,
+    "push":  false,
+    "docker_deferred":  true,
+    "tools":  {
+                  "git":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                  "node":  "C:\\Program Files\\nodejs\\node.exe",
+                  "npm_cmd":  "C:\\Program Files\\nodejs\\npm.cmd",
+                  "python":  "C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+                  "ollama":  "C:\\Users\\pc\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+                  "nvidia_smi":  "C:\\WINDOWS\\system32\\nvidia-smi.exe",
+                  "docker":  ""
+              },
+    "folders":  {
+                    "data":  "C:\\ENGREMIAT\\data",
+                    "backups":  "C:\\ENGREMIAT\\backups",
+                    "packages":  "C:\\ENGREMIAT\\packages",
+                    "nodes":  "C:\\ENGREMIAT\\nodes",
+                    "logs":  "C:\\ENGREMIAT\\logs",
+                    "temp":  "C:\\ENGREMIAT\\temp",
+                    "incoming":  "C:\\ENGREMIAT\\incoming",
+                    "outgoing":  "C:\\ENGREMIAT\\outgoing"
+                },
+    "policy":  {
+                   "no_repo_copy_until_old_pc_close":  true,
+                   "no_git_push_from_new_pc_yet":  true,
+                   "secrets_not_migrated":  true,
+                   "telegram_not_activated":  true,
+                   "workers_not_activated":  true
+               },
+    "recommended_next":  "prepare_legacy_pc_migration_export_plan_readonly"
+}

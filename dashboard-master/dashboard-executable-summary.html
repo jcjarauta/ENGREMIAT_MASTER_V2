@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENGREMIAT Dashboard Executable Summary</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#111827;color:#e5e7eb;margin:0;padding:24px;}
+.card{background:#1f2937;border:1px solid #374151;border-radius:12px;padding:16px;margin:12px 0;}
+pre{white-space:pre-wrap;word-break:break-word;background:#030712;border:1px solid #374151;border-radius:10px;padding:12px;}
+.ok{color:#86efac}.warn{color:#facc15}
+</style>
+</head>
+<body>
+<h1>ENGREMIAT · Dashboard executable summary</h1>
+<div class="card">
+<h2>Estado</h2>
+<p class='ok'>active_branch=DASHBOARD_EXECUTABLE_FUNCTIONS</p>
+<p>active_branch_state=DASHBOARD_HTML_MINIMAL_FALLBACK_OK</p>
+<p>generated_at=2026-06-02T09:53:12.5668694+02:00</p>
+<p>mode=readonly_minimal_fallback</p>
+</div>
+<div class="card">
+<h2>Fuentes</h2>
+<p>summary_exists=True</p>
+<p>actions_exists=True</p>
+</div>
+<div class="card">
+<h2>Dashboard action summary JSON</h2>
+<pre>{
+    &quot;type&quot;:  &quot;DASHBOARD_ACTION_SUMMARY_DATA&quot;,
+    &quot;version&quot;:  1,
+    &quot;published_at&quot;:  &quot;2026-06-02T09:50:01.2938631+02:00&quot;,
+    &quot;source_summary_json_path&quot;:  &quot;C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\dashboard-executable-functions\\dashboard-action-summary.json&quot;,
+    &quot;source_summary_md_path&quot;:  &quot;C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\dashboard-executable-functions\\dashboard-action-summary.md&quot;,
+    &quot;active_branch&quot;:  &quot;DASHBOARD_EXECUTABLE_FUNCTIONS&quot;,
+    &quot;active_branch_state&quot;:  &quot;DASHBOARD_EXECUTABLE_FUNCTIONS_SMOKE_OK&quot;,
+    &quot;queue_status&quot;:  &quot;DASHBOARD_FUNCTIONS_SMOKE_REPAIRED_OK&quot;,
+    &quot;queue_next&quot;:  &quot;HYPER_OLLAMA_BRIDGE_IMPL_007_DASHBOARD_ACTION_SUMMARY&quot;,
+    &quot;dashboard_functions_smoke&quot;:  &quot;OK&quot;,
+    &quot;git_noise_branch_status&quot;:  &quot;PAUSED_NOT_BLOCKING_GLOBAL_QUEUE&quot;,
+    &quot;current_focus&quot;:  &quot;DASHBOARD_EXECUTABLE_FUNCTIONS&quot;,
+    &quot;recommended_now&quot;:  &quot;Consolidar funciones readonly del dashboard y preparar integraci&#243;n visual en el centro operativo.&quot;,
+    &quot;detected_blockers&quot;:  &quot;git_noise_branch=PAUSED_NOT_BLOCKING_GLOBAL_QUEUE&quot;,
+    &quot;safe_to_continue&quot;:  true,
+    &quot;next_recommended_action&quot;:  &quot;HYPER_OLLAMA_BRIDGE_IMPL_009_DASHBOARD_HTML_READONLY_INTEGRATION&quot;,
+    &quot;safety&quot;:  {
+                   &quot;git_actions&quot;:  false,
+                   &quot;push_actions&quot;:  false,
+                   &quot;fetch_actions&quot;:  false,
+                   &quot;merge_actions&quot;:  false,
+                   &quot;telegram_actions&quot;:  false,
+                   &quot;ollama_actions&quot;:  false,
+                   &quot;external_actions&quot;:  false
+               }
+}
+</pre>
+</div>
+<div class="card">
+<h2>Dashboard executable actions JSON</h2>
+<pre>{
+    &quot;type&quot;:  &quot;DASHBOARD_EXECUTABLE_ACTIONS&quot;,
+    &quot;version&quot;:  1,
+    &quot;updated_at&quot;:  &quot;2026-06-02T09:50:01.3448601+02:00&quot;,
+    &quot;branch&quot;:  &quot;DASHBOARD_EXECUTABLE_FUNCTIONS&quot;,
+    &quot;state&quot;:  &quot;DASHBOARD_ACTION_SUMMARY_PUBLISHED_TO_DATA&quot;,
+    &quot;actions&quot;:  [
+                    {
+                        &quot;id&quot;:  &quot;view_action_summary&quot;,
+                        &quot;label&quot;:  &quot;Ver resumen accionable&quot;,
+                        &quot;mode&quot;:  &quot;readonly&quot;,
+                        &quot;data_source&quot;:  &quot;dashboard-master/data/dashboard-action-summary.json&quot;,
+                        &quot;status&quot;:  &quot;ready&quot;
+                    },
+                    {
+                        &quot;id&quot;:  &quot;view_runtime_queue&quot;,
+                        &quot;label&quot;:  &quot;Ver cola runtime&quot;,
+                        &quot;mode&quot;:  &quot;readonly&quot;,
+                        &quot;data_source&quot;:  &quot;queues/ollama-bridge-runtime-queue.json&quot;,
+                        &quot;status&quot;:  &quot;ready&quot;
+                    },
+                    {
+                        &quot;id&quot;:  &quot;view_branch_state&quot;,
+                        &quot;label&quot;:  &quot;Ver estado de ramas&quot;,
+                        &quot;mode&quot;:  &quot;readonly&quot;,
+                        &quot;data_source&quot;:  &quot;state/ollama-bridge/branch-state-store.json&quot;,
+                        &quot;status&quot;:  &quot;ready&quot;
+                    },
+                    {
+                        &quot;id&quot;:  &quot;continue_next_safe_action&quot;,
+                        &quot;label&quot;:  &quot;Continuar siguiente acci&#243;n segura&quot;,
+                        &quot;mode&quot;:  &quot;proposal_only&quot;,
+                        &quot;next_recommended_action&quot;:  &quot;HYPER_OLLAMA_BRIDGE_IMPL_009_DASHBOARD_HTML_READONLY_INTEGRATION&quot;,
+                        &quot;status&quot;:  &quot;proposal_ready&quot;
+                    }
+                ],
+    &quot;safety&quot;:  {
+                   &quot;git_actions&quot;:  false,
+                   &quot;push_actions&quot;:  false,
+                   &quot;fetch_actions&quot;:  false,
+                   &quot;merge_actions&quot;:  false,
+                   &quot;telegram_actions&quot;:  false,
+                   &quot;ollama_actions&quot;:  false,
+                   &quot;external_actions&quot;:  false
+               }
+}
+</pre>
+</div>
+<div class="card">
+<h2>Seguridad</h2>
+<p>git_actions=False · push_actions=False · fetch_actions=False · merge_actions=False · telegram_actions=False · ollama_actions=False · external_actions=False</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_079_WORKER_STUB_CATALOG_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_079_BATCH_HEALTH_REVIEW_AND_NEXT_AUTOMATION_GATE",
+    "created_at":  "2026-06-05T09:49:19",
+    "catalog_status":  "CREATED_NOT_EXECUTABLE",
+    "worker_stub_count":  7,
+    "worker_stubs":  [
+                         {
+                             "worker_id":  "WORKER_PROMPTER_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Normalizar idea/seed en project packet y micro work packets.",
+                             "allowed_input":  [
+                                                   "seed_json",
+                                                   "repeatable_run_report",
+                                                   "human_gate_context"
+                                               ],
+                             "expected_output":  [
+                                                     "normalized_project_packet_stub",
+                                                     "prompt_contract_stub",
+                                                     "review_gate_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_CONTROL_GATE_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Evaluar readiness, safety y gates antes de cualquier promoción.",
+                             "allowed_input":  [
+                                                   "run_metrics",
+                                                   "batch_health_gate",
+                                                   "safety_flags"
+                                               ],
+                             "expected_output":  [
+                                                     "control_gate_stub",
+                                                     "risk_review_stub",
+                                                     "next_decision_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_MARKET_PREVENTA_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Diseñar hipótesis de preventa, oferta mínima y señales de validación.",
+                             "allowed_input":  [
+                                                   "project_packet",
+                                                   "target_user",
+                                                   "signals_needed"
+                                               ],
+                             "expected_output":  [
+                                                     "preventa_offer_stub",
+                                                     "market_signals_stub",
+                                                     "validation_questions_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_FINANCING_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Clasificar posibles rutas de financiación sin consultar fuentes externas.",
+                             "allowed_input":  [
+                                                   "project_packet",
+                                                   "social_value",
+                                                   "constraints"
+                                               ],
+                             "expected_output":  [
+                                                     "financing_routes_stub",
+                                                     "fit_score_stub",
+                                                     "evidence_needed_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_OPENDATA_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Definir señales OpenData necesarias sin ejecutar búsquedas ni APIs.",
+                             "allowed_input":  [
+                                                   "territory_context",
+                                                   "project_packet",
+                                                   "signals_needed"
+                                               ],
+                             "expected_output":  [
+                                                     "opendata_signal_contract_stub",
+                                                     "source_categories_stub",
+                                                     "future_query_plan_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_VALIDATOR_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Validar consistencia de outputs, flags de seguridad y contratos.",
+                             "allowed_input":  [
+                                                   "all_stub_outputs",
+                                                   "safety_flags",
+                                                   "io_contracts"
+                                               ],
+                             "expected_output":  [
+                                                     "validation_report_stub",
+                                                     "failed_checks_stub",
+                                                     "promotion_recommendation_stub"
+                                                 ]
+                         },
+                         {
+                             "worker_id":  "WORKER_DASHBOARD_STUB",
+                             "status":  "STUB_NOT_EXECUTABLE",
+                             "purpose":  "Preparar resumen visual local sin navegador real ni publicación.",
+                             "allowed_input":  [
+                                                   "batch_metrics",
+                                                   "worker_stub_outputs",
+                                                   "human_gate"
+                                               ],
+                             "expected_output":  [
+                                                     "dashboard_summary_stub",
+                                                     "html_local_plan_stub",
+                                                     "status_cards_stub"
+                                                 ]
+                         }
+                     ],
+    "restrictions":  [
+                         "No ejecutar workers reales.",
+                         "No llamar IA real.",
+                         "No llamar APIs externas.",
+                         "No operador.",
+                         "No navegador/CDP/clipboard.",
+                         "Solo contratos e interfaces locales."
+                     ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "worker_stubs_gate_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_080_APPLY_WORKER_STUBS_GATE_DECISION_NO_REAL_WORKERS"
+}

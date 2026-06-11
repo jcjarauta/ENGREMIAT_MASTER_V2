@@ -1,0 +1,13 @@
+﻿{
+    "type":  "GLOBAL_CONTROL_PANEL_PRE_TELEGRAM_GATE",
+    "version":  4,
+    "generated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "status":  "PRE_TELEGRAM_GATE_OK",
+    "ready_for_telegram_seed":  true,
+    "panel_operational":  true,
+    "json_ok":  true,
+    "human_filter_enabled":  true,
+    "browser_execution_allowed":  false,
+    "telegram_actions_executed":  false,
+    "next_recommended_action":  "HYPER_006_TELEGRAM_CONTROL_PREP_001"
+}

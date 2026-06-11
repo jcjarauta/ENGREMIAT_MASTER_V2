@@ -1,0 +1,94 @@
+﻿{
+    "type":  "GLOBAL_DEVELOPMENT_HIERARCHY",
+    "version":  4,
+    "updated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "levels":  [
+                   "DESARROLLO_GLOBAL",
+                   "HIPERMACRO",
+                   "MACRO",
+                   "OBJETIVO",
+                   "CHECKPOINT",
+                   "TAREA",
+                   "BLOQUE_EJECUTABLE",
+                   "EVIDENCIA"
+               ],
+    "nodes":  [
+                  {
+                      "id":  "DESARROLLO_GLOBAL-001",
+                      "parent":  "",
+                      "level":  "DESARROLLO_GLOBAL",
+                      "title":  "Crear ecosistema ENGREMIAT de desarrollo asistido",
+                      "status":  "active"
+                  },
+                  {
+                      "id":  "HIPER-008",
+                      "parent":  "DESARROLLO_GLOBAL-001",
+                      "level":  "HIPERMACRO",
+                      "title":  "Dashboard/progreso",
+                      "status":  "active"
+                  },
+                  {
+                      "id":  "H8-MACRO-001",
+                      "parent":  "HIPER-008",
+                      "level":  "MACRO",
+                      "title":  "Panel de control operativo",
+                      "status":  "active"
+                  },
+                  {
+                      "id":  "H8-OBJ-004",
+                      "parent":  "H8-MACRO-001",
+                      "level":  "OBJETIVO",
+                      "title":  "Panel operativo pre-Telegram",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "H8-CP-001",
+                      "parent":  "H8-OBJ-004",
+                      "level":  "CHECKPOINT",
+                      "title":  "Gate pre-Telegram validado",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "H8-TASK-001",
+                      "parent":  "H8-CP-001",
+                      "level":  "TAREA",
+                      "title":  "Reparar y validar panel",
+                      "status":  "done"
+                  },
+                  {
+                      "id":  "H8-BLOCK-001",
+                      "parent":  "H8-TASK-001",
+                      "level":  "BLOQUE_EJECUTABLE",
+                      "title":  "HYPER_008_PANEL_PRE_TELEGRAM_GATE_REPAIR_003_DEPTH_SAFE",
+                      "status":  "done"
+                  },
+                  {
+                      "id":  "H8-EVIDENCE-001",
+                      "parent":  "H8-BLOCK-001",
+                      "level":  "EVIDENCIA",
+                      "title":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\global-control-panel\\panel-pre-telegram-gate-repair-003-depth-safe-report.json",
+                      "status":  "done"
+                  },
+                  {
+                      "id":  "HIPER-006",
+                      "parent":  "DESARROLLO_GLOBAL-001",
+                      "level":  "HIPERMACRO",
+                      "title":  "Telegram control",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "H6-MACRO-001",
+                      "parent":  "HIPER-006",
+                      "level":  "MACRO",
+                      "title":  "Preparación proposal-only",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "H6-OBJ-001",
+                      "parent":  "H6-MACRO-001",
+                      "level":  "OBJETIVO",
+                      "title":  "Definir primera integración Telegram sin envío real",
+                      "status":  "ready"
+                  }
+              ]
+}

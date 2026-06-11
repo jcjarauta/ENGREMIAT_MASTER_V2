@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_TO_CONTROL_FINAL_HANDOFF",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "stage_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_stage_status.json",
+    "standard_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\reusable-standard\\engremiat_constructor_reusable_standard.json",
+    "contracts_index_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\index\\constructor_contracts_index.json",
+    "recommended_control_action":  "OBSERVE_CONSTRUCTOR_STAGE_CLOSED_AND_WAIT_FOR_HUMAN_NEXT_HYPER",
+    "real_control_write_allowed":  false,
+    "updated_at":  "2026-06-05T21:41:04"
+}

@@ -1,0 +1,53 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "ENGREMIAT Demand Radar Demand",
+    "type":  "object",
+    "required":  [
+                     "demand_id",
+                     "source_type",
+                     "summary",
+                     "sector",
+                     "territory",
+                     "urgency",
+                     "funding_potential",
+                     "commercial_potential",
+                     "reuse_potential",
+                     "human_load",
+                     "status"
+                 ],
+    "properties":  {
+                       "demand_id":  {
+                                         "type":  "string"
+                                     },
+                       "source_type":  {
+                                           "type":  "string"
+                                       },
+                       "summary":  {
+                                       "type":  "string"
+                                   },
+                       "sector":  {
+                                      "type":  "string"
+                                  },
+                       "territory":  {
+                                         "type":  "string"
+                                     },
+                       "urgency":  {
+                                       "type":  "integer"
+                                   },
+                       "funding_potential":  {
+                                                 "type":  "integer"
+                                             },
+                       "commercial_potential":  {
+                                                    "type":  "integer"
+                                                },
+                       "reuse_potential":  {
+                                               "type":  "integer"
+                                           },
+                       "human_load":  {
+                                          "type":  "integer"
+                                      },
+                       "status":  {
+                                      "type":  "string"
+                                  }
+                   }
+}

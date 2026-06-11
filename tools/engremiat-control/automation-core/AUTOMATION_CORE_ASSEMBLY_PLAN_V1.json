@@ -1,0 +1,31 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_ASSEMBLY_PLAN_V1",
+    "ok":  true,
+    "phase":  "RETURN-TO-ENGREMIAT-CONTROL-AUTOMATION-CORE-ASSEMBLY",
+    "decision":  "AUTOMATION_CORE_ASSEMBLY_PLAN_READY",
+    "objective":  "Montar el core basico de automatizacion local gobernada reutilizando Health Sanitation y Official Bridge V1.",
+    "prerequisites_validated":  [
+                                    "health_can_block_growth_when_noise_is_high",
+                                    "official_bridge_can_roundtrip_repo_snapshot_to_sheet_dashboard",
+                                    "manual_b2_import_is_current_safe_bridge",
+                                    "webapp_exec_pattern_is_blocked"
+                                ],
+    "proposed_next_steps":  [
+                                "CREATE_AUTOMATION_CORE_BASELINE_REGISTRY",
+                                "CREATE_AUTOMATION_CORE_INPUT_CONTRACT",
+                                "CREATE_AUTOMATION_CORE_OUTPUT_CONTRACT",
+                                "CREATE_AUTOMATION_CORE_SAFE_QUEUE_STUB",
+                                "CREATE_AUTOMATION_CORE_DASHBOARD_STATUS_EXPORT",
+                                "CREATE_AUTOMATION_CORE_HEALTH_GATE_BINDING"
+                            ],
+    "do_not_touch_yet":  [
+                             "tools/engremiat-control/automation-tests/phase-238g-240g-repair-create-google-sheets-test-sheet/",
+                             "tools/engremiat-control/automation-tests/phase-244g-246g-repair-appsheet-bridge-create-test-tab/",
+                             "tools/engremiat-control/automation-tests/phase-247g-249g-repair-apps-script-bridge-contract/",
+                             "tools/engremiat-control/automation-tests/phase-250g-252g-direct-test-apps-script-webapp-post-auth-repair/",
+                             "tools/engremiat-control/bridge-locator/",
+                             "tools/engremiat-control/local-context-scan/",
+                             "tools/engremiat-control/repo-bridge-snapshot-locator/"
+                         ],
+    "next":  "CREATE_AUTOMATION_CORE_ASSEMBLY_BASELINE_V1"
+}

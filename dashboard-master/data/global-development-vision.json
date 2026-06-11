@@ -1,0 +1,327 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 07:55:50",
+    "purpose":  "Vision global amable del desarrollo del Master, con timeline, progreso, checkpoints de contexto y reglas de pausa humana",
+    "dashboard_design_principles":  [
+                                        "Primero entender, despues automatizar",
+                                        "Cada bloqueo debe indicar si pausa el desarrollo o solo esa rama",
+                                        "Cada hyper debe tener objetivo, checkpoints, dependencia, bloqueo y siguiente accion",
+                                        "El humano debe poder ver el conjunto sin leer logs",
+                                        "El Master debe leer los mismos datos que ve el humano"
+                                    ],
+    "global_progress":  {
+                            "percent":  22,
+                            "label":  "Base operativa construida; automatizacion pendiente",
+                            "completed":  [
+                                              "Operator core",
+                                              "Dashboard operative vision",
+                                              "Roadmap JSON",
+                                              "Next Action Panel",
+                                              "Pending hypers global view"
+                                          ],
+                            "pending":  [
+                                            "Git noise classification",
+                                            "Executable functions",
+                                            "Local AI router direct",
+                                            "Queue automation",
+                                            "Telegram bot",
+                                            "Automatic route selection"
+                                        ]
+                        },
+    "attention_policy":  {
+                             "default_rule":  "Si un bloqueo afecta seguridad, Git, ejecucion externa o aprobacion humana, pausar esa rama y continuar con otra rama no bloqueada",
+                             "pause_all_when":  [
+                                                    "El operador base falla",
+                                                    "El roadmap no se puede leer",
+                                                    "El dashboard pierde next-action",
+                                                    "Hay riesgo de git remoto no autorizado",
+                                                    "Una accion externa no tiene autorizacion"
+                                                ],
+                             "pause_branch_when":  [
+                                                       "Un hyper concreto queda bloqueado por timeout",
+                                                       "Falta clasificacion Git de esa rama",
+                                                       "Falta aprobacion humana de un gate especifico",
+                                                       "Un script falla dos veces por el mismo patron"
+                                                   ],
+                             "continue_elsewhere_when":  [
+                                                             "Existe otro hyper pendiente readonly",
+                                                             "El bloqueo es local a IA/Ollama",
+                                                             "El bloqueo es solo de una funcion ejecutable futura",
+                                                             "El dashboard puede seguir ampliandose sin ejecutar acciones externas"
+                                                         ]
+                         },
+    "timeline":  [
+                     {
+                         "id":  "T01_OPERATOR_CORE",
+                         "title":  "Operador base estable",
+                         "status":  "OK",
+                         "progress_percent":  100,
+                         "summary":  "Ejecuta bloques PowerShell y devuelve reportes; commit d4c8121 y cierre posterior OK."
+                     },
+                     {
+                         "id":  "T02_DASHBOARD_OPERATIVE_CENTER",
+                         "title":  "Centro operativo dashboard",
+                         "status":  "OK",
+                         "progress_percent":  100,
+                         "summary":  "Dashboard, roadmap, blockers, next action y contrato operativo V1 creados."
+                     },
+                     {
+                         "id":  "T03_GLOBAL_DEVELOPMENT_VISION",
+                         "title":  "Vision global del desarrollo",
+                         "status":  "ACTIVE",
+                         "progress_percent":  70,
+                         "summary":  "Añadiendo timeline, barra de progreso, checkpoints de contexto y reglas de pausa humana."
+                     },
+                     {
+                         "id":  "T04_GIT_NOISE_CLASSIFICATION",
+                         "title":  "Clasificacion Git por hyper",
+                         "status":  "PENDING",
+                         "progress_percent":  0,
+                         "summary":  "Pendiente ordenar untracked para evitar commits mezclados."
+                     },
+                     {
+                         "id":  "T05_EXECUTABLE_FUNCTIONS",
+                         "title":  "Funciones ejecutables del centro operativo",
+                         "status":  "PENDING",
+                         "progress_percent":  0,
+                         "summary":  "Definir acciones seguras desde dashboard y futuro bot de Telegram."
+                     },
+                     {
+                         "id":  "T06_LOCAL_AI_ROUTER",
+                         "title":  "IA local / Ollama por router directo",
+                         "status":  "BLOCKED",
+                         "progress_percent":  20,
+                         "summary":  "Hook con timeout; se debe probar router directo y usar protocolos de reparacion."
+                     },
+                     {
+                         "id":  "T07_QUEUE_AUTOMATION",
+                         "title":  "Cola operativa del Master",
+                         "status":  "PENDING",
+                         "progress_percent":  0,
+                         "summary":  "Convertir roadmap y next-action en cola ejecutable segura."
+                     },
+                     {
+                         "id":  "T08_TELEGRAM_BOT",
+                         "title":  "Bot Telegram operativo",
+                         "status":  "FUTURE",
+                         "progress_percent":  0,
+                         "summary":  "Diseñar el bot desde la misma jerarquia del dashboard."
+                     },
+                     {
+                         "id":  "T09_SUPERVISED_AUTOMATION",
+                         "title":  "Loop de automatizacion supervisada",
+                         "status":  "FUTURE",
+                         "progress_percent":  0,
+                         "summary":  "Automatizar con gates humanos, pausa ordenada y reparacion asistida."
+                     }
+                 ],
+    "hierarchy_concepts":  [
+                               {
+                                   "id":  "CONCEPT_MASTER_OPERATOR",
+                                   "title":  "Master Operator",
+                                   "status":  "OK",
+                                   "progress_percent":  100,
+                                   "objective":  "Ejecutar bloques, capturar stdout/stderr, generar run y devolver reporte controlado.",
+                                   "pause_rule":  "Si falla el operador base, se pausa todo el desarrollo automatico.",
+                                   "next_action":  "mantener como dependencia estable",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "OP_RUNNER",
+                                                           "title":  "Runner operativo",
+                                                           "status":  "OK",
+                                                           "purpose":  "Ejecutar scripts de forma controlada",
+                                                           "human_attention_trigger":  "Solo si falla ejecucion base"
+                                                       },
+                                                       {
+                                                           "id":  "OP_REPORTS",
+                                                           "title":  "Reportes estructurados",
+                                                           "status":  "OK",
+                                                           "purpose":  "Permitir lectura por humano y Master",
+                                                           "human_attention_trigger":  "Si no aparece ENGREMIAT_REPORT_BEGIN/END"
+                                                       },
+                                                       {
+                                                           "id":  "OP_OUTBOX",
+                                                           "title":  "Outbox persistente",
+                                                           "status":  "OK",
+                                                           "purpose":  "Recuperar ultimo estado",
+                                                           "human_attention_trigger":  "Si desaparece o queda vacio en cierres criticos"
+                                                       }
+                                                   ]
+                               },
+                               {
+                                   "id":  "CONCEPT_DASHBOARD_CENTER",
+                                   "title":  "Dashboard centro operativo",
+                                   "status":  "ACTIVE",
+                                   "progress_percent":  80,
+                                   "objective":  "Dar vision humana y estructura de decision para Master y futuro bot de Telegram.",
+                                   "pause_rule":  "Si falta next-action o roadmap, pausar automatizacion pero seguir con reparacion dashboard.",
+                                   "next_action":  "mejorar visual y clasificar cola pendiente",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "DASH_ROADMAP",
+                                                           "title":  "Roadmap jerarquico",
+                                                           "status":  "OK",
+                                                           "purpose":  "Fuente principal de verdad",
+                                                           "human_attention_trigger":  "Si la jerarquia no refleja lo que se esta desarrollando"
+                                                       },
+                                                       {
+                                                           "id":  "DASH_BLOCKERS",
+                                                           "title":  "Bloqueos y dependencias",
+                                                           "status":  "OK",
+                                                           "purpose":  "Saber que bloquea y que desbloquea",
+                                                           "human_attention_trigger":  "Si un bloqueo no indica si pausa todo o solo rama"
+                                                       },
+                                                       {
+                                                           "id":  "DASH_NEXT_ACTION",
+                                                           "title":  "Next Action Panel",
+                                                           "status":  "OK",
+                                                           "purpose":  "Indicar siguiente paso calculado",
+                                                           "human_attention_trigger":  "Si recomienda una accion incoherente"
+                                                       },
+                                                       {
+                                                           "id":  "DASH_PENDING_HYPERS",
+                                                           "title":  "Hypers pendientes",
+                                                           "status":  "OK",
+                                                           "purpose":  "Ver cola global pendiente",
+                                                           "human_attention_trigger":  "Si faltan hypers o prioridades"
+                                                       },
+                                                       {
+                                                           "id":  "DASH_TIMELINE",
+                                                           "title":  "Timeline y progreso",
+                                                           "status":  "ACTIVE",
+                                                           "purpose":  "Ubicar el desarrollo en el tiempo logico",
+                                                           "human_attention_trigger":  "Si no se entiende donde estamos"
+                                                       }
+                                                   ]
+                               },
+                               {
+                                   "id":  "CONCEPT_GIT_AND_CLOSURE",
+                                   "title":  "Git, limpieza y cierre",
+                                   "status":  "PENDING",
+                                   "progress_percent":  25,
+                                   "objective":  "Clasificar cambios por hyper y cerrar etapas con commits limpios.",
+                                   "pause_rule":  "Si hay ruido no clasificado, pausar commits de esa rama y continuar con diagnosticos readonly.",
+                                   "next_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "GIT_SCAN",
+                                                           "title":  "Escaneo untracked",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Ver que existe sin tocarlo",
+                                                           "human_attention_trigger":  "Si aparecen carpetas desconocidas"
+                                                       },
+                                                       {
+                                                           "id":  "GIT_MAP",
+                                                           "title":  "Mapa archivo-hyper",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Asignar archivos a origen",
+                                                           "human_attention_trigger":  "Si hay archivos ambiguos"
+                                                       },
+                                                       {
+                                                           "id":  "GIT_COMMIT_PLAN",
+                                                           "title":  "Plan de commit limpio",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Cerrar sin mezclar hypers",
+                                                           "human_attention_trigger":  "Antes de commit de grupos grandes"
+                                                       }
+                                                   ]
+                               },
+                               {
+                                   "id":  "CONCEPT_LOCAL_AI",
+                                   "title":  "IA local / Ollama",
+                                   "status":  "BLOCKED",
+                                   "progress_percent":  20,
+                                   "objective":  "Ayudar a reparar errores y revisar scripts sin repetir patrones fallidos.",
+                                   "pause_rule":  "Si Ollama o hook falla, pausar solo IA local y continuar con dashboard/cola readonly.",
+                                   "next_action":  "diagnose_router_direct_for_local_ai",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "AI_PROTOCOLS",
+                                                           "title":  "Protocolos anti-repeticion",
+                                                           "status":  "PARTIAL",
+                                                           "purpose":  "Evitar errores como alias H/Get-History",
+                                                           "human_attention_trigger":  "Si se repite un error ya protocolizado"
+                                                       },
+                                                       {
+                                                           "id":  "AI_ROUTER_DIRECT",
+                                                           "title":  "Router directo",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Evitar timeout del hook largo",
+                                                           "human_attention_trigger":  "Si requiere permisos o ejecucion externa"
+                                                       },
+                                                       {
+                                                           "id":  "AI_REPAIR_OUTPUT",
+                                                           "title":  "Salida estructurada IA",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Recibir propuesta revisable",
+                                                           "human_attention_trigger":  "Si propone cambios no seguros"
+                                                       }
+                                                   ]
+                               },
+                               {
+                                   "id":  "CONCEPT_QUEUE_AND_AUTOMATION",
+                                   "title":  "Cola y automatizacion segura",
+                                   "status":  "PENDING",
+                                   "progress_percent":  0,
+                                   "objective":  "Convertir la vision global en cola de ejecucion controlada con gates.",
+                                   "pause_rule":  "Si una accion requiere humano, se pausa esa accion y el Master busca otra rama segura.",
+                                   "next_action":  "prepare_final_gates_readonly",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "QUEUE_SCHEMA",
+                                                           "title":  "Schema de cola",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Estructurar tareas ejecutables",
+                                                           "human_attention_trigger":  "Si una tarea no tiene gate definido"
+                                                       },
+                                                       {
+                                                           "id":  "QUEUE_SELECTOR",
+                                                           "title":  "Selector de siguiente accion",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "Elegir hyper/checkpoint siguiente",
+                                                           "human_attention_trigger":  "Si hay conflicto de prioridad"
+                                                       },
+                                                       {
+                                                           "id":  "QUEUE_PAUSE_RESUME",
+                                                           "title":  "Pausa y reanudacion ordenada",
+                                                           "status":  "PENDING",
+                                                           "purpose":  "No colapsar ante bloqueos",
+                                                           "human_attention_trigger":  "Si hay bloqueo de seguridad"
+                                                       }
+                                                   ]
+                               },
+                               {
+                                   "id":  "CONCEPT_TELEGRAM_BOT",
+                                   "title":  "Bot Telegram operativo",
+                                   "status":  "FUTURE",
+                                   "progress_percent":  0,
+                                   "objective":  "Llevar la misma vision y decisiones del dashboard al movil.",
+                                   "pause_rule":  "No empezar ejecucion desde Telegram hasta definir funciones, gates y cola.",
+                                   "next_action":  "design_telegram_bot_operational_map",
+                                   "checkpoints":  [
+                                                       {
+                                                           "id":  "BOT_MAP",
+                                                           "title":  "Mapa de menus",
+                                                           "status":  "FUTURE",
+                                                           "purpose":  "Mostrar jerarquia del Master",
+                                                           "human_attention_trigger":  "Antes de activar acciones"
+                                                       },
+                                                       {
+                                                           "id":  "BOT_GATES",
+                                                           "title":  "Botones de aprobacion",
+                                                           "status":  "FUTURE",
+                                                           "purpose":  "Validar gates humanos",
+                                                           "human_attention_trigger":  "Siempre antes de ejecutar"
+                                                       },
+                                                       {
+                                                           "id":  "BOT_ACTIONS",
+                                                           "title":  "Acciones seguras",
+                                                           "status":  "FUTURE",
+                                                           "purpose":  "Ejecutar solo funciones permitidas",
+                                                           "human_attention_trigger":  "Si la accion no es readonly"
+                                                       }
+                                                   ]
+                               }
+                           ],
+    "next_recommended_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY"
+}

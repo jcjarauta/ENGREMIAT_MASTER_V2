@@ -1,0 +1,14 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_CONTRACTS_INDEX",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "contracts":  [
+                      "schemas/need.schema.json",
+                      "schemas/project.schema.json",
+                      "schemas/control-consumer.schema.json",
+                      "schemas/prompter-execution-draft.schema.json",
+                      "schemas/demand-radar-demand.schema.json",
+                      "schemas/demand-radar-matching.schema.json"
+                  ],
+    "updated_at":  "2026-06-05T21:41:04"
+}

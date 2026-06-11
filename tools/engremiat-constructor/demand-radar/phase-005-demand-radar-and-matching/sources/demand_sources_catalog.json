@@ -1,0 +1,47 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_SOURCES_CATALOG",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "sources_count":  6,
+    "sources":  [
+                    {
+                        "source_type":  "grant",
+                        "label":  "Subvencion",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    },
+                    {
+                        "source_type":  "pre_sale",
+                        "label":  "Preventa",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    },
+                    {
+                        "source_type":  "volunteering",
+                        "label":  "Voluntariado",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    },
+                    {
+                        "source_type":  "partner",
+                        "label":  "Partner",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    },
+                    {
+                        "source_type":  "event",
+                        "label":  "Evento",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    },
+                    {
+                        "source_type":  "territorial_need",
+                        "label":  "Necesidad territorial",
+                        "allowed_now":  true,
+                        "real_access":  false
+                    }
+                ],
+    "mode":  "LOCAL_SIMULATED_SOURCES_ONLY",
+    "real_external_access_allowed":  false,
+    "updated_at":  "2026-06-05T21:28:47"
+}

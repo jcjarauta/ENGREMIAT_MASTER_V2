@@ -1,0 +1,15 @@
+﻿{
+    "type":  "MASTER_OLLAMA_008_REVIEW_REAL_REPAIR_PROPOSAL_NO_APPLY",
+    "ok":  true,
+    "phase":  "MASTER-OLLAMA-008",
+    "readonly":  true,
+    "repair_proposal_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-real-repair-proposal-accepted-readonly.json",
+    "repair_applied":  false,
+    "patch_allowed":  false,
+    "human_review_required":  true,
+    "repair_proposal_review_notes":  "Revisar la propuesta real capturada antes de aplicar cualquier parche.",
+    "dashboard_html":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\index.html",
+    "summary_txt":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\master-ollama\\master-ollama-008-review-readonly-20260601-224917\\summary.txt",
+    "result_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\master-ollama\\master-ollama-008-review-readonly-20260601-224917\\result.json",
+    "next_recommended_action":  "MASTER_OLLAMA_009_APPLY_REAL_REPAIR_IF_AUTHORIZED"
+}

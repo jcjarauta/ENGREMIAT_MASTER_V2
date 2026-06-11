@@ -1,0 +1,14 @@
+﻿{
+    "type":  "CONTROLLED_WORKER_PACKAGE_EXECUTION_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T14:20:29",
+    "decision":  "CONTROLLED_WORKER_PACKAGE_READY",
+    "task_id":  "TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001",
+    "checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "line_of_work_id":  "LOW-20260602-001",
+    "worker_package_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\worker-packages\\ollama\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.worker-package.json",
+    "worker_prompt_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\prompts\\ollama\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.automated-worker.prompt.md",
+    "proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "evidence_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\evidence\\worker-bridge\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.worker-bridge-evidence.json",
+    "next_recommended_action":  "HYPER_044_OPERATOR_REVIEW_PROPOSAL_001"
+}

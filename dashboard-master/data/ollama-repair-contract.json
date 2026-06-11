@@ -1,0 +1,68 @@
+﻿{
+    "updated_at":  "2026-06-01T22:04:53",
+    "type":  "OLLAMA_REPAIR_CONTRACT",
+    "version":  "1.0",
+    "mode":  "READONLY_CONTRACT_ONLY",
+    "ollama_real_execution":  false,
+    "automation_real_execution":  false,
+    "purpose":  "Convertir errores brutos del operador en diagnostico limpio y propuesta de reparacion revisable.",
+    "input_contract":  {
+                           "required_fields":  [
+                                                   "operator_latest_run_path",
+                                                   "stdout_text",
+                                                   "stderr_text",
+                                                   "last_report_text",
+                                                   "failed_block_name",
+                                                   "previous_next_recommended_action",
+                                                   "safety_gates"
+                                               ],
+                           "optional_fields":  [
+                                                   "candidate_script_path",
+                                                   "dashboard_state_json",
+                                                   "work_queue_json",
+                                                   "human_note"
+                                               ]
+                       },
+    "prompt_contract":  {
+                            "system_role":  "Eres reparador tecnico local de ENGREMIAT. No ejecutas nada. Solo devuelves diagnostico y propuesta.",
+                            "rules":  [
+                                          "No inventar resultados.",
+                                          "No proponer push/fetch/merge/navegador/AHK/clipboard/Enter.",
+                                          "No proponer procesos hijos sin watchdog.",
+                                          "Preferir PowerShell simple, sin here-strings anidados.",
+                                          "Si falta evidencia, devolver NEED_MORE_EVIDENCE.",
+                                          "Toda salida debe ser JSON parseable."
+                                      ]
+                        },
+    "output_contract":  {
+                            "format":  "JSON",
+                            "required_fields":  [
+                                                    "ok",
+                                                    "decision",
+                                                    "probable_cause",
+                                                    "risk",
+                                                    "repair_strategy",
+                                                    "proposed_next_block_name",
+                                                    "proposed_patch_allowed",
+                                                    "human_review_required",
+                                                    "notes"
+                                                ],
+                            "allowed_decisions":  [
+                                                      "REPAIR_PROPOSAL_READY",
+                                                      "NEED_MORE_EVIDENCE",
+                                                      "NO_GO_SAFETY_GATE",
+                                                      "UNSUPPORTED_ERROR"
+                                                  ],
+                            "proposed_patch_allowed_default":  false,
+                            "human_review_required_default":  true
+                        },
+    "safety":  {
+                   "readonly":  true,
+                   "write_files_allowed":  false,
+                   "execute_repairs_allowed":  false,
+                   "external_actions_allowed":  false,
+                   "git_actions_allowed":  false,
+                   "child_process_allowed":  false
+               },
+    "next_recommended_action":  "MASTER_LOCAL_AI_REPAIR_005_CREATE_OLLAMA_PROMPT_TEMPLATE_READONLY"
+}

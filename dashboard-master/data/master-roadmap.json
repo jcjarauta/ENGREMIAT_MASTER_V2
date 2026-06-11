@@ -1,0 +1,135 @@
+﻿{
+    "timestamp":  "2026-06-02 07:06:17",
+    "project":  "ENGREMIAT_MASTER",
+    "global_objective":  "Sistema de desarrollo asistido con visión humana y control Master Operator",
+    "hypers":  [
+                   {
+                       "id":  "HYPER_OPERATOR_CORE",
+                       "next_action":  "closed",
+                       "blockers":  [
+
+                                    ],
+                       "checkpoints":  [
+                                           {
+                                               "status":  "OK",
+                                               "evidence":  "START_OPERATOR_ONCE_REPAIRED_AND_SELF_TESTED",
+                                               "id":  "OPERATOR_REPAIR_010B"
+                                           }
+                                       ],
+                       "objective":  "Ejecutar bloques PowerShell de forma controlada y devolver reportes",
+                       "title":  "Operador base",
+                       "status":  "OK"
+                   },
+                   {
+                       "id":  "HYPER_DASHBOARD_OPERATIVE_VISION",
+                       "blockers":  [
+
+                                    ],
+                       "checkpoints":  [
+                                           {
+                                               "blockers":  [
+
+                                                            ],
+                                               "id":  "MODEL_JSON",
+                                               "status":  "OK",
+                                               "evidence":  "master-roadmap.json generated and validated",
+                                               "next_action":  "done"
+                                           },
+                                           {
+                                               "blockers":  [
+
+                                                            ],
+                                               "id":  "RENDER_HTML",
+                                               "status":  "OK",
+                                               "evidence":  "dashboard-master/index.html generated and validated",
+                                               "next_action":  "done"
+                                           },
+                                           {
+                                               "blockers":  [
+
+                                                            ],
+                                               "id":  "BLOCKERS_PANEL",
+                                               "status":  "OK",
+                                               "evidence":  "blockers-and-dependencies.json generated and validated",
+                                               "next_action":  "done"
+                                           },
+                                           {
+                                               "blockers":  [
+
+                                                            ],
+                                               "id":  "NEXT_ACTION_PANEL",
+                                               "status":  "OK",
+                                               "evidence":  "next-action.json generated and validated",
+                                               "next_action":  "done"
+                                           }
+                                       ],
+                       "objective":  "Generar visión jerárquica y lista de hypers, objetivos y checkpoints",
+                       "title":  "Dashboard operativo",
+                       "dependencies":  [
+                                            "DEP_OPERATOR_CORE",
+                                            "DEP_MASTER_ROADMAP",
+                                            "DEP_DASHBOARD_HTML"
+                                        ],
+                       "human_gates":  [
+                                           "GATE_BEFORE_AUTOMATION"
+                                       ],
+                       "status":  "OK",
+                       "next_action":  "human_review_dashboard_and_define_next_hyper",
+                       "closure_evidence":  "operative-center-contract.json + next-action.json + dashboard HTML generated"
+                   },
+                   {
+                       "id":  "HYPER_LOCAL_AI",
+                       "next_action":  "diagnose_router_direct",
+                       "blockers":  [
+                                        "HOOK_LOCAL_AI_TIMEOUT"
+                                    ],
+                       "checkpoints":  [
+
+                                       ],
+                       "objective":  "Proveer soporte de IA local para decisiones de hypers",
+                       "title":  "Local AI / Internal AI",
+                       "status":  "BLOCKED",
+                       "dependencies":  [
+                                            "DEP_LOCAL_AI_REPAIR_PROTOCOL"
+                                        ],
+                       "human_gates":  [
+
+                                       ]
+                   },
+                   {
+                       "id":  "HYPER_QUEUE_AUTOMATION",
+                       "next_action":  "prepare_final_gates_readonly",
+                       "blockers":  [
+
+                                    ],
+                       "checkpoints":  [
+
+                                       ],
+                       "objective":  "Gestionar colas y gates de hypers",
+                       "title":  "Queue Automation",
+                       "status":  "PENDING",
+                       "dependencies":  [
+                                            "DEP_OPERATOR_CORE",
+                                            "DEP_MASTER_ROADMAP"
+                                        ],
+                       "human_gates":  [
+                                           "GATE_BEFORE_AUTOMATION"
+                                       ]
+                   }
+               ],
+    "operative_blockers_file":  "dashboard-master\\data\\blockers-and-dependencies.json",
+    "master_decision_mode":  "ROADMAP_DRIVEN",
+    "next_action_file":  "dashboard-master\\data\\next-action.json",
+    "operative_center_contract_file":  "dashboard-master\\data\\operative-center-contract.json",
+    "dashboard_role":  "MASTER_OPERATIVE_CENTER_AND_TELEGRAM_BOT_DECISION_SEED",
+    "pending_hypers_global_file":  "dashboard-master\\data\\pending-hypers-global.json",
+    "pending_hypers_next_recommended_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY",
+    "global_development_vision_file":  "dashboard-master\\data\\global-development-vision.json",
+    "development_iteration_file":  "dashboard-master\\data\\development-iteration-model.json",
+    "current_iteration":  "BASIC_OPERATIVE_VISION",
+    "automation_readiness":  "NOT_READY_YET",
+    "operative_center_requirements_file":  "dashboard-master\\data\\operative-center-requirements.json",
+    "current_stage":  "dashboard_visual_layout_ordered",
+    "dashboard_layout":  "ORDERED_OPERATIVE_CENTER_V1",
+    "next_recommended_action":  "HYPER_DASHBOARD_OPERATIVE_VISION_012_VALIDATE_AND_COMMIT_LAYOUT"
+}

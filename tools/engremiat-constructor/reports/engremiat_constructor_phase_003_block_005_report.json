@@ -1,0 +1,20 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_BLOCK_005_CREATE_CONSTRUCTOR_TO_PROMPTER_LOCAL_QUEUE_001",
+    "ok":  true,
+    "decision":  "CONSTRUCTOR_TO_PROMPTER_LOCAL_QUEUE_CREATED",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_GOVERNED_CONTROL_PROMPTER_EXECUTION",
+    "block":  "BLOCK_005_CREATE_CONSTRUCTOR_TO_PROMPTER_LOCAL_QUEUE",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "readiness":  82,
+    "queue_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\governed-execution\\queues\\constructor-to-prompter\\constructor_to_prompter_queue.json",
+    "item_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\governed-execution\\queues\\constructor-to-prompter\\engremiat-training-game-inclusion-001.constructor_to_prompter_item.json",
+    "real_prompter_execution_allowed":  false,
+    "external_ai_call_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "next_recommended_action":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_BLOCK_006_SIMULATE_FULL_CONTROL_PROMPTER_CYCLE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

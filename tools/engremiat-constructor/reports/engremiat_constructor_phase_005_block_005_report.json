@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_BLOCK_005_MATCHING",
+    "ok":  true,
+    "decision":  "DEMAND_MATCHING_COMPLETED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_AND_MATCHING",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "results_count":  6,
+    "accepted_count":  5,
+    "average_score":  136,
+    "updated_at":  "2026-06-05T21:28:47"
+}

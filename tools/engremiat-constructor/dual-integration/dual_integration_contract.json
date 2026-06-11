@@ -1,0 +1,50 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_DUAL_INTEGRATION_CONTRACT",
+    "ok":  true,
+    "integration_id":  "dual-integration-002-001",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_CONTROL_PROMPTER_DUAL_INTEGRATION",
+    "control":  {
+                    "enabled":  true,
+                    "mode":  "LOCAL_OBSERVABLE_INDEX_ONLY",
+                    "expected_outputs":  [
+                                             "control_project_index",
+                                             "control_dashboard_card",
+                                             "phase_status",
+                                             "health_summary"
+                                         ],
+                    "write_to_real_control":  false
+                },
+    "prompter":  {
+                     "enabled":  true,
+                     "mode":  "LOCAL_HANDOFF_PACKAGE_ONLY",
+                     "expected_outputs":  [
+                                              "prompter_handoff_package",
+                                              "next_phase_prompt",
+                                              "worker_brief_index",
+                                              "solution_builder_prompt"
+                                          ],
+                     "external_ai_call_allowed":  false
+                 },
+    "commercial":  {
+                       "enabled":  true,
+                       "mode":  "LOCAL_SOLUTION_CARD_ONLY",
+                       "expected_outputs":  [
+                                                "need_project_solution_matrix",
+                                                "commercial_solution_card",
+                                                "reuse_candidate"
+                                            ]
+                   },
+    "safety":  {
+                   "local_only":  true,
+                   "remote_repo_creation_allowed":  false,
+                   "external_api_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "browser_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "external_ai_call_allowed":  false
+               },
+    "next_recommended_action":  "CREATE_CONTROL_OBSERVABLE_INDEX",
+    "updated_at":  "2026-06-05T20:18:39"
+}

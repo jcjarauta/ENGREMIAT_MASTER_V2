@@ -1,0 +1,20 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_MULTI_PROJECT_FACTORY_GATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "gate_status":  "CREATED_BLOCKED_BY_DEFAULT",
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_MULTI_PROJECT_MULTI_REPO_FACTORY",
+    "allowed_now":  {
+                        "local_multi_project_simulation":  true,
+                        "local_factory_plan":  true,
+                        "local_repo_draft":  true
+                    },
+    "blocked_until_explicit_authorization":  {
+                                                 "real_repo_creation":  true,
+                                                 "remote_repo_creation":  true,
+                                                 "push_new_repo":  true,
+                                                 "external_api_call":  true,
+                                                 "worker_real_execution":  true
+                                             },
+    "updated_at":  "2026-06-05T21:37:32"
+}

@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_076_HEALTH_METRICS_PROMOTION_GATE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_076_ADD_HEALTH_AND_LOAD_METRICS_TO_REPEATABLE_DRY_RUNS",
+    "created_at":  "2026-06-05T09:42:16",
+    "gate_status":  "HEALTH_METRICS_READY_WAITING_NEXT_BATCH_GATE",
+    "recommended_decision":  "CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE",
+    "selected_decision":  "HOLD",
+    "health_score":  100,
+    "health_level":  "high",
+    "noise_score":  0,
+    "noise_level":  "low",
+    "recommended_mode":  "ALLOW_MORE_REPEATABLE_DRY_RUNS",
+    "allowed_next_decisions":  [
+                                   "CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE",
+                                   "REDUCE_RUN_OUTPUT_NOISE",
+                                   "ADD_WORKER_STUBS_NOT_EXECUTABLE",
+                                   "HOLD"
+                               ],
+    "automation_real_execution_allowed":  false,
+    "worker_real_execution_allowed":  false,
+    "operator_execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "metrics_only":  true,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_077_CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE"
+}

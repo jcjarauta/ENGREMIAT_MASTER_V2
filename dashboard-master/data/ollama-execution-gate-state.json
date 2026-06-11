@@ -1,0 +1,21 @@
+﻿{
+    "type":  "HYPER_024_OLLAMA_EXECUTION_GATE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:07:41",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "gate_status":  "READY_FOR_HUMAN_OLLAMA_RUN",
+    "final_prompt_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-021\\ollama-final-prompt-ready.md",
+    "final_prompt_size":  5848,
+    "expected_proposal_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\OLLAMA-TASK-HYPER-018-ANALYSIS-001.proposal.txt",
+    "proposal_exists":  false,
+    "proposal_size":  0,
+    "runner_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-worker\\run-ollama-task-hyper-018-analysis.ps1",
+    "manual_command_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-024\\ollama-manual-run-command.txt",
+    "manual_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-worker\\run-ollama-task-hyper-018-analysis.ps1\"",
+    "execution_policy":  "HUMAN_RUN_ONLY",
+    "ollama_execution_now":  false,
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false,
+    "next_recommended_action":  "HYPER_023_OLLAMA_PROPOSAL_REVIEW_GATE_001"
+}

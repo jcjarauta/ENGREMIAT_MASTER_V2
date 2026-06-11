@@ -1,0 +1,39 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_082_WORKER_STUB_DRY_RUN_EXECUTION_DECISION_EDITABLE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_082_CREATE_WORKER_STUB_DRY_RUN_EXECUTION_GATE_NO_REAL_WORKERS",
+    "created_at":  "2026-06-05T09:57:12",
+    "editable_by_human":  true,
+    "decision_status":  "PENDING_HUMAN_STUB_DRY_RUN_EXECUTION_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "ALLOW_WORKER_STUB_DRY_RUN_SIMULATION",
+    "allowed_decisions":  [
+                              "ALLOW_WORKER_STUB_DRY_RUN_SIMULATION",
+                              "REVIEW_STUB_EXECUTION_POLICY",
+                              "REDUCE_TO_ONE_STUB_ONLY",
+                              "RUN_MORE_REPEATABLE_BATCHES_BEFORE_STUBS",
+                              "HOLD",
+                              "REJECT_STUB_DRY_RUN_SIMULATION"
+                          ],
+    "human_note":  "Recomendado: ALLOW_WORKER_STUB_DRY_RUN_SIMULATION. Solo genera salidas simuladas locales; no ejecuta workers reales ni IA real.",
+    "worker_stub_execution_allowed_now":  false,
+    "worker_real_execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "worker_stub_dry_run_execution_allowed_after_apply":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "gate_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_083_APPLY_WORKER_STUB_DRY_RUN_EXECUTION_GATE_DECISION"
+}

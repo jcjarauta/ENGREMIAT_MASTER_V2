@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_BATCH_SEED_001",
+    "ok":  true,
+    "idea_title":  "Buscador local inverso de financiación para microproyectos digitales",
+    "target_user":  "Asociaciones, cooperativas y pequeños equipos que necesitan encontrar encaje financiable.",
+    "user_problem":  "No saben si una idea puede adaptarse a subvención, preventa, crowdfunding o servicio vendible.",
+    "proposed_solution":  "Un flujo que clasifica la idea y propone rutas de financiación/preventa sin ejecutar búsquedas externas.",
+    "digital_product_type":  "Dashboard + plantilla de análisis + contrato de señales necesarias",
+    "why_financiable_or_presellable":  "Ahorra tiempo, ordena la propuesta y genera evidencia para validar interés.",
+    "expected_social_or_local_value":  "Aumenta la capacidad de pequeñas entidades para transformar ideas útiles en proyectos sostenibles.",
+    "available_assets":  [
+                             "ENGREMIAT_CONTROL",
+                             "ENGREMIAT_PROMPTER",
+                             "repeatable runner",
+                             "local dashboard"
+                         ],
+    "constraints":  [
+                        "sin IA real",
+                        "sin APIs externas",
+                        "sin worker real",
+                        "sin operador",
+                        "sin navegador",
+                        "sin Gmail",
+                        "sin Sheets real",
+                        "revisión humana"
+                    ],
+    "first_success_signal":  "El batch produce readiness alto y gate humano sin ejecución real."
+}

@@ -1,0 +1,107 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 08:15:16",
+    "marker":  "OPERATIVE_CENTER_REQUIREMENTS_V1",
+    "current_iteration":  "BASIC_OPERATIVE_VISION",
+    "automation_readiness":  "NOT_READY_YET",
+    "center_role":  "OPERATIVE_BRIDGE_MASTER_CHATGPT_HUMAN_TELEGRAM",
+    "purpose":  "Convertir el dashboard en centro operativo del Master y puente de continuidad con ChatGPT, humano y futuro bot de Telegram.",
+    "required_layers":  [
+                            {
+                                "id":  "L01_ORIENTATION",
+                                "title":  "Orientacion global",
+                                "status":  "PARTIAL",
+                                "summary":  "Mostrar iteracion, progreso, hyper activo, next action y readiness.",
+                                "actions":  [
+                                                "REFRESH_GLOBAL_STATUS",
+                                                "OPEN_LAST_REPORT",
+                                                "COPY_CONTEXT_FOR_CHATGPT"
+                                            ]
+                            },
+                            {
+                                "id":  "L02_ROADMAP_AND_QUEUE",
+                                "title":  "Roadmap y cola pendiente",
+                                "status":  "PARTIAL",
+                                "summary":  "Ordenar hypers pendientes, bloqueados y futuros como cola de decision.",
+                                "actions":  [
+                                                "GENERATE_EXECUTION_QUEUE_READONLY",
+                                                "SELECT_NEXT_HYPER",
+                                                "PAUSE_BRANCH",
+                                                "RESUME_BRANCH"
+                                            ]
+                            },
+                            {
+                                "id":  "L03_BLOCKERS_AND_GATES",
+                                "title":  "Bloqueos y gates humanos",
+                                "status":  "PARTIAL",
+                                "summary":  "Indicar que bloquea, que rama afecta, si pausa todo o solo parte y como desbloquear.",
+                                "actions":  [
+                                                "MARK_BLOCKER_RESOLVED",
+                                                "REQUEST_HUMAN_APPROVAL",
+                                                "REGISTER_HUMAN_DECISION"
+                                            ]
+                            },
+                            {
+                                "id":  "L04_SAFE_ACTIONS",
+                                "title":  "Acciones seguras ejecutables",
+                                "status":  "PENDING",
+                                "summary":  "Definir acciones readonly, escritura local, Git local y acciones prohibidas sin autorizacion.",
+                                "actions":  [
+                                                "RUN_READONLY_DIAG",
+                                                "RUN_DRY_RUN",
+                                                "CREATE_LOCAL_REPORT",
+                                                "COMMIT_LOCAL_STAGE"
+                                            ]
+                            },
+                            {
+                                "id":  "L05_CHATGPT_BRIDGE",
+                                "title":  "Puente Master ChatGPT",
+                                "status":  "PENDING",
+                                "summary":  "Generar contexto copiable para continuar desarrollos con ChatGPT sin perder estado.",
+                                "actions":  [
+                                                "COPY_CONTINUATION_CONTEXT",
+                                                "COPY_NEXT_ACTION_CONTEXT",
+                                                "COPY_ERROR_CONTEXT"
+                                            ]
+                            },
+                            {
+                                "id":  "L06_TELEGRAM_SEED",
+                                "title":  "Semilla del bot Telegram",
+                                "status":  "FUTURE",
+                                "summary":  "Transformar la misma jerarquia del dashboard en menus, botones y aprobaciones desde movil.",
+                                "actions":  [
+                                                "BOT_SHOW_STATUS",
+                                                "BOT_SHOW_NEXT_ACTION",
+                                                "BOT_APPROVE_GATE",
+                                                "BOT_RUN_READONLY"
+                                            ]
+                            }
+                        ],
+    "next_build_steps":  [
+                             {
+                                 "id":  "S01_ORDER_DASHBOARD_HIERARCHY",
+                                 "title":  "Ordenar visualmente el dashboard",
+                                 "status":  "NEXT",
+                                 "next_action":  "HYPER_DASHBOARD_OPERATIVE_VISION_011_ORDER_VISUAL_LAYOUT"
+                             },
+                             {
+                                 "id":  "S02_BUILD_ACTION_SCHEMA",
+                                 "title":  "Definir schema de acciones ejecutables",
+                                 "status":  "PENDING",
+                                 "next_action":  "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS"
+                             },
+                             {
+                                 "id":  "S03_BUILD_QUEUE_READONLY",
+                                 "title":  "Construir cola readonly",
+                                 "status":  "PENDING",
+                                 "next_action":  "HYPER_MASTER_QUEUE_AUTOMATION_READONLY"
+                             },
+                             {
+                                 "id":  "S04_CLASSIFY_GIT_NOISE",
+                                 "title":  "Clasificar ruido Git",
+                                 "status":  "PENDING",
+                                 "next_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY"
+                             }
+                         ],
+    "next_recommended_action":  "HYPER_DASHBOARD_OPERATIVE_VISION_011_ORDER_VISUAL_LAYOUT"
+}

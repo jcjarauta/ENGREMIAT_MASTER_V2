@@ -1,0 +1,15 @@
+﻿{
+    "version":  3,
+    "git_actions":  false,
+    "total_blocks":  6,
+    "review_queue_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\master-state-review-code-queue.json",
+    "operator_queue_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\operator-code-generation-queue.json",
+    "prompt_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\code-block-prompts",
+    "ollama_queue_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\ollama-script-execution-queue.json",
+    "type":  "MASTER_STATE_REVIEW_QUEUE_STATE",
+    "first_ready_block":  "HYPER_008_GLOBAL_STATUS_ENGINE_001",
+    "status":  "MASTER_STATE_REVIEW_QUEUE_READY",
+    "next_recommended_action":  "HYPER_008_GLOBAL_STATUS_ENGINE_001",
+    "prompt_index_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-state-review-prompt-index.md",
+    "external_actions":  false
+}

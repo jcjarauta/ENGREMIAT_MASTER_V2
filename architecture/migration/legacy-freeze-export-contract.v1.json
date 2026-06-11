@@ -1,0 +1,76 @@
+﻿{
+    "phase":  "NEW_PC_DECENTRALIZED_ARCHITECTURE_004_LEGACY_FREEZE_EXPORT_PREFLIGHT_CONTRACT",
+    "ok":  true,
+    "decision":  "LEGACY_FREEZE_EXPORT_PREFLIGHT_CONTRACT_READY",
+    "created_at":  "2026-06-11T18:10:27",
+    "repo_copy":  false,
+    "migration_started":  false,
+    "legacy_execution":  false,
+    "git_write":  false,
+    "push":  false,
+    "source_node":  {
+                        "node_id":  "LEGACY_NODE",
+                        "expected_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+                        "current_role":  "SOURCE_NODE_UNTIL_FREEZE"
+                    },
+    "target_node":  {
+                        "node_id":  "MAIN_NODE",
+                        "incoming":  "C:\\ENGREMIAT\\incoming",
+                        "repo_target":  "C:\\ENGREMIAT\\ENGREMIAT_MASTER",
+                        "current_role":  "PREPARED_RECEIVER"
+                    },
+    "gates":  [
+                  {
+                      "gate":  "G1_CLOSE_OLD_PC_DEVELOPMENT",
+                      "required":  true,
+                      "status":  "pending"
+                  },
+                  {
+                      "gate":  "G2_LEGACY_READONLY_PREFLIGHT",
+                      "required":  true,
+                      "status":  "prepared"
+                  },
+                  {
+                      "gate":  "G3_FREEZE_DECLARED",
+                      "required":  true,
+                      "status":  "pending"
+                  },
+                  {
+                      "gate":  "G4_EXPORT_PACKAGE_CREATED",
+                      "required":  true,
+                      "status":  "prepared"
+                  },
+                  {
+                      "gate":  "G5_TRANSFER_TO_MAIN_INCOMING",
+                      "required":  true,
+                      "status":  "pending"
+                  },
+                  {
+                      "gate":  "G6_MAIN_VALIDATE_HASH_AND_MANIFEST",
+                      "required":  true,
+                      "status":  "prepared"
+                  },
+                  {
+                      "gate":  "G7_INSTALL_TO_MAIN_REPO_TARGET",
+                      "required":  true,
+                      "status":  "future"
+                  }
+              ],
+    "package_policy":  {
+                           "include_git":  true,
+                           "exclude_node_modules":  true,
+                           "exclude_tmp_files":  true,
+                           "exclude_large_logs_by_default":  true,
+                           "secrets_inventory_required":  true,
+                           "print_secret_values":  false,
+                           "require_sha256":  true,
+                           "require_manifest_json":  true,
+                           "require_manifest_md":  true
+                       },
+    "scripts":  {
+                    "legacy_preflight_readonly":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_LEGACY_PC_001_FREEZE_EXPORT_PREFLIGHT_READONLY.ps1",
+                    "legacy_create_package_after_freeze":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_LEGACY_PC_002_CREATE_EXPORT_PACKAGE_AFTER_FREEZE.ps1",
+                    "main_receive_validate_package":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_MAIN_NODE_003_RECEIVE_AND_VALIDATE_LEGACY_PACKAGE.ps1"
+                },
+    "recommended_next":  "copy_legacy_preflight_script_to_old_pc_when_development_closes"
+}

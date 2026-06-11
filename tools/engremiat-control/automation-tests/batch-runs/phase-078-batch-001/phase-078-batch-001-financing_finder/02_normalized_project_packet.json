@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F002_NORMALIZED_PROJECT_PACKET_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-001-financing_finder",
+    "project_title":  "Buscador local inverso de financiación para microproyectos digitales",
+    "problem":  "No saben si una idea puede adaptarse a subvención, preventa, crowdfunding o servicio vendible.",
+    "solution":  "Un flujo que clasifica la idea y propone rutas de financiación/preventa sin ejecutar búsquedas externas.",
+    "target_user":  "Asociaciones, cooperativas y pequeños equipos que necesitan encontrar encaje financiable.",
+    "product_type":  "Dashboard + plantilla de análisis + contrato de señales necesarias",
+    "financing_or_presell_reason":  "Ahorra tiempo, ordena la propuesta y genera evidencia para validar interés.",
+    "status":  "NORMALIZED_DRY_RUN_NO_AI_CALL",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

@@ -1,0 +1,10 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_HEALTH_GATE_BINDING_V1",
+    "ok":  true,
+    "decision":  "HEALTH_GATE_BINDING_READY",
+    "health_package":  "tools/engremiat-control/system-health-sanitation/HEALTH_SANITATION_REUSABLE_PACKAGE_CLOSE_PHASE_012.json",
+    "rule":  "If Health detects high noise or growth risk, Automation Core must block new growth and create a sanitation/indexing gate first.",
+    "current_default":  "REQUIRE_HEALTH_GATE_BEFORE_NEW_WORKERS",
+    "new_worker_creation_allowed":  false,
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

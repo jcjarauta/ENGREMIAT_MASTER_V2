@@ -1,0 +1,17 @@
+﻿{
+    "type":  "AUTOMATED_ARTIFACT_FLOW_SAFE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T14:08:24",
+    "decision":  "SAFE_AUTOMATED_FLOW_RESET_READY",
+    "task_id":  "TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001",
+    "checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "line_of_work_id":  "LOW-20260602-001",
+    "authorization_granted":  true,
+    "runner_script":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\run-artifact-flow-safe-once.ps1",
+    "prompt_source":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\prompts\\ollama\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.prompt.md",
+    "prompt_outbox":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\prompts\\ollama\\outbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.prompt.md",
+    "proposal_inbox":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "proposal_pending_review":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\pending-review\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "evidence":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\evidence\\artifact-flow\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.artifact-flow-evidence.json",
+    "next_recommended_action":  "HYPER_039_SAFE_ARTIFACT_FLOW_DRY_RUN_001"
+}

@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_OFFICIAL_BRIDGE_EXPORT_STUB_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-5-7-OFFICIAL-BRIDGE-EXPORT-BINDING",
+    "decision":  "BRIDGE_EXPORT_STUB_READY",
+    "output_target":  "tools/engremiat-control/bridge/outbox/engremiat_control_repo_bridge_snapshot.json",
+    "b2_target":  "tools/engremiat-control/bridge/outbox/engremiat_control_repo_bridge_snapshot_COPY_TO_B2_STRICT_MINIFIED.json.txt",
+    "execution_allowed":  "manual_local_generator_only",
+    "import_allowed":  "manual_human_copy_to_B2_only",
+    "next":  "CREATE_DASHBOARD_CORE_STATUS_SNAPSHOT"
+}

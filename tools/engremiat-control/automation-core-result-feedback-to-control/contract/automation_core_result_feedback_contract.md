@@ -1,0 +1,21 @@
+﻿# ENGREMIAT CONTROL · Automation Core result feedback contract
+
+- type: ENGREMIAT_CONTROL_AUTOMATION_CORE_RESULT_FEEDBACK_CONTRACT_001
+- phase: AUTOMATION_CORE_RESULT_FEEDBACK_TO_CONTROL
+- ok: True
+- generated_at: 2026-06-06T08:06:55.2093674Z
+- mode: LOCAL_ONLY_FEEDBACK_TO_CONTROL_NO_EXECUTION
+- feedback_contract_ready: True
+- package_id: automation-core-local-decision-package-001
+- source_simulation_final: tools/engremiat-control/reports/automation_core_package_simulation_runner_stub_final.json
+- source_observation: tools/engremiat-control/automation-core-package-simulation-runner-stub/control-observation/control_observation_event.json
+- source_result: tools/engremiat-control/automation-core-package-simulation-runner-stub/result/simulation_stub_result.json
+- observed_decision: SIMULATION_STUB_PASS
+- observed_score: 100
+- simulation_score: 100
+- feedback_intent: register_stub_result_in_control_state
+- feedback_status: READY_TO_REGISTER_LOCALLY
+- allowed_feedback_operations: read_stub_result, read_control_observation, create_feedback_record, update_control_feedback_registry, render_feedback_dashboard_card
+- forbidden_operations: execute_worker_real, call_external_ai, call_google_api, open_browser, use_clipboard, send_network_request, modify_remote_state
+- gates: {"local_only":true,"external_actions_executed":false,"google_api_call_allowed":false,"real_worker_allowed":false,"decision_auto_execution_allowed":false,"worker_execution_allowed":false,"simulation_real_execution_allowed":false,"feedback_write_scope":"local_files_only"}
+- next: REGISTER_AUTOMATION_CORE_RESULT_FEEDBACK_IN_CONTROL

@@ -1,0 +1,15 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_PROJECT_SEED",
+    "ok":  true,
+    "seed":  {
+                 "seed_id":  "seed-007-001",
+                 "project_slug":  "digital-inclusion-training-game",
+                 "source_demand":  "grant digital inclusion",
+                 "recommended_template":  "grant-project",
+                 "factory_decision":  "LOCAL_PROJECT_DRAFT_ONLY",
+                 "remote_repo_allowed":  false
+             },
+    "local_only":  true,
+    "remote_repo_creation_allowed":  false,
+    "updated_at":  "2026-06-05T21:37:53"
+}

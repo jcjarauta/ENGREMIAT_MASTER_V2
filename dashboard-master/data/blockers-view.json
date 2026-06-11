@@ -1,0 +1,143 @@
+﻿{
+    "type":  "HYPER_008_BLOCKERS_VIEW_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:21:24",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "source_global_state":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\global-status-engine.json",
+    "current_node":  {
+                         "id":  "REVIEW-001",
+                         "title":  "Motor de Estado Global",
+                         "source_queue":  "master_state_review",
+                         "status":  "READY",
+                         "hierarchy":  {
+                                           "desarrollo":  "DESARROLLO_GLOBAL",
+                                           "hipermacro":  "HYPER_008",
+                                           "macro":  "MASTER_CONTROL_PANEL",
+                                           "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                           "checkpoint":  "CP-STATE-001",
+                                           "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                       },
+                         "blocker_reason":  "",
+                         "evidence_path":  ""
+                     },
+    "counts":  {
+                   "blocked":  0,
+                   "paused":  6,
+                   "ready":  12,
+                   "total":  18
+               },
+    "blockers":  [
+
+                 ],
+    "paused_nodes":  [
+                         {
+                             "id":  "OPERATOR-001",
+                             "title":  "OPERATOR-001",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-001",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         },
+                         {
+                             "id":  "OPERATOR-002",
+                             "title":  "OPERATOR-002",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-002",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         },
+                         {
+                             "id":  "OPERATOR-003",
+                             "title":  "OPERATOR-003",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-003",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         },
+                         {
+                             "id":  "OPERATOR-004",
+                             "title":  "OPERATOR-004",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-004",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         },
+                         {
+                             "id":  "OPERATOR-005",
+                             "title":  "OPERATOR-005",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-005",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         },
+                         {
+                             "id":  "OPERATOR-006",
+                             "title":  "OPERATOR-006",
+                             "source_queue":  "operator_code_generation",
+                             "status":  "PAUSED",
+                             "suggested_action":  "Mantener en pausa hasta que el panel operativo sea usable y testeado.",
+                             "reactivation_payload":  {
+                                                          "target_block":  "OPERATOR-006",
+                                                          "mode":  "resume_when_panel_ready",
+                                                          "evidence_path":  ""
+                                                      }
+                         }
+                     ],
+    "next_ready_preview":  [
+                               {
+                                   "id":  "REVIEW-001",
+                                   "title":  "Motor de Estado Global",
+                                   "source_queue":  "master_state_review",
+                                   "status":  "READY"
+                               },
+                               {
+                                   "id":  "REVIEW-002",
+                                   "title":  "Nodo Actual del Desarrollo",
+                                   "source_queue":  "master_state_review",
+                                   "status":  "READY"
+                               },
+                               {
+                                   "id":  "REVIEW-003",
+                                   "title":  "Boton Continuar Desarrollo",
+                                   "source_queue":  "master_state_review",
+                                   "status":  "READY"
+                               },
+                               {
+                                   "id":  "REVIEW-004",
+                                   "title":  "Vista de Bloqueos",
+                                   "source_queue":  "master_state_review",
+                                   "status":  "READY"
+                               },
+                               {
+                                   "id":  "REVIEW-005",
+                                   "title":  "Cola Dinamica",
+                                   "source_queue":  "master_state_review",
+                                   "status":  "READY"
+                               }
+                           ],
+    "panel_message":  "Sin bloqueos activos. Panel puede continuar con cola dinamica.",
+    "next_recommended_action":  "HYPER_008_DYNAMIC_QUEUE_SUMMARY_001",
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false
+}

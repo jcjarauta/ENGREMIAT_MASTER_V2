@@ -1,0 +1,40 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_MULTI_PROJECT_FACTORY_SIMULATION",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "simulated_projects_count":  3,
+    "simulated_projects":  [
+                               {
+                                   "seed_id":  "seed-007-001",
+                                   "project_slug":  "digital-inclusion-training-game",
+                                   "local_folder_plan":  "projects/generated/digital-inclusion-training-game",
+                                   "template":  "grant-project",
+                                   "simulated_status":  "LOCAL_DRAFT_READY",
+                                   "real_repo_created":  false,
+                                   "remote_repo_created":  false
+                               },
+                               {
+                                   "seed_id":  "seed-007-002",
+                                   "project_slug":  "community-volunteer-panel",
+                                   "local_folder_plan":  "projects/generated/community-volunteer-panel",
+                                   "template":  "community-software",
+                                   "simulated_status":  "LOCAL_DRAFT_READY",
+                                   "real_repo_created":  false,
+                                   "remote_repo_created":  false
+                               },
+                               {
+                                   "seed_id":  "seed-007-003",
+                                   "project_slug":  "social-impact-demo-kit",
+                                   "local_folder_plan":  "projects/generated/social-impact-demo-kit",
+                                   "template":  "service-package",
+                                   "simulated_status":  "LOCAL_DRAFT_READY",
+                                   "real_repo_created":  false,
+                                   "remote_repo_created":  false
+                               }
+                           ],
+    "decision":  "MULTI_PROJECT_FACTORY_SIMULATED_REMOTE_BLOCKED",
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "updated_at":  "2026-06-05T21:37:53"
+}

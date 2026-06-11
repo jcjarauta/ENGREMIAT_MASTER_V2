@@ -1,0 +1,61 @@
+﻿{
+    "node_id":  "BACKUP_NODE",
+    "machine_name":  "RASPBERRY_OR_4TB_STORAGE",
+    "role":  "Backup frio, paquetes replicables, evidencias, hashes y recuperacion.",
+    "root_path":  "TO_DEFINE_ON_REAL_BACKUP_MACHINE",
+    "status":  "PLANNED",
+    "allowed_actions":  [
+                            "store_verified_packages",
+                            "store_hash_manifests",
+                            "store_migration_evidence",
+                            "store_release_snapshots",
+                            "restore_package_to_main_node_when_authorized"
+                        ],
+    "blocked_actions":  [
+                            "main_development",
+                            "workers_real_by_default",
+                            "telegram_real",
+                            "secret_storage_without_inventory",
+                            "unverified_package_overwrite",
+                            "repo_mutation"
+                        ],
+    "sync_policy":  {
+                        "mode":  "manual_verified_packages_first",
+                        "source":  "MAIN_NODE",
+                        "target":  "BACKUP_NODE",
+                        "automatic_sync_allowed":  false,
+                        "hash_required":  true,
+                        "manifest_required":  true
+                    },
+    "backup_policy":  {
+                          "required":  true,
+                          "package_types":  [
+                                                "clean_core_baseline",
+                                                "main_repo_migration_package",
+                                                "node_contracts",
+                                                "manuals",
+                                                "architecture_registry",
+                                                "release_snapshots",
+                                                "evidence_reports"
+                                            ],
+                          "retention":  {
+                                            "daily":  "manual_until_automation",
+                                            "weekly":  "planned",
+                                            "monthly":  "planned",
+                                            "keep_verified_releases":  true
+                                        }
+                      },
+    "secrets_policy":  {
+                           "secrets_allowed":  false,
+                           "inventory_required_before_transfer":  true,
+                           "encrypted_storage_required_if_enabled":  true,
+                           "print_secrets":  false
+                       },
+    "activation_gate":  "READONLY_PREFLIGHT_REQUIRED",
+    "expected_roots":  [
+                           "D:\\ENGREMIAT_BACKUP",
+                           "E:\\ENGREMIAT_BACKUP",
+                           "\\\\RASPBERRY\\ENGREMIAT_BACKUP",
+                           "/mnt/engremiat-backup"
+                       ]
+}

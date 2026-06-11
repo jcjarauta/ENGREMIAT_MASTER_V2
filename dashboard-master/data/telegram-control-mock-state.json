@@ -1,0 +1,31 @@
+﻿{
+    "type":  "TELEGRAM_CONTROL_MOCK_STATE",
+    "version":  1,
+    "updated_at":  "2026-06-02T11:37:21.6703568+02:00",
+    "status":  "TELEGRAM_MOCK_UI_READY",
+    "mode":  "mock_ui_proposal_only",
+    "real_telegram_enabled":  false,
+    "token_required_now":  false,
+    "telegram_actions_executed":  false,
+    "browser_actions":  false,
+    "external_actions":  false,
+    "purpose":  "Simular interfaz móvil Telegram antes de conectar bot real.",
+    "panel_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\telegram-control-mock.html",
+    "next_recommended_action":  "HYPER_006_TELEGRAM_MESSAGE_TEMPLATES_001",
+    "allowed_now":  [
+                        "ver estado global simulado",
+                        "ver siguiente fase simulado",
+                        "ver bloqueos simulado",
+                        "preparar payload de autorización",
+                        "copiar prompt para ChatGPT/operador"
+                    ],
+    "forbidden_now":  [
+                          "usar token real",
+                          "enviar mensaje real",
+                          "arrancar bot real",
+                          "polling Telegram",
+                          "webhook Telegram",
+                          "push/fetch/merge",
+                          "git automático"
+                      ]
+}

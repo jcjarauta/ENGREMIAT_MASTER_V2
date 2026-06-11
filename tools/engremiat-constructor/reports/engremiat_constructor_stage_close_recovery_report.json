@@ -1,0 +1,19 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_STAGE_CLOSE_RECOVERY_REPORT_001",
+    "ok":  true,
+    "decision":  "ENGREMIAT_CONSTRUCTOR_STAGE_CLOSED_REUSABLE_STANDARD_READY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_CONSTRUCTOR_CLOSE_AND_REUSABLE_STANDARD",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "readiness":  98,
+    "diagnostic_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\diagnostics\\engremiat_constructor_stage_global_diagnostic_recovery.json",
+    "final_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\reports\\engremiat_constructor_stage_close_recovery_report.json",
+    "normalized":  [
+                       "phase_001_status"
+                   ],
+    "closed_prior_phases_count":  7,
+    "total_prior_phases_expected":  7,
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "updated_at":  "2026-06-05T21:41:04"
+}

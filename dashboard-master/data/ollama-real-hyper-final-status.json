@@ -1,0 +1,56 @@
+﻿{
+    "updated_at":  "2026-06-01T22:56:32",
+    "type":  "MASTER_OLLAMA_REAL_HYPER_FINAL_STATUS",
+    "ok":  true,
+    "hyper":  "MASTER_OLLAMA_REAL_REPAIR_READONLY",
+    "hyper_closed":  true,
+    "ollama_real_detected":  true,
+    "model_selected":  "qwen2.5-coder:1.5b",
+    "real_smoke_executed":  true,
+    "real_output_normalized":  true,
+    "repair_prompt_real_executed":  true,
+    "repair_proposal_accepted_readonly":  true,
+    "authorization_valid":  true,
+    "repair_applied":  false,
+    "no_patch_reason":  "Proposal explicitly keeps proposed_patch_allowed/patch_allowed false.",
+    "proposal_patch_allowed":  false,
+    "has_patch_payload":  false,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "artifacts":  [
+                      {
+                          "name":  "active_model_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-active-model.json",
+                          "exists":  true,
+                          "bytes":  670
+                      },
+                      {
+                          "name":  "smoke_normalized_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-smoke-real-normalized.json",
+                          "exists":  true,
+                          "bytes":  1410
+                      },
+                      {
+                          "name":  "pipeline_connection_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-pipeline-real-smoke-connection.json",
+                          "exists":  true,
+                          "bytes":  1235
+                      },
+                      {
+                          "name":  "accepted_proposal_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-real-repair-proposal-accepted-readonly.json",
+                          "exists":  true,
+                          "bytes":  2557
+                      },
+                      {
+                          "name":  "apply_result_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-authorized-apply-result.json",
+                          "exists":  true,
+                          "bytes":  1224
+                      }
+                  ],
+    "missing_count":  0,
+    "conclusion":  "Hyper Ollama real cerrado: Ollama funciona, modelo detectado, inferencia real ejecutada, salida normalizada, propuesta real capturada y autorizacion humana usada; no se aplico parche porque la propuesta no permitia patch y no contenia payload.",
+    "next_recommended_action":  "MASTER_OPERATOR_STATUS_002_FIX_REPORT_FORMAT_AND_LAST_DECISION"
+}

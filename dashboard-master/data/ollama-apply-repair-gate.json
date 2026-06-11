@@ -1,0 +1,19 @@
+﻿{
+    "type":  "MASTER_OLLAMA_009_APPLY_REAL_REPAIR_IF_AUTHORIZED_GATE_ONLY",
+    "ok":  true,
+    "phase":  "MASTER-OLLAMA-009",
+    "readonly":  true,
+    "gate_only":  true,
+    "proposal_exists":  true,
+    "repair_applied":  false,
+    "patch_allowed":  false,
+    "apply_authorized":  false,
+    "required_authorization_phrase":  "AUTORIZO_APLICAR_REPARACION_OLLAMA_REAL_UNA_VEZ",
+    "human_review_required":  true,
+    "ollama_repair_executed":  true,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "accepted_proposal_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-real-repair-proposal-accepted-readonly.json",
+    "next_recommended_action":  "WAIT_FOR_EXPLICIT_HUMAN_AUTHORIZATION_OR_CLOSE_OLLAMA_HYPER_READONLY"
+}

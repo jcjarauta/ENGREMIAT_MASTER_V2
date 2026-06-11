@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENGREMIAT · Exportar Estado Maestro</title>
+<style>
+body{margin:0;background:#07111f;color:#e5e7eb;font-family:Arial,Helvetica,sans-serif}
+header{background:#020617;border-bottom:1px solid #334155;padding:16px}
+main{display:grid;grid-template-columns:420px 1fr;gap:16px;padding:16px}
+.card{background:#0f172a;border:1px solid #334155;border-radius:14px;padding:14px;margin:12px 0}
+.pill{display:inline-block;background:#1f2937;border:1px solid #475569;border-radius:999px;padding:5px 9px;margin:3px;font-size:12px}
+button,a.button{display:inline-block;background:#1d4ed8;color:white;text-decoration:none;border:0;border-radius:10px;padding:9px 12px;margin:4px;cursor:pointer}
+button.alt,a.alt{background:#374151}.ok{color:#86efac}.warn{color:#facc15}
+textarea,pre{width:100%;min-height:260px;background:#020617;color:#e5e7eb;border:1px solid #334155;border-radius:10px;padding:10px;white-space:pre-wrap;box-sizing:border-box}
+.item{background:#0b1220;border:1px solid #243244;border-left:6px solid #60a5fa;border-radius:10px;padding:10px;margin:8px 0}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>ENGREMIAT · Exportar Estado Maestro</h1><div>Descargar estado global · Enviar a ChatGPT · Proponer bloques · Preparar cola operador/Ollama</div></header>
+<main>
+<aside>
+<div class="card"><h2>Acciones</h2>
+<a class="button" href="data/master-global-state-export.json" download>Descargar JSON maestro</a>
+<a class="button alt" href="data/master-global-state-export-prompt.md" download>Descargar prompt</a>
+<button onclick="copyPrompt()">Copiar prompt</button>
+<button onclick="copySnapshot()">Copiar JSON</button>
+<div id="copyStatus"><span class="pill">manual_copy_only</span></div>
+</div>
+<div class="card"><h2>Resumen</h2><div id="summaryBox">Cargando...</div></div>
+<div class="card"><h2>Bloques propuestos</h2><div id="backlogBox">Cargando...</div></div>
+</aside>
+<section>
+<div class="card"><h2>Prompt para ChatGPT</h2><textarea id="promptBox">Cargando...</textarea></div>
+<div class="card"><h2>Snapshot JSON</h2><pre id="snapshotBox">Cargando...</pre></div>
+</section>
+</main>
+<script>
+let SNAP=null,PROMPT="";async function j(p){const r=await fetch(p+"?t="+Date.now());if(!r.ok)throw new Error(p+" "+r.status);return await r.json()}async function t(p){const r=await fetch(p+"?t="+Date.now());if(!r.ok)throw new Error(p+" "+r.status);return await r.text()}
+function e(x){return String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]))}
+async function copyPrompt(){try{await navigator.clipboard.writeText(PROMPT);document.getElementById("copyStatus").innerHTML="<span class=\"pill\">prompt_copiado</span>"}catch(err){document.getElementById("copyStatus").innerHTML="<span class=\"pill\">copia_manual_requerida</span>"}}
+async function copySnapshot(){try{await navigator.clipboard.writeText(JSON.stringify(SNAP,null,2));document.getElementById("copyStatus").innerHTML="<span class=\"pill\">json_copiado</span>"}catch(err){document.getElementById("copyStatus").innerHTML="<span class=\"pill\">copia_manual_requerida</span>"}}
+function render(){const s=SNAP.summaries||{};document.getElementById("summaryBox").innerHTML=`<p><span class="pill">next=${e(s.next_recommended_action)}</span></p><p><span class="pill">bloqueos=${e(s.blocked_count)}</span><span class="pill">evidencias=${e(s.evidence_count)}</span></p><pre>${e(JSON.stringify(s,null,2))}</pre>`;const items=(((SNAP.selected_data||{}).code_backlog||{}).items)||[];document.getElementById("backlogBox").innerHTML=items.map(x=>`<div class="item"><b>${e(x.id)} · ${e(x.title)}</b><p>${e(x.phase)}</p><p><span class="pill">${e(x.status)}</span></p><p>${e(x.proposed_block)}</p></div>`).join("");document.getElementById("promptBox").value=PROMPT;document.getElementById("snapshotBox").textContent=JSON.stringify(SNAP,null,2)}
+async function load(){SNAP=await j("data/master-global-state-export.json");PROMPT=await t("data/master-global-state-export-prompt.md");render()}load();setInterval(load,5000);
+</script>
+</body></html>

@@ -1,0 +1,19 @@
+﻿{
+    "ok":  true,
+    "decision":  "OLLAMA_SMOKE_TEXT_OK_NORMALIZED",
+    "phase":  "MASTER-OLLAMA-005I",
+    "readonly":  true,
+    "source":  "ollama_real_output_normalized",
+    "model_output_useful":  true,
+    "json_candidate":  "{\"\u001b[?25l\u001b[?25hok\u001b[?25l\u001b[?25h\":\u001b[?25l\u001b[?25htrue\u001b[?25l\u001b[?25h,\"\u001b[?25l\u001b[?25hdecision\u001b[?25l\u001b[?25h\":\"\u001b[?25l\u001b[?25hOLL\u001b[?25l\u001b[?25hAMA\u001b[?25l\u001b[?25h_S\u001b[?25l\u001b[?25hMO\u001b[?25l\u001b[?25hKE\u001b[?25l\u001b[?25h_OK\u001b[?25l\u001b[?25h\",\"\u001b[?25l\u001b[?25hmessage\u001b[?25l\u001b[?25h\":\"\u001b[?25l\u001b[?25hready\u001b[?25l\u001b[?25h\"}",
+    "json_parse_ok":  false,
+    "semantic_ok":  false,
+    "raw_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\master-ollama\\master-ollama-005g-cmd-capture-20260601-224045\\ollama-combined-output.txt",
+    "raw_preview_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\master-ollama\\master-ollama-005i-normalizer-rules-20260601-224314\\raw-preview.txt",
+    "normalized_by":  "MASTER_OLLAMA_005I_REVISIT_NORMALIZER_RULES",
+    "message":  "Ollama returned real text output; normalized into contract JSON for readonly pipeline.",
+    "ollama_repair_executed":  false,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false
+}

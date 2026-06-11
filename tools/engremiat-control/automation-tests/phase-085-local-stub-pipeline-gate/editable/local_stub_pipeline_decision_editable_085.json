@@ -1,0 +1,42 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_085_LOCAL_STUB_PIPELINE_DECISION_EDITABLE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_085_CREATE_LOCAL_STUB_PIPELINE_GATE_NO_REAL_WORKERS",
+    "created_at":  "2026-06-05T10:11:08",
+    "editable_by_human":  true,
+    "decision_status":  "PENDING_HUMAN_LOCAL_STUB_PIPELINE_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "ALLOW_LOCAL_STUB_PIPELINE_SIMULATION",
+    "allowed_decisions":  [
+                              "ALLOW_LOCAL_STUB_PIPELINE_SIMULATION",
+                              "REVIEW_LOCAL_STUB_PIPELINE_POLICY",
+                              "REDUCE_PIPELINE_TO_3_STAGES",
+                              "RUN_ANOTHER_STUB_DRY_RUN_BEFORE_PIPELINE",
+                              "HOLD",
+                              "REJECT_LOCAL_STUB_PIPELINE"
+                          ],
+    "human_note":  "Recomendado: ALLOW_LOCAL_STUB_PIPELINE_SIMULATION. Solo simula pipeline local con outputs JSON; no workers reales, no IA real, no operador.",
+    "local_stub_pipeline_execution_allowed_now":  false,
+    "worker_real_execution_allowed":  false,
+    "worker_stub_execution_allowed":  false,
+    "operator_execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "local_stub_pipeline_execution_allowed_now":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "pipeline_gate_only":  true,
+                   "simulated_stub_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_086_APPLY_LOCAL_STUB_PIPELINE_GATE_DECISION"
+}

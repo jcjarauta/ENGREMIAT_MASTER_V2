@@ -1,0 +1,123 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOCHECK_SCHEMA_LOCKED_001",
+    "ok":  true,
+    "created_at":  "2026-06-04T13:01:48+02:00",
+    "mode":  "LOCKED_LOCAL_ONLY",
+    "manual_mode":  "MANUAL_PASTE_ONLY",
+    "external_actions_allowed":  false,
+    "google_api_allowed":  false,
+    "drive_real_allowed":  false,
+    "apps_script_execute_allowed":  false,
+    "objective":  "Definir schema local para verificar salud de ENGREMIAT_CONTROL leyendo artefactos locked y Git sin servicios externos.",
+    "autocheck_name":  "ENGREMIAT_CONTROL_AUTOCHECK_LOCKED",
+    "required_checks":  [
+                            "CHECK_REQUIRED_ARTIFACTS_EXIST_LOCKED",
+                            "CHECK_JSON_ARTIFACTS_PARSE_LOCKED",
+                            "CHECK_GIT_TREE_CLEAN_LOCKED",
+                            "CHECK_REMOTE_SYNC_LOCKED",
+                            "CHECK_EXTERNAL_ACTIONS_BLOCKED_LOCKED",
+                            "CHECK_LIVE_STATUS_READY_LOCKED",
+                            "CHECK_HUMAN_GATE_APPROVED_LOCKED",
+                            "CHECK_PANEL_HTML_EXISTS_LOCKED"
+                        ],
+    "required_fields":  [
+                            "check_id",
+                            "check_type",
+                            "status",
+                            "severity",
+                            "mode",
+                            "input_refs",
+                            "result",
+                            "issues",
+                            "evidence_json",
+                            "evidence_md",
+                            "created_at",
+                            "updated_at",
+                            "next_recommended_action"
+                        ],
+    "allowed_check_types":  [
+                                "ARTIFACT_EXISTS_CHECK_LOCKED",
+                                "JSON_PARSE_CHECK_LOCKED",
+                                "GIT_STATUS_CHECK_LOCKED",
+                                "REMOTE_SYNC_CHECK_LOCKED",
+                                "SAFETY_CHECK_LOCKED",
+                                "LIVE_STATUS_CHECK_LOCKED",
+                                "HUMAN_GATE_CHECK_LOCKED",
+                                "PANEL_CHECK_LOCKED"
+                            ],
+    "allowed_statuses":  [
+                             "PASS_LOCKED",
+                             "WARN_LOCKED",
+                             "FAIL_LOCKED",
+                             "BLOCKED_LOCKED"
+                         ],
+    "allowed_severities":  [
+                               "INFO",
+                               "LOW",
+                               "MEDIUM",
+                               "HIGH",
+                               "CRITICAL"
+                           ],
+    "mandatory_false_fields":  [
+                                   "external_actions_allowed",
+                                   "google_api_allowed",
+                                   "drive_real_allowed",
+                                   "apps_script_execute_allowed"
+                               ],
+    "refs_checked":  [
+                         {
+                             "path":  "tools/engremiat-control/live-status/engremiat_control_live_status_close_locked.json",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "ENGREMIAT_CONTROL_LIVE_STATUS_CLOSE_LOCKED_001",
+                             "ok":  "True",
+                             "decision":  "ENGREMIAT_CONTROL_LIVE_STATUS_LOCKED_READY_TO_CLOSE",
+                             "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_SCHEMA_LOCKED"
+                         },
+                         {
+                             "path":  "tools/engremiat-control/live-status/engremiat_control_live_status_snapshot_locked.json",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "ENGREMIAT_CONTROL_LIVE_STATUS_SNAPSHOT_LOCKED_001",
+                             "ok":  "True",
+                             "decision":  "",
+                             "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_LIVE_STATUS_PANEL_PATCH_LOCKED"
+                         },
+                         {
+                             "path":  "tools/engremiat-control/live-status/engremiat_control_live_status_seed_locked.json",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "ENGREMIAT_CONTROL_LIVE_STATUS_SEED_LOCKED_001",
+                             "ok":  "True",
+                             "decision":  "",
+                             "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_LIVE_STATUS_SNAPSHOT_LOCKED"
+                         },
+                         {
+                             "path":  "tools/engremiat-control/panel/engremiat_control_panel_export_live_status_locked.html",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "FILE",
+                             "ok":  "True",
+                             "decision":  "REFERENCE_EXISTS"
+                         },
+                         {
+                             "path":  "tools/engremiat-control/human-gate/engremiat_control_human_gate_receipt_locked.json",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "ENGREMIAT_CONTROL_HUMAN_GATE_RECEIPT_LOCKED_001",
+                             "ok":  "True",
+                             "decision":  "",
+                             "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_NEXT_HYPER_LOCKED_001"
+                         },
+                         {
+                             "path":  "tools/engremiat-control/operator-queue/engremiat_control_operator_queue_close_locked.json",
+                             "exists":  true,
+                             "loaded":  true,
+                             "type":  "ENGREMIAT_CONTROL_OPERATOR_QUEUE_CLOSE_LOCKED_001",
+                             "ok":  "True",
+                             "decision":  "ENGREMIAT_CONTROL_OPERATOR_QUEUE_LOCKED_READY_TO_CLOSE",
+                             "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_HUMAN_GATE_SCHEMA_LOCKED"
+                         }
+                     ],
+    "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_RUN_LOCKED"
+}

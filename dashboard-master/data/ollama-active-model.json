@@ -1,0 +1,18 @@
+﻿{
+    "updated_at":  "2026-06-01T22:32:34",
+    "type":  "OLLAMA_ACTIVE_MODEL",
+    "ok":  true,
+    "phase":  "MASTER-OLLAMA-004",
+    "readonly":  true,
+    "ollama_path":  "C:\\Users\\sacan\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "ollama_command_exists":  true,
+    "selected_model":  "qwen2.5-coder:1.5b",
+    "model_detected":  true,
+    "ollama_real_checked":  true,
+    "ollama_inference_executed":  false,
+    "ollama_repair_executed":  false,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "next_recommended_action":  "MASTER_OLLAMA_005_SMOKE_REAL_MODEL_JSON_READONLY"
+}

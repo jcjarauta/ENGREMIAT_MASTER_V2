@@ -1,0 +1,10 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_BLOCK_007_SIMULATION_AND_GATE",
+    "ok":  true,
+    "decision":  "DEMAND_RADAR_SIMULATION_AND_PHASE_006_GATE_CREATED",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_AND_MATCHING",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "simulation_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\demand-radar\\phase-005-demand-radar-and-matching\\simulation\\demand_radar_matching_simulation.json",
+    "gate_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\demand-radar\\phase-005-demand-radar-and-matching\\gates\\phase_006_automation_gate.json",
+    "updated_at":  "2026-06-05T21:28:47"
+}

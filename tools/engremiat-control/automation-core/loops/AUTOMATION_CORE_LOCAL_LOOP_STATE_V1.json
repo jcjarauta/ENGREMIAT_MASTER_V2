@@ -1,0 +1,10 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_LOCAL_LOOP_STATE_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-2-7-LOCAL-LOOP-STUB-V1",
+    "status":  "EMPTY_READY",
+    "last_cycle_id":  null,
+    "cycles_executed":  0,
+    "current_decision":  "WAITING_FOR_SAFE_QUEUE_ITEM",
+    "next":  "CREATE_QUEUE_INTAKE_OUTPUT_CONTRACT_CONNECTED"
+}

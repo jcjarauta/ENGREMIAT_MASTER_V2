@@ -1,0 +1,23 @@
+﻿{
+    "type":  "CONSTRUCTOR_TO_PROMPTER_QUEUE_ITEM",
+    "ok":  true,
+    "item_id":  "ctp-phase003-item-001",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "source":  "ENGREMIAT_CONSTRUCTOR",
+    "target":  "ENGREMIAT_PROMPTER",
+    "decision":  "READY_FOR_LOCAL_PROMPTER_DRAFT",
+    "readiness":  80,
+    "payload_path":  "prompter/prompter_handoffs.index.json",
+    "requested_outputs":  [
+                              "demo_scope",
+                              "proposal_scope",
+                              "solution_builder_scope",
+                              "next_phase_prompt"
+                          ],
+    "status":  "PENDING_LOCAL_PROMPTER_DRAFT",
+    "real_prompter_execution_allowed":  false,
+    "external_ai_call_allowed":  false,
+    "worker_real_allowed":  false,
+    "next_recommended_action":  "SIMULATE_FULL_CONTROL_PROMPTER_CYCLE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

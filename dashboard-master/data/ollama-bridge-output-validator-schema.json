@@ -1,0 +1,201 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 09:00:53",
+    "schema_id":  "OLLAMA_BRIDGE_OUTPUT_VALIDATOR_SCHEMA_V1",
+    "purpose":  "Definir como validar cualquier salida de Ollama antes de usarla, aplicarla al dashboard o desbloquear una rama.",
+    "validation_principles":  [
+                                  "Toda salida de Ollama es propuesta, no verdad.",
+                                  "Si el task exige JSON, la salida debe ser JSON parseable.",
+                                  "Si hay schema esperado, deben existir las propiedades obligatorias.",
+                                  "Si la salida no conserva entradas criticas, se rechaza.",
+                                  "Si hay rutas inventadas, se rechaza.",
+                                  "Si falta safe_to_commit_now o human_review_required, se rechaza.",
+                                  "Si el validador duda, pausa la rama y pide revision humana.",
+                                  "La salida valida pasa como READY_FOR_HUMAN_REVIEW salvo tareas readonly de resumen."
+                              ],
+    "supported_task_validators":  [
+                                      {
+                                          "task_type":  "CLASSIFY_GIT_NOISE",
+                                          "expected_format":  "JSON",
+                                          "required_root_properties":  [
+                                                                           "project",
+                                                                           "readonly",
+                                                                           "summary",
+                                                                           "items",
+                                                                           "next_recommended_action"
+                                                                       ],
+                                          "required_item_properties":  [
+                                                                           "path",
+                                                                           "status_code",
+                                                                           "domain",
+                                                                           "hyper",
+                                                                           "recommended_action",
+                                                                           "reason",
+                                                                           "safe_to_commit_now",
+                                                                           "human_review_required"
+                                                                       ],
+                                          "must_preserve_input_items":  true,
+                                          "must_not_invent_paths":  true,
+                                          "safe_auto_apply":  false,
+                                          "valid_next_state":  "READY_FOR_HUMAN_REVIEW",
+                                          "invalid_next_state":  "PAUSED"
+                                      },
+                                      {
+                                          "task_type":  "NORMALIZE_JSON",
+                                          "expected_format":  "JSON",
+                                          "required_root_properties":  [
+                                                                           "project",
+                                                                           "summary",
+                                                                           "items",
+                                                                           "next_recommended_action"
+                                                                       ],
+                                          "required_item_properties":  [
+
+                                                                       ],
+                                          "must_preserve_input_items":  false,
+                                          "must_not_invent_paths":  true,
+                                          "safe_auto_apply":  false,
+                                          "valid_next_state":  "READY_FOR_HUMAN_REVIEW",
+                                          "invalid_next_state":  "PAUSED"
+                                      },
+                                      {
+                                          "task_type":  "PROPOSE_REPAIR",
+                                          "expected_format":  "JSON",
+                                          "required_root_properties":  [
+                                                                           "diagnosis",
+                                                                           "proposed_fix",
+                                                                           "risk",
+                                                                           "human_review_required",
+                                                                           "next_recommended_action"
+                                                                       ],
+                                          "required_item_properties":  [
+
+                                                                       ],
+                                          "must_preserve_input_items":  false,
+                                          "must_not_invent_paths":  false,
+                                          "safe_auto_apply":  false,
+                                          "valid_next_state":  "READY_FOR_HUMAN_REVIEW",
+                                          "invalid_next_state":  "PAUSED"
+                                      },
+                                      {
+                                          "task_type":  "SUMMARIZE_REPORT",
+                                          "expected_format":  "JSON_OR_TEXT",
+                                          "required_root_properties":  [
+                                                                           "summary",
+                                                                           "decision",
+                                                                           "next_recommended_action"
+                                                                       ],
+                                          "required_item_properties":  [
+
+                                                                       ],
+                                          "must_preserve_input_items":  false,
+                                          "must_not_invent_paths":  false,
+                                          "safe_auto_apply":  true,
+                                          "valid_next_state":  "READY_FOR_HUMAN_REVIEW",
+                                          "invalid_next_state":  "PAUSED"
+                                      },
+                                      {
+                                          "task_type":  "ROUTE_NEXT_BRANCH",
+                                          "expected_format":  "JSON",
+                                          "required_root_properties":  [
+                                                                           "current_branch",
+                                                                           "recommended_branch",
+                                                                           "reason",
+                                                                           "safety",
+                                                                           "next_recommended_action"
+                                                                       ],
+                                          "required_item_properties":  [
+
+                                                                       ],
+                                          "must_preserve_input_items":  false,
+                                          "must_not_invent_paths":  false,
+                                          "safe_auto_apply":  false,
+                                          "valid_next_state":  "READY_FOR_HUMAN_REVIEW",
+                                          "invalid_next_state":  "PAUSED"
+                                      }
+                                  ],
+    "generic_validation_steps":  [
+                                     {
+                                         "order":  1,
+                                         "id":  "READ_OUTPUT",
+                                         "title":  "Leer salida bruta",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  2,
+                                         "id":  "EXTRACT_JSON_IF_REQUIRED",
+                                         "title":  "Extraer JSON si el task lo exige",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  3,
+                                         "id":  "PARSE_JSON",
+                                         "title":  "Parsear JSON",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  4,
+                                         "id":  "CHECK_REQUIRED_PROPERTIES",
+                                         "title":  "Comprobar propiedades obligatorias",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  5,
+                                         "id":  "CHECK_INPUT_PRESERVATION",
+                                         "title":  "Comprobar que no faltan entradas criticas",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  6,
+                                         "id":  "CHECK_NO_INVENTED_PATHS",
+                                         "title":  "Comprobar que no hay rutas inventadas",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     },
+                                     {
+                                         "order":  7,
+                                         "id":  "WRITE_VALIDATION_REPORT",
+                                         "title":  "Escribir reporte de validacion",
+                                         "fail_action":  "WRITE_ERROR_REPORT"
+                                     },
+                                     {
+                                         "order":  8,
+                                         "id":  "SET_BRANCH_STATE",
+                                         "title":  "Mover rama a READY_FOR_HUMAN_REVIEW o PAUSED",
+                                         "fail_action":  "PAUSE_BRANCH"
+                                     }
+                                 ],
+    "validation_result_schema":  {
+                                     "project":  "ENGREMIAT_MASTER",
+                                     "branch_id":  "string",
+                                     "task_type":  "string",
+                                     "generated_at":  "YYYY-MM-DD HH:mm:ss",
+                                     "validator_schema":  "OLLAMA_BRIDGE_OUTPUT_VALIDATOR_SCHEMA_V1",
+                                     "input_file":  "string",
+                                     "output_file":  "string",
+                                     "validation_ok":  "boolean",
+                                     "errors":  [
+                                                    "string"
+                                                ],
+                                     "warnings":  [
+                                                      "string"
+                                                  ],
+                                     "preserved_items_count":  "number",
+                                     "invented_items_count":  "number",
+                                     "missing_required_properties_count":  "number",
+                                     "next_branch_state":  "READY_FOR_HUMAN_REVIEW|PAUSED|BLOCKED",
+                                     "human_review_required":  "boolean",
+                                     "next_recommended_action":  "string"
+                                 },
+    "rejection_reasons":  [
+                              "EMPTY_OUTPUT",
+                              "JSON_PARSE_FAILED",
+                              "MISSING_REQUIRED_ROOT_PROPERTY",
+                              "MISSING_REQUIRED_ITEM_PROPERTY",
+                              "INPUT_ITEM_MISSING_FROM_OUTPUT",
+                              "INVENTED_PATH_DETECTED",
+                              "SAFE_FLAGS_MISSING",
+                              "UNEXPECTED_SCHEMA",
+                              "LOW_CONFIDENCE_REQUIRES_HUMAN_REVIEW"
+                          ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_005_TELEGRAM_BUTTON_SEED"
+}

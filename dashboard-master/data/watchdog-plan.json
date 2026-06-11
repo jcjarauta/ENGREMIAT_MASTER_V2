@@ -1,0 +1,28 @@
+﻿{
+    "updated_at":  "2026-06-01T21:59:32",
+    "type":  "SAFE_PROCESS_WATCHDOG_PLAN",
+    "status":  "PLAN_READY_EXECUTION_LOCKED",
+    "reason":  "Evitar bloqueos como HIPER-024Q al usar Start-Process o procesos hijos.",
+    "rules":  [
+                  "Todo proceso hijo debe tener timeout obligatorio.",
+                  "Todo proceso hijo debe redirigir stdout y stderr.",
+                  "Si hay timeout, se intenta Stop-Process y se devuelve TIMEOUT controlado.",
+                  "No se ejecutan acciones remotas, navegador, AHK, portapapeles ni Enter.",
+                  "El watchdog queda creado, pero la automatizacion real sigue bloqueada."
+              ],
+    "allowed_modes":  [
+                          "readonly_diagnostic",
+                          "local_safe_script_with_timeout",
+                          "stdout_stderr_capture"
+                      ],
+    "blocked_modes":  [
+                          "git_push_fetch_merge",
+                          "browser_cdp",
+                          "autohotkey",
+                          "clipboard",
+                          "enter_submit",
+                          "network_external",
+                          "dangerous_delete"
+                      ],
+    "next_recommended_action":  "MASTER_WATCHDOG_002_SMOKE_TEST_SAFE_WATCHDOG_NO_EXTERNAL_ACTIONS"
+}

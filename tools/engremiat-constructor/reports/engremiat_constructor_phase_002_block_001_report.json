@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_BLOCK_001_DUAL_INTEGRATION_PLAN_AND_CONTRACTS_001",
+    "ok":  true,
+    "decision":  "DUAL_INTEGRATION_PLAN_AND_CONTRACTS_CREATED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_CONTROL_PROMPTER_DUAL_INTEGRATION",
+    "block":  "BLOCK_001_DUAL_INTEGRATION_PLAN_AND_CONTRACTS",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+    "phase_plan_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\docs\\phase_002_control_prompter_dual_integration_plan.md",
+    "dual_contract_schema_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\schemas\\dual-integration.schema.json",
+    "dual_contract_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\dual-integration\\dual_integration_contract.json",
+    "phase_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_002_status.json",
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "next_recommended_action":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_BLOCK_002_CREATE_CONTROL_OBSERVABLE_INDEX",
+    "updated_at":  "2026-06-05T20:18:39"
+}

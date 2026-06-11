@@ -1,0 +1,37 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-2-7-LOCAL-LOOP-STUB-V1",
+    "decision":  "LOCAL_LOOP_STUB_CREATED",
+    "mode":  "STUB_ONLY_NO_REAL_WORKER",
+    "purpose":  "Define a safe local loop skeleton without executing workers or external actions.",
+    "loop_steps":  [
+                       "read_local_queue_stub",
+                       "validate_input_contract",
+                       "check_health_gate",
+                       "prepare_output_contract",
+                       "write_local_evidence",
+                       "require_human_review"
+                   ],
+    "allowed_actions":  [
+                            "local_read",
+                            "local_json_validation",
+                            "local_report_write",
+                            "human_gate"
+                        ],
+    "blocked_actions":  [
+                            "external_ai",
+                            "external_api",
+                            "gcloud",
+                            "oauth",
+                            "webapp_exec",
+                            "browser",
+                            "cdp",
+                            "clipboard",
+                            "real_worker_execution"
+                        ],
+    "real_worker_allowed":  false,
+    "external_actions_executed":  false,
+    "google_api_call_allowed":  false,
+    "next":  "CREATE_QUEUE_INTAKE_OUTPUT_CONTRACT_CONNECTED"
+}

@@ -1,0 +1,13 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED_001",
+    "ok":  true,
+    "created_at":  "2026-06-04T13:09:25+02:00",
+    "mode":  "LOCKED_LOCAL_ONLY",
+    "manual_mode":  "MANUAL_PASTE_ONLY",
+    "decision":  "ENGREMIAT_CONTROL_AUTOCHECK_HYPER_READY_TO_CLOSE",
+    "run_refs":  [
+                     "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                     "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md"
+                 ],
+    "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_HYPER_CLOSE_LOCKED"
+}

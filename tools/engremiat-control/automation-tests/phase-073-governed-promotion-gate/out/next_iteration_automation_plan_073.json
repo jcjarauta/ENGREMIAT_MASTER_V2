@@ -1,0 +1,63 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_073_NEXT_ITERATION_AUTOMATION_PLAN_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_073_PROMOTE_DRY_RUN_TO_GOVERNED_AUTOMATION_TEST_GATE",
+    "created_at":  "2026-06-05T09:29:11",
+    "recommended_path":  "PROMOTE_TO_REPEATABLE_LOCAL_DRY_RUN",
+    "iteration_goal":  "Convertir el runner dry-run puntual en runner local repetible y parametrizable.",
+    "next_steps":  [
+                       {
+                           "phase":  "074",
+                           "name":  "Apply governed promotion decision",
+                           "output":  "applied_promotion_decision_074.json",
+                           "execution":  "NO_REAL_AUTOMATION"
+                       },
+                       {
+                           "phase":  "075",
+                           "name":  "Create repeatable local dry-run runner",
+                           "output":  "run-repeatable-local-dry-run.ps1",
+                           "execution":  "LOCAL_DRY_RUN_ONLY"
+                       },
+                       {
+                           "phase":  "076",
+                           "name":  "Run second idea dry-run",
+                           "output":  "second_idea_dry_run_report.json",
+                           "execution":  "NO_WORKER_REAL"
+                       },
+                       {
+                           "phase":  "077",
+                           "name":  "Add health/load metrics",
+                           "output":  "automation_health_metrics.json",
+                           "execution":  "LOCAL_METRICS_ONLY"
+                       },
+                       {
+                           "phase":  "078",
+                           "name":  "Human decision to introduce worker stubs",
+                           "output":  "worker_stub_gate.json",
+                           "execution":  "NO_WORKER_REAL"
+                       }
+                   ],
+    "success_criteria":  [
+                             "Runner repetible acepta diferentes seeds locales.",
+                             "Cada funcion mantiene IO contract.",
+                             "Safety flags siguen bloqueando ejecucion real.",
+                             "CONTROL puede comparar dos dry-runs.",
+                             "Humano decide antes de worker stubs."
+                         ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "promotion_real_execution_allowed":  false,
+                   "dry_run_validated":  true,
+                   "human_review_required":  true
+               }
+}

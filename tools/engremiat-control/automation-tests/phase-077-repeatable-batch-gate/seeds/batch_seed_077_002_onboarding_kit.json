@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_BATCH_SEED_002",
+    "ok":  true,
+    "idea_title":  "Kit de onboarding para nuevos nodos ENGREMIAT",
+    "target_user":  "Personas o grupos que quieren empezar a participar en un nodo ENGREMIAT.",
+    "user_problem":  "La entrada al sistema puede ser confusa si no hay pasos, roles y límites claros.",
+    "proposed_solution":  "Un kit digital que guía primeros pasos, roles, tareas seguras, gates y métricas de participación.",
+    "digital_product_type":  "Guía interactiva + checklist + dashboard local + micro work packets",
+    "why_financiable_or_presellable":  "Puede ofrecerse como paquete de acompañamiento para comunidades, escuelas, asociaciones o cooperativas.",
+    "expected_social_or_local_value":  "Reduce fricción humana, mejora aprendizaje y facilita participación segura.",
+    "available_assets":  [
+                             "ENGREMIAT_CONTROL",
+                             "dashboards",
+                             "gates humanos",
+                             "work packets"
+                         ],
+    "constraints":  [
+                        "sin IA real",
+                        "sin APIs externas",
+                        "sin worker real",
+                        "sin operador",
+                        "sin navegador",
+                        "sin Gmail",
+                        "sin Sheets real",
+                        "revisión humana"
+                    ],
+    "first_success_signal":  "El runner genera señales de onboarding, micro paquetes y gate humano."
+}

@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_WORKER_BRIEFS_INDEX",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "briefs":  [
+                   {
+                       "role":  "research",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\prompts\\worker_briefs\\research_worker_brief.md"
+                   },
+                   {
+                       "role":  "demo",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\prompts\\worker_briefs\\demo_worker_brief.md"
+                   },
+                   {
+                       "role":  "commercial",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\prompts\\worker_briefs\\commercial_worker_brief.md"
+                   }
+               ],
+    "worker_real_allowed":  false,
+    "updated_at":  "2026-06-05T20:24:33"
+}

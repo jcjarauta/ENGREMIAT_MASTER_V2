@@ -1,0 +1,26 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_AUTOMATION_GATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "gate_status":  "CREATED_BLOCKED_BY_DEFAULT",
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_AUTOMATION_BY_GATES",
+    "allowed_now":  {
+                        "local_read":  true,
+                        "local_simulation":  true,
+                        "local_reports":  true,
+                        "local_queue_write":  true
+                    },
+    "blocked_until_explicit_authorization":  {
+                                                 "external_ai_call":  true,
+                                                 "external_api_call":  true,
+                                                 "real_worker_execution":  true,
+                                                 "real_control_write":  true,
+                                                 "real_prompter_execution":  true,
+                                                 "customer_contact":  true,
+                                                 "remote_repo_creation":  true,
+                                                 "browser":  true,
+                                                 "clipboard":  true
+                                             },
+    "next_recommended_action":  "RUN_PHASE_005_GLOBAL_DIAGNOSTIC_AND_CLOSE",
+    "updated_at":  "2026-06-05T21:28:47"
+}

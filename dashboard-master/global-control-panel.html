@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENGREMIAT · Panel de control operativo</title>
+<style>
+body{margin:0;background:#07111f;color:#e5e7eb;font-family:Arial,Helvetica,sans-serif}header{background:#020617;border-bottom:1px solid #334155;padding:16px}main{display:grid;grid-template-columns:430px 1fr;gap:16px;padding:16px}.card{background:#0f172a;border:1px solid #334155;border-radius:14px;padding:14px;margin:12px 0}.pill{display:inline-block;background:#1f2937;border:1px solid #475569;border-radius:999px;padding:5px 9px;margin:3px;font-size:12px}.READY,.ready{color:#86efac}.RUNNING,.running{color:#c4b5fd}.PAUSED,.paused{color:#facc15}.BLOCKED,.blocked{color:#fca5a5}.DONE,.done{color:#22c55e}.item{background:#0b1220;border:1px solid #243244;border-left:6px solid #60a5fa;border-radius:10px;padding:10px;margin:8px 0}button,a.button{display:inline-block;background:#1d4ed8;color:white;text-decoration:none;border:0;border-radius:10px;padding:9px 12px;margin:4px;cursor:pointer}button.good{background:#166534}button.warn{background:#92400e}textarea,pre{width:100%;min-height:220px;background:#020617;color:#e5e7eb;border:1px solid #334155;border-radius:10px;padding:10px;white-space:pre-wrap;box-sizing:border-box}@media(max-width:900px){main{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><h1>ENGREMIAT · Panel de control operativo</h1><div>GPS desarrollo · motor de estado · bloqueos · evidencias · continuar · exportar estado maestro</div></header>
+<main>
+<aside>
+<div class="card"><h2>GPS desarrollo actual</h2><div id="gpsBox">Cargando...</div></div>
+<div class="card"><h2>Acción principal</h2><button class="good" onclick="prepareContinue()">CONTINUAR DESARROLLO</button><button onclick="copyPayload()">Copiar payload</button><a class="button" href="data/master-global-state-export.json" download>Descargar estado maestro</a><div id="copyBox"><span class="pill">manual_copy_only</span></div></div>
+<div class="card"><h2>Estado global</h2><div id="statusBox">Cargando...</div></div>
+<div class="card"><h2>Bloqueos</h2><div id="blockersBox">Cargando...</div></div>
+</aside>
+<section>
+<div class="card"><h2>Payload ChatGPT/Operador</h2><textarea id="payloadBox"></textarea></div>
+<div class="card"><h2>Cola de bloques pendientes</h2><div id="backlogBox">Cargando...</div></div>
+<div class="card"><h2>Evidencias recientes</h2><div id="evidenceBox">Cargando...</div></div>
+<div class="card"><h2>Filtro humano</h2><textarea id="humanContext" placeholder="Añade contexto manual antes de copiar payload..."></textarea><button onclick="prepareContinue()">Actualizar payload con contexto</button></div>
+<div class="card"><h2>Raw contexto</h2><pre id="rawBox"></pre></div>
+</section>
+</main>
+<script>
+let DATA={};async function j(p){const r=await fetch(p+"?t="+Date.now());if(!r.ok)throw new Error(p+" "+r.status);return await r.json()}
+function e(x){return String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]))}
+function prepareContinue(){const ctx=document.getElementById("humanContext").value;const base=DATA.payload||{};base.generated_at=new Date().toISOString();base.human_context=ctx;base.instruction_to_chatgpt="Valora estado global maestro, checkpoints pendientes y backlog. Propón siguiente bloque PowerShell completo y cola operador/Ollama. Sin Git automático, sin Telegram real.";document.getElementById("payloadBox").value=JSON.stringify(base,null,2)}
+async function copyPayload(){try{await navigator.clipboard.writeText(document.getElementById("payloadBox").value);document.getElementById("copyBox").innerHTML="<span class=\"pill\">payload_copiado</span>"}catch(err){document.getElementById("copyBox").innerHTML="<span class=\"pill\">copia_manual_requerida</span>"}}
+function render(){const c=DATA.context||{},n=c.current_node||{},s=c.status_engine||{},b=c.blockers||{},ev=c.evidence||{},bl=c.backlog_preview||[];document.getElementById("gpsBox").innerHTML=`<p><span class="pill">${e(n.hyper)}</span><span class="pill">${e(n.macro)}</span></p><p><span class="pill">${e(n.objective)}</span><span class="pill">${e(n.checkpoint)}</span></p><p><b>${e(n.task)}</b></p><p><span class="${e(n.global_status)}">${e(n.global_status)}</span></p><p><small>next=${e(n.next_action)}</small></p>`;document.getElementById("statusBox").innerHTML=`<p><span class="${e(s.global_status)}">${e(s.global_status)}</span></p><pre>${e(JSON.stringify(s.counters||{},null,2))}</pre>`;document.getElementById("blockersBox").innerHTML=(b.blockers||[]).map(x=>`<div class="item"><b>${e(x.hyper)} · ${e(x.branch)}</b><p>${e(x.reason)}</p><p><span class="pill">${e(x.status)}</span></p><p>${e(x.suggested_action)}</p></div>`).join("")||"<p>Sin bloqueos críticos.</p>";document.getElementById("evidenceBox").innerHTML=(ev.items||[]).map(x=>`<div class="item"><b>${e(x.id)}</b><p>${e(x.timestamp)}</p><p><span class="pill">stdout=${e(x.stdout_exists)}</span><span class="pill">stderr=${e(x.stderr_exists)}</span></p><p><small>${e(x.run_path)}</small></p></div>`).join("")||"<p>Sin evidencias.</p>";document.getElementById("backlogBox").innerHTML=bl.map(x=>`<div class="item"><b>${e(x.id)} · ${e(x.title)}</b><p>${e(x.phase)}</p><p><span class="pill">${e(x.status)}</span></p><p>${e(x.proposed_block)}</p></div>`).join("")||"<p>Backlog no cargado.</p>";document.getElementById("rawBox").textContent=JSON.stringify(c,null,2);prepareContinue()}
+async function load(){try{DATA.context=await j("data/development-context-functional.json");DATA.payload=await j("data/continue-development-payload.json");render()}catch(err){document.getElementById("gpsBox").textContent=err.message}}
+load();setInterval(load,5000);
+</script>
+</body></html>

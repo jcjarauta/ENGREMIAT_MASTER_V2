@@ -1,0 +1,160 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 09:11:54",
+    "flow_id":  "OLLAMA_BRIDGE_AUTOMATION_FLOW_V1",
+    "purpose":  "Consolidar el puente Master/Ollama/ChatGPT/humano/Telegram para ejecutar IA local sin colapsar la cola de desarrollo.",
+    "design_status":  "READY_FOR_SAFE_IMPLEMENTATION_MICROBLOCKS",
+    "source_files":  {
+                         "capabilities_contract":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-bridge-capabilities-contract.json",
+                         "branch_state_schema":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-bridge-branch-state-schema.json",
+                         "timeout_and_pause_policy":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-bridge-timeout-and-pause-policy.json",
+                         "output_validator_schema":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-bridge-output-validator-schema.json",
+                         "telegram_buttons_seed":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-bridge-telegram-buttons-seed.json"
+                     },
+    "control_loop":  [
+                         {
+                             "order":  1,
+                             "step":  "SELECT_BRANCH",
+                             "description":  "Seleccionar rama pendiente o reanudada.",
+                             "output_state":  "PENDING"
+                         },
+                         {
+                             "order":  2,
+                             "step":  "PREPARE_INPUT",
+                             "description":  "Preparar input estable para Ollama.",
+                             "output_state":  "READY_FOR_LOCAL_AI"
+                         },
+                         {
+                             "order":  3,
+                             "step":  "RUN_OLLAMA_TIMEBOXED",
+                             "description":  "Ejecutar Ollama con timeout segun politica.",
+                             "output_state":  "RUNNING_LOCAL_AI"
+                         },
+                         {
+                             "order":  4,
+                             "step":  "VALIDATE_OUTPUT",
+                             "description":  "Validar salida segun schema del task.",
+                             "output_state":  "READY_FOR_HUMAN_REVIEW_OR_PAUSED"
+                         },
+                         {
+                             "order":  5,
+                             "step":  "WRITE_BRANCH_REPORT",
+                             "description":  "Guardar reporte para humano, ChatGPT y futuro Telegram.",
+                             "output_state":  "REPORT_READY"
+                         },
+                         {
+                             "order":  6,
+                             "step":  "DECIDE_NEXT",
+                             "description":  "Si falla, pausar rama y continuar siguiente segura. Si valida, esperar review humana.",
+                             "output_state":  "QUEUE_DECOLLAPSED"
+                         }
+                     ],
+    "branch_decision_matrix":  [
+                                   {
+                                       "condition":  "ollama_ok_and_validator_ok",
+                                       "branch_state":  "READY_FOR_HUMAN_REVIEW",
+                                       "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH_OR_WAIT_REVIEW",
+                                       "telegram_actions":  [
+                                                                "SHOW_REPORT",
+                                                                "APPROVE_OUTPUT",
+                                                                "RETRY_BRANCH"
+                                                            ]
+                                   },
+                                   {
+                                       "condition":  "ollama_timeout",
+                                       "branch_state":  "PAUSED",
+                                       "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                                       "telegram_actions":  [
+                                                                "SHOW_REPORT",
+                                                                "RETRY_BRANCH",
+                                                                "RESUME_BRANCH"
+                                                            ]
+                                   },
+                                   {
+                                       "condition":  "ollama_missing_or_model_missing",
+                                       "branch_state":  "PAUSED",
+                                       "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                                       "telegram_actions":  [
+                                                                "SHOW_REPORT",
+                                                                "CONFIGURE_LOCAL_AI",
+                                                                "RETRY_BRANCH"
+                                                            ]
+                                   },
+                                   {
+                                       "condition":  "invalid_json_or_invalid_schema",
+                                       "branch_state":  "PAUSED",
+                                       "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                                       "telegram_actions":  [
+                                                                "SHOW_REPORT",
+                                                                "SEND_REPORT_TO_CHATGPT",
+                                                                "RETRY_BRANCH"
+                                                            ]
+                                   },
+                                   {
+                                       "condition":  "repeated_failure_limit_reached",
+                                       "branch_state":  "BLOCKED",
+                                       "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                                       "telegram_actions":  [
+                                                                "SHOW_REPORT",
+                                                                "REQUEST_HUMAN_DECISION",
+                                                                "SEND_REPORT_TO_CHATGPT"
+                                                            ]
+                                   },
+                                   {
+                                       "condition":  "human_resumes_branch",
+                                       "branch_state":  "PENDING",
+                                       "queue_action":  "RETRY_BRANCH",
+                                       "telegram_actions":  [
+                                                                "RUN_BRANCH",
+                                                                "PAUSE_BRANCH"
+                                                            ]
+                                   }
+                               ],
+    "implementation_microblocks":  [
+                                       {
+                                           "id":  "OLLAMA_BRIDGE_IMPL_001_BRANCH_STATE_STORE",
+                                           "title":  "Crear store real de estado de ramas",
+                                           "kind":  "LOCAL_FILES",
+                                           "risk":  "LOW",
+                                           "next_action":  "CREATE_BRANCH_STATE_STORE"
+                                       },
+                                       {
+                                           "id":  "OLLAMA_BRIDGE_IMPL_002_TIMEBOXED_RUNNER",
+                                           "title":  "Crear runner timeboxed de Ollama",
+                                           "kind":  "LOCAL_AI",
+                                           "risk":  "MEDIUM",
+                                           "next_action":  "CREATE_TIMEBOXED_OLLAMA_RUNNER"
+                                       },
+                                       {
+                                           "id":  "OLLAMA_BRIDGE_IMPL_003_OUTPUT_VALIDATOR",
+                                           "title":  "Crear validador real de salida Ollama",
+                                           "kind":  "LOCAL_VALIDATION",
+                                           "risk":  "LOW",
+                                           "next_action":  "CREATE_OLLAMA_OUTPUT_VALIDATOR"
+                                       },
+                                       {
+                                           "id":  "OLLAMA_BRIDGE_IMPL_004_BRANCH_PAUSE_RESUME",
+                                           "title":  "Crear pause/resume por rama",
+                                           "kind":  "QUEUE_CONTROL",
+                                           "risk":  "LOW",
+                                           "next_action":  "CREATE_BRANCH_PAUSE_RESUME_ACTIONS"
+                                       },
+                                       {
+                                           "id":  "OLLAMA_BRIDGE_IMPL_005_TELEGRAM_ACTION_CONTRACT",
+                                           "title":  "Convertir acciones en contrato de botones Telegram",
+                                           "kind":  "TELEGRAM_SEED",
+                                           "risk":  "LOW",
+                                           "next_action":  "CREATE_TELEGRAM_ACTION_CONTRACT"
+                                       }
+                                   ],
+    "safety_rules":  [
+                         "No ejecutar Ollama sin timeout.",
+                         "No aplicar salida de Ollama sin validacion.",
+                         "No bloquear cola global por una rama fallida.",
+                         "No hacer commit automatico de salidas generadas por IA sin review.",
+                         "Toda rama pausada debe tener pause_file y report_file.",
+                         "Toda rama bloqueada debe tener human_intervention_required=true.",
+                         "Telegram solo debe disparar acciones predefinidas y registradas."
+                     ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_007_VALIDATE_AND_COMMIT_DESIGN"
+}

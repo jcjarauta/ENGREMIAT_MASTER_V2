@@ -1,0 +1,54 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_103G_LOCAL_TASK_QUEUE_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:16:49",
+    "queue_status":  "READY_FOR_HUMAN_REVIEW",
+    "tasks":  [
+                  {
+                      "id":  "T103G-001",
+                      "lane":  "internal",
+                      "status":  "ready",
+                      "priority":  "high",
+                      "title":  "Prepare Engremiat Prompter internal behavior test",
+                      "action":  "CREATE_PROMPTER_WORK_CONTEXT_PACKAGE",
+                      "owner":  "ENGREMIAT_CONTROL"
+                  },
+                  {
+                      "id":  "T103G-002",
+                      "lane":  "ollama_candidate",
+                      "status":  "blocked_by_human_gate",
+                      "priority":  "high",
+                      "title":  "Ask Ollama to review Engremiat Prompter rules and propose next safe test",
+                      "action":  "OLLAMA_PROMPT_READY_NO_EXECUTION",
+                      "owner":  "OLLAMA_LOCAL_WORKER_CANDIDATE"
+                  },
+                  {
+                      "id":  "T103G-003",
+                      "lane":  "return_contract",
+                      "status":  "ready",
+                      "priority":  "medium",
+                      "title":  "Validate worker return contract before integration",
+                      "action":  "CREATE_RETURN_CONTRACT",
+                      "owner":  "ENGREMIAT_PROMPTER"
+                  }
+              ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "external_worker_allowed_now":  false,
+                   "ollama_execution_allowed_now":  false,
+                   "pre_worker_internal_state_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_104G_REVIEW_PRE_EXTERNAL_WORKER_HANDOFF_GATE"
+}

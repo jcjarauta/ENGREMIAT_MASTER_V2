@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F001_IDEA_INTAKE_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-003-opendata_signal_pack",
+    "source_seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_003_opendata_signal_pack.json",
+    "idea_title":  "Pack de señales OpenData para oportunidades locales",
+    "status":  "PASSED_DRY_RUN",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

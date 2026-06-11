@@ -1,0 +1,21 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_OUTPUT_CONTRACT_V1",
+    "ok":  true,
+    "decision":  "OUTPUT_CONTRACT_READY",
+    "required_outputs":  [
+                             "decision",
+                             "status",
+                             "evidence",
+                             "next",
+                             "safety_flags",
+                             "human_review_needed"
+                         ],
+    "standard_status":  "ENGREMIAT_STATUS phase=\u003cphase\u003e ok=\u003cbool\u003e decision=\u003cdecision\u003e next=\u003cnext\u003e",
+    "forbidden_outputs":  [
+                              "uncited_external_execution",
+                              "silent_api_call",
+                              "silent_browser_action",
+                              "silent_worker_execution"
+                          ],
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENGREMIAT MASTER - Centro operativo</title>
+<style>
+:root{--bg:#0f172a;--panel:#111827;--panel2:#1f2937;--soft:#0b1220;--text:#e5e7eb;--muted:#9ca3af;--line:#374151;--blue:#2563eb;--green:#16a34a;--yellow:#ca8a04;--red:#dc2626;--purple:#7c3aed;--cyan:#0891b2;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Segoe UI,Arial,sans-serif;line-height:1.45;}
+header{padding:28px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#111827,#172554);}
+main{padding:24px;max-width:1700px;margin:0 auto;}
+h1{margin:0 0 8px 0;font-size:30px;}
+h2{margin:0 0 14px 0;font-size:22px;}
+h3{margin:0 0 8px 0;font-size:18px;color:#dbeafe;}
+h4{margin:14px 0 8px 0;color:#bfdbfe;font-size:14px;}
+p{color:#d1d5db;}
+a{color:#93c5fd;}
+code{background:#020617;border:1px solid #1e293b;border-radius:6px;padding:2px 6px;color:#dbeafe;}
+.top-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:16px;margin-top:18px;}
+.summary{display:grid;grid-template-columns:repeat(6,minmax(150px,1fr));gap:12px;margin:18px 0;}
+.box,.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 10px 24px rgba(0,0,0,.18);}
+.box span{display:block;color:var(--muted);font-size:12px;margin-bottom:5px;}
+.box strong{font-size:20px;}
+.card{margin-bottom:18px;}
+.hero{border-color:#60a5fa;background:linear-gradient(135deg,#10213d,#111827);}
+.next-panel{border-color:#22c55e;background:linear-gradient(135deg,#052e1b,#111827);}
+.warning-panel{border-color:#f59e0b;background:linear-gradient(135deg,#3a2505,#111827);}
+.card-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;border-bottom:1px solid #243244;padding-bottom:10px;margin-bottom:10px;}
+.right{text-align:right;}
+.grid.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid.three{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;}
+th,td{border:1px solid var(--line);padding:9px;vertical-align:top;}
+th{background:var(--panel2);text-align:left;color:#bfdbfe;}
+ul{margin:8px 0;padding-left:20px;}
+.muted{color:var(--muted);}
+.badge{display:inline-block;border-radius:999px;padding:5px 10px;font-weight:700;font-size:12px;background:#334155;border:1px solid #475569;color:white;white-space:nowrap;}
+.status-ok,.status-closed,.status-resolved,.status-ready{background:var(--green);border-color:var(--green);}
+.status-active,.status-known,.status-next,.status-partial{background:var(--blue);border-color:var(--blue);}
+.status-pending,.status-not_ready_yet{background:var(--yellow);border-color:var(--yellow);}
+.status-blocked,.status-missing{background:var(--red);border-color:var(--red);}
+.status-future{background:var(--purple);border-color:var(--purple);}
+.status-unknown{background:#64748b;border-color:#64748b;}
+.progress-wrap{margin:12px 0;}
+.progress-label{display:flex;justify-content:space-between;gap:12px;margin-bottom:6px;color:#dbeafe;}
+.progress-track{height:12px;background:#020617;border:1px solid #334155;border-radius:999px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,#2563eb,#22c55e);border-radius:999px;}
+.timeline{list-style:none;padding:0;margin:16px 0;border-left:2px solid #334155;}
+.timeline-item{position:relative;margin:0 0 14px 0;padding:12px 12px 12px 26px;background:var(--soft);border:1px solid #334155;border-radius:12px;}
+.timeline-dot{position:absolute;left:-8px;top:18px;width:14px;height:14px;border-radius:50%;background:#60a5fa;border:2px solid #020617;}
+.status-border-ok{border-color:var(--green);}
+.status-border-active{border-color:var(--blue);}
+.status-border-pending{border-color:var(--yellow);}
+.status-border-blocked{border-color:var(--red);}
+.status-border-future{border-color:var(--purple);}
+.hyper-card,.concept-card{background:var(--soft);border:1px solid #334155;border-radius:14px;padding:16px;margin:14px 0;}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.nav a{background:#020617;border:1px solid #334155;border-radius:999px;padding:7px 10px;text-decoration:none;color:#dbeafe;font-size:13px;}
+footer{padding:20px 28px;color:var(--muted);border-top:1px solid var(--line);font-size:13px;}
+@media(max-width:1100px){.top-grid,.summary,.grid.two,.grid.three{grid-template-columns:1fr}.right{text-align:left}main{padding:14px}}
+</style>
+</head>
+<body>
+<header>
+<h1>ENGREMIAT MASTER · Centro operativo</h1>
+<p>Dashboard ordenado para visión humana, decisión del Master, puente ChatGPT y futura interfaz Telegram.</p>
+<div class="nav">
+<a href="#orientation">Orientación</a>
+<a href="#iteration">Iteración</a>
+<a href="#next-action">Next Action</a>
+<a href="#blockers">Bloqueos</a>
+<a href="#queue">Cola pendiente</a>
+<a href="#timeline">Timeline</a>
+<a href="#concepts">Conceptos</a>
+<a href="#requirements">Centro operativo</a>
+<a href="#sources">Fuentes</a>
+</div>
+</header>
+<main>
+<section class="card hero" id="orientation">
+<h2>1. Orientación global</h2>
+<div class="summary">
+<div class="box"><span>Iteración actual</span><strong>
+BASIC_OPERATIVE_VISION
+</strong></div>
+<div class="box"><span>Progreso iteración</span><strong>
+72
+%</strong></div>
+<div class="box"><span>Readiness</span><strong>
+NOT_READY_YET
+</strong></div>
+<div class="box"><span>Pendientes</span><strong>
+3
+</strong></div>
+<div class="box"><span>Bloqueados</span><strong>
+1
+</strong></div>
+<div class="box"><span>Futuros</span><strong>
+3
+</strong></div>
+</div>
+<div class="progress-wrap"><div class="progress-label"><span>Iteracion basica: vision operativa y hoja de ruta</span><strong>72%</strong></div><div class="progress-track"><div class="progress-fill" style="width:72%"></div></div></div>
+<p><strong>Siguiente acción global:</strong> <code>
+HYPER_DASHBOARD_OPERATIVE_VISION_011_ORDER_VISUAL_LAYOUT
+</code></p>
+</section>
+<section class="card" id="iteration">
+<h2>2. Modelo iterable</h2>
+<p><strong>Condición para automatizar:</strong> 
+Cuando la iteracion basica este cerrada y la intermedia tenga cola, gates y funciones ejecutables readonly definidos
+</p>
+<table><thead><tr><th>ID</th><th>Objetivo prioritario</th><th>Estado</th><th>Motivo</th><th>Siguiente</th></tr></thead><tbody>
+<tr><td><code>P01_CLOSE_GLOBAL_DASHBOARD</code></td><td>Cerrar dashboard global jerarquico</td><td><span class="badge status-active">ACTIVE</span></td><td>Sin vision clara, automatizar aumenta el riesgo de colapso y commits mezclados.</td><td><code>order_dashboard_hierarchy_and_commit</code></td></tr>
+<tr><td><code>P02_CLASSIFY_GIT_NOISE</code></td><td>Clasificar ruido Git</td><td><span class="badge status-pending">PENDING</span></td><td>Antes de automatizar hay que saber que pertenece a cada hyper.</td><td><code>HYPER_GIT_NOISE_CLASSIFICATION_READONLY</code></td></tr>
+<tr><td><code>P03_DEFINE_EXECUTABLE_FUNCTIONS</code></td><td>Definir funciones ejecutables</td><td><span class="badge status-pending">PENDING</span></td><td>El dashboard y Telegram necesitan saber que acciones son seguras, readonly, gated o prohibidas.</td><td><code>HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS</code></td></tr>
+<tr><td><code>P04_BUILD_QUEUE_DRY_RUN</code></td><td>Construir cola dry-run</td><td><span class="badge status-pending">PENDING</span></td><td>Primero simulamos seleccion y ejecucion sin tocar nada externo.</td><td><code>HYPER_MASTER_QUEUE_AUTOMATION</code></td></tr>
+</tbody></table>
+</section>
+<section class="card next-panel" id="next-action">
+<h2>3. Next Action Panel</h2>
+<p><strong>Decisión:</strong> <code>
+DASHBOARD_OPERATIVE_CENTER_V1_READY_FOR_HUMAN_REVIEW
+</code></p>
+<p><strong>Razón:</strong> <code>
+dashboard_operative_vision_closed_and_ready_to_define_next_hyper
+</code></p>
+<p><strong>Requiere revisión humana:</strong> <code>
+True
+</code></p>
+<p><strong>Requiere reparación:</strong> <code>
+False
+</code></p>
+<p><strong>Siguiente recomendado:</strong> <code>
+HUMAN_REVIEW_DASHBOARD_AND_DEFINE_NEXT_HYPER
+</code></p>
+</section>
+<section class="card warning-panel" id="blockers">
+<h2>4. Bloqueos y gates humanos</h2>
+<div class="grid.two"></div>
+<h3>Bloqueos abiertos</h3>
+<table><thead><tr><th>ID</th><th>Severidad</th><th>Estado</th><th>Descripción</th><th>Desbloqueo</th></tr></thead><tbody>
+<tr><td><code>BLOCK_GIT_UNTRACKED_NOISE</code></td><td>MEDIUM</td><td><span class="badge status-known">KNOWN</span></td><td>Existen m&#250;ltiples directorios untracked de otros hypers; no deben commitearse sin clasificaci&#243;n.</td><td><code>clasificar por hyper antes de cierre</code></td></tr>
+<tr><td><code>BLOCK_LOCAL_AI_HOOK_TIMEOUT</code></td><td>MEDIUM</td><td><span class="badge status-known">KNOWN</span></td><td>El hook de IA local tuvo timeout; conviene usar router directo o reducir path.</td><td><code>diagnosticar router directo</code></td></tr>
+</tbody></table>
+<h3>Gates humanos pendientes</h3>
+<table><thead><tr><th>ID</th><th>Estado</th><th>Título</th><th>Razón</th></tr></thead><tbody>
+<tr><td><code>GATE_BEFORE_AUTOMATION</code></td><td><span class="badge status-pending">PENDING</span></td><td>Validar visi&#243;n operativa antes de automatizar</td><td>El humano debe entender la hoja de ruta, bloqueos y next action antes de activar automatizaci&#243;n.</td></tr>
+<tr><td><code>GATE_GIT_NOISE_CLASSIFICATION</code></td><td><span class="badge status-pending">PENDING</span></td><td>Clasificar ruido Git por hyper</td><td>Evita commits mezclados de dashboard, IA local, colas y reports.</td></tr>
+</tbody></table>
+</section>
+<section class="card" id="queue">
+<h2>5. Cola global de hypers pendientes</h2>
+<p>Orden visual para decidir qué rama seguir, cuál pausar y cuál desbloquear manualmente.</p>
+<article class="hyper-card"><div class="card-head"><div><h3>Clasificaci&#243;n de ruido Git por hyper</h3><p><code>HYPER_GIT_NOISE_CLASSIFICATION</code></p></div><div class="right"><span class="badge status-pending">PENDING</span><p>Prioridad: <code>HIGH</code></p></div></div><p>Clasificar los archivos untracked existentes por hyper para evitar commits mezclados y preparar cierres limpios.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>HYPER_DASHBOARD_OPERATIVE_VISION</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>CLEAN_STAGE_COMMIT</code></li>
+<li><code>SAFE_QUEUE_AUTOMATION</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>BLOCK_GIT_UNTRACKED_NOISE</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>GIT_NOISE_SCAN</code></td><td>Escanear untracked y agrupar por dominio</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>GIT_NOISE_MAP</code></td><td>Mapear cada grupo a hyper origen</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>GIT_NOISE_COMMIT_PLAN</code></td><td>Proponer plan de commits limpios</td><td><span class="badge status-pending">PENDING</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>classify_untracked_files_by_hyper_readonly</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>Funciones ejecutables del centro operativo</h3><p><code>HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS</code></p></div><div class="right"><span class="badge status-pending">PENDING</span><p>Prioridad: <code>HIGH</code></p></div></div><p>Definir qu&#233; acciones podr&#225;n ejecutarse desde dashboard o Telegram: readonly, gates humanos, revisi&#243;n IA local, cola de hypers y cierre local.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>OPERATIVE_CENTER_CONTRACT_V1</code></li>
+<li><code>HYPER_GIT_NOISE_CLASSIFICATION</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>TELEGRAM_OPERATIVE_BOT</code></li>
+<li><code>MASTER_SAFE_ACTIONS</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>GATE_BEFORE_AUTOMATION</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>FUNCTIONS_CATALOG</code></td><td>Cat&#225;logo de funciones ejecutables</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>SAFETY_GATES</code></td><td>Gate por tipo de acci&#243;n</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>DASHBOARD_ACTION_SCHEMA</code></td><td>Schema com&#250;n dashboard/bot</td><td><span class="badge status-pending">PENDING</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>define_executable_functions_contract</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>IA local / Ollama por router directo</h3><p><code>HYPER_LOCAL_AI_ROUTER_DIRECT</code></p></div><div class="right"><span class="badge status-blocked">BLOCKED</span><p>Prioridad: <code>MEDIUM</code></p></div></div><p>Evitar timeout del hook largo y usar revisi&#243;n local directa, con protocolos de reparaci&#243;n y prompts controlados.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>POWERSHELL_RENDER_PROTOCOL</code></li>
+<li><code>OLLAMA_PROMPT_TEMPLATE</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>REPAIR_ASSISTED_FLOW</code></li>
+<li><code>LOCAL_AI_REVIEW_FOR_OPERATOR_ERRORS</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>BLOCK_LOCAL_AI_HOOK_TIMEOUT</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>ROUTER_DIRECT_SMOKE</code></td><td>Prueba m&#237;nima router directo</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>LOCAL_AI_CONTEXT_LIMIT</code></td><td>Contrato de contexto seguro</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>REPAIR_REVIEW_OUTPUT</code></td><td>Salida estructurada de revisi&#243;n IA</td><td><span class="badge status-pending">PENDING</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>diagnose_router_direct_for_local_ai</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>Automatizaci&#243;n de colas del Master</h3><p><code>HYPER_MASTER_QUEUE_AUTOMATION</code></p></div><div class="right"><span class="badge status-pending">PENDING</span><p>Prioridad: <code>MEDIUM</code></p></div></div><p>Convertir la hoja de ruta en cola operativa: seleccionar hyper, checkpoint, gate, reparaci&#243;n o parada humana.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>NEXT_ACTION_PANEL</code></li>
+<li><code>PENDING_HYPERS_GLOBAL_VIEW</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>MASTER_ROUTE_EXECUTION</code></li>
+<li><code>SAFE_AUTOMATION</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>GATE_BEFORE_AUTOMATION</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>QUEUE_SCHEMA</code></td><td>Schema de cola de hypers</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>QUEUE_SELECTOR</code></td><td>Selector de siguiente hyper</td><td><span class="badge status-pending">PENDING</span></td></tr>
+<tr><td><code>QUEUE_DRY_RUN</code></td><td>Dry-run sin ejecuci&#243;n real</td><td><span class="badge status-pending">PENDING</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>prepare_final_gates_readonly</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>Bot Telegram como interfaz del centro operativo</h3><p><code>HYPER_TELEGRAM_OPERATIVE_BOT</code></p></div><div class="right"><span class="badge status-future">FUTURE</span><p>Prioridad: <code>MEDIUM</code></p></div></div><p>Dise&#241;ar el bot con la misma jerarqu&#237;a del dashboard: estado, hypers, checkpoints, bloqueos, gates, next action y ejecuci&#243;n segura.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>DASHBOARD_ACTION_SCHEMA</code></li>
+<li><code>OPERATIVE_CENTER_CONTRACT_V1</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>MOBILE_MASTER_CONTROL</code></li>
+<li><code>HUMAN_REVIEW_FROM_PHONE</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>PENDING_EXECUTABLE_FUNCTIONS_DEFINITION</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>BOT_MENU_MAP</code></td><td>Mapa de men&#250;s desde roadmap</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>BOT_BUTTON_ACTIONS</code></td><td>Botones por acci&#243;n segura</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>BOT_HUMAN_GATES</code></td><td>Aprobaci&#243;n humana desde Telegram</td><td><span class="badge status-future">FUTURE</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>design_telegram_bot_operational_map</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>Selecci&#243;n autom&#225;tica de ruta del Master</h3><p><code>HYPER_MASTER_AUTOMATIC_ROUTE_SELECTION</code></p></div><div class="right"><span class="badge status-future">FUTURE</span><p>Prioridad: <code>LOW</code></p></div></div><p>Permitir que el Master lea roadmap, bloqueos, gates y next-action para proponer o preparar el siguiente bloque.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>MASTER_QUEUE_AUTOMATION</code></li>
+<li><code>DASHBOARD_EXECUTABLE_FUNCTIONS</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>SUPERVISED_AUTONOMOUS_DEVELOPMENT</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>GATE_BEFORE_AUTOMATION</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>ROADMAP_READER</code></td><td>Lector estable de roadmap</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>CHECKPOINT_SELECTOR</code></td><td>Selector de checkpoint pendiente</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>SAFE_ACTION_DECIDER</code></td><td>Decisor seguro: ejecutar, reparar o pedir humano</td><td><span class="badge status-future">FUTURE</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>build_roadmap_driven_selector</code></p></article>
+<article class="hyper-card"><div class="card-head"><div><h3>Loop de automatizaci&#243;n supervisada</h3><p><code>HYPER_SUPERVISED_AUTOMATION_LOOP</code></p></div><div class="right"><span class="badge status-future">FUTURE</span><p>Prioridad: <code>LOW</code></p></div></div><p>Ejecutar ciclos asistidos por roadmap con revisi&#243;n humana, gates y reparaci&#243;n local antes de pasar a automatizaci&#243;n m&#225;s amplia.</p><div class="grid three"><div><h4>Depende de</h4><ul><li><code>MASTER_AUTOMATIC_ROUTE_SELECTION</code></li>
+<li><code>TELEGRAM_OPERATIVE_BOT</code></li>
+<li><code>LOCAL_AI_ROUTER_DIRECT</code></li></ul></div><div><h4>Desbloquea</h4><ul><li><code>ENGREMIAT_AUTOMATIC_DEVELOPMENT_PIPELINE</code></li></ul></div><div><h4>Bloqueos</h4><ul><li><code>MULTIPLE_HUMAN_GATES_PENDING</code></li></ul></div></div><h4>Checkpoints</h4><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th></tr></thead><tbody><tr><td><code>LOOP_DRY_RUN</code></td><td>Loop dry-run</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>LOOP_ONE_SAFE_ACTION</code></td><td>Una acci&#243;n segura con gate</td><td><span class="badge status-future">FUTURE</span></td></tr>
+<tr><td><code>LOOP_REVIEW_AND_STOP</code></td><td>Revisi&#243;n y parada controlada</td><td><span class="badge status-future">FUTURE</span></td></tr></tbody></table><p><strong>Siguiente acción:</strong> <code>wait_until_dashboard_queue_local_ai_are_ready</code></p></article>
+</section>
+<section class="card" id="timeline">
+<h2>6. Timeline operativo</h2>
+<ol class="timeline"><li class="timeline-item status-border-ok"><div class="timeline-dot"></div><div><h3>Operador base estable</h3><p><code>T01_OPERATOR_CORE</code> <span class="badge status-ok">OK</span></p><p>Ejecuta bloques PowerShell y devuelve reportes; commit d4c8121 y cierre posterior OK.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>100%</strong></div><div class="progress-track"><div class="progress-fill" style="width:100%"></div></div></div></div></li>
+<li class="timeline-item status-border-ok"><div class="timeline-dot"></div><div><h3>Centro operativo dashboard</h3><p><code>T02_DASHBOARD_OPERATIVE_CENTER</code> <span class="badge status-ok">OK</span></p><p>Dashboard, roadmap, blockers, next action y contrato operativo V1 creados.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>100%</strong></div><div class="progress-track"><div class="progress-fill" style="width:100%"></div></div></div></div></li>
+<li class="timeline-item status-border-active"><div class="timeline-dot"></div><div><h3>Vision global del desarrollo</h3><p><code>T03_GLOBAL_DEVELOPMENT_VISION</code> <span class="badge status-active">ACTIVE</span></p><p>A&#241;adiendo timeline, barra de progreso, checkpoints de contexto y reglas de pausa humana.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>70%</strong></div><div class="progress-track"><div class="progress-fill" style="width:70%"></div></div></div></div></li>
+<li class="timeline-item status-border-pending"><div class="timeline-dot"></div><div><h3>Clasificacion Git por hyper</h3><p><code>T04_GIT_NOISE_CLASSIFICATION</code> <span class="badge status-pending">PENDING</span></p><p>Pendiente ordenar untracked para evitar commits mezclados.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div></div></li>
+<li class="timeline-item status-border-pending"><div class="timeline-dot"></div><div><h3>Funciones ejecutables del centro operativo</h3><p><code>T05_EXECUTABLE_FUNCTIONS</code> <span class="badge status-pending">PENDING</span></p><p>Definir acciones seguras desde dashboard y futuro bot de Telegram.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div></div></li>
+<li class="timeline-item status-border-blocked"><div class="timeline-dot"></div><div><h3>IA local / Ollama por router directo</h3><p><code>T06_LOCAL_AI_ROUTER</code> <span class="badge status-blocked">BLOCKED</span></p><p>Hook con timeout; se debe probar router directo y usar protocolos de reparacion.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>20%</strong></div><div class="progress-track"><div class="progress-fill" style="width:20%"></div></div></div></div></li>
+<li class="timeline-item status-border-pending"><div class="timeline-dot"></div><div><h3>Cola operativa del Master</h3><p><code>T07_QUEUE_AUTOMATION</code> <span class="badge status-pending">PENDING</span></p><p>Convertir roadmap y next-action en cola ejecutable segura.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div></div></li>
+<li class="timeline-item status-border-future"><div class="timeline-dot"></div><div><h3>Bot Telegram operativo</h3><p><code>T08_TELEGRAM_BOT</code> <span class="badge status-future">FUTURE</span></p><p>Dise&#241;ar el bot desde la misma jerarquia del dashboard.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div></div></li>
+<li class="timeline-item status-border-future"><div class="timeline-dot"></div><div><h3>Loop de automatizacion supervisada</h3><p><code>T09_SUPERVISED_AUTOMATION</code> <span class="badge status-future">FUTURE</span></p><p>Automatizar con gates humanos, pausa ordenada y reparacion asistida.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div></div></li></ol>
+</section>
+<section class="card" id="concepts">
+<h2>7. Conceptos jerárquicos y checkpoints de contexto</h2>
+<article class="concept-card"><div class="card-head"><div><h3>Master Operator</h3><p><code>CONCEPT_MASTER_OPERATOR</code></p></div><span class="badge status-ok">OK</span></div><p>Ejecutar bloques, capturar stdout/stderr, generar run y devolver reporte controlado.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>100%</strong></div><div class="progress-track"><div class="progress-fill" style="width:100%"></div></div></div><p><strong>Regla de pausa:</strong> Si falla el operador base, se pausa todo el desarrollo automatico.</p><p><strong>Siguiente acción:</strong> <code>mantener como dependencia estable</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>OP_RUNNER</code></td><td>Runner operativo</td><td><span class="badge status-ok">OK</span></td><td>Ejecutar scripts de forma controlada</td><td>Solo si falla ejecucion base</td></tr>
+<tr><td><code>OP_REPORTS</code></td><td>Reportes estructurados</td><td><span class="badge status-ok">OK</span></td><td>Permitir lectura por humano y Master</td><td>Si no aparece ENGREMIAT_REPORT_BEGIN/END</td></tr>
+<tr><td><code>OP_OUTBOX</code></td><td>Outbox persistente</td><td><span class="badge status-ok">OK</span></td><td>Recuperar ultimo estado</td><td>Si desaparece o queda vacio en cierres criticos</td></tr></tbody></table></article>
+<article class="concept-card"><div class="card-head"><div><h3>Dashboard centro operativo</h3><p><code>CONCEPT_DASHBOARD_CENTER</code></p></div><span class="badge status-active">ACTIVE</span></div><p>Dar vision humana y estructura de decision para Master y futuro bot de Telegram.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>80%</strong></div><div class="progress-track"><div class="progress-fill" style="width:80%"></div></div></div><p><strong>Regla de pausa:</strong> Si falta next-action o roadmap, pausar automatizacion pero seguir con reparacion dashboard.</p><p><strong>Siguiente acción:</strong> <code>mejorar visual y clasificar cola pendiente</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>DASH_ROADMAP</code></td><td>Roadmap jerarquico</td><td><span class="badge status-ok">OK</span></td><td>Fuente principal de verdad</td><td>Si la jerarquia no refleja lo que se esta desarrollando</td></tr>
+<tr><td><code>DASH_BLOCKERS</code></td><td>Bloqueos y dependencias</td><td><span class="badge status-ok">OK</span></td><td>Saber que bloquea y que desbloquea</td><td>Si un bloqueo no indica si pausa todo o solo rama</td></tr>
+<tr><td><code>DASH_NEXT_ACTION</code></td><td>Next Action Panel</td><td><span class="badge status-ok">OK</span></td><td>Indicar siguiente paso calculado</td><td>Si recomienda una accion incoherente</td></tr>
+<tr><td><code>DASH_PENDING_HYPERS</code></td><td>Hypers pendientes</td><td><span class="badge status-ok">OK</span></td><td>Ver cola global pendiente</td><td>Si faltan hypers o prioridades</td></tr>
+<tr><td><code>DASH_TIMELINE</code></td><td>Timeline y progreso</td><td><span class="badge status-active">ACTIVE</span></td><td>Ubicar el desarrollo en el tiempo logico</td><td>Si no se entiende donde estamos</td></tr></tbody></table></article>
+<article class="concept-card"><div class="card-head"><div><h3>Git, limpieza y cierre</h3><p><code>CONCEPT_GIT_AND_CLOSURE</code></p></div><span class="badge status-pending">PENDING</span></div><p>Clasificar cambios por hyper y cerrar etapas con commits limpios.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>25%</strong></div><div class="progress-track"><div class="progress-fill" style="width:25%"></div></div></div><p><strong>Regla de pausa:</strong> Si hay ruido no clasificado, pausar commits de esa rama y continuar con diagnosticos readonly.</p><p><strong>Siguiente acción:</strong> <code>HYPER_GIT_NOISE_CLASSIFICATION_READONLY</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>GIT_SCAN</code></td><td>Escaneo untracked</td><td><span class="badge status-pending">PENDING</span></td><td>Ver que existe sin tocarlo</td><td>Si aparecen carpetas desconocidas</td></tr>
+<tr><td><code>GIT_MAP</code></td><td>Mapa archivo-hyper</td><td><span class="badge status-pending">PENDING</span></td><td>Asignar archivos a origen</td><td>Si hay archivos ambiguos</td></tr>
+<tr><td><code>GIT_COMMIT_PLAN</code></td><td>Plan de commit limpio</td><td><span class="badge status-pending">PENDING</span></td><td>Cerrar sin mezclar hypers</td><td>Antes de commit de grupos grandes</td></tr></tbody></table></article>
+<article class="concept-card"><div class="card-head"><div><h3>IA local / Ollama</h3><p><code>CONCEPT_LOCAL_AI</code></p></div><span class="badge status-blocked">BLOCKED</span></div><p>Ayudar a reparar errores y revisar scripts sin repetir patrones fallidos.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>20%</strong></div><div class="progress-track"><div class="progress-fill" style="width:20%"></div></div></div><p><strong>Regla de pausa:</strong> Si Ollama o hook falla, pausar solo IA local y continuar con dashboard/cola readonly.</p><p><strong>Siguiente acción:</strong> <code>diagnose_router_direct_for_local_ai</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>AI_PROTOCOLS</code></td><td>Protocolos anti-repeticion</td><td><span class="badge status-partial">PARTIAL</span></td><td>Evitar errores como alias H/Get-History</td><td>Si se repite un error ya protocolizado</td></tr>
+<tr><td><code>AI_ROUTER_DIRECT</code></td><td>Router directo</td><td><span class="badge status-pending">PENDING</span></td><td>Evitar timeout del hook largo</td><td>Si requiere permisos o ejecucion externa</td></tr>
+<tr><td><code>AI_REPAIR_OUTPUT</code></td><td>Salida estructurada IA</td><td><span class="badge status-pending">PENDING</span></td><td>Recibir propuesta revisable</td><td>Si propone cambios no seguros</td></tr></tbody></table></article>
+<article class="concept-card"><div class="card-head"><div><h3>Cola y automatizacion segura</h3><p><code>CONCEPT_QUEUE_AND_AUTOMATION</code></p></div><span class="badge status-pending">PENDING</span></div><p>Convertir la vision global en cola de ejecucion controlada con gates.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div><p><strong>Regla de pausa:</strong> Si una accion requiere humano, se pausa esa accion y el Master busca otra rama segura.</p><p><strong>Siguiente acción:</strong> <code>prepare_final_gates_readonly</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>QUEUE_SCHEMA</code></td><td>Schema de cola</td><td><span class="badge status-pending">PENDING</span></td><td>Estructurar tareas ejecutables</td><td>Si una tarea no tiene gate definido</td></tr>
+<tr><td><code>QUEUE_SELECTOR</code></td><td>Selector de siguiente accion</td><td><span class="badge status-pending">PENDING</span></td><td>Elegir hyper/checkpoint siguiente</td><td>Si hay conflicto de prioridad</td></tr>
+<tr><td><code>QUEUE_PAUSE_RESUME</code></td><td>Pausa y reanudacion ordenada</td><td><span class="badge status-pending">PENDING</span></td><td>No colapsar ante bloqueos</td><td>Si hay bloqueo de seguridad</td></tr></tbody></table></article>
+<article class="concept-card"><div class="card-head"><div><h3>Bot Telegram operativo</h3><p><code>CONCEPT_TELEGRAM_BOT</code></p></div><span class="badge status-future">FUTURE</span></div><p>Llevar la misma vision y decisiones del dashboard al movil.</p><div class="progress-wrap"><div class="progress-label"><span>Progreso del concepto</span><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div></div><p><strong>Regla de pausa:</strong> No empezar ejecucion desde Telegram hasta definir funciones, gates y cola.</p><p><strong>Siguiente acción:</strong> <code>design_telegram_bot_operational_map</code></p><table><thead><tr><th>ID</th><th>Checkpoint</th><th>Estado</th><th>Para qué sirve</th><th>Atención humana si...</th></tr></thead><tbody><tr><td><code>BOT_MAP</code></td><td>Mapa de menus</td><td><span class="badge status-future">FUTURE</span></td><td>Mostrar jerarquia del Master</td><td>Antes de activar acciones</td></tr>
+<tr><td><code>BOT_GATES</code></td><td>Botones de aprobacion</td><td><span class="badge status-future">FUTURE</span></td><td>Validar gates humanos</td><td>Siempre antes de ejecutar</td></tr>
+<tr><td><code>BOT_ACTIONS</code></td><td>Acciones seguras</td><td><span class="badge status-future">FUTURE</span></td><td>Ejecutar solo funciones permitidas</td><td>Si la accion no es readonly</td></tr></tbody></table></article>
+</section>
+<section class="card" id="requirements">
+<h2>8. Centro operativo real</h2>
+<p><strong>Marcador:</strong> <code>OPERATIVE_CENTER_REQUIREMENTS_V1</code></p>
+<p><strong>Rol:</strong> <code>
+OPERATIVE_BRIDGE_MASTER_CHATGPT_HUMAN_TELEGRAM
+</code></p>
+<table><thead><tr><th>ID</th><th>Capa</th><th>Estado</th><th>Resumen</th></tr></thead><tbody>
+<tr><td><code>L01_ORIENTATION</code></td><td>Orientacion global</td><td><span class="badge status-partial">PARTIAL</span></td><td>Mostrar iteracion, progreso, hyper activo, next action y readiness.</td></tr>
+<tr><td><code>L02_ROADMAP_AND_QUEUE</code></td><td>Roadmap y cola pendiente</td><td><span class="badge status-partial">PARTIAL</span></td><td>Ordenar hypers pendientes, bloqueados y futuros como cola de decision.</td></tr>
+<tr><td><code>L03_BLOCKERS_AND_GATES</code></td><td>Bloqueos y gates humanos</td><td><span class="badge status-partial">PARTIAL</span></td><td>Indicar que bloquea, que rama afecta, si pausa todo o solo parte y como desbloquear.</td></tr>
+<tr><td><code>L04_SAFE_ACTIONS</code></td><td>Acciones seguras ejecutables</td><td><span class="badge status-pending">PENDING</span></td><td>Definir acciones readonly, escritura local, Git local y acciones prohibidas sin autorizacion.</td></tr>
+<tr><td><code>L05_CHATGPT_BRIDGE</code></td><td>Puente Master ChatGPT</td><td><span class="badge status-pending">PENDING</span></td><td>Generar contexto copiable para continuar desarrollos con ChatGPT sin perder estado.</td></tr>
+<tr><td><code>L06_TELEGRAM_SEED</code></td><td>Semilla del bot Telegram</td><td><span class="badge status-future">FUTURE</span></td><td>Transformar la misma jerarquia del dashboard en menus, botones y aprobaciones desde movil.</td></tr>
+</tbody></table>
+</section>
+<section class="card" id="sources">
+<h2>9. Fuentes de estado del Master</h2>
+<table><thead><tr><th>Fuente</th><th>Ruta</th><th>Estado</th></tr></thead><tbody>
+<tr><td>Roadmap</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\master-roadmap.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Next Action</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\next-action.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Bloqueos y dependencias</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\blockers-and-dependencies.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Hypers pendientes</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\pending-hypers-global.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Vision global</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\global-development-vision.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Iteraciones</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\development-iteration-model.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Requisitos centro operativo</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\operative-center-requirements.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+<tr><td>Contrato centro operativo</td><td><code>C:\Users\sacan\Desktop\ENGREMIAT_MASTER\dashboard-master\data\operative-center-contract.json</code></td><td><span class="badge status-ok">OK</span></td></tr>
+</tbody></table>
+</section>
+</main>
+<footer>Generado: 
+2026-06-02 08:16:48
+ · Fuente principal: dashboard-master/data/*.json · Acciones remotas: False.</footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F004_WORKER_ROUTING_DRAFT_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-002-onboarding_kit",
+    "worker_real_execution_allowed":  false,
+    "worker_routes":  [
+                          "WORKER_PROMPTER",
+                          "WORKER_CONTROL_GATE",
+                          "WORKER_MARKET_PREVENTA",
+                          "WORKER_FINANCING",
+                          "WORKER_OPENDATA",
+                          "WORKER_VALIDATOR",
+                          "WORKER_DASHBOARD"
+                      ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

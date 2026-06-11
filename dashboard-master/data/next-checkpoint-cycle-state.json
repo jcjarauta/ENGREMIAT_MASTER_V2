@@ -1,0 +1,11 @@
+﻿{
+    "type":  "NEXT_CHECKPOINT_CYCLE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:26:16",
+    "current_active_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "next_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "checkpoints_total":  null,
+    "ready_for_next_cycle":  true,
+    "operator_execution_pending":  false,
+    "next_recommended_action":  "HYPER_032_ACTIVATE_CHECKPOINT_001"
+}

@@ -1,0 +1,36 @@
+﻿{
+    "type":  "TELEGRAM_CONTROL_ACTIONS",
+    "version":  1,
+    "updated_at":  "2026-06-02T11:35:42.6213300+02:00",
+    "mode":  "proposal_only",
+    "actions":  [
+                    {
+                        "id":  "telegram_status",
+                        "label":  "Estado global",
+                        "description":  "Preparar mensaje de Telegram con estado global del panel.",
+                        "real_send_allowed":  false,
+                        "payload_source":  "dashboard-master/data/global-control-panel-state.json"
+                    },
+                    {
+                        "id":  "telegram_next_phase",
+                        "label":  "Siguiente fase",
+                        "description":  "Preparar mensaje de Telegram con siguiente fase lista.",
+                        "real_send_allowed":  false,
+                        "payload_source":  "queues/global-development-work-queue.json"
+                    },
+                    {
+                        "id":  "telegram_blockers",
+                        "label":  "Bloqueos",
+                        "description":  "Preparar mensaje de Telegram con ramas pausadas/bloqueadas.",
+                        "real_send_allowed":  false,
+                        "payload_source":  "queues/global-development-work-queue.json"
+                    },
+                    {
+                        "id":  "telegram_authorization_request",
+                        "label":  "Pedir autorización",
+                        "description":  "Preparar plantilla de autorización humana.",
+                        "real_send_allowed":  false,
+                        "payload_source":  "dashboard-master/data/telegram-control-payload-template.json"
+                    }
+                ]
+}

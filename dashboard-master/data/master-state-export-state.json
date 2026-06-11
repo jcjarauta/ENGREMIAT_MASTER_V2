@@ -1,0 +1,15 @@
+﻿{
+    "type":  "MASTER_STATE_EXPORT_STATE",
+    "version":  1,
+    "updated_at":  "2026-06-02T11:52:32.0177811+02:00",
+    "status":  "MASTER_STATE_EXPORT_READY",
+    "snapshot_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-global-state-export.json",
+    "prompt_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-global-state-export-prompt.md",
+    "code_backlog_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-code-block-backlog.json",
+    "export_html_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\master-state-export.html",
+    "next_recommended_action":  "HYPER_008_MASTER_STATE_REVIEW_QUEUE_001",
+    "purpose":  "Descargar/enviar estado global para que ChatGPT proponga bloques y el operador/Ollama ejecute cola.",
+    "git_actions":  false,
+    "real_telegram_actions":  false,
+    "external_actions":  false
+}

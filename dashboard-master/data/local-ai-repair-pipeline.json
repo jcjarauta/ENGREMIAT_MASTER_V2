@@ -1,0 +1,43 @@
+﻿{
+    "updated_at":  "2026-06-01T22:03:08",
+    "type":  "LOCAL_AI_REPAIR_PIPELINE",
+    "mode":  "READONLY",
+    "description":  "Pipeline de reparación Ollama para errores de operador, bloqueado hasta dashboard + watchdog listo.",
+    "steps":  [
+                  {
+                      "id":  "STEP-001",
+                      "action":  "Capturar último stdout/stderr del operador",
+                      "status":  "PENDING",
+                      "note":  "Leer último run y outbox"
+                  },
+                  {
+                      "id":  "STEP-002",
+                      "action":  "Filtrar errores brutos y parseables",
+                      "status":  "PENDING",
+                      "note":  "Extraer patrones y stdout preview"
+                  },
+                  {
+                      "id":  "STEP-003",
+                      "action":  "Enviar a Ollama para sugerencia de reparación",
+                      "status":  "PENDING",
+                      "note":  "Modo readonly, no ejecutar"
+                  },
+                  {
+                      "id":  "STEP-004",
+                      "action":  "Validar propuesta",
+                      "status":  "PENDING",
+                      "note":  "Revisar cambios sugeridos antes de patch real"
+                  },
+                  {
+                      "id":  "STEP-005",
+                      "action":  "Actualizar script watchdog/operador",
+                      "status":  "LOCKED",
+                      "note":  "Se desbloquea solo tras validación humana y dashboard terminado"
+                  }
+              ],
+    "next_recommended_action":  "MASTER_LOCAL_AI_REPAIR_002_SMOKE_PIPELINE_READONLY",
+    "gates":  [
+                  "MASTER_DASHBOARD_008_FINALIZED",
+                  "MASTER_WATCHDOG_001_REWRITE_MINIMAL_NO_NESTED_QUOTES"
+              ]
+}

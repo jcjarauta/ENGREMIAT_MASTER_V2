@@ -1,0 +1,25 @@
+﻿{
+    "type":  "GLOBAL_TREE_RENDER_STATE",
+    "version":  4,
+    "updated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "renderer":  "flat_parent_child_tree_depth_safe",
+    "filters":  [
+                    "all",
+                    "ready",
+                    "pending",
+                    "paused",
+                    "blocked",
+                    "done"
+                ],
+    "counters":  {
+                     "ready":  4,
+                     "pending":  1,
+                     "paused":  1,
+                     "blocked":  1,
+                     "done":  3,
+                     "running":  0
+                 },
+    "next_recommended_action":  "HYPER_006_TELEGRAM_CONTROL_PREP_001",
+    "human_filter_enabled":  true,
+    "browser_execution_allowed":  false
+}

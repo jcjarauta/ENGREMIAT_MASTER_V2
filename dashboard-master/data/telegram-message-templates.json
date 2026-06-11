@@ -1,0 +1,77 @@
+﻿{
+    "type":  "TELEGRAM_MESSAGE_TEMPLATES",
+    "version":  1,
+    "generated_at":  "2026-06-02T11:38:51.3031231+02:00",
+    "mode":  "proposal_only",
+    "telegram_send_allowed":  false,
+    "token_required_now":  false,
+    "templates":  [
+                      {
+                          "id":  "TPL-STATUS",
+                          "kind":  "status",
+                          "title":  "ENGREMIAT · Estado",
+                          "body_template":  "Estado: {{global_status}}. Siguiente: {{next_action}}. Modo Telegram: proposal-only.",
+                          "buttons":  [
+                                          "Estado",
+                                          "Siguiente",
+                                          "Bloqueos",
+                                          "Autorizar"
+                                      ],
+                          "payload_instruction":  "Preparar resumen de estado para ChatGPT/operador.",
+                          "requires_human_reply":  false
+                      },
+                      {
+                          "id":  "TPL-NEXT-PHASE",
+                          "kind":  "next_phase",
+                          "title":  "ENGREMIAT · Siguiente fase",
+                          "body_template":  "Siguiente bloque recomendado: {{next_block}}. Tarea activa: {{active_task}}.",
+                          "buttons":  [
+                                          "Continuar",
+                                          "Pausar",
+                                          "Ver evidencias"
+                                      ],
+                          "payload_instruction":  "Enviar siguiente fase a ChatGPT para generar bloque PowerShell completo.",
+                          "requires_human_reply":  true
+                      },
+                      {
+                          "id":  "TPL-BLOCKERS",
+                          "kind":  "blockers",
+                          "title":  "ENGREMIAT · Bloqueos",
+                          "body_template":  "Bloqueo: {{blocker_reason}}. Estado: {{blocker_status}}. No bloquea cola global.",
+                          "buttons":  [
+                                          "Mantener pausado",
+                                          "Reactivar",
+                                          "Continuar seguro"
+                                      ],
+                          "payload_instruction":  "Preparar reparación segura o pausa de rama bloqueada.",
+                          "requires_human_reply":  true
+                      },
+                      {
+                          "id":  "TPL-AUTHORIZATION",
+                          "kind":  "authorization_request",
+                          "title":  "ENGREMIAT · Autorización humana",
+                          "body_template":  "Se requiere decisión humana para: {{authorization_scope}}. Responde: ACEPTAR / PAUSAR / BLOQUEAR.",
+                          "buttons":  [
+                                          "ACEPTAR",
+                                          "PAUSAR",
+                                          "BLOQUEAR",
+                                          "SOLO MOCK"
+                                      ],
+                          "payload_instruction":  "Registrar autorización humana antes de acción sensible.",
+                          "requires_human_reply":  true
+                      },
+                      {
+                          "id":  "TPL-OPERATOR-PAYLOAD",
+                          "kind":  "operator_payload",
+                          "title":  "ENGREMIAT · Payload operador",
+                          "body_template":  "Payload preparado para ChatGPT/operador. Acción: {{payload_action}}.",
+                          "buttons":  [
+                                          "Copiar payload",
+                                          "Revisar",
+                                          "Cancelar"
+                                      ],
+                          "payload_instruction":  "Copiar payload manualmente; no ejecutar desde Telegram mock.",
+                          "requires_human_reply":  true
+                      }
+                  ]
+}

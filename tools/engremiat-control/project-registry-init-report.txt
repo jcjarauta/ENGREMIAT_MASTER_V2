@@ -1,0 +1,6 @@
+﻿{
+    "phase":  "ENGREMIAT_REGISTRY_INIT",
+    "ok":  true,
+    "decision":  "PROJECT_REGISTRY_INITIALIZED",
+    "registry_path":  "tools\\engremiat-control\\project-registry.json"
+}

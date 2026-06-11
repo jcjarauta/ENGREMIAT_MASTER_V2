@@ -1,0 +1,28 @@
+﻿{
+    "type":  "GIT_AUTOMATION_STOP_PROTOCOL",
+    "version":  1,
+    "created_at":  "2026-06-02T10:26:21.2124348+02:00",
+    "max_attempts":  2,
+    "allowed_paths":  [
+                          "dashboard-master/index.html",
+                          "dashboard-master/data/*.json",
+                          "dashboard-master/dashboard-executable-summary.html",
+                          "tools/local-ai/*.ps1",
+                          "tools/dashboard/*.ps1",
+                          "state/ollama-bridge/*.json",
+                          "queues/ollama-bridge-runtime-queue.json"
+                      ],
+    "excluded_paths":  [
+                           "reports/",
+                           "runs/",
+                           ".operator/",
+                           "*.backup*",
+                           "*.bak",
+                           "stdout*",
+                           "stderr*",
+                           "node_modules/",
+                           "dist/"
+                       ],
+    "manual_intervention_required_after_max_attempts":  true,
+    "next_action_if_manual":  "HUMAN_GIT_STATUS_REVIEW"
+}

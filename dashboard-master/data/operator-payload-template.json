@@ -1,0 +1,16 @@
+﻿{
+    "type":  "ENGREMIAT_OPERATOR_PAYLOAD_TEMPLATE",
+    "version":  1,
+    "generated_at":  "2026-06-02T11:19:28.9025667+02:00",
+    "human_filter_required":  true,
+    "browser_execution_allowed":  false,
+    "destination":  "ChatGPT via operador",
+    "expected_payload":  {
+                             "source":  "global-control-panel",
+                             "selected_phase":  "PHASE-ID",
+                             "selected_status":  "ready|paused|blocked|pending",
+                             "hierarchy":  "DESARROLLO_GLOBAL -\u003e HIPERMACRO -\u003e MACRO -\u003e OBJETIVO -\u003e CHECKPOINT -\u003e TAREA -\u003e BLOQUE -\u003e EVIDENCIA",
+                             "human_context":  "Texto opcional pegado por humano",
+                             "requested_action":  "continue|reactivate|solve_blocker|pause_and_continue_safe"
+                         }
+}

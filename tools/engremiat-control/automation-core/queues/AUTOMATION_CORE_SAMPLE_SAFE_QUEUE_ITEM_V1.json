@@ -1,0 +1,13 @@
+﻿{
+    "item_id":  "SAMPLE-LOCAL-REVIEW-001",
+    "item_type":  "LOCAL_REVIEW_TASK",
+    "source":  "automation_core_repair",
+    "objective":  "Validate local intake contract without executing real workers.",
+    "scope":  "tools/engremiat-control/automation-core",
+    "safety_mode":  "LOCAL_ONLY",
+    "human_authorization_status":  "NOT_REQUIRED_FOR_STUB",
+    "external_actions_executed":  false,
+    "google_api_call_allowed":  false,
+    "real_worker_allowed":  false,
+    "created_at":  "2026-06-06T08:02:42.0450606+02:00"
+}

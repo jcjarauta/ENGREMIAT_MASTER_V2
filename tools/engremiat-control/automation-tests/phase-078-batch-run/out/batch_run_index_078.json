@@ -1,0 +1,283 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_078_BATCH_RUN_INDEX_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_078_APPLY_REPEATABLE_DRY_RUN_BATCH_GATE_DECISION",
+    "created_at":  "2026-06-05T09:46:48",
+    "batch_id":  "phase-078-batch-001",
+    "batch_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001",
+    "batch_size":  3,
+    "runs_ok_count":  3,
+    "runs_failed_count":  0,
+    "runs":  [
+                 {
+                     "id":  "batch-077-001",
+                     "theme":  "financing_finder",
+                     "seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_001_local_financing_finder.json",
+                     "run_id":  "phase-078-batch-001-financing_finder",
+                     "output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder",
+                     "runner_exit_code":  0,
+                     "ok":  true,
+                     "failed_checks_count":  0,
+                     "safety_ok":  true,
+                     "readiness_score":  95,
+                     "readiness_level":  "high",
+                     "output_files_count":  9,
+                     "output_bytes":  7913,
+                     "runner_stdout":  "# ENGREMIAT_REPORT_BEGIN\ntype=ENGREMIAT_REPEATABLE_LOCAL_DRY_RUN_REPORT_001\nok=True\nrun_id=phase-078-batch-001-financing_finder\noutput_root=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\ndry_run_only=True\nfunctions_validated=8\nreadiness_score=95\nreadiness_level=high\nreal_ai_call_executed=False\nexternal_api_call_executed=False\nworker_real_execution_allowed=False\noperator_execution_allowed=False\nautomation_real_execution_allowed=False\nnext_recommended_action=START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION\n# ENGREMIAT_REPORT_END",
+                     "failed_checks":  [
+
+                                       ],
+                     "checks":  [
+                                    {
+                                        "file":  "01_idea_intake_status.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\01_idea_intake_status.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "02_normalized_project_packet.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\02_normalized_project_packet.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "03_readiness_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\03_readiness_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "04_worker_routing_draft.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\04_worker_routing_draft.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "05_signals_needed_contract.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\05_signals_needed_contract.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "06_micro_work_packets_index.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\06_micro_work_packets_index.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "07_human_review_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\07_human_review_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "08_repeatable_dry_run_dashboard.html",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\08_repeatable_dry_run_dashboard.html",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "html_ok"
+                                    },
+                                    {
+                                        "file":  "09_repeatable_local_dry_run_report.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-001-financing_finder\\09_repeatable_local_dry_run_report.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "batch-077-002",
+                     "theme":  "onboarding_kit",
+                     "seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_002_onboarding_kit.json",
+                     "run_id":  "phase-078-batch-002-onboarding_kit",
+                     "output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit",
+                     "runner_exit_code":  0,
+                     "ok":  true,
+                     "failed_checks_count":  0,
+                     "safety_ok":  true,
+                     "readiness_score":  95,
+                     "readiness_level":  "high",
+                     "output_files_count":  9,
+                     "output_bytes":  7819,
+                     "runner_stdout":  "# ENGREMIAT_REPORT_BEGIN\ntype=ENGREMIAT_REPEATABLE_LOCAL_DRY_RUN_REPORT_001\nok=True\nrun_id=phase-078-batch-002-onboarding_kit\noutput_root=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\ndry_run_only=True\nfunctions_validated=8\nreadiness_score=95\nreadiness_level=high\nreal_ai_call_executed=False\nexternal_api_call_executed=False\nworker_real_execution_allowed=False\noperator_execution_allowed=False\nautomation_real_execution_allowed=False\nnext_recommended_action=START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION\n# ENGREMIAT_REPORT_END",
+                     "failed_checks":  [
+
+                                       ],
+                     "checks":  [
+                                    {
+                                        "file":  "01_idea_intake_status.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\01_idea_intake_status.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "02_normalized_project_packet.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\02_normalized_project_packet.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "03_readiness_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\03_readiness_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "04_worker_routing_draft.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\04_worker_routing_draft.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "05_signals_needed_contract.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\05_signals_needed_contract.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "06_micro_work_packets_index.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\06_micro_work_packets_index.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "07_human_review_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\07_human_review_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "08_repeatable_dry_run_dashboard.html",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\08_repeatable_dry_run_dashboard.html",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "html_ok"
+                                    },
+                                    {
+                                        "file":  "09_repeatable_local_dry_run_report.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-002-onboarding_kit\\09_repeatable_local_dry_run_report.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "batch-077-003",
+                     "theme":  "opendata_signal_pack",
+                     "seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_003_opendata_signal_pack.json",
+                     "run_id":  "phase-078-batch-003-opendata_signal_pack",
+                     "output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack",
+                     "runner_exit_code":  0,
+                     "ok":  true,
+                     "failed_checks_count":  0,
+                     "safety_ok":  true,
+                     "readiness_score":  95,
+                     "readiness_level":  "high",
+                     "output_files_count":  9,
+                     "output_bytes":  7902,
+                     "runner_stdout":  "# ENGREMIAT_REPORT_BEGIN\ntype=ENGREMIAT_REPEATABLE_LOCAL_DRY_RUN_REPORT_001\nok=True\nrun_id=phase-078-batch-003-opendata_signal_pack\noutput_root=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\ndry_run_only=True\nfunctions_validated=8\nreadiness_score=95\nreadiness_level=high\nreal_ai_call_executed=False\nexternal_api_call_executed=False\nworker_real_execution_allowed=False\noperator_execution_allowed=False\nautomation_real_execution_allowed=False\nnext_recommended_action=START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION\n# ENGREMIAT_REPORT_END",
+                     "failed_checks":  [
+
+                                       ],
+                     "checks":  [
+                                    {
+                                        "file":  "01_idea_intake_status.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\01_idea_intake_status.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "02_normalized_project_packet.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\02_normalized_project_packet.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "03_readiness_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\03_readiness_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "04_worker_routing_draft.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\04_worker_routing_draft.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "05_signals_needed_contract.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\05_signals_needed_contract.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "06_micro_work_packets_index.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\06_micro_work_packets_index.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "07_human_review_gate.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\07_human_review_gate.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    },
+                                    {
+                                        "file":  "08_repeatable_dry_run_dashboard.html",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\08_repeatable_dry_run_dashboard.html",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "html_ok"
+                                    },
+                                    {
+                                        "file":  "09_repeatable_local_dry_run_report.json",
+                                        "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\batch-runs\\phase-078-batch-001\\phase-078-batch-003-opendata_signal_pack\\09_repeatable_local_dry_run_report.json",
+                                        "exists":  true,
+                                        "valid":  true,
+                                        "note":  "json_ok"
+                                    }
+                                ]
+                 }
+             ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "batch_real_execution_allowed":  false,
+                   "batch_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_079_BATCH_HEALTH_REVIEW_AND_NEXT_AUTOMATION_GATE"
+}

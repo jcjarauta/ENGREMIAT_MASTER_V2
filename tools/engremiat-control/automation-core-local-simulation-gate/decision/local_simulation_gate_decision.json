@@ -1,0 +1,31 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_LOCAL_SIMULATION_GATE_DECISION_001",
+    "phase":  "AUTOMATION_CORE_LOCAL_SIMULATION_GATE",
+    "ok":  true,
+    "generated_at":  "2026-06-06T07:57:15.4866360Z",
+    "mode":  "LOCAL_ONLY_APPLY_REVIEW_DECISION_TO_STUB_SIMULATION_GATE",
+    "review_decision_applied":  "APPROVE_FOR_LOCAL_SIMULATION_ONLY",
+    "source_review_final":  "tools/engremiat-control/reports/automation_core_package_review_gate_final.json",
+    "source_review_gate":  "tools/engremiat-control/automation-core-package-review-gate/gate/automation_core_package_review_gate.json",
+    "package_id":  "automation-core-local-decision-package-001",
+    "package_status":  "queued_but_not_executable",
+    "current_review_decision_before_apply":  "PENDING_HUMAN_REVIEW",
+    "recommended_decision":  "APPROVE_FOR_LOCAL_SIMULATION_ONLY",
+    "local_simulation_gate_requested":  true,
+    "simulation_stub_allowed":  true,
+    "simulation_real_execution_allowed":  false,
+    "package_can_be_executable_now":  false,
+    "queued_but_not_executable":  true,
+    "human_review_required":  true,
+    "gates":  {
+                  "local_only":  true,
+                  "external_actions_executed":  false,
+                  "google_api_call_allowed":  false,
+                  "real_worker_allowed":  false,
+                  "decision_auto_execution_allowed":  false,
+                  "worker_execution_allowed":  false,
+                  "simulation_real_execution_allowed":  false,
+                  "simulation_stub_allowed":  true
+              },
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_SIMULATION_GATE_CONTRACT"
+}

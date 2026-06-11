@@ -1,0 +1,35 @@
+﻿{
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "origin_need_id":  "need-2026-001",
+    "origin_source_type":  "subvencion",
+    "status":  "DRAFT",
+    "phase":  "001_PROJECT_BOOTSTRAP",
+    "decision":  "BUILD_NEW_PROJECT",
+    "template_type":  "training-game",
+    "expected_outputs":  [
+                             "demo",
+                             "proposal",
+                             "grant_file",
+                             "documentation",
+                             "validation_report"
+                         ],
+    "commercial_status":  "hypothesis",
+    "funding_status":  "grant_candidate",
+    "internal_reuse":  true,
+    "external_offer":  true,
+    "tags":  [
+                 "inclusion",
+                 "formacion",
+                 "gamificacion",
+                 "tercer_sector"
+             ],
+    "health":  {
+                   "readiness":  62,
+                   "risk":  "medium",
+                   "human_load":  "medium",
+                   "technical_load":  "low",
+                   "automation_allowed":  false
+               },
+    "created_at":  "2026-06-05T12:41:17"
+}

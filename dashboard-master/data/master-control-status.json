@@ -1,0 +1,40 @@
+﻿{
+    "type":  "MASTER_CONTROL_STATUS",
+    "ok":  true,
+    "generated_at":  "2026-06-03T13:40:01.6790562+02:00",
+    "decision":  "MASTER_CONTROL_STATUS_REFRESHED_WITH_RUNS_FALLBACK_NO_MODEL_EXEC",
+    "operator":  {
+                     "outbox_exists":  false,
+                     "fallback_report_exists":  true,
+                     "report_source":  "runs_stdout_fallback",
+                     "outbox_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\.operator\\outbox\\last-report.txt",
+                     "source_stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260603-133929-850\\stdout.txt",
+                     "source_run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260603-133929-850",
+                     "report_type":  "HYPER_089B3E_PATCH_REFRESHER_WITH_RUNS_FALLBACK_NO_MODEL_EXEC_001",
+                     "ok":  "True",
+                     "decision":  "REFRESHER_PATCHED_WITH_RUNS_FALLBACK_NO_MODEL_EXEC",
+                     "run_count":  699
+                 },
+    "ollama":  {
+                   "status_json_exists":  true,
+                   "selected_local_model":  "qwen2.5-coder:1.5b",
+                   "overall_status":  "OPERATIONAL_READY_FOR_CONTROLLED_USE",
+                   "gate":  "GO"
+               },
+    "git":  {
+                "head":  "ec55b4a",
+                "dirty":  true,
+                "status_short":  " M .gitignore\r\n M dashboard-master/data/master-control-status.json\r\n M dashboard-master/update-master-control-status.ps1\r\n?? data/drive-db-sim/00_SYSTEM/\r\n?? data/drive-db-sim/01_PROJECTS/\r\n?? data/drive-db-sim/02_GLOBAL_INDEX/\r\n?? data/drive-db-sim/03_SHEETS_MASTER_PLAN/\r\n?? data/drive-db-sim/04_TELEGRAM_MVP_READONLY/\r\n?? data/drive-db-sim/05_TELEGRAM_CONTROL_SAFE/\r\n?? data/drive-db-sim/06_GOOGLE_DRIVE_SYNC_PREP/\r\n?? data/drive-db-sim/07_GOOGLE_DRIVE_SYNC_DRY_RUN/\r\n?? data/drive-db-sim/08_GOOGLE_DRIVE_CREDENTIALS_GATE/\r\n?? data/drive-db-sim/09_GOOGLE_CREDENTIALS_ONBOARDING/\r\n?? data/drive-db-sim/103_MASTER_DASHBOARD_OLLAMA_DYNAMIC_BIND_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/108_MASTER_DASHBOARD_CONTROL_LAYER_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/10_LOCAL_SYNC_BRIDGE_FOLDER_GATE/\r\n?? data/drive-db-sim/113_MASTER_CONTROL_STATUS_REFRESHER_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/118_MASTER_DASHBOARD_REFRESH_PIPELINE_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/119_OPERATOR_OUTBOX_RECOVERY_DESIGN_READONLY/\r\n?? data/drive-db-sim/11_LOCAL_SYNC_BRIDGE_DRY_RUN_COPY_PLAN/\r\n?? data/drive-db-sim/120A_OPERATOR_OUTBOX_SELECT_VALID_RUN_READONLY/\r\n?? data/drive-db-sim/120B_OPERATOR_OUTBOX_WRITE_LAST_REPORT_FROM_SELECTED_RUN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/120C_MINI_DIAG_FAILED_RUN_PREVIEW_READONLY/\r\n?? data/drive-db-sim/120D_REFRESH_STATUS_FROM_SELECTED_STDOUT_MINIMAL_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/120E_PATCH_REFRESHER_WITH_RUNS_FALLBACK_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/120_OPERATOR_OUTBOX_RECOVERY_BUILD_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/12_LOCAL_SYNC_BRIDGE_COPY_EXECUTE/\r\n?? data/drive-db-sim/13_LOCAL_SYNC_BRIDGE_VERIFY_COPY/\r\n?? data/drive-db-sim/13_LOCAL_SYNC_BRIDGE_VERIFY_COPY_FROM_PLAN/\r\n?? data/drive-db-sim/14_LOCAL_BRIDGE_SYNC_INDEX_AND_STATUS/\r\n?? data/drive-db-sim/15_LOCAL_BRIDGE_INCREMENTAL_SYNC_PLAN/\r\n?? data/drive-db-sim/16_LOCAL_BRIDGE_INCREMENTAL_COPY_NEW_ONLY/\r\n?? data/drive-db-sim/17_LOCAL_BRIDGE_INCREMENTAL_VERIFY_NEW_ONLY/\r\n?? data/drive-db-sim/18_LOCAL_BRIDGE_SYNC_STATUS_REFRESH/\r\n?? data/drive-db-sim/19_LOCAL_BRIDGE_PHASE_CLOSE/\r\n?? data/drive-db-sim/20_OLLAMA_SUBWORKER_OFFICIAL_PREP/\r\n?? data/drive-db-sim/21_OLLAMA_SUBWORKER_GATE_DRY_RUN/\r\n?? data/drive-db-sim/22_OLLAMA_SUBWORKER_EXECUTION_SWITCH_PREP/\r\n?? data/drive-db-sim/23_OLLAMA_SUBWORKER_READINESS_CHECK_NO_EXEC/\r\n?? data/drive-db-sim/24_OLLAMA_ONE_RUN_AUTHORIZATION_PACK/\r\n?? data/drive-db-sim/25_OLLAMA_ONE_SAFE_ANALYSIS_RUN/\r\n?? data/drive-db-sim/26_OLLAMA_RUN_FAILURE_DIAGNOSE_NO_EXEC/\r\n?? data/drive-db-sim/27_OLLAMA_RETRY_REPAIRED_AUTH_PACK/\r\n?? data/drive-db-sim/28_OLLAMA_RETRY_SAFE_ANALYSIS_REPAIRED_RUN/\r\n?? data/drive-db-sim/28_OLLAMA_SUBWORKER_EXECUTION_SWITCH_PREP/\r\n?? data/drive-db-sim/29_OLLAMA_SUBWORKER_READINESS_CHECK_NO_EXEC/\r\n?? data/drive-db-sim/29_OLLAMA_WORKER_HANG_DIAGNOSE_NO_EXEC/\r\n?? data/drive-db-sim/30_OLLAMA_SAFE_PROCESS_STOP_GATE_NO_EXEC/\r\n?? data/drive-db-sim/31B_OLLAMA_SAFE_STOP_HUNG_PROCESSES_FIX_PID_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/32B_OLLAMA_POST_STOP_VERIFY_DIAGNOSE_EMPTY_STDOUT_NO_EXEC/\r\n?? data/drive-db-sim/32C_OLLAMA_POST_STOP_VERIFY_NO_MODEL_EXEC_REWRITE_SAFE/\r\n?? data/drive-db-sim/33_OLLAMA_MICROTEST_DESIGN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/34B_OLLAMA_MICROTEST_SAFE_TIMEOUT_AUTH_RUN_FIX_NULL/\r\n?? data/drive-db-sim/34_OLLAMA_MICROTEST_SAFE_TIMEOUT_AUTH_RUN/\r\n?? data/drive-db-sim/35_OLLAMA_LOCAL_MODEL_DISCOVERY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/36_OLLAMA_MICROTEST_LOCAL_MODEL_AUTH_RUN/\r\n?? data/drive-db-sim/38_OLLAMA_SAFE_WORKER_CALIBRATION_RECOVERY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/39_OLLAMA_PREVIOUS_STDERR_CLASSIFY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/40_OLLAMA_SAFE_RUNNER_SHAPE_DESIGN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/41_OLLAMA_MICROTEST_SAFE_RUNNER_PIPE_AUTH_RUN/\r\n?? data/drive-db-sim/42_OLLAMA_SAFE_RUNNER_PIPE_NULL_DIAGNOSE_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/43_OLLAMA_SAFE_RUNNER_PIPE_SIMPLE_STARTPROCESS_AUTH_RUN/\r\n?? data/drive-db-sim/44_OLLAMA_SIMPLE_RUNNER_RESULT_REINTERPRET_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/45_OLLAMA_WORKER_STABILIZATION_SUMMARY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/46_OLLAMA_SUBWORKER_QUEUE_ADAPTER_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/47_OLLAMA_SUBWORKER_ONE_JOB_DRY_RUN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/48_OLLAMA_SUBWORKER_ONE_SAFE_JOB_AUTH_RUN/\r\n?? data/drive-db-sim/49_OLLAMA_SUBWORKER_POST_JOB_SUMMARY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/50_OLLAMA_SUBWORKER_BATCH2_DESIGN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/51_OLLAMA_SUBWORKER_BATCH2_DRY_RUN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/52_OLLAMA_SUBWORKER_BATCH2_SAFE_AUTH_RUN/\r\n?? data/drive-db-sim/53_OLLAMA_SUBWORKER_BATCH2_POST_SUMMARY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/54_OLLAMA_SUBWORKER_MASTER_OPERATOR_BOUNDARY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/55_MASTER_OPERATOR_TO_OLLAMA_QUEUE_DRY_RUN_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/56_MASTER_OPERATOR_TO_OLLAMA_ONE_SAFE_JOB_RUN/\r\n?? data/drive-db-sim/57_MASTER_OPERATOR_TO_OLLAMA_POST_SUMMARY_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/58_PERSIST_REUSABLE_OLLAMA_ADAPTER_NO_MODEL_EXEC/\r\n?? data/drive-db-sim/80_POST_COMMIT_STATUS_CLASSIFY_READONLY/\r\n?? data/drive-db-sim/81_NEXT_OBJECTIVE_DECISION_PACK_READONLY/\r\n?? data/drive-db-sim/84_SMOKE_REUSABLE_DISPATCHER_SCRIPT_GENERATE_ONLY_NO_MODEL_EXEC/capture/\r\n?? data/drive-db-sim/85_SMOKE_REUSABLE_DISPATCHER_SCRIPT_SAFE_RUN/capture/\r\n?? data/drive-db-sim/88_POST_COMMIT_STATUS_CLASSIFY_REUSABLE_DISPATCHER_READONLY/\r\n?? data/drive-db-sim/93_MASTER_PANEL_OLLAMA_STATUS_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/94_DEFINE_NEXT_HYPER_AFTER_OLLAMA_PANEL_INTEGRATION_READONLY/\r\n?? data/drive-db-sim/98_MASTER_DASHBOARD_OLLAMA_CARD_SELECTIVE_COMMIT_NO_PUSH/\r\n?? data/drive-db-sim/MASTER_DASHBOARD_REFRESH_PIPELINE_RUNTIME/\r\n?? reports/drive-db-sim/\r\n?? repos/engremiat-operator/tools/recover-operator-outbox.cmd\r\n?? repos/engremiat-operator/tools/recover-operator-outbox.ps1"
+            },
+    "safety":  {
+                   "model_invocation_performed":  false,
+                   "pull_performed":  false,
+                   "push_performed":  false,
+                   "git_write_actions":  false,
+                   "browser_actions":  false,
+                   "clipboard_actions":  false,
+                   "telegram_real_actions":  false,
+                   "switch_off_confirmed":  true
+               },
+    "next_recommended_action":  "HYPER_089B3F_RUN_REFRESHER_WITH_FALLBACK_NO_MODEL_EXEC_001"
+}

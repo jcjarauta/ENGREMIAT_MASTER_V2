@@ -1,0 +1,76 @@
+﻿{
+    "type":  "ENGREMIAT_AI_PROVIDER_REGISTRY_053B",
+    "ok":  true,
+    "created_at":  "2026-06-05T08:04:43+02:00",
+    "default_provider_now":  "CHATGPT_CONVERSATION_MANUAL_OR_TASK_ASSISTED",
+    "providers":  [
+                      {
+                          "provider_id":  "provider-chatgpt-conversation",
+                          "label":  "ChatGPT conversation",
+                          "status":  "AVAILABLE_AS_HUMAN_MEDIATED_CHANNEL",
+                          "role":  "general_reasoning_and_prompted_development",
+                          "real_call_allowed_now":  false,
+                          "browser_required":  true,
+                          "browser_allowed_now":  false,
+                          "notes":  "Can be used today through human-mediated copy/paste or future browser automation gate."
+                      },
+                      {
+                          "provider_id":  "provider-chatgpt-task",
+                          "label":  "ChatGPT Task heartbeat",
+                          "status":  "CONCEPTUAL_HEARTBEAT_CHANNEL",
+                          "role":  "scheduled_loop_trigger",
+                          "real_call_allowed_now":  false,
+                          "browser_required":  false,
+                          "browser_allowed_now":  false,
+                          "notes":  "Useful as external heartbeat; not event-driven by itself."
+                      },
+                      {
+                          "provider_id":  "provider-local-ollama",
+                          "label":  "Local Ollama worker",
+                          "status":  "FUTURE_LOCAL_WORKER",
+                          "role":  "code_review_small_tasks_simulation",
+                          "real_call_allowed_now":  false,
+                          "browser_required":  false,
+                          "browser_allowed_now":  false,
+                          "notes":  "Prepared for local worker routing; no execution in this phase."
+                      },
+                      {
+                          "provider_id":  "provider-future-external-ai",
+                          "label":  "Future external AI API",
+                          "status":  "FUTURE_OPTION",
+                          "role":  "specialized_generation_or_analysis",
+                          "real_call_allowed_now":  false,
+                          "browser_required":  false,
+                          "browser_allowed_now":  false,
+                          "notes":  "Requires token/API/security gate before real use."
+                      },
+                      {
+                          "provider_id":  "provider-human-review",
+                          "label":  "Human review worker",
+                          "status":  "ALWAYS_AVAILABLE_GATE",
+                          "role":  "safety_review_and_direction",
+                          "real_call_allowed_now":  true,
+                          "browser_required":  false,
+                          "browser_allowed_now":  false,
+                          "notes":  "Human review remains mandatory for high-risk transitions."
+                      }
+                  ],
+    "security":  {
+                     "ai_provider_real_call_allowed":  false,
+                     "chatgpt_browser_allowed":  false,
+                     "chatgpt_task_allowed":  false,
+                     "ollama_real_call_allowed":  false,
+                     "external_ai_api_allowed":  false,
+                     "browser_real_allowed":  false,
+                     "browser_new_conversation_allowed":  false,
+                     "cdp_allowed":  false,
+                     "clipboard_allowed":  false,
+                     "gmail_api_allowed":  false,
+                     "google_sheets_write_allowed":  false,
+                     "workers_ia_allowed":  false,
+                     "worker_real_execution_allowed":  false,
+                     "operator_execution_allowed":  false,
+                     "git_branch_real_create_allowed":  false,
+                     "human_review_required":  true
+                 }
+}

@@ -1,0 +1,81 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_086_LOCAL_STUB_PIPELINE_RUN_INDEX_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_086_APPLY_LOCAL_STUB_PIPELINE_GATE_DECISION",
+    "created_at":  "2026-06-05T10:13:15",
+    "run_id":  "phase-086-local-stub-pipeline-001",
+    "stage_count":  7,
+    "stages":  [
+                   {
+                       "stage":  1,
+                       "worker_id":  "WORKER_PROMPTER_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_01_prompter.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  2,
+                       "worker_id":  "WORKER_CONTROL_GATE_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_02_control-gate.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  3,
+                       "worker_id":  "WORKER_MARKET_PREVENTA_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_03_market-preventa.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  4,
+                       "worker_id":  "WORKER_FINANCING_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_04_financing.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  5,
+                       "worker_id":  "WORKER_OPENDATA_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_05_opendata.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  6,
+                       "worker_id":  "WORKER_VALIDATOR_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_06_validator.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   },
+                   {
+                       "stage":  7,
+                       "worker_id":  "WORKER_DASHBOARD_STUB",
+                       "output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\stage-outputs\\local_stub_pipeline_stage_output_086_07_dashboard.json",
+                       "ok":  true,
+                       "status":  "SIMULATED_PIPELINE_STAGE_OUTPUT_CREATED_NOT_REAL_EXECUTION"
+                   }
+               ],
+    "failed_checks_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "local_stub_pipeline_simulation_executed":  true,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "simulated_pipeline_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_087_VALIDATE_LOCAL_STUB_PIPELINE_AND_AUTOMATION_HEALTH_GATE"
+}

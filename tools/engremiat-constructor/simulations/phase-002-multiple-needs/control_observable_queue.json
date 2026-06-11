@@ -1,0 +1,38 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_OBSERVABLE_QUEUE_SIM",
+    "ok":  true,
+    "items_count":  5,
+    "items":  [
+                  {
+                      "need_id":  "phase002-need-001",
+                      "score":  84,
+                      "control_decision":  "BUILD_NEW_PROJECT",
+                      "status":  "READY_FOR_CONTROL_REVIEW"
+                  },
+                  {
+                      "need_id":  "phase002-need-002",
+                      "score":  79,
+                      "control_decision":  "CREATE_DEMO_ONLY",
+                      "status":  "READY_FOR_CONTROL_REVIEW"
+                  },
+                  {
+                      "need_id":  "phase002-need-003",
+                      "score":  66,
+                      "control_decision":  "CREATE_PROPOSAL_ONLY",
+                      "status":  "OBSERVE_OR_BACKLOG"
+                  },
+                  {
+                      "need_id":  "phase002-need-004",
+                      "score":  72,
+                      "control_decision":  "ADAPT_EXISTING_PROJECT",
+                      "status":  "READY_FOR_CONTROL_REVIEW"
+                  },
+                  {
+                      "need_id":  "phase002-need-005",
+                      "score":  61,
+                      "control_decision":  "ADD_TO_BACKLOG",
+                      "status":  "OBSERVE_OR_BACKLOG"
+                  }
+              ],
+    "updated_at":  "2026-06-05T20:25:28"
+}

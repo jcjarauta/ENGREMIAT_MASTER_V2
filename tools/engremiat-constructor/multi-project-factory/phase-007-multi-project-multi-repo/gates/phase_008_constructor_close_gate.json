@@ -1,0 +1,20 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_CLOSE_AND_STANDARD_GATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "gate_status":  "CREATED_READY_FOR_STAGE_CLOSE",
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_CONSTRUCTOR_CLOSE_AND_REUSABLE_STANDARD",
+    "allowed_now":  {
+                        "local_close_diagnostic":  true,
+                        "reusable_standard_docs":  true,
+                        "handoff_package":  true
+                    },
+    "blocked_until_explicit_authorization":  {
+                                                 "external_ai_call":  true,
+                                                 "external_api_call":  true,
+                                                 "worker_real_execution":  true,
+                                                 "remote_repo_creation":  true,
+                                                 "customer_contact":  true
+                                             },
+    "updated_at":  "2026-06-05T21:37:53"
+}

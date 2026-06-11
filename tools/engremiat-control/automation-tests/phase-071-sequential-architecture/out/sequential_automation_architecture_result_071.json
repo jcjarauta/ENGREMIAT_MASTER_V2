@@ -1,0 +1,31 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_071_SEQUENTIAL_AUTOMATION_ARCHITECTURE_RESULT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_071_SEQUENTIAL_AUTOMATION_ARCHITECTURE_DRY_RUN_ONLY",
+    "created_at":  "2026-06-05T09:01:14",
+    "decision":  "SEQUENTIAL_AUTOMATION_ARCHITECTURE_CREATED_DRY_RUN_READY",
+    "functions_count":  8,
+    "contract_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\contracts\\sequential_automation_architecture_contract_071.json",
+    "function_map_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\out\\engremiat_sequential_function_map_071.json",
+    "sequence_plan_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\out\\engremiat_automation_sequence_plan_071.json",
+    "io_contract_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\out\\engremiat_sequence_io_contract_071.json",
+    "dry_run_runner_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\runner\\run-sequential-automation-dry-run-071.ps1",
+    "dry_run_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-071-sequential-architecture\\out\\sequential_automation_dry_run_report_071.json",
+    "dashboard_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\local-dashboard\\automation-tests\\phase-071\\index.html",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_072_RUN_SEQUENTIAL_AUTOMATION_DRY_RUN_AND_VALIDATE_CHAIN_NO_EXECUTION"
+}

@@ -1,0 +1,558 @@
+﻿{
+    "type":  "HYPER_008_NODE_EVIDENCE_LINKER_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:22:25",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "source_global_state":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\global-status-engine.json",
+    "source_queue_summary":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\dynamic-queue-summary.json",
+    "runs_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs",
+    "evidence_runs_scanned":  25,
+    "nodes_total":  18,
+    "nodes_with_evidence":  18,
+    "nodes_without_evidence":  0,
+    "latest_evidence":  [
+                            {
+                                "run_id":  "run-20260602-122224-751",
+                                "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                "stdout_preview":  "",
+                                "stderr_preview":  "",
+                                "stderr_empty":  true,
+                                "decision":  "",
+                                "report_type":  "",
+                                "ok":  "",
+                                "next_recommended_action":  "",
+                                "last_write_time":  "2026-06-02T12:22:24"
+                            }
+                        ],
+    "linked_nodes":  [
+                         {
+                             "id":  "REVIEW-001",
+                             "title":  "Motor de Estado Global",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-STATE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122152-846",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122152-846",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122152-846\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122152-846\\stderr.txt",
+                                              "stdout_preview":  "# ENGREMIAT_REPORT_BEGIN\ntype=HYPER_008_DYNAMIC_QUEUE_SUMMARY_001\nok=True\ndecision=DYNAMIC_QUEUE_SUMMARY_READY\nroot=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\nqueue_summary_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\dynamic-queue-summary.json\nqueue_summary_md_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\dynamic-queue-summary.md\nsmoke_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-008\\dynamic-queue-summary-smoke.json\nqueue_health=READY\nready=12\nrunning=0\npaused=6\nblocked=0\ndone=0\ntotal=18\nnext_execution_candidate=REVIEW-001\ngit_actions=False\ntelegram_real_actions=False\nexternal_actions=False\nnext_recommended_action=HYPER_008_NODE_EVIDENCE_LINKER_001\n# ENGREMIAT_REPORT_END",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "DYNAMIC_QUEUE_SUMMARY_READY",
+                                              "report_type":  "HYPER_008_DYNAMIC_QUEUE_SUMMARY_001",
+                                              "ok":  "True",
+                                              "next_recommended_action":  "HYPER_008_NODE_EVIDENCE_LINKER_001",
+                                              "last_write_time":  "2026-06-02T12:21:52"
+                                          }
+                         },
+                         {
+                             "id":  "REVIEW-002",
+                             "title":  "Nodo Actual del Desarrollo",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-GPS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "REVIEW-003",
+                             "title":  "Boton Continuar Desarrollo",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-CONTINUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "REVIEW-004",
+                             "title":  "Vista de Bloqueos",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-BLOCKERS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "REVIEW-005",
+                             "title":  "Cola Dinamica",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-QUEUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122124-119",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122124-119",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122124-119\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122124-119\\stderr.txt",
+                                              "stdout_preview":  "# ENGREMIAT_REPORT_BEGIN\ntype=HYPER_008_BLOCKERS_VIEW_001\nok=True\ndecision=BLOCKERS_VIEW_READY\nroot=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\nblockers_view_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\blockers-view.json\nblockers_summary_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\blockers-summary.md\nsmoke_file=C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-008\\blockers-view-smoke.json\nblocked=0\npaused=6\nready=12\npanel_message=Sin bloqueos activos. Panel puede continuar con cola dinamica.\ngit_actions=False\ntelegram_real_actions=False\nexternal_actions=False\nnext_recommended_action=HYPER_008_DYNAMIC_QUEUE_SUMMARY_001\n# ENGREMIAT_REPORT_END",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "BLOCKERS_VIEW_READY",
+                                              "report_type":  "HYPER_008_BLOCKERS_VIEW_001",
+                                              "ok":  "True",
+                                              "next_recommended_action":  "HYPER_008_DYNAMIC_QUEUE_SUMMARY_001",
+                                              "last_write_time":  "2026-06-02T12:21:24"
+                                          }
+                         },
+                         {
+                             "id":  "REVIEW-006",
+                             "title":  "Evidencias en Tiempo Real",
+                             "status":  "READY",
+                             "source_queue":  "master_state_review",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-EVIDENCE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-001",
+                             "title":  "OPERATOR-001",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-STATE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-002",
+                             "title":  "OPERATOR-002",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-GPS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-003",
+                             "title":  "OPERATOR-003",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-CONTINUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-004",
+                             "title":  "OPERATOR-004",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-BLOCKERS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-005",
+                             "title":  "OPERATOR-005",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-QUEUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OPERATOR-006",
+                             "title":  "OPERATOR-006",
+                             "status":  "PAUSED",
+                             "source_queue":  "operator_code_generation",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-EVIDENCE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-001",
+                             "title":  "OLLAMA-001",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-STATE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-002",
+                             "title":  "OLLAMA-002",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-GPS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-003",
+                             "title":  "OLLAMA-003",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-CONTINUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-004",
+                             "title":  "OLLAMA-004",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-BLOCKERS-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-005",
+                             "title":  "OLLAMA-005",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-QUEUE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         },
+                         {
+                             "id":  "OLLAMA-006",
+                             "title":  "OLLAMA-006",
+                             "status":  "READY",
+                             "source_queue":  "ollama_script_execution_future",
+                             "hierarchy":  {
+                                               "desarrollo":  "DESARROLLO_GLOBAL",
+                                               "hipermacro":  "HYPER_008",
+                                               "macro":  "MASTER_CONTROL_PANEL",
+                                               "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                               "checkpoint":  "CP-EVIDENCE-001",
+                                               "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                           },
+                             "has_evidence":  true,
+                             "evidence":  {
+                                              "run_id":  "run-20260602-122224-751",
+                                              "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751",
+                                              "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stdout.txt",
+                                              "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122224-751\\stderr.txt",
+                                              "stdout_preview":  "",
+                                              "stderr_preview":  "",
+                                              "stderr_empty":  true,
+                                              "decision":  "",
+                                              "report_type":  "",
+                                              "ok":  "",
+                                              "next_recommended_action":  "",
+                                              "last_write_time":  "2026-06-02T12:22:24"
+                                          }
+                         }
+                     ],
+    "panel_message":  "Evidencias enlazadas para consumo del panel operativo.",
+    "next_recommended_action":  "HYPER_008_EXPORT_GLOBAL_STATE_001",
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false
+}

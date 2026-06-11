@@ -1,0 +1,81 @@
+﻿{
+    "type":  "MASTER_CODE_BLOCK_BACKLOG",
+    "version":  1,
+    "generated_at":  "2026-06-02T11:52:32.0177811+02:00",
+    "purpose":  "Lista inicial de bloques por definir para completar el Panel de Control Operativo antes de Telegram real.",
+    "mode":  "proposal_queue",
+    "items":  [
+                  {
+                      "id":  "BLOCK-PROPOSAL-001",
+                      "phase":  "Fase 1 — Motor de Estado Global",
+                      "checkpoint":  "CP-STATE-001",
+                      "title":  "Calcular estado agregado por nodo",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_GLOBAL_STATUS_ENGINE_001",
+                      "description":  "Calcular READY/RUNNING/PAUSED/BLOCKED/DONE desde hijos, cola y evidencias."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-002",
+                      "phase":  "Fase 2 — Nodo Actual del Desarrollo",
+                      "checkpoint":  "CP-GPS-001",
+                      "title":  "Crear GPS de desarrollo actual",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_CURRENT_DEVELOPMENT_NODE_001",
+                      "description":  "Mostrar HIPER/MACRO/OBJ/CP/TASK y siguiente accion como ubicacion actual."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-003",
+                      "phase":  "Fase 3 — Boton CONTINUAR DESARROLLO",
+                      "checkpoint":  "CP-CONTINUE-001",
+                      "title":  "Preparar payload completo de continuidad",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD_001",
+                      "description":  "Generar payload para ChatGPT/operador con estado, cola, bloqueo y evidencia."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-004",
+                      "phase":  "Fase 4 — Vista de Bloqueos",
+                      "checkpoint":  "CP-BLOCKERS-001",
+                      "title":  "Vista accionable de bloqueos",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_BLOCKERS_VIEW_001",
+                      "description":  "Mostrar motivo, estado, rama, accion sugerida y payload de reactivacion."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-005",
+                      "phase":  "Fase 5 — Cola Dinamica",
+                      "checkpoint":  "CP-QUEUE-001",
+                      "title":  "Resumen dinamico de cola",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_DYNAMIC_QUEUE_SUMMARY_001",
+                      "description":  "Contadores READY/RUNNING/BLOCKED/PAUSED/DONE por fase y cola."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-006",
+                      "phase":  "Fase 6 — Evidencias en Tiempo Real",
+                      "checkpoint":  "CP-EVIDENCE-001",
+                      "title":  "Ultima evidencia por nodo",
+                      "status":  "ready_for_design",
+                      "proposed_block":  "HYPER_008_NODE_EVIDENCE_LINKER_001",
+                      "description":  "Vincular stdout/stderr/exitcode/fecha a cada nodo y checkpoint."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-007",
+                      "phase":  "Fase 7 — Exportacion Estado Global",
+                      "checkpoint":  "CP-EXPORT-001",
+                      "title":  "Descargar y enviar estado maestro",
+                      "status":  "in_progress",
+                      "proposed_block":  "HYPER_008_MASTER_STATE_EXPORT_001",
+                      "description":  "Crear snapshot consolidado, prompt de envio y backlog de bloques pendientes."
+                  },
+                  {
+                      "id":  "BLOCK-PROPOSAL-008",
+                      "phase":  "Fase 8 — Gate Telegram",
+                      "checkpoint":  "CP-TELEGRAM-GATE-001",
+                      "title":  "Telegram como vista remota del panel",
+                      "status":  "pending_after_panel",
+                      "proposed_block":  "HYPER_006_TELEGRAM_PANEL_REMOTE_VIEW_001",
+                      "description":  "Telegram no tendra logica propia; sera vista remota del panel."
+                  }
+              ]
+}

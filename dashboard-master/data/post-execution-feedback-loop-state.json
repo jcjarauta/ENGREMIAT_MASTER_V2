@@ -1,0 +1,21 @@
+﻿{
+    "type":  "POST_EXECUTION_FEEDBACK_LOOP_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:28:05",
+    "decision":  "POST_EXECUTION_FEEDBACK_WAITING_FOR_OLLAMA_PROPOSAL",
+    "checkpoints_total":  1,
+    "active_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "execution_queue_count":  0,
+    "executed_items_count":  0,
+    "execution_performed":  false,
+    "proposals_found":  0,
+    "accepted_for_operator_count":  0,
+    "evidence_links_updated":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "telegram_actions":  false,
+    "browser_actions":  false,
+    "clipboard_actions":  false,
+    "operator_execution":  false,
+    "next_recommended_action":  "HYPER_035_OLLAMA_MANUAL_PROPOSAL_CAPTURE_001"
+}

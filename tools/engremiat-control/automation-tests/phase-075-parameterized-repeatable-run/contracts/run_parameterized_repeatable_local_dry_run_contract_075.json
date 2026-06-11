@@ -1,0 +1,29 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_075_RUN_PARAMETERIZED_REPEATABLE_LOCAL_DRY_RUN_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION",
+    "created_at":  "2026-06-05T09:40:32",
+    "purpose":  "Ejecutar runner repetible con seed parametrizado nuevo y validar outputs.",
+    "source_phase":  "PHASE_074_R3_FIX_REPEATABLE_RUNNER_STABLE",
+    "runner_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\runner\\run-repeatable-local-dry-run-074.ps1",
+    "run_id":  "phase-075-parameterized-001",
+    "parameterized_seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-075-parameterized-repeatable-run\\seeds\\parameterized_seed_local_services_preventa_075.json",
+    "run_output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_076_ADD_HEALTH_AND_LOAD_METRICS_TO_REPEATABLE_DRY_RUNS"
+}

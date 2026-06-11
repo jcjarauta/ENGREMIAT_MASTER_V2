@@ -1,0 +1,56 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_DEMO_SCOPE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "demo_id":  "demo-scope-phase-004-001",
+    "demo_goal":  "Create a local demonstrable scope for the commercial solution.",
+    "audience":  [
+                     "association",
+                     "cooperative",
+                     "local community",
+                     "grant reviewer",
+                     "pre-sale lead"
+                 ],
+    "modules_count":  4,
+    "modules":  [
+                    {
+                        "id":  "demo-001",
+                        "name":  "Necesidad y contexto",
+                        "value":  "Mostrar origen de la necesidad y oportunidad financiable.",
+                        "status":  "draft"
+                    },
+                    {
+                        "id":  "demo-002",
+                        "name":  "Solucion propuesta",
+                        "value":  "Mostrar como Engremiat transforma demanda en proyecto.",
+                        "status":  "draft"
+                    },
+                    {
+                        "id":  "demo-003",
+                        "name":  "Flujo Constructor",
+                        "value":  "Mostrar need -\u003e project -\u003e solution package.",
+                        "status":  "draft"
+                    },
+                    {
+                        "id":  "demo-004",
+                        "name":  "Impacto y validacion",
+                        "value":  "Mostrar indicadores minimos de impacto, viabilidad y aprendizaje comercial.",
+                        "status":  "draft"
+                    }
+                ],
+    "expected_artifacts":  [
+                               "demo narrative",
+                               "demo checklist",
+                               "proposal bridge",
+                               "validation questions"
+                           ],
+    "safety":  {
+                   "local_only":  true,
+                   "no_customer_contact":  true,
+                   "no_external_ai":  true,
+                   "no_api":  true,
+                   "no_worker_real":  true
+               },
+    "next_recommended_action":  "CREATE_PROPOSAL_SCOPE",
+    "updated_at":  "2026-06-05T21:10:05"
+}

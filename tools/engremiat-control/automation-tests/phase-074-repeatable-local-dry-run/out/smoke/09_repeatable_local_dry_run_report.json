@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_LOCAL_DRY_RUN_REPORT_001",
+    "ok":  true,
+    "run_id":  "phase-074-r3-smoke",
+    "output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\out\\smoke",
+    "seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\examples\\example_seed_preventa_digital_074.json",
+    "dry_run_only":  true,
+    "functions_validated":  8,
+    "readiness_score":  95,
+    "readiness_level":  "high",
+    "real_ai_call_executed":  false,
+    "external_api_call_executed":  false,
+    "worker_real_execution_allowed":  false,
+    "operator_execution_allowed":  false,
+    "automation_real_execution_allowed":  false,
+    "next_recommended_action":  "START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION"
+}

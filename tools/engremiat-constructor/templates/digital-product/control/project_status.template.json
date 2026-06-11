@@ -1,0 +1,10 @@
+﻿{
+    "type":  "ENGREMIAT_PROJECT_STATUS",
+    "project_id":  "{{PROJECT_ID}}",
+    "project_name":  "{{PROJECT_NAME}}",
+    "template_type":  "digital-product",
+    "status":  "DRAFT",
+    "phase":  "001_PROJECT_BOOTSTRAP",
+    "ok":  true,
+    "updated_at":  "{{UPDATED_AT}}"
+}

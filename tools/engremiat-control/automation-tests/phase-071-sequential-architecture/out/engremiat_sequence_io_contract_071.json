@@ -1,0 +1,93 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_071_SEQUENCE_IO_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_071_SEQUENTIAL_AUTOMATION_ARCHITECTURE_DRY_RUN_ONLY",
+    "created_at":  "2026-06-05T09:01:14",
+    "input_root":  "tools/engremiat-control/concept-tests/phase-070-human-idea-seed/out",
+    "output_root":  "tools/engremiat-control/automation-tests/phase-072-sequential-dry-run/out",
+    "file_contracts":  [
+                           {
+                               "file":  "idea_intake_status_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "source_seed_path",
+                                                       "idea_title",
+                                                       "status"
+                                                   ]
+                           },
+                           {
+                               "file":  "normalized_project_packet_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "project_title",
+                                                       "problem",
+                                                       "solution",
+                                                       "target_user",
+                                                       "status"
+                                                   ]
+                           },
+                           {
+                               "file":  "readiness_gate_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "readiness_score",
+                                                       "readiness_level",
+                                                       "execution_allowed"
+                                                   ]
+                           },
+                           {
+                               "file":  "worker_routing_draft_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "worker_routes",
+                                                       "worker_real_execution_allowed"
+                                                   ]
+                           },
+                           {
+                               "file":  "signals_needed_contract_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "signals_needed",
+                                                       "external_api_call_executed"
+                                                   ]
+                           },
+                           {
+                               "file":  "micro_work_packets_index_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "micro_packet_count",
+                                                       "micro_packets_executable"
+                                                   ]
+                           },
+                           {
+                               "file":  "human_review_gate_072.json",
+                               "required_fields":  [
+                                                       "ok",
+                                                       "human_review_required",
+                                                       "selected_decision",
+                                                       "execution_allowed"
+                                                   ]
+                           },
+                           {
+                               "file":  "automation_test_dashboard_072.html",
+                               "required_fields":  [
+                                                       "local_html_only"
+                                                   ]
+                           }
+                       ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

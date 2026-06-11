@@ -1,0 +1,50 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_094_SECOND_REAL_AUTOMATION_CANDIDATE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_094_VALIDATE_FIRST_REAL_AUTOMATION_AND_DEFINE_NEXT_CANDIDATE",
+    "created_at":  "2026-06-05T10:35:08",
+    "candidate_id":  "REAL_AUTOMATION_CANDIDATE_002_LOCAL_HEALTH_INDEX_REFRESH",
+    "candidate_name":  "LOCAL_HEALTH_INDEX_REFRESH",
+    "candidate_kind":  "LOCAL_FILESYSTEM_ONLY",
+    "candidate_status":  "DEFINED_NOT_EXECUTABLE",
+    "purpose":  "Actualizar un índice local de salud agregando el estado validado de la primera automatización real mínima.",
+    "allowed_scope":  [
+                          "read local status sync artifacts",
+                          "write local health index JSON",
+                          "write local health index MD",
+                          "write dashboard HTML",
+                          "write audit report"
+                      ],
+    "forbidden_scope":  [
+                            "real_ai_call",
+                            "external_api_call",
+                            "browser_or_cdp",
+                            "clipboard",
+                            "gmail_read",
+                            "google_sheets_write",
+                            "real_worker_execution",
+                            "worker_stub_execution",
+                            "operator_execution",
+                            "git_branch_create"
+                        ],
+    "execution_allowed_now":  false,
+    "reason_for_candidate":  "Siguiente automatización real mínima y útil: consolidar estado local en índice de salud reutilizable.",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "validation_only":  true,
+                   "next_candidate_gate_only":  true,
+                   "automation_real_execution_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_095_REVIEW_SECOND_REAL_AUTOMATION_CANDIDATE_DECISION"
+}

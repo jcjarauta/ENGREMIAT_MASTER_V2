@@ -1,0 +1,22 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_GOVERNED_EXECUTION_PLAN",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_GOVERNED_CONTROL_PROMPTER_EXECUTION",
+    "block":  "BLOCK_001_CREATE_GOVERNED_EXECUTION_PLAN",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "objective":  "Prepare governed local execution between Constructor, Control and Prompter.",
+    "planned_blocks":  8,
+    "safety":  {
+                   "local_only":  true,
+                   "remote_allowed":  false,
+                   "external_api_allowed":  false,
+                   "external_ai_call_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "browser_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "real_control_write_allowed":  false,
+                   "real_prompter_execution_allowed":  false
+               },
+    "next_recommended_action":  "CREATE_CONTROL_CONSUMER_CONTRACT",
+    "updated_at":  "2026-06-05T20:57:12"
+}

@@ -1,0 +1,55 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_STAGE_GLOBAL_DIAGNOSTIC_RECOVERY",
+    "ok":  true,
+    "decision":  "ENGREMIAT_CONSTRUCTOR_STAGE_CLOSED_REUSABLE_STANDARD_READY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_CONSTRUCTOR_CLOSE_AND_REUSABLE_STANDARD",
+    "block":  "RECOVER_STAGE_CLOSE_STATUS_NORMALIZATION",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "readiness":  98,
+    "normalized":  [
+                       "phase_001_status"
+                   ],
+    "closed_prior_phases_count":  7,
+    "total_prior_phases_expected":  7,
+    "missing_phase_status_count":  0,
+    "missing_phase_status":  [
+
+                             ],
+    "not_closed_count":  0,
+    "not_closed":  [
+
+                   ],
+    "required_reports_count":  7,
+    "ok_reports_count":  7,
+    "failed_checks_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "checks":  {
+                   "reports_ok":  true,
+                   "prior_phases_present":  true,
+                   "prior_phases_closed":  true,
+                   "reusable_standard_ready":  true,
+                   "contracts_index_ready":  true,
+                   "control_handoff_ready":  true,
+                   "prompter_handoff_ready":  true,
+                   "archive_ready":  true,
+                   "external_ai_blocked":  true,
+                   "external_api_blocked":  true,
+                   "worker_real_blocked":  true,
+                   "remote_repo_creation_blocked":  true,
+                   "customer_contact_blocked":  true
+               },
+    "reusable_standard_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\reusable-standard\\engremiat_constructor_reusable_standard.json",
+    "contracts_index_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\index\\constructor_contracts_index.json",
+    "control_handoff_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\handoff\\constructor_to_control_final_handoff.json",
+    "prompter_handoff_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\handoff\\constructor_to_prompter_final_handoff.json",
+    "archive_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\stage-close\\phase-008-constructor-close\\stage-archive\\constructor_stage_archive_index.json",
+    "external_ai_call_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "remote_repo_creation_allowed":  false,
+    "customer_contact_allowed":  false,
+    "recommended_next_action":  "COMMIT_ENGREMIAT_CONSTRUCTOR_STAGE_CLOSE_AND_DECIDE_NEXT_HYPER",
+    "updated_at":  "2026-06-05T21:41:04"
+}

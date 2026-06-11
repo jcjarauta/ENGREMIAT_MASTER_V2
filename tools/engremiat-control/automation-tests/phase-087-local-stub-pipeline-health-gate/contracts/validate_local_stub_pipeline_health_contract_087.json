@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_087_VALIDATE_LOCAL_STUB_PIPELINE_HEALTH_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_087_VALIDATE_LOCAL_STUB_PIPELINE_AND_AUTOMATION_HEALTH_GATE",
+    "created_at":  "2026-06-05T10:17:23",
+    "purpose":  "Validar pipeline local simulado y crear gate de salud para siguiente promoción gobernada.",
+    "source_phase":  "PHASE_086_LOCAL_STUB_PIPELINE_SIMULATION",
+    "expected_stage_count":  7,
+    "policy":  "VALIDATION_AND_GATE_ONLY_NO_REAL_AUTOMATION_PROMOTION",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "validation_only":  true,
+                   "simulated_pipeline_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_088_CREATE_GOVERNED_AUTOMATION_LOOP_GATE_NO_REAL_WORKERS"
+}

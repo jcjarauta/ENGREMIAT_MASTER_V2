@@ -1,0 +1,186 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://engremiat.local/schemas/engremiat-constructor/project.schema.json",
+    "title":  "ENGREMIAT_CONSTRUCTOR Project Schema",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "project_id",
+                     "project_name",
+                     "origin_need_id",
+                     "origin_source_type",
+                     "status",
+                     "phase",
+                     "decision",
+                     "template_type",
+                     "expected_outputs",
+                     "commercial_status",
+                     "funding_status",
+                     "internal_reuse",
+                     "external_offer",
+                     "health",
+                     "created_at"
+                 ],
+    "properties":  {
+                       "project_id":  {
+                                          "type":  "string",
+                                          "minLength":  6
+                                      },
+                       "project_name":  {
+                                            "type":  "string",
+                                            "minLength":  3
+                                        },
+                       "origin_need_id":  {
+                                              "type":  "string",
+                                              "minLength":  6
+                                          },
+                       "origin_source_type":  {
+                                                  "type":  "string",
+                                                  "enum":  [
+                                                               "subvencion",
+                                                               "preventa",
+                                                               "voluntariado",
+                                                               "partner",
+                                                               "interna",
+                                                               "cliente",
+                                                               "territorio",
+                                                               "concurso",
+                                                               "formacion",
+                                                               "evento",
+                                                               "otro"
+                                                           ]
+                                              },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "DRAFT",
+                                                   "BOOTSTRAPPED",
+                                                   "PHASE_001_READY",
+                                                   "IN_DEVELOPMENT",
+                                                   "DEMO_READY",
+                                                   "PROPOSAL_READY",
+                                                   "VALIDATED",
+                                                   "COMMERCIALIZABLE",
+                                                   "ARCHIVED"
+                                               ]
+                                  },
+                       "phase":  {
+                                     "type":  "string",
+                                     "minLength":  3
+                                 },
+                       "decision":  {
+                                        "type":  "string",
+                                        "enum":  [
+                                                     "BUILD_NEW_PROJECT",
+                                                     "ADAPT_EXISTING_PROJECT",
+                                                     "CREATE_PROPOSAL_ONLY",
+                                                     "CREATE_DEMO_ONLY",
+                                                     "ADD_TO_BACKLOG",
+                                                     "DISCARD",
+                                                     "HUMAN_REVIEW_REQUIRED"
+                                                 ]
+                                    },
+                       "template_type":  {
+                                             "type":  "string",
+                                             "enum":  [
+                                                          "internal-tool",
+                                                          "digital-product",
+                                                          "grant-project",
+                                                          "training-game",
+                                                          "community-software",
+                                                          "service-package"
+                                                      ]
+                                         },
+                       "expected_outputs":  {
+                                                "type":  "array",
+                                                "minItems":  1,
+                                                "items":  {
+                                                              "type":  "string"
+                                                          }
+                                            },
+                       "commercial_status":  {
+                                                 "type":  "string",
+                                                 "enum":  [
+                                                              "none",
+                                                              "hypothesis",
+                                                              "offer_draft",
+                                                              "preventa_candidate",
+                                                              "validated_offer"
+                                                          ]
+                                             },
+                       "funding_status":  {
+                                              "type":  "string",
+                                              "enum":  [
+                                                           "none",
+                                                           "grant_candidate",
+                                                           "grant_draft",
+                                                           "submitted",
+                                                           "funded",
+                                                           "rejected"
+                                                       ]
+                                          },
+                       "internal_reuse":  {
+                                              "type":  "boolean"
+                                          },
+                       "external_offer":  {
+                                              "type":  "boolean"
+                                          },
+                       "tags":  {
+                                    "type":  "array",
+                                    "items":  {
+                                                  "type":  "string"
+                                              }
+                                },
+                       "health":  {
+                                      "type":  "object",
+                                      "additionalProperties":  false,
+                                      "required":  [
+                                                       "readiness",
+                                                       "risk",
+                                                       "human_load",
+                                                       "technical_load",
+                                                       "automation_allowed"
+                                                   ],
+                                      "properties":  {
+                                                         "readiness":  {
+                                                                           "type":  "number",
+                                                                           "minimum":  0,
+                                                                           "maximum":  100
+                                                                       },
+                                                         "risk":  {
+                                                                      "type":  "string",
+                                                                      "enum":  [
+                                                                                   "low",
+                                                                                   "medium",
+                                                                                   "high",
+                                                                                   "unknown"
+                                                                               ]
+                                                                  },
+                                                         "human_load":  {
+                                                                            "type":  "string",
+                                                                            "enum":  [
+                                                                                         "low",
+                                                                                         "medium",
+                                                                                         "high",
+                                                                                         "unknown"
+                                                                                     ]
+                                                                        },
+                                                         "technical_load":  {
+                                                                                "type":  "string",
+                                                                                "enum":  [
+                                                                                             "low",
+                                                                                             "medium",
+                                                                                             "high",
+                                                                                             "unknown"
+                                                                                         ]
+                                                                            },
+                                                         "automation_allowed":  {
+                                                                                    "type":  "boolean"
+                                                                                }
+                                                     }
+                                  },
+                       "created_at":  {
+                                          "type":  "string"
+                                      }
+                   }
+}

@@ -1,0 +1,29 @@
+﻿{
+    "type":  "CONTINUE_DEVELOPMENT_PAYLOAD",
+    "version":  1,
+    "generated_at":  "2026-06-02T12:04:42.7225866+02:00",
+    "source":  "global-control-panel",
+    "human_filter_required":  true,
+    "browser_execution_allowed":  false,
+    "selected_current_node":  {
+                                  "type":  "CURRENT_DEVELOPMENT_NODE",
+                                  "version":  1,
+                                  "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+                                  "status":  "CURRENT_NODE_READY",
+                                  "global_status":  "READY",
+                                  "hyper":  "HIPER-008",
+                                  "macro":  "MACRO-001",
+                                  "objective":  "OBJ-004",
+                                  "checkpoint":  "CP1",
+                                  "task":  "Validar panel operativo antes de Telegram",
+                                  "block":  "HYPER_008_PANEL_PRE_TELEGRAM_GATE_REPAIR_003_DEPTH_SAFE",
+                                  "next_action":  "HYPER_008_MASTER_STATE_REVIEW_QUEUE_001",
+                                  "gps_label":  "DESARROLLO ACTUAL"
+                              },
+    "global_status":  "READY",
+    "blockers_count":  1,
+    "evidence_count":  8,
+    "backlog_count":  8,
+    "instruction_to_chatgpt":  "Valora el estado global, propone bloques PowerShell por checkpoint y deja cola preparada para operador/Ollama. No Git automatico, no Telegram real, no acciones externas.",
+    "next_recommended_action":  "HYPER_008_MASTER_STATE_REVIEW_QUEUE_001"
+}

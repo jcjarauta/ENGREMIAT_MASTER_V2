@@ -1,0 +1,368 @@
+﻿{
+    "type":  "HYPER_008_GLOBAL_STATUS_ENGINE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:20:03",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "dashboard_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master",
+    "hierarchy_model":  [
+                            "DESARROLLO_GLOBAL",
+                            "HIPERMACRO",
+                            "MACRO",
+                            "OBJETIVO",
+                            "CHECKPOINT",
+                            "TAREA",
+                            "BLOQUE_EJECUTABLE",
+                            "EVIDENCIA"
+                        ],
+    "status_counts":  {
+                          "READY":  12,
+                          "RUNNING":  0,
+                          "PAUSED":  6,
+                          "BLOCKED":  0,
+                          "DONE":  0,
+                          "TOTAL":  18
+                      },
+    "current_development_node":  [
+                                     {
+                                         "id":  "REVIEW-001",
+                                         "title":  "Motor de Estado Global",
+                                         "source_queue":  "master_state_review",
+                                         "status":  "READY",
+                                         "hierarchy":  {
+                                                           "desarrollo":  "DESARROLLO_GLOBAL",
+                                                           "hipermacro":  "HYPER_008",
+                                                           "macro":  "MASTER_CONTROL_PANEL",
+                                                           "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                                           "checkpoint":  "CP-STATE-001",
+                                                           "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                                       },
+                                         "blocker_reason":  "",
+                                         "evidence_path":  ""
+                                     }
+                                 ],
+    "blockers":  [
+
+                 ],
+    "inputs":  [
+                   {
+                       "name":  "master_state_review",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\master-state-review-code-queue.json",
+                       "exists":  true,
+                       "item_count":  6
+                   },
+                   {
+                       "name":  "operator_code_generation",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\operator-code-generation-queue.json",
+                       "exists":  true,
+                       "item_count":  6
+                   },
+                   {
+                       "name":  "ollama_script_execution_future",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\ollama-script-execution-queue.json",
+                       "exists":  true,
+                       "item_count":  6
+                   }
+               ],
+    "latest_operator_evidence":  {
+                                     "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122002-775",
+                                     "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122002-775\\stdout.txt",
+                                     "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-122002-775\\stderr.txt",
+                                     "stdout_exists":  true,
+                                     "stderr_exists":  true,
+                                     "last_write_time":  "2026-06-02T12:20:02"
+                                 },
+    "nodes":  [
+                  {
+                      "id":  "REVIEW-001",
+                      "title":  "Motor de Estado Global",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-STATE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "REVIEW-002",
+                      "title":  "Nodo Actual del Desarrollo",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-GPS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "REVIEW-003",
+                      "title":  "Boton Continuar Desarrollo",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-CONTINUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "REVIEW-004",
+                      "title":  "Vista de Bloqueos",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-BLOCKERS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "REVIEW-005",
+                      "title":  "Cola Dinamica",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-QUEUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "REVIEW-006",
+                      "title":  "Evidencias en Tiempo Real",
+                      "source_queue":  "master_state_review",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-EVIDENCE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-001",
+                      "title":  "OPERATOR-001",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-STATE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-002",
+                      "title":  "OPERATOR-002",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-GPS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-003",
+                      "title":  "OPERATOR-003",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-CONTINUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-004",
+                      "title":  "OPERATOR-004",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-BLOCKERS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-005",
+                      "title":  "OPERATOR-005",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-QUEUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OPERATOR-006",
+                      "title":  "OPERATOR-006",
+                      "source_queue":  "operator_code_generation",
+                      "status":  "PAUSED",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-EVIDENCE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-001",
+                      "title":  "OLLAMA-001",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-STATE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-002",
+                      "title":  "OLLAMA-002",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-GPS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-003",
+                      "title":  "OLLAMA-003",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-CONTINUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-004",
+                      "title":  "OLLAMA-004",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-BLOCKERS-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-005",
+                      "title":  "OLLAMA-005",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-QUEUE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  },
+                  {
+                      "id":  "OLLAMA-006",
+                      "title":  "OLLAMA-006",
+                      "source_queue":  "ollama_script_execution_future",
+                      "status":  "READY",
+                      "hierarchy":  {
+                                        "desarrollo":  "DESARROLLO_GLOBAL",
+                                        "hipermacro":  "HYPER_008",
+                                        "macro":  "MASTER_CONTROL_PANEL",
+                                        "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                        "checkpoint":  "CP-EVIDENCE-001",
+                                        "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                    },
+                      "blocker_reason":  "",
+                      "evidence_path":  ""
+                  }
+              ],
+    "next_recommended_action":  "HYPER_008_CURRENT_DEVELOPMENT_NODE_001",
+    "telegram_real_actions":  false,
+    "git_actions":  false,
+    "external_actions":  false
+}

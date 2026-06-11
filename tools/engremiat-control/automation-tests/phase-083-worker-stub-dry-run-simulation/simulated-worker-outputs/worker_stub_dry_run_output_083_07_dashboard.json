@@ -1,0 +1,60 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_083_WORKER_STUB_DRY_RUN_OUTPUT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_083_APPLY_WORKER_STUB_DRY_RUN_EXECUTION_GATE_DECISION",
+    "created_at":  "2026-06-05T10:00:24",
+    "worker_id":  "WORKER_DASHBOARD_STUB",
+    "packet_id":  "WORKER_STUB_PACKET_080_07",
+    "packet_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-080-worker-stub-packets\\packets\\worker_stub_packet_080_07_dashboard.json",
+    "status":  "SIMULATED_OUTPUT_CREATED_NOT_REAL_EXECUTION",
+    "real_worker_executed":  false,
+    "worker_stub_executed":  false,
+    "ai_call_executed":  false,
+    "external_api_call_executed":  false,
+    "purpose":  "Preparar resumen visual local sin navegador real ni publicación.",
+    "simulated_input_summary":  [
+                                    "batch_metrics",
+                                    "worker_stub_outputs",
+                                    "human_gate"
+                                ],
+    "simulated_outputs":  [
+                              {
+                                  "name":  "dashboard_summary_stub",
+                                  "status":  "SIMULATED_LOCAL_OUTPUT_ONLY",
+                                  "value":  "Simulated output for WORKER_DASHBOARD_STUB / dashboard_summary_stub"
+                              },
+                              {
+                                  "name":  "html_local_plan_stub",
+                                  "status":  "SIMULATED_LOCAL_OUTPUT_ONLY",
+                                  "value":  "Simulated output for WORKER_DASHBOARD_STUB / html_local_plan_stub"
+                              },
+                              {
+                                  "name":  "status_cards_stub",
+                                  "status":  "SIMULATED_LOCAL_OUTPUT_ONLY",
+                                  "value":  "Simulated output for WORKER_DASHBOARD_STUB / status_cards_stub"
+                              }
+                          ],
+    "evidence_needed":  [
+                            "human_review",
+                            "contract_validation",
+                            "future_real_worker_authorization_gate"
+                        ],
+    "next_gate":  "WORKER_STUB_DRY_RUN_HUMAN_REVIEW_GATE",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "worker_stub_dry_run_simulation_executed":  true,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "simulated_stub_outputs_only":  true,
+                   "human_review_required":  true
+               }
+}

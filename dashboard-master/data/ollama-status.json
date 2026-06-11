@@ -1,0 +1,84 @@
+﻿{
+    "type":  "MASTER_PANEL_OLLAMA_STATUS",
+    "hyper":  "HYPER_077B_MASTER_PANEL_OLLAMA_STATUS_BUILD_NO_MODEL_EXEC_001",
+    "ok":  true,
+    "decision":  "MASTER_PANEL_OLLAMA_STATUS_BUILT_NO_MODEL_EXEC",
+    "generated_at":  "2026-06-03T10:39:56.9584515+02:00",
+    "selected_local_model":  "qwen2.5-coder:1.5b",
+    "overall_status":  "OPERATIONAL_READY_FOR_CONTROLLED_USE",
+    "gate":  "GO",
+    "authorization_scope":  "AUTORIZO_OLLAMA_MICROTEST_SAFE_RUNNER_PIPE_0006",
+    "counts":  {
+                   "queue":  {
+                                 "pending":  2,
+                                 "accepted":  0,
+                                 "running":  0,
+                                 "done":  3,
+                                 "failed":  0
+                             },
+                   "dispatcher":  {
+                                      "requests":  4,
+                                      "generated_jobs":  4
+                                  },
+                   "adapter":  {
+                                   "runs":  6
+                               }
+               },
+    "safety":  {
+                   "model_invocation_performed":  false,
+                   "pull_performed":  false,
+                   "push_performed":  false,
+                   "git_write_actions":  false,
+                   "telegram_real_actions":  false,
+                   "browser_actions":  false,
+                   "clipboard_actions":  false,
+                   "switch_off_confirmed":  true
+               },
+    "source_paths":  {
+                         "contract":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\89_MASTER_PANEL_OLLAMA_STATUS_DESIGN_NO_MODEL_EXEC\\contract\\master-panel-ollama-status-build-contract.json",
+                         "design":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\89_MASTER_PANEL_OLLAMA_STATUS_DESIGN_NO_MODEL_EXEC\\design\\master-panel-ollama-status-design-v1.json",
+                         "controlled_loop_status":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-controlled-loop-final-status-v1.json",
+                         "reusable_dispatcher_status":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\reusable-dispatcher-final-status-v1.json",
+                         "minimal_dispatcher_status":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-minimal-dispatcher-final-status-v1.json",
+                         "operational_queue_status":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-operational-queue-final-status-v1.json",
+                         "last_safe_run_summary":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\85_SMOKE_REUSABLE_DISPATCHER_SCRIPT_SAFE_RUN\\summary.json"
+                     },
+    "output_paths":  {
+                         "panel_data":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-status.json",
+                         "preview_html":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\90_MASTER_PANEL_OLLAMA_STATUS_BUILD_NO_MODEL_EXEC\\preview\\ollama-status-card.html",
+                         "summary":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\90_MASTER_PANEL_OLLAMA_STATUS_BUILD_NO_MODEL_EXEC\\summary.json",
+                         "audit":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\90_MASTER_PANEL_OLLAMA_STATUS_BUILD_NO_MODEL_EXEC\\audit\\audit.json",
+                         "manifest":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\90_MASTER_PANEL_OLLAMA_STATUS_BUILD_NO_MODEL_EXEC\\manifest.json"
+                     },
+    "input_checks":  [
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\89_MASTER_PANEL_OLLAMA_STATUS_DESIGN_NO_MODEL_EXEC\\contract\\master-panel-ollama-status-build-contract.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\89_MASTER_PANEL_OLLAMA_STATUS_DESIGN_NO_MODEL_EXEC\\design\\master-panel-ollama-status-design-v1.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-controlled-loop-final-status-v1.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\reusable-dispatcher-final-status-v1.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-minimal-dispatcher-final-status-v1.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\ollama-subworker-adapter\\status\\master-operator-ollama-operational-queue-final-status-v1.json",
+                             "exists":  true
+                         },
+                         {
+                             "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\data\\drive-db-sim\\85_SMOKE_REUSABLE_DISPATCHER_SCRIPT_SAFE_RUN\\summary.json",
+                             "exists":  true
+                         }
+                     ],
+    "next_recommended_action":  "HYPER_077C_MASTER_PANEL_OLLAMA_STATUS_SMOKE_NO_MODEL_EXEC_001"
+}

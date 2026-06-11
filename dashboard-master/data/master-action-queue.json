@@ -1,0 +1,90 @@
+﻿{
+    "type":  "MASTER_ACTION_QUEUE",
+    "ok":  true,
+    "generated_at":  "2026-06-03T14:18:37.4381876+02:00",
+    "decision":  "MASTER_ACTION_QUEUE_BUILT_NO_MODEL_EXEC",
+    "mode":  "readonly_planning_queue",
+    "source":  {
+                   "next_actions_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-next-actions.json",
+                   "action_count":  4
+               },
+    "queue":  [
+                  {
+                      "queue_id":  "Q001",
+                      "action_id":  "refresh_dashboard_status",
+                      "label":  "Refrescar panel Master",
+                      "command":  ".\\dashboard-master\\refresh-master-dashboard.cmd",
+                      "priority":  1,
+                      "status":  "QUEUED",
+                      "safe":  true,
+                      "requires_model":  false,
+                      "requires_git":  false,
+                      "executes_automatically":  false,
+                      "created_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "last_checked_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "execution_allowed":  false,
+                      "execution_policy":  "DISPLAY_AND_QUEUE_ONLY"
+                  },
+                  {
+                      "queue_id":  "Q002",
+                      "action_id":  "review_operator_latest_report",
+                      "label":  "Revisar ultimo reporte operador",
+                      "command":  "Get-Content .\\dashboard-master\\data\\master-control-status.json -Raw",
+                      "priority":  2,
+                      "status":  "QUEUED",
+                      "safe":  true,
+                      "requires_model":  false,
+                      "requires_git":  false,
+                      "executes_automatically":  false,
+                      "created_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "last_checked_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "execution_allowed":  false,
+                      "execution_policy":  "DISPLAY_AND_QUEUE_ONLY"
+                  },
+                  {
+                      "queue_id":  "Q003",
+                      "action_id":  "ollama_controlled_microtest",
+                      "label":  "Microtest Ollama controlado",
+                      "command":  "AUTORIZO_OLLAMA_MICROTEST_SAFE_RUNNER_PIPE_0006",
+                      "priority":  3,
+                      "status":  "REVIEW",
+                      "safe":  true,
+                      "requires_model":  true,
+                      "requires_git":  false,
+                      "executes_automatically":  false,
+                      "created_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "last_checked_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "execution_allowed":  false,
+                      "execution_policy":  "DISPLAY_AND_QUEUE_ONLY"
+                  },
+                  {
+                      "queue_id":  "Q004",
+                      "action_id":  "prepare_dashboard_action_card",
+                      "label":  "Preparar tarjeta visual de acciones",
+                      "command":  "HYPER_092C_MASTER_DASHBOARD_NEXT_ACTIONS_SMOKE_NO_MODEL_EXEC_001",
+                      "priority":  4,
+                      "status":  "READY",
+                      "safe":  true,
+                      "requires_model":  false,
+                      "requires_git":  false,
+                      "executes_automatically":  false,
+                      "created_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "last_checked_at":  "2026-06-03T14:18:37.4381876+02:00",
+                      "execution_allowed":  false,
+                      "execution_policy":  "DISPLAY_AND_QUEUE_ONLY"
+                  }
+              ],
+    "safety":  {
+                   "actions_executed":  false,
+                   "execution_allowed":  false,
+                   "model_invocation_performed":  false,
+                   "pull_performed":  false,
+                   "push_performed":  false,
+                   "git_write_actions":  false,
+                   "browser_actions":  false,
+                   "clipboard_actions":  false,
+                   "telegram_real_actions":  false,
+                   "switch_off_confirmed":  true
+               },
+    "next_recommended_action":  "HYPER_098C_MASTER_ACTION_QUEUE_SMOKE_NO_MODEL_EXEC_001"
+}

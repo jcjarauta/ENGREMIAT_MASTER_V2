@@ -1,0 +1,14 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_RECOVERY_BLOCK_REPORT",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_008_CONSTRUCTOR_CLOSE_AND_REUSABLE_STANDARD",
+    "block_index":  5,
+    "decision":  "PHASE_008_RECOVERY_BLOCK_5_CREATED_LOCAL_ONLY",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "external_ai_call_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "remote_repo_creation_allowed":  false,
+    "customer_contact_allowed":  false,
+    "updated_at":  "2026-06-05T21:41:04"
+}

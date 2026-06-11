@@ -1,0 +1,33 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "ENGREMIAT Constructor Control Consumer Contract",
+    "type":  "object",
+    "required":  [
+                     "consumer_id",
+                     "project_id",
+                     "read_sources",
+                     "write_policy",
+                     "safety",
+                     "updated_at"
+                 ],
+    "properties":  {
+                       "consumer_id":  {
+                                           "type":  "string"
+                                       },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "read_sources":  {
+                                            "type":  "array"
+                                        },
+                       "write_policy":  {
+                                            "type":  "object"
+                                        },
+                       "safety":  {
+                                      "type":  "object"
+                                  },
+                       "updated_at":  {
+                                          "type":  "string"
+                                      }
+                   }
+}

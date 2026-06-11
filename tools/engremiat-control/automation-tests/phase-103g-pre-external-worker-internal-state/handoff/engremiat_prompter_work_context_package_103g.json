@@ -1,0 +1,58 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_103G_WORK_CONTEXT_PACKAGE_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:16:49",
+    "target":  "ENGREMIAT_PROMPTER_BEHAVIOR_TEST_WITH_INTERNAL_NORMS",
+    "worker_candidate":  "OLLAMA_LOCAL",
+    "objective":  "Revisar cómo debe comportarse engremiat_prompter usando normas internas del sistema y proponer un test local seguro.",
+    "current_state":  {
+                          "remote_synced":  true,
+                          "executed_minimal_automations":  3,
+                          "trilogy":  "CLOSED_STABLE",
+                          "tree_clean":  true,
+                          "local_observability_layer_present":  true
+                      },
+    "strict_rules":  [
+                         "No ejecutar código",
+                         "No llamar APIs externas",
+                         "No usar navegador/CDP/clipboard",
+                         "No tocar Git",
+                         "No proponer workers reales todavía",
+                         "Responder con JSON y resumen MD",
+                         "Proponer solo siguiente prueba local segura",
+                         "Mantener alcance en filesystem local"
+                     ],
+    "expected_output":  [
+                            "behavior_review",
+                            "risks",
+                            "recommended_next_local_test",
+                            "files_to_create_or_update",
+                            "human_gate_required",
+                            "integration_notes"
+                        ],
+    "relevant_paths":  [
+                           null,
+                           null,
+                           "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-103g-pre-external-worker-internal-state\\out\\internal_health_index_103g.json",
+                           "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-103g-pre-external-worker-internal-state\\out\\system_state_snapshot_103g.json",
+                           "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-103g-pre-external-worker-internal-state\\queue\\local_task_queue_103g.json"
+                       ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "external_worker_allowed_now":  false,
+                   "ollama_execution_allowed_now":  false,
+                   "pre_worker_internal_state_only":  true,
+                   "human_review_required":  true
+               }
+}

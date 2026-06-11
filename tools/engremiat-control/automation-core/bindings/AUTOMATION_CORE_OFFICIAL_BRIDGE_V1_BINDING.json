@@ -1,0 +1,12 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_OFFICIAL_BRIDGE_V1_BINDING",
+    "ok":  true,
+    "decision":  "OFFICIAL_BRIDGE_BINDING_READY",
+    "active_pattern":  "LOCAL_REPO_JSON_SNAPSHOT_TO_CONTROL_BRIDGE_INBOX_B2",
+    "blocked_pattern":  "PUBLIC_WEBAPP_POST_EXEC_401_AUTH_REQUIRED",
+    "official_bridge_validation":  "tools/engremiat-control/bridge/validation/official_bridge_v1_end_to_end_validated.json",
+    "dashboard_export_allowed":  true,
+    "google_api_call_allowed":  false,
+    "external_actions_executed":  false,
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

@@ -1,0 +1,55 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_091_FIRST_REAL_AUTOMATION_CANDIDATE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_091_REVIEW_REAL_AUTOMATION_BOUNDARY_DECISION",
+    "created_at":  "2026-06-05T10:28:27",
+    "candidate_id":  "REAL_AUTOMATION_CANDIDATE_001_LOCAL_FILE_ONLY_STATUS_SYNC",
+    "candidate_name":  "LOCAL_FILE_ONLY_STATUS_SYNC",
+    "candidate_kind":  "LOCAL_FILESYSTEM_ONLY",
+    "candidate_status":  "DEFINED_NOT_EXECUTABLE",
+    "purpose":  "Sincronizar/normalizar un estado local derivado de artefactos ya creados, sin red externa ni acción sobre operador.",
+    "allowed_scope":  [
+                          "read local ENGREMIAT artifacts",
+                          "write one local status JSON",
+                          "write one local status MD",
+                          "write local dashboard HTML",
+                          "create audit report"
+                      ],
+    "forbidden_scope":  [
+                            "real_ai_call",
+                            "external_api_call",
+                            "browser_or_cdp",
+                            "clipboard",
+                            "gmail_read",
+                            "google_sheets_write",
+                            "real_worker_execution",
+                            "operator_execution",
+                            "git_branch_create"
+                        ],
+    "execution_allowed_now":  false,
+    "reason_for_candidate":  "Es el candidato real menos peligroso: solo filesystem local, sin red, sin worker real, sin operador.",
+    "minimum_next_requirements":  [
+                                      "human approves candidate",
+                                      "dry-run equivalent exists",
+                                      "single write scope locked",
+                                      "rollback/hold path defined",
+                                      "compact report required"
+                                  ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "candidate_gate_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_092_REVIEW_FIRST_REAL_AUTOMATION_CANDIDATE_DECISION"
+}

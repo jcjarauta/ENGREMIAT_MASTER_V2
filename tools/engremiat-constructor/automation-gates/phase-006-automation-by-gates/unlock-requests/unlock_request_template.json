@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_UNLOCK_REQUEST_TEMPLATE",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "request_id":  "PENDING",
+    "requested_capability":  "PENDING",
+    "requested_scope":  "PENDING",
+    "human_authorization_phrase":  "PENDING",
+    "approval_status":  "PENDING_HUMAN_REVIEW",
+    "execute_now":  false,
+    "updated_at":  "2026-06-05T21:37:32"
+}

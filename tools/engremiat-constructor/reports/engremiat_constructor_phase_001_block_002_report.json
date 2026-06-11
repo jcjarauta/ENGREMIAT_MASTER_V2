@@ -1,0 +1,23 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_BLOCK_002_CREATE_NEED_SCHEMA_AND_EXAMPLE_001",
+    "ok":  true,
+    "decision":  "NEED_SCHEMA_AND_EXAMPLE_CREATED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_LOCAL_PROJECT_FACTORY",
+    "block":  "BLOCK_002_CREATE_NEED_SCHEMA_AND_EXAMPLE",
+    "need_schema_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\schemas\\need.schema.json",
+    "need_example_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\examples\\need-example-001.json",
+    "need_doc_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\docs\\need_contract.md",
+    "control_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_status.json",
+    "required_fields_count":  16,
+    "missing_required_fields_count":  0,
+    "example_need_id":  "need-2026-001",
+    "example_status":  "NORMALIZED",
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "next_recommended_action":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_BLOCK_003_CREATE_PROJECT_SCHEMA_AND_CONTRACT",
+    "updated_at":  "2026-06-05T12:39:28"
+}

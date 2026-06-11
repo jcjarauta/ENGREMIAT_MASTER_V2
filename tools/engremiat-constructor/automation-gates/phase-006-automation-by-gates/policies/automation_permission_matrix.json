@@ -1,0 +1,88 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_AUTOMATION_PERMISSION_MATRIX",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "capabilities_count":  13,
+    "capabilities":  [
+                         {
+                             "capability":  "local_read",
+                             "allowed_now":  true,
+                             "requires_human":  false,
+                             "risk":  "low"
+                         },
+                         {
+                             "capability":  "local_report_write",
+                             "allowed_now":  true,
+                             "requires_human":  false,
+                             "risk":  "low"
+                         },
+                         {
+                             "capability":  "local_queue_write",
+                             "allowed_now":  true,
+                             "requires_human":  false,
+                             "risk":  "low"
+                         },
+                         {
+                             "capability":  "local_simulation",
+                             "allowed_now":  true,
+                             "requires_human":  false,
+                             "risk":  "low"
+                         },
+                         {
+                             "capability":  "real_control_write",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "medium"
+                         },
+                         {
+                             "capability":  "real_prompter_execution",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "medium"
+                         },
+                         {
+                             "capability":  "external_ai_call",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "external_api_call",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "worker_real_execution",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "remote_repo_creation",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "customer_contact",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "browser",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         },
+                         {
+                             "capability":  "clipboard",
+                             "allowed_now":  false,
+                             "requires_human":  true,
+                             "risk":  "high"
+                         }
+                     ],
+    "default_mode":  "BLOCKED_BY_DEFAULT_FOR_EXTERNAL_OR_REAL_ACTIONS",
+    "updated_at":  "2026-06-05T21:37:32"
+}

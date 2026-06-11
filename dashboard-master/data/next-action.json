@@ -1,0 +1,51 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 07:17:17",
+    "master_decision_mode":  "ROADMAP_DRIVEN",
+    "active_hyper":  {
+                         "id":  "HYPER_DASHBOARD_OPERATIVE_VISION",
+                         "title":  "Dashboard operativo",
+                         "status":  "ACTIVE",
+                         "next_action":  "build_next_action_panel"
+                     },
+    "selected_checkpoint":  {
+                                "id":  "MODEL_JSON",
+                                "status":  "PENDING",
+                                "next_action":  "build_json"
+                            },
+    "blockers":  [
+                     {
+                         "id":  "BLOCK_GIT_UNTRACKED_NOISE",
+                         "severity":  "MEDIUM",
+                         "status":  "KNOWN",
+                         "next_action":  "clasificar por hyper antes de cierre"
+                     },
+                     {
+                         "id":  "BLOCK_LOCAL_AI_HOOK_TIMEOUT",
+                         "severity":  "MEDIUM",
+                         "status":  "KNOWN",
+                         "next_action":  "diagnosticar router directo"
+                     }
+                 ],
+    "human_gates":  [
+                        {
+                            "id":  "GATE_BEFORE_AUTOMATION",
+                            "status":  "PENDING",
+                            "title":  "Validar visión operativa antes de automatizar"
+                        },
+                        {
+                            "id":  "GATE_GIT_NOISE_CLASSIFICATION",
+                            "status":  "PENDING",
+                            "title":  "Clasificar ruido Git por hyper"
+                        }
+                    ],
+    "git_remote_actions":  false,
+    "external_actions":  false,
+    "master_instruction":  "Read next-action.json first, then master-roadmap.json, then blockers-and-dependencies.json. If requires_human_review is true, stop before execution.",
+    "decision":  "DASHBOARD_OPERATIVE_CENTER_V1_READY_FOR_HUMAN_REVIEW",
+    "reason":  "dashboard_operative_vision_closed_and_ready_to_define_next_hyper",
+    "requires_human_review":  true,
+    "requires_repair":  false,
+    "next_recommended_action":  "HUMAN_REVIEW_DASHBOARD_AND_DEFINE_NEXT_HYPER",
+    "operative_center_contract_file":  "dashboard-master\\data\\operative-center-contract.json"
+}

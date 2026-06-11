@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_REPEATABLE_DRY_RUN_BATCH_TEST_GATE_RESULT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_077_CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE",
+    "created_at":  "2026-06-05T09:44:00",
+    "decision":  "REPEATABLE_DRY_RUN_BATCH_TEST_GATE_CREATED_WAITING_HUMAN_DECISION",
+    "gate_status":  "WAITING_HUMAN_BATCH_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "RUN_BATCH_DRY_RUN_3_SEEDS",
+    "batch_size":  3,
+    "contract_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\contracts\\repeatable_dry_run_batch_test_gate_contract_077.json",
+    "batch_plan_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\out\\repeatable_dry_run_batch_test_plan_077.json",
+    "batch_decision_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\editable\\repeatable_dry_run_batch_decision_editable_077.json",
+    "batch_gate_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\out\\repeatable_dry_run_batch_gate_077.json",
+    "batch_runner_spec_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\out\\repeatable_dry_run_batch_runner_spec_077.json",
+    "seed_paths":  [
+                       "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_001_local_financing_finder.json",
+                       "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_002_onboarding_kit.json",
+                       "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-077-repeatable-batch-gate\\seeds\\batch_seed_077_003_opendata_signal_pack.json"
+                   ],
+    "dashboard_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\local-dashboard\\automation-tests\\phase-077\\index.html",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "batch_real_execution_allowed":  false,
+                   "batch_gate_only":  true,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_078_APPLY_REPEATABLE_DRY_RUN_BATCH_GATE_DECISION"
+}

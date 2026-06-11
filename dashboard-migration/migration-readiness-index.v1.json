@@ -1,0 +1,96 @@
+﻿{
+    "phase":  "NEW_PC_DECENTRALIZED_ARCHITECTURE_007_MIGRATION_READINESS_INDEX",
+    "ok":  true,
+    "decision":  "MIGRATION_READINESS_INDEX_READY",
+    "created_at":  "2026-06-11T18:19:57",
+    "readiness":  100,
+    "gate":  "READY_WAITING_FOR_OLD_PC_DEVELOPMENT_CLOSE",
+    "legacy_execution":  false,
+    "repo_copy":  false,
+    "migration_started":  false,
+    "git_write":  false,
+    "push":  false,
+    "main_node":  {
+                      "root":  "C:\\ENGREMIAT",
+                      "repo_target":  "C:\\ENGREMIAT\\ENGREMIAT_MASTER",
+                      "incoming":  "C:\\ENGREMIAT\\incoming",
+                      "status":  "PREPARED_WAITING_FOR_LEGACY_CLOSE"
+                  },
+    "legacy_node":  {
+                        "expected_repo":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+                        "status":  "CURRENT_SOURCE_NODE_UNTIL_FREEZE",
+                        "next_required_action":  "run_preflight_readonly_after_current_development_closes"
+                    },
+    "backup_node":  {
+                        "status":  "PLANNED_WITH_CONTRACT",
+                        "activation":  "after_main_migration_package_validated"
+                    },
+    "handoff_kit":  {
+                        "kit_root":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452",
+                        "zip_path":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452.zip",
+                        "zip_sha256":  "01F013F6887E3937E86CA782017F2F5503434E54F88E21E7840F235B4196EB8D"
+                    },
+    "checks":  [
+                   {
+                       "id":  "C01",
+                       "name":  "MAIN_NODE root exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT"
+                   },
+                   {
+                       "id":  "C02",
+                       "name":  "MAIN_NODE manifest exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\nodes\\MAIN_NODE_MANIFEST.json"
+                   },
+                   {
+                       "id":  "C03",
+                       "name":  "Three-node topology exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\architecture\\nodes\\engremiat-three-node-topology.v1.json"
+                   },
+                   {
+                       "id":  "C04",
+                       "name":  "Node registry exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\architecture\\registry\\engremiat-node-registry.v1.json"
+                   },
+                   {
+                       "id":  "C05",
+                       "name":  "BACKUP_NODE contract exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\architecture\\backup-node\\BACKUP_NODE.contract.v1.json"
+                   },
+                   {
+                       "id":  "C06",
+                       "name":  "Legacy freeze contract exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\architecture\\migration\\legacy-freeze-export-contract.v1.json"
+                   },
+                   {
+                       "id":  "C07",
+                       "name":  "Handoff kit folder exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452"
+                   },
+                   {
+                       "id":  "C08",
+                       "name":  "Handoff kit zip exists",
+                       "ok":  true,
+                       "path":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452.zip"
+                   },
+                   {
+                       "id":  "C09",
+                       "name":  "Old PC not executed yet",
+                       "ok":  true,
+                       "path":  "legacy_execution=False"
+                   },
+                   {
+                       "id":  "C10",
+                       "name":  "Repo not copied yet",
+                       "ok":  true,
+                       "path":  "repo_copy=False"
+                   }
+               ],
+    "recommended_next":  "when_old_pc_development_closes_copy_handoff_zip_to_old_pc_and_run_preflight"
+}

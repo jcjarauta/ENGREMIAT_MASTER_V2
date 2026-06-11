@@ -1,0 +1,139 @@
+﻿{
+    "type":  "PANEL_QUEUE_CONTROLLER_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:23:28",
+    "checkpoints_total":  1,
+    "active_checkpoint":  {
+                              "id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+                              "hyper":  "HYPER_018",
+                              "objective":  "analizar recuperación de HYPER_018 sin romper lo construido",
+                              "priority":  "HIGH",
+                              "priority_rank":  2,
+                              "status":  "READY",
+                              "task_type":  "ANALYSIS_TASK",
+                              "target_worker":  "OLLAMA",
+                              "allowed_actions":  [
+                                                      "proposal_only"
+                                                  ],
+                              "forbidden_actions":  [
+                                                        "git",
+                                                        "telegram_real",
+                                                        "token",
+                                                        "polling",
+                                                        "webhook",
+                                                        "browser",
+                                                        "clipboard",
+                                                        "external_actions",
+                                                        "execute_code"
+                                                    ],
+                              "evidence":  [
+                                               null
+                                           ],
+                              "updated_at":  "2026-06-02T13:23:28"
+                          },
+    "by_status":  {
+                      "PROPOSAL_RECEIVED":  0,
+                      "READY":  1,
+                      "REJECTED":  0,
+                      "APPROVED_FOR_OPERATOR":  0,
+                      "EXECUTED":  0,
+                      "SENT_TO_OLLAMA":  0,
+                      "PAUSED":  0,
+                      "DONE":  0,
+                      "ACTIVE":  0,
+                      "NEEDS_REVIEW":  0,
+                      "BLOCKED":  0
+                  },
+    "by_priority":  {
+                        "LOW":  0,
+                        "CRITICAL":  0,
+                        "NORMAL":  0,
+                        "PARKED":  0,
+                        "HIGH":  1
+                    },
+    "queues":  {
+                   "checkpoint_priority_count":  1,
+                   "ollama_work_count":  1,
+                   "review_count":  0,
+                   "operator_count":  0,
+                   "blockers_count":  0,
+                   "evidence_count":  0
+               },
+    "checkpoint_priority_queue":  [
+                                      {
+                                          "id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+                                          "hyper":  "HYPER_018",
+                                          "objective":  "analizar recuperación de HYPER_018 sin romper lo construido",
+                                          "priority":  "HIGH",
+                                          "priority_rank":  2,
+                                          "status":  "READY",
+                                          "task_type":  "ANALYSIS_TASK",
+                                          "target_worker":  "OLLAMA",
+                                          "allowed_actions":  [
+                                                                  "proposal_only"
+                                                              ],
+                                          "forbidden_actions":  [
+                                                                    "git",
+                                                                    "telegram_real",
+                                                                    "token",
+                                                                    "polling",
+                                                                    "webhook",
+                                                                    "browser",
+                                                                    "clipboard",
+                                                                    "external_actions",
+                                                                    "execute_code"
+                                                                ],
+                                          "evidence":  [
+                                                           null
+                                                       ],
+                                          "updated_at":  "2026-06-02T13:23:28"
+                                      }
+                                  ],
+    "ollama_work_queue":  [
+                              {
+                                  "id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+                                  "hyper":  "HYPER_018",
+                                  "objective":  "analizar recuperación de HYPER_018 sin romper lo construido",
+                                  "priority":  "HIGH",
+                                  "priority_rank":  2,
+                                  "status":  "READY",
+                                  "task_type":  "ANALYSIS_TASK",
+                                  "target_worker":  "OLLAMA",
+                                  "allowed_actions":  [
+                                                          "proposal_only"
+                                                      ],
+                                  "forbidden_actions":  [
+                                                            "git",
+                                                            "telegram_real",
+                                                            "token",
+                                                            "polling",
+                                                            "webhook",
+                                                            "browser",
+                                                            "clipboard",
+                                                            "external_actions",
+                                                            "execute_code"
+                                                        ],
+                                  "evidence":  [
+                                                   null
+                                               ],
+                                  "updated_at":  "2026-06-02T13:23:28"
+                              }
+                          ],
+    "review_queue":  [
+
+                     ],
+    "operator_queue":  [
+
+                       ],
+    "blockers":  [
+
+                 ],
+    "evidences":  [
+
+                  ],
+    "external_actions":  false,
+    "git_actions":  false,
+    "telegram_actions":  false,
+    "ollama_execution":  false,
+    "next_recommended_action":  "HYPER_027_OLLAMA_TASK_DISPATCHER_001"
+}

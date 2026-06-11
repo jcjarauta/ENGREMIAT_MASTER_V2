@@ -1,0 +1,33 @@
+﻿{
+    "type":  "GLOBAL_CONTROL_ACTIONS",
+    "version":  5,
+    "updated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "mode":  "human_filter_copy_payload",
+    "browser_execution_allowed":  false,
+    "actions":  [
+                    {
+                        "id":  "send_next_ready_phase",
+                        "label":  "Enviar siguiente fase lista",
+                        "status_filter":  "ready",
+                        "prompt_template":  "Continuamos desde el panel ENGREMIAT. Genera el siguiente bloque PowerShell completo, sin Git ni acciones externas."
+                    },
+                    {
+                        "id":  "send_paused_phase_with_human_result",
+                        "label":  "Reactivar fase pausada",
+                        "status_filter":  "paused",
+                        "prompt_template":  "Reactivamos una fase pausada. Analiza resultado humano y continúa sin repetir intentos fallidos."
+                    },
+                    {
+                        "id":  "send_blocked_phase_for_solution",
+                        "label":  "Solucionar fase bloqueada",
+                        "status_filter":  "blocked",
+                        "prompt_template":  "Hay una fase bloqueada. Propón reparación segura o pausa la rama y continúa con rama segura."
+                    },
+                    {
+                        "id":  "prepare_telegram_seed",
+                        "label":  "Preparar Telegram",
+                        "status_filter":  "ready",
+                        "prompt_template":  "Panel pre-Telegram validado. Prepara integración Telegram proposal-only, sin mensajes reales ni token."
+                    }
+                ]
+}

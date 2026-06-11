@@ -1,0 +1,13 @@
+﻿{
+    "type":  "PANEL_QUEUE_SUMMARY",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:23:28",
+    "active_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "checkpoint_priority_count":  1,
+    "ollama_work_count":  1,
+    "review_count":  0,
+    "operator_count":  0,
+    "blockers_count":  0,
+    "evidence_count":  0,
+    "next_recommended_action":  "HYPER_027_OLLAMA_TASK_DISPATCHER_001"
+}

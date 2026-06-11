@@ -1,0 +1,25 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PROJECTS_INDEX",
+    "ok":  true,
+    "projects_count":  1,
+    "projects":  [
+                     {
+                         "type":  "ENGREMIAT_CONSTRUCTOR_PROJECT_CONTROL_EXPORT",
+                         "ok":  true,
+                         "project_id":  "engremiat-training-game-inclusion-001",
+                         "project_name":  "Training Game Inclusion",
+                         "origin_need_id":  "need-2026-001",
+                         "template_type":  "training-game",
+                         "status":  "BOOTSTRAPPED_VALIDATED",
+                         "readiness":  88,
+                         "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+                         "validation_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\reports\\validation_report.json",
+                         "commercial_status":  "hypothesis",
+                         "funding_status":  "grant_candidate",
+                         "remote_status":  "BLOCKED_BY_GATE",
+                         "next_recommended_action":  "CREATE_COMMERCIAL_AUTO_FILES",
+                         "updated_at":  "2026-06-05T20:16:02"
+                     }
+                 ],
+    "updated_at":  "2026-06-05T20:16:02"
+}

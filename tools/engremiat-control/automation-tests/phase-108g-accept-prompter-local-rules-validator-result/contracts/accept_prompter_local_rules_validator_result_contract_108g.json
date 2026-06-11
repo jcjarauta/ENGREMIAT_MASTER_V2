@@ -1,0 +1,30 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_108G_ACCEPT_PROMPTER_LOCAL_RULES_VALIDATOR_RESULT_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_108G_ACCEPT_PROMPTER_LOCAL_RULES_VALIDATOR_RESULT_AND_PREPARE_FIRST_PROMPTER_TEST",
+    "created_at":  "2026-06-05T11:29:43",
+    "purpose":  "Aceptar el resultado del validador local de normas y preparar el primer test local de comportamiento de engremiat_prompter.",
+    "source_phase":  "PHASE_107G_R_PROMPTER_LOCAL_RULES_VALIDATOR_GIT_REPAIR",
+    "source_validator_result_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-107g-prompter-local-rules-validator-dry-run\\out\\prompter_local_rules_validator_dry_run_result_107g.json",
+    "source_rules_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-107g-prompter-local-rules-validator-dry-run\\out\\prompter_local_rules_validation_report_107g.json",
+    "policy":  "ACCEPT_VALIDATOR_RESULT_AND_CREATE_FIRST_LOCAL_BEHAVIOR_TEST_GATE_ONLY",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "integration_allowed_now":  false,
+                   "first_prompter_behavior_test_execution_allowed_now":  false,
+                   "gate_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_109G_REVIEW_FIRST_PROMPTER_LOCAL_BEHAVIOR_TEST_GATE"
+}

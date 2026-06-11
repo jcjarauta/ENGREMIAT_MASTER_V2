@@ -1,0 +1,58 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_098_THIRD_REAL_CANDIDATE_EXECUTION_POLICY_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_098_REVIEW_THIRD_REAL_AUTOMATION_CANDIDATE_DECISION",
+    "created_at":  "2026-06-05T11:02:45",
+    "policy_status":  "READY_FOR_HUMAN_EXECUTION_GATE_NOT_EXECUTED",
+    "candidate_id":  "REAL_AUTOMATION_CANDIDATE_003_LOCAL_AUTOMATION_TIMELINE_REFRESH",
+    "candidate_name":  "LOCAL_AUTOMATION_TIMELINE_REFRESH",
+    "allowed_if_human_approves_next_phase":  [
+                                                 "read local status sync artifacts",
+                                                 "read local health index artifacts",
+                                                 "read phase 097 validation artifacts",
+                                                 "write local automation timeline JSON",
+                                                 "write local automation timeline MD",
+                                                 "write local dashboard HTML",
+                                                 "write audit report",
+                                                 "commit and push safe local files"
+                                             ],
+    "still_forbidden":  [
+                            "real_ai_call",
+                            "external_api_call",
+                            "browser_or_cdp",
+                            "clipboard",
+                            "gmail_read",
+                            "google_sheets_write",
+                            "real_worker_execution",
+                            "worker_stub_execution",
+                            "operator_execution",
+                            "git_branch_create"
+                        ],
+    "write_scope":  [
+                        "tools/engremiat-control/real-automation-boundary/local-automation-timeline",
+                        "tools/engremiat-control/local-dashboard/real-automation-boundary/automation-timeline",
+                        "tools/engremiat-control/reports/engremiat_control_third_real_candidate_execution_report.json",
+                        "tools/engremiat-prompter/reports/engremiat_prompter_third_real_candidate_execution_report.json",
+                        "tools/engremiat-projects/prueba2/reports/engremiat_project_prueba2_third_real_candidate_execution_report.json"
+                    ],
+    "candidate_execution_allowed_now":  false,
+    "automation_real_execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "third_real_candidate_execution_gate_only":  true,
+                   "candidate_execution_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_099_APPLY_THIRD_REAL_CANDIDATE_EXECUTION_GATE_DECISION"
+}

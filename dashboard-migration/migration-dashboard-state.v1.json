@@ -1,0 +1,20 @@
+﻿{
+    "phase":  "NEW_PC_DECENTRALIZED_ARCHITECTURE_008_MIGRATION_DASHBOARD_AND_GATE_CARD",
+    "ok":  true,
+    "decision":  "MIGRATION_DASHBOARD_AND_GATE_CARD_READY",
+    "readiness":  100,
+    "gate":  "READY_WAITING_FOR_OLD_PC_DEVELOPMENT_CLOSE",
+    "legacy_execution":  false,
+    "repo_copy":  false,
+    "migration_started":  false,
+    "git_write":  false,
+    "push":  false,
+    "latest_kit":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452",
+    "latest_zip":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452.zip",
+    "latest_zip_sha256":  "01F013F6887E3937E86CA782017F2F5503434E54F88E21E7840F235B4196EB8D",
+    "old_pc_recommended_folder":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_HANDOFF_KIT",
+    "old_pc_first_launcher":  "launchers\\01_RUN_PREFLIGHT_READONLY_ON_OLD_PC.cmd",
+    "old_pc_manual_first_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File .\\scripts\\RUN_ON_LEGACY_PC_001_FREEZE_EXPORT_PREFLIGHT_READONLY.ps1",
+    "next_human_gate":  "Cerrar ultima fase en PC antiguo antes de ejecutar preflight.",
+    "recommended_next":  "close_old_pc_development_then_transfer_handoff_kit_and_run_preflight"
+}

@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_STATUS_FOR_CONTROL_DASHBOARD_V1",
+    "ok":  true,
+    "decision":  "READY_FOR_CONTROL_DASHBOARD_EXPORT",
+    "active_status":  "AUTOMATION_CORE_ASSEMBLY_BASELINE_READY",
+    "head":  "1dc8e43 [ENGREMIAT_CONTROL] Create automation core assembly baseline",
+    "remote_synced":  true,
+    "official_bridge_v1_validated":  true,
+    "health_sanitation_validated":  true,
+    "next":  "RUN_BLOCK_7_AUTOMATION_CORE_STAGE_CLOSE"
+}

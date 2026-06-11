@@ -1,0 +1,88 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_SIMULATED_DEMANDS",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "demands_count":  6,
+    "demands":  [
+                    {
+                        "demand_id":  "demand-005-001",
+                        "source_type":  "grant",
+                        "summary":  "Programa local de inclusion digital para asociaciones",
+                        "sector":  "digital_inclusion",
+                        "territory":  "local",
+                        "urgency":  8,
+                        "funding_potential":  9,
+                        "commercial_potential":  7,
+                        "reuse_potential":  9,
+                        "human_load":  5,
+                        "status":  "NORMALIZED_SIMULATED"
+                    },
+                    {
+                        "demand_id":  "demand-005-002",
+                        "source_type":  "pre_sale",
+                        "summary":  "Panel sencillo para coordinar voluntarios y tareas",
+                        "sector":  "community_management",
+                        "territory":  "local",
+                        "urgency":  7,
+                        "funding_potential":  5,
+                        "commercial_potential":  8,
+                        "reuse_potential":  8,
+                        "human_load":  4,
+                        "status":  "NORMALIZED_SIMULATED"
+                    },
+                    {
+                        "demand_id":  "demand-005-003",
+                        "source_type":  "partner",
+                        "summary":  "Nodo educativo quiere adaptar dinamicas gamificadas",
+                        "sector":  "education",
+                        "territory":  "regional",
+                        "urgency":  6,
+                        "funding_potential":  6,
+                        "commercial_potential":  7,
+                        "reuse_potential":  9,
+                        "human_load":  6,
+                        "status":  "NORMALIZED_SIMULATED"
+                    },
+                    {
+                        "demand_id":  "demand-005-004",
+                        "source_type":  "event",
+                        "summary":  "Evento territorial necesita una demo visible de impacto social",
+                        "sector":  "social_impact",
+                        "territory":  "local",
+                        "urgency":  9,
+                        "funding_potential":  4,
+                        "commercial_potential":  6,
+                        "reuse_potential":  7,
+                        "human_load":  5,
+                        "status":  "NORMALIZED_SIMULATED"
+                    },
+                    {
+                        "demand_id":  "demand-005-005",
+                        "source_type":  "volunteering",
+                        "summary":  "Grupo de voluntariado quiere aprender creando proyectos reales",
+                        "sector":  "training",
+                        "territory":  "distributed",
+                        "urgency":  5,
+                        "funding_potential":  3,
+                        "commercial_potential":  5,
+                        "reuse_potential":  8,
+                        "human_load":  7,
+                        "status":  "NORMALIZED_SIMULATED"
+                    },
+                    {
+                        "demand_id":  "demand-005-006",
+                        "source_type":  "territorial_need",
+                        "summary":  "Necesidad local difusa sin financiador ni equipo claro",
+                        "sector":  "unknown",
+                        "territory":  "local",
+                        "urgency":  4,
+                        "funding_potential":  2,
+                        "commercial_potential":  3,
+                        "reuse_potential":  4,
+                        "human_load":  8,
+                        "status":  "NORMALIZED_SIMULATED"
+                    }
+                ],
+    "real_sources_used":  false,
+    "updated_at":  "2026-06-05T21:28:47"
+}

@@ -1,0 +1,18 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F003_READINESS_GATE_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-074-r3-smoke",
+    "readiness_score":  95,
+    "readiness_level":  "high",
+    "execution_allowed":  false,
+    "status":  "PASSED_FOR_DRAFT_ROUTING_ONLY",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

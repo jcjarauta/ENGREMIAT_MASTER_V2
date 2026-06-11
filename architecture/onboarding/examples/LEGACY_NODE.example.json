@@ -1,0 +1,34 @@
+﻿{
+    "node_id":  "LEGACY_NODE",
+    "machine_name":  "OLD_PC",
+    "role":  "Fuente actual del repositorio hasta cierre de fase; despues nodo historico/secundario.",
+    "root_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "status":  "PLANNED",
+    "allowed_actions":  [
+                            "close_current_phase",
+                            "readonly_export_preflight",
+                            "create_export_manifest"
+                        ],
+    "blocked_actions":  [
+                            "partial_copy_without_manifest",
+                            "post_freeze_changes_without_log",
+                            "secrets_transfer_without_inventory"
+                        ],
+    "sync_policy":  {
+                        "mode":  "manual_until_validated",
+                        "source":  "MAIN_NODE",
+                        "target":  "THIS_NODE",
+                        "allowed":  false
+                    },
+    "backup_policy":  {
+                          "required":  true,
+                          "destination":  "BACKUP_NODE",
+                          "hash_required":  true
+                      },
+    "secrets_policy":  {
+                           "secrets_allowed":  false,
+                           "inventory_required_before_transfer":  true,
+                           "print_secrets":  false
+                       },
+    "activation_gate":  "READONLY_PREFLIGHT_REQUIRED"
+}

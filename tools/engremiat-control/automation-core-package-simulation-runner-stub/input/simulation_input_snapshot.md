@@ -1,0 +1,27 @@
+﻿# ENGREMIAT · Simulation input snapshot
+
+- type: ENGREMIAT_AUTOMATION_CORE_PACKAGE_SIMULATION_INPUT_SNAPSHOT_001
+- phase: AUTOMATION_CORE_PACKAGE_SIMULATION_RUNNER_STUB
+- ok: True
+- generated_at: 2026-06-06T07:59:33.7816449Z
+- input_snapshot_ready: True
+- package_id: automation-core-local-decision-package-001
+- package_status: queued_but_not_executable
+- source_gate_final: tools/engremiat-control/reports/automation_core_local_simulation_gate_final.json
+- source_stub_contract: tools/engremiat-control/automation-core-local-simulation-gate/contract/automation_core_local_simulation_stub_contract.json
+- source_package: tools/engremiat-control/automation-core-local-decision-package/packages/automation-core-local-decision-package-001.json
+- source_queue_index: tools/engremiat-control/automation-core-local-decision-package/queue-stub/queue_index.json
+- runner_mode: STUB_ONLY_NO_REAL_EXECUTION
+- package_shape_ok: True
+- package_shape_issues: 
+- queue_executable_count: 0
+- simulation_stub_allowed: True
+- simulation_real_execution_allowed: False
+- real_worker_allowed: False
+- external_actions_executed: False
+- google_api_call_allowed: False
+- decision_auto_execution_allowed: False
+- worker_execution_allowed: False
+- payload_snapshot: @{requested_action=prepare_local_automation_review_gate; recommended_next=AUTOMATION_CORE_PACKAGE_REVIEW_GATE; execution_mode=NO_EXECUTION_PACKAGE_ONLY; expected_human_gate=review_before_any_worker_or_external_action}
+- safety_snapshot: @{local_only=True; external_actions_executed=False; google_api_call_allowed=False; real_worker_allowed=False; decision_auto_execution_allowed=False; worker_execution_allowed=False; queued_but_not_executable=True; human_review_required=True}
+- next: RUN_SIMULATION_STUB

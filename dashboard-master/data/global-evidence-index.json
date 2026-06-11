@@ -1,0 +1,116 @@
+﻿{
+    "type":  "GLOBAL_EVIDENCE_INDEX",
+    "version":  4,
+    "updated_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "recent_runs_count":  12,
+    "items":  [
+                  {
+                      "id":  "run-20260602-113419-034",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034",
+                      "last_write_time":  "2026-06-02T11:34:19.0742904+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-113157-554",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554",
+                      "last_write_time":  "2026-06-02T11:31:57.6044078+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-113043-332",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332",
+                      "last_write_time":  "2026-06-02T11:30:43.3565627+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-112753-230",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230",
+                      "last_write_time":  "2026-06-02T11:27:53.2602928+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-112654-688",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688",
+                      "last_write_time":  "2026-06-02T11:26:54.7226478+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-112550-209",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209",
+                      "last_write_time":  "2026-06-02T11:25:50.2393468+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-112139-118",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118",
+                      "last_write_time":  "2026-06-02T11:21:39.1434573+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-111928-186",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186",
+                      "last_write_time":  "2026-06-02T11:19:28.2279265+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-111149-328",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111149-328",
+                      "last_write_time":  "2026-06-02T11:11:49.3689218+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111149-328\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111149-328\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-105914-812",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105914-812",
+                      "last_write_time":  "2026-06-02T10:59:14.8379244+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105914-812\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105914-812\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-105138-753",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105138-753",
+                      "last_write_time":  "2026-06-02T10:51:38.7859503+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105138-753\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-105138-753\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  },
+                  {
+                      "id":  "run-20260602-103256-827",
+                      "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-103256-827",
+                      "last_write_time":  "2026-06-02T10:32:56.8514185+02:00",
+                      "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-103256-827\\stdout.txt",
+                      "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-103256-827\\stderr.txt",
+                      "stdout_exists":  true,
+                      "stderr_exists":  true
+                  }
+              ]
+}

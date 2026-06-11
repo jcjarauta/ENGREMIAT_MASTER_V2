@@ -1,0 +1,47 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_088_GOVERNED_AUTOMATION_LOOP_STATE_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_088_CREATE_GOVERNED_AUTOMATION_LOOP_GATE_NO_REAL_WORKERS",
+    "created_at":  "2026-06-05T10:19:04",
+    "state_status":  "CONTRACT_READY_NOT_EXECUTED",
+    "input_state_sources":  [
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-087-local-stub-pipeline-health-gate\\out\\validate_local_stub_pipeline_health_result_087.json",
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-087-local-stub-pipeline-health-gate\\validation\\local_stub_pipeline_automation_health_review_087.json",
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\out\\local_stub_pipeline_run_index_086.json",
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-086-local-stub-pipeline-simulation\\out\\local_stub_pipeline_metrics_086.json"
+                            ],
+    "required_state_fields":  [
+                                  "stage_count",
+                                  "failed_checks_count",
+                                  "safety_ok",
+                                  "automation_health_score",
+                                  "recommended_decision"
+                              ],
+    "output_state_fields":  [
+                                "loop_id",
+                                "cycle",
+                                "state_summary",
+                                "health_snapshot",
+                                "next_action_candidate",
+                                "safety_flags"
+                            ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "governed_loop_execution_allowed_now":  false,
+                   "loop_gate_only":  true,
+                   "simulated_pipeline_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_089_APPLY_GOVERNED_AUTOMATION_LOOP_GATE_DECISION"
+}

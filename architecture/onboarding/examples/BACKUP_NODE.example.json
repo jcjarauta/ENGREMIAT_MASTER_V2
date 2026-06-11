@@ -1,0 +1,34 @@
+﻿{
+    "node_id":  "BACKUP_NODE",
+    "machine_name":  "RASPBERRY_OR_4TB",
+    "role":  "Backup frio, paquetes, evidencias, hashes y recuperacion.",
+    "root_path":  "D:\\ENGREMIAT_BACKUP_OR_RASPBERRY_PATH",
+    "status":  "PLANNED",
+    "allowed_actions":  [
+                            "store_verified_packages",
+                            "store_hashes",
+                            "store_evidence"
+                        ],
+    "blocked_actions":  [
+                            "main_development",
+                            "workers_real_by_default",
+                            "secrets_without_policy"
+                        ],
+    "sync_policy":  {
+                        "mode":  "manual_until_validated",
+                        "source":  "MAIN_NODE",
+                        "target":  "THIS_NODE",
+                        "allowed":  false
+                    },
+    "backup_policy":  {
+                          "required":  true,
+                          "destination":  "BACKUP_NODE",
+                          "hash_required":  true
+                      },
+    "secrets_policy":  {
+                           "secrets_allowed":  false,
+                           "inventory_required_before_transfer":  true,
+                           "print_secrets":  false
+                       },
+    "activation_gate":  "READONLY_PREFLIGHT_REQUIRED"
+}

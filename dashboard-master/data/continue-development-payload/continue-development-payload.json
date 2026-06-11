@@ -1,0 +1,161 @@
+﻿{
+    "type":  "HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:20:56",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "dashboard_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master",
+    "source_files":  {
+                         "global_status_engine":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\global-status-engine.json",
+                         "current_development_node":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\current-development-node.json",
+                         "development_gps":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\development-gps.json"
+                     },
+    "current_position":  {
+                             "desarrollo":  "DESARROLLO_GLOBAL",
+                             "hipermacro":  "HYPER_008",
+                             "macro":  "MASTER_CONTROL_PANEL",
+                             "objetivo":  "GLOBAL_STATUS_ENGINE",
+                             "checkpoint":  "CP-STATE-001",
+                             "tarea":  "CALCULAR_ESTADO_GLOBAL",
+                             "bloque_actual":  "REVIEW-001",
+                             "estado_actual":  "READY",
+                             "siguiente_accion":  "HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD_001",
+                             "readable_path":  "DESARROLLO=DESARROLLO_GLOBAL \u003e HIPERMACRO=HYPER_008 \u003e MACRO=MASTER_CONTROL_PANEL \u003e OBJETIVO=GLOBAL_STATUS_ENGINE \u003e CHECKPOINT=CP-STATE-001 \u003e TAREA=CALCULAR_ESTADO_GLOBAL \u003e BLOQUE_ACTUAL=REVIEW-001 \u003e ESTADO_ACTUAL=READY \u003e SIGUIENTE_ACCION=HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD_001"
+                         },
+    "status_counts":  {
+                          "READY":  12,
+                          "RUNNING":  0,
+                          "PAUSED":  6,
+                          "BLOCKED":  0,
+                          "DONE":  0,
+                          "TOTAL":  18
+                      },
+    "current_node":  {
+                         "id":  "REVIEW-001",
+                         "title":  "Motor de Estado Global",
+                         "source_queue":  "master_state_review",
+                         "status":  "READY",
+                         "hierarchy":  {
+                                           "desarrollo":  "DESARROLLO_GLOBAL",
+                                           "hipermacro":  "HYPER_008",
+                                           "macro":  "MASTER_CONTROL_PANEL",
+                                           "objetivo":  "GLOBAL_STATUS_ENGINE",
+                                           "checkpoint":  "CP-STATE-001",
+                                           "tarea":  "CALCULAR_ESTADO_GLOBAL"
+                                       },
+                         "blocker_reason":  "",
+                         "evidence_path":  ""
+                     },
+    "ready_preview":  [
+                          {
+                              "id":  "REVIEW-001",
+                              "title":  "Motor de Estado Global",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "REVIEW-002",
+                              "title":  "Nodo Actual del Desarrollo",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "REVIEW-003",
+                              "title":  "Boton Continuar Desarrollo",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "REVIEW-004",
+                              "title":  "Vista de Bloqueos",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "REVIEW-005",
+                              "title":  "Cola Dinamica",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "REVIEW-006",
+                              "title":  "Evidencias en Tiempo Real",
+                              "source_queue":  "master_state_review",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "OLLAMA-001",
+                              "title":  "OLLAMA-001",
+                              "source_queue":  "ollama_script_execution_future",
+                              "status":  "READY"
+                          },
+                          {
+                              "id":  "OLLAMA-002",
+                              "title":  "OLLAMA-002",
+                              "source_queue":  "ollama_script_execution_future",
+                              "status":  "READY"
+                          }
+                      ],
+    "blocked_preview":  [
+
+                        ],
+    "paused_preview":  [
+                           {
+                               "id":  "OPERATOR-001",
+                               "title":  "OPERATOR-001",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           },
+                           {
+                               "id":  "OPERATOR-002",
+                               "title":  "OPERATOR-002",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           },
+                           {
+                               "id":  "OPERATOR-003",
+                               "title":  "OPERATOR-003",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           },
+                           {
+                               "id":  "OPERATOR-004",
+                               "title":  "OPERATOR-004",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           },
+                           {
+                               "id":  "OPERATOR-005",
+                               "title":  "OPERATOR-005",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           },
+                           {
+                               "id":  "OPERATOR-006",
+                               "title":  "OPERATOR-006",
+                               "source_queue":  "operator_code_generation",
+                               "status":  "PAUSED"
+                           }
+                       ],
+    "next_block":  {
+                       "id":  "HYPER_008_BLOCKERS_VIEW_001",
+                       "objective":  "Crear vista JSON de bloqueos y acciones sugeridas para el panel operativo.",
+                       "reason":  "No hay bloqueos activos, pero la vista debe existir para que el panel sea usable y testeable antes de Telegram.",
+                       "output_expected":  [
+                                               "dashboard-master\\data\\blockers-view.json",
+                                               "reports\\hyper-008\\blockers-view-smoke.json"
+                                           ],
+                       "constraints":  [
+                                           "PowerShell completo",
+                                           "JSON pequeño y parseable",
+                                           "Smoke local obligatorio",
+                                           "Sin HTML complejo",
+                                           "Sin Git",
+                                           "Sin Telegram real",
+                                           "Sin acciones externas"
+                                       ]
+                   },
+    "next_recommended_action":  "HYPER_008_BLOCKERS_VIEW_001",
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false
+}

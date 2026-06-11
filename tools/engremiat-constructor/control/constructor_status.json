@@ -1,0 +1,23 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_STATUS",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_LOCAL_PROJECT_FACTORY",
+    "block":  "BLOCK_006_FIX_TO_012_GROUPED_SAFE_CLOSE_RECOVERY",
+    "current_block_index":  12,
+    "planned_blocks":  12,
+    "status":  "PHASE_001_LOCAL_PROJECT_FACTORY_CLOSED_LOCAL_ONLY",
+    "generated_project_id":  "engremiat-training-game-inclusion-001",
+    "generated_project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+    "readiness":  88,
+    "git_local_attempted":  false,
+    "git_local_ok":  false,
+    "git_note":  "git_not_attempted",
+    "commit_done":  false,
+    "push_done":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "final_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\reports\\engremiat_constructor_phase_001_blocks_006_to_012_close_recovery_report.json",
+    "next_recommended_action":  "REVIEW_PHASE_001_AND_DECIDE_PHASE_002_CONTROL_PROMPTER_INTEGRATION",
+    "updated_at":  "2026-06-05T20:16:02"
+}

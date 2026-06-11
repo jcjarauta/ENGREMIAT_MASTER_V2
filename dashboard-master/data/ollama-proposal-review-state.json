@@ -1,0 +1,21 @@
+﻿{
+    "type":  "OLLAMA_PROPOSAL_REVIEW_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:24:40",
+    "decision":  "PROPOSAL_REVIEW_WAITING_FOR_OLLAMA_OUTPUT",
+    "expected_task_id":  "TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001",
+    "expected_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "expected_proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "proposals_found":  0,
+    "reviewed_count":  0,
+    "accepted_for_operator_count":  0,
+    "repair_request_count":  0,
+    "reduce_scope_count":  0,
+    "human_gate_count":  1,
+    "rejected_count":  0,
+    "git_actions":  false,
+    "external_actions":  false,
+    "telegram_actions":  false,
+    "operator_execution":  false,
+    "next_recommended_action":  "HYPER_029_OPERATOR_APPROVED_EXECUTION_QUEUE_001"
+}

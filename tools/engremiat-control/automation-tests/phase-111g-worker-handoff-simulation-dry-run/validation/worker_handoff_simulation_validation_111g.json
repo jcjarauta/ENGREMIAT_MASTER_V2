@@ -1,0 +1,87 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_111G_WORKER_HANDOFF_SIMULATION_VALIDATION_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:37:11",
+    "checks":  [
+                   {
+                       "id":  "C01",
+                       "label":  "handoff_packet_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C02",
+                       "label":  "simulated_inbox_item_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C03",
+                       "label":  "simulated_response_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C04",
+                       "label":  "return_contract_valid",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C05",
+                       "label":  "simulated_worker_only",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C06",
+                       "label":  "real_worker_not_called",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C07",
+                       "label":  "delegation_not_allowed",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C08",
+                       "label":  "integration_not_allowed",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C09",
+                       "label":  "no_ai_ollama_external_api",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C10",
+                       "label":  "no_operator",
+                       "ok":  true
+                   }
+               ],
+    "passed_count":  10,
+    "failed_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "return_contract_ok":  true,
+    "simulated_worker_response_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-111g-worker-handoff-simulation-dry-run\\simulation\\simulated_worker_response_111g.json",
+    "handoff_packet_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-111g-worker-handoff-simulation-dry-run\\simulation\\handoff_packet_111g.json",
+    "integration_allowed_now":  false,
+    "delegation_allowed_now":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "handoff_simulation_executed":  true,
+                   "simulated_worker_only":  true,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_112G_REVIEW_WORKER_HANDOFF_SIMULATION_RESULT"
+}

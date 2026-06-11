@@ -1,0 +1,14 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_MATCHING_SIMULATION",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "simulated_demands":  6,
+    "matched_results":  6,
+    "accepted_count":  5,
+    "backlog_count":  0,
+    "rejected_count":  1,
+    "average_score":  136,
+    "decision":  "DEMAND_RADAR_SIMULATED_READY_FOR_AUTOMATION_GATE",
+    "external_actions_executed":  false,
+    "updated_at":  "2026-06-05T21:28:47"
+}

@@ -1,0 +1,16 @@
+﻿# ENGREMIAT_REPORT_BEGIN
+type=ENGREMIAT_REPEATABLE_LOCAL_DRY_RUN_REPORT_001
+ok=True
+run_id=phase-075-parameterized-001
+output_root=C:\Users\sacan\Desktop\ENGREMIAT_MASTER\tools\engremiat-control\automation-tests\repeatable-runs\phase-075-parameterized-001
+dry_run_only=True
+functions_validated=8
+readiness_score=95
+readiness_level=high
+real_ai_call_executed=False
+external_api_call_executed=False
+worker_real_execution_allowed=False
+operator_execution_allowed=False
+automation_real_execution_allowed=False
+next_recommended_action=START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION
+# ENGREMIAT_REPORT_END

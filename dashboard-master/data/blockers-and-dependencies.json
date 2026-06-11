@@ -1,0 +1,122 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 07:12:33",
+    "objective":  "Añadir visión operativa de bloqueos, dependencias, gates humanos y automatización segura",
+    "global_status":  "DASHBOARD_OPERATIVE_VISION_ACTIVE",
+    "rules":  [
+                  "No automatizar sin dashboard operativo legible",
+                  "No ejecutar acciones externas sin autorización explícita",
+                  "No tocar ruido Git no clasificado",
+                  "Usar roadmap como fuente de decisión para el Master",
+                  "Si un fallo se repite dos veces, crear protocolo antes de seguir reparando"
+              ],
+    "dependencies":  [
+                         {
+                             "id":  "DEP_OPERATOR_CORE",
+                             "title":  "Operador base estable",
+                             "status":  "OK",
+                             "required_for":  [
+                                                  "DASHBOARD_OPERATIVE_VISION",
+                                                  "QUEUE_AUTOMATION",
+                                                  "LOCAL_AI_SUPPORT",
+                                                  "SAFE_AUTOMATION"
+                                              ],
+                             "evidence":  "d4c8121 operator: repair persistent outbox once runner"
+                         },
+                         {
+                             "id":  "DEP_MASTER_ROADMAP",
+                             "title":  "Roadmap jerárquico legible por humano y Master",
+                             "status":  "ACTIVE",
+                             "required_for":  [
+                                                  "NEXT_ACTION_PANEL",
+                                                  "MASTER_AUTOMATIC_ROUTE_SELECTION"
+                                              ],
+                             "evidence":  "dashboard-master\\data\\master-roadmap.json"
+                         },
+                         {
+                             "id":  "DEP_DASHBOARD_HTML",
+                             "title":  "Dashboard HTML operativo",
+                             "status":  "ACTIVE",
+                             "required_for":  [
+                                                  "HUMAN_GLOBAL_OVERVIEW",
+                                                  "BLOCKERS_PANEL",
+                                                  "CHECKPOINT_PANEL"
+                                              ],
+                             "evidence":  "dashboard-master\\index.html"
+                         },
+                         {
+                             "id":  "DEP_LOCAL_AI_REPAIR_PROTOCOL",
+                             "title":  "Protocolos de reparación para IA local/Ollama",
+                             "status":  "PARTIAL",
+                             "required_for":  [
+                                                  "LOCAL_AI_SUPPORT",
+                                                  "REPAIR_ASSISTED_FLOW"
+                                              ],
+                             "evidence":  "contracts\\development\\powershell-render-protocol.md"
+                         }
+                     ],
+    "blockers":  [
+                     {
+                         "id":  "BLOCK_GIT_UNTRACKED_NOISE",
+                         "severity":  "MEDIUM",
+                         "status":  "KNOWN",
+                         "description":  "Existen múltiples directorios untracked de otros hypers; no deben commitearse sin clasificación.",
+                         "evidence":  "git_status_entries=38; known_noise_entries=38",
+                         "next_action":  "clasificar por hyper antes de cierre",
+                         "requires_human":  false
+                     },
+                     {
+                         "id":  "BLOCK_LOCAL_AI_HOOK_TIMEOUT",
+                         "severity":  "MEDIUM",
+                         "status":  "KNOWN",
+                         "description":  "El hook de IA local tuvo timeout; conviene usar router directo o reducir path.",
+                         "evidence":  "USE_ROUTER_DIRECT_OR_REDUCE_HOOK_PATH",
+                         "next_action":  "diagnosticar router directo",
+                         "requires_human":  false
+                     },
+                     {
+                         "id":  "BLOCK_RENDER_PROTOCOL_ERROR",
+                         "severity":  "LOW",
+                         "status":  "RESOLVED",
+                         "description":  "PowerShell interpretó helper H como alias de Get-History; se creó protocolo preventivo.",
+                         "evidence":  "known_error_prevented=POWERSHELL_ALIAS_H_GET_HISTORY",
+                         "next_action":  "usar nombres explícitos en helpers",
+                         "requires_human":  false
+                     }
+                 ],
+    "human_gates":  [
+                        {
+                            "id":  "GATE_BEFORE_AUTOMATION",
+                            "status":  "PENDING",
+                            "title":  "Validar visión operativa antes de automatizar",
+                            "reason":  "El humano debe entender la hoja de ruta, bloqueos y next action antes de activar automatización.",
+                            "unlocks":  [
+                                            "SAFE_AUTOMATION",
+                                            "MASTER_ROUTE_EXECUTION"
+                                        ]
+                        },
+                        {
+                            "id":  "GATE_GIT_NOISE_CLASSIFICATION",
+                            "status":  "PENDING",
+                            "title":  "Clasificar ruido Git por hyper",
+                            "reason":  "Evita commits mezclados de dashboard, IA local, colas y reports.",
+                            "unlocks":  [
+                                            "CLEAN_STAGE_COMMIT"
+                                        ]
+                        }
+                    ],
+    "master_usage":  {
+                         "source_file":  "dashboard-master\\data\\master-roadmap.json",
+                         "auxiliary_file":  "dashboard-master\\data\\blockers-and-dependencies.json",
+                         "decision_order":  [
+                                                "Leer hyper ACTIVE",
+                                                "Leer checkpoints PENDING",
+                                                "Comprobar blockers activos",
+                                                "Comprobar gates humanos pendientes",
+                                                "Si no hay bloqueo, proponer next_action",
+                                                "Si hay gate humano, pedir validación",
+                                                "Si hay bloqueo técnico, proponer hyper de reparación"
+                                            ],
+                         "next_master_capability":  "NEXT_ACTION_PANEL"
+                     }
+}

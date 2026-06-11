@@ -1,0 +1,70 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_DECISION_QUEUE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "items_count":  6,
+    "items":  [
+                  {
+                      "item_id":  "queue-demand-005-001",
+                      "demand_id":  "demand-005-001",
+                      "match_id":  "match-demand-005-001",
+                      "decision":  "BUILD_NEW_PROJECT",
+                      "recommended_template":  "grant-project",
+                      "score":  198,
+                      "status":  "PENDING_HUMAN_REVIEW",
+                      "real_execution_allowed":  false
+                  },
+                  {
+                      "item_id":  "queue-demand-005-002",
+                      "demand_id":  "demand-005-002",
+                      "match_id":  "match-demand-005-002",
+                      "decision":  "ADAPT_EXISTING_PROJECT",
+                      "recommended_template":  "community-software",
+                      "score":  167,
+                      "status":  "PENDING_HUMAN_REVIEW",
+                      "real_execution_allowed":  false
+                  },
+                  {
+                      "item_id":  "queue-demand-005-003",
+                      "demand_id":  "demand-005-003",
+                      "match_id":  "match-demand-005-003",
+                      "decision":  "ADAPT_EXISTING_PROJECT",
+                      "recommended_template":  "training-game",
+                      "score":  160,
+                      "status":  "PENDING_HUMAN_REVIEW",
+                      "real_execution_allowed":  false
+                  },
+                  {
+                      "item_id":  "queue-demand-005-004",
+                      "demand_id":  "demand-005-004",
+                      "match_id":  "match-demand-005-004",
+                      "decision":  "CREATE_DEMO_ONLY",
+                      "recommended_template":  "service-package",
+                      "score":  142,
+                      "status":  "PENDING_HUMAN_REVIEW",
+                      "real_execution_allowed":  false
+                  },
+                  {
+                      "item_id":  "queue-demand-005-005",
+                      "demand_id":  "demand-005-005",
+                      "match_id":  "match-demand-005-005",
+                      "decision":  "CREATE_PROPOSAL_ONLY",
+                      "recommended_template":  "training-game",
+                      "score":  106,
+                      "status":  "PENDING_HUMAN_REVIEW",
+                      "real_execution_allowed":  false
+                  },
+                  {
+                      "item_id":  "queue-demand-005-006",
+                      "demand_id":  "demand-005-006",
+                      "match_id":  "match-demand-005-006",
+                      "decision":  "REJECT_OR_HOLD",
+                      "recommended_template":  "service-package",
+                      "score":  42,
+                      "status":  "HELD_LOCAL",
+                      "real_execution_allowed":  false
+                  }
+              ],
+    "real_execution_allowed":  false,
+    "updated_at":  "2026-06-05T21:28:47"
+}

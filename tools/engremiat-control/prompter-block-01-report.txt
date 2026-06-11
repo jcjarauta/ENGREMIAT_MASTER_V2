@@ -1,0 +1,9 @@
+﻿{
+    "phase":  "ENGREMIAT_PROMPTER_CORE_BLOCK_01_PROJECT_CREATE",
+    "ok":  true,
+    "decision":  "PROJECT_CREATED_AND_REGISTERED",
+    "project_id":  "04a7339e-1b0e-4910-936b-22dd9d90368e",
+    "db_file":  "engremiat_db\\projects\\04a7339e-1b0e-4910-936b-22dd9d90368e.json",
+    "control_registry":  "tools\\engremiat-control\\project-registry.json",
+    "next":  "project_define_phase"
+}

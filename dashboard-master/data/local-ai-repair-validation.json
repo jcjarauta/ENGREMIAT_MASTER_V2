@@ -1,0 +1,20 @@
+﻿{
+    "updated_at":  "2026-06-01T22:04:14",
+    "type":  "LOCAL_AI_REPAIR_VALIDATION",
+    "ok":  true,
+    "status":  "READY_FOR_HUMAN_VALIDATION",
+    "readonly":  true,
+    "ollama_real_execution":  false,
+    "automation_real_execution":  false,
+    "dashboard_master":  "CLOSED",
+    "required_before_automation":  [
+                                       "Concretar modelo Ollama a usar.",
+                                       "Definir entrada exacta: stdout, stderr, last-report, bloque fallido.",
+                                       "Definir salida exacta: causa probable, propuesta de reparacion, bloque corregido, riesgo.",
+                                       "Probar Ollama en modo readonly sin escribir parches.",
+                                       "Conectar watchdog estable antes de permitir procesos hijo.",
+                                       "Mantener gates humanos para cualquier escritura o ejecucion real."
+                                   ],
+    "pipeline_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\local-ai-repair-pipeline.json",
+    "next_recommended_action":  "MASTER_LOCAL_AI_REPAIR_004_DEFINE_OLLAMA_CONTRACT_READONLY"
+}

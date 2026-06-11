@@ -1,0 +1,257 @@
+﻿{
+    "type":  "DEVELOPMENT_CONTEXT_FUNCTIONAL",
+    "version":  1,
+    "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+    "purpose":  "Dar contexto real al panel para decidir que sigue, que esta bloqueado y que payload enviar.",
+    "hierarchy":  "DESARROLLO_GLOBAL -\u003e HIPERMACRO -\u003e MACRO -\u003e OBJETIVO -\u003e CHECKPOINT -\u003e TAREA -\u003e BLOQUE -\u003e EVIDENCIA",
+    "current_node":  {
+                         "type":  "CURRENT_DEVELOPMENT_NODE",
+                         "version":  1,
+                         "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+                         "status":  "CURRENT_NODE_READY",
+                         "global_status":  "READY",
+                         "hyper":  "HIPER-008",
+                         "macro":  "MACRO-001",
+                         "objective":  "OBJ-004",
+                         "checkpoint":  "CP1",
+                         "task":  "Validar panel operativo antes de Telegram",
+                         "block":  "HYPER_008_PANEL_PRE_TELEGRAM_GATE_REPAIR_003_DEPTH_SAFE",
+                         "next_action":  "HYPER_008_MASTER_STATE_REVIEW_QUEUE_001",
+                         "gps_label":  "DESARROLLO ACTUAL"
+                     },
+    "status_engine":  {
+                          "type":  "GLOBAL_STATUS_ENGINE",
+                          "version":  1,
+                          "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+                          "global_status":  "READY",
+                          "counters":  {
+                                           "ready":  2,
+                                           "running":  0,
+                                           "paused":  1,
+                                           "blocked":  2,
+                                           "done":  2,
+                                           "pending":  1,
+                                           "other":  0
+                                       },
+                          "rule":  "RUNNING gana sobre READY; BLOCKED solo bloquea si no hay READY; PAUSED no bloquea cola global; DONE si no queda pendiente.",
+                          "nodes":  [
+                                        {
+                                            "id":  "DESARROLLO_GLOBAL-001",
+                                            "level":  "DESARROLLO_GLOBAL",
+                                            "status":  "READY",
+                                            "source":  "computed"
+                                        },
+                                        {
+                                            "id":  "HIPER-008",
+                                            "level":  "HIPERMACRO",
+                                            "status":  "RUNNING",
+                                            "source":  "panel_iteration"
+                                        },
+                                        {
+                                            "id":  "HIPER-006",
+                                            "level":  "HIPERMACRO",
+                                            "status":  "READY",
+                                            "source":  "telegram_proposal_only"
+                                        },
+                                        {
+                                            "id":  "HIPER-007",
+                                            "level":  "HIPERMACRO",
+                                            "status":  "PAUSED",
+                                            "source":  "git_noise_blocked_not_global_blocker"
+                                        }
+                                    ]
+                      },
+    "blockers":  {
+                     "type":  "BLOCKERS_VIEW",
+                     "version":  1,
+                     "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+                     "total":  1,
+                     "global_queue_blocked":  false,
+                     "blockers":  [
+                                      {
+                                          "id":  "BLOCKED-001",
+                                          "hyper":  "HIPER-007",
+                                          "branch":  "GIT_NOISE_CLASSIFICATION",
+                                          "status":  "paused_not_blocking_global_queue",
+                                          "reason":  "MISSING_EXTRACTED_JSON",
+                                          "suggested_action":  "REPAIR_OR_PAUSE_AND_CONTINUE_SAFE",
+                                          "payload_action":  "send_blocked_phase_for_solution"
+                                      }
+                                  ]
+                 },
+    "evidence":  {
+                     "type":  "EVIDENCE_SUMMARY",
+                     "version":  1,
+                     "updated_at":  "2026-06-02T12:04:42.7225866+02:00",
+                     "total_recent":  8,
+                     "last_evidence":  {
+                                           "id":  "run-20260602-113419-034",
+                                           "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034",
+                                           "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stdout.txt",
+                                           "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stderr.txt",
+                                           "stdout_exists":  true,
+                                           "stderr_exists":  true,
+                                           "timestamp":  "2026-06-02T11:34:19.0742904+02:00"
+                                       },
+                     "items":  [
+                                   {
+                                       "id":  "run-20260602-113419-034",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113419-034\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:34:19.0742904+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-113157-554",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113157-554\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:31:57.6044078+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-113043-332",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-113043-332\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:30:43.3565627+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-112753-230",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112753-230\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:27:53.2602928+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-112654-688",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112654-688\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:26:54.7226478+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-112550-209",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112550-209\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:25:50.2393468+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-112139-118",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-112139-118\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:21:39.1434573+02:00"
+                                   },
+                                   {
+                                       "id":  "run-20260602-111928-186",
+                                       "run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186",
+                                       "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186\\stdout.txt",
+                                       "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260602-111928-186\\stderr.txt",
+                                       "stdout_exists":  true,
+                                       "stderr_exists":  true,
+                                       "timestamp":  "2026-06-02T11:19:28.2279265+02:00"
+                                   }
+                               ]
+                 },
+    "backlog_preview":  [
+                            {
+                                "id":  "BLOCK-PROPOSAL-001",
+                                "phase":  "Fase 1 — Motor de Estado Global",
+                                "checkpoint":  "CP-STATE-001",
+                                "title":  "Calcular estado agregado por nodo",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_GLOBAL_STATUS_ENGINE_001",
+                                "description":  "Calcular READY/RUNNING/PAUSED/BLOCKED/DONE desde hijos, cola y evidencias."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-002",
+                                "phase":  "Fase 2 — Nodo Actual del Desarrollo",
+                                "checkpoint":  "CP-GPS-001",
+                                "title":  "Crear GPS de desarrollo actual",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_CURRENT_DEVELOPMENT_NODE_001",
+                                "description":  "Mostrar HIPER/MACRO/OBJ/CP/TASK y siguiente accion como ubicacion actual."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-003",
+                                "phase":  "Fase 3 — Boton CONTINUAR DESARROLLO",
+                                "checkpoint":  "CP-CONTINUE-001",
+                                "title":  "Preparar payload completo de continuidad",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD_001",
+                                "description":  "Generar payload para ChatGPT/operador con estado, cola, bloqueo y evidencia."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-004",
+                                "phase":  "Fase 4 — Vista de Bloqueos",
+                                "checkpoint":  "CP-BLOCKERS-001",
+                                "title":  "Vista accionable de bloqueos",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_BLOCKERS_VIEW_001",
+                                "description":  "Mostrar motivo, estado, rama, accion sugerida y payload de reactivacion."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-005",
+                                "phase":  "Fase 5 — Cola Dinamica",
+                                "checkpoint":  "CP-QUEUE-001",
+                                "title":  "Resumen dinamico de cola",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_DYNAMIC_QUEUE_SUMMARY_001",
+                                "description":  "Contadores READY/RUNNING/BLOCKED/PAUSED/DONE por fase y cola."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-006",
+                                "phase":  "Fase 6 — Evidencias en Tiempo Real",
+                                "checkpoint":  "CP-EVIDENCE-001",
+                                "title":  "Ultima evidencia por nodo",
+                                "status":  "ready_for_design",
+                                "proposed_block":  "HYPER_008_NODE_EVIDENCE_LINKER_001",
+                                "description":  "Vincular stdout/stderr/exitcode/fecha a cada nodo y checkpoint."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-007",
+                                "phase":  "Fase 7 — Exportacion Estado Global",
+                                "checkpoint":  "CP-EXPORT-001",
+                                "title":  "Descargar y enviar estado maestro",
+                                "status":  "in_progress",
+                                "proposed_block":  "HYPER_008_MASTER_STATE_EXPORT_001",
+                                "description":  "Crear snapshot consolidado, prompt de envio y backlog de bloques pendientes."
+                            },
+                            {
+                                "id":  "BLOCK-PROPOSAL-008",
+                                "phase":  "Fase 8 — Gate Telegram",
+                                "checkpoint":  "CP-TELEGRAM-GATE-001",
+                                "title":  "Telegram como vista remota del panel",
+                                "status":  "pending_after_panel",
+                                "proposed_block":  "HYPER_006_TELEGRAM_PANEL_REMOTE_VIEW_001",
+                                "description":  "Telegram no tendra logica propia; sera vista remota del panel."
+                            }
+                        ],
+    "design_mode":  "humano_y_chatgpt_disenan_operador_y_ollama_ejecutan",
+    "next_recommended_action":  "HYPER_008_MASTER_STATE_REVIEW_QUEUE_001",
+    "safety":  {
+                   "git_actions":  false,
+                   "push_actions":  false,
+                   "fetch_actions":  false,
+                   "merge_actions":  false,
+                   "real_telegram_actions":  false,
+                   "token_required_now":  false,
+                   "browser_execution_allowed":  false,
+                   "external_actions":  false
+               }
+}

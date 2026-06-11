@@ -1,0 +1,44 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_GLOBAL_DIAGNOSTIC",
+    "ok":  true,
+    "decision":  "PHASE_002_CONTROL_PROMPTER_DUAL_INTEGRATION_CLOSED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_002_CONTROL_PROMPTER_DUAL_INTEGRATION",
+    "block":  "BLOCK_008_GLOBAL_DIAGNOSTIC_AND_CLOSE",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "readiness":  93,
+    "required_reports_count":  7,
+    "ok_reports_count":  7,
+    "missing_reports_count":  0,
+    "missing_reports":  [
+
+                        ],
+    "checks":  {
+                   "reports_ok":  true,
+                   "control_ready":  true,
+                   "dashboard_ready":  true,
+                   "prompter_ready":  true,
+                   "commercial_matrix_ready":  true,
+                   "simulation_ready":  true,
+                   "automation_gate_ready":  true,
+                   "remote_blocked":  true,
+                   "api_blocked":  true,
+                   "worker_real_blocked":  true
+               },
+    "failed_checks_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "control_integration_ready":  true,
+    "dashboard_card_ready":  true,
+    "prompter_integration_ready":  true,
+    "commercial_matrix_ready":  true,
+    "automation_gate_ready":  true,
+    "real_control_write_allowed":  false,
+    "real_prompter_execution_allowed":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_003_GOVERNED_CONTROL_PROMPTER_EXECUTION",
+    "next_recommended_action":  "DECIDE_PHASE_003_SCOPE_OR_COMMIT_PHASE_002_LOCAL_RESULTS",
+    "updated_at":  "2026-06-05T20:25:52"
+}

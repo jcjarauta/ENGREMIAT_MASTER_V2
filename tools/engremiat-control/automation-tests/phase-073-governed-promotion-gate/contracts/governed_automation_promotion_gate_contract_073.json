@@ -1,0 +1,39 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_073_GOVERNED_AUTOMATION_PROMOTION_GATE_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_073_PROMOTE_DRY_RUN_TO_GOVERNED_AUTOMATION_TEST_GATE",
+    "created_at":  "2026-06-05T09:29:11",
+    "purpose":  "Crear decision humana gobernada para evolucionar la automatizacion tras dry-run validado.",
+    "source_phase":  "PHASE_072_RUN_SEQUENTIAL_AUTOMATION_DRY_RUN",
+    "dry_run_evidence":  {
+                             "functions_validated":  8,
+                             "checks_failed":  0,
+                             "safety_ok":  true,
+                             "dry_run_only":  true
+                         },
+    "allowed_decisions":  [
+                              "PROMOTE_TO_REPEATABLE_LOCAL_DRY_RUN",
+                              "REPEAT_DRY_RUN_WITH_SECOND_IDEA",
+                              "ADD_HEALTH_AND_LOAD_METRICS",
+                              "ADD_WORKER_STUBS_NOT_EXECUTABLE",
+                              "HOLD"
+                          ],
+    "default_decision":  "HOLD",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "promotion_real_execution_allowed":  false,
+                   "dry_run_validated":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_074_APPLY_GOVERNED_AUTOMATION_PROMOTION_DECISION"
+}

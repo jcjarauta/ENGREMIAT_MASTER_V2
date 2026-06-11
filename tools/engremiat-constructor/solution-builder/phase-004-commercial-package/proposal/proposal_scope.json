@@ -1,0 +1,54 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_PROPOSAL_SCOPE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "proposal_id":  "proposal-scope-phase-004-001",
+    "proposal_goal":  "Prepare reusable proposal scope for pre-sale, grant or pilot validation.",
+    "proposal_targets":  [
+                             "pre-sale",
+                             "grant",
+                             "pilot",
+                             "association partnership"
+                         ],
+    "sections_count":  5,
+    "sections":  [
+                     {
+                         "id":  "sec-001",
+                         "title":  "Problema",
+                         "purpose":  "Definir necesidad concreta y territorio.",
+                         "ready":  true
+                     },
+                     {
+                         "id":  "sec-002",
+                         "title":  "Solucion Engremiat",
+                         "purpose":  "Explicar producto/servicio modular.",
+                         "ready":  true
+                     },
+                     {
+                         "id":  "sec-003",
+                         "title":  "Demo y entregables",
+                         "purpose":  "Concretar lo que se puede mostrar o entregar.",
+                         "ready":  true
+                     },
+                     {
+                         "id":  "sec-004",
+                         "title":  "Impacto social",
+                         "purpose":  "Medir utilidad comunitaria y aprendizaje.",
+                         "ready":  true
+                     },
+                     {
+                         "id":  "sec-005",
+                         "title":  "Modelo de validacion",
+                         "purpose":  "Preparar preventa, subvencion o piloto.",
+                         "ready":  true
+                     }
+                 ],
+    "blocked_actions":  [
+                            "real_customer_contact",
+                            "external_submission",
+                            "external_ai_call",
+                            "real_worker_execution"
+                        ],
+    "next_recommended_action":  "CREATE_COMMERCIAL_PACKAGE",
+    "updated_at":  "2026-06-05T21:10:21"
+}

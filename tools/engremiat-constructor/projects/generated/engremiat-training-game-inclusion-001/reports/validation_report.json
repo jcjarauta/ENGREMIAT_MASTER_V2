@@ -1,0 +1,16 @@
+﻿{
+    "type":  "ENGREMIAT_PROJECT_VALIDATION_REPORT",
+    "ok":  true,
+    "decision":  "GENERATED_PROJECT_STRUCTURE_VALIDATED_LOCAL_ONLY",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+    "missing_files_count":  0,
+    "missing_dirs_count":  0,
+    "semantic_errors_count":  0,
+    "fixed_empty_dirs_count":  2,
+    "git_executed":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "next_recommended_action":  "EXPORT_PROJECT_STATUS_TO_CONTROL_INDEX",
+    "updated_at":  "2026-06-05T20:16:02"
+}

@@ -1,0 +1,4 @@
+﻿ENGREMIAT_MASTER repository not migrated yet.
+Current purpose: reserved folder for future MAIN_NODE repository.
+Do not copy partial repo here until legacy PC development is closed.
+created_at=2026-06-10T19:49:00

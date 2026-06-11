@@ -1,0 +1,9 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_TO_CONTROL_QUEUE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "items_count":  6,
+    "payload_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\demand-radar\\phase-005-demand-radar-and-matching\\queues\\demand_decision_queue.json",
+    "real_control_write_allowed":  false,
+    "updated_at":  "2026-06-05T21:28:47"
+}

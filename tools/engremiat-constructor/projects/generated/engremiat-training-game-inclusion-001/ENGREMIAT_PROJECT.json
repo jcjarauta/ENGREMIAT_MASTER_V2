@@ -1,0 +1,43 @@
+﻿{
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "origin_need_id":  "need-2026-001",
+    "origin_source_type":  "subvencion",
+    "status":  "BOOTSTRAPPED",
+    "phase":  "001_PROJECT_BOOTSTRAP",
+    "decision":  "BUILD_NEW_PROJECT",
+    "template_type":  "training-game",
+    "expected_outputs":  [
+                             "demo",
+                             "proposal",
+                             "grant_file",
+                             "documentation",
+                             "validation_report"
+                         ],
+    "commercial_status":  "hypothesis",
+    "funding_status":  "grant_candidate",
+    "internal_reuse":  true,
+    "external_offer":  true,
+    "tags":  [
+                 "inclusion",
+                 "formacion",
+                 "gamificacion",
+                 "tercer_sector"
+             ],
+    "health":  {
+                   "readiness":  62,
+                   "risk":  "medium",
+                   "human_load":  "medium",
+                   "technical_load":  "low",
+                   "automation_allowed":  false
+               },
+    "paths":  {
+                  "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+                  "readme":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\README.md",
+                  "roadmap":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\ROADMAP.md",
+                  "status":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\control\\project_status.json",
+                  "bootstrap_report":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001\\reports\\bootstrap_report.json"
+              },
+    "created_at":  "2026-06-05T12:45:40",
+    "updated_at":  "2026-06-05T12:45:40"
+}

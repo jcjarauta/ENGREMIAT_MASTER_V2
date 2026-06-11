@@ -1,0 +1,53 @@
+﻿[
+    {
+        "id":  "HIPER-024",
+        "name":  "IA interna de apoyo",
+        "status":  "DONE",
+        "priority":  1,
+        "risk":  "medium",
+        "dependencies":  [
+
+                         ],
+        "gates":  [
+
+                  ],
+        "evidence":  [
+
+                     ],
+        "next_action":  "No continuar por hook pesado"
+    },
+    {
+        "id":  "MASTER-001",
+        "name":  "Dashboard Master",
+        "status":  "DONE",
+        "priority":  2,
+        "risk":  "low",
+        "dependencies":  [
+                             "HIPER-024"
+                         ],
+        "gates":  [
+
+                  ],
+        "evidence":  [
+
+                     ],
+        "next_action":  "Extender con modelo estable de hypers"
+    },
+    {
+        "id":  "MASTER-002",
+        "name":  "Modelo JSON de hypers",
+        "status":  "DONE_BY_THIS_BLOCK",
+        "priority":  3,
+        "risk":  "low",
+        "dependencies":  [
+                             "MASTER-001"
+                         ],
+        "gates":  [
+
+                  ],
+        "evidence":  [
+
+                     ],
+        "next_action":  "Crear cola editable por estados"
+    }
+]

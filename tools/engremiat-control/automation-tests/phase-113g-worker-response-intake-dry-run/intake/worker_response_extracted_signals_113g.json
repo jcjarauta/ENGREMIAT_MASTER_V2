@@ -1,0 +1,53 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_113G_WORKER_RESPONSE_EXTRACTED_SIGNALS_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:40:21",
+    "review_summary":  "Simulated worker received the package and can review financing-at-reverse angles for digital products, but no real worker execution occurred.",
+    "financing_angles":  [
+                             "preventa de producto digital validable",
+                             "licencia o plantilla reutilizable para entidades",
+                             "servicio de configuracion asistida",
+                             "paquete formativo de onboarding",
+                             "crowdfunding con comunidad temprana"
+                         ],
+    "digital_product_candidates":  [
+                                       "buscador inverso de financiacion",
+                                       "canvas financiable automatizado",
+                                       "simulador de preventa comunitaria",
+                                       "kit de onboarding para entidades",
+                                       "dashboard de oportunidades por sector"
+                                   ],
+    "risks":  [
+                  "scope creep si se delega sin contrato",
+                  "ruido excesivo si no se limita el worker",
+                  "falta de datos reales antes de validar mercado"
+              ],
+    "required_human_inputs":  [
+                                  "sector objetivo inicial",
+                                  "tipo de producto digital prioritario",
+                                  "criterios de financiabilidad",
+                                  "limite de acciones permitidas al worker"
+                              ],
+    "recommended_next_step":  "ACCEPT_HANDOFF_SIMULATION_AND_CREATE_WORKER_RESPONSE_INTAKE_GATE",
+    "signal_use":  "HUMAN_REVIEW_DRAFT_ONLY",
+    "integration_allowed_now":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "response_intake_dry_run_executed":  true,
+                   "simulated_response_only":  true,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               }
+}

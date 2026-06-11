@@ -1,0 +1,25 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_REPO_CREATION_POLICY",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "local_project_folder_allowed":  true,
+    "local_git_init_allowed":  false,
+    "remote_repo_creation_allowed":  false,
+    "push_new_repo_allowed":  false,
+    "branch_creation_allowed":  false,
+    "required_before_unlock":  [
+                                   "human_review_project_seed",
+                                   "human_authorization_for_repo_creation",
+                                   "explicit_repo_name",
+                                   "explicit_remote_policy",
+                                   "clean_scope_status"
+                               ],
+    "blocked_actions":  [
+                            "git_init_new_repo",
+                            "remote_repo_creation",
+                            "push_new_repo",
+                            "external_api_call",
+                            "worker_real_execution"
+                        ],
+    "updated_at":  "2026-06-05T21:37:53"
+}

@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_CONTROL_CONSUMER_CONTRACT",
+    "ok":  true,
+    "consumer_id":  "constructor-control-consumer-phase-003",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "purpose":  "Allow Control to consume Constructor local outputs without real Control write.",
+    "read_sources":  [
+                         "control/observable/constructor_control_observable_index.json",
+                         "control/dashboard-cards/*.dashboard_card.json",
+                         "commercial-matrix/*.need_project_solution_matrix.json",
+                         "prompter/prompter_handoffs.index.json",
+                         "diagnostics/phase_002_global_diagnostic.json"
+                     ],
+    "write_policy":  {
+                         "real_control_write_allowed":  false,
+                         "local_queue_write_allowed":  true,
+                         "local_report_write_allowed":  true,
+                         "external_control_sync_allowed":  false
+                     },
+    "output_contract":  {
+                            "queue_item_type":  "CONSTRUCTOR_TO_CONTROL_QUEUE_ITEM",
+                            "required_fields":  [
+                                                    "item_id",
+                                                    "project_id",
+                                                    "source",
+                                                    "decision",
+                                                    "readiness",
+                                                    "payload_path",
+                                                    "status"
+                                                ]
+                        },
+    "safety":  {
+                   "local_only":  true,
+                   "external_api_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "browser_allowed":  false,
+                   "clipboard_allowed":  false
+               },
+    "next_recommended_action":  "CREATE_PROMPTER_EXECUTION_DRAFT_CONTRACT",
+    "updated_at":  "2026-06-05T20:57:25"
+}

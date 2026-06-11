@@ -1,0 +1,44 @@
+﻿{
+    "need_id":  "need-2026-001",
+    "source_type":  "subvencion",
+    "source_name":  "Convocatoria piloto inclusion digital comunitaria",
+    "detected_by":  "simulation",
+    "summary":  "Crear una demo de formacion gamificada para inclusion digital en asociaciones y comunidades locales.",
+    "target_sector":  [
+                          "inclusion",
+                          "formacion",
+                          "tercer_sector",
+                          "comunidad"
+                      ],
+    "territory":  "Catalunya",
+    "deadline":  "2026-09-30",
+    "funding_potential_eur":  12000,
+    "commercial_potential":  "medium",
+    "internal_reuse_potential":  "high",
+    "requires_humans":  true,
+    "requires_external_partner":  true,
+    "recommended_output":  [
+                               "project",
+                               "demo",
+                               "proposal",
+                               "grant_file",
+                               "training_game"
+                           ],
+    "constraints":  [
+                        "No ejecutar APIs externas en fase local.",
+                        "No crear repositorio remoto sin gate especifico.",
+                        "Debe generar documentacion reutilizable."
+                    ],
+    "signals":  [
+                    "Encaja con formacion gamificada.",
+                    "Puede reutilizar componentes internos de Engremiat.",
+                    "Puede convertirse en oferta para asociaciones."
+                ],
+    "expected_beneficiaries":  [
+                                   "asociaciones",
+                                   "comunidades locales",
+                                   "personas con brecha digital"
+                               ],
+    "status":  "NORMALIZED",
+    "created_at":  "2026-06-05T12:39:28"
+}

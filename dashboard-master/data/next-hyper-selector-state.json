@@ -1,0 +1,47 @@
+﻿{
+    "type":  "HYPER_014_NEXT_HYPER_SELECTOR_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:33:00",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "inputs":  {
+                   "panel_ready_smoke":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-013\\panel-ready-for-telegram-smoke.json",
+                   "panel_html":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-012\\panel-local-view-no-and.html",
+                   "final_report":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-011\\panel-final-report.json",
+                   "panel_ready_ok":  true,
+                   "panel_html_ok":  true
+               },
+    "decision":  {
+                     "selected_next_hyper":  "HYPER_015_PANEL_VISUAL_PACK_001",
+                     "objective":  "Mejorar el panel local en un paquete visual robusto con copia de contexto, rutas clave y lectura humana clara, sin Telegram real.",
+                     "reason":  "El panel ya esta listo para humano y gate Telegram mock, pero antes de Telegram real conviene hacer una vista local usable de verdad y consolidar lectura humana.",
+                     "telegram_real_allowed":  false,
+                     "commit_allowed_now":  false
+                 },
+    "candidate_hypers":  [
+                             {
+                                 "id":  "HYPER_015_PANEL_VISUAL_PACK_001",
+                                 "priority":  1,
+                                 "selected":  true,
+                                 "reason":  "Refuerza usabilidad local antes de integrar Telegram."
+                             },
+                             {
+                                 "id":  "HYPER_016_TELEGRAM_READONLY_MIRROR_SPEC_001",
+                                 "priority":  2,
+                                 "selected":  false,
+                                 "reason":  "Preparar especificacion readonly de Telegram despues de vista local usable."
+                             },
+                             {
+                                 "id":  "HYPER_017_TELEGRAM_REAL_GATE_HUMAN_AUTH_001",
+                                 "priority":  3,
+                                 "selected":  false,
+                                 "reason":  "Solo despues de validar vista local y especificacion readonly."
+                             }
+                         ],
+    "limits":  {
+                   "git_actions":  false,
+                   "telegram_real_actions":  false,
+                   "external_actions":  false,
+                   "browser_actions":  false
+               },
+    "next_recommended_action":  "HYPER_015_PANEL_VISUAL_PACK_001"
+}

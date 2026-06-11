@@ -1,0 +1,92 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_085_LOCAL_STUB_PIPELINE_IO_MAP_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_085_CREATE_LOCAL_STUB_PIPELINE_GATE_NO_REAL_WORKERS",
+    "created_at":  "2026-06-05T10:11:08",
+    "io_map_status":  "CREATED_NOT_EXECUTED",
+    "row_count":  7,
+    "rows":  [
+                 {
+                     "stage":  1,
+                     "worker_id":  "WORKER_PROMPTER_STUB",
+                     "input_contract":  "human_idea_seed_or_batch_context",
+                     "output_contract":  "WORKER_CONTROL_GATE_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_01_prompter.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  2,
+                     "worker_id":  "WORKER_CONTROL_GATE_STUB",
+                     "input_contract":  "WORKER_PROMPTER_STUB",
+                     "output_contract":  "WORKER_MARKET_PREVENTA_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_02_control-gate.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  3,
+                     "worker_id":  "WORKER_MARKET_PREVENTA_STUB",
+                     "input_contract":  "WORKER_CONTROL_GATE_STUB",
+                     "output_contract":  "WORKER_FINANCING_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_03_market-preventa.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  4,
+                     "worker_id":  "WORKER_FINANCING_STUB",
+                     "input_contract":  "WORKER_MARKET_PREVENTA_STUB",
+                     "output_contract":  "WORKER_OPENDATA_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_04_financing.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  5,
+                     "worker_id":  "WORKER_OPENDATA_STUB",
+                     "input_contract":  "WORKER_FINANCING_STUB",
+                     "output_contract":  "WORKER_VALIDATOR_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_05_opendata.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  6,
+                     "worker_id":  "WORKER_VALIDATOR_STUB",
+                     "input_contract":  "WORKER_OPENDATA_STUB",
+                     "output_contract":  "WORKER_DASHBOARD_STUB",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_06_validator.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 },
+                 {
+                     "stage":  7,
+                     "worker_id":  "WORKER_DASHBOARD_STUB",
+                     "input_contract":  "WORKER_VALIDATOR_STUB",
+                     "output_contract":  "human_review_and_dashboard_gate",
+                     "source_output_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-083-worker-stub-dry-run-simulation\\simulated-worker-outputs\\worker_stub_dry_run_output_083_07_dashboard.json",
+                     "io_status":  "MAPPED_NOT_EXECUTED",
+                     "execution_allowed_now":  false
+                 }
+             ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "local_stub_pipeline_execution_allowed_now":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "pipeline_gate_only":  true,
+                   "simulated_stub_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_086_APPLY_LOCAL_STUB_PIPELINE_GATE_DECISION"
+}

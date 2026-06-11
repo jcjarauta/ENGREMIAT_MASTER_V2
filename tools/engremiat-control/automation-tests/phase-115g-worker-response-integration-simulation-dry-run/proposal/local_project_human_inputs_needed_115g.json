@@ -1,0 +1,51 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_115G_LOCAL_PROJECT_HUMAN_INPUTS_NEEDED_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:47:36",
+    "inputs":  [
+                   {
+                       "id":  "INPUT-001",
+                       "question":  "sector objetivo inicial",
+                       "required":  true,
+                       "status":  "pending_human_answer"
+                   },
+                   {
+                       "id":  "INPUT-002",
+                       "question":  "tipo de producto digital prioritario",
+                       "required":  true,
+                       "status":  "pending_human_answer"
+                   },
+                   {
+                       "id":  "INPUT-003",
+                       "question":  "criterios de financiabilidad",
+                       "required":  true,
+                       "status":  "pending_human_answer"
+                   },
+                   {
+                       "id":  "INPUT-004",
+                       "question":  "limite de acciones permitidas al worker",
+                       "required":  true,
+                       "status":  "pending_human_answer"
+                   }
+               ],
+    "human_review_required":  true,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "integration_simulation_executed":  true,
+                   "real_integration_executed":  false,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               }
+}

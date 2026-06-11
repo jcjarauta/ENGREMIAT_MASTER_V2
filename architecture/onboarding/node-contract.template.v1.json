@@ -1,0 +1,33 @@
+﻿{
+    "node_id":  "NEW_NODE_ID",
+    "machine_name":  "MACHINE_NAME",
+    "role":  "Describe el rol del nodo",
+    "root_path":  "C:\\ENGREMIAT",
+    "status":  "PLANNED",
+    "allowed_actions":  [
+                            "readonly_preflight"
+                        ],
+    "blocked_actions":  [
+                            "repo_write",
+                            "push",
+                            "secrets_read",
+                            "workers_real"
+                        ],
+    "sync_policy":  {
+                        "mode":  "manual_until_validated",
+                        "source":  "MAIN_NODE",
+                        "target":  "THIS_NODE",
+                        "allowed":  false
+                    },
+    "backup_policy":  {
+                          "required":  true,
+                          "destination":  "BACKUP_NODE",
+                          "hash_required":  true
+                      },
+    "secrets_policy":  {
+                           "secrets_allowed":  false,
+                           "inventory_required_before_transfer":  true,
+                           "print_secrets":  false
+                       },
+    "activation_gate":  "READONLY_PREFLIGHT_REQUIRED"
+}

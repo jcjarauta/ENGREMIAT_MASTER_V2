@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_074_R3_REPEATABLE_LOCAL_DRY_RUN_RUNNER_MANIFEST_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_074_R3_FIX_REPEATABLE_RUNNER_STABLE",
+    "created_at":  "2026-06-05T09:37:32",
+    "runner_status":  "CREATED_PARSE_OK",
+    "runner_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\runner\\run-repeatable-local-dry-run-074.ps1",
+    "parameters":  [
+                       "SeedPath",
+                       "OutputRoot",
+                       "RunId"
+                   ],
+    "expected_outputs":  [
+                             "01_idea_intake_status.json",
+                             "02_normalized_project_packet.json",
+                             "03_readiness_gate.json",
+                             "04_worker_routing_draft.json",
+                             "05_signals_needed_contract.json",
+                             "06_micro_work_packets_index.json",
+                             "07_human_review_gate.json",
+                             "08_repeatable_dry_run_dashboard.html",
+                             "09_repeatable_local_dry_run_report.json"
+                         ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION"
+}

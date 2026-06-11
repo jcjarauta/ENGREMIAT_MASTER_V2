@@ -1,0 +1,25 @@
+﻿{
+    "updated_at":  "2026-06-01T22:24:07",
+    "type":  "OLLAMA_INSTALL_PLAN_WINDOWS",
+    "ok":  true,
+    "phase":  "MASTER-OLLAMA-002",
+    "install_required":  true,
+    "install_executed_by_this_block":  false,
+    "readonly":  true,
+    "human_gate_required":  true,
+    "recommended_manual_install_commands":  [
+                                                "irm https://ollama.com/install.ps1 | iex",
+                                                "winget install -e --id Ollama.Ollama"
+                                            ],
+    "validation_after_install":  [
+                                     "ollama --version",
+                                     "ollama list"
+                                 ],
+    "expected_next_if_installed":  "MASTER_OLLAMA_003_VALIDATE_REAL_INSTALL_AFTER_HUMAN_INSTALL",
+    "expected_next_if_not_installed":  "INSTALL_OLLAMA_MANUALLY_AND_RERUN_VALIDATION",
+    "notes":  [
+                  "Este bloque no instala Ollama automaticamente.",
+                  "Primero deja plan, gate y script de validacion.",
+                  "Despues de instalar Ollama manualmente, ejecutar el siguiente bloque de validacion."
+              ]
+}

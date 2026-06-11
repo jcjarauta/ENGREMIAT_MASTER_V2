@@ -1,0 +1,19 @@
+﻿{
+    "type":  "MASTER_WATCHDOG_001_DIAG_LAST_FAILURE_READONLY",
+    "ok":  true,
+    "phase":  "MASTER-WATCHDOG-001-DIAG",
+    "readonly":  true,
+    "git_actions":  false,
+    "external_actions":  false,
+    "latest_run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220004",
+    "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220004\\stdout.txt",
+    "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220004\\stderr.txt",
+    "stdout_empty":  true,
+    "stderr_empty":  true,
+    "stdout_length":  0,
+    "stderr_length":  0,
+    "stdout_preview":  "",
+    "stderr_preview":  "",
+    "probable_cause":  "STDERR_EMPTY_NEED_SAFE_REWRITE",
+    "next_recommended_action":  "MASTER_WATCHDOG_001_REWRITE_MINIMAL_NO_NESTED_QUOTES"
+}

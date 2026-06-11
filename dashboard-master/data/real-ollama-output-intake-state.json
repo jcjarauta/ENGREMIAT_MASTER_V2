@@ -1,0 +1,13 @@
+﻿{
+    "type":  "REAL_OLLAMA_OUTPUT_INTAKE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T14:28:13",
+    "proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "errors":  [
+
+               ],
+    "operator_queue_count":  1,
+    "execution_allowed":  false,
+    "operator_execution":  false,
+    "next_recommended_action":  "HYPER_047_OPERATOR_EXECUTION_GATE_001"
+}

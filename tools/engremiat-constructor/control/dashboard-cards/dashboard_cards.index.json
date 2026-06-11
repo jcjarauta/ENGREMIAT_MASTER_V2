@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_DASHBOARD_CARDS_INDEX",
+    "ok":  true,
+    "cards_count":  1,
+    "cards":  [
+                  {
+                      "project_id":  "engremiat-training-game-inclusion-001",
+                      "card_json_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\dashboard-cards\\engremiat-training-game-inclusion-001.dashboard_card.json",
+                      "card_md_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\dashboard-cards\\engremiat-training-game-inclusion-001.dashboard_card.md",
+                      "card_html_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\dashboard-cards\\engremiat-training-game-inclusion-001.dashboard_card.html",
+                      "status":  "READY_LOCAL_ONLY",
+                      "readiness":  88
+                  }
+              ],
+    "next_recommended_action":  "CREATE_PROMPTER_HANDOFF_PACKAGE",
+    "updated_at":  "2026-06-05T20:22:45"
+}

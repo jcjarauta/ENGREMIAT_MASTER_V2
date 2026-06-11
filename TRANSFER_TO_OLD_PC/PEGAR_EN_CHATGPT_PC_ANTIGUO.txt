@@ -1,0 +1,27 @@
+﻿CONTEXTO PARA CHATGPT EN PC ANTIGUO
+
+Estamos preparando la migracion descentralizada de ENGREMIAT desde el PC antiguo hacia el nuevo MAIN_NODE.
+
+Estado:
+- NEW_PC = MAIN_NODE preparado
+- OLD_PC = SOURCE_NODE activo hasta freeze
+- BACKUP_NODE = planificado con contrato
+- readiness=100
+- repo_copy=False
+- migration_started=False
+
+Adjunto el kit portable de handoff:
+ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181452.zip
+
+SHA256 esperado:
+01F013F6887E3937E86CA782017F2F5503434E54F88E21E7840F235B4196EB8D
+
+Objetivo en este PC antiguo:
+1. Descomprimir el ZIP en C:\Users\sacan\Desktop\ENGREMIAT_HANDOFF_KIT
+2. Ejecutar primero:
+   launchers\01_RUN_PREFLIGHT_READONLY_ON_OLD_PC.cmd
+3. Pegar STATUS_FINAL_PARA_PEGAR en ChatGPT
+4. NO ejecutar el package 002 hasta que el preflight sea revisado.
+
+Ruta repo antiguo esperada:
+C:\Users\sacan\Desktop\ENGREMIAT_MASTER

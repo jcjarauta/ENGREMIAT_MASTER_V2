@@ -1,0 +1,100 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "contract_id":  "OPERATIVE_CENTER_CONTRACT_V1",
+    "generated_at":  "2026-06-02 07:18:06",
+    "purpose":  "Usar el dashboard como centro operativo humano y fuente de decision para el Master Operator y futuro bot de Telegram",
+    "source_of_truth":  [
+                            "dashboard-master\\data\\master-roadmap.json",
+                            "dashboard-master\\data\\blockers-and-dependencies.json",
+                            "dashboard-master\\data\\next-action.json"
+                        ],
+    "current_capabilities":  [
+                                 {
+                                     "id":  "VIEW_GLOBAL_ROADMAP",
+                                     "status":  "READY",
+                                     "description":  "Ver hypers, objetivos, checkpoints y estado jerarquico del desarrollo global",
+                                     "executable_now":  false,
+                                     "human_review_required":  false
+                                 },
+                                 {
+                                     "id":  "VIEW_BLOCKERS_AND_DEPENDENCIES",
+                                     "status":  "READY",
+                                     "description":  "Ver bloqueos, dependencias, gates humanos y razones de parada",
+                                     "executable_now":  false,
+                                     "human_review_required":  false
+                                 },
+                                 {
+                                     "id":  "VIEW_NEXT_ACTION",
+                                     "status":  "READY",
+                                     "description":  "Ver siguiente accion recomendada calculada desde roadmap, bloqueos y gates",
+                                     "executable_now":  false,
+                                     "human_review_required":  false
+                                 }
+                             ],
+    "future_executable_functions":  [
+                                        {
+                                            "id":  "RUN_SELECTED_HYPER_READONLY",
+                                            "status":  "FUTURE",
+                                            "description":  "Ejecutar hyper readonly seleccionado desde dashboard o Telegram",
+                                            "safety_gate":  "GATE_BEFORE_AUTOMATION",
+                                            "human_review_required":  true
+                                        },
+                                        {
+                                            "id":  "APPROVE_HUMAN_GATE",
+                                            "status":  "FUTURE",
+                                            "description":  "Registrar aprobacion humana de gate operativo",
+                                            "safety_gate":  "GATE_HUMAN_APPROVAL_REQUIRED",
+                                            "human_review_required":  true
+                                        },
+                                        {
+                                            "id":  "RUN_LOCAL_AI_REVIEW",
+                                            "status":  "FUTURE",
+                                            "description":  "Enviar contexto a Ollama/local AI para revision y propuesta",
+                                            "safety_gate":  "GATE_LOCAL_AI_CONTEXT_SAFE",
+                                            "human_review_required":  true
+                                        },
+                                        {
+                                            "id":  "QUEUE_NEXT_HYPER",
+                                            "status":  "FUTURE",
+                                            "description":  "Añadir siguiente hyper a cola del Master",
+                                            "safety_gate":  "GATE_QUEUE_MUTATION",
+                                            "human_review_required":  true
+                                        },
+                                        {
+                                            "id":  "CLOSE_STAGE_COMMIT_LOCAL",
+                                            "status":  "FUTURE",
+                                            "description":  "Cerrar etapa con commit local limpio de rutas explicitamente clasificadas",
+                                            "safety_gate":  "GATE_GIT_CLEAN_STAGE",
+                                            "human_review_required":  true
+                                        }
+                                    ],
+    "telegram_bot_design_seed":  {
+                                     "principle":  "El bot debe reflejar la misma jerarquia del dashboard y leer las mismas fuentes JSON",
+                                     "main_sections":  [
+                                                           "Estado global",
+                                                           "Hypers",
+                                                           "Checkpoints",
+                                                           "Bloqueos",
+                                                           "Gates humanos",
+                                                           "Next Action",
+                                                           "Funciones ejecutables seguras"
+                                                       ],
+                                     "button_model":  [
+                                                          "Ver estado",
+                                                          "Ver hyper activo",
+                                                          "Ver bloqueos",
+                                                          "Ver next action",
+                                                          "Solicitar revision IA local",
+                                                          "Aprobar gate",
+                                                          "Ejecutar readonly"
+                                                      ]
+                                 },
+    "master_decision_order":  [
+                                  "Leer next-action.json",
+                                  "Si requires_human_review=True, parar y pedir validacion",
+                                  "Si requires_repair=True, proponer hyper de reparacion o diagnostico",
+                                  "Si no hay bloqueo, leer master-roadmap.json",
+                                  "Seleccionar checkpoint pendiente del hyper activo",
+                                  "Generar bloque siguiente o enviar a cola segun seguridad"
+                              ]
+}

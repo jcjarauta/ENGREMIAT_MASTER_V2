@@ -1,0 +1,24 @@
+﻿{
+    "type":  "DASHBOARD_EXECUTABLE_FUNCTIONS_CATALOG",
+    "version":  2,
+    "updated_at":  "2026-06-02T09:48:26.0221534+02:00",
+    "branch":  "DASHBOARD_EXECUTABLE_FUNCTIONS",
+    "safety":  "READONLY_LOCAL_REPORT_ONLY",
+    "functions":  [
+                      {
+                          "id":  "read_operator_status",
+                          "label":  "Leer estado del operador",
+                          "mode":  "readonly"
+                      },
+                      {
+                          "id":  "read_runtime_queue",
+                          "label":  "Leer cola runtime Ollama Bridge",
+                          "mode":  "readonly"
+                      },
+                      {
+                          "id":  "read_branch_state",
+                          "label":  "Leer estado de ramas Ollama Bridge",
+                          "mode":  "readonly"
+                      }
+                  ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "type":  "ENGREMIAT_PHASE_072_F002_NORMALIZED_PROJECT_PACKET_DRY_RUN",
+    "ok":  true,
+    "project_title":  "Buscador inverso de financiacion y preventa para productos digitales ENGREMIAT",
+    "problem":  "Las ideas utiles suelen quedarse sin forma financiable: falta detectar si son vendibles, adaptables, presentables, financiables, reutilizables y que equipo humano o worker hace falta.",
+    "solution":  "Un flujo guiado de ENGREMIAT que recibe una idea, la normaliza, analiza si puede convertirse en producto digital, preventa o proyecto financiable, y genera micro work packets gobernados con gates humanos.",
+    "target_user":  "Personas, asociaciones, cooperativas, pequenos equipos, nodos locales y comunidades que tienen ideas utiles pero no saben convertirlas en proyecto financiable o preventa.",
+    "status":  "NORMALIZED_DRY_RUN_NO_AI_CALL",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

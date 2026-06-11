@@ -1,0 +1,14 @@
+﻿{
+    "phase":  "STAGE_10_PROJECT_ENGINE_BLOCK_01_CORE_STABLE_REBUILD",
+    "ok":  true,
+    "decision":  "PROJECT_ENGINE_CORE_CREATED_STABLE",
+    "project_id":  "b2d3b81e-7d9f-4a39-8b19-7a3105bab10f",
+    "project_name":  "Proyecto Telegram Demo",
+    "db_file":  "engremiat_db\\projects\\b2d3b81e-7d9f-4a39-8b19-7a3105bab10f.json",
+    "control_registry":  "tools\\engremiat-control\\project-registry.json",
+    "projects_count":  3,
+    "registry_count":  2,
+    "git_write":  false,
+    "push":  false,
+    "recommended_next":  "stage_10_block_02_project_define_engine_stable"
+}

@@ -1,0 +1,143 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 08:04:14",
+    "purpose":  "Definir iteraciones basica, intermedia y avanzada para construir el Master de forma ordenada e iniciar automatizacion solo cuando la base sea legible y segura",
+    "current_iteration":  "BASIC_OPERATIVE_VISION",
+    "current_iteration_label":  "Iteracion basica: vision operativa y hoja de ruta",
+    "current_iteration_progress_percent":  72,
+    "automation_readiness":  "NOT_READY_YET",
+    "automation_start_condition":  "Cuando la iteracion basica este cerrada y la intermedia tenga cola, gates y funciones ejecutables readonly definidos",
+    "iteration_policy":  {
+                             "principle":  "Construir por capas: ver primero, decidir despues, automatizar al final",
+                             "human_control_rule":  "Todo bloqueo que afecte seguridad, Git, acciones externas o gates debe poder pausarse manualmente sin bloquear el resto del roadmap",
+                             "master_route_rule":  "El Master debe leer iteracion actual, next-action, bloqueo y cola antes de proponer ejecucion"
+                         },
+    "iterations":  [
+                       {
+                           "id":  "BASIC_OPERATIVE_VISION",
+                           "title":  "Iteracion basica - Vision operativa",
+                           "status":  "ACTIVE",
+                           "progress_percent":  72,
+                           "objective":  "Conseguir que el humano y el Master entiendan el estado global, los hypers, checkpoints, bloqueos, timeline y pendientes.",
+                           "entry_criteria":  [
+                                                  "Operador base estable",
+                                                  "Dashboard inicial existente",
+                                                  "Roadmap JSON creado"
+                                              ],
+                           "exit_criteria":  [
+                                                 "Dashboard jerarquico ordenado",
+                                                 "Timeline y progreso visibles",
+                                                 "Hypers pendientes visibles",
+                                                 "Bloqueos con regla de pausa",
+                                                 "Next action calculado",
+                                                 "Commit limpio de la vision global"
+                                             ],
+                           "builds":  [
+                                          "master-roadmap.json",
+                                          "global-development-vision.json",
+                                          "pending-hypers-global.json",
+                                          "development-iteration-model.json",
+                                          "index.html operativo"
+                                      ],
+                           "unlocks":  [
+                                           "INTERMEDIATE_CONTROL_AND_QUEUE",
+                                           "HYPER_GIT_NOISE_CLASSIFICATION_READONLY",
+                                           "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS"
+                                       ]
+                       },
+                       {
+                           "id":  "INTERMEDIATE_CONTROL_AND_QUEUE",
+                           "title":  "Iteracion intermedia - Control, cola y gates",
+                           "status":  "PENDING",
+                           "progress_percent":  0,
+                           "objective":  "Convertir la vision en sistema de control: cola pendiente, gates humanos, funciones ejecutables readonly y pausas/reanudaciones.",
+                           "entry_criteria":  [
+                                                  "Iteracion basica cerrada",
+                                                  "Ruido Git clasificado por hyper",
+                                                  "Dashboard con bloqueos y prioridades entendibles"
+                                              ],
+                           "exit_criteria":  [
+                                                 "Cola de ejecucion priorizada",
+                                                 "Funciones ejecutables catalogadas",
+                                                 "Gates humanos definidos",
+                                                 "Pausa/reanudacion por rama",
+                                                 "Dry-run del selector del Master"
+                                             ],
+                           "builds":  [
+                                          "execution-queue.json",
+                                          "dashboard-actions-schema.json",
+                                          "human-gates-control.json",
+                                          "branch-pause-state.json",
+                                          "master-selector-dry-run report"
+                                      ],
+                           "unlocks":  [
+                                           "ADVANCED_SUPERVISED_AUTOMATION",
+                                           "HYPER_TELEGRAM_OPERATIVE_BOT",
+                                           "HYPER_LOCAL_AI_ROUTER_DIRECT"
+                                       ]
+                       },
+                       {
+                           "id":  "ADVANCED_SUPERVISED_AUTOMATION",
+                           "title":  "Iteracion avanzada - Automatizacion supervisada",
+                           "status":  "FUTURE",
+                           "progress_percent":  0,
+                           "objective":  "Iniciar automatizacion de objetivos prioritarios con gates, revision humana, IA local de apoyo y control desde dashboard/Telegram.",
+                           "entry_criteria":  [
+                                                  "Cola priorizada funcionando en dry-run",
+                                                  "Funciones ejecutables con gates",
+                                                  "IA local/router directo diagnosticado o pausado sin bloquear",
+                                                  "Bot Telegram diseñado desde el mismo schema"
+                                              ],
+                           "exit_criteria":  [
+                                                 "Una accion readonly ejecutada desde cola",
+                                                 "Un gate humano aprobado y registrado",
+                                                 "Un bloqueo pausado por rama",
+                                                 "Un ciclo supervisado completo",
+                                                 "Panel de auditoria disponible"
+                                             ],
+                           "builds":  [
+                                          "supervised-loop",
+                                          "telegram-operative-bot",
+                                          "local-ai-review-flow",
+                                          "audit-log",
+                                          "safe-action-runner"
+                                      ],
+                           "unlocks":  [
+                                           "ENGREMIAT_AUTOMATIC_DEVELOPMENT_PIPELINE",
+                                           "REMOTE_HUMAN_CONTROL",
+                                           "PRIORITY_OBJECTIVE_AUTOMATION"
+                                       ]
+                       }
+                   ],
+    "priority_objectives_before_automation":  [
+                                                  {
+                                                      "id":  "P01_CLOSE_GLOBAL_DASHBOARD",
+                                                      "title":  "Cerrar dashboard global jerarquico",
+                                                      "status":  "ACTIVE",
+                                                      "reason":  "Sin vision clara, automatizar aumenta el riesgo de colapso y commits mezclados.",
+                                                      "next_action":  "order_dashboard_hierarchy_and_commit"
+                                                  },
+                                                  {
+                                                      "id":  "P02_CLASSIFY_GIT_NOISE",
+                                                      "title":  "Clasificar ruido Git",
+                                                      "status":  "PENDING",
+                                                      "reason":  "Antes de automatizar hay que saber que pertenece a cada hyper.",
+                                                      "next_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY"
+                                                  },
+                                                  {
+                                                      "id":  "P03_DEFINE_EXECUTABLE_FUNCTIONS",
+                                                      "title":  "Definir funciones ejecutables",
+                                                      "status":  "PENDING",
+                                                      "reason":  "El dashboard y Telegram necesitan saber que acciones son seguras, readonly, gated o prohibidas.",
+                                                      "next_action":  "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS"
+                                                  },
+                                                  {
+                                                      "id":  "P04_BUILD_QUEUE_DRY_RUN",
+                                                      "title":  "Construir cola dry-run",
+                                                      "status":  "PENDING",
+                                                      "reason":  "Primero simulamos seleccion y ejecucion sin tocar nada externo.",
+                                                      "next_action":  "HYPER_MASTER_QUEUE_AUTOMATION"
+                                                  }
+                                              ],
+    "next_recommended_action":  "HYPER_DASHBOARD_OPERATIVE_VISION_010_ORDER_HIERARCHY_AND_COMMIT"
+}

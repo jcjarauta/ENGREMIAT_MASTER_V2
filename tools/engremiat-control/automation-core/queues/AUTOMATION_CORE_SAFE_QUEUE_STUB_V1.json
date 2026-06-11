@@ -1,0 +1,25 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_SAFE_QUEUE_STUB_V1",
+    "ok":  true,
+    "decision":  "SAFE_QUEUE_STUB_CREATED",
+    "mode":  "STUB_ONLY_NO_REAL_WORKER",
+    "queue_status":  "EMPTY_READY",
+    "allowed_item_types":  [
+                               "LOCAL_REVIEW_TASK",
+                               "LOCAL_GENERATION_TASK",
+                               "LOCAL_VALIDATION_TASK",
+                               "HUMAN_GATE_TASK",
+                               "SNAPSHOT_EXPORT_TASK"
+                           ],
+    "blocked_item_types":  [
+                               "EXTERNAL_AI_TASK",
+                               "API_TASK",
+                               "BROWSER_TASK",
+                               "REAL_WORKER_TASK",
+                               "GOOGLE_WRITE_TASK"
+                           ],
+    "items":  [
+
+              ],
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

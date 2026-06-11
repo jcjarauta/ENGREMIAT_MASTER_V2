@@ -1,0 +1,9 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_BLOCK_006_QUEUES",
+    "ok":  true,
+    "decision":  "DEMAND_DECISION_QUEUES_CREATED_LOCAL_ONLY",
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_DEMAND_RADAR_AND_MATCHING",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "queue_items_count":  6,
+    "updated_at":  "2026-06-05T21:28:47"
+}

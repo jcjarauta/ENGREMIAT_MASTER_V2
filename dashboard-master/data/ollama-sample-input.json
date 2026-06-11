@@ -1,0 +1,22 @@
+﻿{
+    "operator_latest_run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220646",
+    "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220646\\stdout.txt",
+    "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-220646\\stderr.txt",
+    "stdout_text":  {
+
+                    },
+    "stderr_text":  {
+
+                    },
+    "last_report_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\.operator\\outbox\\last-report.txt",
+    "last_report_text":  "",
+    "failed_block_name":  "MASTER_LOCAL_AI_REPAIR_006_BUILD_SAMPLE_INPUT_READONLY",
+    "previous_next_recommended_action":  "MASTER_LOCAL_AI_REPAIR_007_SMOKE_OLLAMA_READONLY",
+    "safety_gates":  [
+                         "readonly_only",
+                         "ollama_real_execution_false",
+                         "automation_real_execution_false",
+                         "git_actions_false",
+                         "external_actions_false"
+                     ]
+}

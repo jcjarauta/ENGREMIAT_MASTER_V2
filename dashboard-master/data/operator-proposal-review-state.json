@@ -1,0 +1,23 @@
+﻿{
+    "type":  "REPAIR_PROPOSAL_REVIEW_NO_FAIL_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T14:25:45",
+    "decision":  "LOCAL_STUB_PROPOSAL_REVIEWED_FOR_PIPELINE_ONLY",
+    "proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "proposal_existed_before":  false,
+    "created_local_stub":  true,
+    "parse_ok":  true,
+    "errors":  [
+
+               ],
+    "operator_candidate_queue_count":  1,
+    "human_review_queue_count":  0,
+    "execution_allowed":  false,
+    "operator_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "telegram_actions":  false,
+    "browser_actions":  false,
+    "clipboard_actions":  false,
+    "next_recommended_action":  "HYPER_045_SAFE_OPERATOR_QUEUE_NO_EXECUTION_001"
+}

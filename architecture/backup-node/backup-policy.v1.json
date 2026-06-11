@@ -1,0 +1,37 @@
+﻿{
+    "policy_version":  "v1",
+    "objective":  "Hacer que BACKUP_NODE permita replicar y recuperar ENGREMIAT sin depender de una sola maquina.",
+    "backup_execution_now":  false,
+    "required_before_real_backup":  [
+                                        "confirm_real_backup_root",
+                                        "run_readonly_preflight_on_backup_node",
+                                        "create_folder_structure",
+                                        "test_write_small_marker",
+                                        "copy_verified_package_only",
+                                        "generate_sha256_manifest",
+                                        "validate_restore_simulation"
+                                    ],
+    "package_contract":  {
+                             "each_package_requires":  [
+                                                           "PACKAGE_MANIFEST.json",
+                                                           "PACKAGE_MANIFEST.md",
+                                                           "SHA256SUMS.txt",
+                                                           "SOURCE_NODE.txt",
+                                                           "RESTORE_INSTRUCTIONS.md"
+                                                       ],
+                             "forbidden_by_default":  [
+                                                          "node_modules",
+                                                          ".git_large_without_decision",
+                                                          "raw_secrets",
+                                                          "temporary_files",
+                                                          "unbounded_logs"
+                                                      ]
+                         },
+    "restore_policy":  {
+                           "restore_requires_human_gate":  true,
+                           "restore_target":  "MAIN_NODE",
+                           "restore_to_temp_first":  true,
+                           "validate_hash_before_restore":  true,
+                           "overwrite_repo_directly":  false
+                       }
+}

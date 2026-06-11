@@ -1,0 +1,90 @@
+﻿{
+    "phase":  "NEW_PC_DECENTRALIZED_ARCHITECTURE_001_THREE_NODE_REPLICABLE_CONTRACTS",
+    "ok":  true,
+    "decision":  "THREE_NODE_REPLICABLE_ARCHITECTURE_CONTRACTS_READY",
+    "created_at":  "2026-06-11T18:06:21",
+    "migration_started":  false,
+    "repo_copy":  false,
+    "git_write":  false,
+    "push":  false,
+    "architecture":  {
+                         "version":  "v1",
+                         "objective":  "Construir primera arquitectura descentralizada replicable de ENGREMIAT.",
+                         "principle":  "Cada maquina debe tener rol, contrato, manual, limites y procedimiento de incorporacion."
+                     },
+    "nodes":  [
+                  {
+                      "node_id":  "MAIN_NODE",
+                      "machine":  "NEW_PC",
+                      "current_status":  "prepared_without_repo",
+                      "role":  "coordinacion, desarrollo principal, workers, IA local, dashboards",
+                      "root":  "C:\\ENGREMIAT",
+                      "repo_target":  "C:\\ENGREMIAT\\ENGREMIAT_MASTER",
+                      "allowed_now":  [
+                                          "estructura",
+                                          "manuales",
+                                          "contratos",
+                                          "benchmarks",
+                                          "recepcion futura"
+                                      ],
+                      "blocked_now":  [
+                                          "repo_copy",
+                                          "push",
+                                          "workers_real",
+                                          "telegram_real",
+                                          "secrets_migration"
+                                      ]
+                  },
+                  {
+                      "node_id":  "LEGACY_NODE",
+                      "machine":  "OLD_PC",
+                      "current_status":  "source_node_active",
+                      "role":  "fuente actual del repositorio hasta cerrar fase",
+                      "expected_repo":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+                      "allowed_now":  [
+                                          "cerrar desarrollo actual",
+                                          "preflight readonly",
+                                          "export manifest"
+                                      ],
+                      "blocked_now":  [
+                                          "migracion parcial sin manifest",
+                                          "mezcla de paquetes",
+                                          "secretos sin inventario"
+                                      ]
+                  },
+                  {
+                      "node_id":  "BACKUP_NODE",
+                      "machine":  "RASPBERRY_OR_4TB_STORAGE",
+                      "current_status":  "planned",
+                      "role":  "backup frio, evidencia, paquetes replicables, recuperacion",
+                      "expected_root":  "/ENGREMIAT_BACKUP or drive-root",
+                      "allowed_now":  [
+                                          "planificar estructura",
+                                          "definir contrato"
+                                      ],
+                      "blocked_now":  [
+                                          "backup real hasta validar paquete"
+                                      ]
+                  }
+              ],
+    "future_nodes":  {
+                         "onboarding_required":  true,
+                         "minimum_contracts":  [
+                                                   "NODE_ID",
+                                                   "ROLE",
+                                                   "ROOT",
+                                                   "ALLOWED_ACTIONS",
+                                                   "BLOCKED_ACTIONS",
+                                                   "SYNC_POLICY",
+                                                   "BACKUP_POLICY",
+                                                   "SECRETS_POLICY"
+                                               ],
+                         "recommended_next_node_types":  [
+                                                             "AI_WORKER_NODE",
+                                                             "TELEGRAM_INTERFACE_NODE",
+                                                             "DATA_NODE",
+                                                             "STAGING_NODE"
+                                                         ]
+                     },
+    "recommended_next":  "prepare_legacy_pc_export_preflight_when_old_pc_phase_closes"
+}

@@ -1,0 +1,91 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_005_MATCHING_RESULTS",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "results_count":  6,
+    "accepted_count":  5,
+    "backlog_count":  0,
+    "rejected_count":  1,
+    "average_score":  136,
+    "results":  [
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-001",
+                        "demand_id":  "demand-005-001",
+                        "source_type":  "grant",
+                        "score":  198,
+                        "decision":  "BUILD_NEW_PROJECT",
+                        "recommended_template":  "grant-project",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    },
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-002",
+                        "demand_id":  "demand-005-002",
+                        "source_type":  "pre_sale",
+                        "score":  167,
+                        "decision":  "ADAPT_EXISTING_PROJECT",
+                        "recommended_template":  "community-software",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    },
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-003",
+                        "demand_id":  "demand-005-003",
+                        "source_type":  "partner",
+                        "score":  160,
+                        "decision":  "ADAPT_EXISTING_PROJECT",
+                        "recommended_template":  "training-game",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    },
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-004",
+                        "demand_id":  "demand-005-004",
+                        "source_type":  "event",
+                        "score":  142,
+                        "decision":  "CREATE_DEMO_ONLY",
+                        "recommended_template":  "service-package",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    },
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-005",
+                        "demand_id":  "demand-005-005",
+                        "source_type":  "volunteering",
+                        "score":  106,
+                        "decision":  "CREATE_PROPOSAL_ONLY",
+                        "recommended_template":  "training-game",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    },
+                    {
+                        "type":  "ENGREMIAT_DEMAND_MATCHING_RESULT",
+                        "ok":  true,
+                        "match_id":  "match-demand-005-006",
+                        "demand_id":  "demand-005-006",
+                        "source_type":  "territorial_need",
+                        "score":  42,
+                        "decision":  "REJECT_OR_HOLD",
+                        "recommended_template":  "service-package",
+                        "status":  "MATCHED_LOCAL_SIMULATION",
+                        "external_action_allowed":  false,
+                        "updated_at":  "2026-06-05T21:28:47"
+                    }
+                ],
+    "updated_at":  "2026-06-05T21:28:47"
+}

@@ -1,0 +1,37 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_MULTI_PROJECT_FACTORY_MANIFEST",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "seeds_count":  3,
+    "seeds":  [
+                  {
+                      "seed_id":  "seed-007-001",
+                      "project_slug":  "digital-inclusion-training-game",
+                      "source_demand":  "grant digital inclusion",
+                      "recommended_template":  "grant-project",
+                      "factory_decision":  "LOCAL_PROJECT_DRAFT_ONLY",
+                      "remote_repo_allowed":  false
+                  },
+                  {
+                      "seed_id":  "seed-007-002",
+                      "project_slug":  "community-volunteer-panel",
+                      "source_demand":  "pre-sale community management",
+                      "recommended_template":  "community-software",
+                      "factory_decision":  "LOCAL_PROJECT_DRAFT_ONLY",
+                      "remote_repo_allowed":  false
+                  },
+                  {
+                      "seed_id":  "seed-007-003",
+                      "project_slug":  "social-impact-demo-kit",
+                      "source_demand":  "event social impact demo",
+                      "recommended_template":  "service-package",
+                      "factory_decision":  "LOCAL_PROJECT_DRAFT_ONLY",
+                      "remote_repo_allowed":  false
+                  }
+              ],
+    "factory_mode":  "LOCAL_PROJECT_DRAFTS_ONLY",
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "worker_real_allowed":  false,
+    "updated_at":  "2026-06-05T21:37:53"
+}

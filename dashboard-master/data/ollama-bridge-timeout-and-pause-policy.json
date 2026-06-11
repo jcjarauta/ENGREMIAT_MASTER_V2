@@ -1,0 +1,119 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 08:59:33",
+    "policy_id":  "OLLAMA_BRIDGE_TIMEOUT_AND_PAUSE_POLICY_V1",
+    "purpose":  "Evitar que una tarea lenta o fallida de Ollama bloquee la cola global de desarrollo.",
+    "default_timeout_seconds":  90,
+    "long_task_timeout_seconds":  240,
+    "microblock_timeout_seconds":  45,
+    "max_retries_before_pause":  2,
+    "max_retries_before_human_block":  3,
+    "queue_policy":  {
+                         "branch_level_pause":  true,
+                         "global_queue_pause":  false,
+                         "continue_other_safe_branch_when_paused":  true,
+                         "paused_branch_requires_report":  true,
+                         "paused_branch_can_be_resumed":  true,
+                         "retry_requires_human_confirmation":  true
+                     },
+    "failure_modes":  [
+                          {
+                              "id":  "OLLAMA_TIMEOUT",
+                              "meaning":  "Ollama supera el tiempo maximo permitido.",
+                              "automatic_action":  "PAUSE_BRANCH",
+                              "branch_state_after":  "PAUSED",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "REVIEW_REPORT_OR_RETRY",
+                              "telegram_button":  "Reintentar Ollama"
+                          },
+                          {
+                              "id":  "OLLAMA_COMMAND_NOT_FOUND",
+                              "meaning":  "El comando ollama no existe o no esta disponible.",
+                              "automatic_action":  "PAUSE_LOCAL_AI_BRANCH",
+                              "branch_state_after":  "PAUSED",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "INSTALL_OR_ENABLE_OLLAMA",
+                              "telegram_button":  "Reporte ChatGPT"
+                          },
+                          {
+                              "id":  "OLLAMA_MODEL_NOT_FOUND",
+                              "meaning":  "Ollama existe pero no hay modelo seleccionable.",
+                              "automatic_action":  "PAUSE_LOCAL_AI_BRANCH",
+                              "branch_state_after":  "PAUSED",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "SELECT_OR_PULL_MODEL",
+                              "telegram_button":  "Reporte ChatGPT"
+                          },
+                          {
+                              "id":  "OLLAMA_EMPTY_OUTPUT",
+                              "meaning":  "Ollama no devuelve contenido util.",
+                              "automatic_action":  "PAUSE_BRANCH",
+                              "branch_state_after":  "PAUSED",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "REQUEST_CHATGPT_REPAIR",
+                              "telegram_button":  "Enviar reporte"
+                          },
+                          {
+                              "id":  "OLLAMA_INVALID_JSON",
+                              "meaning":  "Ollama devuelve texto o JSON no parseable.",
+                              "automatic_action":  "PAUSE_BRANCH",
+                              "branch_state_after":  "PAUSED",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "REQUEST_CHATGPT_REPAIR",
+                              "telegram_button":  "Enviar reporte"
+                          },
+                          {
+                              "id":  "OLLAMA_SCHEMA_INVALID",
+                              "meaning":  "JSON parseable pero no cumple el contrato esperado.",
+                              "automatic_action":  "PAUSE_BRANCH",
+                              "branch_state_after":  "READY_FOR_HUMAN_REVIEW",
+                              "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH",
+                              "human_action":  "APPROVE_REPAIR_OR_RETRY",
+                              "telegram_button":  "Revisar"
+                          }
+                      ],
+    "pause_record_schema":  {
+                                "branch_id":  "string",
+                                "paused":  "boolean",
+                                "state":  "PAUSED|BLOCKED|READY_FOR_HUMAN_REVIEW",
+                                "reason":  "string",
+                                "failure_mode":  "string",
+                                "retry_count":  "number",
+                                "last_report_path":  "string",
+                                "last_input_path":  "string",
+                                "last_output_path":  "string",
+                                "resume_action":  "string",
+                                "next_safe_branch":  "string",
+                                "human_intervention_required":  "boolean",
+                                "telegram_buttons":  [
+                                                         "SHOW_REPORT",
+                                                         "RETRY",
+                                                         "RESUME",
+                                                         "PAUSE",
+                                                         "NEXT_SAFE"
+                                                     ]
+                            },
+    "automatic_decision_table":  [
+                                     {
+                                         "condition":  "output_valid_and_schema_valid",
+                                         "branch_state":  "READY_FOR_HUMAN_REVIEW",
+                                         "queue_action":  "WAIT_HUMAN_REVIEW_OR_CONTINUE_SAFE_BRANCH"
+                                     },
+                                     {
+                                         "condition":  "output_invalid_first_or_second_attempt",
+                                         "branch_state":  "PAUSED",
+                                         "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH"
+                                     },
+                                     {
+                                         "condition":  "output_invalid_third_attempt",
+                                         "branch_state":  "BLOCKED",
+                                         "queue_action":  "CONTINUE_NEXT_SAFE_BRANCH"
+                                     },
+                                     {
+                                         "condition":  "human_resumes_branch",
+                                         "branch_state":  "PENDING",
+                                         "queue_action":  "RETRY_BRANCH"
+                                     }
+                                 ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_004_OUTPUT_VALIDATOR_SCHEMA"
+}

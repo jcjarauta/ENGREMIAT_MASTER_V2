@@ -1,0 +1,30 @@
+﻿{
+    "type":  "CONSTRUCTOR_TO_CONTROL_LOCAL_QUEUE",
+    "ok":  true,
+    "queue_id":  "constructor-to-control-phase-003",
+    "items_count":  1,
+    "items":  [
+                  {
+                      "type":  "CONSTRUCTOR_TO_CONTROL_QUEUE_ITEM",
+                      "ok":  true,
+                      "item_id":  "ctc-phase003-item-001",
+                      "project_id":  "engremiat-training-game-inclusion-001",
+                      "source":  "ENGREMIAT_CONSTRUCTOR",
+                      "target":  "ENGREMIAT_CONTROL",
+                      "decision":  "READY_FOR_LOCAL_CONTROL_CONSUMPTION",
+                      "readiness":  74,
+                      "payload_path":  "control/observable/constructor_control_observable_index.json",
+                      "status":  "PENDING_LOCAL_CONTROL_REVIEW",
+                      "real_control_write_allowed":  false,
+                      "external_api_allowed":  false,
+                      "next_recommended_action":  "CREATE_CONSTRUCTOR_TO_PROMPTER_LOCAL_QUEUE",
+                      "updated_at":  "2026-06-05T21:02:08"
+                  }
+              ],
+    "write_policy":  {
+                         "local_queue_only":  true,
+                         "real_control_write_allowed":  false
+                     },
+    "next_recommended_action":  "CREATE_CONSTRUCTOR_TO_PROMPTER_LOCAL_QUEUE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

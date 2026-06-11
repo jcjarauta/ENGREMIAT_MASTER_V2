@@ -1,0 +1,11 @@
+﻿{
+    "type":  "ENGREMIAT_PROJECT_DECISION_LOG",
+    "project_id":  "{{PROJECT_ID}}",
+    "decisions":  [
+                      {
+                          "decision":  "{{DECISION}}",
+                          "reason":  "Proyecto creado desde necesidad normalizada.",
+                          "created_at":  "{{UPDATED_AT}}"
+                      }
+                  ]
+}

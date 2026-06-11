@@ -1,0 +1,22 @@
+﻿{
+    "type":  "HYPER_022_OLLAMA_PROPOSAL_INTAKE_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:03:49",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "task_id":  "OLLAMA-TASK-HYPER-018-ANALYSIS-001",
+    "checkpoint_id":  "HYPER_018_RECOVERY_ANALYSIS",
+    "intake_status":  "WAITING_FOR_OLLAMA_PROPOSAL",
+    "inbox_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox",
+    "expected_proposal_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\OLLAMA-TASK-HYPER-018-ANALYSIS-001.proposal.txt",
+    "proposal_template_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\OLLAMA-TASK-HYPER-018-ANALYSIS-001.proposal.template.txt",
+    "final_prompt_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-021\\ollama-final-prompt-ready.md",
+    "proposal_contract_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\reports\\hyper-022\\ollama-proposal-intake-contract.json",
+    "review_queue_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\review-queue.json",
+    "worker_state_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-worker-state.json",
+    "instructions":  "Ejecutar Ollama fuera de este bloque usando final_prompt_file y guardar la respuesta en expected_proposal_file.",
+    "next_recommended_action":  "HYPER_023_OLLAMA_PROPOSAL_REVIEW_GATE_001",
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false,
+    "ollama_execution":  false
+}

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ENGREMIAT MASTER CONTROL PANEL</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f3f5f7;color:#17202a}
+header{background:#111827;color:white;padding:22px 28px}
+main{padding:20px 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.card{background:white;border:1px solid #d9dee7;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.metric{font-size:28px;font-weight:700;margin-top:6px}
+.label{color:#5b6472;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+table{width:100%;border-collapse:collapse;background:white}
+th,td{border-bottom:1px solid #e5e7eb;padding:8px;text-align:left;font-size:14px}
+th{background:#f9fafb;color:#374151}
+code{background:#eef2ff;padding:2px 6px;border-radius:5px}
+.ok{color:#047857;font-weight:700}
+.warn{color:#b45309;font-weight:700}
+.danger{color:#b91c1c;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+<h1>ENGREMIAT MASTER CONTROL PANEL</h1>
+<p>Panel local consolidado. Telegram real desactivado.</p>
+</header>
+<main>
+<section class="card">
+<h2>GPS actual</h2>
+<p><b>Nodo:</b> <code>REVIEW-001</code></p>
+<p><b>Estado:</b> <span class='ok'>READY</span></p>
+<p><b>Ruta:</b> DESARROLLO=DESARROLLO_GLOBAL &gt; HIPERMACRO=HYPER_008 &gt; MACRO=MASTER_CONTROL_PANEL &gt; OBJETIVO=GLOBAL_STATUS_ENGINE &gt; CHECKPOINT=CP-STATE-001 &gt; TAREA=CALCULAR_ESTADO_GLOBAL &gt; BLOQUE_ACTUAL=REVIEW-001 &gt; ESTADO_ACTUAL=READY &gt; SIGUIENTE_ACCION=HYPER_008_CONTINUE_DEVELOPMENT_PAYLOAD_001</p>
+</section>
+<section class="grid">
+<div class='card'><div class='label'>READY</div><div class='metric'>12</div></div>
+<div class='card'><div class='label'>RUNNING</div><div class='metric'>0</div></div>
+<div class='card'><div class='label'>PAUSED</div><div class='metric warn'>6</div></div>
+<div class='card'><div class='label'>BLOCKED</div><div class='metric danger'>0</div></div>
+<div class='card'><div class='label'>DONE</div><div class='metric'>0</div></div>
+<div class='card'><div class='label'>TOTAL</div><div class='metric'>18</div></div>
+</section>
+<section class="card">
+<h2>Estado operativo</h2>
+<p><b>Queue health:</b> <code>READY</code></p>
+<p><b>Evidencias escaneadas:</b> 25</p>
+<p><b>Nodos con evidencia:</b> 18</p>
+<p><b>Nodos sin evidencia:</b> 0</p>
+</section>
+<section class="card">
+<h2>READY preview</h2>
+<table><tr><th>ID</th><th>Titulo</th><th>Cola</th></tr>
+<tr><td>REVIEW-001</td><td>Motor de Estado Global</td><td>master_state_review</td></tr>
+<tr><td>REVIEW-002</td><td>Nodo Actual del Desarrollo</td><td>master_state_review</td></tr>
+<tr><td>REVIEW-003</td><td>Boton Continuar Desarrollo</td><td>master_state_review</td></tr>
+<tr><td>REVIEW-004</td><td>Vista de Bloqueos</td><td>master_state_review</td></tr>
+<tr><td>REVIEW-005</td><td>Cola Dinamica</td><td>master_state_review</td></tr>
+<tr><td>REVIEW-006</td><td>Evidencias en Tiempo Real</td><td>master_state_review</td></tr>
+<tr><td>OLLAMA-001</td><td>OLLAMA-001</td><td>ollama_script_execution_future</td></tr>
+<tr><td>OLLAMA-002</td><td>OLLAMA-002</td><td>ollama_script_execution_future</td></tr>
+</table>
+</section>
+<section class="card">
+<h2>PAUSED preview</h2>
+<table><tr><th>ID</th><th>Titulo</th><th>Cola</th></tr>
+<tr><td>OPERATOR-001</td><td>OPERATOR-001</td><td>operator_code_generation</td></tr>
+<tr><td>OPERATOR-002</td><td>OPERATOR-002</td><td>operator_code_generation</td></tr>
+<tr><td>OPERATOR-003</td><td>OPERATOR-003</td><td>operator_code_generation</td></tr>
+<tr><td>OPERATOR-004</td><td>OPERATOR-004</td><td>operator_code_generation</td></tr>
+<tr><td>OPERATOR-005</td><td>OPERATOR-005</td><td>operator_code_generation</td></tr>
+<tr><td>OPERATOR-006</td><td>OPERATOR-006</td><td>operator_code_generation</td></tr>
+</table>
+</section>
+<section class="card">
+<h2>Bloqueos</h2>
+<table><tr><th>ID</th><th>Motivo</th><th>Accion sugerida</th></tr>
+<tr><td colspan="3">Sin bloqueos activos</td></tr>
+</table>
+</section>
+<section class="card">
+<h2>Siguiente bloque lógico</h2>
+<p><code>HYPER_016_TELEGRAM_READONLY_MIRROR_SPEC_001</code></p>
+<p>Preparar especificacion readonly de espejo Telegram, sin bot real todavia.</p>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_086_APPLY_LOCAL_STUB_PIPELINE_GATE_DECISION_CONTRACT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_086_APPLY_LOCAL_STUB_PIPELINE_GATE_DECISION",
+    "created_at":  "2026-06-05T10:13:15",
+    "purpose":  "Aplicar autorización humana y simular pipeline local de 7 stubs.",
+    "human_decision_from_chat":  "ALLOW_LOCAL_STUB_PIPELINE_SIMULATION",
+    "source_phase":  "PHASE_085_LOCAL_STUB_PIPELINE_GATE",
+    "stage_count":  7,
+    "execution_policy":  "LOCAL_STUB_PIPELINE_SIMULATION_ONLY_NO_REAL_WORKERS",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "local_stub_pipeline_simulation_executed":  true,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "simulated_pipeline_outputs_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_087_VALIDATE_LOCAL_STUB_PIPELINE_AND_AUTOMATION_HEALTH_GATE"
+}

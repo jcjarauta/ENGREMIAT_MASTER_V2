@@ -1,0 +1,286 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 07:27:56",
+    "purpose":  "Vision global de hypers pendientes, bloqueados y futuros para orientar el desarrollo automatico del Master",
+    "current_completed_base":  [
+                                   "HYPER_OPERATOR_CORE",
+                                   "HYPER_DASHBOARD_OPERATIVE_VISION"
+                               ],
+    "pending_hypers":  [
+                           {
+                               "id":  "HYPER_GIT_NOISE_CLASSIFICATION",
+                               "title":  "Clasificación de ruido Git por hyper",
+                               "status":  "PENDING",
+                               "priority":  "HIGH",
+                               "objective":  "Clasificar los archivos untracked existentes por hyper para evitar commits mezclados y preparar cierres limpios.",
+                               "depends_on":  [
+                                                  "HYPER_DASHBOARD_OPERATIVE_VISION"
+                                              ],
+                               "unlocks":  [
+                                               "CLEAN_STAGE_COMMIT",
+                                               "SAFE_QUEUE_AUTOMATION"
+                                           ],
+                               "blockers":  [
+                                                "BLOCK_GIT_UNTRACKED_NOISE"
+                                            ],
+                               "next_action":  "classify_untracked_files_by_hyper_readonly",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "GIT_NOISE_SCAN",
+                                                       "title":  "Escanear untracked y agrupar por dominio",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "GIT_NOISE_MAP",
+                                                       "title":  "Mapear cada grupo a hyper origen",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "GIT_NOISE_COMMIT_PLAN",
+                                                       "title":  "Proponer plan de commits limpios",
+                                                       "status":  "PENDING"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS",
+                               "title":  "Funciones ejecutables del centro operativo",
+                               "status":  "PENDING",
+                               "priority":  "HIGH",
+                               "objective":  "Definir qué acciones podrán ejecutarse desde dashboard o Telegram: readonly, gates humanos, revisión IA local, cola de hypers y cierre local.",
+                               "depends_on":  [
+                                                  "OPERATIVE_CENTER_CONTRACT_V1",
+                                                  "HYPER_GIT_NOISE_CLASSIFICATION"
+                                              ],
+                               "unlocks":  [
+                                               "TELEGRAM_OPERATIVE_BOT",
+                                               "MASTER_SAFE_ACTIONS"
+                                           ],
+                               "blockers":  [
+                                                "GATE_BEFORE_AUTOMATION"
+                                            ],
+                               "next_action":  "define_executable_functions_contract",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "FUNCTIONS_CATALOG",
+                                                       "title":  "Catálogo de funciones ejecutables",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "SAFETY_GATES",
+                                                       "title":  "Gate por tipo de acción",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "DASHBOARD_ACTION_SCHEMA",
+                                                       "title":  "Schema común dashboard/bot",
+                                                       "status":  "PENDING"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_LOCAL_AI_ROUTER_DIRECT",
+                               "title":  "IA local / Ollama por router directo",
+                               "status":  "BLOCKED",
+                               "priority":  "MEDIUM",
+                               "objective":  "Evitar timeout del hook largo y usar revisión local directa, con protocolos de reparación y prompts controlados.",
+                               "depends_on":  [
+                                                  "POWERSHELL_RENDER_PROTOCOL",
+                                                  "OLLAMA_PROMPT_TEMPLATE"
+                                              ],
+                               "unlocks":  [
+                                               "REPAIR_ASSISTED_FLOW",
+                                               "LOCAL_AI_REVIEW_FOR_OPERATOR_ERRORS"
+                                           ],
+                               "blockers":  [
+                                                "BLOCK_LOCAL_AI_HOOK_TIMEOUT"
+                                            ],
+                               "next_action":  "diagnose_router_direct_for_local_ai",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "ROUTER_DIRECT_SMOKE",
+                                                       "title":  "Prueba mínima router directo",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "LOCAL_AI_CONTEXT_LIMIT",
+                                                       "title":  "Contrato de contexto seguro",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "REPAIR_REVIEW_OUTPUT",
+                                                       "title":  "Salida estructurada de revisión IA",
+                                                       "status":  "PENDING"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_MASTER_QUEUE_AUTOMATION",
+                               "title":  "Automatización de colas del Master",
+                               "status":  "PENDING",
+                               "priority":  "MEDIUM",
+                               "objective":  "Convertir la hoja de ruta en cola operativa: seleccionar hyper, checkpoint, gate, reparación o parada humana.",
+                               "depends_on":  [
+                                                  "NEXT_ACTION_PANEL",
+                                                  "PENDING_HYPERS_GLOBAL_VIEW"
+                                              ],
+                               "unlocks":  [
+                                               "MASTER_ROUTE_EXECUTION",
+                                               "SAFE_AUTOMATION"
+                                           ],
+                               "blockers":  [
+                                                "GATE_BEFORE_AUTOMATION"
+                                            ],
+                               "next_action":  "prepare_final_gates_readonly",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "QUEUE_SCHEMA",
+                                                       "title":  "Schema de cola de hypers",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "QUEUE_SELECTOR",
+                                                       "title":  "Selector de siguiente hyper",
+                                                       "status":  "PENDING"
+                                                   },
+                                                   {
+                                                       "id":  "QUEUE_DRY_RUN",
+                                                       "title":  "Dry-run sin ejecución real",
+                                                       "status":  "PENDING"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_TELEGRAM_OPERATIVE_BOT",
+                               "title":  "Bot Telegram como interfaz del centro operativo",
+                               "status":  "FUTURE",
+                               "priority":  "MEDIUM",
+                               "objective":  "Diseñar el bot con la misma jerarquía del dashboard: estado, hypers, checkpoints, bloqueos, gates, next action y ejecución segura.",
+                               "depends_on":  [
+                                                  "DASHBOARD_ACTION_SCHEMA",
+                                                  "OPERATIVE_CENTER_CONTRACT_V1"
+                                              ],
+                               "unlocks":  [
+                                               "MOBILE_MASTER_CONTROL",
+                                               "HUMAN_REVIEW_FROM_PHONE"
+                                           ],
+                               "blockers":  [
+                                                "PENDING_EXECUTABLE_FUNCTIONS_DEFINITION"
+                                            ],
+                               "next_action":  "design_telegram_bot_operational_map",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "BOT_MENU_MAP",
+                                                       "title":  "Mapa de menús desde roadmap",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "BOT_BUTTON_ACTIONS",
+                                                       "title":  "Botones por acción segura",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "BOT_HUMAN_GATES",
+                                                       "title":  "Aprobación humana desde Telegram",
+                                                       "status":  "FUTURE"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_MASTER_AUTOMATIC_ROUTE_SELECTION",
+                               "title":  "Selección automática de ruta del Master",
+                               "status":  "FUTURE",
+                               "priority":  "LOW",
+                               "objective":  "Permitir que el Master lea roadmap, bloqueos, gates y next-action para proponer o preparar el siguiente bloque.",
+                               "depends_on":  [
+                                                  "MASTER_QUEUE_AUTOMATION",
+                                                  "DASHBOARD_EXECUTABLE_FUNCTIONS"
+                                              ],
+                               "unlocks":  [
+                                               "SUPERVISED_AUTONOMOUS_DEVELOPMENT"
+                                           ],
+                               "blockers":  [
+                                                "GATE_BEFORE_AUTOMATION"
+                                            ],
+                               "next_action":  "build_roadmap_driven_selector",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "ROADMAP_READER",
+                                                       "title":  "Lector estable de roadmap",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "CHECKPOINT_SELECTOR",
+                                                       "title":  "Selector de checkpoint pendiente",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "SAFE_ACTION_DECIDER",
+                                                       "title":  "Decisor seguro: ejecutar, reparar o pedir humano",
+                                                       "status":  "FUTURE"
+                                                   }
+                                               ]
+                           },
+                           {
+                               "id":  "HYPER_SUPERVISED_AUTOMATION_LOOP",
+                               "title":  "Loop de automatización supervisada",
+                               "status":  "FUTURE",
+                               "priority":  "LOW",
+                               "objective":  "Ejecutar ciclos asistidos por roadmap con revisión humana, gates y reparación local antes de pasar a automatización más amplia.",
+                               "depends_on":  [
+                                                  "MASTER_AUTOMATIC_ROUTE_SELECTION",
+                                                  "TELEGRAM_OPERATIVE_BOT",
+                                                  "LOCAL_AI_ROUTER_DIRECT"
+                                              ],
+                               "unlocks":  [
+                                               "ENGREMIAT_AUTOMATIC_DEVELOPMENT_PIPELINE"
+                                           ],
+                               "blockers":  [
+                                                "MULTIPLE_HUMAN_GATES_PENDING"
+                                            ],
+                               "next_action":  "wait_until_dashboard_queue_local_ai_are_ready",
+                               "checkpoints":  [
+                                                   {
+                                                       "id":  "LOOP_DRY_RUN",
+                                                       "title":  "Loop dry-run",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "LOOP_ONE_SAFE_ACTION",
+                                                       "title":  "Una acción segura con gate",
+                                                       "status":  "FUTURE"
+                                                   },
+                                                   {
+                                                       "id":  "LOOP_REVIEW_AND_STOP",
+                                                       "title":  "Revisión y parada controlada",
+                                                       "status":  "FUTURE"
+                                                   }
+                                               ]
+                           }
+                       ],
+    "status_groups":  {
+                          "pending":  [
+                                          "HYPER_GIT_NOISE_CLASSIFICATION",
+                                          "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS",
+                                          "HYPER_MASTER_QUEUE_AUTOMATION"
+                                      ],
+                          "blocked":  [
+                                          "HYPER_LOCAL_AI_ROUTER_DIRECT"
+                                      ],
+                          "future":  [
+                                         "HYPER_TELEGRAM_OPERATIVE_BOT",
+                                         "HYPER_MASTER_AUTOMATIC_ROUTE_SELECTION",
+                                         "HYPER_SUPERVISED_AUTOMATION_LOOP"
+                                     ]
+                      },
+    "recommended_order":  [
+                              "HYPER_GIT_NOISE_CLASSIFICATION",
+                              "HYPER_DASHBOARD_EXECUTABLE_FUNCTIONS",
+                              "HYPER_LOCAL_AI_ROUTER_DIRECT",
+                              "HYPER_MASTER_QUEUE_AUTOMATION",
+                              "HYPER_TELEGRAM_OPERATIVE_BOT",
+                              "HYPER_MASTER_AUTOMATIC_ROUTE_SELECTION",
+                              "HYPER_SUPERVISED_AUTOMATION_LOOP"
+                          ],
+    "next_recommended_action":  "HYPER_GIT_NOISE_CLASSIFICATION_READONLY"
+}

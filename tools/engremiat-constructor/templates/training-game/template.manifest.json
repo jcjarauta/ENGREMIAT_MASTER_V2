@@ -1,0 +1,29 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_TEMPLATE_MANIFEST",
+    "template_type":  "training-game",
+    "description":  "Formacion gamificada, juego educativo o experiencia de aprendizaje.",
+    "expected_outputs":  [
+                             "demo",
+                             "learning_path",
+                             "game_brief",
+                             "proposal"
+                         ],
+    "folders":  [
+                    "docs",
+                    "control",
+                    "commercial",
+                    "funding",
+                    "prompts",
+                    "reports",
+                    "src",
+                    "tests"
+                ],
+    "safety":  {
+                   "local_only":  true,
+                   "git_allowed_by_default":  false,
+                   "remote_allowed_by_default":  false,
+                   "external_api_allowed_by_default":  false,
+                   "worker_real_allowed_by_default":  false
+               },
+    "created_at":  "2026-06-05T12:43:32"
+}

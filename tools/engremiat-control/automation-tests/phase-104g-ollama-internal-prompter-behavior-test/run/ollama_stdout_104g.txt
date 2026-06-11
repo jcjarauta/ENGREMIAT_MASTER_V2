@@ -1,0 +1,19 @@
+```json
+{
+  "ok": true,
+  "worker": "ollama_local_candidate",
+  "behavior_review": [
+    {
+      "description": "Revisar que el worker actual esté bien configurado y [K
+funcional.",
+      "command": "engremiat_prompter --check-worker-status"
+    }
+  ],
+  "risks": [],
+  "recommended_next_local_test": "ollama_local_candidate",
+  "files_to_create_or_update": [],
+  "human_gate_required": true,
+  "integration_notes": []
+}
+```
+

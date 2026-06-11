@@ -1,0 +1,21 @@
+﻿{
+    "type":  "MASTER_OLLAMA_005D_DIAG_FAILURE_READONLY",
+    "ok":  true,
+    "phase":  "MASTER-OLLAMA-005D-DIAG",
+    "readonly":  true,
+    "latest_run_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-223707",
+    "stdout_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-223707\\stdout.txt",
+    "stderr_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\repos\\engremiat-operator\\runs\\run-20260601-223707\\stderr.txt",
+    "stdout_empty":  true,
+    "stderr_empty":  true,
+    "stdout_length":  0,
+    "stderr_length":  0,
+    "stdout_preview":  "",
+    "stderr_preview":  "",
+    "probable_cause":  "STDERR_EMPTY_REWRITE_MINIMAL",
+    "ollama_repair_executed":  false,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "next_recommended_action":  "MASTER_OLLAMA_005E_SAFE_DIRECT_INVOKE_NO_PROCESS_OBJECT"
+}

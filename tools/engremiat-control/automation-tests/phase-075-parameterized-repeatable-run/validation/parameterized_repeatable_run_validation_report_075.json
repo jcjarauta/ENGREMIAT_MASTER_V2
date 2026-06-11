@@ -1,0 +1,99 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_075_PARAMETERIZED_REPEATABLE_RUN_VALIDATION_REPORT_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION",
+    "created_at":  "2026-06-05T09:40:32",
+    "run_id":  "phase-075-parameterized-001",
+    "runner_exit_code":  0,
+    "output_root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001",
+    "expected_files_count":  9,
+    "failed_checks_count":  0,
+    "safety_ok":  true,
+    "readiness_score":  95,
+    "readiness_level":  "high",
+    "failed_checks":  [
+
+                      ],
+    "checks":  [
+                   {
+                       "file":  "01_idea_intake_status.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\01_idea_intake_status.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "02_normalized_project_packet.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\02_normalized_project_packet.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "03_readiness_gate.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\03_readiness_gate.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "04_worker_routing_draft.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\04_worker_routing_draft.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "05_signals_needed_contract.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\05_signals_needed_contract.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "06_micro_work_packets_index.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\06_micro_work_packets_index.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "07_human_review_gate.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\07_human_review_gate.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   },
+                   {
+                       "file":  "08_repeatable_dry_run_dashboard.html",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\08_repeatable_dry_run_dashboard.html",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "html_ok"
+                   },
+                   {
+                       "file":  "09_repeatable_local_dry_run_report.json",
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\repeatable-runs\\phase-075-parameterized-001\\09_repeatable_local_dry_run_report.json",
+                       "exists":  true,
+                       "valid":  true,
+                       "note":  "json_ok"
+                   }
+               ],
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_076_ADD_HEALTH_AND_LOAD_METRICS_TO_REPEATABLE_DRY_RUNS"
+}

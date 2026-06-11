@@ -1,0 +1,42 @@
+﻿[
+    {
+        "id":  "MASTER_OLLAMA_REAL",
+        "title":  "Ollama real repair readonly",
+        "status":  "DONE_NO_PATCH",
+        "priority":  1,
+        "type":  "ollama",
+        "risk":  "medium",
+        "gate_required":  true,
+        "description":  "Ollama real cerrado sin patch aplicado"
+    },
+    {
+        "id":  "MASTER_OPERATOR_STATUS_002",
+        "title":  "Corregir formato status operador",
+        "status":  "BLOCKED",
+        "priority":  2,
+        "type":  "operator_status",
+        "risk":  "medium",
+        "gate_required":  false,
+        "description":  "Parser multilinea y last_decision corregidos"
+    },
+    {
+        "id":  "MASTER_QUEUE_AUTOMATION_002",
+        "title":  "Preparar gates finales automatizacion",
+        "status":  "LOCKED",
+        "priority":  3,
+        "type":  "automation_gates",
+        "risk":  "high",
+        "gate_required":  true,
+        "description":  "Preparar permisos finales antes de automatizacion real"
+    },
+    {
+        "id":  "MASTER_QUEUE_AUTOMATION_REAL",
+        "title":  "Automatizacion real de cola",
+        "status":  "LOCKED",
+        "priority":  4,
+        "type":  "automation",
+        "risk":  "high",
+        "gate_required":  true,
+        "description":  "Bloqueada hasta gates finales"
+    }
+]

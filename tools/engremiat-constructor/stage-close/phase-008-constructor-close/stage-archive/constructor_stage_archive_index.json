@@ -1,0 +1,69 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_STAGE_ARCHIVE_INDEX",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "phases_count":  7,
+    "phases":  [
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_001_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_001_LOCAL_PROJECT_FACTORY_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  88
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_002_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_002_CONTROL_PROMPTER_DUAL_INTEGRATION_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  93
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_003_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_003_GOVERNED_CONTROL_PROMPTER_EXECUTION_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  94
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_004_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_004_SOLUTION_BUILDER_COMMERCIAL_PACKAGE_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  95
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_005_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_005_DEMAND_RADAR_AND_MATCHING_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  96
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_006_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_006_AUTOMATION_BY_GATES_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  96
+                   },
+                   {
+                       "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\control\\constructor_phase_007_status.json",
+                       "ok":  true,
+                       "status":  "PHASE_007_MULTI_PROJECT_MULTI_REPO_FACTORY_CLOSED_LOCAL_ONLY",
+                       "closed":  true,
+                       "readiness":  96
+                   }
+               ],
+    "missing_phase_status_count":  0,
+    "missing_phase_status":  [
+
+                             ],
+    "not_closed_count":  0,
+    "not_closed":  [
+
+                   ],
+    "normalized":  [
+                       "phase_001_status"
+                   ],
+    "updated_at":  "2026-06-05T21:41:04"
+}

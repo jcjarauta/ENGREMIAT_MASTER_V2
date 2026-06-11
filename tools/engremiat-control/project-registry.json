@@ -1,0 +1,72 @@
+﻿[
+    {
+        "project_id":  "04a7339e-1b0e-4910-936b-22dd9d90368e",
+        "name":  "demo_project",
+        "status":  "created",
+        "db_path":  "engremiat_db\\projects\\04a7339e-1b0e-4910-936b-22dd9d90368e.json",
+        "created_at":  "2026-06-09T06:49:35",
+        "updated_at":  "",
+        "tasks_count":  "",
+        "source":  ""
+    },
+    {
+        "project_id":  "b2d3b81e-7d9f-4a39-8b19-7a3105bab10f",
+        "name":  "Proyecto Telegram Demo",
+        "status":  "executed",
+        "db_path":  "engremiat_db\\projects\\b2d3b81e-7d9f-4a39-8b19-7a3105bab10f.json",
+        "created_at":  "2026-06-09T06:57:52",
+        "updated_at":  "2026-06-09T07:03:53",
+        "tasks_count":  "3",
+        "source":  "telegram_project_engine"
+    },
+    {
+        "project_id":  "3223b391-64ed-4103-83b7-af549a5012c4",
+        "name":  "Proyecto Telegram Stage06",
+        "status":  "executed",
+        "db_path":  "engremiat_db\\projects\\3223b391-64ed-4103-83b7-af549a5012c4.json",
+        "created_at":  "2026-06-09T07:06:24",
+        "updated_at":  "2026-06-09T07:08:02",
+        "tasks_count":  "3",
+        "source":  ""
+    },
+    {
+        "project_id":  "67e63eb0-b893-42fa-bdcb-9112b28198c4",
+        "name":  "Proyecto Telegram Nuevo",
+        "status":  "created",
+        "db_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\engremiat_db\\projects\\67e63eb0-b893-42fa-bdcb-9112b28198c4.json",
+        "created_at":  "2026-06-09T07:16:04",
+        "updated_at":  "2026-06-09T07:16:04",
+        "tasks_count":  "0",
+        "source":  "dispatcher_project_create"
+    },
+    {
+        "project_id":  "4cb9f2d1-3380-43fa-8f3e-f56e98e45985",
+        "name":  "Proyecto Telegram Real 01",
+        "status":  "executed",
+        "db_path":  "engremiat_db\\projects\\4cb9f2d1-3380-43fa-8f3e-f56e98e45985.json",
+        "created_at":  "2026-06-09T07:27:39",
+        "updated_at":  "2026-06-09T07:30:36",
+        "tasks_count":  "3",
+        "source":  "telegram_dispatcher"
+    },
+    {
+        "project_id":  "442b15b9-29d8-49ee-9f73-d9c75ecf6584",
+        "name":  "Primer proyecto comunitario desde Telegram",
+        "status":  "executed",
+        "db_path":  "engremiat_db\\projects\\442b15b9-29d8-49ee-9f73-d9c75ecf6584.json",
+        "created_at":  "2026-06-09T07:36:33",
+        "updated_at":  "2026-06-09T07:42:02",
+        "tasks_count":  3,
+        "source":  "project_real_input_validated_preview"
+    },
+    {
+        "project_id":  "d5a05193-57b8-48d8-a2d1-822a2a52d377",
+        "name":  "Proyecto Telegram Nuevo",
+        "status":  "created",
+        "db_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\engremiat_db\\projects\\d5a05193-57b8-48d8-a2d1-822a2a52d377.json",
+        "created_at":  "2026-06-09T07:40:07",
+        "updated_at":  "2026-06-09T07:40:07",
+        "tasks_count":  "0",
+        "source":  "dispatcher_project_create"
+    }
+]

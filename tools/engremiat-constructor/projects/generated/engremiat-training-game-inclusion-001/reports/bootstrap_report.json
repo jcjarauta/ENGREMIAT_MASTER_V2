@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PROJECT_BOOTSTRAP_REPORT",
+    "ok":  true,
+    "decision":  "PROJECT_BOOTSTRAPPED_FROM_NEED_LOCAL_ONLY",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "project_name":  "Training Game Inclusion",
+    "origin_need_id":  "need-2026-001",
+    "template_type":  "training-game",
+    "project_dir":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-constructor\\projects\\generated\\engremiat-training-game-inclusion-001",
+    "created_from_template_count":  12,
+    "git_executed":  false,
+    "commit_done":  false,
+    "push_done":  false,
+    "remote_repo_creation_allowed":  false,
+    "external_api_allowed":  false,
+    "updated_at":  "2026-06-05T12:45:40"
+}

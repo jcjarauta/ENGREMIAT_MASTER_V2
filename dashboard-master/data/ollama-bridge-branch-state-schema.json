@@ -1,0 +1,82 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "2026-06-02 08:58:22",
+    "purpose":  "Definir el esquema de estado de ramas para el puente Ollama y control humano",
+    "branches":  [
+                     {
+                         "branch_id":  "GIT_NOISE_CLASSIFICATION",
+                         "state":  "PENDING",
+                         "description":  "Rama pendiente de ejecutar clasificación Git",
+                         "next_actions":  [
+                                              "RUN_LOCAL_AI",
+                                              "PAUSE_BRANCH",
+                                              "SKIP_TO_OTHER_SAFE_BRANCH"
+                                          ]
+                     },
+                     {
+                         "branch_id":  "DASHBOARD_OPERATIVE_CENTER",
+                         "state":  "DONE",
+                         "description":  "Dashboard operativo V1 ya cerrado",
+                         "next_actions":  [
+                                              "NONE"
+                                          ]
+                     },
+                     {
+                         "branch_id":  "DASHBOARD_EXECUTABLE_FUNCTIONS",
+                         "state":  "PENDING",
+                         "description":  "Acciones ejecutables pendientes",
+                         "next_actions":  [
+                                              "WAIT_GIT_NOISE",
+                                              "RUN_READONLY"
+                                          ]
+                     },
+                     {
+                         "branch_id":  "TELEGRAM_OPERATIVE_BOT",
+                         "state":  "FUTURE",
+                         "description":  "Bot Telegram futuro",
+                         "next_actions":  [
+                                              "BUILD_BUTTONS",
+                                              "WAIT_SAFE_BRANCH"
+                                          ]
+                     }
+                 ],
+    "telegram_buttons_seed":  [
+                                  {
+                                      "id":  "BTN_SHOW_QUEUE",
+                                      "label":  "Estado cola",
+                                      "action":  "SHOW_QUEUE_STATUS",
+                                      "kind":  "READONLY"
+                                  },
+                                  {
+                                      "id":  "BTN_SHOW_PAUSED",
+                                      "label":  "Pausadas",
+                                      "action":  "SHOW_PAUSED_BRANCHES",
+                                      "kind":  "READONLY"
+                                  },
+                                  {
+                                      "id":  "BTN_RETRY_BRANCH",
+                                      "label":  "Reintentar rama",
+                                      "action":  "RETRY_LOCAL_AI_BRANCH",
+                                      "kind":  "LOCAL_AI_WITH_CONFIRMATION"
+                                  },
+                                  {
+                                      "id":  "BTN_RESUME_BRANCH",
+                                      "label":  "Reanudar rama",
+                                      "action":  "RESUME_BRANCH",
+                                      "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION"
+                                  },
+                                  {
+                                      "id":  "BTN_PAUSE_BRANCH",
+                                      "label":  "Pausar rama",
+                                      "action":  "PAUSE_BRANCH",
+                                      "kind":  "QUEUE_CONTROL_WITH_CONFIRMATION"
+                                  },
+                                  {
+                                      "id":  "BTN_COPY_REPORT",
+                                      "label":  "Reporte ChatGPT",
+                                      "action":  "COPY_BRANCH_REPORT_TO_CHATGPT",
+                                      "kind":  "BRIDGE_READONLY"
+                                  }
+                              ],
+    "next_recommended_action":  "HYPER_OLLAMA_BRIDGE_DESIGN_003_TIMEOUT_AND_PAUSE_POLICY"
+}

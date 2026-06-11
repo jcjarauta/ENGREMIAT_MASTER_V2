@@ -1,0 +1,32 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_QUEUE_INTAKE_CONTRACT_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-REPAIR-MISSING-ARTIFACTS-AND-CLOSE",
+    "decision":  "QUEUE_INTAKE_CONTRACT_READY_BY_REPAIR",
+    "required_item_fields":  [
+                                 "item_id",
+                                 "item_type",
+                                 "source",
+                                 "objective",
+                                 "scope",
+                                 "safety_mode",
+                                 "human_authorization_status",
+                                 "created_at"
+                             ],
+    "allowed_item_types":  [
+                               "LOCAL_REVIEW_TASK",
+                               "LOCAL_GENERATION_TASK",
+                               "LOCAL_VALIDATION_TASK",
+                               "HUMAN_GATE_TASK",
+                               "SNAPSHOT_EXPORT_TASK"
+                           ],
+    "blocked_item_types":  [
+                               "EXTERNAL_AI_TASK",
+                               "API_TASK",
+                               "BROWSER_TASK",
+                               "REAL_WORKER_TASK",
+                               "GOOGLE_WRITE_TASK"
+                           ],
+    "default_safety_mode":  "LOCAL_ONLY",
+    "next":  "STAGE_CLOSE"
+}

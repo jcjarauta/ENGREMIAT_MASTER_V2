@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F007_HUMAN_REVIEW_GATE_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-078-batch-002-onboarding_kit",
+    "human_review_required":  true,
+    "selected_decision":  "HOLD",
+    "execution_allowed":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

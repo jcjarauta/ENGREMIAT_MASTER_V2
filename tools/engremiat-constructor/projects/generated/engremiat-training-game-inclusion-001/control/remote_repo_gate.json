@@ -1,0 +1,15 @@
+﻿{
+    "type":  "ENGREMIAT_REMOTE_REPO_CREATION_GATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "remote_repo_creation_allowed":  false,
+    "human_authorization_required":  true,
+    "authorization_status":  "PENDING_SPECIFIC_REMOTE_REPO_AUTHORIZATION",
+    "github_api_allowed":  false,
+    "push_allowed":  false,
+    "fetch_allowed":  false,
+    "merge_allowed":  false,
+    "reason":  "Crear repositorio remoto nuevo es accion sensible separada del bootstrap local.",
+    "next_recommended_action":  "WAIT_FOR_REMOTE_REPO_AUTHORIZATION_OR_KEEP_LOCAL",
+    "updated_at":  "2026-06-05T20:16:02"
+}

@@ -1,0 +1,198 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOCHECK_RUN_LOCKED_001",
+    "ok":  true,
+    "created_at":  "2026-06-04T13:03:01+02:00",
+    "mode":  "LOCKED_LOCAL_ONLY",
+    "manual_mode":  "MANUAL_PASTE_ONLY",
+    "external_actions_allowed":  false,
+    "google_api_allowed":  false,
+    "drive_real_allowed":  false,
+    "apps_script_execute_allowed":  false,
+    "schema_ref":  "tools/engremiat-control/autocheck/engremiat_control_autocheck_schema_locked.json",
+    "checks":  [
+                   {
+                       "check_id":  "CHECK_REQUIRED_ARTIFACTS_EXIST_LOCKED",
+                       "check_type":  "ARTIFACT_EXISTS_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_close_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_snapshot_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_seed_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_panel_patch_locked.json",
+                                          "tools/engremiat-control/panel/engremiat_control_panel_export_live_status_locked.html",
+                                          "tools/engremiat-control/human-gate/engremiat_control_human_gate_receipt_locked.json",
+                                          "tools/engremiat-control/operator-queue/engremiat_control_operator_queue_close_locked.json",
+                                          "tools/engremiat-control/hypers/engremiat_control_next_hyper_locked_001.json"
+                                      ],
+                       "result":  "required_artifacts_checked=8",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_JSON_ARTIFACTS_PARSE_LOCKED",
+                       "check_type":  "JSON_PARSE_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_close_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_snapshot_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_seed_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_panel_patch_locked.json",
+                                          "tools/engremiat-control/human-gate/engremiat_control_human_gate_receipt_locked.json",
+                                          "tools/engremiat-control/operator-queue/engremiat_control_operator_queue_close_locked.json",
+                                          "tools/engremiat-control/hypers/engremiat_control_next_hyper_locked_001.json",
+                                          "tools/engremiat-control/autocheck/engremiat_control_autocheck_schema_locked.json"
+                                      ],
+                       "result":  "json_artifacts_checked=8",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_GIT_TREE_CLEAN_LOCKED",
+                       "check_type":  "GIT_STATUS_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER"
+                                      ],
+                       "result":  "tree_clean=True",
+                       "issues":  [
+                                      ""
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_REMOTE_SYNC_LOCKED",
+                       "check_type":  "REMOTE_SYNC_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER"
+                                      ],
+                       "result":  "remote_sync_raw=0\t0\r\n",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_EXTERNAL_ACTIONS_BLOCKED_LOCKED",
+                       "check_type":  "SAFETY_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/autocheck/engremiat_control_autocheck_schema_locked.json",
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_snapshot_locked.json",
+                                          "tools/engremiat-control/human-gate/engremiat_control_human_gate_receipt_locked.json"
+                                      ],
+                       "result":  "external_google_drive_apps_script_blocked_checked",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_LIVE_STATUS_READY_LOCKED",
+                       "check_type":  "LIVE_STATUS_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/live-status/engremiat_control_live_status_snapshot_locked.json"
+                                      ],
+                       "result":  "live_status_snapshot_checked",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_HUMAN_GATE_APPROVED_LOCKED",
+                       "check_type":  "HUMAN_GATE_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/human-gate/engremiat_control_human_gate_receipt_locked.json"
+                                      ],
+                       "result":  "human_gate_receipt_checked",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   },
+                   {
+                       "check_id":  "CHECK_PANEL_HTML_EXISTS_LOCKED",
+                       "check_type":  "PANEL_CHECK_LOCKED",
+                       "status":  "PASS_LOCKED",
+                       "severity":  "INFO",
+                       "mode":  "LOCKED_LOCAL_ONLY",
+                       "input_refs":  [
+                                          "tools/engremiat-control/panel/engremiat_control_panel_export_live_status_locked.html"
+                                      ],
+                       "result":  "panel_exists=True",
+                       "issues":  [
+
+                                  ],
+                       "evidence_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "evidence_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "created_at":  "2026-06-04T13:03:01+02:00",
+                       "updated_at":  "2026-06-04T13:03:01+02:00",
+                       "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+                   }
+               ],
+    "metrics":  {
+                    "checks_count":  8,
+                    "passed_count":  8,
+                    "warned_count":  0,
+                    "failed_count":  0,
+                    "tree_clean":  true,
+                    "remote_synced":  true
+                },
+    "git":  {
+                "tree_clean":  true,
+                "status_raw":  "",
+                "remote_sync_raw":  "0\t0\r\n",
+                "remote_synced":  true,
+                "git_head":  "e1a10c5 [ENGREMIAT_CONTROL] Add locked autocheck schema\r\n"
+            },
+    "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_AUTOCHECK_CLOSE_LOCKED"
+}

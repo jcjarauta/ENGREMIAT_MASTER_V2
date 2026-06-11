@@ -1,0 +1,88 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_115G_WORKER_RESPONSE_INTEGRATION_SIMULATION_VALIDATION_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:47:36",
+    "checks":  [
+                   {
+                       "id":  "C01",
+                       "label":  "proposal_json_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C02",
+                       "label":  "proposal_md_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C03",
+                       "label":  "risk_register_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C04",
+                       "label":  "human_inputs_created",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C05",
+                       "label":  "financing_angles_present",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C06",
+                       "label":  "digital_products_present",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C07",
+                       "label":  "risks_present",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C08",
+                       "label":  "integration_not_allowed",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C09",
+                       "label":  "delegation_not_allowed",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C10",
+                       "label":  "no_ai_ollama_external_worker_operator",
+                       "ok":  true
+                   }
+               ],
+    "passed_count":  10,
+    "failed_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "integration_simulation_ok":  true,
+    "proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-115g-worker-response-integration-simulation-dry-run\\proposal\\local_project_proposal_draft_115g.json",
+    "risk_register_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-115g-worker-response-integration-simulation-dry-run\\proposal\\local_project_risk_register_115g.json",
+    "human_inputs_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-115g-worker-response-integration-simulation-dry-run\\proposal\\local_project_human_inputs_needed_115g.json",
+    "integration_allowed_now":  false,
+    "delegation_allowed_now":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "integration_simulation_executed":  true,
+                   "real_integration_executed":  false,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_116G_REVIEW_WORKER_RESPONSE_INTEGRATION_SIMULATION_RESULT"
+}

@@ -1,0 +1,24 @@
+﻿{
+    "type":  "GLOBAL_CONTROL_PANEL_TEST_PLAN",
+    "version":  4,
+    "created_at":  "2026-06-02T11:34:19.8856033+02:00",
+    "purpose":  "Pruebas pre-Telegram del panel operativo.",
+    "tests":  [
+                  {
+                      "id":  "TEST-001",
+                      "title":  "JSON base parsea",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "TEST-002",
+                      "title":  "HTML contiene secciones operativas",
+                      "status":  "ready"
+                  },
+                  {
+                      "id":  "TEST-003",
+                      "title":  "Botones preparan payload sin ejecutar acciones",
+                      "status":  "ready"
+                  }
+              ],
+    "next_after_smoke":  "HYPER_006_TELEGRAM_CONTROL_PREP_001"
+}

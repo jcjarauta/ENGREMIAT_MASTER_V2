@@ -1,0 +1,41 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_103G_WORKER_RETURN_CONTRACT_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:16:49",
+    "expected_format":  "JSON_OBJECT_PLUS_OPTIONAL_SHORT_MD",
+    "required_json_keys":  [
+                               "ok",
+                               "worker",
+                               "behavior_review",
+                               "risks",
+                               "recommended_next_local_test",
+                               "files_to_create_or_update",
+                               "human_gate_required",
+                               "integration_notes"
+                           ],
+    "forbidden_return_content":  [
+                                     "instructions_to_execute_external_api",
+                                     "instructions_to_run_browser_or_cdp",
+                                     "instructions_to_modify_git_directly",
+                                     "instructions_to_run_real_worker_without_gate"
+                                 ],
+    "integration_policy":  "HUMAN_REVIEW_BEFORE_ANY_WRITE",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "external_worker_allowed_now":  false,
+                   "ollama_execution_allowed_now":  false,
+                   "pre_worker_internal_state_only":  true,
+                   "human_review_required":  true
+               }
+}

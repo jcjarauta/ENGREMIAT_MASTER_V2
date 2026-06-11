@@ -1,0 +1,67 @@
+﻿{
+    "phase":  "NEW_PC_DECENTRALIZED_ARCHITECTURE_005_BUILD_LEGACY_HANDOFF_PORTABLE_KIT",
+    "ok":  true,
+    "decision":  "LEGACY_HANDOFF_PORTABLE_KIT_READY",
+    "created_at":  "2026-06-11T18:11:17",
+    "kit_root":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116",
+    "zip_path":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116.zip",
+    "legacy_execution":  false,
+    "repo_copy":  false,
+    "migration_started":  false,
+    "git_write":  false,
+    "push":  false,
+    "copied_count":  9,
+    "missing_count":  0,
+    "copied":  [
+                   {
+                       "role":  "legacy_preflight_readonly",
+                       "source":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_LEGACY_PC_001_FREEZE_EXPORT_PREFLIGHT_READONLY.ps1",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\scripts\\RUN_ON_LEGACY_PC_001_FREEZE_EXPORT_PREFLIGHT_READONLY.ps1"
+                   },
+                   {
+                       "role":  "legacy_package_after_freeze",
+                       "source":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_LEGACY_PC_002_CREATE_EXPORT_PACKAGE_AFTER_FREEZE.ps1",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\scripts\\RUN_ON_LEGACY_PC_002_CREATE_EXPORT_PACKAGE_AFTER_FREEZE.ps1"
+                   },
+                   {
+                       "role":  "main_receive_validate",
+                       "source":  "C:\\ENGREMIAT\\architecture\\legacy-export-scripts\\RUN_ON_MAIN_NODE_003_RECEIVE_AND_VALIDATE_LEGACY_PACKAGE.ps1",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\scripts\\RUN_ON_MAIN_NODE_003_RECEIVE_AND_VALIDATE_LEGACY_PACKAGE.ps1"
+                   },
+                   {
+                       "role":  "freeze_contract",
+                       "source":  "C:\\ENGREMIAT\\architecture\\contracts\\LEGACY_FREEZE_AND_EXPORT_CONTRACT.md",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\contracts\\LEGACY_FREEZE_AND_EXPORT_CONTRACT.md"
+                   },
+                   {
+                       "role":  "freeze_contract_json",
+                       "source":  "C:\\ENGREMIAT\\architecture\\migration\\legacy-freeze-export-contract.v1.json",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\contracts\\legacy-freeze-export-contract.v1.json"
+                   },
+                   {
+                       "role":  "freeze_manual",
+                       "source":  "C:\\ENGREMIAT\\architecture\\manuals\\LEGACY_FREEZE_EXPORT_MANUAL.md",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\docs\\LEGACY_FREEZE_EXPORT_MANUAL.md"
+                   },
+                   {
+                       "role":  "handoff_protocol",
+                       "source":  "C:\\ENGREMIAT\\architecture\\migration\\OLD_TO_NEW_PC_HANDOFF_PROTOCOL.md",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\docs\\OLD_TO_NEW_PC_HANDOFF_PROTOCOL.md"
+                   },
+                   {
+                       "role":  "topology_manual",
+                       "source":  "C:\\ENGREMIAT\\architecture\\nodes\\ENGREMIAT_THREE_NODE_TOPOLOGY.md",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\docs\\ENGREMIAT_THREE_NODE_TOPOLOGY.md"
+                   },
+                   {
+                       "role":  "node_registry_manual",
+                       "source":  "C:\\ENGREMIAT\\architecture\\registry\\ENGREMIAT_NODE_REGISTRY.md",
+                       "copied_to":  "C:\\ENGREMIAT\\packages\\migration\\ENGREMIAT_LEGACY_HANDOFF_KIT_20260611-181116\\docs\\ENGREMIAT_NODE_REGISTRY.md"
+                   }
+               ],
+    "missing":  [
+
+                ],
+    "recommended_old_pc_first_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File .\\scripts\\RUN_ON_LEGACY_PC_001_FREEZE_EXPORT_PREFLIGHT_READONLY.ps1",
+    "recommended_next":  "copy_handoff_kit_to_old_pc_after_current_development_closes"
+}

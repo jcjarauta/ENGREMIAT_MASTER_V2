@@ -1,0 +1,13 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_HEALTH_GATE_RUNTIME_STATE_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-4-7-HEALTH-GATE-RUNTIME-BINDING",
+    "decision":  "HEALTH_GATE_RUNTIME_BOUND",
+    "health_package_exists":  true,
+    "health_package":  "tools/engremiat-control/system-health-sanitation/HEALTH_SANITATION_REUSABLE_PACKAGE_CLOSE_PHASE_012.json",
+    "last_known_health_decision":  "BLOCK_NEW_GROWTH_CREATE_CONTROL_MODULE_INDEX",
+    "new_worker_creation_allowed":  false,
+    "growth_requires_health_go":  true,
+    "default_runtime_decision":  "ALLOW_LOCAL_STUBS_BLOCK_REAL_WORKERS",
+    "next":  "CREATE_OFFICIAL_BRIDGE_EXPORT_BINDING"
+}

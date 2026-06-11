@@ -1,0 +1,27 @@
+﻿{
+    "type":  "HYPER_015_PANEL_VISUAL_PACK_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T12:33:49",
+    "root":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER",
+    "html_file":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\visual-pack\\master-control-panel-visual-pack.html",
+    "current_node":  "REVIEW-001",
+    "current_status":  "READY",
+    "queue_health":  "READY",
+    "counts":  {
+                   "READY":  "12",
+                   "RUNNING":  "0",
+                   "PAUSED":  "6",
+                   "BLOCKED":  "0",
+                   "DONE":  "0",
+                   "TOTAL":  "18"
+               },
+    "evidence":  {
+                     "runs_scanned":  "25",
+                     "nodes_with_evidence":  "18",
+                     "nodes_without_evidence":  "0"
+                 },
+    "next_recommended_action":  "HYPER_016_TELEGRAM_READONLY_MIRROR_SPEC_001",
+    "git_actions":  false,
+    "telegram_real_actions":  false,
+    "external_actions":  false
+}

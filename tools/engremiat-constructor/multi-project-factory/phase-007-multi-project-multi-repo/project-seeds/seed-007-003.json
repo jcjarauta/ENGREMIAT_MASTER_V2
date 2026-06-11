@@ -1,0 +1,15 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_007_PROJECT_SEED",
+    "ok":  true,
+    "seed":  {
+                 "seed_id":  "seed-007-003",
+                 "project_slug":  "social-impact-demo-kit",
+                 "source_demand":  "event social impact demo",
+                 "recommended_template":  "service-package",
+                 "factory_decision":  "LOCAL_PROJECT_DRAFT_ONLY",
+                 "remote_repo_allowed":  false
+             },
+    "local_only":  true,
+    "remote_repo_creation_allowed":  false,
+    "updated_at":  "2026-06-05T21:37:53"
+}

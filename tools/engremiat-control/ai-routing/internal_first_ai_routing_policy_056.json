@@ -1,0 +1,92 @@
+﻿{
+    "type":  "ENGREMIAT_INTERNAL_FIRST_AI_ROUTING_POLICY_056",
+    "ok":  true,
+    "created_at":  "2026-06-05T08:14:26+02:00",
+    "policy_status":  "CREATED_NO_REAL_AI_EXECUTION",
+    "source_of_truth":  "ENGREMIAT_CONTROL_CONTEXT_PACKS_AND_CONTRACTS",
+    "route_order":  [
+                        {
+                            "layer":  1,
+                            "channel":  "ENGREMIAT_PROMPT_INTERNAL_CONTRACTS",
+                            "role":  "standardize_prompts_norms_contracts_safety_flags",
+                            "preferred_for":  [
+                                                  "all_tasks_before_any_ai_call"
+                                              ],
+                            "can_execute":  false,
+                            "real_call_allowed_now":  false
+                        },
+                        {
+                            "layer":  2,
+                            "channel":  "LOCAL_OPEN_SOURCE_AI_WORKER",
+                            "role":  "develop_tasks_review_code_validate_outputs",
+                            "preferred_for":  [
+                                                  "small_code_tasks",
+                                                  "json_validation",
+                                                  "log_summary",
+                                                  "local_simulation"
+                                              ],
+                            "can_execute":  false,
+                            "real_call_allowed_now":  false
+                        },
+                        {
+                            "layer":  3,
+                            "channel":  "EXTERNAL_AI_SUPPORT_WORKER",
+                            "role":  "punctual_support_specialist_second_opinion_generation",
+                            "preferred_for":  [
+                                                  "specialized_reasoning",
+                                                  "market_support",
+                                                  "alternative_solution",
+                                                  "creative_variants",
+                                                  "complex_refactor_review"
+                                              ],
+                            "can_execute":  false,
+                            "real_call_allowed_now":  false
+                        },
+                        {
+                            "layer":  4,
+                            "channel":  "HUMAN_REVIEW",
+                            "role":  "direction_safety_gate_priority_decision",
+                            "preferred_for":  [
+                                                  "authorization",
+                                                  "risk_transition",
+                                                  "scope_change"
+                                              ],
+                            "can_execute":  false,
+                            "real_call_allowed_now":  true
+                        },
+                        {
+                            "layer":  5,
+                            "channel":  "OPERATOR",
+                            "role":  "execute_validated_package_only",
+                            "preferred_for":  [
+                                                  "local_execution_after_gate"
+                                              ],
+                            "can_execute":  false,
+                            "real_call_allowed_now":  false
+                        }
+                    ],
+    "routing_rules":  [
+                          "Every task starts as normalized ENGREMIAT work packet.",
+                          "External AI never receives raw uncontrolled project context.",
+                          "External AI receives minimized packet with allowed scope and expected output contract.",
+                          "External AI output must return as proposal, not executable command.",
+                          "Control validates output before worker/operator package.",
+                          "Human gate required for enabling any real external AI call."
+                      ],
+    "security":  {
+                     "internal_ai_real_call_allowed":  false,
+                     "local_open_source_ai_real_call_allowed":  false,
+                     "external_ai_real_call_allowed":  false,
+                     "browser_real_allowed":  false,
+                     "browser_new_conversation_allowed":  false,
+                     "cdp_allowed":  false,
+                     "clipboard_allowed":  false,
+                     "gmail_api_allowed":  false,
+                     "google_sheets_write_allowed":  false,
+                     "git_branch_real_create_allowed":  false,
+                     "workers_ia_allowed":  false,
+                     "worker_real_execution_allowed":  false,
+                     "operator_execution_allowed":  false,
+                     "human_review_required":  true
+                 }
+}

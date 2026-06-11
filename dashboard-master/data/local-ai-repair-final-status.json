@@ -1,0 +1,61 @@
+﻿{
+    "updated_at":  "2026-06-01T22:10:38",
+    "type":  "LOCAL_AI_REPAIR_READONLY_PREP_FINAL_STATUS",
+    "ok":  true,
+    "hyper":  "MASTER_LOCAL_AI_REPAIR_READONLY_PREP",
+    "hyper_closed":  true,
+    "readonly":  true,
+    "ollama_real_execution_confirmed":  false,
+    "repair_applied":  false,
+    "patch_allowed":  false,
+    "automation_real_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "artifacts":  [
+                      {
+                          "name":  "pipeline_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\local-ai-repair-pipeline.json",
+                          "exists":  true,
+                          "bytes":  1910
+                      },
+                      {
+                          "name":  "contract_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-contract.json",
+                          "exists":  true,
+                          "bytes":  4066
+                      },
+                      {
+                          "name":  "prompt_template_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-prompt-template.json",
+                          "exists":  true,
+                          "bytes":  676
+                      },
+                      {
+                          "name":  "prompt_template_txt",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-prompt-template.txt",
+                          "exists":  true,
+                          "bytes":  951
+                      },
+                      {
+                          "name":  "sample_input_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-sample-input.json",
+                          "exists":  true,
+                          "bytes":  1162
+                      },
+                      {
+                          "name":  "review_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-review.json",
+                          "exists":  true,
+                          "bytes":  846
+                      },
+                      {
+                          "name":  "validation_json",
+                          "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\local-ai-repair-validation.json",
+                          "exists":  true,
+                          "bytes":  1222
+                      }
+                  ],
+    "missing_count":  0,
+    "conclusion":  "Preparacion readonly de Ollama cerrada: contrato, prompt, input de muestra, smoke simulado y review sin aplicar quedan listos. No se ha ejecutado reparacion real ni se ha aplicado parche.",
+    "next_recommended_action":  "MASTER_WATCHDOG_001_REWRITE_MINIMAL_STABLE_BEFORE_AUTOMATION"
+}

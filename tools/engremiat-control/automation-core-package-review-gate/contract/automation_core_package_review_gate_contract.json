@@ -1,0 +1,46 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_PACKAGE_REVIEW_GATE_CONTRACT_001",
+    "phase":  "AUTOMATION_CORE_PACKAGE_REVIEW_GATE",
+    "ok":  true,
+    "generated_at":  "2026-06-06T07:52:29.8039093Z",
+    "mode":  "LOCAL_ONLY_HUMAN_REVIEW_GATE_NO_EXECUTION",
+    "review_contract_ready":  true,
+    "package_id":  "automation-core-local-decision-package-001",
+    "package_status":  "queued_but_not_executable",
+    "source_package_final":  "tools/engremiat-control/reports/automation_core_local_decision_queue_package_final.json",
+    "source_package":  "tools/engremiat-control/automation-core-local-decision-package/packages/automation-core-local-decision-package-001.json",
+    "source_queue_index":  "tools/engremiat-control/automation-core-local-decision-package/queue-stub/queue_index.json",
+    "review_scope":  [
+                         "package_status",
+                         "safety_gates",
+                         "intent",
+                         "payload",
+                         "simulation_eligibility",
+                         "rewrite_or_hold_decision"
+                     ],
+    "allowed_next_decisions":  [
+                                   "HOLD_PACKAGE",
+                                   "APPROVE_FOR_LOCAL_SIMULATION_ONLY",
+                                   "REQUEST_PACKAGE_REWRITE",
+                                   "ARCHIVE_PACKAGE"
+                               ],
+    "default_decision":  "HOLD_PACKAGE",
+    "recommended_decision":  "APPROVE_FOR_LOCAL_SIMULATION_ONLY",
+    "recommendation_reason":  "El paquete está en cola, no es ejecutable y todos los gates críticos siguen cerrados; puede pasar a simulación local stub si la revisión lo acepta.",
+    "human_review_required":  true,
+    "package_can_be_executable_now":  false,
+    "gates":  {
+                  "local_only":  true,
+                  "external_actions_executed":  false,
+                  "google_api_call_allowed":  false,
+                  "real_worker_allowed":  false,
+                  "decision_auto_execution_allowed":  false,
+                  "worker_execution_allowed":  false,
+                  "simulation_real_execution_allowed":  false,
+                  "browser_used":  false,
+                  "cdp_used":  false,
+                  "clipboard_used":  false,
+                  "webapp_execution_allowed":  false
+              },
+    "next":  "CREATE_AUTOMATION_CORE_PACKAGE_REVIEW_GATE"
+}

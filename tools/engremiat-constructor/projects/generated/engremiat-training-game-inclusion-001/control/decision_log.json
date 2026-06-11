@@ -1,0 +1,12 @@
+﻿{
+    "type":  "ENGREMIAT_PROJECT_DECISION_LOG",
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "decisions":  [
+                      {
+                          "decision":  "BUILD_NEW_PROJECT",
+                          "reason":  "Proyecto creado desde necesidad normalizada.",
+                          "created_at":  "2026-06-05T12:45:40"
+                      }
+                  ]
+}
+

@@ -1,0 +1,28 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_INPUT_CONTRACT_V1",
+    "ok":  true,
+    "decision":  "INPUT_CONTRACT_READY",
+    "accepted_sources":  [
+                             "human_gate",
+                             "control_bridge_inbox_snapshot",
+                             "local_json_package",
+                             "health_sanitation_decision",
+                             "official_bridge_v1_status"
+                         ],
+    "required_fields":  [
+                            "request_id",
+                            "source",
+                            "objective",
+                            "scope",
+                            "safety_mode",
+                            "human_authorization_status"
+                        ],
+    "safety_defaults":  {
+                            "safety_mode":  "LOCAL_ONLY",
+                            "external_actions_executed":  false,
+                            "google_api_call_allowed":  false,
+                            "real_worker_allowed":  false,
+                            "human_review_required":  true
+                        },
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

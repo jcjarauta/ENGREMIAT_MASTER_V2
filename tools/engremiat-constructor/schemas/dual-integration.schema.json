@@ -1,0 +1,43 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://engremiat.local/schemas/engremiat-constructor/dual-integration.schema.json",
+    "title":  "ENGREMIAT Constructor Dual Integration Contract",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "integration_id",
+                     "project_id",
+                     "control",
+                     "prompter",
+                     "commercial",
+                     "safety",
+                     "next_recommended_action",
+                     "updated_at"
+                 ],
+    "properties":  {
+                       "integration_id":  {
+                                              "type":  "string"
+                                          },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "control":  {
+                                       "type":  "object"
+                                   },
+                       "prompter":  {
+                                        "type":  "object"
+                                    },
+                       "commercial":  {
+                                          "type":  "object"
+                                      },
+                       "safety":  {
+                                      "type":  "object"
+                                  },
+                       "next_recommended_action":  {
+                                                       "type":  "string"
+                                                   },
+                       "updated_at":  {
+                                          "type":  "string"
+                                      }
+                   }
+}

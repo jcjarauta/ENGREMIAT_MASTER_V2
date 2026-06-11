@@ -1,0 +1,15 @@
+﻿{
+    "type":  "ENGREMIAT_REUSE_CANDIDATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "reusable_as":  [
+                        "training_game_template",
+                        "grant_project_template",
+                        "commercial_demo_package",
+                        "community_learning_module"
+                    ],
+    "reuse_score":  9,
+    "commercialization_ready":  "hypothesis",
+    "next_recommended_action":  "SIMULATE_MULTIPLE_NEEDS_INTAKE",
+    "updated_at":  "2026-06-05T20:25:15"
+}

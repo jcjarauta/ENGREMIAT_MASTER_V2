@@ -1,0 +1,37 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_077_REPEATABLE_DRY_RUN_BATCH_DECISION_EDITABLE_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_077_CREATE_REPEATABLE_DRY_RUN_BATCH_TEST_GATE",
+    "created_at":  "2026-06-05T09:44:00",
+    "editable_by_human":  true,
+    "decision_status":  "PENDING_HUMAN_BATCH_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "RUN_BATCH_DRY_RUN_3_SEEDS",
+    "allowed_decisions":  [
+                              "RUN_BATCH_DRY_RUN_3_SEEDS",
+                              "REDUCE_TO_1_SEED",
+                              "ADD_MORE_SEEDS_BEFORE_RUN",
+                              "HOLD",
+                              "REJECT_BATCH_TEST"
+                          ],
+    "human_note":  "Recomendado: RUN_BATCH_DRY_RUN_3_SEEDS. Sigue sin permitir IA real, workers reales, operador, APIs, Gmail, Sheets, navegador, CDP ni clipboard.",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "batch_real_execution_allowed":  false,
+                   "batch_gate_only":  true,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_078_APPLY_REPEATABLE_DRY_RUN_BATCH_GATE_DECISION"
+}

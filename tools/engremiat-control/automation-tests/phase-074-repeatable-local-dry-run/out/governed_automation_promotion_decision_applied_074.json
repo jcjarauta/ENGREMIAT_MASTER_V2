@@ -1,0 +1,26 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_074_R3_GOVERNED_AUTOMATION_PROMOTION_DECISION_APPLIED_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_074_R3_FIX_REPEATABLE_RUNNER_STABLE",
+    "created_at":  "2026-06-05T09:37:32",
+    "human_decision_from_chat":  "PROMOTE_TO_REPEATABLE_LOCAL_DRY_RUN",
+    "applied_status":  "PROMOTED_TO_REPEATABLE_LOCAL_DRY_RUN_NOT_REAL_AUTOMATION",
+    "runner_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\runner\\run-repeatable-local-dry-run-074.ps1",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION"
+}

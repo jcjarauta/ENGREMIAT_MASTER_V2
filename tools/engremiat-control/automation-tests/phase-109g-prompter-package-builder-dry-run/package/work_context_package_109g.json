@@ -1,0 +1,61 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_109G_WORK_CONTEXT_PACKAGE_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:32:16",
+    "objective":  "Preparar un paquete local para que un worker revise la financiación a la inversa de productos digitales dentro de Engremiat.",
+    "context":  "ENGREMIAT_PROMPTER should structure tasks before external or local workers execute anything.",
+    "package_status":  "DRAFT_READY_FOR_HUMAN_GATE",
+    "source_test":  "ENGREMIAT_PROMPTER_PACKAGE_BUILDER_DRY_RUN",
+    "strict_rules":  [
+                         "No ejecutar codigo del worker.",
+                         "No llamar IA real ni Ollama dentro de este test.",
+                         "No llamar APIs externas.",
+                         "No usar navegador, CDP, clipboard, Gmail ni Google Sheets.",
+                         "No ejecutar operador ni worker real.",
+                         "No integrar cambios sin gate humano.",
+                         "Mantener integration_allowed_now=false.",
+                         "Mantener worker_real_execution_allowed=false.",
+                         "Devolver contrato de salida verificable.",
+                         "Crear evidencia local parseable."
+                     ],
+    "constraints":  [
+                        "no real AI call",
+                        "no Ollama call in this test",
+                        "no external API",
+                        "no browser/CDP/clipboard",
+                        "no worker/operator execution",
+                        "output must be local package only",
+                        "human gate required before delegation"
+                    ],
+    "expected_package_fields":  [
+                                    "objective",
+                                    "context",
+                                    "strict_rules",
+                                    "worker_prompt_draft",
+                                    "return_contract",
+                                    "human_gate",
+                                    "safety"
+                                ],
+    "worker_candidate":  "UNASSIGNED_LOCAL_OR_EXTERNAL_WORKER_AFTER_GATE",
+    "recommended_worker_mode":  "REVIEW_ONLY_NO_EXECUTION",
+    "expected_worker_task":  "Revisar oportunidades de financiacion a la inversa para productos digitales y proponer estructura de proyecto financiable, sin ejecutar acciones externas.",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "package_builder_dry_run_executed":  true,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_110G_REVIEW_PROMPTER_PACKAGE_BUILDER_DRY_RUN_RESULT"
+}

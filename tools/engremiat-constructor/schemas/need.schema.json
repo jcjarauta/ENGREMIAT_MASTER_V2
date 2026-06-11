@@ -1,0 +1,181 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://engremiat.local/schemas/engremiat-constructor/need.schema.json",
+    "title":  "ENGREMIAT_CONSTRUCTOR Need Schema",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "need_id",
+                     "source_type",
+                     "source_name",
+                     "detected_by",
+                     "summary",
+                     "target_sector",
+                     "territory",
+                     "deadline",
+                     "funding_potential_eur",
+                     "commercial_potential",
+                     "internal_reuse_potential",
+                     "requires_humans",
+                     "requires_external_partner",
+                     "recommended_output",
+                     "status",
+                     "created_at"
+                 ],
+    "properties":  {
+                       "need_id":  {
+                                       "type":  "string",
+                                       "minLength":  6,
+                                       "description":  "Identificador unico de la necesidad detectada."
+                                   },
+                       "source_type":  {
+                                           "type":  "string",
+                                           "enum":  [
+                                                        "subvencion",
+                                                        "preventa",
+                                                        "voluntariado",
+                                                        "partner",
+                                                        "interna",
+                                                        "cliente",
+                                                        "territorio",
+                                                        "concurso",
+                                                        "formacion",
+                                                        "evento",
+                                                        "otro"
+                                                    ],
+                                           "description":  "Tipo de fuente que origina la necesidad."
+                                       },
+                       "source_name":  {
+                                           "type":  "string",
+                                           "minLength":  3,
+                                           "description":  "Nombre humano de la fuente u oportunidad."
+                                       },
+                       "detected_by":  {
+                                           "type":  "string",
+                                           "enum":  [
+                                                        "engremiat_control",
+                                                        "engremiat_prompter",
+                                                        "human",
+                                                        "worker",
+                                                        "external_import",
+                                                        "simulation"
+                                                    ],
+                                           "description":  "Actor o sistema que detecta la necesidad."
+                                       },
+                       "summary":  {
+                                       "type":  "string",
+                                       "minLength":  10,
+                                       "description":  "Resumen claro de la necesidad."
+                                   },
+                       "target_sector":  {
+                                             "type":  "array",
+                                             "minItems":  1,
+                                             "items":  {
+                                                           "type":  "string"
+                                                       },
+                                             "description":  "Sectores o temas asociados."
+                                         },
+                       "territory":  {
+                                         "type":  "string",
+                                         "minLength":  2,
+                                         "description":  "Territorio objetivo o alcance geografico."
+                                     },
+                       "deadline":  {
+                                        "type":  "string",
+                                        "description":  "Fecha limite conocida o none."
+                                    },
+                       "funding_potential_eur":  {
+                                                     "type":  "number",
+                                                     "minimum":  0,
+                                                     "description":  "Potencial economico estimado en euros."
+                                                 },
+                       "commercial_potential":  {
+                                                    "type":  "string",
+                                                    "enum":  [
+                                                                 "none",
+                                                                 "low",
+                                                                 "medium",
+                                                                 "high",
+                                                                 "unknown"
+                                                             ],
+                                                    "description":  "Potencial comercial inicial."
+                                                },
+                       "internal_reuse_potential":  {
+                                                        "type":  "string",
+                                                        "enum":  [
+                                                                     "none",
+                                                                     "low",
+                                                                     "medium",
+                                                                     "high",
+                                                                     "unknown"
+                                                                 ],
+                                                        "description":  "Potencial de reutilizacion interna."
+                                                    },
+                       "requires_humans":  {
+                                               "type":  "boolean",
+                                               "description":  "Indica si requiere participacion humana."
+                                           },
+                       "requires_external_partner":  {
+                                                         "type":  "boolean",
+                                                         "description":  "Indica si requiere partner externo."
+                                                     },
+                       "recommended_output":  {
+                                                  "type":  "array",
+                                                  "minItems":  1,
+                                                  "items":  {
+                                                                "type":  "string",
+                                                                "enum":  [
+                                                                             "project",
+                                                                             "demo",
+                                                                             "proposal",
+                                                                             "grant_file",
+                                                                             "commercial_offer",
+                                                                             "service_package",
+                                                                             "digital_product",
+                                                                             "training_game",
+                                                                             "research",
+                                                                             "backlog_item"
+                                                                         ]
+                                                            },
+                                                  "description":  "Salidas recomendadas."
+                                              },
+                       "constraints":  {
+                                           "type":  "array",
+                                           "items":  {
+                                                         "type":  "string"
+                                                     },
+                                           "description":  "Restricciones conocidas."
+                                       },
+                       "signals":  {
+                                       "type":  "array",
+                                       "items":  {
+                                                     "type":  "string"
+                                                 },
+                                       "description":  "Senales detectadas que justifican la oportunidad."
+                                   },
+                       "expected_beneficiaries":  {
+                                                      "type":  "array",
+                                                      "items":  {
+                                                                    "type":  "string"
+                                                                },
+                                                      "description":  "Beneficiarios o clientes potenciales."
+                                                  },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "DETECTED",
+                                                   "NORMALIZED",
+                                                   "SCORED",
+                                                   "WAITING_HUMAN_DECISION",
+                                                   "APPROVED_FOR_BUILD",
+                                                   "HOLD",
+                                                   "DISCARDED"
+                                               ],
+                                      "description":  "Estado de la necesidad."
+                                  },
+                       "created_at":  {
+                                          "type":  "string",
+                                          "description":  "Fecha local ISO simple de creacion."
+                                      }
+                   }
+}

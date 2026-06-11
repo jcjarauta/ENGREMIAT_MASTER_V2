@@ -1,0 +1,14 @@
+﻿{
+    "updated_at":  "2026-06-01T22:05:29",
+    "type":  "OLLAMA_REPAIR_PROMPT_TEMPLATE",
+    "version":  "1.0",
+    "readonly":  true,
+    "contract_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-contract.json",
+    "contract_exists":  true,
+    "template_txt":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-repair-prompt-template.txt",
+    "placeholder":  "{{INPUT_JSON}}",
+    "expected_output":  "JSON_ONLY",
+    "ollama_real_execution":  false,
+    "automation_real_execution":  false,
+    "next_recommended_action":  "MASTER_LOCAL_AI_REPAIR_006_BUILD_SAMPLE_INPUT_READONLY"
+}

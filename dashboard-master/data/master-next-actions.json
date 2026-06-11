@@ -1,0 +1,72 @@
+﻿{
+    "type":  "MASTER_DASHBOARD_NEXT_ACTIONS",
+    "ok":  true,
+    "generated_at":  "2026-06-03T13:43:48.8254601+02:00",
+    "decision":  "MASTER_DASHBOARD_NEXT_ACTIONS_BUILT_NO_MODEL_EXEC",
+    "source":  {
+                   "master_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\master-control-status.json",
+                   "ollama_status_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\dashboard-master\\data\\ollama-status.json",
+                   "operator_report_source":  "runs_stdout_fallback",
+                   "fallback_report_exists":  true,
+                   "ollama_gate":  "GO",
+                   "ollama_model":  "qwen2.5-coder:1.5b"
+               },
+    "actions":  [
+                    {
+                        "id":  "refresh_dashboard_status",
+                        "label":  "Refrescar panel Master",
+                        "command":  ".\\dashboard-master\\refresh-master-dashboard.cmd",
+                        "status":  "READY",
+                        "priority":  1,
+                        "safe":  true,
+                        "requires_model":  false,
+                        "requires_git":  false,
+                        "executes_automatically":  false
+                    },
+                    {
+                        "id":  "review_operator_latest_report",
+                        "label":  "Revisar ultimo reporte operador",
+                        "command":  "Get-Content .\\dashboard-master\\data\\master-control-status.json -Raw",
+                        "status":  "READY",
+                        "priority":  2,
+                        "safe":  true,
+                        "requires_model":  false,
+                        "requires_git":  false,
+                        "executes_automatically":  false
+                    },
+                    {
+                        "id":  "ollama_controlled_microtest",
+                        "label":  "Microtest Ollama controlado",
+                        "command":  "AUTORIZO_OLLAMA_MICROTEST_SAFE_RUNNER_PIPE_0006",
+                        "status":  "AVAILABLE_WITH_LIMITS",
+                        "priority":  3,
+                        "safe":  true,
+                        "requires_model":  true,
+                        "requires_git":  false,
+                        "executes_automatically":  false
+                    },
+                    {
+                        "id":  "prepare_dashboard_action_card",
+                        "label":  "Preparar tarjeta visual de acciones",
+                        "command":  "HYPER_092C_MASTER_DASHBOARD_NEXT_ACTIONS_SMOKE_NO_MODEL_EXEC_001",
+                        "status":  "NEXT",
+                        "priority":  4,
+                        "safe":  true,
+                        "requires_model":  false,
+                        "requires_git":  false,
+                        "executes_automatically":  false
+                    }
+                ],
+    "safety":  {
+                   "actions_executed":  false,
+                   "model_invocation_performed":  false,
+                   "pull_performed":  false,
+                   "push_performed":  false,
+                   "git_write_actions":  false,
+                   "browser_actions":  false,
+                   "clipboard_actions":  false,
+                   "telegram_real_actions":  false,
+                   "switch_off_confirmed":  true
+               },
+    "next_recommended_action":  "HYPER_092C_MASTER_DASHBOARD_NEXT_ACTIONS_SMOKE_NO_MODEL_EXEC_001"
+}

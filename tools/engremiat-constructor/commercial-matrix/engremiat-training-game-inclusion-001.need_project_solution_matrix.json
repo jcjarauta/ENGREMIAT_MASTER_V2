@@ -1,0 +1,53 @@
+﻿{
+    "type":  "ENGREMIAT_NEED_PROJECT_SOLUTION_COMMERCIAL_MATRIX",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "need":  {
+                 "need_id":  "need-2026-001",
+                 "source_type":  "subvencion",
+                 "source_name":  "Convocatoria piloto inclusion digital comunitaria",
+                 "summary":  "Crear una demo de formacion gamificada para inclusion digital en asociaciones y comunidades locales.",
+                 "territory":  "Catalunya",
+                 "funding_potential_eur":  12000
+             },
+    "project":  {
+                    "project_name":  "Training Game Inclusion",
+                    "template_type":  "training-game",
+                    "status":  "BOOTSTRAPPED",
+                    "phase":  "001_PROJECT_BOOTSTRAP",
+                    "expected_outputs":  [
+                                             "demo",
+                                             "proposal",
+                                             "grant_file",
+                                             "documentation",
+                                             "validation_report"
+                                         ]
+                },
+    "solution":  {
+                     "solution_name":  "Formacion gamificada de inclusion digital comunitaria",
+                     "solution_type":  "training-game",
+                     "internal_use":  "Onboarding, formacion y validacion de metodologia Engremiat.",
+                     "external_offer":  "Demo/propuesta para asociaciones, comunidades y entidades sociales.",
+                     "commercial_status":  "hypothesis",
+                     "funding_status":  "grant_candidate"
+                 },
+    "score":  {
+                  "funding_fit":  8,
+                  "commercial_fit":  7,
+                  "internal_reuse":  9,
+                  "demo_feasibility":  8,
+                  "human_load_risk":  5,
+                  "technical_load_risk":  3,
+                  "social_impact":  8,
+                  "total":  77
+              },
+    "recommended_decision":  "PREPARE_DEMO_AND_PROPOSAL_SCOPE",
+    "safety":  {
+                   "local_only":  true,
+                   "external_api_allowed":  false,
+                   "worker_real_allowed":  false,
+                   "remote_repo_creation_allowed":  false
+               },
+    "next_recommended_action":  "SIMULATE_MULTIPLE_NEEDS_INTAKE",
+    "updated_at":  "2026-06-05T20:25:15"
+}

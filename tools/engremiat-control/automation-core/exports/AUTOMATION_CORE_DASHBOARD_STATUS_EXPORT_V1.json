@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_DASHBOARD_STATUS_EXPORT_V1",
+    "ok":  true,
+    "decision":  "AUTOMATION_CORE_BASELINE_STATUS_EXPORT_READY",
+    "phase":  "CREATE-AUTOMATION-CORE-ASSEMBLY-BASELINE-V1",
+    "status":  "BASELINE_CREATED",
+    "health_sanitation_validated":  true,
+    "official_bridge_v1_validated":  true,
+    "automation_core_baseline_ready":  true,
+    "queue_stub_ready":  true,
+    "real_worker_allowed":  false,
+    "google_api_call_allowed":  false,
+    "external_actions_executed":  false,
+    "current_head":  "5ae92cb [ENGREMIAT_CONTROL] Return to automation core assembly",
+    "remote_synced":  true,
+    "next":  "CREATE_AUTOMATION_CORE_LOCAL_LOOP_STUB_V1"
+}

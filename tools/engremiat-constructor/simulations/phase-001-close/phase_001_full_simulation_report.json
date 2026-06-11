@@ -1,0 +1,49 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_FULL_SIMULATION",
+    "ok":  true,
+    "cases_count":  5,
+    "average_score":  67.6,
+    "cases":  [
+                  {
+                      "need_id":  "sim-need-001",
+                      "source_type":  "subvencion",
+                      "score":  84,
+                      "decision":  "BUILD_NEW_PROJECT",
+                      "template":  "grant-project"
+                  },
+                  {
+                      "need_id":  "sim-need-002",
+                      "source_type":  "preventa",
+                      "score":  78,
+                      "decision":  "CREATE_DEMO_ONLY",
+                      "template":  "digital-product"
+                  },
+                  {
+                      "need_id":  "sim-need-003",
+                      "source_type":  "voluntariado",
+                      "score":  63,
+                      "decision":  "CREATE_PROPOSAL_ONLY",
+                      "template":  "service-package"
+                  },
+                  {
+                      "need_id":  "sim-need-004",
+                      "source_type":  "territorio",
+                      "score":  71,
+                      "decision":  "ADAPT_EXISTING_PROJECT",
+                      "template":  "community-software"
+                  },
+                  {
+                      "need_id":  "sim-need-005",
+                      "source_type":  "evento",
+                      "score":  42,
+                      "decision":  "ADD_TO_BACKLOG",
+                      "template":  "training-game"
+                  }
+              ],
+    "real_projects_created":  1,
+    "external_api_allowed":  false,
+    "remote_repo_creation_allowed":  false,
+    "worker_real_allowed":  false,
+    "recommended_decision":  "PHASE_001_LOCAL_PROJECT_FACTORY_READY_FOR_REVIEW",
+    "updated_at":  "2026-06-05T20:16:02"
+}

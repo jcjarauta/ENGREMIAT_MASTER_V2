@@ -1,0 +1,55 @@
+﻿{
+    "type":  "TELEGRAM_CONTROL_MOCK_MESSAGES",
+    "version":  1,
+    "updated_at":  "2026-06-02T11:37:21.6703568+02:00",
+    "mode":  "proposal_only",
+    "messages":  [
+                     {
+                         "id":  "MSG-STATUS-001",
+                         "kind":  "status",
+                         "title":  "ENGREMIAT · Estado global",
+                         "body":  "Panel operativo validado. Gate pre-Telegram OK. Telegram todavía en modo mock.",
+                         "buttons":  [
+                                         "Estado",
+                                         "Siguiente fase",
+                                         "Bloqueos",
+                                         "Autorizar"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-NEXT-001",
+                         "kind":  "next_phase",
+                         "title":  "Siguiente fase",
+                         "body":  "Preparar plantillas de mensajes móviles Telegram sin envío real.",
+                         "recommended_action":  "HYPER_006_TELEGRAM_MESSAGE_TEMPLATES_001",
+                         "buttons":  [
+                                         "Continuar",
+                                         "Pausar",
+                                         "Ver evidencias"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-BLOCKERS-001",
+                         "kind":  "blockers",
+                         "title":  "Bloqueos activos",
+                         "body":  "GIT_NOISE_CLASSIFICATION pausado por MISSING_EXTRACTED_JSON. No bloquea la cola global.",
+                         "buttons":  [
+                                         "Mantener pausado",
+                                         "Reactivar",
+                                         "Continuar seguro"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-AUTH-001",
+                         "kind":  "authorization_request",
+                         "title":  "Autorización humana",
+                         "body":  "Confirma si quieres preparar la integración Telegram real más adelante. Ahora no se usa token ni se envían mensajes.",
+                         "buttons":  [
+                                         "ACEPTAR",
+                                         "PAUSAR",
+                                         "BLOQUEAR",
+                                         "SOLO MOCK"
+                                     ]
+                     }
+                 ]
+}

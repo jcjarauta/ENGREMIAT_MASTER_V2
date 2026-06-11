@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_TEMPLATES_INDEX",
+    "ok":  true,
+    "templates_count":  6,
+    "templates":  [
+                      "internal-tool",
+                      "digital-product",
+                      "grant-project",
+                      "training-game",
+                      "community-software",
+                      "service-package"
+                  ],
+    "created_files_count":  78,
+    "phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_001_LOCAL_PROJECT_FACTORY",
+    "block":  "BLOCK_004_CREATE_MINIMAL_PROJECT_TEMPLATES",
+    "updated_at":  "2026-06-05T12:43:32"
+}

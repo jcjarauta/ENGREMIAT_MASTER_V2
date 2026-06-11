@@ -1,0 +1,46 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_COMMERCIAL_PACKAGE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "package_id":  "commercial-package-phase-004-001",
+    "solution_name":  "Engremiat Training Game Inclusion",
+    "one_line_offer":  "Convertir necesidades de inclusion digital en proyectos formativos gamificados, financiables y reutilizables.",
+    "target_profiles":  [
+                            "associations",
+                            "cooperatives",
+                            "local communities",
+                            "public grant teams",
+                            "education partners"
+                        ],
+    "value_propositions":  [
+                               "Estructura necesidades reales como proyectos accionables.",
+                               "Genera demo, propuesta y validacion antes de ejecucion real.",
+                               "Permite reutilizar soluciones por sectores y territorios.",
+                               "Reduce carga humana con contratos y gates locales."
+                           ],
+    "pricing_hypothesis":  {
+                               "discovery_package_eur":  300,
+                               "demo_package_eur":  900,
+                               "pilot_package_eur":  2500,
+                               "grant_support_package_eur":  1200,
+                               "note":  "Hypothesis only. Requires human validation."
+                           },
+    "reuse":  {
+                  "reusable":  true,
+                  "reusable_as":  [
+                                      "training-game",
+                                      "grant-project",
+                                      "association-onboarding",
+                                      "digital-inclusion-demo"
+                                  ],
+                  "adaptation_effort":  "medium"
+              },
+    "blocked_actions":  [
+                            "real_sale",
+                            "customer_contact",
+                            "external_submission",
+                            "external_ai_call"
+                        ],
+    "next_recommended_action":  "CREATE_VALIDATION_PLAN",
+    "updated_at":  "2026-06-05T21:22:39"
+}

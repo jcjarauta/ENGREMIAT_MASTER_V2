@@ -1,0 +1,43 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_113G_WORKER_RESPONSE_HUMAN_REVIEW_GATE_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:40:21",
+    "gate_status":  "WAITING_HUMAN_WORKER_RESPONSE_REVIEW_DECISION",
+    "selected_decision":  "HOLD",
+    "recommended_decision":  "ACCEPT_WORKER_RESPONSE_AS_REVIEW_DRAFT_AND_PREPARE_INTEGRATION_SIMULATION",
+    "allowed_decisions":  [
+                              "ACCEPT_WORKER_RESPONSE_AS_REVIEW_DRAFT_AND_PREPARE_INTEGRATION_SIMULATION",
+                              "REVIEW_WORKER_RESPONSE_INTAKE_FAILURES",
+                              "REPAIR_RESPONSE_INTAKE_SCHEMA",
+                              "RETRY_HANDOFF_SIMULATION",
+                              "HOLD",
+                              "REJECT_WORKER_RESPONSE"
+                          ],
+    "classification":  "ACCEPT_AS_REVIEW_DRAFT",
+    "classification_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-113g-worker-response-intake-dry-run\\intake\\worker_response_classification_113g.json",
+    "extracted_signals_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-113g-worker-response-intake-dry-run\\intake\\worker_response_extracted_signals_113g.json",
+    "contract_validation_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-113g-worker-response-intake-dry-run\\validation\\worker_response_contract_validation_113g.json",
+    "integration_allowed_now":  false,
+    "delegation_allowed_now":  false,
+    "human_review_required":  true,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "response_intake_dry_run_executed":  true,
+                   "simulated_response_only":  true,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_114G_REVIEW_WORKER_RESPONSE_INTAKE_RESULT"
+}

@@ -1,0 +1,92 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_097_SECOND_REAL_AUTOMATION_VALIDATION_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_097_VALIDATE_SECOND_REAL_AUTOMATION_AND_PREPARE_NEXT_SAFE_AUTOMATION",
+    "created_at":  "2026-06-05T11:00:13",
+    "second_automation":  "LOCAL_HEALTH_INDEX_REFRESH",
+    "health_index_json_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\real-automation-boundary\\local-health-index\\health-index.json",
+    "health_index_md_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\real-automation-boundary\\local-health-index\\health-index.md",
+    "audit_json_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\real-automation-boundary\\local-health-index\\audit.json",
+    "execution_result_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-096-second-real-candidate-local-health-index\\out\\local_health_index_refresh_result_096.json",
+    "checks":  [
+                   {
+                       "id":  "C01",
+                       "label":  "health_index_json_exists",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C02",
+                       "label":  "health_index_md_exists",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C03",
+                       "label":  "audit_json_exists",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C04",
+                       "label":  "result_096_ok",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C05",
+                       "label":  "scope_local_filesystem_only",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C06",
+                       "label":  "health_index_has_entries",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C07",
+                       "label":  "summary_health_100",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C08",
+                       "label":  "no_ai_call",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C09",
+                       "label":  "no_external_api",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C10",
+                       "label":  "no_worker_real",
+                       "ok":  true
+                   },
+                   {
+                       "id":  "C11",
+                       "label":  "no_operator",
+                       "ok":  true
+                   }
+               ],
+    "failed_checks_count":  0,
+    "failed_checks":  [
+
+                      ],
+    "health_score":  100,
+    "health_level":  "high",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "validation_only":  true,
+                   "next_candidate_gate_only":  true,
+                   "automation_real_execution_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_098_REVIEW_THIRD_REAL_AUTOMATION_CANDIDATE_DECISION"
+}

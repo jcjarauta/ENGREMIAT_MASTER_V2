@@ -1,0 +1,21 @@
+﻿{
+    "type":  "OLLAMA_TASK_DISPATCHER_STATE",
+    "ok":  true,
+    "generated_at":  "2026-06-02T13:24:04",
+    "selected_task_id":  "TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001",
+    "selected_checkpoint_id":  "CP-HYPER-018-RECOVERY-ANALYSIS",
+    "dispatch_mode":  "MANUAL_GATE_REQUIRED",
+    "execution_performed":  false,
+    "ollama_execution":  false,
+    "git_actions":  false,
+    "external_actions":  false,
+    "telegram_actions":  false,
+    "browser_actions":  false,
+    "clipboard_actions":  false,
+    "prompt_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\prompts\\ollama\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.prompt.md",
+    "task_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.task.json",
+    "dispatch_ready_queue_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\ollama-dispatch-ready-queue.json",
+    "manual_gate_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\queues\\ollama-manual-dispatch-gate.json",
+    "expected_proposal_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\proposals\\ollama\\inbox\\TASK-CP-HYPER-018-RECOVERY-ANALYSIS-OLLAMA-ANALYSIS-001.proposal.json",
+    "next_recommended_action":  "HYPER_028_PROPOSAL_REVIEW_SYSTEM_001"
+}

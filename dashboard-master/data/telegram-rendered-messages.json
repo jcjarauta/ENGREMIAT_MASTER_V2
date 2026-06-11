@@ -1,0 +1,66 @@
+﻿{
+    "type":  "TELEGRAM_RENDERED_MESSAGES",
+    "version":  1,
+    "generated_at":  "2026-06-02T11:38:51.3031231+02:00",
+    "mode":  "proposal_only",
+    "telegram_send_allowed":  false,
+    "messages":  [
+                     {
+                         "id":  "MSG-STATUS",
+                         "kind":  "status",
+                         "title":  "ENGREMIAT · Estado",
+                         "body":  "Estado: PRE_TELEGRAM_GATE_OK. Siguiente: HYPER_006_TELEGRAM_AUTHORIZATION_CONTRACT_001. Modo Telegram: proposal-only.",
+                         "buttons":  [
+                                         "Estado",
+                                         "Siguiente",
+                                         "Bloqueos",
+                                         "Autorizar"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-NEXT-PHASE",
+                         "kind":  "next_phase",
+                         "title":  "ENGREMIAT · Siguiente fase",
+                         "body":  "Siguiente bloque recomendado: HYPER_006_TELEGRAM_AUTHORIZATION_CONTRACT_001. Tarea activa: definir autorización humana desde Telegram.",
+                         "buttons":  [
+                                         "Continuar",
+                                         "Pausar",
+                                         "Ver evidencias"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-BLOCKERS",
+                         "kind":  "blockers",
+                         "title":  "ENGREMIAT · Bloqueos",
+                         "body":  "Bloqueo: MISSING_EXTRACTED_JSON. Estado: paused_not_blocking_global_queue. No bloquea cola global.",
+                         "buttons":  [
+                                         "Mantener pausado",
+                                         "Reactivar",
+                                         "Continuar seguro"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-AUTHORIZATION",
+                         "kind":  "authorization_request",
+                         "title":  "ENGREMIAT · Autorización humana",
+                         "body":  "Se requiere decisión humana para futuras acciones Telegram reales. Ahora solo mock/proposal-only.",
+                         "buttons":  [
+                                         "ACEPTAR",
+                                         "PAUSAR",
+                                         "BLOQUEAR",
+                                         "SOLO MOCK"
+                                     ]
+                     },
+                     {
+                         "id":  "MSG-OPERATOR-PAYLOAD",
+                         "kind":  "operator_payload",
+                         "title":  "ENGREMIAT · Payload operador",
+                         "body":  "Payload preparado para ChatGPT/operador. Acción: continuar siguiente fase desde mock Telegram.",
+                         "buttons":  [
+                                         "Copiar payload",
+                                         "Revisar",
+                                         "Cancelar"
+                                     ]
+                     }
+                 ]
+}

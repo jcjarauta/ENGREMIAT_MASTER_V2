@@ -1,0 +1,45 @@
+﻿{
+    "project":  "ENGREMIAT_MASTER",
+    "generated_at":  "YYYY-MM-DD HH:mm:ss",
+    "readonly":  true,
+    "source":  "OLLAMA_GIT_NOISE_NORMALIZER",
+    "confidence":  "LOW|MEDIUM|HIGH",
+    "total_items":  0,
+    "domains_count":  0,
+    "summary":  [
+                    {
+                        "domain":  "DOMAIN_NAME",
+                        "count":  0,
+                        "hypers":  [
+                                       "HYPER_NAME"
+                                   ],
+                        "recommended_actions":  [
+                                                    "ACTION_NAME"
+                                                ],
+                        "sample_paths":  [
+                                             "path/example"
+                                         ],
+                        "human_review_required":  true
+                    }
+                ],
+    "items":  [
+                  {
+                      "path":  "path/example",
+                      "status_code":  "??",
+                      "domain":  "DOMAIN_NAME",
+                      "hyper":  "HYPER_NAME",
+                      "recommended_action":  "DO_NOT_COMMIT|REVIEW_FOR_SEPARATE_COMMIT|PAUSE_UNTIL_RELATED_HYPER|HUMAN_REVIEW_REQUIRED",
+                      "reason":  "short reason",
+                      "safe_to_commit_now":  false,
+                      "human_review_required":  true
+                  }
+              ],
+    "proposed_next_steps":  [
+                                {
+                                    "id":  "S01",
+                                    "title":  "Human review git noise classification",
+                                    "action":  "HUMAN_REVIEW_GIT_NOISE_CLASSIFICATION"
+                                }
+                            ],
+    "next_recommended_action":  "HUMAN_REVIEW_GIT_NOISE_CLASSIFICATION"
+}

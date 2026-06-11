@@ -1,0 +1,30 @@
+﻿{
+    "schema_version":  "v1",
+    "required_fields":  [
+                            "node_id",
+                            "machine_name",
+                            "role",
+                            "root_path",
+                            "status",
+                            "allowed_actions",
+                            "blocked_actions",
+                            "sync_policy",
+                            "backup_policy",
+                            "secrets_policy",
+                            "activation_gate"
+                        ],
+    "allowed_status":  [
+                           "PLANNED",
+                           "PREPARED",
+                           "READONLY_VALIDATED",
+                           "ACTIVE",
+                           "SUSPENDED",
+                           "LEGACY"
+                       ],
+    "allowed_activation_gates":  [
+                                     "READONLY_PREFLIGHT_REQUIRED",
+                                     "MANUAL_APPROVAL_REQUIRED",
+                                     "ACTIVE_AFTER_VALIDATION"
+                                 ],
+    "notes":  "Schema operativo local para incorporar nuevos nodos ENGREMIAT."
+}

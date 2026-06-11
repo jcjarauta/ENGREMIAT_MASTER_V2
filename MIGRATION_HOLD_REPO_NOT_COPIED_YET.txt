@@ -1,0 +1,6 @@
+﻿phase=NEW_PC_NORMALIZATION_007_CREATE_MAIN_NODE_FOLDER_STRUCTURE_SAFE
+status=MIGRATION_HOLD
+repo_copy=False
+migration_started=False
+reason=Repositorio principal sigue en PC antiguo hasta cerrar desarrollo actual.
+next=prepare_legacy_pc_export_or_remote_clone_plan_when_ready

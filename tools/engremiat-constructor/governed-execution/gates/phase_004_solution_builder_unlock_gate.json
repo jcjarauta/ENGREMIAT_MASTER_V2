@@ -1,0 +1,35 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_UNLOCK_GATE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "gate_status":  "CREATED_BLOCKED_BY_DEFAULT",
+    "recommended_next_phase":  "ENGREMIAT_CONSTRUCTOR_PHASE_004_SOLUTION_BUILDER_COMMERCIAL_PACKAGE",
+    "allowed_now":  {
+                        "local_read":  true,
+                        "local_write_reports":  true,
+                        "local_simulation":  true,
+                        "draft_packages":  true
+                    },
+    "blocked_until_explicit_scope":  {
+                                         "real_control_write":  true,
+                                         "real_prompter_execution":  true,
+                                         "external_ai_call":  true,
+                                         "worker_real_execution":  true,
+                                         "remote_repo_creation":  true,
+                                         "push":  true,
+                                         "browser":  true,
+                                         "clipboard":  true
+                                     },
+    "phase_004_candidate_blocks":  [
+                                       "001_CREATE_SOLUTION_BUILDER_PLAN",
+                                       "002_CREATE_DEMO_SCOPE",
+                                       "003_CREATE_PROPOSAL_SCOPE",
+                                       "004_CREATE_COMMERCIAL_PACKAGE",
+                                       "005_CREATE_VALIDATION_PLAN",
+                                       "006_SIMULATE_DELIVERY",
+                                       "007_CREATE_HUMAN_REVIEW_GATE",
+                                       "008_GLOBAL_DIAGNOSTIC_AND_CLOSE"
+                                   ],
+    "next_recommended_action":  "RUN_PHASE_003_GLOBAL_DIAGNOSTIC_AND_CLOSE",
+    "updated_at":  "2026-06-05T21:02:08"
+}

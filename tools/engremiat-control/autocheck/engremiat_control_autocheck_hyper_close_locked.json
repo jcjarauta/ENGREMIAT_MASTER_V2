@@ -1,0 +1,47 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOCHECK_HYPER_CLOSE_LOCKED_001",
+    "ok":  true,
+    "created_at":  "2026-06-04T13:20:53+02:00",
+    "mode":  "LOCKED_LOCAL_ONLY",
+    "manual_mode":  "MANUAL_PASTE_ONLY",
+    "external_actions_allowed":  false,
+    "google_api_allowed":  false,
+    "drive_real_allowed":  false,
+    "apps_script_execute_allowed":  false,
+    "decision":  "ENGREMIAT_CONTROL_AUTOCHECK_HYPER_READY_TO_CLOSE",
+    "source_run":  {
+                       "run_json":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.json",
+                       "run_md":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_run_locked.md",
+                       "run_report":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_autocheck_run_locked_report.json",
+                       "run_ok":  "True",
+                       "checks_count":  "8",
+                       "passed_count":  "8",
+                       "warned_count":  "0",
+                       "failed_count":  "0"
+                   },
+    "prepared_close_refs":  [
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_close_locked.json",
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\autocheck\\engremiat_control_autocheck_close_locked.md",
+                                "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_autocheck_close_locked_report.json"
+                            ],
+    "git_before_close":  {
+                             "tree_clean":  true,
+                             "status_raw":  "",
+                             "remote_sync_raw":  "0\t0\r\n",
+                             "remote_synced":  true,
+                             "git_head":  "c4d4308 [ENGREMIAT_CONTROL] Close locked autocheck hyper\r\n"
+                         },
+    "closed_deliverables":  [
+                                "autocheck_schema_locked",
+                                "autocheck_run_locked",
+                                "autocheck_close_locked",
+                                "autocheck_hyper_close_locked"
+                            ],
+    "next_hyper_candidate":  {
+                                 "id":  "ENGREMIAT_CONTROL_NEXT_LAYER_DECISION_LOCKED_001",
+                                 "objective":  "Decidir la siguiente capa de ENGREMIAT_CONTROL tras autocheck validado: integración visual, tareas recurrentes locales o preparación futura de Google real.",
+                                 "mode":  "LOCKED_LOCAL_ONLY",
+                                 "first_action":  "CREATE_ENGREMIAT_CONTROL_NEXT_LAYER_DECISION_LOCKED"
+                             },
+    "next_recommended_action":  "CREATE_ENGREMIAT_CONTROL_NEXT_LAYER_DECISION_LOCKED"
+}

@@ -1,0 +1,53 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_PHASE_075_PARAMETERIZED_HUMAN_IDEA_SEED_001",
+    "ok":  true,
+    "phase":  "ENGREMIAT_CONTROL_PHASE_075_RUN_REPEATABLE_LOCAL_DRY_RUN_WITH_PARAMETERIZED_SEED_NO_REAL_AUTOMATION",
+    "created_at":  "2026-06-05T09:40:32",
+    "status":  "PARAMETERIZED_SEED_READY_NOT_EXECUTABLE",
+    "editable_by_human":  true,
+    "seed_origin":  "PHASE_075_PARAMETERIZED_TEST",
+    "idea_title":  "Kit digital local para transformar servicios comunitarios en preventa verificable",
+    "target_user":  "Asociaciones, profesionales locales, cooperativas pequeñas y nodos ENGREMIAT que quieren convertir servicios utiles en una oferta digital inicial.",
+    "user_problem":  "Muchos servicios comunitarios tienen valor real pero no saben empaquetarse como oferta clara, medible, vendible o financiable.",
+    "proposed_solution":  "Un kit guiado que convierte un servicio en propuesta de valor, micro oferta, señales de demanda, materiales de preventa y paquetes de trabajo no ejecutables.",
+    "digital_product_type":  "Kit digital parametrizable + dashboard local + contratos de validacion + micro work packets",
+    "why_financiable_or_presellable":  "Permite vender o validar una oferta minima antes de construirla completa, reduce riesgo y genera evidencia para financiacion o crowdfunding.",
+    "expected_social_or_local_value":  "Ayuda a que servicios utiles se conviertan en propuestas sostenibles, medibles y colaborativas sin depender de grandes estructuras.",
+    "available_assets":  [
+                             "ENGREMIAT_CONTROL",
+                             "ENGREMIAT_PROMPTER",
+                             "repeatable local dry-run runner",
+                             "local dashboards",
+                             "JSON contracts",
+                             "human gates"
+                         ],
+    "constraints":  [
+                        "sin IA real",
+                        "sin APIs externas",
+                        "sin worker real",
+                        "sin operador",
+                        "sin navegador",
+                        "sin clipboard",
+                        "sin Gmail",
+                        "sin Google Sheets real",
+                        "revision humana obligatoria"
+                    ],
+    "first_success_signal":  "El runner repetible procesa este segundo seed y produce los 9 artefactos esperados con readiness, routing, señales, micro packets y gate humano.",
+    "next_expected_phase":  "START_PHASE_076_ADD_HEALTH_AND_LOAD_METRICS_TO_REPEATABLE_DRY_RUNS",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_runner_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

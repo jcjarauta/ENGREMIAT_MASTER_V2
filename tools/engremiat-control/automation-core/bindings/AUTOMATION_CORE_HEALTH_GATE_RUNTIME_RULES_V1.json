@@ -1,0 +1,23 @@
+﻿{
+    "type":  "ENGREMIAT_CONTROL_AUTOMATION_CORE_HEALTH_GATE_RUNTIME_RULES_V1",
+    "ok":  true,
+    "phase":  "AUTOMATION-CORE-ASSEMBLY-4-7-HEALTH-GATE-RUNTIME-BINDING",
+    "decision":  "HEALTH_GATE_RUNTIME_RULES_READY",
+    "if_noise_high":  "BLOCK_NEW_GROWTH_AND_CREATE_INDEX_OR_SANITATION_PLAN",
+    "if_scope_dirty":  "BLOCK_COMMIT_UNTIL_SCOPE_CLASSIFIED",
+    "if_worker_requested":  "REQUIRE_HEALTH_GATE_AND_HUMAN_REVIEW",
+    "allowed_without_gate":  [
+                                 "local_read",
+                                 "local_validation",
+                                 "local_report",
+                                 "dashboard_export"
+                             ],
+    "blocked_without_gate":  [
+                                 "new_worker",
+                                 "external_action",
+                                 "api_call",
+                                 "browser_action",
+                                 "real_google_write"
+                             ],
+    "next":  "CREATE_OFFICIAL_BRIDGE_EXPORT_BINDING"
+}

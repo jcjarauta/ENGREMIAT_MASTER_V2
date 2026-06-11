@@ -1,0 +1,81 @@
+﻿{
+    "updated_at":  "2026-06-01T21:52:43",
+    "board":  "ENGREMIAT_MASTER_WORK_BOARD",
+    "automation_status":  "LOCKED_OPERATOR_STATUS_STILL_NEEDS_REPAIR",
+    "columns":  {
+                    "backlog":  [
+                                    {
+                                        "id":  "MASTER-004",
+                                        "title":  "Gates humanos visibles",
+                                        "priority":  1,
+                                        "risk":  "medium",
+                                        "reason":  "Necesario antes de cualquier automatizacion."
+                                    },
+                                    {
+                                        "id":  "MASTER-005",
+                                        "title":  "Conectar reportes del operador al dashboard",
+                                        "priority":  2,
+                                        "risk":  "medium",
+                                        "reason":  "Necesario para que el dashboard refleje estado real."
+                                    }
+                                ],
+                    "ready":  [
+                                  {
+                                      "id":  "MASTER-003",
+                                      "title":  "Cola editable por estados",
+                                      "priority":  1,
+                                      "risk":  "low",
+                                      "reason":  "Crear tablero persistente para preparar cola antes de automatizar."
+                                  }
+                              ],
+                    "running":  [
+
+                                ],
+                    "blocked":  [
+                                    {
+                                        "id":  "MASTER-006",
+                                        "title":  "Automatizacion controlada de cola",
+                                        "priority":  1,
+                                        "risk":  "high",
+                                        "reason":  "Bloqueada hasta cerrar gates humanos y sincronizacion readonly.",
+                                        "blocked_by":  [
+                                                           "MASTER-004",
+                                                           "MASTER-005"
+                                                       ]
+                                    }
+                                ],
+                    "done":  [
+                                 {
+                                     "id":  "HIPER-024",
+                                     "title":  "IA interna de apoyo cerrada funcionalmente",
+                                     "priority":  1,
+                                     "risk":  "medium",
+                                     "reason":  "Cierre Q2-aware validado."
+                                 },
+                                 {
+                                     "id":  "MASTER-001",
+                                     "title":  "Dashboard Master inicial",
+                                     "priority":  2,
+                                     "risk":  "low",
+                                     "reason":  "Plan maestro y cola inicial creados."
+                                 },
+                                 {
+                                     "id":  "MASTER-002",
+                                     "title":  "Modelo JSON estable de hypers",
+                                     "priority":  3,
+                                     "risk":  "low",
+                                     "reason":  "Schema e hypers creados."
+                                 }
+                             ],
+                    "locked":  [
+                                   {
+                                       "id":  "REMOTE-ACTIONS",
+                                       "title":  "Push/fetch/merge/navegador/AHK/clipboard/enter",
+                                       "priority":  99,
+                                       "risk":  "high",
+                                       "reason":  "Requiere autorizacion explicita y gate visible."
+                                   }
+                               ]
+                },
+    "next_recommended_action":  "MASTER_OPERATOR_STATUS_002B_REPAIR_REFRESH_SCRIPT"
+}

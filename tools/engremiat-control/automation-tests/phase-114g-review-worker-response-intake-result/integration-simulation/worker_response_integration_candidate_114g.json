@@ -1,0 +1,43 @@
+﻿{
+    "type":  "ENGREMIAT_PROMPTER_PHASE_114G_WORKER_RESPONSE_INTEGRATION_CANDIDATE_001",
+    "ok":  true,
+    "created_at":  "2026-06-05T11:46:15",
+    "candidate_id":  "INTEGRATION_SIMULATION_001_REVIEW_DRAFT_TO_PROJECT_PROPOSAL",
+    "candidate_name":  "REVIEW_DRAFT_TO_LOCAL_PROJECT_PROPOSAL_SIMULATION",
+    "candidate_status":  "DEFINED_NOT_EXECUTED",
+    "objective":  "Convertir señales de financiación inversa y productos digitales en un borrador local de propuesta de proyecto.",
+    "source_review_draft_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-114g-review-worker-response-intake-result\\review-draft\\accepted_worker_response_review_draft_114g.json",
+    "proposed_project_focus":  "buscador inverso de financiacion y preventa de productos digitales",
+    "proposed_outputs":  [
+                             "project_goal",
+                             "financing_hypotheses",
+                             "digital_product_candidates",
+                             "risk_register",
+                             "human_inputs_needed",
+                             "next_gate"
+                         ],
+    "risk_level":  "low",
+    "execution_allowed_now":  false,
+    "integration_allowed_now":  false,
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "ollama_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "browser_real_allowed":  false,
+                   "cdp_allowed":  false,
+                   "clipboard_allowed":  false,
+                   "gmail_read_allowed":  false,
+                   "google_sheets_real_write_allowed":  false,
+                   "git_branch_real_create_allowed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "worker_stub_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "worker_response_accepted_as_review_draft":  true,
+                   "integration_simulation_prepared":  true,
+                   "integration_simulation_executed_now":  false,
+                   "integration_allowed_now":  false,
+                   "delegation_allowed_now":  false,
+                   "human_review_required":  true
+               },
+    "next_recommended_action":  "START_PHASE_115G_REVIEW_WORKER_RESPONSE_INTEGRATION_SIMULATION_GATE"
+}

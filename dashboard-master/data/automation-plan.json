@@ -1,0 +1,34 @@
+﻿{
+    "updated_at":  "2026-06-01T21:56:13",
+    "plan_name":  "ENGREMIAT_CONTROLLED_QUEUE_AUTOMATION",
+    "locked":  true,
+    "description":  "Plan de automatización controlada de la cola, bloqueado hasta gates humanos y sync readonly.",
+    "dependencies":  [
+                         "MASTER-004",
+                         "MASTER-005"
+                     ],
+    "steps":  [
+                  {
+                      "id":  "STEP-001",
+                      "action":  "Validate gates",
+                      "status":  "LOCKED",
+                      "gate":  "MASTER-004",
+                      "note":  "Debe completarse antes de automatizar"
+                  },
+                  {
+                      "id":  "STEP-002",
+                      "action":  "Sync operator status",
+                      "status":  "LOCKED",
+                      "gate":  "MASTER-005",
+                      "note":  "Debe sincronizarse con estado readonly"
+                  },
+                  {
+                      "id":  "STEP-003",
+                      "action":  "Enable controlled execution",
+                      "status":  "PENDING",
+                      "gate":  "MASTER-006",
+                      "note":  "Se desbloquea solo tras validación de gates y sync"
+                  }
+              ],
+    "next_recommended_action":  "MASTER_007_EXECUTE_CONTROLLED_QUEUE_AUTOMATION_LOCKED"
+}

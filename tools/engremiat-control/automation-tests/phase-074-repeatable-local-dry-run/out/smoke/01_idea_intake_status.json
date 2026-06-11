@@ -1,0 +1,17 @@
+﻿{
+    "type":  "ENGREMIAT_REPEATABLE_F001_IDEA_INTAKE_DRY_RUN",
+    "ok":  true,
+    "run_id":  "phase-074-r3-smoke",
+    "source_seed_path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-074-repeatable-local-dry-run\\examples\\example_seed_preventa_digital_074.json",
+    "idea_title":  "Buscador inverso de financiacion y preventa para productos digitales ENGREMIAT",
+    "status":  "PASSED_DRY_RUN",
+    "safety":  {
+                   "real_ai_call_executed":  false,
+                   "external_api_call_executed":  false,
+                   "worker_real_execution_allowed":  false,
+                   "operator_execution_allowed":  false,
+                   "automation_real_execution_allowed":  false,
+                   "repeatable_local_dry_run_only":  true,
+                   "human_review_required":  true
+               }
+}

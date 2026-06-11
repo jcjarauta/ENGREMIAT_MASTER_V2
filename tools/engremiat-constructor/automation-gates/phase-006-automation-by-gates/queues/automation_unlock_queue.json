@@ -1,0 +1,40 @@
+﻿{
+    "type":  "ENGREMIAT_CONSTRUCTOR_PHASE_006_AUTOMATION_UNLOCK_QUEUE",
+    "ok":  true,
+    "project_id":  "engremiat-training-game-inclusion-001",
+    "items_count":  5,
+    "items":  [
+                  {
+                      "item_id":  "unlock-006-001",
+                      "capability":  "real_control_write",
+                      "status":  "BLOCKED_PENDING_HUMAN_AUTHORIZATION",
+                      "execute_now":  false
+                  },
+                  {
+                      "item_id":  "unlock-006-002",
+                      "capability":  "real_prompter_execution",
+                      "status":  "BLOCKED_PENDING_HUMAN_AUTHORIZATION",
+                      "execute_now":  false
+                  },
+                  {
+                      "item_id":  "unlock-006-003",
+                      "capability":  "external_ai_call",
+                      "status":  "BLOCKED_PENDING_HUMAN_AUTHORIZATION",
+                      "execute_now":  false
+                  },
+                  {
+                      "item_id":  "unlock-006-004",
+                      "capability":  "worker_real_execution",
+                      "status":  "BLOCKED_PENDING_HUMAN_AUTHORIZATION",
+                      "execute_now":  false
+                  },
+                  {
+                      "item_id":  "unlock-006-005",
+                      "capability":  "remote_repo_creation",
+                      "status":  "BLOCKED_PENDING_HUMAN_AUTHORIZATION",
+                      "execute_now":  false
+                  }
+              ],
+    "all_real_actions_blocked":  true,
+    "updated_at":  "2026-06-05T21:37:32"
+}

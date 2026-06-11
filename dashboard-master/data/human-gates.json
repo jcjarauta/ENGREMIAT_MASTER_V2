@@ -1,0 +1,119 @@
+﻿{
+    "updated_at":  "2026-06-01T21:53:47",
+    "policy":  "ENGREMIAT_MASTER_HUMAN_GATES_V1",
+    "automation_status":  "LOCKED_UNTIL_OPERATOR_SYNC_AND_GATES_VALIDATED",
+    "rule":  "Toda accion externa, remota, peligrosa o con interaccion humana debe tener gate visible antes de automatizar.",
+    "gates":  [
+                  {
+                      "id":  "GATE-001",
+                      "action":  "readonly_file_read",
+                      "label":  "Lectura local readonly",
+                      "risk":  "low",
+                      "default_status":  "ALLOWED",
+                      "human_authorization_required":  false,
+                      "automation_allowed":  true,
+                      "note":  "Permitido para dashboard, reportes y diagnostico local."
+                  },
+                  {
+                      "id":  "GATE-002",
+                      "action":  "local_file_write_safe",
+                      "label":  "Escritura local segura",
+                      "risk":  "low",
+                      "default_status":  "ALLOWED_WITH_REPORT",
+                      "human_authorization_required":  false,
+                      "automation_allowed":  true,
+                      "note":  "Permitido para JSON, HTML, reportes y archivos del dashboard."
+                  },
+                  {
+                      "id":  "GATE-003",
+                      "action":  "child_process",
+                      "label":  "Proceso hijo / Start-Process",
+                      "risk":  "medium",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Bloqueado hasta tener watchdog. Causo bloqueo en HIPER-024Q."
+                  },
+                  {
+                      "id":  "GATE-004",
+                      "action":  "git_commit",
+                      "label":  "Git commit",
+                      "risk":  "medium",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Permitido solo cuando el usuario autorice cierre de etapa."
+                  },
+                  {
+                      "id":  "GATE-005",
+                      "action":  "git_push_fetch_merge",
+                      "label":  "Git remoto push/fetch/merge",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Requiere autorizacion expresa y reporte previo."
+                  },
+                  {
+                      "id":  "GATE-006",
+                      "action":  "browser_cdp",
+                      "label":  "Navegador / CDP",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "No automatizar hasta tener gate y objetivo explicito."
+                  },
+                  {
+                      "id":  "GATE-007",
+                      "action":  "autohotkey",
+                      "label":  "AutoHotkey",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Requiere autorizacion explicita por objetivo."
+                  },
+                  {
+                      "id":  "GATE-008",
+                      "action":  "clipboard",
+                      "label":  "Portapapeles",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "No usar sin autorizacion clara."
+                  },
+                  {
+                      "id":  "GATE-009",
+                      "action":  "enter_submit",
+                      "label":  "Enter / envio",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "No enviar mensajes automaticamente sin autorizacion explicita."
+                  },
+                  {
+                      "id":  "GATE-010",
+                      "action":  "external_network",
+                      "label":  "Red externa / Invoke-WebRequest",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Bloqueado por defecto."
+                  },
+                  {
+                      "id":  "GATE-011",
+                      "action":  "dangerous_delete",
+                      "label":  "Borrado recursivo / destructivo",
+                      "risk":  "high",
+                      "default_status":  "LOCKED",
+                      "human_authorization_required":  true,
+                      "automation_allowed":  false,
+                      "note":  "Nunca automatizar sin revision humana."
+                  }
+              ],
+    "next_recommended_action":  "MASTER_005_CONNECT_OPERATOR_REPORTS_READONLY_TO_DASHBOARD"
+}

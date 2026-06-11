@@ -1,0 +1,1082 @@
+﻿{
+    "type":  "ENGREMIAT_AUTOMATION_CORE_QUEUE_OBSERVABILITY_SNAPSHOT_001",
+    "phase":  "AUTOMATION_CORE_QUEUE_OBSERVABILITY",
+    "block":  "2/4",
+    "created_at":  "2026-06-06T08:55:32+02:00",
+    "ok":  true,
+    "decision":  "AUTOMATION_CORE_QUEUE_OBSERVABILITY_SNAPSHOT_CREATED",
+    "mode":  "LOCAL_ONLY_OBSERVABILITY_NO_REAL_WORKER",
+    "automation_core":  {
+                            "queue_detected":  true,
+                            "contracts_detected":  true,
+                            "health_gate_binding_detected":  true,
+                            "real_worker_allowed":  false,
+                            "external_actions_executed":  false
+                        },
+    "queue_metrics":  {
+                          "observed_items_count":  148,
+                          "pending_count":  0,
+                          "ready_count":  0,
+                          "blocked_count":  148,
+                          "review_count":  0
+                      },
+    "queue_items":  [
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_assembly_stage_close_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_repair_missing_artifacts_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\AUTOMATION_CORE_ASSEMBLY_STAGE_CLOSE_V1.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\AUTOMATION_CORE_ASSEMBLY_STAGE_CLOSE_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\contracts\\AUTOMATION_CORE_CONNECTED_INPUT_OUTPUT_CONTRACT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\queues\\AUTOMATION_CORE_SAMPLE_SAFE_QUEUE_ITEM_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\queues\\AUTOMATION_CORE_QUEUE_INTAKE_CONTRACT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_block_6_dashboard_status_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\exports\\AUTOMATION_CORE_STATUS_SNAPSHOT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\exports\\AUTOMATION_CORE_STATUS_FOR_CONTROL_DASHBOARD_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_block_5_official_bridge_export_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\exports\\AUTOMATION_CORE_OFFICIAL_BRIDGE_EXPORT_STUB_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\bindings\\AUTOMATION_CORE_OFFICIAL_BRIDGE_EXPORT_RUNTIME_BINDING_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_block_4_health_gate_runtime_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\runtime\\AUTOMATION_CORE_HEALTH_GATE_RUNTIME_STATE_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\bindings\\AUTOMATION_CORE_HEALTH_GATE_RUNTIME_RULES_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_block_2_local_loop_stub_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\loops\\AUTOMATION_CORE_LOCAL_LOOP_STATE_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\loops\\AUTOMATION_CORE_LOCAL_LOOP_STUB_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_automation_core_assembly_baseline_v1_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\docs\\RUNBOOK_AUTOMATION_CORE_ASSEMBLY_BASELINE_V1.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\exports\\AUTOMATION_CORE_DASHBOARD_STATUS_EXPORT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\bindings\\AUTOMATION_CORE_OFFICIAL_BRIDGE_V1_BINDING.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\queues\\AUTOMATION_CORE_SAFE_QUEUE_STUB_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\contracts\\AUTOMATION_CORE_OUTPUT_CONTRACT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\bindings\\AUTOMATION_CORE_HEALTH_GATE_BINDING_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\contracts\\AUTOMATION_CORE_INPUT_CONTRACT_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\AUTOMATION_CORE_BASELINE_REGISTRY_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\reports\\engremiat_control_return_to_automation_core_assembly_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\docs\\RUNBOOK_RETURN_TO_AUTOMATION_CORE_ASSEMBLY.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\AUTOMATION_CORE_ASSEMBLY_PLAN_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-core\\AUTOMATION_CORE_ASSEMBLY_RETURN_MARKER_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-253g-256g-google-side-manual-bridge\\STATUS_LOG_TO_SEND_256G_GOOGLE_SIDE_MANUAL_BRIDGE.txt",
+                            "ext":  ".txt",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-253g-256g-google-side-manual-bridge\\result_253g_256g_google_side_manual_bridge.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\connectors\\appsheet-google-sheets-bridge\\VERIFY_GOOGLE_SIDE_QUEUE_CSV_READ.ps1",
+                            "ext":  ".ps1",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-250g-252g-direct-test-apps-script-webapp-post-auth-repair\\STATUS_LOG_TO_SEND_252G_AUTH_REPAIR_WEBAPP_POST.txt",
+                            "ext":  ".txt",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-250g-252g-direct-test-apps-script-webapp-post-auth-repair\\result_250g_252g_auth_repair_webapp_post_diagnostic.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-247g-249g-repair-apps-script-bridge-contract\\STATUS_LOG_TO_SEND_249G_REPAIR_APPS_SCRIPT_BRIDGE_CONTRACT.txt",
+                            "ext":  ".txt",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-247g-249g-repair-apps-script-bridge-contract\\result_247g_249g_repair_apps_script_bridge_contract.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-control\\automation-tests\\phase-247g-249g-repair-apps-script-bridge-contract\\apps_script_bridge_deployment_contract_247g_249g_repair.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\official-intake\\handoff\\PROMPTER_CONTROL_HANDOFF_STUB_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\official-intake\\bindings\\PROMPTER_TO_AUTOMATION_CORE_QUEUE_BINDING_V1.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_229g_231g_control_review_queue_binding_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_181g_201g_automation_stabilization_repair_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\assisted-external-automation\\protocol-v1\\protocol.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\assisted-external-automation\\phase-148g-150g\\stable_loop_gate_150g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\assisted-external-automation\\phase-145g-147g\\decision_protocol_147g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_136g_138g_grouped_internal_project_queue_entry_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_136g_138g_grouped_internal_project_queue_entry_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-queue\\phase-136g-138g-grouped\\external_ai_human_bridge_preparation_gate_138g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-queue\\phase-136g-138g-grouped\\next_internal_cycle_plan_138g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-queue\\phase-136g-138g-grouped\\internal_project_queue_entry_dry_run_138g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-queue\\phase-136g-138g-grouped\\internal_project_queue_entry_137g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-queue\\phase-136g-138g-grouped\\internal_project_queue_entry_gate_review_136g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-formalization\\phase-135g\\internal_project_queue_entry_gate_135g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-project-formalization\\phase-135g\\internal_automation_scope_135g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-134g-reviewed-artifact\\internal_project_formalization_execution_gate_134g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-134g-reviewed-artifact\\internal_project_formalization_checklist_134g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-134g-reviewed-artifact\\internal_project_formalization_spec_134g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-134g-reviewed-artifact\\accepted_internal_project_artifact_candidate_134g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-134g-reviewed-artifact\\accepted_internal_project_artifact_candidate_134g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\internal_project_artifact_review_gate_133g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\simulated_response_intake_result_133g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\internal_project_artifact_candidate_133g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\internal_project_artifact_candidate_133g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\simulated_response_contract_validation_133g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\local_simulated_external_ai_response_133g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-133g-local-simulated-intake\\local_simulated_external_ai_response_133g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_132g_review_first_internal_automation_cycle_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_132g_review_first_internal_automation_cycle_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-132g-reviewed\\local_simulated_response_execution_gate_132g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-132g-reviewed\\local_simulated_response_spec_132g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-132g-reviewed\\external_ai_human_bridge_hold_132g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-132g-reviewed\\first_internal_automation_cycle_review_132g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-132g-reviewed\\first_internal_automation_cycle_review_132g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_131g_first_prompt_initiated_internal_automation_dry_run_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_131g_first_prompt_initiated_internal_automation_dry_run_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\human_pasted_external_ai_response_intake_gate_131g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\human_validation_before_external_ai_bridge_gate_131g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\expected_human_pasted_ai_response_contract_131g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\external_ai_prompt_for_human_bridge_131g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\prompt_initiated_context_package_131g.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\prompt_initiated_context_package_131g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-first-cycle\\phase-131g\\internal_automation_queue_item_131g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_130g_internal_automation_readiness_core_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_130g_internal_automation_readiness_core_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\internal_automation_first_cycle_gate_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\worker_response_intake_protocol_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\external_ai_human_bridge_protocol_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\human_validation_protocol_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\internal_automation_queue_model_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\prompt_initiator_registry_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\internal-automation-readiness-core\\phase-130g\\internal_automation_readiness_core_130g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\real-contact-preparation-layer\\phase-126g-reviewed\\human_blocker_resolution_queue_126g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\local-behavior-tests\\phase-112g-response-intake-gate\\worker_response_intake_queue_112g.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_101_next_automation_layer_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_101_next_automation_layer_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_100_minimal_real_automation_trilogy_close_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_100_minimal_real_automation_trilogy_close_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_097_second_real_automation_validation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_097_second_real_automation_validation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_094_first_real_automation_validation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_094_first_real_automation_validation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_091_first_real_automation_candidate_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_091_first_real_automation_candidate_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_090_real_automation_boundary_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_090_real_automation_boundary_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_089_governed_automation_loop_simulation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_089_governed_automation_loop_simulation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_088_governed_automation_loop_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_088_governed_automation_loop_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_087_local_stub_pipeline_health_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_087_local_stub_pipeline_health_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_086_local_stub_pipeline_simulation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_086_local_stub_pipeline_simulation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_085_local_stub_pipeline_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_085_local_stub_pipeline_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_084_worker_stub_output_health_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_084_worker_stub_output_health_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_083_worker_stub_dry_run_simulation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_083_worker_stub_dry_run_simulation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_082_worker_stub_dry_run_execution_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_082_worker_stub_dry_run_execution_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_081_worker_stub_routing_validation_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_081_worker_stub_routing_validation_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_080_worker_stub_packets_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_080_worker_stub_packets_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_079_worker_stubs_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_079_worker_stubs_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_074_apply_governed_automation_promotion_decision_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_074_apply_governed_automation_promotion_decision_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_073_governed_automation_promotion_gate_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_073_governed_automation_promotion_gate_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_072_run_sequential_automation_dry_run_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_072_run_sequential_automation_dry_run_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_071_sequential_automation_architecture_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_071_sequential_automation_architecture_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_059_external_support_to_internal_review_queue_report.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\reports\\engremiat_prompter_phase_059_external_support_to_internal_review_queue_report.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\phase_059_validation_result.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\evidence\\phase_059_external_support_to_internal_review_queue_evidence.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\external_support_internal_review_059.md",
+                            "ext":  ".md",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\external_support_internal_review_queue_snapshot_059.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\external_support_internal_review_gate_059.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\external_support_internal_review_checklist_059.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\out\\external_support_internal_review_queue_row_059.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\ai-provider-routing\\phase-059-external-support-to-internal-review-queue\\contracts\\external_support_to_internal_review_queue_contract_059.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        },
+                        {
+                            "path":  "C:\\Users\\sacan\\Desktop\\ENGREMIAT_MASTER\\tools\\engremiat-prompter\\conversation-orchestrator\\phase-054-browser-load-monitor-branch-gate-prep\\out\\next_automation_readiness_gate_054.json",
+                            "ext":  ".json",
+                            "parsed_json":  false,
+                            "observed_status":  "missing",
+                            "summary":  ""
+                        }
+                    ],
+    "safety":  {
+                   "mode":  "LOCAL_ONLY",
+                   "external_actions_executed":  false,
+                   "google_api_call_allowed":  false,
+                   "real_worker_allowed":  false,
+                   "no_external_ai":  true,
+                   "no_external_api":  true,
+                   "no_gcloud":  true,
+                   "no_local_google_token":  true,
+                   "no_webapp_exec":  true,
+                   "no_browser":  true,
+                   "no_cdp":  true,
+                   "no_clipboard":  true
+               },
+    "sync_before":  {
+                        "remote_synced":  true,
+                        "sync_raw":  "0\t0",
+                        "sync_norm":  "0 0",
+                        "head":  "a007095 [ENGREMIAT_CONTROL] Update dashboard bridge export binding final report"
+                    },
+    "next":  "RUN_BLOCK_3_CREATE_QUEUE_DASHBOARD_CARD"
+}
