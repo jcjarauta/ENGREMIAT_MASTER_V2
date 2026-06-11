@@ -1,0 +1,14 @@
+﻿{
+    "ok":  true,
+    "decision":  "MAIN_PC_REPO_HEALTH_001_MINIMAL_PRECLOSE_READY",
+    "run_id":  "MAIN-PC-REPO-HEALTH-001-STEP006R-MINIMAL-20260611-220017",
+    "branch_before":  "main",
+    "head_before":  "ab7fbba",
+    "remote_url":  "https://github.com/jcjarauta/ENGREMIAT_MASTER_V2.git",
+    "scoped_pending_before_count":  12,
+    "out_of_scope_pending_before_count":  0,
+    "scope":  "tools/engremiat-control/main-pc-repo-health-001",
+    "worker_execution":  false,
+    "google_api_call":  false,
+    "sheets_real_execution":  false
+}

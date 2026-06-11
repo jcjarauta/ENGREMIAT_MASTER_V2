@@ -1,0 +1,12 @@
+﻿?? tools/engremiat-control/main-pc-repo-health-001/gates/MAIN_PC_REPO_HEALTH_001_STEP_006R_AUDIT_GATE.txt
+?? tools/engremiat-control/main-pc-repo-health-001/gates/MAIN_PC_REPO_HEALTH_001_STEP_006_CLOSE_GATE.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-close-result.json
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-close-summary.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-final-log.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-git-status-after.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-push-output.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006-staged-files.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006r-audit-log.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006r-audit-result.json
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006r-audit-status.txt
+?? tools/engremiat-control/main-pc-repo-health-001/reports/main-pc-repo-health-001-step-006r-audit-summary.txt

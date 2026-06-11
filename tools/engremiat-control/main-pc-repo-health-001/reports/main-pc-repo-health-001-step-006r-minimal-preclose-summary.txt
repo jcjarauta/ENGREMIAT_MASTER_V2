@@ -1,0 +1,12 @@
+﻿MAIN_PC_REPO_HEALTH_001_STEP_006R_MINIMAL_PRECLOSE_BEGIN
+ok=True
+decision=MAIN_PC_REPO_HEALTH_001_MINIMAL_PRECLOSE_READY
+branch_before=main
+head_before=ab7fbba
+scoped_pending_before_count=12
+out_of_scope_pending_before_count=0
+scope=tools/engremiat-control/main-pc-repo-health-001
+commit=False
+push=False
+recommended_next=COMMIT_AND_PUSH_SCOPED_HEALTH_MINIMAL
+MAIN_PC_REPO_HEALTH_001_STEP_006R_MINIMAL_PRECLOSE_END

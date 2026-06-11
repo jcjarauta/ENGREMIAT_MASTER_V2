@@ -1,0 +1,18 @@
+﻿{
+    "ok":  true,
+    "decision":  "FINAL_AUDIT_HEALTH_SCOPE_PENDING_READY_FOR_SCOPED_CLOSE_REPAIR",
+    "run_id":  "MAIN-PC-REPO-HEALTH-001-STEP006R-AUDIT-20260611-215831",
+    "readiness":  90,
+    "branch":  "main",
+    "local_head":  "ab7fbba",
+    "remote_head":  "ab7fbba",
+    "remote_matches":  true,
+    "status_count":  7,
+    "scoped_status_count":  7,
+    "out_of_scope_status_count":  0,
+    "status_txt":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\main-pc-repo-health-001\\reports\\main-pc-repo-health-001-step-006r-audit-status.txt",
+    "log_txt":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\main-pc-repo-health-001\\reports\\main-pc-repo-health-001-step-006r-audit-log.txt",
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "RUN_SCOPED_HEALTH_CLOSE_REPAIR_COMMIT_PUSH"
+}
