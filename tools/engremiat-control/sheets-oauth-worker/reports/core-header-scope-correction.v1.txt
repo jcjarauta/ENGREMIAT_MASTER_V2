@@ -1,0 +1,15 @@
+﻿schema=engremiat.core-header-scope-correction.v1
+objective=SHEETS_CORE_OPERATIONAL_STRUCTURE_001
+ok=True
+decision=NO_GO_WRONG_CORE_TAB_ASSUMPTION_REOPEN_COLUMN_CONTRACT_DESIGN
+real_core_tabs=ENG_HUMAN_QUEUE|ENG_HUMAN_REVIEW|ENG_HUMAN_HISTORY|ENG_HUMAN_CONFIG
+incorrect_assumed_tabs=ENG_GATES|ENG_RUNS|ENG_DICTIONARY|ENG_MANUALS
+google_api_calls_attempted=True
+google_api_write=False
+real_sheet_write=False
+header_rows_written=0
+data_loss=False
+authorization_consumed=False
+worker_execution_blocked=True
+gate=REOPEN_BLOCK_002_FOR_REAL_HUMAN_CORE_TAB_CONTRACTS
+next=SHEETS_CORE_OPERATIONAL_STRUCTURE_001_BLOCK_002_REAL_CORE_REDESIGN

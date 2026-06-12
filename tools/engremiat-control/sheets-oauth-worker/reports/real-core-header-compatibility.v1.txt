@@ -1,0 +1,11 @@
+﻿schema=engremiat.real-core-header-compatibility.v1
+objective=SHEETS_CORE_OPERATIONAL_STRUCTURE_001
+real_core_tabs_count=4
+contracts_count=4
+payload_rows_count=4
+contracts_match_payload=True
+destructive_mapping=False
+google_api_call=False
+real_sheet_write=False
+decision=REAL_CORE_HEADERS_COMPATIBLE_READY_FOR_WRITE_AUTHORIZATION
+next=SHEETS_CORE_OPERATIONAL_STRUCTURE_001_BLOCK_005R

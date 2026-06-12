@@ -1,0 +1,1 @@
+﻿config_key|config_value|scope|description|status|version|updated_at|updated_by|evidence_ref|notes

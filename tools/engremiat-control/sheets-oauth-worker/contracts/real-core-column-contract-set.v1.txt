@@ -1,0 +1,7 @@
+﻿schema=engremiat.real-core-column-contract-set.v1
+tabs=ENG_HUMAN_QUEUE|ENG_HUMAN_REVIEW|ENG_HUMAN_HISTORY|ENG_HUMAN_CONFIG
+contracts_count=4
+contracts_valid=True
+google_api_call=False
+real_sheet_write=False
+next=SHEETS_CORE_OPERATIONAL_STRUCTURE_001_BLOCK_003R

@@ -1,0 +1,13 @@
+﻿schema=engremiat.real-core-header-payload.v1
+objective=SHEETS_CORE_OPERATIONAL_STRUCTURE_001
+header_row=1
+ENG_HUMAN_QUEUE=item_id|created_at|objective|action_required|priority|status|assigned_to|due_at|source_ref|evidence_ref|notes
+ENG_HUMAN_REVIEW=review_id|queue_item_id|reviewed_at|reviewer|decision|status|comment|required_change|evidence_ref|next_action
+ENG_HUMAN_HISTORY=history_id|event_at|entity_type|entity_id|action|previous_status|new_status|actor|decision|evidence_ref|run_id
+ENG_HUMAN_CONFIG=config_key|config_value|scope|description|status|version|updated_at|updated_by|evidence_ref|notes
+tabs_count=4
+payload_rows_count=4
+google_api_call=False
+real_sheet_write=False
+decision=REAL_CORE_HEADER_PAYLOAD_READY
+next=SHEETS_CORE_OPERATIONAL_STRUCTURE_001_BLOCK_004R
