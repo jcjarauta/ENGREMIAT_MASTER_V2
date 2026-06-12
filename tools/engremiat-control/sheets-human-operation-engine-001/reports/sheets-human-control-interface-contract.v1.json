@@ -1,0 +1,135 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "stage_current":  1,
+    "stage_total":  8,
+    "stage_remaining":  7,
+    "decision":  "SHEETS_HUMAN_CONTROL_INTERFACE_ARCHITECTURE_AND_VIEW_MAP_DEFINED",
+    "purpose":  "Build the first primitive human interface in Google Sheets and consolidate the functional architecture before Telegram",
+    "source_evidence":  {
+                            "durable_entrypoint_close":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-durable-governed-engine-entrypoint-close.v1.json",
+                            "operational_panel_close":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-and-loop-launcher-close.v1.json",
+                            "readonly_snapshot":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-readonly-snapshot.v1.json"
+                        },
+    "views_count":  8,
+    "required_views":  [
+                           "ENG_CONTROL_PANEL",
+                           "ENG_TASK_INBOX",
+                           "ENG_TASK_DETAIL",
+                           "ENG_DECISION_CENTER",
+                           "ENG_SYSTEM_HEALTH",
+                           "ENG_PROJECTS",
+                           "ENG_HISTORY",
+                           "ENG_CONFIG_VIEW"
+                       ],
+    "first_implementation_scope":  [
+                                       "ENG_CONTROL_PANEL",
+                                       "ENG_TASK_INBOX",
+                                       "ENG_TASK_DETAIL",
+                                       "ENG_DECISION_CENTER"
+                                   ],
+    "secondary_visibility_scope":  [
+                                       "ENG_SYSTEM_HEALTH",
+                                       "ENG_PROJECTS",
+                                       "ENG_HISTORY",
+                                       "ENG_CONFIG_VIEW"
+                                   ],
+    "human_cycle":  [
+                        "STATUS",
+                        "TASKS",
+                        "DETAIL",
+                        "DECISION",
+                        "PREFLIGHT",
+                        "AUTHORIZATION",
+                        "EXECUTION",
+                        "RESULT"
+                    ],
+    "decision_values":  [
+                            "APPROVE",
+                            "REJECT",
+                            "REQUEST_CHANGES"
+                        ],
+    "future_decision_candidates":  [
+                                       "DEFER",
+                                       "REASSIGN",
+                                       "ESCALATE"
+                                   ],
+    "data_sources":  {
+                         "queue":  "STG_ENG_IMPORT_QUEUE",
+                         "review":  "ENG_HUMAN_REVIEW",
+                         "history":  "STG_ENG_IMPORT_AUDIT"
+                     },
+    "separation":  {
+                       "sheets":  "INTERFACE_AND_VISIBLE_OPERATIONAL_STORAGE",
+                       "entrypoint":  "GOVERNANCE_AND_EXECUTION",
+                       "workers":  "SPECIALIZED_CAPABILITIES",
+                       "history":  "AUDIT_AND_EVIDENCE",
+                       "telegram":  "FUTURE_REMOTE_INTERFACE_LAYER"
+                   },
+    "governance":  {
+                       "direct_write_to_source_tabs_from_human_cells":  false,
+                       "config_direct_edit":  false,
+                       "decision_preparation_in_sheets":  true,
+                       "execution_must_use_durable_entrypoint":  true,
+                       "exact_authorization_required":  true,
+                       "duplicate_policy":  "BLOCK",
+                       "stale_state_policy":  "BLOCK",
+                       "atomic_execution_required":  true,
+                       "post_execution_verification_required":  true
+                   },
+    "blocks":  [
+                   {
+                       "block":  1,
+                       "name":  "CONTRACT_AND_VIEW_MAP",
+                       "status":  "COMPLETED"
+                   },
+                   {
+                       "block":  2,
+                       "name":  "ENG_CONTROL_PANEL_MODEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  3,
+                       "name":  "ENG_TASK_INBOX_MODEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  4,
+                       "name":  "ENG_TASK_DETAIL_MODEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  5,
+                       "name":  "ENG_DECISION_CENTER_MODEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  6,
+                       "name":  "ENTRYPOINT_BINDING_AND_REFRESH_MODEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  7,
+                       "name":  "COMPLETE_HUMAN_CYCLE_SMOKE",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  8,
+                       "name":  "CLOSE_GIT_AND_VALUE_NEXT_OBJECTIVE",
+                       "status":  "PENDING"
+                   }
+               ],
+    "mode":  "LOCAL_ONLY_INTERFACE_CONTRACT_NO_GOOGLE_API_NO_SHEET_WRITE_NO_GIT",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_002_BUILD_ENG_CONTROL_PANEL_MODEL",
+    "next":  "BLOCK_002_BUILD_ENG_CONTROL_PANEL_MODEL"
+}

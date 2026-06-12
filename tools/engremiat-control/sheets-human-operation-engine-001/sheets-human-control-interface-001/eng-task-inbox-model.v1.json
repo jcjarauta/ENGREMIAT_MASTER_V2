@@ -1,0 +1,266 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.task-inbox-model.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "tab":  "ENG_TASK_INBOX",
+    "role":  "HUMAN_WORK_QUEUE",
+    "version":  1,
+    "layout":  {
+                   "columns":  12,
+                   "managed_range":  "A1:L500",
+                   "header_range":  "A4:L4",
+                   "data_range":  "A5:L500",
+                   "frozen_rows":  4,
+                   "filter_enabled":  true,
+                   "hidden_gridlines":  false,
+                   "protected_system_columns":  [
+                                                    "B:L"
+                                                ],
+                   "human_editable_ranges":  [
+                                                 "A5:A500",
+                                                 "B2",
+                                                 "D2",
+                                                 "F2",
+                                                 "H2"
+                                             ]
+               },
+    "columns":  [
+                    {
+                        "order":  1,
+                        "key":  "selected",
+                        "label":  "Seleccionar",
+                        "source":  "INTERFACE_CONTROL",
+                        "editable":  true,
+                        "validation":  "BOOLEAN",
+                        "width":  90
+                    },
+                    {
+                        "order":  2,
+                        "key":  "queue_id",
+                        "label":  "ID tarea",
+                        "source":  "QUEUE",
+                        "editable":  false,
+                        "width":  190
+                    },
+                    {
+                        "order":  3,
+                        "key":  "status",
+                        "label":  "Estado",
+                        "source":  "QUEUE",
+                        "editable":  false,
+                        "width":  130
+                    },
+                    {
+                        "order":  4,
+                        "key":  "priority",
+                        "label":  "Prioridad",
+                        "source":  "QUEUE_OR_DEFAULT",
+                        "editable":  false,
+                        "width":  100
+                    },
+                    {
+                        "order":  5,
+                        "key":  "project",
+                        "label":  "Proyecto",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  150
+                    },
+                    {
+                        "order":  6,
+                        "key":  "task_type",
+                        "label":  "Tipo",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  140
+                    },
+                    {
+                        "order":  7,
+                        "key":  "title",
+                        "label":  "Resumen",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  280
+                    },
+                    {
+                        "order":  8,
+                        "key":  "owner",
+                        "label":  "Responsable",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  140
+                    },
+                    {
+                        "order":  9,
+                        "key":  "created_at",
+                        "label":  "Creada",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  155
+                    },
+                    {
+                        "order":  10,
+                        "key":  "due_at",
+                        "label":  "Límite",
+                        "source":  "QUEUE_OPTIONAL",
+                        "editable":  false,
+                        "width":  155
+                    },
+                    {
+                        "order":  11,
+                        "key":  "recommended_action",
+                        "label":  "Acción recomendada",
+                        "source":  "DERIVED",
+                        "editable":  false,
+                        "width":  210
+                    },
+                    {
+                        "order":  12,
+                        "key":  "open_detail",
+                        "label":  "Abrir detalle",
+                        "source":  "INTERFACE_LINK",
+                        "editable":  false,
+                        "width":  120
+                    }
+                ],
+    "filters":  [
+                    {
+                        "cell":  "B2",
+                        "key":  "status_filter",
+                        "label":  "Estado",
+                        "editable":  true,
+                        "allowed_values":  [
+                                               "ALL",
+                                               "PENDING",
+                                               "CHANGES_REQUESTED",
+                                               "BLOCKED",
+                                               "APPROVED",
+                                               "REJECTED"
+                                           ],
+                        "default":  "PENDING"
+                    },
+                    {
+                        "cell":  "D2",
+                        "key":  "priority_filter",
+                        "label":  "Prioridad",
+                        "editable":  true,
+                        "allowed_values":  [
+                                               "ALL",
+                                               "CRITICAL",
+                                               "HIGH",
+                                               "MEDIUM",
+                                               "NORMAL",
+                                               "LOW"
+                                           ],
+                        "default":  "ALL"
+                    },
+                    {
+                        "cell":  "F2",
+                        "key":  "project_filter",
+                        "label":  "Proyecto",
+                        "editable":  true,
+                        "allowed_values":  [
+                                               "ALL",
+                                               "DYNAMIC_FROM_DATA"
+                                           ],
+                        "default":  "ALL"
+                    },
+                    {
+                        "cell":  "H2",
+                        "key":  "show_action_required_only",
+                        "label":  "Solo requiere acción",
+                        "editable":  true,
+                        "allowed_values":  [
+                                               "TRUE",
+                                               "FALSE"
+                                           ],
+                        "default":  "TRUE"
+                    }
+                ],
+    "selection":  {
+                      "mode":  "SINGLE_TASK_SELECTION",
+                      "selection_column":  "A",
+                      "selected_queue_id_output_cell":  "B1",
+                      "multiple_selection_policy":  "BLOCK",
+                      "non_actionable_selection_policy":  "WARN",
+                      "selection_must_bind_queue_id":  true,
+                      "next_view":  "ENG_TASK_DETAIL"
+                  },
+    "sorting":  {
+                    "primary":  "action_required DESC",
+                    "secondary":  "attention_rank ASC",
+                    "tertiary":  "priority_rank ASC",
+                    "stable_key":  "queue_id ASC"
+                },
+    "rows":  [
+                 {
+                     "queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+                     "sheet_row":  2,
+                     "status":  "APPROVED",
+                     "priority":  "NORMAL",
+                     "project":  "",
+                     "task_type":  "",
+                     "title":  "",
+                     "owner":  "",
+                     "created_at":  "2026-06-12T11:40:35.9427392Z",
+                     "due_at":  "",
+                     "source":  "SHEETS_FIRST_GOVERNED_REAL_WRITE_001",
+                     "action_required":  false,
+                     "recommended_action":  "VIEW_HISTORY",
+                     "attention_rank":  5,
+                     "priority_rank":  3,
+                     "target_view":  "ENG_TASK_DETAIL"
+                 },
+                 {
+                     "queue_id":  "ENG-REUSABLE-LOOP-20260612-150327",
+                     "sheet_row":  3,
+                     "status":  "APPROVED",
+                     "priority":  "NORMAL",
+                     "project":  "",
+                     "task_type":  "",
+                     "title":  "",
+                     "owner":  "",
+                     "created_at":  "2026-06-12T13:03:27.0125936Z",
+                     "due_at":  "",
+                     "source":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001_SECOND_REAL_TASK",
+                     "action_required":  false,
+                     "recommended_action":  "VIEW_HISTORY",
+                     "attention_rank":  5,
+                     "priority_rank":  3,
+                     "target_view":  "ENG_TASK_DETAIL"
+                 }
+             ],
+    "summary":  {
+                    "queue_total":  2,
+                    "pending_count":  0,
+                    "action_required_count":  0,
+                    "approved_count":  2,
+                    "rejected_count":  0,
+                    "changes_requested_count":  0,
+                    "blocked_count":  0
+                },
+    "navigation":  {
+                       "home":  "ENG_CONTROL_PANEL",
+                       "detail":  "ENG_TASK_DETAIL",
+                       "decision":  "ENG_DECISION_CENTER",
+                       "history":  "ENG_HISTORY"
+                   },
+    "refresh":  {
+                    "policy":  "GOVERNED_MANAGED_RANGE_REFRESH",
+                    "source_tab":  "STG_ENG_IMPORT_QUEUE",
+                    "source_readonly":  true,
+                    "preserve_filter_cells":  true,
+                    "preserve_single_selection_when_queue_id_exists":  true
+                },
+    "governance":  {
+                       "direct_source_write":  false,
+                       "selection_is_interface_state_only":  true,
+                       "decision_not_allowed_in_inbox":  true,
+                       "execution_not_allowed_in_inbox":  true,
+                       "mutations_require_durable_entrypoint":  true,
+                       "config_write":  false
+                   },
+    "implementation_status":  "MODEL_READY_NOT_DEPLOYED_TO_REAL_SHEET",
+    "real_sheet_write":  false
+}

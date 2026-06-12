@@ -1,0 +1,13 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.decision-center-preview.v1",
+    "ok":  true,
+    "selected_queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+    "selected_status":  "APPROVED",
+    "actionable":  false,
+    "blocking_reason":  "TASK_STATUS_NOT_ACTIONABLE_APPROVED",
+    "decision_default":  "",
+    "authorization_template":  "",
+    "prepare_allowed":  false,
+    "execution_allowed":  false,
+    "next_action":  "SELECT_ACTIONABLE_TASK_FROM_ENG_TASK_INBOX"
+}

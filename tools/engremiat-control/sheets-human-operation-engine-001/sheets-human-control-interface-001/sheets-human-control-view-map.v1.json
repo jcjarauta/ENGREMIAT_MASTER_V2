@@ -1,0 +1,167 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.view-map.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "views":  [
+                  {
+                      "order":  1,
+                      "tab":  "ENG_CONTROL_PANEL",
+                      "role":  "SYSTEM_OVERVIEW",
+                      "purpose":  "Mostrar estado general, presión humana, alertas, pendientes y navegación",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "REFRESH_VIEW",
+                                              "OPEN_TASK_INBOX",
+                                              "OPEN_SYSTEM_HEALTH",
+                                              "OPEN_HISTORY"
+                                          ]
+                  },
+                  {
+                      "order":  2,
+                      "tab":  "ENG_TASK_INBOX",
+                      "role":  "HUMAN_WORK_QUEUE",
+                      "purpose":  "Presentar tareas que requieren atención humana, prioridad y estado",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "SELECT_TASK",
+                                              "FILTER_PENDING",
+                                              "FILTER_PRIORITY",
+                                              "OPEN_TASK_DETAIL"
+                                          ]
+                  },
+                  {
+                      "order":  3,
+                      "tab":  "ENG_TASK_DETAIL",
+                      "role":  "SELECTED_TASK_CONTEXT",
+                      "purpose":  "Mostrar contexto, evidencia, riesgo, propuesta e impacto de la tarea seleccionada",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW_WITH_CONTROLLED_SELECTION_CELL",
+                      "human_editable":  true,
+                      "editable_fields":  [
+                                              "selected_queue_id"
+                                          ],
+                      "primary_actions":  [
+                                              "LOAD_SELECTED_TASK",
+                                              "OPEN_DECISION_CENTER"
+                                          ]
+                  },
+                  {
+                      "order":  4,
+                      "tab":  "ENG_DECISION_CENTER",
+                      "role":  "HUMAN_DECISION_PREPARATION",
+                      "purpose":  "Capturar decisión, comentario y preparación de autorización gobernada",
+                      "write_policy":  "CONTROLLED_HUMAN_INPUT",
+                      "human_editable":  true,
+                      "editable_fields":  [
+                                              "selected_queue_id",
+                                              "decision",
+                                              "comment",
+                                              "reviewer",
+                                              "authorization_phrase"
+                                          ],
+                      "primary_actions":  [
+                                              "PREPARE",
+                                              "PREFLIGHT",
+                                              "AUTHORIZE",
+                                              "EXECUTE",
+                                              "VERIFY"
+                                          ]
+                  },
+                  {
+                      "order":  5,
+                      "tab":  "ENG_SYSTEM_HEALTH",
+                      "role":  "SYSTEM_HEALTH_VIEW",
+                      "purpose":  "Mostrar salud, bloqueos, presión de cola, workers y capacidades",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "REFRESH_HEALTH",
+                                              "OPEN_BLOCKERS"
+                                          ]
+                  },
+                  {
+                      "order":  6,
+                      "tab":  "ENG_PROJECTS",
+                      "role":  "PROJECT_OVERVIEW",
+                      "purpose":  "Mostrar proyectos, fase, progreso, riesgos y decisiones pendientes",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "FILTER_PROJECT",
+                                              "OPEN_PROJECT_TASKS"
+                                          ]
+                  },
+                  {
+                      "order":  7,
+                      "tab":  "ENG_HISTORY",
+                      "role":  "HUMAN_READABLE_AUDIT",
+                      "purpose":  "Mostrar decisiones, cambios, resultados, evidencias y rollback",
+                      "write_policy":  "SYSTEM_MANAGED_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "FILTER_QUEUE_ID",
+                                              "FILTER_PROJECT",
+                                              "FILTER_DECISION"
+                                          ]
+                  },
+                  {
+                      "order":  8,
+                      "tab":  "ENG_CONFIG_VIEW",
+                      "role":  "READONLY_CONFIGURATION_VIEW",
+                      "purpose":  "Mostrar módulos, políticas, capacidades y conexiones sin permitir cambios directos",
+                      "write_policy":  "READONLY_CONFIG_VIEW",
+                      "human_editable":  false,
+                      "primary_actions":  [
+                                              "REFRESH_CONFIG_VIEW"
+                                          ]
+                  }
+              ],
+    "navigation":  {
+                       "home":  "ENG_CONTROL_PANEL",
+                       "human_cycle":  [
+                                           "ENG_CONTROL_PANEL",
+                                           "ENG_TASK_INBOX",
+                                           "ENG_TASK_DETAIL",
+                                           "ENG_DECISION_CENTER",
+                                           "ENG_HISTORY"
+                                       ],
+                       "system_cycle":  [
+                                            "ENG_CONTROL_PANEL",
+                                            "ENG_SYSTEM_HEALTH",
+                                            "ENG_PROJECTS",
+                                            "ENG_CONFIG_VIEW"
+                                        ]
+                   },
+    "source_tabs":  {
+                        "queue":  "STG_ENG_IMPORT_QUEUE",
+                        "review":  "ENG_HUMAN_REVIEW",
+                        "history":  "STG_ENG_IMPORT_AUDIT"
+                    },
+    "engine":  {
+                   "entrypoint":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+                   "launcher_adapter":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\operational-control-panel-and-loop-launcher-001\\invoke-durable-governed-engine.ps1",
+                   "pipeline":  [
+                                    "SELECT",
+                                    "PAYLOAD",
+                                    "PREFLIGHT",
+                                    "AUTHORIZE",
+                                    "EXECUTE",
+                                    "VERIFY"
+                                ],
+                   "supported_decisions":  [
+                                               "APPROVE",
+                                               "REJECT",
+                                               "REQUEST_CHANGES"
+                                           ],
+                   "interface_must_not_duplicate_engine_logic":  true
+               },
+    "design_rules":  [
+                         "SHEETS_IS_INTERFACE_AND_VISIBLE_STORAGE",
+                         "ENTRYPOINT_IS_GOVERNANCE_AND_EXECUTION",
+                         "WORKERS_ARE_SPECIALIZED_CAPABILITIES",
+                         "HISTORY_IS_EVIDENCE",
+                         "TELEGRAM_WILL_REUSE_THE_SAME_FUNCTIONAL_MODEL"
+                     ]
+}

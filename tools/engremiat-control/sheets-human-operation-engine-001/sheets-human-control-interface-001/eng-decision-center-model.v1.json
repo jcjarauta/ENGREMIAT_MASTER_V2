@@ -1,0 +1,326 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.decision-center-model.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "tab":  "ENG_DECISION_CENTER",
+    "role":  "HUMAN_DECISION_PREPARATION",
+    "version":  1,
+    "layout":  {
+                   "columns":  8,
+                   "managed_range":  "A1:H45",
+                   "frozen_rows":  5,
+                   "protected_system_ranges":  true,
+                   "human_editable_cells":  [
+                                                "B8",
+                                                "B10",
+                                                "B12",
+                                                "B14"
+                                            ],
+                   "sections":  [
+                                    {
+                                        "order":  1,
+                                        "id":  "SELECTED_TASK",
+                                        "range":  "A1:H5",
+                                        "title":  "Tarea y estado",
+                                        "type":  "SELECTION_SUMMARY",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "queue_id",
+                                                       "queue_row",
+                                                       "current_status",
+                                                       "actionable"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  2,
+                                        "id":  "HUMAN_INPUT",
+                                        "range":  "A7:H15",
+                                        "title":  "Decisión humana",
+                                        "type":  "CONTROLLED_INPUT",
+                                        "editable_cells":  [
+                                                               "B8",
+                                                               "B10",
+                                                               "B12",
+                                                               "B14"
+                                                           ],
+                                        "fields":  [
+                                                       "decision",
+                                                       "comment",
+                                                       "reviewer",
+                                                       "authorization_phrase"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  3,
+                                        "id":  "PREPARATION",
+                                        "range":  "A17:H23",
+                                        "title":  "Preparación",
+                                        "type":  "PIPELINE_STATUS",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "selection_ready",
+                                                       "payload_ready",
+                                                       "preflight_ready",
+                                                       "authorization_ready"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  4,
+                                        "id":  "GOVERNANCE",
+                                        "range":  "A25:H31",
+                                        "title":  "Controles de gobernanza",
+                                        "type":  "GATE_STATUS",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "duplicate_policy",
+                                                       "stale_state_policy",
+                                                       "exact_authorization_required",
+                                                       "atomic_execution_required",
+                                                       "rollback_required"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  5,
+                                        "id":  "EXECUTION",
+                                        "range":  "A33:H39",
+                                        "title":  "Ejecución y verificación",
+                                        "type":  "EXECUTION_STATUS",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "execution_allowed",
+                                                       "execution_status",
+                                                       "queue_verified",
+                                                       "review_verified",
+                                                       "history_verified"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  6,
+                                        "id":  "NAVIGATION",
+                                        "range":  "A41:H45",
+                                        "title":  "Navegación",
+                                        "type":  "VIEW_LINKS",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "targets":  [
+                                                        "ENG_TASK_DETAIL",
+                                                        "ENG_TASK_INBOX",
+                                                        "ENG_HISTORY",
+                                                        "ENG_CONTROL_PANEL"
+                                                    ]
+                                    }
+                                ]
+               },
+    "selected_task":  {
+                          "queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+                          "queue_row":  2,
+                          "current_status":  "APPROVED",
+                          "actionable":  false,
+                          "blocking_reason":  "TASK_STATUS_NOT_ACTIONABLE_APPROVED"
+                      },
+    "fields":  [
+                   {
+                       "cell":  "B2",
+                       "key":  "selected_queue_id",
+                       "label":  "ID tarea",
+                       "editable":  false,
+                       "value":  "ENG-FIRST-WRITE-20260612-134035"
+                   },
+                   {
+                       "cell":  "B3",
+                       "key":  "selected_queue_row",
+                       "label":  "Fila origen",
+                       "editable":  false,
+                       "value":  2
+                   },
+                   {
+                       "cell":  "B4",
+                       "key":  "selected_status",
+                       "label":  "Estado actual",
+                       "editable":  false,
+                       "value":  "APPROVED"
+                   },
+                   {
+                       "cell":  "B8",
+                       "key":  "decision",
+                       "label":  "Decisión",
+                       "editable":  true,
+                       "required":  true,
+                       "allowed_values":  [
+                                              "APPROVE",
+                                              "REJECT",
+                                              "REQUEST_CHANGES"
+                                          ],
+                       "value":  ""
+                   },
+                   {
+                       "cell":  "B10",
+                       "key":  "comment",
+                       "label":  "Comentario",
+                       "editable":  true,
+                       "required":  false,
+                       "max_length":  1000,
+                       "value":  ""
+                   },
+                   {
+                       "cell":  "B12",
+                       "key":  "reviewer",
+                       "label":  "Revisor",
+                       "editable":  true,
+                       "required":  true,
+                       "value":  "ENGREMIAT_HUMAN_OPERATOR"
+                   },
+                   {
+                       "cell":  "B14",
+                       "key":  "authorization_phrase",
+                       "label":  "Autorización exacta",
+                       "editable":  true,
+                       "required":  true,
+                       "value":  "",
+                       "expected_template":  ""
+                   }
+               ],
+    "decision":  {
+                     "allowed_values":  [
+                                            "APPROVE",
+                                            "REJECT",
+                                            "REQUEST_CHANGES"
+                                        ],
+                     "default_value":  "",
+                     "comment_optional":  true,
+                     "comment_max_length":  1000,
+                     "reviewer_required":  true,
+                     "authorization_phrase_required":  true,
+                     "authorization_template":  "",
+                     "exact_match_required":  true
+                 },
+    "pipeline":  [
+                     {
+                         "order":  1,
+                         "step":  "SELECT",
+                         "status":  "READY",
+                         "source":  "ENG_TASK_DETAIL"
+                     },
+                     {
+                         "order":  2,
+                         "step":  "PAYLOAD",
+                         "status":  "BLOCKED",
+                         "worker":  "parameterized-payload-builder.js"
+                     },
+                     {
+                         "order":  3,
+                         "step":  "PREFLIGHT",
+                         "status":  "BLOCKED",
+                         "worker":  "preflight-duplicate-guard.js"
+                     },
+                     {
+                         "order":  4,
+                         "step":  "AUTHORIZE",
+                         "status":  "BLOCKED",
+                         "worker":  "exact-authorization-gate.js"
+                     },
+                     {
+                         "order":  5,
+                         "step":  "EXECUTE",
+                         "status":  "BLOCKED_UNTIL_AUTHORIZED",
+                         "worker":  "parameterized-atomic-executor.js"
+                     },
+                     {
+                         "order":  6,
+                         "step":  "VERIFY",
+                         "status":  "PENDING_EXECUTION_RESULT",
+                         "source":  "DURABLE_ENTRYPOINT_RESULT"
+                     }
+                 ],
+    "actions":  [
+                    {
+                        "order":  1,
+                        "action":  "PREPARE",
+                        "allowed":  false,
+                        "requires":  [
+                                         "selected_queue_id",
+                                         "decision",
+                                         "reviewer"
+                                     ],
+                        "result":  "BUILD_PAYLOAD"
+                    },
+                    {
+                        "order":  2,
+                        "action":  "PREFLIGHT",
+                        "allowed":  false,
+                        "requires":  [
+                                         "prepared_payload"
+                                     ],
+                        "result":  "CHECK_STATE_AND_DUPLICATES"
+                    },
+                    {
+                        "order":  3,
+                        "action":  "AUTHORIZE",
+                        "allowed":  false,
+                        "requires":  [
+                                         "successful_preflight",
+                                         "exact_authorization_phrase"
+                                     ],
+                        "result":  "OPEN_EXECUTION_GATE"
+                    },
+                    {
+                        "order":  4,
+                        "action":  "EXECUTE",
+                        "allowed":  false,
+                        "requires":  [
+                                         "authorization_granted"
+                                     ],
+                        "result":  "CALL_DURABLE_ENTRYPOINT"
+                    },
+                    {
+                        "order":  5,
+                        "action":  "VERIFY",
+                        "allowed":  false,
+                        "requires":  [
+                                         "execution_result"
+                                     ],
+                        "result":  "VERIFY_QUEUE_REVIEW_HISTORY"
+                    }
+                ],
+    "governance":  {
+                       "duplicate_policy":  "BLOCK",
+                       "stale_state_policy":  "BLOCK",
+                       "authorization_policy":  "EXACT_PHRASE_REQUIRED",
+                       "atomic_execution_required":  true,
+                       "rollback_required":  true,
+                       "post_execution_verification_required":  true,
+                       "direct_source_write":  false,
+                       "direct_execution_from_cell":  false,
+                       "execution_must_call_durable_entrypoint":  true,
+                       "entrypoint_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+                       "config_write":  false
+                   },
+    "state":  {
+                  "selection_ready":  true,
+                  "decision_input_ready":  false,
+                  "prepare_allowed":  false,
+                  "preflight_allowed":  false,
+                  "authorization_allowed":  false,
+                  "execution_allowed":  false,
+                  "verification_allowed":  false,
+                  "current_gate":  "BLOCKED_NON_ACTIONABLE_TASK"
+              },
+    "navigation":  {
+                       "home":  "ENG_CONTROL_PANEL",
+                       "inbox":  "ENG_TASK_INBOX",
+                       "detail":  "ENG_TASK_DETAIL",
+                       "history":  "ENG_HISTORY"
+                   },
+    "implementation_status":  "MODEL_READY_NOT_DEPLOYED_TO_REAL_SHEET",
+    "real_sheet_write":  false
+}

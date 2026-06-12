@@ -1,0 +1,267 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.control-panel-model.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "tab":  "ENG_CONTROL_PANEL",
+    "role":  "SYSTEM_OVERVIEW",
+    "version":  1,
+    "layout":  {
+                   "columns":  8,
+                   "managed_range":  "A1:H43",
+                   "frozen_rows":  3,
+                   "hidden_gridlines":  true,
+                   "protected_system_ranges":  true,
+                   "human_editable_cells":  [
+
+                                            ],
+                   "sections":  [
+                                    {
+                                        "order":  1,
+                                        "id":  "HEADER",
+                                        "range":  "A1:H3",
+                                        "title":  "ENGREMIAT · CONTROL HUMANO",
+                                        "type":  "TITLE_AND_STATUS",
+                                        "managed":  true,
+                                        "editable":  false
+                                    },
+                                    {
+                                        "order":  2,
+                                        "id":  "CORE_METRICS",
+                                        "range":  "A5:H8",
+                                        "title":  "Resumen operativo",
+                                        "type":  "METRIC_CARDS",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "metrics":  [
+                                                        "operational_health",
+                                                        "human_pressure_score",
+                                                        "queue_total",
+                                                        "pending_count",
+                                                        "approved_count",
+                                                        "rejected_count",
+                                                        "changes_requested_count",
+                                                        "review_total"
+                                                    ]
+                                    },
+                                    {
+                                        "order":  3,
+                                        "id":  "ACTIVE_ALERTS",
+                                        "range":  "A10:H14",
+                                        "title":  "Alertas y atención requerida",
+                                        "type":  "ALERT_TABLE",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "columns":  [
+                                                        "severity",
+                                                        "code",
+                                                        "message",
+                                                        "target_view"
+                                                    ]
+                                    },
+                                    {
+                                        "order":  4,
+                                        "id":  "HUMAN_WORK",
+                                        "range":  "A16:H22",
+                                        "title":  "Trabajo humano",
+                                        "type":  "QUEUE_SUMMARY",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "source_tab":  "STG_ENG_IMPORT_QUEUE",
+                                        "primary_action":  "OPEN_ENG_TASK_INBOX"
+                                    },
+                                    {
+                                        "order":  5,
+                                        "id":  "RECENT_ACTIVITY",
+                                        "range":  "A24:H30",
+                                        "title":  "Actividad reciente",
+                                        "type":  "RECENT_REVIEW_AND_HISTORY",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "sources":  [
+                                                        "ENG_HUMAN_REVIEW",
+                                                        "STG_ENG_IMPORT_AUDIT"
+                                                    ]
+                                    },
+                                    {
+                                        "order":  6,
+                                        "id":  "NAVIGATION",
+                                        "range":  "A32:H36",
+                                        "title":  "Navegación",
+                                        "type":  "VIEW_LINKS",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "targets":  [
+                                                        "ENG_TASK_INBOX",
+                                                        "ENG_TASK_DETAIL",
+                                                        "ENG_DECISION_CENTER",
+                                                        "ENG_SYSTEM_HEALTH",
+                                                        "ENG_PROJECTS",
+                                                        "ENG_HISTORY",
+                                                        "ENG_CONFIG_VIEW"
+                                                    ]
+                                    },
+                                    {
+                                        "order":  7,
+                                        "id":  "SYSTEM_METADATA",
+                                        "range":  "A38:H43",
+                                        "title":  "Metadatos de control",
+                                        "type":  "TECHNICAL_METADATA",
+                                        "managed":  true,
+                                        "editable":  false,
+                                        "visibility":  "COLLAPSIBLE"
+                                    }
+                                ]
+               },
+    "cards":  [
+                  {
+                      "order":  1,
+                      "key":  "operational_health",
+                      "label":  "Salud operativa",
+                      "value":  "STABLE",
+                      "level":  "OK",
+                      "target_view":  "ENG_SYSTEM_HEALTH"
+                  },
+                  {
+                      "order":  2,
+                      "key":  "human_pressure_score",
+                      "label":  "Presión humana",
+                      "value":  0,
+                      "level":  "LOW",
+                      "target_view":  "ENG_SYSTEM_HEALTH"
+                  },
+                  {
+                      "order":  3,
+                      "key":  "pending_count",
+                      "label":  "Pendientes",
+                      "value":  0,
+                      "level":  "OK",
+                      "target_view":  "ENG_TASK_INBOX"
+                  },
+                  {
+                      "order":  4,
+                      "key":  "queue_total",
+                      "label":  "Total cola",
+                      "value":  2,
+                      "level":  "INFO",
+                      "target_view":  "ENG_TASK_INBOX"
+                  },
+                  {
+                      "order":  5,
+                      "key":  "approved_count",
+                      "label":  "Aprobadas",
+                      "value":  2,
+                      "level":  "OK",
+                      "target_view":  "ENG_HISTORY"
+                  },
+                  {
+                      "order":  6,
+                      "key":  "rejected_count",
+                      "label":  "Rechazadas",
+                      "value":  0,
+                      "level":  "OK",
+                      "target_view":  "ENG_HISTORY"
+                  },
+                  {
+                      "order":  7,
+                      "key":  "changes_requested_count",
+                      "label":  "Cambios solicitados",
+                      "value":  0,
+                      "level":  "OK",
+                      "target_view":  "ENG_TASK_INBOX"
+                  },
+                  {
+                      "order":  8,
+                      "key":  "review_total",
+                      "label":  "Revisiones",
+                      "value":  3,
+                      "level":  "INFO",
+                      "target_view":  "ENG_HISTORY"
+                  }
+              ],
+    "alerts":  [
+                   {
+                       "severity":  "OK",
+                       "code":  "NO_ACTIVE_ALERTS",
+                       "message":  "No existen alertas operativas activas",
+                       "target_view":  "ENG_CONTROL_PANEL"
+                   }
+               ],
+    "navigation":  [
+                       {
+                           "order":  1,
+                           "label":  "Tareas",
+                           "target":  "ENG_TASK_INBOX",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  2,
+                           "label":  "Detalle",
+                           "target":  "ENG_TASK_DETAIL",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  3,
+                           "label":  "Decidir",
+                           "target":  "ENG_DECISION_CENTER",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  4,
+                           "label":  "Salud",
+                           "target":  "ENG_SYSTEM_HEALTH",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  5,
+                           "label":  "Proyectos",
+                           "target":  "ENG_PROJECTS",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  6,
+                           "label":  "Historial",
+                           "target":  "ENG_HISTORY",
+                           "action":  "OPEN_VIEW"
+                       },
+                       {
+                           "order":  7,
+                           "label":  "Configuración",
+                           "target":  "ENG_CONFIG_VIEW",
+                           "action":  "OPEN_VIEW"
+                       }
+                   ],
+    "data":  {
+                 "queue_tab":  "STG_ENG_IMPORT_QUEUE",
+                 "review_tab":  "ENG_HUMAN_REVIEW",
+                 "history_tab":  "STG_ENG_IMPORT_AUDIT",
+                 "queue_total":  2,
+                 "pending_count":  0,
+                 "approved_count":  2,
+                 "rejected_count":  0,
+                 "changes_requested_count":  0,
+                 "review_total":  3,
+                 "history_total":  2,
+                 "human_pressure_score":  0,
+                 "operational_health":  "STABLE",
+                 "snapshot_source":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-readonly-snapshot.v1.json",
+                 "metrics_source":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-metrics.v1.json"
+             },
+    "refresh":  {
+                    "policy":  "GOVERNED_MANAGED_RANGE_REFRESH",
+                    "manual_refresh_supported":  true,
+                    "automatic_refresh_future":  true,
+                    "source_tabs_readonly":  true,
+                    "entrypoint_required_for_mutations":  true,
+                    "entrypoint_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1"
+                },
+    "governance":  {
+                       "direct_human_write":  false,
+                       "direct_source_tab_write":  false,
+                       "formulas_may_read_source_tabs":  true,
+                       "actions_must_navigate_or_call_governed_entrypoint":  true,
+                       "config_write":  false
+                   },
+    "implementation_status":  "MODEL_READY_NOT_DEPLOYED_TO_REAL_SHEET",
+    "real_sheet_write":  false
+}

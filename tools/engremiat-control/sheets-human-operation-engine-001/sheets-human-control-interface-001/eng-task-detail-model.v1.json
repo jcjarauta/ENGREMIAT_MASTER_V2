@@ -1,0 +1,212 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.task-detail-model.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "tab":  "ENG_TASK_DETAIL",
+    "role":  "SELECTED_TASK_CONTEXT",
+    "version":  1,
+    "layout":  {
+                   "columns":  8,
+                   "managed_range":  "A1:H43",
+                   "frozen_rows":  3,
+                   "protected_system_ranges":  true,
+                   "human_editable_cells":  [
+                                                "B2"
+                                            ],
+                   "sections":  [
+                                    {
+                                        "order":  1,
+                                        "id":  "SELECTION",
+                                        "range":  "A1:H3",
+                                        "title":  "Tarea seleccionada",
+                                        "type":  "CONTROLLED_SELECTION",
+                                        "editable_cells":  [
+                                                               "B2"
+                                                           ],
+                                        "fields":  [
+                                                       "selected_queue_id",
+                                                       "selection_status"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  2,
+                                        "id":  "IDENTITY",
+                                        "range":  "A5:H10",
+                                        "title":  "Identidad y estado",
+                                        "type":  "KEY_VALUE",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "queue_id",
+                                                       "sheet_row",
+                                                       "status",
+                                                       "priority",
+                                                       "project",
+                                                       "task_type"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  3,
+                                        "id":  "CONTEXT",
+                                        "range":  "A12:H20",
+                                        "title":  "Contexto de la tarea",
+                                        "type":  "LONG_TEXT",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "title",
+                                                       "owner",
+                                                       "source",
+                                                       "created_at",
+                                                       "due_at",
+                                                       "recommended_action"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  4,
+                                        "id":  "EVIDENCE",
+                                        "range":  "A22:H31",
+                                        "title":  "Evidencia relacionada",
+                                        "type":  "REVIEW_AND_HISTORY_SUMMARY",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "related_reviews",
+                                                       "related_history"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  5,
+                                        "id":  "DECISION_READINESS",
+                                        "range":  "A33:H38",
+                                        "title":  "Preparación de decisión",
+                                        "type":  "READINESS_CARD",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "fields":  [
+                                                       "actionable",
+                                                       "allowed_decisions",
+                                                       "blocking_reason"
+                                                   ]
+                                    },
+                                    {
+                                        "order":  6,
+                                        "id":  "NAVIGATION",
+                                        "range":  "A40:H43",
+                                        "title":  "Navegación",
+                                        "type":  "VIEW_LINKS",
+                                        "editable_cells":  [
+
+                                                           ],
+                                        "targets":  [
+                                                        "ENG_TASK_INBOX",
+                                                        "ENG_DECISION_CENTER",
+                                                        "ENG_HISTORY",
+                                                        "ENG_CONTROL_PANEL"
+                                                    ]
+                                    }
+                                ]
+               },
+    "selection":  {
+                      "input_cell":  "B2",
+                      "input_name":  "selected_queue_id",
+                      "source_view":  "ENG_TASK_INBOX",
+                      "default_queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+                      "selection_required_for_decision":  true,
+                      "unknown_queue_id_policy":  "BLOCK",
+                      "multiple_selection_policy":  "BLOCK"
+                  },
+    "detail":  {
+                   "queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+                   "sheet_row":  2,
+                   "status":  "APPROVED",
+                   "priority":  "NORMAL",
+                   "project":  "",
+                   "task_type":  "",
+                   "title":  "",
+                   "owner":  "",
+                   "created_at":  "2026-06-12T11:40:35.9427392Z",
+                   "due_at":  "",
+                   "source":  "SHEETS_FIRST_GOVERNED_REAL_WRITE_001",
+                   "recommended_action":  "VIEW_HISTORY",
+                   "actionable":  false,
+                   "allowed_decisions":  {
+
+                                         },
+                   "blocking_reason":  "TASK_STATUS_NOT_ACTIONABLE",
+                   "related_reviews_count":  0,
+                   "related_history_count":  0
+               },
+    "evidence":  {
+                     "review_headers":  [
+                                            "review_id",
+                                            "queue_item_id",
+                                            "reviewed_at",
+                                            "reviewer",
+                                            "decision",
+                                            "status",
+                                            "comment",
+                                            "required_change",
+                                            "evidence_ref",
+                                            "next_action"
+                                        ],
+                     "related_reviews":  [
+
+                                         ],
+                     "history_headers":  [
+                                             "audit_id",
+                                             "created_at",
+                                             "action",
+                                             "status",
+                                             "target_tab",
+                                             "rows_expected",
+                                             "rows_written",
+                                             "warnings_count",
+                                             "errors_count",
+                                             "payload_sha256",
+                                             "message"
+                                         ],
+                     "related_history":  [
+
+                                         ],
+                     "review_source_tab":  "ENG_HUMAN_REVIEW",
+                     "history_source_tab":  "STG_ENG_IMPORT_AUDIT"
+                 },
+    "decision_readiness":  {
+                               "actionable":  false,
+                               "allowed_decisions":  [
+
+                                                     ],
+                               "decision_view":  "ENG_DECISION_CENTER",
+                               "entrypoint_required":  true,
+                               "exact_authorization_required":  true,
+                               "direct_execution_allowed":  false
+                           },
+    "navigation":  {
+                       "home":  "ENG_CONTROL_PANEL",
+                       "inbox":  "ENG_TASK_INBOX",
+                       "decision":  "ENG_DECISION_CENTER",
+                       "history":  "ENG_HISTORY"
+                   },
+    "refresh":  {
+                    "policy":  "REFRESH_FROM_SELECTED_QUEUE_ID",
+                    "queue_source_tab":  "STG_ENG_IMPORT_QUEUE",
+                    "source_tabs_readonly":  true,
+                    "preserve_selected_queue_id":  true
+                },
+    "governance":  {
+                       "only_selection_cell_editable":  true,
+                       "direct_source_write":  false,
+                       "decision_capture_not_allowed_here":  true,
+                       "execution_not_allowed_here":  true,
+                       "mutations_require_durable_entrypoint":  true,
+                       "config_write":  false
+                   },
+    "implementation_status":  "MODEL_READY_NOT_DEPLOYED_TO_REAL_SHEET",
+    "real_sheet_write":  false
+}

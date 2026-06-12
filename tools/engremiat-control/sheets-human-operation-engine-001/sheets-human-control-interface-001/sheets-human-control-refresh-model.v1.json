@@ -1,0 +1,70 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.refresh-model.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "trigger_points":  [
+                           "OPEN_INTERFACE",
+                           "MANUAL_REFRESH",
+                           "AFTER_VERIFIED_EXECUTION"
+                       ],
+    "order":  [
+                  "READ_QUEUE_REVIEW_HISTORY",
+                  "REBUILD_CONTROL_PANEL",
+                  "REBUILD_TASK_INBOX",
+                  "PRESERVE_SELECTED_QUEUE_ID_IF_PRESENT",
+                  "REBUILD_TASK_DETAIL",
+                  "RESET_DECISION_EXECUTION_STATE",
+                  "REBUILD_HISTORY_VIEW"
+              ],
+    "managed_views":  [
+                          {
+                              "tab":  "ENG_CONTROL_PANEL",
+                              "managed_range":  "A1:H43",
+                              "preserve_cells":  [
+
+                                                 ]
+                          },
+                          {
+                              "tab":  "ENG_TASK_INBOX",
+                              "managed_range":  "A1:L500",
+                              "preserve_cells":  [
+                                                     "B2",
+                                                     "D2",
+                                                     "F2",
+                                                     "H2"
+                                                 ]
+                          },
+                          {
+                              "tab":  "ENG_TASK_DETAIL",
+                              "managed_range":  "A1:H43",
+                              "preserve_cells":  [
+                                                     "B2"
+                                                 ]
+                          },
+                          {
+                              "tab":  "ENG_DECISION_CENTER",
+                              "managed_range":  "A1:H45",
+                              "preserve_cells":  [
+                                                     "B8",
+                                                     "B10",
+                                                     "B12"
+                                                 ],
+                              "clear_after_verified_execution":  [
+                                                                     "B14"
+                                                                 ]
+                          }
+                      ],
+    "source_tabs":  [
+                        "STG_ENG_IMPORT_QUEUE",
+                        "ENG_HUMAN_REVIEW",
+                        "STG_ENG_IMPORT_AUDIT"
+                    ],
+    "source_tabs_readonly_during_refresh":  true,
+    "selection_policy":  "PRESERVE_WHEN_QUEUE_ID_STILL_EXISTS_OTHERWISE_CLEAR",
+    "authorization_policy":  "CLEAR_AFTER_ANY_EXECUTION_ATTEMPT",
+    "failure_policy":  "KEEP_LAST_VALID_INTERFACE_AND_SHOW_BLOCKER",
+    "google_api_call_required_for_future_deployment":  true,
+    "implemented_now":  "LOCAL_MODEL_AND_ADAPTER_ONLY",
+    "real_sheet_write":  false
+}

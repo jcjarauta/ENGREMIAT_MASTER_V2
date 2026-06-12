@@ -1,0 +1,66 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.entrypoint-binding.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-001-20260612-154838",
+    "interface_tabs":  [
+                           "ENG_CONTROL_PANEL",
+                           "ENG_TASK_INBOX",
+                           "ENG_TASK_DETAIL",
+                           "ENG_DECISION_CENTER"
+                       ],
+    "entrypoint_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+    "entrypoint_modes":  [
+                             "STATUS",
+                             "RUN"
+                         ],
+    "supported_decisions":  [
+                                "APPROVE",
+                                "REJECT",
+                                "REQUEST_CHANGES"
+                            ],
+    "input_mapping":  {
+                          "selected_queue_id":  "ENG_TASK_DETAIL!B2",
+                          "decision":  "ENG_DECISION_CENTER!B8",
+                          "comment":  "ENG_DECISION_CENTER!B10",
+                          "reviewer":  "ENG_DECISION_CENTER!B12",
+                          "authorization_phrase":  "ENG_DECISION_CENTER!B14"
+                      },
+    "cycle":  {
+                  "prepare":  {
+                                  "reads_interface_cells":  true,
+                                  "calls_entrypoint":  false,
+                                  "builds_run_input":  true,
+                                  "real_sheet_write":  false
+                              },
+                  "preflight":  {
+                                    "calls_entrypoint":  true,
+                                    "execution_mode":  "DRY_RUN",
+                                    "authorization_phrase_source":  "ENTRYPOINT_GENERATED_OR_EXACT_HUMAN_INPUT",
+                                    "real_sheet_write":  false
+                                },
+                  "execute":  {
+                                  "calls_entrypoint":  true,
+                                  "execution_mode":  "REAL_FUTURE_CONTROLLED",
+                                  "requires_exact_authorization":  true,
+                                  "enabled_now":  false
+                              },
+                  "verify":  {
+                                 "required":  true,
+                                 "refresh_after_success":  true
+                             }
+              },
+    "separation":  {
+                       "interface_does_not_duplicate_selector":  true,
+                       "interface_does_not_duplicate_payload_builder":  true,
+                       "interface_does_not_duplicate_preflight":  true,
+                       "interface_does_not_duplicate_authorization":  true,
+                       "interface_does_not_duplicate_executor":  true
+                   },
+    "governance":  {
+                       "direct_source_write":  false,
+                       "exact_authorization_required":  true,
+                       "real_execution_enabled_now":  false,
+                       "config_write":  false
+                   }
+}
