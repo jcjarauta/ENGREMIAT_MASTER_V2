@@ -1,0 +1,28 @@
+{
+    "schema":  "engremiat.sheets-reusable-governed-human-operation-loop.capabilities.v1",
+    "ok":  true,
+    "objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+    "run_id":  "REUSABLE-HUMAN-LOOP-20260612-150022",
+    "reusable_selector_supported":  true,
+    "supported_decision_count":  3,
+    "supported_decisions":  [
+                                "APPROVE",
+                                "REJECT",
+                                "REQUEST_CHANGES"
+                            ],
+    "atomic_queue_review_history_supported":  true,
+    "duplicate_blocking_supported":  true,
+    "stale_state_blocking_supported":  true,
+    "independent_post_write_verification_supported":  true,
+    "rollback_package_supported":  true,
+    "automatic_rollback_supported":  false,
+    "explicit_human_authorization_required":  true,
+    "config_write_supported_in_this_objective":  false,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_002_GENERIC_PENDING_QUEUE_SELECTOR"
+}

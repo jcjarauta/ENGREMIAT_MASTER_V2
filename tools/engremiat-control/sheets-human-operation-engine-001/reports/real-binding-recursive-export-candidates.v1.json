@@ -1,0 +1,38 @@
+{
+    "schema":  "engremiat.sheets-human-operation-real-binding.recursive-candidates.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_OPERATION_REAL_BINDING_001",
+    "modules_scanned":  9,
+    "candidates_found":  2,
+    "actions_found":  [
+                          "CONFIG"
+                      ],
+    "worker_execution":  false,
+    "module_require":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "items":  [
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-executor.js",
+                      "exports":  [
+                                      "executeConfigUpdate"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ],
+                      "node_check":  true
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-worker.js",
+                      "exports":  [
+                                      "runConfigUpdateWorker"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ],
+                      "node_check":  true
+                  }
+              ],
+    "next":  "BLOCK_002D"
+}

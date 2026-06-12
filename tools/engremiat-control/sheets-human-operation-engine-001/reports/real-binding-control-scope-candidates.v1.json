@@ -1,0 +1,277 @@
+{
+    "schema":  "engremiat.sheets-human-operation-real-binding.control-scope-candidates.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_OPERATION_REAL_BINDING_001",
+    "modules_scanned":  27,
+    "candidates_total":  25,
+    "queue_candidates":  10,
+    "review_candidates":  17,
+    "config_candidates":  24,
+    "worker_execution":  false,
+    "module_require":  false,
+    "node_execution":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "items":  [
+                  {
+                      "file":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\google-api-readonly-probe\\google-sheets-stg-readonly-probe.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-command-handlers.js",
+                      "exports":  [
+                                      "createOperationHandlers"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-command-registry.js",
+                      "exports":  [
+                                      "ACTIONS",
+                                      "createCommandRegistry"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-command-validator.js",
+                      "exports":  [
+                                      "ALLOWED_ACTIONS",
+                                      "validateOperationCommand"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-payload-validator.js",
+                      "exports":  [
+                                      "extractRows",
+                                      "validateConfigPayload"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-executor.js",
+                      "exports":  [
+                                      "executeConfigUpdate"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-request.js",
+                      "exports":  [
+                                      "buildConfigUpdateRequest"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-worker.js",
+                      "exports":  [
+                                      "runConfigUpdateWorker"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\authorize-readonly.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\core-header-write-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\core-operational-structure-audit-001.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\create-core-tabs-controlled.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-loop-audit-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-operation-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-review-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-config-worker.js",
+                      "exports":  [
+                                      "normalizeRows",
+                                      "prepareConfigOperation",
+                                      "readJson"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-payload-validator.js",
+                      "exports":  [
+                                      "parse",
+                                      "required",
+                                      "validate"
+                                  ],
+                      "actions":  [
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-queue-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-review-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\inventory-readonly.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\minimal-controlled-add-core-tabs.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\minimal-final-core-tabs-audit.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\minimal-single-metadata-read.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\oauth-write-scope-reauthorize.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "tools\\engremiat-control\\sheets-oauth-worker\\real-core-header-audit-worker.js",
+                      "exports":  [
+
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  }
+              ],
+    "next":  "BLOCK_003"
+}

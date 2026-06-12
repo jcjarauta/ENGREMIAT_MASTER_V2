@@ -1,0 +1,121 @@
+{
+    "schema":  "engremiat.sheets-reusable-governed-human-operation-loop.contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+    "run_id":  "REUSABLE-HUMAN-LOOP-20260612-150022",
+    "decision":  "REUSABLE_GOVERNED_HUMAN_OPERATION_CONTRACT_DEFINED",
+    "readiness":  92,
+    "gate":  "OPEN_READY_FOR_GENERIC_PENDING_QUEUE_SELECTOR",
+    "operation_model":  {
+                            "selector_mode":  "NEXT_PENDING_QUEUE_ITEM",
+                            "selection_order":  "TOP_TO_BOTTOM",
+                            "selection_limit":  1,
+                            "duplicate_policy":  "BLOCK",
+                            "stale_state_policy":  "BLOCK",
+                            "atomic_execution_required":  true,
+                            "post_write_verification_required":  true,
+                            "rollback_prepared_required":  true,
+                            "automatic_rollback":  false,
+                            "explicit_human_authorization_required":  true
+                        },
+    "sheets":  {
+                   "queue":  {
+                                 "tab":  "STG_ENG_IMPORT_QUEUE",
+                                 "identity_field":  "queue_id",
+                                 "status_field":  "status",
+                                 "pending_status":  "PENDING",
+                                 "max_updates_per_operation":  1
+                             },
+                   "review":  {
+                                  "tab":  "ENG_HUMAN_REVIEW",
+                                  "identity_field":  "review_id",
+                                  "decision_field":  "decision",
+                                  "actor_field":  "reviewer",
+                                  "max_appends_per_operation":  1,
+                                  "queue_trace_strategy":  "QUEUE_ID_EMBEDDED_IN_REVIEW_ID"
+                              },
+                   "history":  {
+                                   "tab":  "STG_ENG_IMPORT_AUDIT",
+                                   "identity_field":  "audit_id",
+                                   "event_field":  "action",
+                                   "time_field":  "created_at",
+                                   "max_appends_per_operation":  1,
+                                   "queue_trace_strategy":  "QUEUE_ID_EMBEDDED_IN_AUDIT_ID"
+                               },
+                   "config":  {
+                                  "tab":  "ENG_HUMAN_CONFIG",
+                                  "write_allowed":  false
+                              }
+               },
+    "supported_decisions":  [
+                                {
+                                    "decision":  "APPROVE",
+                                    "queue_target_status":  "APPROVED",
+                                    "history_action":  "QUEUE_APPROVED",
+                                    "enabled":  true
+                                },
+                                {
+                                    "decision":  "REJECT",
+                                    "queue_target_status":  "REJECTED",
+                                    "history_action":  "QUEUE_REJECTED",
+                                    "enabled":  true
+                                },
+                                {
+                                    "decision":  "REQUEST_CHANGES",
+                                    "queue_target_status":  "CHANGES_REQUESTED",
+                                    "history_action":  "QUEUE_CHANGES_REQUESTED",
+                                    "enabled":  true
+                                }
+                            ],
+    "authorization_scope_template":  {
+                                         "queue_updates_authorized":  1,
+                                         "review_rows_authorized":  1,
+                                         "history_rows_authorized":  1,
+                                         "config_write_authorized":  false,
+                                         "authorization_phrase_generated_per_operation":  true,
+                                         "selected_queue_id_required":  true,
+                                         "selected_decision_required":  true
+                                     },
+    "execution_limits":  {
+                             "max_selected_queue_items":  1,
+                             "max_queue_updates":  1,
+                             "max_review_appends":  1,
+                             "max_history_appends":  1,
+                             "max_total_mutations":  3,
+                             "allow_config_write":  false,
+                             "allow_unverified_write":  false,
+                             "allow_duplicate_identity":  false,
+                             "allow_state_change_without_preflight":  false
+                         },
+    "proven_real_evidence":  {
+                                 "first_queue_write_closed":  true,
+                                 "first_human_cycle_closed":  true,
+                                 "first_human_cycle_atomic":  true,
+                                 "first_human_cycle_mutations":  3,
+                                 "first_queue_id":  "ENG-FIRST-WRITE-20260612-134035",
+                                 "first_review_id":  "REVIEW-ENG-FIRST-WRITE-20260612-134035",
+                                 "first_audit_id":  "AUDIT-ENG-FIRST-WRITE-20260612-134035",
+                                 "first_final_status":  "APPROVED"
+                             },
+    "credential_binding":  {
+                               "credential_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\config\\google-authorized-user-write.local.json",
+                               "credential_type":  "AUTHORIZED_USER",
+                               "write_scope_granted":  true,
+                               "access_token_refresh_verified":  true,
+                               "credential_values_printed":  false,
+                               "binding_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\config\\control-sheets-binding.local.json",
+                               "googleapis_root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-oauth-worker\\node_modules\\googleapis"
+                           },
+    "safety":  {
+                   "google_api_call":  false,
+                   "real_sheet_read":  false,
+                   "real_sheet_write":  false,
+                   "authorization_granted":  false,
+                   "real_execution_allowed":  false,
+                   "rollback_prepared":  false,
+                   "git_write":  false,
+                   "commit":  false,
+                   "push":  false
+               },
+    "next":  "BLOCK_002_GENERIC_PENDING_QUEUE_SELECTOR"
+}

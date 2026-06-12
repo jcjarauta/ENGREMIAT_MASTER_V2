@@ -1,0 +1,57 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.close.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "blocks_completed":  5,
+    "decision":  "REAL_SCHEMA_MAPPED_AND_DRY_RUN_PACKETS_READY",
+    "readiness":  99,
+    "gate":  "CLOSED_READY_FOR_EXPLICIT_WRITE_AUTHORIZATION",
+    "readonly_binding_ready":  true,
+    "credential_type":  "AUTHORIZED_USER",
+    "authorization_scope":  "SPREADSHEETS_READONLY",
+    "real_metadata_verified":  true,
+    "tabs_detected_count":  43,
+    "original_expected_tabs_found":  0,
+    "schema_difference_detected":  true,
+    "candidate_tabs_verified":  4,
+    "schema_adapter_map_ready":  true,
+    "mapped_entities":  4,
+    "real_tabs":  {
+                      "queue":  "STG_ENG_IMPORT_QUEUE",
+                      "review":  "ENG_HUMAN_REVIEW",
+                      "history":  "STG_ENG_IMPORT_AUDIT",
+                      "config":  "ENG_HUMAN_CONFIG"
+                  },
+    "queue_mapping":  {
+                          "identity":  "queue_id",
+                          "status":  "status",
+                          "payload":  "source"
+                      },
+    "review_mapping":  {
+                           "identity":  "review_id",
+                           "decision":  "decision",
+                           "actor":  "reviewer"
+                       },
+    "history_mapping":  {
+                            "identity":  "audit_id",
+                            "event":  "action",
+                            "time":  "created_at"
+                        },
+    "config_mapping":  {
+                           "key":  "config_key",
+                           "value":  "config_value"
+                       },
+    "dry_run_packets_ready":  true,
+    "dry_run_packet_count":  4,
+    "real_execution_allowed":  false,
+    "requires_explicit_human_authorization":  true,
+    "worker_execution":  false,
+    "google_api_call_during_close":  false,
+    "real_sheet_read_during_close":  false,
+    "real_sheet_write":  false,
+    "credential_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "VALUE_FIRST_GOVERNED_REAL_WRITE_OBJECTIVE"
+}

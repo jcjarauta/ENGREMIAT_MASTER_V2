@@ -1,0 +1,189 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.schema-adapter-map.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "source_report":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\three-action-real-preflight-candidate-headers.v1.json",
+    "decision":  "GO_SCHEMA_ADAPTER_MAP_READY_FOR_DRY_RUN_PACKETS",
+    "entities_compatible":  4,
+    "entities_expected":  4,
+    "all_compatible":  true,
+    "queue_payload_fallback_applied":  false,
+    "maps":  {
+                 "QUEUE":  {
+                               "tab":  "STG_ENG_IMPORT_QUEUE",
+                               "header_count":  11,
+                               "headers":  [
+                                               "queue_id",
+                                               "created_at",
+                                               "source",
+                                               "target_tab",
+                                               "status",
+                                               "priority",
+                                               "rows_count",
+                                               "payload_ref",
+                                               "approved_by_human",
+                                               "processed_at",
+                                               "result_message"
+                                           ],
+                               "fields":  {
+                                              "identity":  {
+                                                               "found":  true,
+                                                               "header":  "queue_id",
+                                                               "column_index":  1,
+                                                               "column_letter":  "A",
+                                                               "alias":  "queue_id"
+                                                           },
+                                              "status":  {
+                                                             "found":  true,
+                                                             "header":  "status",
+                                                             "column_index":  5,
+                                                             "column_letter":  "E",
+                                                             "alias":  "status"
+                                                         },
+                                              "payload":  {
+                                                              "found":  true,
+                                                              "header":  "source",
+                                                              "column_index":  3,
+                                                              "column_letter":  "C",
+                                                              "alias":  "source"
+                                                          }
+                                          },
+                               "missing_required_fields":  [
+
+                                                           ],
+                               "compatible":  true
+                           },
+                 "REVIEW":  {
+                                "tab":  "ENG_HUMAN_REVIEW",
+                                "header_count":  10,
+                                "headers":  [
+                                                "review_id",
+                                                "queue_item_id",
+                                                "reviewed_at",
+                                                "reviewer",
+                                                "decision",
+                                                "status",
+                                                "comment",
+                                                "required_change",
+                                                "evidence_ref",
+                                                "next_action"
+                                            ],
+                                "fields":  {
+                                               "identity":  {
+                                                                "found":  true,
+                                                                "header":  "review_id",
+                                                                "column_index":  1,
+                                                                "column_letter":  "A",
+                                                                "alias":  "review_id"
+                                                            },
+                                               "decision":  {
+                                                                "found":  true,
+                                                                "header":  "decision",
+                                                                "column_index":  5,
+                                                                "column_letter":  "E",
+                                                                "alias":  "decision"
+                                                            },
+                                               "actor":  {
+                                                             "found":  true,
+                                                             "header":  "reviewer",
+                                                             "column_index":  4,
+                                                             "column_letter":  "D",
+                                                             "alias":  "reviewer"
+                                                         }
+                                           },
+                                "missing_required_fields":  [
+
+                                                            ],
+                                "compatible":  true
+                            },
+                 "HISTORY":  {
+                                 "tab":  "STG_ENG_IMPORT_AUDIT",
+                                 "header_count":  11,
+                                 "headers":  [
+                                                 "audit_id",
+                                                 "created_at",
+                                                 "action",
+                                                 "status",
+                                                 "target_tab",
+                                                 "rows_expected",
+                                                 "rows_written",
+                                                 "warnings_count",
+                                                 "errors_count",
+                                                 "payload_sha256",
+                                                 "message"
+                                             ],
+                                 "fields":  {
+                                                "identity":  {
+                                                                 "found":  true,
+                                                                 "header":  "audit_id",
+                                                                 "column_index":  1,
+                                                                 "column_letter":  "A",
+                                                                 "alias":  "audit_id"
+                                                             },
+                                                "event":  {
+                                                              "found":  true,
+                                                              "header":  "action",
+                                                              "column_index":  3,
+                                                              "column_letter":  "C",
+                                                              "alias":  "action"
+                                                          },
+                                                "time":  {
+                                                             "found":  true,
+                                                             "header":  "created_at",
+                                                             "column_index":  2,
+                                                             "column_letter":  "B",
+                                                             "alias":  "created_at"
+                                                         }
+                                            },
+                                 "missing_required_fields":  [
+
+                                                             ],
+                                 "compatible":  true
+                             },
+                 "CONFIG":  {
+                                "tab":  "ENG_HUMAN_CONFIG",
+                                "header_count":  10,
+                                "headers":  [
+                                                "config_key",
+                                                "config_value",
+                                                "scope",
+                                                "description",
+                                                "status",
+                                                "version",
+                                                "updated_at",
+                                                "updated_by",
+                                                "evidence_ref",
+                                                "notes"
+                                            ],
+                                "fields":  {
+                                               "key":  {
+                                                           "found":  true,
+                                                           "header":  "config_key",
+                                                           "column_index":  1,
+                                                           "column_letter":  "A",
+                                                           "alias":  "config_key"
+                                                       },
+                                               "value":  {
+                                                             "found":  true,
+                                                             "header":  "config_value",
+                                                             "column_index":  2,
+                                                             "column_letter":  "B",
+                                                             "alias":  "config_value"
+                                                         }
+                                           },
+                                "missing_required_fields":  [
+
+                                                            ],
+                                "compatible":  true
+                            }
+             },
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "credential_values_read":  false,
+    "credential_values_printed":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_004_DRY_RUN_PACKETS"
+}

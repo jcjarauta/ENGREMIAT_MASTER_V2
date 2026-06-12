@@ -1,0 +1,23 @@
+{
+    "schema":  "engremiat.sheets-reusable-governed-human-operation-loop.authorization-gate.v1",
+    "ok":  true,
+    "objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+    "queue_id":  "ENG-REUSABLE-LOOP-20260612-150327",
+    "decision":  "APPROVE",
+    "queue_target_status":  "APPROVED",
+    "review_id":  "REVIEW-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+    "audit_id":  "AUDIT-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+    "authorization_phrase_matched":  true,
+    "authorization_granted":  true,
+    "authorization_scope":  "ONE_QUEUE_UPDATE_ONE_REVIEW_APPEND_ONE_HISTORY_APPEND",
+    "queue_updates_authorized":  1,
+    "review_rows_authorized":  1,
+    "history_rows_authorized":  1,
+    "config_write_authorized":  false,
+    "real_execution_allowed":  true,
+    "rollback_prepared":  true,
+    "automatic_rollback":  false,
+    "real_sheet_write":  false,
+    "gate":  "OPEN_READY_FOR_GENERIC_ATOMIC_EXECUTION",
+    "next":  "BLOCK_006_EXECUTE_GENERIC_ATOMIC_OPERATION"
+}

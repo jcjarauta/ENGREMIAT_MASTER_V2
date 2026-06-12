@@ -1,0 +1,111 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.readonly-result.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "decision":  "NO_GO_REAL_SCHEMA_REPAIR_REQUIRED",
+    "spreadsheet_title":  "ENGREMIAT_CONTROL_MVP_001",
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_printed":  false,
+    "authorization_scope":  "SPREADSHEETS_READONLY",
+    "metadata_api_call":  true,
+    "headers_api_call":  false,
+    "include_grid_data":  false,
+    "tabs_detected_count":  43,
+    "expected_tabs_found_count":  0,
+    "header_ranges_read_count":  0,
+    "expected_tabs_count":  4,
+    "all_tabs_exist":  false,
+    "all_headers_match":  false,
+    "checks":  {
+                   "ENG_QUEUE":  {
+                                     "tab_exists":  false,
+                                     "header_read_attempted":  false,
+                                     "headers_match":  false,
+                                     "actual_count":  0,
+                                     "expected_count":  11,
+                                     "actual_headers":  [
+
+                                                        ],
+                                     "expected_headers":  [
+                                                              "task_id",
+                                                              "created_at",
+                                                              "status",
+                                                              "priority",
+                                                              "title",
+                                                              "description",
+                                                              "project_id",
+                                                              "requested_by",
+                                                              "assigned_to",
+                                                              "source",
+                                                              "metadata_json"
+                                                          ]
+                                 },
+                   "ENG_REVIEWS":  {
+                                       "tab_exists":  false,
+                                       "header_read_attempted":  false,
+                                       "headers_match":  false,
+                                       "actual_count":  0,
+                                       "expected_count":  10,
+                                       "actual_headers":  [
+
+                                                          ],
+                                       "expected_headers":  [
+                                                                "review_id",
+                                                                "task_id",
+                                                                "reviewed_at",
+                                                                "reviewed_by",
+                                                                "decision",
+                                                                "comment",
+                                                                "previous_status",
+                                                                "new_status",
+                                                                "source",
+                                                                "metadata_json"
+                                                            ]
+                                   },
+                   "ENG_HISTORY":  {
+                                       "tab_exists":  false,
+                                       "header_read_attempted":  false,
+                                       "headers_match":  false,
+                                       "actual_count":  0,
+                                       "expected_count":  11,
+                                       "actual_headers":  [
+
+                                                          ],
+                                       "expected_headers":  [
+                                                                "history_id",
+                                                                "entity_type",
+                                                                "entity_id",
+                                                                "event_at",
+                                                                "event_type",
+                                                                "previous_status",
+                                                                "new_status",
+                                                                "actor",
+                                                                "source",
+                                                                "details_json",
+                                                                "correlation_id"
+                                                            ]
+                                   },
+                   "CONFIG":  {
+                                  "tab_exists":  false,
+                                  "header_read_attempted":  false,
+                                  "headers_match":  false,
+                                  "actual_count":  0,
+                                  "expected_count":  2,
+                                  "actual_headers":  [
+
+                                                     ],
+                                  "expected_headers":  [
+                                                           "config_key",
+                                                           "config_value"
+                                                       ]
+                              }
+               },
+    "credential_type":  "AUTHORIZED_USER",
+    "credential_values_printed":  false,
+    "google_api_call":  true,
+    "real_sheet_read":  true,
+    "real_sheet_write":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_003B_SCHEMA_DIFFERENCE_REPORT"
+}

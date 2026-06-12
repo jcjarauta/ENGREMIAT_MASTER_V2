@@ -1,0 +1,82 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-adapters.contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_ADAPTERS_001",
+    "queue":  {
+                  "sheet":  "ENG_QUEUE",
+                  "read_range":  "ENG_QUEUE!A2:K",
+                  "append_range":  "ENG_QUEUE!A:K",
+                  "task_id_column":  1,
+                  "columns":  [
+                                  "task_id",
+                                  "created_at",
+                                  "status",
+                                  "priority",
+                                  "title",
+                                  "description",
+                                  "project_id",
+                                  "requested_by",
+                                  "assigned_to",
+                                  "source",
+                                  "metadata_json"
+                              ],
+                  "duplicate_policy":  "BLOCK"
+              },
+    "review":  {
+                   "sheet":  "ENG_REVIEWS",
+                   "append_range":  "ENG_REVIEWS!A:J",
+                   "columns":  [
+                                   "review_id",
+                                   "task_id",
+                                   "reviewed_at",
+                                   "reviewed_by",
+                                   "decision",
+                                   "comment",
+                                   "previous_status",
+                                   "new_status",
+                                   "source",
+                                   "metadata_json"
+                               ],
+                   "decisions":  [
+                                     "APPROVE",
+                                     "REJECT",
+                                     "REQUEST_MORE"
+                                 ]
+               },
+    "history":  {
+                    "sheet":  "ENG_HISTORY",
+                    "append_range":  "ENG_HISTORY!A:K",
+                    "columns":  [
+                                    "history_id",
+                                    "entity_type",
+                                    "entity_id",
+                                    "event_at",
+                                    "event_type",
+                                    "previous_status",
+                                    "new_status",
+                                    "actor",
+                                    "source",
+                                    "details_json",
+                                    "correlation_id"
+                                ]
+                },
+    "queue_update":  {
+                         "sheet":  "ENG_QUEUE",
+                         "lookup_range":  "ENG_QUEUE!A2:K",
+                         "status_column":  3,
+                         "update_range_template":  "ENG_QUEUE!C{ROW}:C{ROW}"
+                     },
+    "config":  {
+                   "sheet":  "CONFIG",
+                   "update_range":  "CONFIG!A2:B9",
+                   "rows_expected":  8,
+                   "value_input_option":  "RAW"
+               },
+    "real_execution_allowed":  false,
+    "dry_run_required":  true,
+    "worker_execution":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "next":  "BLOCK_002"
+}

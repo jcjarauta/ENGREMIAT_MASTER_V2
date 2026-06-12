@@ -1,0 +1,118 @@
+{
+    "schema":  "engremiat.sheets-human-operation-real-binding.worker-exports-inventory.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_OPERATION_REAL_BINDING_001",
+    "modules_scanned":  9,
+    "actions_found":  [
+                          "CONFIG",
+                          "QUEUE",
+                          "REVIEW"
+                      ],
+    "worker_execution":  false,
+    "module_require":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "items":  [
+                  {
+                      "file":  "human-operation-command-dispatcher.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "dispatchOperationCommand"
+                                  ],
+                      "actions":  [
+
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-command-engine.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "createOperationCommandEngine"
+                                  ],
+                      "actions":  [
+
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-command-handlers.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "createOperationHandlers"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-command-registry.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "ACTIONS",
+                                      "createCommandRegistry"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-command-validator.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "ALLOWED_ACTIONS",
+                                      "validateOperationCommand"
+                                  ],
+                      "actions":  [
+                                      "CONFIG",
+                                      "QUEUE",
+                                      "REVIEW"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-config-payload-validator.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "extractRows",
+                                      "validateConfigPayload"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-config-update-executor.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "executeConfigUpdate"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-config-update-request.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "buildConfigUpdateRequest"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  },
+                  {
+                      "file":  "human-operation-config-update-worker.js",
+                      "node_check":  true,
+                      "exports":  [
+                                      "runConfigUpdateWorker"
+                                  ],
+                      "actions":  [
+                                      "CONFIG"
+                                  ]
+                  }
+              ],
+    "next":  "BLOCK_002"
+}

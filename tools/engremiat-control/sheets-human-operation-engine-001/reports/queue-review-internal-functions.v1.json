@@ -1,0 +1,76 @@
+{
+    "schema":  "engremiat.sheets-queue-review-real-exports.internal-functions.v1",
+    "ok":  true,
+    "objective":  "SHEETS_QUEUE_REVIEW_REAL_EXPORTS_001",
+    "files_scanned":  30,
+    "queue_candidates":  [
+                             {
+                                 "action":  "QUEUE",
+                                 "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-review-worker.js",
+                                 "function":  "save",
+                                 "score":  45
+                             },
+                             {
+                                 "action":  "QUEUE",
+                                 "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-config-worker.js",
+                                 "function":  "normalizeRows",
+                                 "score":  45
+                             },
+                             {
+                                 "action":  "QUEUE",
+                                 "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-config-worker.js",
+                                 "function":  "fail",
+                                 "score":  45
+                             },
+                             {
+                                 "action":  "QUEUE",
+                                 "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-config-worker.js",
+                                 "function":  "readJson",
+                                 "score":  45
+                             },
+                             {
+                                 "action":  "QUEUE",
+                                 "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-operation-config-worker.js",
+                                 "function":  "prepareConfigOperation",
+                                 "score":  45
+                             }
+                         ],
+    "review_candidates":  [
+                              {
+                                  "action":  "REVIEW",
+                                  "file":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\google-api-readonly-probe\\google-sheets-stg-readonly-probe.js",
+                                  "function":  "readBindingSafe",
+                                  "score":  45
+                              },
+                              {
+                                  "action":  "REVIEW",
+                                  "file":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\google-api-readonly-probe\\google-sheets-stg-readonly-probe.js",
+                                  "function":  "writeReport",
+                                  "score":  45
+                              },
+                              {
+                                  "action":  "REVIEW",
+                                  "file":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\google-api-readonly-probe\\google-sheets-stg-readonly-probe.js",
+                                  "function":  "main",
+                                  "score":  45
+                              },
+                              {
+                                  "action":  "REVIEW",
+                                  "file":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\google-api-readonly-probe\\google-sheets-stg-readonly-probe.js",
+                                  "function":  "masked",
+                                  "score":  45
+                              },
+                              {
+                                  "action":  "REVIEW",
+                                  "file":  "tools\\engremiat-control\\sheets-oauth-worker\\authorize-readonly.js",
+                                  "function":  "saveCredentials",
+                                  "score":  45
+                              }
+                          ],
+    "module_require":  false,
+    "worker_execution":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "next":  "BLOCK_001D_F"
+}

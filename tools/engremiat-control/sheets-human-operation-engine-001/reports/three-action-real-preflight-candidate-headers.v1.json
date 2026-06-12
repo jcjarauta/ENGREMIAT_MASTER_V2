@@ -1,0 +1,172 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.candidate-headers.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "decision":  "NO_GO_SCHEMA_ADAPTER_MAPPING_REQUIRED",
+    "candidate_tabs":  {
+                           "QUEUE":  "STG_ENG_IMPORT_QUEUE",
+                           "REVIEW":  "ENG_HUMAN_REVIEW",
+                           "HISTORY":  "STG_ENG_IMPORT_AUDIT",
+                           "CONFIG":  "ENG_HUMAN_CONFIG"
+                       },
+    "header_ranges_read":  4,
+    "compatible_count":  3,
+    "all_compatible":  false,
+    "checks":  {
+                   "QUEUE":  {
+                                 "tab":  "STG_ENG_IMPORT_QUEUE",
+                                 "header_count":  11,
+                                 "headers":  [
+                                                 "queue_id",
+                                                 "created_at",
+                                                 "source",
+                                                 "target_tab",
+                                                 "status",
+                                                 "priority",
+                                                 "rows_count",
+                                                 "payload_ref",
+                                                 "approved_by_human",
+                                                 "processed_at",
+                                                 "result_message"
+                                             ],
+                                 "normalized_headers":  [
+                                                            "queue_id",
+                                                            "created_at",
+                                                            "source",
+                                                            "target_tab",
+                                                            "status",
+                                                            "priority",
+                                                            "rows_count",
+                                                            "payload_ref",
+                                                            "approved_by_human",
+                                                            "processed_at",
+                                                            "result_message"
+                                                        ],
+                                 "semantic_checks":  {
+                                                         "identity":  true,
+                                                         "status":  true,
+                                                         "payload":  false
+                                                     },
+                                 "semantic_passed":  2,
+                                 "semantic_required":  3,
+                                 "compatible":  false
+                             },
+                   "REVIEW":  {
+                                  "tab":  "ENG_HUMAN_REVIEW",
+                                  "header_count":  10,
+                                  "headers":  [
+                                                  "review_id",
+                                                  "queue_item_id",
+                                                  "reviewed_at",
+                                                  "reviewer",
+                                                  "decision",
+                                                  "status",
+                                                  "comment",
+                                                  "required_change",
+                                                  "evidence_ref",
+                                                  "next_action"
+                                              ],
+                                  "normalized_headers":  [
+                                                             "review_id",
+                                                             "queue_item_id",
+                                                             "reviewed_at",
+                                                             "reviewer",
+                                                             "decision",
+                                                             "status",
+                                                             "comment",
+                                                             "required_change",
+                                                             "evidence_ref",
+                                                             "next_action"
+                                                         ],
+                                  "semantic_checks":  {
+                                                          "identity":  true,
+                                                          "decision":  true,
+                                                          "actor":  true
+                                                      },
+                                  "semantic_passed":  3,
+                                  "semantic_required":  3,
+                                  "compatible":  true
+                              },
+                   "HISTORY":  {
+                                   "tab":  "STG_ENG_IMPORT_AUDIT",
+                                   "header_count":  11,
+                                   "headers":  [
+                                                   "audit_id",
+                                                   "created_at",
+                                                   "action",
+                                                   "status",
+                                                   "target_tab",
+                                                   "rows_expected",
+                                                   "rows_written",
+                                                   "warnings_count",
+                                                   "errors_count",
+                                                   "payload_sha256",
+                                                   "message"
+                                               ],
+                                   "normalized_headers":  [
+                                                              "audit_id",
+                                                              "created_at",
+                                                              "action",
+                                                              "status",
+                                                              "target_tab",
+                                                              "rows_expected",
+                                                              "rows_written",
+                                                              "warnings_count",
+                                                              "errors_count",
+                                                              "payload_sha256",
+                                                              "message"
+                                                          ],
+                                   "semantic_checks":  {
+                                                           "identity":  true,
+                                                           "event":  true,
+                                                           "time":  true
+                                                       },
+                                   "semantic_passed":  3,
+                                   "semantic_required":  3,
+                                   "compatible":  true
+                               },
+                   "CONFIG":  {
+                                  "tab":  "ENG_HUMAN_CONFIG",
+                                  "header_count":  10,
+                                  "headers":  [
+                                                  "config_key",
+                                                  "config_value",
+                                                  "scope",
+                                                  "description",
+                                                  "status",
+                                                  "version",
+                                                  "updated_at",
+                                                  "updated_by",
+                                                  "evidence_ref",
+                                                  "notes"
+                                              ],
+                                  "normalized_headers":  [
+                                                             "config_key",
+                                                             "config_value",
+                                                             "scope",
+                                                             "description",
+                                                             "status",
+                                                             "version",
+                                                             "updated_at",
+                                                             "updated_by",
+                                                             "evidence_ref",
+                                                             "notes"
+                                                         ],
+                                  "semantic_checks":  {
+                                                          "key":  true,
+                                                          "value":  true
+                                                      },
+                                  "semantic_passed":  2,
+                                  "semantic_required":  2,
+                                  "compatible":  true
+                              }
+               },
+    "authorization_scope":  "SPREADSHEETS_READONLY",
+    "google_api_call":  true,
+    "real_sheet_read":  true,
+    "real_sheet_write":  false,
+    "credential_values_printed":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_003D_BUILD_SCHEMA_ADAPTER_MAP"
+}

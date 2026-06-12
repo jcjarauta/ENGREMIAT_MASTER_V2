@@ -1,0 +1,174 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.dry-run-packets.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "run_id":  "PREFLIGHT-20260612-133202",
+    "decision":  "DRY_RUN_PACKETS_READY_FOR_FINAL_PREFLIGHT_CLOSE",
+    "packet_count":  4,
+    "actions":  [
+                    "QUEUE",
+                    "REVIEW",
+                    "HISTORY_APPEND",
+                    "CONFIG"
+                ],
+    "schema_map_source":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\three-action-real-preflight-schema-adapter-map.v1.json",
+    "real_tabs":  {
+                      "queue":  "STG_ENG_IMPORT_QUEUE",
+                      "review":  "ENG_HUMAN_REVIEW",
+                      "history":  "STG_ENG_IMPORT_AUDIT",
+                      "config":  "ENG_HUMAN_CONFIG"
+                  },
+    "packets":  [
+                    {
+                        "packet_id":  "PREFLIGHT-20260612-133202-QUEUE",
+                        "action":  "QUEUE",
+                        "dry_run":  true,
+                        "target_tab":  "STG_ENG_IMPORT_QUEUE",
+                        "duplicate_policy":  "BLOCK",
+                        "lookup":  {
+                                       "field":  "queue_id",
+                                       "column":  "A",
+                                       "value":  "DRYRUN-TASK-001"
+                                   },
+                        "field_mapping":  {
+                                              "identity":  {
+                                                               "header":  "queue_id",
+                                                               "column_index":  1,
+                                                               "column_letter":  "A"
+                                                           },
+                                              "status":  {
+                                                             "header":  "status",
+                                                             "column_index":  5,
+                                                             "column_letter":  "E"
+                                                         },
+                                              "payload":  {
+                                                              "header":  "source",
+                                                              "column_index":  3,
+                                                              "column_letter":  "C"
+                                                          }
+                                          },
+                        "planned_values":  {
+                                               "queue_id":  "DRYRUN-TASK-001",
+                                               "status":  "PENDING",
+                                               "source":  "DRY_RUN_PREFLIGHT"
+                                           },
+                        "worker_execution":  false,
+                        "google_api_call":  false,
+                        "real_sheet_write":  false
+                    },
+                    {
+                        "packet_id":  "PREFLIGHT-20260612-133202-REVIEW",
+                        "action":  "REVIEW",
+                        "dry_run":  true,
+                        "target_tab":  "ENG_HUMAN_REVIEW",
+                        "queue_target_tab":  "STG_ENG_IMPORT_QUEUE",
+                        "decision":  "APPROVE",
+                        "allowed_decisions":  [
+                                                  "APPROVE",
+                                                  "REJECT",
+                                                  "REQUEST_MORE"
+                                              ],
+                        "lookup":  {
+                                       "field":  "queue_id",
+                                       "column":  "A",
+                                       "value":  "DRYRUN-TASK-001"
+                                   },
+                        "field_mapping":  {
+                                              "identity":  {
+                                                               "header":  "review_id",
+                                                               "column_index":  1,
+                                                               "column_letter":  "A"
+                                                           },
+                                              "decision":  {
+                                                               "header":  "decision",
+                                                               "column_index":  5,
+                                                               "column_letter":  "E"
+                                                           },
+                                              "actor":  {
+                                                            "header":  "reviewer",
+                                                            "column_index":  4,
+                                                            "column_letter":  "D"
+                                                        }
+                                          },
+                        "planned_values":  {
+                                               "review_id":  "DRYRUN-REVIEW-001",
+                                               "decision":  "APPROVE",
+                                               "reviewer":  "PREFLIGHT"
+                                           },
+                        "worker_execution":  false,
+                        "google_api_call":  false,
+                        "real_sheet_write":  false
+                    },
+                    {
+                        "packet_id":  "PREFLIGHT-20260612-133202-HISTORY",
+                        "action":  "HISTORY_APPEND",
+                        "dry_run":  true,
+                        "target_tab":  "STG_ENG_IMPORT_AUDIT",
+                        "field_mapping":  {
+                                              "identity":  {
+                                                               "header":  "audit_id",
+                                                               "column_index":  1,
+                                                               "column_letter":  "A"
+                                                           },
+                                              "event":  {
+                                                            "header":  "action",
+                                                            "column_index":  3,
+                                                            "column_letter":  "C"
+                                                        },
+                                              "time":  {
+                                                           "header":  "created_at",
+                                                           "column_index":  2,
+                                                           "column_letter":  "B"
+                                                       }
+                                          },
+                        "planned_values":  {
+                                               "audit_id":  "DRYRUN-AUDIT-001",
+                                               "action":  "REVIEW_APPROVE",
+                                               "created_at":  "2026-06-12T11:32:02.6935500Z"
+                                           },
+                        "worker_execution":  false,
+                        "google_api_call":  false,
+                        "real_sheet_write":  false
+                    },
+                    {
+                        "packet_id":  "PREFLIGHT-20260612-133202-CONFIG",
+                        "action":  "CONFIG",
+                        "dry_run":  true,
+                        "target_tab":  "ENG_HUMAN_CONFIG",
+                        "field_mapping":  {
+                                              "key":  {
+                                                          "header":  "config_key",
+                                                          "column_index":  1,
+                                                          "column_letter":  "A"
+                                                      },
+                                              "value":  {
+                                                            "header":  "config_value",
+                                                            "column_index":  2,
+                                                            "column_letter":  "B"
+                                                        }
+                                          },
+                        "planned_rows":  [
+                                             {
+                                                 "config_key":  "human_operation_enabled",
+                                                 "config_value":  "false"
+                                             },
+                                             {
+                                                 "config_key":  "execution_mode",
+                                                 "config_value":  "DRY_RUN"
+                                             }
+                                         ],
+                        "worker_execution":  false,
+                        "google_api_call":  false,
+                        "real_sheet_write":  false
+                    }
+                ],
+    "all_packets_dry_run":  true,
+    "worker_execution":  false,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_005_CLOSE_PREFLIGHT"
+}

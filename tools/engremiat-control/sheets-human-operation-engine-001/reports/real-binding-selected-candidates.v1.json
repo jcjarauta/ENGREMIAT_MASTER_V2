@@ -1,0 +1,46 @@
+{
+    "schema":  "engremiat.sheets-human-operation-real-binding.selected-candidates.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_OPERATION_REAL_BINDING_001",
+    "actions_selected":  3,
+    "bindings_ready":  1,
+    "bindings_review_required":  2,
+    "worker_execution":  false,
+    "module_require":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "selected":  [
+                     {
+                         "action":  "QUEUE",
+                         "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-loop-audit-worker.js",
+                         "score":  45,
+                         "exports":  [
+
+                                     ],
+                         "preferred_export":  null,
+                         "binding_status":  "EXPORT_REVIEW_REQUIRED"
+                     },
+                     {
+                         "action":  "REVIEW",
+                         "file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-review-worker.js",
+                         "score":  70,
+                         "exports":  [
+
+                                     ],
+                         "preferred_export":  null,
+                         "binding_status":  "EXPORT_REVIEW_REQUIRED"
+                     },
+                     {
+                         "action":  "CONFIG",
+                         "file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-executor.js",
+                         "score":  80,
+                         "exports":  [
+                                         "executeConfigUpdate"
+                                     ],
+                         "preferred_export":  "executeConfigUpdate",
+                         "binding_status":  "CANDIDATE_READY"
+                     }
+                 ],
+    "next":  "BLOCK_004"
+}

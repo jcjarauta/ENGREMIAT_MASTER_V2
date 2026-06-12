@@ -1,0 +1,22 @@
+{
+    "schema":  "engremiat.sheets-reusable-governed-human-operation-loop.preflight.v1",
+    "ok":  true,
+    "objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+    "queue_id":  "ENG-REUSABLE-LOOP-20260612-150327",
+    "queue_row_number":  3,
+    "queue_expected_status":  "PENDING",
+    "queue_state_match":  true,
+    "review_id":  "REVIEW-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+    "review_duplicate_count":  0,
+    "history_id":  "AUDIT-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+    "history_duplicate_count":  0,
+    "duplicate_policy":  "BLOCK",
+    "stale_state_policy":  "BLOCK",
+    "authorization_granted":  false,
+    "real_execution_allowed":  false,
+    "rollback_prepared":  true,
+    "google_api_call":  true,
+    "real_sheet_read":  true,
+    "real_sheet_write":  false,
+    "next":  "BLOCK_005_AUTHORIZATION_GATE"
+}

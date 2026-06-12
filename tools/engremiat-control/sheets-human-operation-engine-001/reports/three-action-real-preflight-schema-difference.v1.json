@@ -1,0 +1,232 @@
+{
+    "schema":  "engremiat.sheets-three-action-real-preflight.schema-difference.v1",
+    "ok":  true,
+    "objective":  "SHEETS_THREE_ACTION_REAL_PREFLIGHT_001",
+    "decision":  "CANDIDATE_MAPPING_READY_FOR_HEADER_VERIFICATION",
+    "spreadsheet_title":  "ENGREMIAT_CONTROL_MVP_001",
+    "tabs_detected_count":  43,
+    "tabs":  [
+                 "BANDEJA_TAREAS",
+                 "DECISIONES",
+                 "CONOCIMIENTO",
+                 "materialization-manifest",
+                 "README-MATERIALIZACION",
+                 "PANEL_CONTROL",
+                 "STG_ENG_PROCESSES",
+                 "STG_ENG_PROJECTS",
+                 "control_dashboard",
+                 "control_dashboard_review_log",
+                 "control_dashboard_deep_audit_log",
+                 "control_dashboard_render_log",
+                 "control_bridge_inbox",
+                 "control_bridge_log",
+                 "control_snapshot",
+                 "control_state",
+                 "ENG_HI18_AUDIT_LOG",
+                 "ENG_HI19_READBACK_REPORT",
+                 "STG_ENG_GATES",
+                 "STG_ENG_RUNS",
+                 "STG_ENG_TASKS",
+                 "STG_ENG_DICTIONARY",
+                 "STG_ENG_MANUALS",
+                 "REVISION_MANUAL_STG_TARGET",
+                 "STG_ENG_SECTIONS",
+                 "STG_ENG_CONTROL_INDEX",
+                 "STG_ENG_IMPORT_AUDIT",
+                 "STG_ENG_IMPORT_QUEUE",
+                 "ENG_HI18_CONTROL_BRIDGE",
+                 "ENG_HI23B_FINAL_STAGING_AUDIT",
+                 "control_events",
+                 "control_projects",
+                 "control_tasks",
+                 "control_workers",
+                 "control_human_gates",
+                 "control_evidence",
+                 "control_actions",
+                 "control_config",
+                 "control_review_log",
+                 "ENG_HUMAN_QUEUE",
+                 "ENG_HUMAN_REVIEW",
+                 "ENG_HUMAN_HISTORY",
+                 "ENG_HUMAN_CONFIG"
+             ],
+    "expected_tabs_missing":  [
+                                  "ENG_QUEUE",
+                                  "ENG_REVIEWS",
+                                  "ENG_HISTORY",
+                                  "CONFIG"
+                              ],
+    "candidate_mappings_resolved":  4,
+    "mapping":  {
+                    "QUEUE":  {
+                                  "expected_tab":  "ENG_QUEUE",
+                                  "recommended_tab":  "STG_ENG_IMPORT_QUEUE",
+                                  "score":  69,
+                                  "confident":  true,
+                                  "candidates":  [
+                                                     {
+                                                         "tab":  "STG_ENG_IMPORT_QUEUE",
+                                                         "score":  69
+                                                     },
+                                                     {
+                                                         "tab":  "STG_ENG_TASKS",
+                                                         "score":  69
+                                                     },
+                                                     {
+                                                         "tab":  "ENG_HUMAN_QUEUE",
+                                                         "score":  61
+                                                     },
+                                                     {
+                                                         "tab":  "BANDEJA_TAREAS",
+                                                         "score":  55
+                                                     },
+                                                     {
+                                                         "tab":  "control_tasks",
+                                                         "score":  55
+                                                     },
+                                                     {
+                                                         "tab":  "STG_ENG_CONTROL_INDEX",
+                                                         "score":  14
+                                                     },
+                                                     {
+                                                         "tab":  "STG_ENG_DICTIONARY",
+                                                         "score":  14
+                                                     },
+                                                     {
+                                                         "tab":  "STG_ENG_GATES",
+                                                         "score":  14
+                                                     }
+                                                 ]
+                              },
+                    "REVIEW":  {
+                                   "expected_tab":  "ENG_REVIEWS",
+                                   "recommended_tab":  "ENG_HUMAN_REVIEW",
+                                   "score":  61,
+                                   "confident":  true,
+                                   "candidates":  [
+                                                      {
+                                                          "tab":  "ENG_HUMAN_REVIEW",
+                                                          "score":  61
+                                                      },
+                                                      {
+                                                          "tab":  "control_dashboard_review_log",
+                                                          "score":  30
+                                                      },
+                                                      {
+                                                          "tab":  "control_review_log",
+                                                          "score":  30
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_CONTROL_INDEX",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_DICTIONARY",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_GATES",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_IMPORT_AUDIT",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_IMPORT_QUEUE",
+                                                          "score":  14
+                                                      }
+                                                  ]
+                               },
+                    "HISTORY":  {
+                                    "expected_tab":  "ENG_HISTORY",
+                                    "recommended_tab":  "STG_ENG_IMPORT_AUDIT",
+                                    "score":  69,
+                                    "confident":  true,
+                                    "candidates":  [
+                                                       {
+                                                           "tab":  "STG_ENG_IMPORT_AUDIT",
+                                                           "score":  69
+                                                       },
+                                                       {
+                                                           "tab":  "ENG_HI23B_FINAL_STAGING_AUDIT",
+                                                           "score":  61
+                                                       },
+                                                       {
+                                                           "tab":  "ENG_HUMAN_HISTORY",
+                                                           "score":  61
+                                                       },
+                                                       {
+                                                           "tab":  "control_events",
+                                                           "score":  55
+                                                       },
+                                                       {
+                                                           "tab":  "ENG_HI18_AUDIT_LOG",
+                                                           "score":  36
+                                                       },
+                                                       {
+                                                           "tab":  "control_dashboard_deep_audit_log",
+                                                           "score":  30
+                                                       },
+                                                       {
+                                                           "tab":  "STG_ENG_CONTROL_INDEX",
+                                                           "score":  14
+                                                       },
+                                                       {
+                                                           "tab":  "STG_ENG_DICTIONARY",
+                                                           "score":  14
+                                                       }
+                                                   ]
+                                },
+                    "CONFIG":  {
+                                   "expected_tab":  "CONFIG",
+                                   "recommended_tab":  "ENG_HUMAN_CONFIG",
+                                   "score":  61,
+                                   "confident":  true,
+                                   "candidates":  [
+                                                      {
+                                                          "tab":  "ENG_HUMAN_CONFIG",
+                                                          "score":  61
+                                                      },
+                                                      {
+                                                          "tab":  "control_config",
+                                                          "score":  55
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_CONTROL_INDEX",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_DICTIONARY",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_GATES",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_IMPORT_AUDIT",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_IMPORT_QUEUE",
+                                                          "score":  14
+                                                      },
+                                                      {
+                                                          "tab":  "STG_ENG_MANUALS",
+                                                          "score":  14
+                                                      }
+                                                  ]
+                               }
+                },
+    "metadata_api_call":  true,
+    "cell_values_read":  false,
+    "include_grid_data":  false,
+    "credential_values_printed":  false,
+    "google_api_call":  true,
+    "real_sheet_read":  true,
+    "real_sheet_write":  false,
+    "commit":  false,
+    "push":  false,
+    "next":  "BLOCK_003C_VERIFY_CANDIDATE_HEADERS"
+}

@@ -1,0 +1,27 @@
+{
+    "schema":  "engremiat.sheets-human-operation-real-binding.adapter-contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_OPERATION_REAL_BINDING_001",
+    "queue":  {
+                  "candidate_file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-loop-audit-worker.js",
+                  "preferred_export":  null,
+                  "binding_status":  "DEFERRED_FAIL_CLOSED"
+              },
+    "review":  {
+                   "candidate_file":  "tools\\engremiat-control\\sheets-oauth-worker\\human-core-first-review-worker.js",
+                   "preferred_export":  null,
+                   "binding_status":  "DEFERRED_FAIL_CLOSED"
+               },
+    "config":  {
+                   "candidate_file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-config-update-executor.js",
+                   "preferred_export":  "executeConfigUpdate",
+                   "binding_status":  "READY_FOR_EXPLICIT_REQUIRE"
+               },
+    "adapter_file":  "tools\\engremiat-control\\sheets-human-operation-engine-001\\workers\\human-operation-real-binding-adapters.js",
+    "worker_execution":  false,
+    "module_require":  false,
+    "google_api_call":  false,
+    "real_sheet_write":  false,
+    "git_write":  false,
+    "next":  "BLOCK_004D_F"
+}
