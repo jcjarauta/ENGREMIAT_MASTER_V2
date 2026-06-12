@@ -1,0 +1,149 @@
+{
+    "schema":  "engremiat.sheets-durable-governed-engine-entrypoint.contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_DURABLE_GOVERNED_ENGINE_ENTRYPOINT_001",
+    "run_id":  "SHEETS-DURABLE-GOVERNED-ENGINE-ENTRYPOINT-001-20260612-153005",
+    "stage_current":  1,
+    "stage_total":  8,
+    "stage_remaining":  7,
+    "decision":  "DURABLE_PARAMETERIZED_GOVERNED_ENGINE_ENTRYPOINT_CONTRACT_CREATED",
+    "purpose":  "Expose one stable parameterized entrypoint over the proven governed Sheets human operation engine",
+    "source_panel_close":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-and-loop-launcher-close.v1.json",
+    "source_engine_close":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-reusable-governed-human-operation-loop-close.v1.json",
+    "source_readiness":  {
+                             "panel":  100,
+                             "engine":  100,
+                             "real_cycles_verified":  2,
+                             "atomic_batches_verified":  2
+                         },
+    "entrypoint":  {
+                       "path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+                       "worker_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\governed-human-operation-worker.js",
+                       "interface":  "POWERSHELL_ENTRYPOINT_WITH_NODE_WORKER",
+                       "default_mode":  "STATUS",
+                       "supported_modes":  [
+                                               "STATUS",
+                                               "SELECT",
+                                               "PREPARE",
+                                               "PREFLIGHT",
+                                               "AUTHORIZE",
+                                               "EXECUTE",
+                                               "VERIFY",
+                                               "RUN"
+                                           ],
+                       "supported_decisions":  [
+                                                   "APPROVE",
+                                                   "REJECT",
+                                                   "REQUEST_CHANGES"
+                                               ],
+                       "queue_selector":  "NEXT_PENDING_QUEUE_ITEM",
+                       "queue_id_parameter_optional":  true,
+                       "decision_parameter_required_from_prepare":  true,
+                       "authorization_phrase_parameter_optional":  true,
+                       "interactive_authorization_allowed":  true,
+                       "real_write_default":  false,
+                       "dry_run_default":  true
+                   },
+    "pipeline":  {
+                     "sequence":  [
+                                      "LOAD_CONTRACT",
+                                      "SELECT_QUEUE_ITEM",
+                                      "BUILD_DECISION_PAYLOAD",
+                                      "CHECK_STALE_STATE",
+                                      "CHECK_DUPLICATES",
+                                      "BUILD_EXACT_AUTHORIZATION_PHRASE",
+                                      "REQUIRE_HUMAN_AUTHORIZATION",
+                                      "EXECUTE_ATOMIC_MUTATIONS",
+                                      "VERIFY_QUEUE_REVIEW_HISTORY",
+                                      "WRITE_LOCAL_EVIDENCE"
+                                  ],
+                     "queue_updates_max":  1,
+                     "review_appends_max":  1,
+                     "history_appends_max":  1,
+                     "total_mutations_max":  3,
+                     "config_mutations_max":  0
+                 },
+    "contracts":  {
+                      "input_schema":  "engremiat.sheets-durable-governed-engine-entrypoint.input.v1",
+                      "result_schema":  "engremiat.sheets-durable-governed-engine-entrypoint.result.v1",
+                      "evidence_schema":  "engremiat.sheets-durable-governed-engine-entrypoint.evidence.v1",
+                      "authorization_schema":  "engremiat.sheets-durable-governed-engine-entrypoint.authorization.v1"
+                  },
+    "governance":  {
+                       "duplicate_policy":  "BLOCK",
+                       "stale_state_policy":  "BLOCK",
+                       "authorization_policy":  "EXACT_PHRASE_REQUIRED",
+                       "rollback_policy":  "PREPARE_BEFORE_REAL_WRITE",
+                       "atomic_execution_required":  true,
+                       "exact_post_write_verification_required":  true,
+                       "credentials_must_not_be_logged":  true,
+                       "config_write_allowed":  false
+                   },
+    "reuse":  {
+                  "reuse_existing_selector_contract":  true,
+                  "reuse_existing_decision_mapping":  true,
+                  "reuse_existing_review_history_shapes":  true,
+                  "reuse_existing_google_binding":  true,
+                  "reuse_existing_atomic_execution_semantics":  true,
+                  "duplicate_business_logic_allowed":  false
+              },
+    "launcher_binding":  {
+                             "current_launcher":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\operational-control-panel-and-loop-launcher-001\\run-governed-human-loop.ps1",
+                             "current_binding_ready":  false,
+                             "binding_target":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+                             "launcher_real_write_must_call_entrypoint":  true,
+                             "telegram_future_must_call_same_entrypoint":  true
+                         },
+    "blocks":  [
+                   {
+                       "block":  1,
+                       "name":  "CONTRACT",
+                       "status":  "COMPLETED"
+                   },
+                   {
+                       "block":  2,
+                       "name":  "STABLE_SELECTOR_WORKER",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  3,
+                       "name":  "PARAMETERIZED_PAYLOAD_BUILDER",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  4,
+                       "name":  "PREFLIGHT_AND_DUPLICATE_GUARD",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  5,
+                       "name":  "AUTHORIZATION_GATE",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  6,
+                       "name":  "ATOMIC_EXECUTOR",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  7,
+                       "name":  "ENTRYPOINT_AND_LAUNCHER_SMOKE",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  8,
+                       "name":  "CLOSE_GIT_AND_VALUE_TELEGRAM",
+                       "status":  "PENDING"
+                   }
+               ],
+    "current_mode":  "LOCAL_ONLY_CONTRACT_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_002_STABLE_SELECTOR_WORKER",
+    "next":  "BLOCK_002_BUILD_STABLE_SELECTOR_WORKER"
+}
