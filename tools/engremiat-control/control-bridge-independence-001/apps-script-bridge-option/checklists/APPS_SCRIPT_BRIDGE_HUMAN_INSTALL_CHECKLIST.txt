@@ -1,0 +1,22 @@
+﻿APPS SCRIPT BRIDGE HUMAN INSTALL CHECKLIST
+
+Estado: BORRADOR. No ejecutado por este script.
+
+[ ] Confirmar que ya se valido importacion manual STG-only o que se quiere probar menu Sheet-side.
+[ ] Abrir Google Sheet ENGREMIAT_CONTROL_MVP_001.
+[ ] Abrir Extensiones > Apps Script.
+[ ] Pegar el contenido de engremiat_stg_bridge_menu.draft.gs.
+[ ] Guardar proyecto Apps Script.
+[ ] Recargar Sheet.
+[ ] Confirmar que aparece menu ENGREMIAT.
+[ ] Ejecutar solo "Validar tabs STG" primero.
+[ ] Confirmar que no se escriben tabs finales.
+[ ] Si todo esta correcto, probar "Crear señal humana".
+[ ] Exportar STG_ENG_SIGNALS o copiar señales de vuelta al inbox ENGREMIAT.
+
+NO HACER:
+- No ampliar el script a tabs finales.
+- No añadir UrlFetchApp.
+- No pegar secretos.
+- No conectar APIs externas.
+- No convertir Sheets en fuente de verdad principal.

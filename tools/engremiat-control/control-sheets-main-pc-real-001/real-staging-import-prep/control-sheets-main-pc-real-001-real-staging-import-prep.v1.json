@@ -1,0 +1,42 @@
+﻿{
+    "objective":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "phase":  "REAL_STAGING_IMPORT_PREP_PACKAGE",
+    "ok":  true,
+    "decision":  "AUTHORIZED_IMPORT_PACKAGE_PREPARED_NO_REAL_EXECUTION",
+    "readiness":  90,
+    "gate":  "OPEN_READY_FOR_NEXT_STEP_BUILD_MINIMAL_STG_ONLY_GOOGLE_WORKER",
+    "mode":  "LOCAL_ONLY_PREP_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "head":  "03fe72d",
+    "binding_present":  true,
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "expected_staging_tabs":  [
+                                  "STG_ENG_GATES",
+                                  "STG_ENG_RUNS",
+                                  "STG_ENG_DICTIONARY",
+                                  "STG_ENG_MANUALS",
+                                  "STG_ENG_PROJECTS",
+                                  "STG_ENG_TASKS"
+                              ],
+    "final_tabs_allowed":  false,
+    "scoped_dirty_count_before":  5,
+    "out_of_scope_dirty_count_before":  16,
+    "candidate_files_count":  36,
+    "top_candidate_files_count":  36,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "authorization_phrase":  "SI, AUTORIZO IMPORT REAL STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH",
+    "launcher_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\real-staging-import-prep\\run-authorized-real-staging-import.ps1",
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "google_api_call":  false,
+    "apps_script_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "BUILD_MINIMAL_GOOGLE_SHEETS_STG_ONLY_WORKER_DRY_RUN_FIRST"
+}

@@ -1,0 +1,57 @@
+﻿{
+    "phase":  "CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_CLOSE_EVIDENCE_AND_DECIDE_NEXT_OBJECTIVE",
+    "ok":  true,
+    "decision":  "CONTROL_SHEETS_MAIN_PC_REAL_001_CLOSED_READY_FOR_MANUAL_STG_IMPORT_OR_APPS_SCRIPT_OBJECTIVE",
+    "readiness":  97,
+    "gate":  "CLOSED_READY_TO_DECIDE_MANUAL_IMPORT_OR_APPS_SCRIPT_NEXT_OBJECTIVE",
+    "mode":  "LOCAL_ONLY_CLOSE_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "objective":  "construir primer espacio de control y supervision humana en Sheets",
+    "stage_current":  8,
+    "stage_total":  8,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "manual_human_import_only":  true,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "package_dir":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\manual-stg-import-package",
+    "index_csv":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\manual-stg-import-package\\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_INDEX.csv",
+    "index_json":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\manual-stg-import-package\\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_INDEX.json",
+    "checklist_txt":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\manual-stg-import-package\\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_CHECKLIST.txt",
+    "package_report_json":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-sheets-main-pc-real-001\\manual-stg-import-package\\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_REPORT.json",
+    "target_tabs_count":  6,
+    "payload_csv_files_detected":  6,
+    "copied_files_count":  6,
+    "package_files_count":  11,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "final_tabs_allowed":  false,
+    "next_options":  [
+                         {
+                             "readiness":  96,
+                             "option":  "MANUAL_STG_IMPORT_NOW",
+                             "risk":  "bajo si se importan solo tabs STG y se respeta checklist",
+                             "writes":  "manual_human_import_only",
+                             "recommended_when":  "Se quiere ver el espacio de control funcionando ya sin instalar Google API local.",
+                             "allowed_now":  true,
+                             "human_cost":  "media",
+                             "automation_cost":  "baja"
+                         },
+                         {
+                             "readiness":  82,
+                             "option":  "APPS_SCRIPT_STG_IMPORT_FUTURE",
+                             "risk":  "medio hasta validar permisos, menu, logs y protecciones STG-only",
+                             "writes":  "future_apps_script_only_after_explicit_authorization",
+                             "recommended_when":  "Se quiere repetir importaciones STG de forma mas comoda y gobernada desde el propio Sheet.",
+                             "allowed_now":  false,
+                             "human_cost":  "baja despues de prepararlo",
+                             "automation_cost":  "media"
+                         }
+                     ],
+    "recommended_next_objective":  "OPTION_A_MANUAL_STG_IMPORT_FIRST_THEN_VALIDATE_SHEETS_AS_CONTROL_SPACE",
+    "recommended_next_plain":  "Primero hacer importacion manual STG-only para validar el modelo operativo en Sheets; despues preparar Apps Script si la experiencia humana queda clara.",
+    "created_at":  "2026-06-11T22:49:35"
+}

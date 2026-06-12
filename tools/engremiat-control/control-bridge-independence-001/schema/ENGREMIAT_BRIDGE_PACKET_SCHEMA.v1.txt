@@ -1,0 +1,13 @@
+﻿ENGREMIAT_BRIDGE_PACKET_SCHEMA_BEGIN
+schema_version=1.0.0
+purpose=intercambio entre partes ENGREMIAT sin Google API
+source_of_truth=ENGREMIAT_LOCAL_PACKAGES_AND_REPORTS
+required_files=manifest.json|payload.csv|payload.json|checksums.sha256.json|human-checklist.txt|receipt-template.json
+optional_files=dashboard.html|notes.txt|signals.csv|signals.json|import-log.txt
+packet_types=CONTROL_STG_IMPORT|SIGNAL_EXPORT|STATUS_SYNC|TASK_QUEUE|MANUALS_SYNC|DICTIONARY_SYNC
+lifecycle=DRAFT_CREATED|PACKET_VALIDATED_LOCAL|READY_FOR_HUMAN_OR_BRIDGE_CONSUMPTION|CONSUMED_BY_TARGET|RECEIPT_RETURNED_TO_INBOX|SOURCE_SYSTEM_RECONCILED
+no_google_api_required=True
+no_final_tabs_by_default=True
+staging_first=True
+receipt_required_after_consumption=True
+ENGREMIAT_BRIDGE_PACKET_SCHEMA_END

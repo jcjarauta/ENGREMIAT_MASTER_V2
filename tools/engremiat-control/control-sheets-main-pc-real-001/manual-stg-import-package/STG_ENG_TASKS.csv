@@ -1,0 +1,5 @@
+﻿"task_id","project_id","title","status","priority","assigned_to","requires_human","evidence_path","created_at","due_at","notes"
+"TASK-CS-004-001","PROJECT-ENGREMIAT-CONTROL-SHEETS-001","Revisar datos semilla locales","DONE","HIGH","system","False","seed/*.csv","2026-06-11T22:21:15","","Generado por bloque 4."
+"TASK-CS-005-001","PROJECT-ENGREMIAT-CONTROL-SHEETS-001","Preparar paquete dry-run de importacion staging","TODO","HIGH","system","False","imports/dry-run","2026-06-11T22:21:15","","Siguiente bloque."
+"TASK-CS-006-001","PROJECT-ENGREMIAT-CONTROL-SHEETS-001","Validar paquete contra modelo local","TODO","HIGH","system","False","validation","2026-06-11T22:21:15","","Antes de autorizacion real."
+"TASK-CS-007-001","PROJECT-ENGREMIAT-CONTROL-SHEETS-001","Abrir gate de importacion real controlada","TODO","CRITICAL","human+system","True","gate","2026-06-11T22:21:15","","Solo si dry-run y validacion estan OK."

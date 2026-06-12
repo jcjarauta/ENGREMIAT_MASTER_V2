@@ -1,0 +1,76 @@
+﻿{
+    "ok":  true,
+    "decision":  "STG_ONLY_WORKER_DRY_RUN_OK_NO_GOOGLE_API_NO_WRITE",
+    "mode":  "DRY_RUN_ONLY",
+    "target_tabs_count":  6,
+    "ready_tabs_count":  6,
+    "missing_tabs_count":  0,
+    "final_tabs_allowed":  false,
+    "real_sheet_write":  false,
+    "google_api_call":  false,
+    "apps_script_execution":  false,
+    "push":  false,
+    "recommended_next":  "IMPLEMENT_AUTHORIZED_GOOGLE_SHEETS_STG_ONLY_WRITE_STEP",
+    "manifest":  [
+                     {
+                         "target_tab":  "STG_ENG_GATES",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_GATES.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     },
+                     {
+                         "target_tab":  "STG_ENG_RUNS",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_RUNS.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     },
+                     {
+                         "target_tab":  "STG_ENG_DICTIONARY",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_DICTIONARY.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     },
+                     {
+                         "target_tab":  "STG_ENG_MANUALS",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_MANUALS.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     },
+                     {
+                         "target_tab":  "STG_ENG_PROJECTS",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_PROJECTS.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     },
+                     {
+                         "target_tab":  "STG_ENG_TASKS",
+                         "final_tab_allowed":  "False",
+                         "candidate_found":  "True",
+                         "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_TASKS.seed.v1.csv",
+                         "candidate_score":  "60",
+                         "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+                         "real_write_now":  "False",
+                         "google_api_call_now":  "False"
+                     }
+                 ]
+}

@@ -1,0 +1,9 @@
+﻿HUMAN CHECKLIST · EXAMPLE CONTROL STG IMPORT PACKET
+
+[ ] Confirmar que el paquete apunta solo a STG_*.
+[ ] Confirmar que final_tabs_allowed=False.
+[ ] Abrir payload.csv.
+[ ] Importar/copiar solo en pestanas STG equivalentes.
+[ ] No tocar tabs finales.
+[ ] Guardar una recepcion/receipt despues de consumir el paquete.
+[ ] Devolver receipt al inbox de ENGREMIAT.

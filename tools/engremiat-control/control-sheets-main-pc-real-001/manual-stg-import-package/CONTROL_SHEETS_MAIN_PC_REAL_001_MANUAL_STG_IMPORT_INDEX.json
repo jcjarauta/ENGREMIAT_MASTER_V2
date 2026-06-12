@@ -1,0 +1,74 @@
+﻿[
+    {
+        "target_tab":  "STG_ENG_GATES",
+        "package_file":  "STG_ENG_GATES.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_GATES.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_GATES.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  4,
+        "sha256":  "53E74652C9C03ABF0528A9D7A4C4E49F292E189B255E57833D50435A0E0A7BDF",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    },
+    {
+        "target_tab":  "STG_ENG_RUNS",
+        "package_file":  "STG_ENG_RUNS.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_RUNS.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_RUNS.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  4,
+        "sha256":  "ED37E7135E9FB1AF168FAFCE842A85686909597280379BC5D5167387CC4919B4",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    },
+    {
+        "target_tab":  "STG_ENG_DICTIONARY",
+        "package_file":  "STG_ENG_DICTIONARY.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_DICTIONARY.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_DICTIONARY.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  6,
+        "sha256":  "58CA76A12FD2AF76CC8B9BE9E0A71EB36DB7A2516B9A5594DC42938E361BE872",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    },
+    {
+        "target_tab":  "STG_ENG_MANUALS",
+        "package_file":  "STG_ENG_MANUALS.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_MANUALS.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_MANUALS.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  4,
+        "sha256":  "42256ED2309A3B7AB8873AEE5AEFD973ACA64E9C316AB5C772C441A39DDC8990",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    },
+    {
+        "target_tab":  "STG_ENG_PROJECTS",
+        "package_file":  "STG_ENG_PROJECTS.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_PROJECTS.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_PROJECTS.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  2,
+        "sha256":  "76867AC361B83AB05679100275C515B1EEA15F76C8F75A9A3FFA10E3C6753008",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    },
+    {
+        "target_tab":  "STG_ENG_TASKS",
+        "package_file":  "STG_ENG_TASKS.csv",
+        "package_relative_path":  "tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/STG_ENG_TASKS.csv",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_TASKS.seed.v1.csv",
+        "source_exists":  true,
+        "rows_estimated":  4,
+        "sha256":  "0A42F84EFBA5793D91A90E88F936F2099274107FD3736506E6A073CD61786E74",
+        "import_mode":  "MANUAL_OR_APPS_SCRIPT_STG_ONLY",
+        "final_tab_allowed":  false,
+        "real_write_done":  false
+    }
+]

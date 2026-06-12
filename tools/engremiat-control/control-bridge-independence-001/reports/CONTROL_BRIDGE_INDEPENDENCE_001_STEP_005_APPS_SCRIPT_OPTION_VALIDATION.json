@@ -1,0 +1,20 @@
+﻿{
+    "ok":  true,
+    "decision":  "APPS_SCRIPT_BRIDGE_OPTION_PREPARED_DRAFT_ONLY_NO_GOOGLE_API_LOCAL",
+    "readiness":  92,
+    "gate":  "OPEN_READY_FOR_STEP_006_CLOSE_AND_DECIDE_MANUAL_IMPORT_EXECUTION",
+    "mode":  "LOCAL_ONLY_APPS_SCRIPT_DRAFT_NO_EXECUTION_NO_GOOGLE_API_NO_GIT",
+    "gs_draft_exists":  true,
+    "contract_json_exists":  true,
+    "checklist_exists":  true,
+    "readme_exists":  true,
+    "checksums_exists":  true,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "apps_script_draft_only":  true,
+    "telegram_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false
+}

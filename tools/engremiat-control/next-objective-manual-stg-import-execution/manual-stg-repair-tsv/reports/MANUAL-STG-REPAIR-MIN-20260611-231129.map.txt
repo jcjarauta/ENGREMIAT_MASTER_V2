@@ -1,0 +1,47 @@
+﻿MANUAL_STG_REPAIR_MAP_BEGIN
+run_id=MANUAL-STG-REPAIR-MIN-20260611-231129
+out_dir=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy
+
+ITEM_1
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_DICTIONARY.csv
+target_tab=STG_ENG_DICTIONARY
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\01_STG_ENG_DICTIONARY.tsv.txt
+human_action=Borrar contenido actual de STG_ENG_DICTIONARY, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en STG_ENG_DICTIONARY!A1
+
+ITEM_2
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_GATES.csv
+target_tab=STG_ENG_GATES
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\02_STG_ENG_GATES.tsv.txt
+human_action=Borrar contenido actual de STG_ENG_GATES, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en STG_ENG_GATES!A1
+
+ITEM_3
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_MANUALS.csv
+target_tab=STG_ENG_MANUALS
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\03_STG_ENG_MANUALS.tsv.txt
+human_action=Borrar contenido actual de STG_ENG_MANUALS, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en STG_ENG_MANUALS!A1
+
+ITEM_4
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_PROJECTS.csv
+target_tab=REVISION_MANUAL_STG_TARGET
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\04_REVISION_MANUAL_STG_TARGET.tsv.txt
+human_action=Borrar contenido actual de REVISION_MANUAL_STG_TARGET, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en REVISION_MANUAL_STG_TARGET!A1
+
+ITEM_5
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_RUNS.csv
+target_tab=STG_ENG_RUNS
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\05_STG_ENG_RUNS.tsv.txt
+human_action=Borrar contenido actual de STG_ENG_RUNS, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en STG_ENG_RUNS!A1
+
+ITEM_6
+source_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\STG_ENG_TASKS.csv
+target_tab=STG_ENG_TASKS
+start_cell=A1
+prepared_tsv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\manual-stg-repair-tsv\prepared-tsv-for-copy\06_STG_ENG_TASKS.tsv.txt
+human_action=Borrar contenido actual de STG_ENG_TASKS, abrir prepared_tsv, Ctrl+A, Ctrl+C, pegar en STG_ENG_TASKS!A1
+
+MANUAL_STG_REPAIR_MAP_END

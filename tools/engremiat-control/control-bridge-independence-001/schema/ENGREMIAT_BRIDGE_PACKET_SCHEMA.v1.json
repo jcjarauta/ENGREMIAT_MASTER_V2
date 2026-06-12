@@ -1,0 +1,61 @@
+﻿{
+    "schema_name":  "ENGREMIAT_BRIDGE_PACKET_SCHEMA",
+    "schema_version":  "1.0.0",
+    "purpose":  "Formato estandar para mover informacion entre partes de ENGREMIAT sin depender de Google API.",
+    "source_of_truth":  "ENGREMIAT_LOCAL_PACKAGES_AND_REPORTS",
+    "transport_modes":  [
+                            "file_system",
+                            "manual_copy",
+                            "apps_script_future",
+                            "telegram_future",
+                            "node_to_node_future"
+                        ],
+    "required_files":  [
+                           "manifest.json",
+                           "payload.csv",
+                           "payload.json",
+                           "checksums.sha256.json",
+                           "human-checklist.txt",
+                           "receipt-template.json"
+                       ],
+    "optional_files":  [
+                           "dashboard.html",
+                           "notes.txt",
+                           "signals.csv",
+                           "signals.json",
+                           "import-log.txt"
+                       ],
+    "packet_fields":  {
+                          "packet_id":  "string stable unique id",
+                          "packet_type":  "CONTROL_STG_IMPORT | SIGNAL_EXPORT | STATUS_SYNC | TASK_QUEUE | MANUALS_SYNC | DICTIONARY_SYNC",
+                          "producer":  "string engremiat module id",
+                          "consumer":  "string target module id",
+                          "created_at":  "ISO datetime",
+                          "source_stage":  "string",
+                          "target_stage":  "string",
+                          "target_tabs":  "array of sheet/tab names or logical targets",
+                          "safety":  "object with no_google_api, no_final_tabs, staging_first, no_secret_printing",
+                          "payloads":  "array of payload descriptors",
+                          "checksums":  "sha256 checksums",
+                          "receipts":  "expected receipt contract",
+                          "human_gate":  "object describing whether human validation/import is needed"
+                      },
+    "safety_rules":  {
+                         "no_google_api_required":  true,
+                         "no_final_tabs_by_default":  true,
+                         "staging_first":  true,
+                         "no_secret_values":  true,
+                         "payloads_must_be_hashable":  true,
+                         "receipt_required_after_consumption":  true,
+                         "reversible_by_design":  true,
+                         "human_gate_explicit_when_needed":  true
+                     },
+    "lifecycle":  [
+                      "DRAFT_CREATED",
+                      "PACKET_VALIDATED_LOCAL",
+                      "READY_FOR_HUMAN_OR_BRIDGE_CONSUMPTION",
+                      "CONSUMED_BY_TARGET",
+                      "RECEIPT_RETURNED_TO_INBOX",
+                      "SOURCE_SYSTEM_RECONCILED"
+                  ]
+}

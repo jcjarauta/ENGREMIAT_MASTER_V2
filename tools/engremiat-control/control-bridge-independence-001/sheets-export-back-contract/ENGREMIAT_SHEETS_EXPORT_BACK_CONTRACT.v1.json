@@ -1,0 +1,67 @@
+﻿{
+    "contract_name":  "ENGREMIAT_SHEETS_EXPORT_BACK_CONTRACT",
+    "contract_version":  "1.0.0",
+    "purpose":  "Permitir que Sheets devuelva decisiones humanas, gates, comentarios, tareas y receipts a ENGREMIAT sin Google API.",
+    "direction":  "SHEETS_TO_ENGREMIAT_INBOX",
+    "google_api_required":  false,
+    "allowed_transports":  [
+                               "manual_csv_export_from_sheet",
+                               "manual_json_copy_future",
+                               "apps_script_file_export_future",
+                               "telegram_signal_future"
+                           ],
+    "source_tabs":  [
+                        "STG_ENG_GATES",
+                        "STG_ENG_RUNS",
+                        "STG_ENG_DICTIONARY",
+                        "STG_ENG_MANUALS",
+                        "STG_ENG_TASKS",
+                        "STG_ENG_DECISIONS"
+                    ],
+    "inbox_destination":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox",
+    "required_files":  [
+                           "sheets-export-back-manifest.json",
+                           "sheets-human-signals.csv",
+                           "sheets-human-signals.json",
+                           "sheets-export-back-receipt.json",
+                           "checksums.sha256.json"
+                       ],
+    "safety":  {
+                   "final_tabs_touched":  false,
+                   "staging_first":  true,
+                   "no_secret_values":  true,
+                   "no_google_api_required":  true,
+                   "human_export_required":  true,
+                   "receipt_required":  true,
+                   "reversible_by_design":  true
+               },
+    "signal_types":  [
+                         "HUMAN_DECISION",
+                         "GATE_STATUS",
+                         "TASK_REQUEST",
+                         "MANUAL_CORRECTION",
+                         "DICTIONARY_UPDATE",
+                         "BLOCKER_REPORT",
+                         "READINESS_OVERRIDE",
+                         "NEXT_OBJECTIVE_PROPOSAL"
+                     ],
+    "required_columns":  [
+                             "signal_id",
+                             "signal_type",
+                             "source_tab",
+                             "target_module",
+                             "key",
+                             "value",
+                             "status",
+                             "human_note",
+                             "created_at"
+                         ],
+    "lifecycle":  [
+                      "SHEET_HUMAN_EDIT",
+                      "MANUAL_EXPORT_CREATED",
+                      "EXPORT_BACK_PACKET_VALIDATED",
+                      "PACKET_DROPPED_TO_ENGREMIAT_INBOX",
+                      "ENGREMIAT_RECONCILES_SIGNAL",
+                      "NEXT_ACTION_GENERATED"
+                  ]
+}

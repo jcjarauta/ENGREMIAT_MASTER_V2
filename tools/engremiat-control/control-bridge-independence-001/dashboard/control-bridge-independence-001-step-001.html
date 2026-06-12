@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CONTROL_BRIDGE_INDEPENDENCE_001</title>
+<style>
+body{font-family:Arial,Segoe UI,sans-serif;margin:24px;background:#f6f7fb;color:#18202a}
+.card{background:white;border:1px solid #d9deea;border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.ok{color:#0b6b2b;font-weight:700}
+code{background:#eef1f7;padding:2px 5px;border-radius:5px}
+table{border-collapse:collapse;width:100%;background:white}td,th{border:1px solid #d9deea;padding:8px;text-align:left}th{background:#eef1f7}
+</style>
+</head>
+<body>
+<h1>CONTROL_BRIDGE_INDEPENDENCE_001 · Paso 1/6</h1>
+<div class="card">
+<p class="ok">decision=BRIDGE_FIRST_ARCHITECTURE_CONTRACT_CREATED_NO_GOOGLE_API</p>
+<p>Google API deja de ser dependencia central. Sheets queda como interfaz humana sincronizable.</p>
+</div>
+<div class="card">
+<h2>Principio</h2>
+<p><strong>ENGREMIAT es la fuente de verdad.</strong> Sheets muestra, supervisa e introduce señales humanas mediante puentes.</p>
+</div>
+<div class="card">
+<h2>Canales</h2>
+<table>
+<tr><th>Canal</th><th>Estado</th><th>Requiere Google API</th><th>Uso</th></tr>
+<tr><td>LOCAL_PACKAGE_BRIDGE</td><td>Activo ahora</td><td>No</td><td>Paquetes CSV/JSON/checklist para importacion STG manual.</td></tr>
+<tr><td>APPS_SCRIPT_BRIDGE</td><td>Futuro</td><td>No en local</td><td>Menu dentro de Sheets para importar STG.</td></tr>
+<tr><td>TELEGRAM_BRIDGE</td><td>Futuro</td><td>No</td><td>Supervision movil sobre los mismos paquetes.</td></tr>
+<tr><td>LOCAL_NODE_BRIDGE</td><td>Objetivo core</td><td>No</td><td>Inbox/outbox entre partes ENGREMIAT.</td></tr>
+</table>
+</div>
+<div class="card">
+<h2>Siguiente</h2>
+<p><strong>STEP_002_DEFINE_BRIDGE_PACKET_SCHEMA</strong>: definir el formato oficial de paquete puente para que cualquier parte de ENGREMIAT pueda producir/consumir datos sin Google API.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿{
+    "packet_id":  "BRIDGE-PACKET-EXAMPLE-CONTROL-STG-IMPORT-001",
+    "packet_type":  "CONTROL_STG_IMPORT",
+    "producer":  "CONTROL_BRIDGE_INDEPENDENCE_001",
+    "consumer":  "ENGREMIAT_CONTROL_SHEETS_STG",
+    "created_at":  "2026-06-11T22:51:57",
+    "source_stage":  "local_bridge_packet_schema_example",
+    "target_stage":  "manual_or_apps_script_stg_import",
+    "target_tabs":  [
+                        "STG_ENG_GATES",
+                        "STG_ENG_RUNS",
+                        "STG_ENG_DICTIONARY"
+                    ],
+    "safety":  {
+                   "no_google_api_required":  true,
+                   "final_tabs_allowed":  false,
+                   "staging_first":  true,
+                   "no_secret_printing":  true,
+                   "manual_human_import_allowed":  true,
+                   "apps_script_future_allowed":  true
+               },
+    "payloads":  [
+                     {
+                         "path":  "payload.csv",
+                         "format":  "csv",
+                         "rows":  3,
+                         "role":  "human_import_payload"
+                     },
+                     {
+                         "path":  "payload.json",
+                         "format":  "json",
+                         "rows":  3,
+                         "role":  "machine_readable_payload"
+                     }
+                 ],
+    "expected_receipt":  {
+                             "required":  true,
+                             "destination":  "bridge/inbox",
+                             "file":  "receipt-template.json",
+                             "minimum_fields":  [
+                                                    "packet_id",
+                                                    "consumer",
+                                                    "consumed_at",
+                                                    "ok",
+                                                    "rows_received",
+                                                    "notes"
+                                                ]
+                         }
+}

@@ -1,0 +1,4 @@
+﻿signal_id,signal_type,source_tab,target_module,key,value,status,human_note,created_at
+SIG-EXAMPLE-001,HUMAN_DECISION,STG_ENG_GATES,engremiat-control,next_objective,manual_stg_import_first,READY,Validar experiencia en Sheets antes de Apps Script,
+SIG-EXAMPLE-002,GATE_STATUS,STG_ENG_RUNS,engremiat-control,control_bridge_independence_001,OPEN_READY_FOR_STEP_005,READY,Puente local validado,
+SIG-EXAMPLE-003,TASK_REQUEST,STG_ENG_TASKS,engremiat-control,prepare_apps_script_bridge,DEFERRED,WAITING,Preparar solo despues de prueba manual,

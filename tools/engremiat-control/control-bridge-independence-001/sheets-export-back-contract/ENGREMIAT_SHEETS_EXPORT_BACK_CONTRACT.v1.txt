@@ -1,0 +1,11 @@
+﻿ENGREMIAT_SHEETS_EXPORT_BACK_CONTRACT_BEGIN
+contract_version=1.0.0
+purpose=Sheets devuelve senales humanas a ENGREMIAT sin Google API
+direction=SHEETS_TO_ENGREMIAT_INBOX
+google_api_required=False
+transport=manual_csv_export_from_sheet|manual_json_copy_future|apps_script_file_export_future|telegram_signal_future
+required_files=sheets-export-back-manifest.json|sheets-human-signals.csv|sheets-human-signals.json|sheets-export-back-receipt.json|checksums.sha256.json
+signal_types=HUMAN_DECISION|GATE_STATUS|TASK_REQUEST|MANUAL_CORRECTION|DICTIONARY_UPDATE|BLOCKER_REPORT|READINESS_OVERRIDE|NEXT_OBJECTIVE_PROPOSAL
+required_columns=signal_id|signal_type|source_tab|target_module|key|value|status|human_note|created_at
+inbox_destination=bridge/inbox
+ENGREMIAT_SHEETS_EXPORT_BACK_CONTRACT_END

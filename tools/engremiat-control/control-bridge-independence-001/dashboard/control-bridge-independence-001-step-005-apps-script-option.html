@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CONTROL_BRIDGE_INDEPENDENCE_001 · Apps Script Option</title>
+<style>
+body{font-family:Arial,Segoe UI,sans-serif;margin:24px;background:#f6f7fb;color:#18202a}
+.card{background:white;border:1px solid #d9deea;border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.ok{color:#0b6b2b;font-weight:700}.warn{color:#8a5a00;font-weight:700}
+code{background:#eef1f7;padding:2px 5px;border-radius:5px}
+table{border-collapse:collapse;width:100%;background:white}td,th{border:1px solid #d9deea;padding:8px;text-align:left}th{background:#eef1f7}
+</style>
+</head>
+<body>
+<h1>CONTROL_BRIDGE_INDEPENDENCE_001 · Paso 5/6</h1>
+<div class="card">
+<p class="ok">decision=APPS_SCRIPT_BRIDGE_OPTION_PREPARED_DRAFT_ONLY_NO_GOOGLE_API_LOCAL</p>
+<p>readiness=92 · gate=OPEN_READY_FOR_STEP_006_CLOSE_AND_DECIDE_MANUAL_IMPORT_EXECUTION</p>
+<p class="warn">Apps Script queda preparado como borrador. No se ejecuta ni instala desde este script.</p>
+</div>
+<div class="card">
+<h2>Independencia de Google API local</h2>
+<p>ENGREMIAT mantiene el nucleo en paquetes locales, inbox, outbox, receipts y ledger. Apps Script seria solo una interfaz opcional dentro del Sheet.</p>
+</div>
+<div class="card">
+<h2>Menu propuesto</h2>
+<table>
+<tr><th>Item</th><th>Funcion</th></tr>
+<tr><td>Validar tabs STG</td><td>Audita pestanas y registra solo STG_*.</td></tr>
+<tr><td>Crear señal humana</td><td>Añade decision humana a STG_ENG_SIGNALS.</td></tr>
+<tr><td>Generar receipt STG</td><td>Genera receipt de consumo dentro de STG_ENG_RECEIPTS.</td></tr>
+</table>
+</div>
+<div class="card">
+<h2>Archivos</h2>
+<p>gs_draft=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\apps-script-bridge-option\drafts\engremiat_stg_bridge_menu.draft.gs</code></p>
+<p>contract_json=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\apps-script-bridge-option\contracts\ENGREMIAT_APPS_SCRIPT_BRIDGE_OPTION_CONTRACT.v1.json</code></p>
+<p>checklist_txt=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\apps-script-bridge-option\checklists\APPS_SCRIPT_BRIDGE_HUMAN_INSTALL_CHECKLIST.txt</code></p>
+<p>validation_json=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\reports\CONTROL_BRIDGE_INDEPENDENCE_001_STEP_005_APPS_SCRIPT_OPTION_VALIDATION.json</code></p>
+</div>
+</body>
+</html>

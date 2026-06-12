@@ -1,0 +1,25 @@
+﻿CONTROL_SHEETS_MAIN_PC_REAL_001_GIT_CLOSE_COMMIT_STATUS_BEGIN
+ok=True
+decision=SCOPED_LOCAL_COMMIT_DONE_READY_TO_DECIDE_REAL_STAGING_IMPORT
+readiness=100
+gate=CLOSED_LOCAL_GIT_CHECKPOINT_READY_FOR_IMPORT_DECISION
+mode=LOCAL_GIT_SCOPED_COMMIT_NO_PUSH
+git_write=True
+commit=True
+push=False
+commit_hash=03fe72d
+commit_message=close control sheets main pc real 001 local evidence
+scope_path=tools/engremiat-control/control-sheets-main-pc-real-001
+sensitive_binding_excluded=True
+scoped_before_count=1
+scoped_after_count=0
+sensitive_before_count=0
+sensitive_after_count=0
+out_of_scope_before_count=14
+out_of_scope_after_count=14
+blocker_count=0
+warning_count=0
+report_json=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\reports\control-sheets-main-pc-real-001-git-close-commit-report.v1.json
+dashboard_html=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\dashboard\control-sheets-main-pc-real-001-git-close-commit.html
+recommended_next=DECIDE_REAL_STAGING_IMPORT_OR_STRATEGY_REVIEW
+CONTROL_SHEETS_MAIN_PC_REAL_001_GIT_CLOSE_COMMIT_STATUS_END

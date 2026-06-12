@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CONTROL_BRIDGE_INDEPENDENCE_001 · Close</title>
+<style>
+body{font-family:Arial,Segoe UI,sans-serif;margin:24px;background:#f6f7fb;color:#18202a}
+.card{background:white;border:1px solid #d9deea;border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.ok{color:#0b6b2b;font-weight:700}.warn{color:#8a5a00;font-weight:700}
+code{background:#eef1f7;padding:2px 5px;border-radius:5px}
+table{border-collapse:collapse;width:100%;background:white}td,th{border:1px solid #d9deea;padding:8px;text-align:left}th{background:#eef1f7}
+</style>
+</head>
+<body>
+<h1>CONTROL_BRIDGE_INDEPENDENCE_001 · Paso 6/6</h1>
+<div class="card">
+<p class="ok">decision=BRIDGE_FIRST_INDEPENDENCE_CLOSED_GOOGLE_API_NOT_REQUIRED_FOR_CORE</p>
+<p>readiness=96 · gate=CLOSED_READY_FOR_MANUAL_STG_IMPORT_EXECUTION_OBJECTIVE</p>
+<p><strong>Google API no es necesaria para el nucleo.</strong> ENGREMIAT queda basado en paquetes, inbox/outbox, receipts, ledger y señales.</p>
+</div>
+<div class="card">
+<h2>Arquitectura cerrada</h2>
+<table>
+<tr><th>Capa</th><th>Estado</th></tr>
+<tr><td>Schema paquete puente</td><td>True</td></tr>
+<tr><td>Roundtrip inbox/outbox</td><td>True</td></tr>
+<tr><td>Retorno Sheets -> ENGREMIAT</td><td>True</td></tr>
+<tr><td>Apps Script opcional</td><td>True</td></tr>
+<tr><td>Receipts</td><td>1</td></tr>
+<tr><td>Signal packets</td><td>1</td></tr>
+</table>
+</div>
+<div class="card">
+<h2>Decisión recomendada</h2>
+<p><strong>NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION</strong></p>
+<p>Primero probar la importación manual STG-only y el retorno de señales. Después decidir si Apps Script o Telegram aportan ahorro real.</p>
+</div>
+<div class="card">
+<h2>Archivos</h2>
+<p>close_json=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\close\CONTROL_BRIDGE_INDEPENDENCE_001_STEP_006_CLOSE.json</code></p>
+<p>decision_csv=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\close\CONTROL_BRIDGE_INDEPENDENCE_001_NEXT_OBJECTIVE_DECISION_MATRIX.csv</code></p>
+<p>checklist_txt=<code>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-bridge-independence-001\close\CONTROL_BRIDGE_INDEPENDENCE_001_MANUAL_STG_IMPORT_NEXT_CHECKLIST.txt</code></p>
+</div>
+</body>
+</html>

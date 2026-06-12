@@ -1,0 +1,7 @@
+﻿"target_tab","source_relative_path","source_exists","final_tab_allowed","write_mode","real_write_now","google_api_call_now","requires_authorization"
+"STG_ENG_GATES","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_GATES.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"
+"STG_ENG_RUNS","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_RUNS.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"
+"STG_ENG_DICTIONARY","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_DICTIONARY.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"
+"STG_ENG_MANUALS","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_MANUALS.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"
+"STG_ENG_PROJECTS","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_PROJECTS.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"
+"STG_ENG_TASKS","tools\engremiat-control\control-sheets-main-pc-real-001\seed\STG_ENG_TASKS.seed.v1.csv","True","False","CLEAR_AND_APPEND_STAGING_ONLY","False","False","True"

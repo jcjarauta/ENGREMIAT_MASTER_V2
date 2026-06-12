@@ -1,0 +1,29 @@
+﻿{
+    "packet_id":  "SHEETS-EXPORT-BACK-EXAMPLE-001",
+    "packet_type":  "SIGNAL_EXPORT",
+    "producer":  "ENGREMIAT_CONTROL_SHEETS_STG",
+    "consumer":  "ENGREMIAT_CONTROL_BRIDGE_INBOX",
+    "created_at":  "2026-06-11T22:55:02",
+    "source":  "manual_export_from_stg_tabs",
+    "destination":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox",
+    "safety":  {
+                   "google_api_required":  false,
+                   "final_tabs_touched":  false,
+                   "staging_first":  true,
+                   "no_secret_values":  true,
+                   "human_export_required":  true
+               },
+    "payloads":  [
+                     {
+                         "path":  "sheets-human-signals-template.csv",
+                         "format":  "csv",
+                         "role":  "human_export_template"
+                     },
+                     {
+                         "path":  "sheets-human-signals-example.json",
+                         "format":  "json",
+                         "role":  "machine_readable_example"
+                     }
+                 ],
+    "expected_action":  "drop_export_back_packet_into_bridge_inbox"
+}

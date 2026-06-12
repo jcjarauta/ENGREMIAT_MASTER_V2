@@ -1,0 +1,12 @@
+﻿ENGREMIAT_APPS_SCRIPT_BRIDGE_OPTION_CONTRACT_BEGIN
+status=DRAFT_ONLY_NOT_EXECUTED
+google_api_local_required=False
+apps_script_execution_now=False
+human_install_required=True
+final_tabs_allowed=False
+stg_only=True
+allowed_prefix=STG_
+menu_items=Validar tabs STG|Crear señal humana|Generar receipt STG
+core_dependency=False
+relation_to_core=optional UI bridge over local inbox/outbox package system
+ENGREMIAT_APPS_SCRIPT_BRIDGE_OPTION_CONTRACT_END

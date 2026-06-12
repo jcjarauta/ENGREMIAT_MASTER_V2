@@ -1,0 +1,34 @@
+﻿{
+    "contract_name":  "ENGREMIAT_APPS_SCRIPT_BRIDGE_OPTION",
+    "contract_version":  "1.0.0",
+    "purpose":  "Preparar un puente opcional dentro de Google Sheets sin usar Google API local desde ENGREMIAT.",
+    "status":  "DRAFT_ONLY_NOT_EXECUTED",
+    "google_api_local_required":  false,
+    "apps_script_execution_now":  false,
+    "human_install_required":  true,
+    "final_tabs_allowed":  false,
+    "stg_only":  true,
+    "allowed_prefix":  "STG_",
+    "local_files_created":  [
+                                "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\apps-script-bridge-option\\drafts\\engremiat_stg_bridge_menu.draft.gs",
+                                "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\apps-script-bridge-option\\README_APPS_SCRIPT_BRIDGE_OPTION.md",
+                                "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\apps-script-bridge-option\\checklists\\APPS_SCRIPT_BRIDGE_HUMAN_INSTALL_CHECKLIST.txt"
+                            ],
+    "menu_items":  [
+                       "Validar tabs STG",
+                       "Crear señal humana",
+                       "Generar receipt STG"
+                   ],
+    "safety_rules":  {
+                         "no_final_tabs":  true,
+                         "no_external_fetch":  true,
+                         "no_secrets":  true,
+                         "no_google_api_from_local_pc":  true,
+                         "human_copy_paste_install_only":  true,
+                         "can_be_discarded_without_affecting_core":  true
+                     },
+    "relation_to_engremiat_core":  "Optional UI bridge. ENGREMIAT core remains local packages, inbox, outbox, receipts, ledger.",
+    "recommended_use":  "Install only if manual STG import/export feels useful and the human wants a Sheet-side menu.",
+    "recommended_next":  "STEP_006_CLOSE_AND_DECIDE_MANUAL_IMPORT_EXECUTION",
+    "created_at":  "2026-06-11T22:56:23"
+}

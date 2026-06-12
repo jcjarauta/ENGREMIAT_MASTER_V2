@@ -1,0 +1,35 @@
+﻿[
+    {
+        "signal_id":  "SIG-EXAMPLE-001",
+        "signal_type":  "HUMAN_DECISION",
+        "source_tab":  "STG_ENG_GATES",
+        "target_module":  "engremiat-control",
+        "key":  "next_objective",
+        "value":  "manual_stg_import_first",
+        "status":  "READY",
+        "human_note":  "Validar experiencia en Sheets antes de Apps Script",
+        "created_at":  "2026-06-11T22:55:02"
+    },
+    {
+        "signal_id":  "SIG-EXAMPLE-002",
+        "signal_type":  "GATE_STATUS",
+        "source_tab":  "STG_ENG_RUNS",
+        "target_module":  "engremiat-control",
+        "key":  "control_bridge_independence_001",
+        "value":  "OPEN_READY_FOR_STEP_005",
+        "status":  "READY",
+        "human_note":  "Puente local validado",
+        "created_at":  "2026-06-11T22:55:02"
+    },
+    {
+        "signal_id":  "SIG-EXAMPLE-003",
+        "signal_type":  "TASK_REQUEST",
+        "source_tab":  "STG_ENG_TASKS",
+        "target_module":  "engremiat-control",
+        "key":  "prepare_apps_script_bridge",
+        "value":  "DEFERRED",
+        "status":  "WAITING",
+        "human_note":  "Preparar solo despues de prueba manual",
+        "created_at":  "2026-06-11T22:55:02"
+    }
+]

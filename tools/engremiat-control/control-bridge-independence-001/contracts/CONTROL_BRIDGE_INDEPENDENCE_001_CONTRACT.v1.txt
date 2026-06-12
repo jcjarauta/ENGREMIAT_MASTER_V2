@@ -1,0 +1,12 @@
+﻿CONTROL_BRIDGE_INDEPENDENCE_001_CONTRACT_BEGIN
+purpose=independizar ENGREMIAT de Google API mediante puentes internos
+core_principle=Sheets es interfaz humana; ENGREMIAT es fuente de verdad
+google_api_required_for_core=False
+google_api_optional_future_adapter=True
+sheets_role=human_control_surface
+engremiat_role=source_of_truth_and_bridge_orchestrator
+bridge_pattern=inbox_outbox_packages_reports_dashboards
+final_tabs_allowed=False
+staging_first=True
+recommended_next=STEP_002_DEFINE_BRIDGE_PACKET_SCHEMA
+CONTROL_BRIDGE_INDEPENDENCE_001_CONTRACT_END

@@ -1,0 +1,21 @@
+﻿{
+    "ok":  true,
+    "decision":  "SHEETS_EXPORT_BACK_CONTRACT_CREATED_NO_GOOGLE_API",
+    "readiness":  94,
+    "gate":  "OPEN_READY_FOR_STEP_005_PREPARE_APPS_SCRIPT_OPTION_WITHOUT_GOOGLE_API_LOCAL",
+    "mode":  "LOCAL_ONLY_EXPORT_BACK_CONTRACT_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "contract_json_exists":  true,
+    "template_csv_exists":  true,
+    "example_json_exists":  true,
+    "manifest_json_exists":  true,
+    "receipt_template_exists":  true,
+    "inbox_example_packet_exists":  true,
+    "signals_count":  3,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "telegram_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false
+}

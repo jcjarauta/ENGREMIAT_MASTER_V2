@@ -1,0 +1,51 @@
+﻿CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_GIT_SCOPE_READONLY_BEGIN
+mode=READONLY_STATUS_NO_ADD_NO_COMMIT_NO_PUSH
+git_write=False
+commit=False
+push=False
+changed_files_count=43
+--- git status --short ---
+?? .engremiat-terminal/
+?? .tmp-control-sheets-main-pc-real-001-authorized-stg-worker.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-002.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-002r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-003.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-003r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-004.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-005.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-005r.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-006.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-007.ps1
+?? .tmp-control-sheets-main-pc-real-001-block-008.ps1
+?? .tmp-control-sheets-main-pc-real-001-git-close-commit.ps1
+?? .tmp-control-sheets-main-pc-real-001-git-close-scope-dry-run.ps1
+?? .tmp-control-sheets-main-pc-real-001-google-api-readonly-probe-adapter-repair.ps1
+?? .tmp-control-sheets-main-pc-real-001-google-api-readonly-probe-adapter.ps1
+?? .tmp-control-sheets-main-pc-real-001-import-decision-gate.ps1
+?? .tmp-control-sheets-main-pc-real-001-manual-stg-import-package.ps1
+?? .tmp-control-sheets-main-pc-real-001-readonly-probe-light-close.ps1
+?? .tmp-control-sheets-main-pc-real-001-real-staging-import-prep.ps1
+?? .tmp-control-sheets-main-pc-real-001-step-008-close.ps1
+?? .tmp-control-sheets-main-pc-real-001-stg-only-worker-dry-run-repair.ps1
+?? .tmp-control-sheets-main-pc-real-001-stg-only-worker-dry-run.ps1
+?? tools/engremiat-control/config/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/authorized-stg-write-worker/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/close/CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_CLOSE_EVIDENCE_AND_NEXT_DECISION.json
+?? tools/engremiat-control/control-sheets-main-pc-real-001/close/CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_CLOSE_EVIDENCE_AND_NEXT_DECISION.txt
+?? tools/engremiat-control/control-sheets-main-pc-real-001/close/CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_NEXT_OBJECTIVE_DECISION_MATRIX.csv
+?? tools/engremiat-control/control-sheets-main-pc-real-001/close/control-sheets-main-pc-real-001-git-close-commit-status.txt
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-authorized-stg-write-worker.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-git-close-commit.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-google-api-readonly-probe-006b.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-google-api-readonly-probe-light.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-import-decision-gate.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-manual-stg-import-package.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-real-staging-import-prep.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/dashboard/control-sheets-main-pc-real-001-stg-only-worker-dry-run.html
+?? tools/engremiat-control/control-sheets-main-pc-real-001/decision/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/google-api-readonly-probe/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/manual-stg-import-package/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/real-staging-import-prep/
+?? tools/engremiat-control/control-sheets-main-pc-real-001/reports/control-sheets-main-pc-real-001-git-close-commit-report.v1.json
+?? tools/engremiat-control/control-sheets-main-pc-real-001/stg-only-worker/
+CONTROL_SHEETS_MAIN_PC_REAL_001_STEP_008_GIT_SCOPE_READONLY_END

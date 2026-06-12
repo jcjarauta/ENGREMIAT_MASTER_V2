@@ -1,0 +1,5 @@
+﻿option,readiness,recommended,google_api_required,risk,human_effort,reason
+"NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION",97,true,false,"bajo","medio","Validar experiencia humana real en Sheets sin Google API local"
+"NEXT_OBJECTIVE_APPS_SCRIPT_INSTALL_AND_STG_MENU_TEST",88,false,false,"medio","medio","Instalar menu Sheet-side solo despues de prueba manual"
+"NEXT_OBJECTIVE_TELEGRAM_OVER_BRIDGE_LAYER",81,false,false,"medio","bajo","Usar Telegram como capa sobre bridge ya estable"
+"NEXT_OBJECTIVE_LOCAL_NODE_BRIDGE_DAEMON",84,false,false,"medio","bajo","Automatizar reconciliacion inbox/outbox despues de validar flujo humano"

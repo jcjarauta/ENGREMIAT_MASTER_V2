@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8"><title>CONTROL SHEETS IMPORT DECISION GATE</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:8px}th{background:#eee}.ok{font-weight:700}.mono{font-family:Consolas,monospace}</style>
+</head><body>
+<h1>CONTROL_SHEETS_MAIN_PC_REAL_001 · Import decision gate</h1>
+<p class='ok'>Decision: READY_TO_CHOOSE_IMPORT_OR_REVIEW_NO_REAL_EXECUTION · readiness=82</p>
+<p>Mode: LOCAL_ONLY_DECISION_GATE_NO_GOOGLE_API_NO_WRITE_NO_GIT</p>
+<p>Head: <span class='mono'>03fe72d</span></p>
+<p>Binding present: True · Spreadsheet present: True · Spreadsheet masked: <span class='mono'>1lJK9k...XC_B6c</span></p>
+<h2>Opciones</h2>
+<table><thead><tr><th>ID</th><th>Decision</th><th>Recommended</th><th>Allowed now</th><th>Risk</th><th>Description</th><th>Blocker</th></tr></thead><tbody>
+<tr><td>A</td><td>REAL_STAGING_IMPORT_NEXT</td><td>True</td><td>False</td><td>MEDIUM_CONTROLLED</td><td>Preparar import real solo a STG_* con autorizacion humana explicita antes de escribir</td><td>NEEDS_EXPLICIT_HUMAN_AUTHORIZATION_PHRASE</td></tr>
+<tr><td>B</td><td>STRATEGY_REVIEW_BEFORE_IMPORT</td><td>False</td><td>True</td><td>LOW</td><td>Pausar import real y revisar arquitectura operativa Sheets antes de escribir</td><td>NONE</td></tr>
+<tr><td>C</td><td>DEFER_REAL_IMPORT_TO_MAIN_PC_WORKERS</td><td>False</td><td>True</td><td>LOW</td><td>Dejar worker real preparado y diferir ejecucion pesada/API a MAIN PC</td><td>NONE</td></tr>
+</tbody></table>
+<h2>Autorizacion necesaria si se elige import real</h2>
+<pre>SI, AUTORIZO IMPORT REAL STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH</pre>
+</body></html>

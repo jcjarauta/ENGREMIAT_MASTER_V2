@@ -1,0 +1,85 @@
+﻿{
+    "manifest":  {
+                     "packet_id":  "SHEETS-EXPORT-BACK-EXAMPLE-001",
+                     "packet_type":  "SIGNAL_EXPORT",
+                     "producer":  "ENGREMIAT_CONTROL_SHEETS_STG",
+                     "consumer":  "ENGREMIAT_CONTROL_BRIDGE_INBOX",
+                     "created_at":  "2026-06-11T22:55:02",
+                     "source":  "manual_export_from_stg_tabs",
+                     "destination":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox",
+                     "safety":  {
+                                    "google_api_required":  false,
+                                    "final_tabs_touched":  false,
+                                    "staging_first":  true,
+                                    "no_secret_values":  true,
+                                    "human_export_required":  true
+                                },
+                     "payloads":  [
+                                      {
+                                          "path":  "sheets-human-signals-template.csv",
+                                          "format":  "csv",
+                                          "role":  "human_export_template"
+                                      },
+                                      {
+                                          "path":  "sheets-human-signals-example.json",
+                                          "format":  "json",
+                                          "role":  "machine_readable_example"
+                                      }
+                                  ],
+                     "expected_action":  "drop_export_back_packet_into_bridge_inbox"
+                 },
+    "signals":  [
+                    {
+                        "signal_id":  "SIG-EXAMPLE-001",
+                        "signal_type":  "HUMAN_DECISION",
+                        "source_tab":  "STG_ENG_GATES",
+                        "target_module":  "engremiat-control",
+                        "key":  "next_objective",
+                        "value":  "manual_stg_import_first",
+                        "status":  "READY",
+                        "human_note":  "Validar experiencia en Sheets antes de Apps Script",
+                        "created_at":  "2026-06-11T22:55:02"
+                    },
+                    {
+                        "signal_id":  "SIG-EXAMPLE-002",
+                        "signal_type":  "GATE_STATUS",
+                        "source_tab":  "STG_ENG_RUNS",
+                        "target_module":  "engremiat-control",
+                        "key":  "control_bridge_independence_001",
+                        "value":  "OPEN_READY_FOR_STEP_005",
+                        "status":  "READY",
+                        "human_note":  "Puente local validado",
+                        "created_at":  "2026-06-11T22:55:02"
+                    },
+                    {
+                        "signal_id":  "SIG-EXAMPLE-003",
+                        "signal_type":  "TASK_REQUEST",
+                        "source_tab":  "STG_ENG_TASKS",
+                        "target_module":  "engremiat-control",
+                        "key":  "prepare_apps_script_bridge",
+                        "value":  "DEFERRED",
+                        "status":  "WAITING",
+                        "human_note":  "Preparar solo despues de prueba manual",
+                        "created_at":  "2026-06-11T22:55:02"
+                    }
+                ],
+    "receipt_template":  {
+                             "packet_id":  "SHEETS-EXPORT-BACK-EXAMPLE-001",
+                             "received_by":  "ENGREMIAT_CONTROL_BRIDGE_INBOX",
+                             "received_at":  null,
+                             "ok":  false,
+                             "signals_received":  0,
+                             "signals_accepted":  0,
+                             "signals_rejected":  0,
+                             "notes":  "",
+                             "reconciled":  false
+                         },
+    "checksums":  {
+                      "contract_json":  "1d7d6537d96a3c07e78fbaf2ae46212d26a486b92a54ec6733c9e68c4a5eae5f",
+                      "template_csv":  "0fb940fffb8dad9e4f0eac30c1d9fc024d54931f04b8531bbe0e01eea6c82a27",
+                      "example_json":  "9334b18e50330f20fcfee0773aacfc55a4933437b604c35c935059eb0c65aa69",
+                      "manifest_json":  "bd7fa6768d04b778e1d07f7276459eabdd3972aab579d5dfd73cad2bbd193e86",
+                      "receipt_template_json":  "1a90c4402a147709030f448909565125a0bdda79329c0073c05451ab9a3a71d2"
+                  },
+    "note":  "Ejemplo de retorno Sheets -\u003e ENGREMIAT inbox sin Google API."
+}

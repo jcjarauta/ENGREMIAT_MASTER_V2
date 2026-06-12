@@ -1,0 +1,5 @@
+﻿channel,status,direction,transport,requires_google_api,requires_human_action,use_case
+"LOCAL_PACKAGE_BRIDGE","ACTIVE_NOW","ENGREMIAT_TO_HUMAN_TO_SHEETS","CSV_JSON_HTML_CHECKLIST","false","true","Importacion manual STG-only desde paquete local"
+"APPS_SCRIPT_BRIDGE","FUTURE_OPTION","SHEET_MENU_TO_STG_TABS_AND_BACK","Apps Script","false","true","Menu dentro de Sheets para importar paquetes STG"
+"TELEGRAM_BRIDGE","FUTURE_LAYER","MOBILE_CONTROL_TO_ENGREMIAT_BRIDGE","commands_callbacks_reports","false","true","Supervision movil sobre contratos de paquetes"
+"LOCAL_NODE_BRIDGE","CORE_TARGET","NODE_TO_NODE","inbox_outbox_jsonl_files","false","false","Intercambio entre partes ENGREMIAT sin servicios externos"

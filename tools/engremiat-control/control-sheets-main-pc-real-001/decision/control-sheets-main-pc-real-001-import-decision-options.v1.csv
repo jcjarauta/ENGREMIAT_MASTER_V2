@@ -1,0 +1,4 @@
+﻿"option_id","decision","recommended","description","allowed_now","blocker","risk"
+"A","REAL_STAGING_IMPORT_NEXT","True","Preparar import real solo a STG_* con autorizacion humana explicita antes de escribir","False","NEEDS_EXPLICIT_HUMAN_AUTHORIZATION_PHRASE","MEDIUM_CONTROLLED"
+"B","STRATEGY_REVIEW_BEFORE_IMPORT","False","Pausar import real y revisar arquitectura operativa Sheets antes de escribir","True","NONE","LOW"
+"C","DEFER_REAL_IMPORT_TO_MAIN_PC_WORKERS","False","Dejar worker real preparado y diferir ejecucion pesada/API a MAIN PC","True","NONE","LOW"

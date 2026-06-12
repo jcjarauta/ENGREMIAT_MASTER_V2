@@ -1,0 +1,77 @@
+﻿{
+    "objective":  "CONTROL_BRIDGE_INDEPENDENCE_001",
+    "ok":  true,
+    "decision":  "BRIDGE_FIRST_INDEPENDENCE_CLOSED_GOOGLE_API_NOT_REQUIRED_FOR_CORE",
+    "readiness":  96,
+    "gate":  "CLOSED_READY_FOR_MANUAL_STG_IMPORT_EXECUTION_OBJECTIVE",
+    "mode":  "LOCAL_ONLY_CLOSE_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "google_api_required_for_core":  false,
+    "sheets_role":  "human_control_surface",
+    "engremiat_role":  "source_of_truth_bridge_orchestrator",
+    "bridge_core_ready":  true,
+    "packet_schema_ready":  true,
+    "inbox_outbox_roundtrip_ready":  true,
+    "sheets_export_back_ready":  true,
+    "apps_script_option_ready_draft_only":  true,
+    "receipt_files_count":  1,
+    "signal_files_count":  1,
+    "ledger_exists":  true,
+    "missing_count":  0,
+    "missing":  [
+
+                ],
+    "final_tabs_allowed":  false,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "apps_script_draft_only":  true,
+    "telegram_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "decision_matrix":  [
+                            {
+                                "option":  "NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION",
+                                "readiness":  97,
+                                "recommended":  true,
+                                "reason":  "Ya existe paquete STG-only preparado y la arquitectura bridge-first queda cerrada. Permite validar experiencia humana real en Sheets sin Google API local.",
+                                "google_api_required":  false,
+                                "risk":  "bajo",
+                                "human_effort":  "medio",
+                                "dependency":  "humano importa/copiar STG y devuelve receipt/senales"
+                            },
+                            {
+                                "option":  "NEXT_OBJECTIVE_APPS_SCRIPT_INSTALL_AND_STG_MENU_TEST",
+                                "readiness":  88,
+                                "recommended":  false,
+                                "reason":  "Conviene despues de validar manualmente que el modelo de control en Sheets es comodo.",
+                                "google_api_required":  false,
+                                "risk":  "medio",
+                                "human_effort":  "medio",
+                                "dependency":  "humano instala draft .gs en Apps Script"
+                            },
+                            {
+                                "option":  "NEXT_OBJECTIVE_TELEGRAM_OVER_BRIDGE_LAYER",
+                                "readiness":  81,
+                                "recommended":  false,
+                                "reason":  "Debe apoyarse en contratos estables de inbox/outbox y señales ya cerrados.",
+                                "google_api_required":  false,
+                                "risk":  "medio",
+                                "human_effort":  "bajo tras preparar comandos",
+                                "dependency":  "router Telegram consume estados/paquetes del bridge"
+                            },
+                            {
+                                "option":  "NEXT_OBJECTIVE_LOCAL_NODE_BRIDGE_DAEMON",
+                                "readiness":  84,
+                                "recommended":  false,
+                                "reason":  "Puede automatizar reconciliacion inbox/outbox, pero antes interesa probar flujo humano real.",
+                                "google_api_required":  false,
+                                "risk":  "medio",
+                                "human_effort":  "bajo",
+                                "dependency":  "worker local vigilando carpetas"
+                            }
+                        ],
+    "recommended_next":  "NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION",
+    "recommended_next_plain":  "Ejecutar importacion manual STG-only y devolver señales/receipt al bridge inbox para validar Sheets como interfaz humana real.",
+    "created_at":  "2026-06-11T22:57:18"
+}

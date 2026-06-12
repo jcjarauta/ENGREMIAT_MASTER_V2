@@ -1,0 +1,27 @@
+﻿{
+    "objective":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "phase":  "AUTHORIZED_STG_WRITE_WORKER_CONTRACT",
+    "auth_phrase":  "SI, AUTORIZO IMPORT REAL STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH",
+    "allowed_targets":  [
+                            "STG_ENG_GATES",
+                            "STG_ENG_RUNS",
+                            "STG_ENG_DICTIONARY",
+                            "STG_ENG_MANUALS",
+                            "STG_ENG_PROJECTS",
+                            "STG_ENG_TASKS"
+                        ],
+    "forbidden_targets":  [
+                              "ENG_GATES",
+                              "ENG_RUNS",
+                              "ENG_DICTIONARY",
+                              "ENG_MANUALS",
+                              "ENG_PROJECTS",
+                              "ENG_TASKS"
+                          ],
+    "final_tabs_allowed":  false,
+    "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+    "requires_exact_authorization":  true,
+    "requires_readonly_probe_before_write":  true,
+    "push_allowed":  false,
+    "apps_script_allowed":  false
+}

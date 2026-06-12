@@ -1,0 +1,77 @@
+﻿{
+    "ok":  true,
+    "decision":  "AUTHORIZED_STG_WORKER_DRY_RUN_OK_NO_GOOGLE_API_NO_WRITE",
+    "mode":  "DRY_RUN_ONLY",
+    "target_tabs_count":  6,
+    "ready_tabs_count":  6,
+    "missing_tabs_count":  0,
+    "final_tabs_allowed":  false,
+    "real_sheet_write":  false,
+    "google_api_call":  false,
+    "apps_script_execution":  false,
+    "push":  false,
+    "authorization_required_for_real_run":  true,
+    "recommended_next":  "STEP_006_ATTACH_GOOGLE_API_ADAPTER_AND_RUN_READONLY_PROBE_FIRST",
+    "plan":  [
+                 {
+                     "target_tab":  "STG_ENG_GATES",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_GATES.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 },
+                 {
+                     "target_tab":  "STG_ENG_RUNS",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_RUNS.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 },
+                 {
+                     "target_tab":  "STG_ENG_DICTIONARY",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_DICTIONARY.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 },
+                 {
+                     "target_tab":  "STG_ENG_MANUALS",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_MANUALS.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 },
+                 {
+                     "target_tab":  "STG_ENG_PROJECTS",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_PROJECTS.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 },
+                 {
+                     "target_tab":  "STG_ENG_TASKS",
+                     "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_TASKS.seed.v1.csv",
+                     "source_exists":  "True",
+                     "final_tab_allowed":  "False",
+                     "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+                     "real_write_now":  "False",
+                     "google_api_call_now":  "False",
+                     "requires_authorization":  "True"
+                 }
+             ]
+}

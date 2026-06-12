@@ -1,0 +1,23 @@
+﻿CONTROL_SHEETS_MAIN_PC_REAL_001 · CHECKLIST IMPORT MANUAL STG-ONLY
+
+OBJETIVO
+- Importar solo tabs STG_* en Google Sheets.
+- No tocar tabs finales ENG_*.
+- No usar Google API local.
+- No ejecutar Apps Script automatico desde terminal.
+
+ORDEN RECOMENDADO
+1. Abrir el Google Sheet de control.
+2. Verificar que existen las tabs STG_ENG_GATES, STG_ENG_RUNS, STG_ENG_DICTIONARY, STG_ENG_MANUALS, STG_ENG_PROJECTS, STG_ENG_TASKS.
+3. Para cada fila del indice CSV, importar/copiar el archivo indicado en la tab target_tab.
+4. No importar ningun archivo en tabs ENG_* finales.
+5. Tras importar, revisar conteo de filas y cabeceras.
+6. Pegar aqui el resultado de auditoria o conteos para cerrar el paso 8/8.
+
+SEGURIDAD
+final_tabs_allowed=False
+google_api_call=False
+real_sheet_write_by_script=False
+manual_human_import_only=True
+
+index_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_INDEX.csv

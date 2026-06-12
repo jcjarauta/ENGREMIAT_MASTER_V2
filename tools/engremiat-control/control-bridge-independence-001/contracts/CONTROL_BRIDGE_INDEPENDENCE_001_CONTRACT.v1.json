@@ -1,0 +1,85 @@
+﻿{
+    "objective":  "CONTROL_BRIDGE_INDEPENDENCE_001",
+    "purpose":  "Hacer que Sheets sea una interfaz humana sincronizable, no una dependencia central del sistema.",
+    "core_principle":  "ENGREMIAT debe producir, leer y validar paquetes propios; Google Sheets solo consume o muestra datos mediante puentes controlados.",
+    "mode":  "LOCAL_ONLY_CONTRACT_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "google_api_required_for_core":  false,
+    "google_api_optional_future_adapter":  true,
+    "sheets_role":  "human_control_surface",
+    "engremiat_role":  "source_of_truth_and_bridge_orchestrator",
+    "stage_current":  1,
+    "stage_total":  6,
+    "channels":  [
+                     {
+                         "name":  "LOCAL_PACKAGE_BRIDGE",
+                         "status":  "ACTIVE_NOW",
+                         "direction":  "ENGREMIAT_TO_HUMAN_TO_SHEETS",
+                         "transport":  "CSV_JSON_HTML_CHECKLIST",
+                         "requires_google_api":  false,
+                         "requires_human_action":  true,
+                         "use_case":  "Importacion manual STG-only desde paquete local."
+                     },
+                     {
+                         "name":  "APPS_SCRIPT_BRIDGE",
+                         "status":  "FUTURE_OPTION",
+                         "direction":  "SHEET_MENU_TO_STG_TABS_AND_BACK",
+                         "transport":  "Apps Script local pegado/manual o versionado",
+                         "requires_google_api":  false,
+                         "requires_human_action":  true,
+                         "use_case":  "Boton/menu dentro de Sheets para importar paquetes STG sin exponer Google API local."
+                     },
+                     {
+                         "name":  "TELEGRAM_BRIDGE",
+                         "status":  "FUTURE_LAYER",
+                         "direction":  "MOBILE_CONTROL_TO_ENGREMIAT_BRIDGE",
+                         "transport":  "commands_callbacks_reports",
+                         "requires_google_api":  false,
+                         "requires_human_action":  true,
+                         "use_case":  "Supervision movil sobre el mismo contrato de paquetes y estados."
+                     },
+                     {
+                         "name":  "LOCAL_NODE_BRIDGE",
+                         "status":  "CORE_TARGET",
+                         "direction":  "NODE_TO_NODE",
+                         "transport":  "inbox_outbox_jsonl_files",
+                         "requires_google_api":  false,
+                         "requires_human_action":  false,
+                         "use_case":  "Intercambio entre partes ENGREMIAT sin depender de servicios externos."
+                     }
+                 ],
+    "folders":  {
+                    "inbox":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox",
+                    "outbox":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\outbox",
+                    "packages":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\packages",
+                    "contracts":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\contracts",
+                    "reports":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\reports",
+                    "dashboard":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\dashboard"
+                },
+    "rules":  {
+                  "final_tabs_allowed":  false,
+                  "staging_first":  true,
+                  "source_of_truth":  "ENGREMIAT_LOCAL_PACKAGES_AND_REPORTS",
+                  "sheets_is_not_database_core":  true,
+                  "no_secret_printing":  true,
+                  "no_google_api_local_dependency":  true,
+                  "every_bridge_package_must_have_index":  true,
+                  "every_bridge_package_must_have_checklist":  true,
+                  "every_bridge_package_must_have_report":  true
+              },
+    "recommended_flow":  [
+                             "1. ENGREMIAT genera payloads CSV/JSON versionados.",
+                             "2. Bridge local crea indice, checklist, hash/resumen y dashboard.",
+                             "3. Humano importa manualmente a STG o usa Apps Script futuro.",
+                             "4. Sheets funciona como panel operativo y espacio de supervision.",
+                             "5. Las decisiones humanas se exportan como CSV/JSON de vuelta al inbox ENGREMIAT.",
+                             "6. ENGREMIAT procesa esas señales y actualiza colas, gates, manuales y proximas acciones."
+                         ],
+    "next_steps":  [
+                       "STEP_002_DEFINE_BRIDGE_PACKET_SCHEMA",
+                       "STEP_003_BUILD_LOCAL_INBOX_OUTBOX_SIMULATOR",
+                       "STEP_004_BUILD_SHEETS_EXPORT_BACK_CONTRACT",
+                       "STEP_005_PREPARE_APPS_SCRIPT_OPTION_WITHOUT_GOOGLE_API_LOCAL",
+                       "STEP_006_CLOSE_AND_DECIDE_MANUAL_IMPORT_EXECUTION"
+                   ],
+    "created_at":  "2026-06-11T22:51:06"
+}

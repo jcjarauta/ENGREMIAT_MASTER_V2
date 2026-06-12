@@ -1,0 +1,4 @@
+﻿target_tab,record_type,key,value,status
+STG_ENG_GATES,gate,example_gate,OPEN,READY
+STG_ENG_RUNS,run,example_run,LOCAL_ONLY,READY
+STG_ENG_DICTIONARY,term,bridge_packet,standard_exchange_unit,READY

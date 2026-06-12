@@ -1,0 +1,3 @@
+﻿option,readiness,allowed_now,human_cost,automation_cost,risk,recommended_when
+"MANUAL_STG_IMPORT_NOW",96,true,"media","baja","bajo si se importan solo tabs STG","validar ya el espacio de control en Sheets sin Google API local"
+"APPS_SCRIPT_STG_IMPORT_FUTURE",82,false,"baja despues","media","medio hasta validar permisos y protecciones","automatizar importaciones STG repetibles desde el propio Sheet"

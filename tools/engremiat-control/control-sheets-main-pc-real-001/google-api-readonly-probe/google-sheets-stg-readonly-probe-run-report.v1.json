@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "decision": "GOOGLE_API_READONLY_PROBE_006B_DRY_RUN_OK_NO_API_CALL",
+  "mode": "DRY_RUN_ONLY",
+  "binding_ok": true,
+  "binding_error": "",
+  "spreadsheet_id_masked": "1lJK9k...XC_B6c",
+  "credential_path_present": false,
+  "real_sheet_read": false,
+  "real_sheet_write": false,
+  "google_api_call": false,
+  "apps_script_execution": false,
+  "final_tabs_allowed": false,
+  "push": false
+}

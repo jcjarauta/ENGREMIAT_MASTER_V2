@@ -1,0 +1,7 @@
+﻿term_id	term	definition	domain	source	status	owner	created_at	updated_at	notes
+DICT-001	Human Control Space	Primer espacio de supervision humana para ver estado	 gates	 runs	 manuales	 proyectos y tareas.	sheets	CONTROL_SHEETS_MAIN_PC_REAL_001	ACTIVE	human+system	2026-06-11T22:21:15	2026-06-11T22:21:15	Base para futura capa Telegram.
+DICT-002	Gate	Punto de control con decision	 readiness	 bloqueos y autorizacion si aplica.	control	CONTROL_SHEETS_MAIN_PC_REAL_001	ACTIVE	system	2026-06-11T22:21:15	2026-06-11T22:21:15	Debe ser visible y auditable.
+DICT-003	Run	Ejecucion concreta de un bloque	 script o validacion con evidencia local.	operations	CONTROL_SHEETS_MAIN_PC_REAL_001	ACTIVE	system	2026-06-11T22:21:15	2026-06-11T22:21:15	No reemplaza Git; documenta ejecucion.
+DICT-004	Staging Tab	Pestana previa para importar o revisar datos antes de consolidarlos en tabs finales.	sheets	CONTROL_SHEETS_MAIN_PC_REAL_001	ACTIVE	human+system	2026-06-11T22:21:15	2026-06-11T22:21:15	Reduce riesgo de escritura real.
+DICT-005	Final Tab	Pestana operativa consolidada despues de revisar staging.	sheets	CONTROL_SHEETS_MAIN_PC_REAL_001	DRAFT	human	2026-06-11T22:21:15	2026-06-11T22:21:15	No se toca todavia en esta etapa.
+DICT-006	Telegram Layer	Capa futura sobre el modelo operativo consolidado primero en Sheets.	telegram	CONTROL_SHEETS_MAIN_PC_REAL_001	DRAFT	human+system	2026-06-11T22:21:15	2026-06-11T22:21:15	Telegram no debe sustituir el modelo	 sino consumirlo.

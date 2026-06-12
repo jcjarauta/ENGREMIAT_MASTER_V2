@@ -1,0 +1,27 @@
+﻿{
+    "packet_id":  "BRIDGE-PACKET-EXAMPLE-CONTROL-STG-IMPORT-001",
+    "run_id":  "BRIDGE-SIM-REPAIR-20260611-225409",
+    "consumer":  "LOCAL_INBOX_OUTBOX_SIMULATOR",
+    "consumed_at":  "2026-06-11T22:54:10",
+    "ok":  true,
+    "rows_received":  3,
+    "rows_rejected":  0,
+    "target_tabs":  [
+                        "STG_ENG_DICTIONARY",
+                        "STG_ENG_GATES",
+                        "STG_ENG_RUNS"
+                    ],
+    "final_tabs_touched":  false,
+    "checksum_ok":  true,
+    "source_packet_dir":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\outbox\\BRIDGE-SIM-REPAIR-20260611-225409",
+    "consumed_packet_dir":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\packages\\BRIDGE-SIM-REPAIR-20260611-225409",
+    "notes":  "Simulacion local reparada: paquete outbox consumido y receipt devuelto al inbox sin Google API.",
+    "returned_to_inbox":  true,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "telegram_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false
+}

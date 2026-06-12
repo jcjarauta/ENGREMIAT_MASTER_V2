@@ -1,0 +1,40 @@
+﻿<!doctype html><html><head><meta charset="utf-8"><title>Manual STG import package</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:8px}th{background:#eee}.ok{font-weight:700}.mono{font-family:Consolas,monospace}</style>
+</head><body>
+<h1>CONTROL_SHEETS_MAIN_PC_REAL_001 · Manual STG import package</h1>
+<p class='ok'>decision=MANUAL_STG_IMPORT_PACKAGE_READY_NO_GOOGLE_API · readiness=96</p>
+<p>mode=LOCAL_ONLY_PACKAGE_NO_GOOGLE_API_NO_WRITE_NO_GIT</p>
+<p>package_dir=<span class='mono'>C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package</span></p>
+<table><thead><tr><th>target_tab</th><th>package_file</th><th>source_exists</th><th>rows_estimated</th><th>final_tab_allowed</th></tr></thead><tbody>
+<tr><td>STG_ENG_GATES</td><td>STG_ENG_GATES.csv</td><td>True</td><td>4</td><td>False</td></tr>
+<tr><td>STG_ENG_RUNS</td><td>STG_ENG_RUNS.csv</td><td>True</td><td>4</td><td>False</td></tr>
+<tr><td>STG_ENG_DICTIONARY</td><td>STG_ENG_DICTIONARY.csv</td><td>True</td><td>6</td><td>False</td></tr>
+<tr><td>STG_ENG_MANUALS</td><td>STG_ENG_MANUALS.csv</td><td>True</td><td>4</td><td>False</td></tr>
+<tr><td>STG_ENG_PROJECTS</td><td>STG_ENG_PROJECTS.csv</td><td>True</td><td>2</td><td>False</td></tr>
+<tr><td>STG_ENG_TASKS</td><td>STG_ENG_TASKS.csv</td><td>True</td><td>4</td><td>False</td></tr>
+</tbody></table>
+<h2>Checklist</h2>
+<pre>CONTROL_SHEETS_MAIN_PC_REAL_001 &#183; CHECKLIST IMPORT MANUAL STG-ONLY
+
+OBJETIVO
+- Importar solo tabs STG_* en Google Sheets.
+- No tocar tabs finales ENG_*.
+- No usar Google API local.
+- No ejecutar Apps Script automatico desde terminal.
+
+ORDEN RECOMENDADO
+1. Abrir el Google Sheet de control.
+2. Verificar que existen las tabs STG_ENG_GATES, STG_ENG_RUNS, STG_ENG_DICTIONARY, STG_ENG_MANUALS, STG_ENG_PROJECTS, STG_ENG_TASKS.
+3. Para cada fila del indice CSV, importar/copiar el archivo indicado en la tab target_tab.
+4. No importar ningun archivo en tabs ENG_* finales.
+5. Tras importar, revisar conteo de filas y cabeceras.
+6. Pegar aqui el resultado de auditoria o conteos para cerrar el paso 8/8.
+
+SEGURIDAD
+final_tabs_allowed=False
+google_api_call=False
+real_sheet_write_by_script=False
+manual_human_import_only=True
+
+index_csv=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\control-sheets-main-pc-real-001\manual-stg-import-package\CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_INDEX.csv</pre>
+</body></html>

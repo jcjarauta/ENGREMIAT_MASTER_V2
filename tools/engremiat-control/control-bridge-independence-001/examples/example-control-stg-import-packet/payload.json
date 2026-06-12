@@ -1,0 +1,23 @@
+﻿[
+    {
+        "target_tab":  "STG_ENG_GATES",
+        "record_type":  "gate",
+        "key":  "example_gate",
+        "value":  "OPEN",
+        "status":  "READY"
+    },
+    {
+        "target_tab":  "STG_ENG_RUNS",
+        "record_type":  "run",
+        "key":  "example_run",
+        "value":  "LOCAL_ONLY",
+        "status":  "READY"
+    },
+    {
+        "target_tab":  "STG_ENG_DICTIONARY",
+        "record_type":  "term",
+        "key":  "bridge_packet",
+        "value":  "standard_exchange_unit",
+        "status":  "READY"
+    }
+]

@@ -1,0 +1,62 @@
+﻿[
+    {
+        "target_tab":  "STG_ENG_GATES",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_GATES.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    },
+    {
+        "target_tab":  "STG_ENG_RUNS",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_RUNS.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    },
+    {
+        "target_tab":  "STG_ENG_DICTIONARY",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_DICTIONARY.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    },
+    {
+        "target_tab":  "STG_ENG_MANUALS",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_MANUALS.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    },
+    {
+        "target_tab":  "STG_ENG_PROJECTS",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_PROJECTS.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    },
+    {
+        "target_tab":  "STG_ENG_TASKS",
+        "source_relative_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_TASKS.seed.v1.csv",
+        "source_exists":  true,
+        "final_tab_allowed":  false,
+        "write_mode":  "CLEAR_AND_APPEND_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false,
+        "requires_authorization":  true
+    }
+]

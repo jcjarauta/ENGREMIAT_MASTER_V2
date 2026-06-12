@@ -1,0 +1,24 @@
+﻿{
+    "run_id":  "MANUAL-STG-REPAIRED-CONFIRMED-20260611-231818",
+    "packet":  "CONTROL_SHEETS_MAIN_PC_REAL_001_MANUAL_STG_IMPORT_PACKAGE",
+    "event":  "MANUAL_STG_REPAIR_CONFIRMED_BY_HUMAN",
+    "ok":  true,
+    "repaired_tabs_count":  6,
+    "target_tabs":  [
+                        "STG_ENG_GATES",
+                        "STG_ENG_RUNS",
+                        "STG_ENG_DICTIONARY",
+                        "STG_ENG_MANUALS",
+                        "STG_ENG_TASKS",
+                        "STG_ENG_DECISIONS"
+                    ],
+    "pasted_from_tsv":  true,
+    "start_cell":  "A1",
+    "columns_split_confirmed_by_human":  true,
+    "final_tabs_touched":  false,
+    "google_api_used":  false,
+    "apps_script_used":  false,
+    "confirmed_at":  "2026-06-11T23:18:18",
+    "returned_to_bridge_inbox":  true,
+    "note":  "Usuario confirma STG REPARADO; contenido re-pegado desde TSV en A1 y separado en columnas."
+}

@@ -1,0 +1,11 @@
+﻿{
+    "packet_id":  "SHEETS-EXPORT-BACK-EXAMPLE-001",
+    "received_by":  "ENGREMIAT_CONTROL_BRIDGE_INBOX",
+    "received_at":  null,
+    "ok":  false,
+    "signals_received":  0,
+    "signals_accepted":  0,
+    "signals_rejected":  0,
+    "notes":  "",
+    "reconciled":  false
+}

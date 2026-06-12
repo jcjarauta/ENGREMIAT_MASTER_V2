@@ -1,0 +1,62 @@
+﻿[
+    {
+        "target_tab":  "STG_ENG_GATES",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_GATES.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    },
+    {
+        "target_tab":  "STG_ENG_RUNS",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_RUNS.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    },
+    {
+        "target_tab":  "STG_ENG_DICTIONARY",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_DICTIONARY.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    },
+    {
+        "target_tab":  "STG_ENG_MANUALS",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_MANUALS.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    },
+    {
+        "target_tab":  "STG_ENG_PROJECTS",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_PROJECTS.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    },
+    {
+        "target_tab":  "STG_ENG_TASKS",
+        "final_tab_allowed":  false,
+        "candidate_found":  true,
+        "candidate_path":  "tools\\engremiat-control\\control-sheets-main-pc-real-001\\seed\\STG_ENG_TASKS.seed.v1.csv",
+        "candidate_score":  "60",
+        "dry_run_action":  "WOULD_VALIDATE_AND_WRITE_TO_STAGING_ONLY",
+        "real_write_now":  false,
+        "google_api_call_now":  false
+    }
+]

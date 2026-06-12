@@ -1,0 +1,56 @@
+﻿{
+    "objective":  "CONTROL_SHEETS_MAIN_PC_REAL_001",
+    "phase":  "REAL_STAGING_IMPORT_DECISION_GATE",
+    "ok":  true,
+    "decision":  "READY_TO_CHOOSE_IMPORT_OR_REVIEW_NO_REAL_EXECUTION",
+    "readiness":  82,
+    "gate":  "OPEN_READY_FOR_HUMAN_DECISION_REAL_STAGING_IMPORT_OR_STRATEGY_REVIEW",
+    "mode":  "LOCAL_ONLY_DECISION_GATE_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "root":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2",
+    "head":  "03fe72d",
+    "previous_commit_report_exists":  true,
+    "binding_present":  true,
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_masked":  "1lJK9k...XC_B6c",
+    "spreadsheet_name":  "ENGREMIAT_CONTROL_MVP_001",
+    "scoped_dirty_count":  3,
+    "out_of_scope_dirty_count":  15,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "google_api_call":  false,
+    "apps_script_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "PREPARE_AUTHORIZED_REAL_STAGING_IMPORT_SCRIPT_OR_RUN_STRATEGY_REVIEW",
+    "authorization_phrase_for_real_import":  "SI, AUTORIZO IMPORT REAL STAGING CONTROL_SHEETS_MAIN_PC_REAL_001 SIN FINAL TABS SIN PUSH",
+    "options":  [
+                    {
+                        "option_id":  "A",
+                        "decision":  "REAL_STAGING_IMPORT_NEXT",
+                        "recommended":  true,
+                        "description":  "Preparar import real solo a STG_* con autorizacion humana explicita antes de escribir",
+                        "allowed_now":  false,
+                        "blocker":  "NEEDS_EXPLICIT_HUMAN_AUTHORIZATION_PHRASE",
+                        "risk":  "MEDIUM_CONTROLLED"
+                    },
+                    {
+                        "option_id":  "B",
+                        "decision":  "STRATEGY_REVIEW_BEFORE_IMPORT",
+                        "recommended":  false,
+                        "description":  "Pausar import real y revisar arquitectura operativa Sheets antes de escribir",
+                        "allowed_now":  true,
+                        "blocker":  "NONE",
+                        "risk":  "LOW"
+                    },
+                    {
+                        "option_id":  "C",
+                        "decision":  "DEFER_REAL_IMPORT_TO_MAIN_PC_WORKERS",
+                        "recommended":  false,
+                        "description":  "Dejar worker real preparado y diferir ejecucion pesada/API a MAIN PC",
+                        "allowed_now":  true,
+                        "blocker":  "NONE",
+                        "risk":  "LOW"
+                    }
+                ]
+}

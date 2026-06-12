@@ -1,0 +1,14 @@
+﻿CONTROL_BRIDGE_INDEPENDENCE_001 · NEXT CHECKLIST
+
+Objetivo recomendado: NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION
+
+[ ] Abrir paquete STG-only ya creado en CONTROL_SHEETS_MAIN_PC_REAL_001.
+[ ] Importar/copiar solo en pestanas STG_* del Sheet.
+[ ] No tocar pestanas finales.
+[ ] Validar visualmente que Sheets sirve como panel de control humano.
+[ ] Crear o exportar una señal humana de vuelta al bridge inbox.
+[ ] Confirmar receipt/senal en ENGREMIAT local.
+[ ] Valorar si Apps Script aporta ahorro o si basta con bridge manual.
+
+Principio activo:
+ENGREMIAT es fuente de verdad. Sheets es interfaz humana sincronizable.

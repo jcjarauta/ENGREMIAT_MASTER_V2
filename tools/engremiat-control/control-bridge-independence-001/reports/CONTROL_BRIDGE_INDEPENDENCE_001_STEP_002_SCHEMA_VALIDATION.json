@@ -1,0 +1,17 @@
+﻿{
+    "ok":  true,
+    "schema_json_exists":  true,
+    "manifest_exists":  true,
+    "payload_csv_exists":  true,
+    "payload_json_exists":  true,
+    "checksums_exists":  true,
+    "checklist_exists":  true,
+    "receipt_template_exists":  true,
+    "google_api_call":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "telegram_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false
+}

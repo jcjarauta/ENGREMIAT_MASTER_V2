@@ -1,0 +1,19 @@
+﻿{
+    "objective":  "NEXT_OBJECTIVE_MANUAL_STG_IMPORT_EXECUTION",
+    "ok":  true,
+    "decision":  "MANUAL_STG_REPAIR_CONFIRMED_RECEIPT_RETURNED_TO_BRIDGE_INBOX",
+    "readiness":  97,
+    "gate":  "CLOSED_MANUAL_STG_REPAIR_CONFIRMED_READY_FOR_CONTROL_SPACE_VALIDATION",
+    "mode":  "LOCAL_ONLY_HUMAN_CONFIRMED_RECEIPT_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "receipt_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox\\MANUAL-STG-REPAIRED-CONFIRMED-20260611-231818.receipt.json",
+    "signal_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox\\MANUAL-STG-REPAIRED-CONFIRMED-20260611-231818.signal.json",
+    "bridge_inbox":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\control-bridge-independence-001\\bridge\\inbox",
+    "google_api_call":  false,
+    "real_sheet_read_by_script":  false,
+    "real_sheet_write_by_script":  false,
+    "apps_script_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "VALIDATE_HUMAN_CONTROL_SPACE_EXPERIENCE_AND_DECIDE_APPS_SCRIPT_OR_KEEP_MANUAL_BRIDGE"
+}
