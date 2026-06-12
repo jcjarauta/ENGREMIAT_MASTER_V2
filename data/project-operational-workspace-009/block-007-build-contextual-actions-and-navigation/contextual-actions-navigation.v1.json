@@ -1,0 +1,133 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "PROJECT_OPERATIONAL_WORKSPACE_009",
+    "block":  "007",
+    "active_context":  {
+                           "project_id":  "PROJECT-B",
+                           "task_id":  "TASK-B1"
+                       },
+    "contextual_actions":  [
+                               {
+                                   "action_id":  "OPEN_PROJECT_DETAIL",
+                                   "label":  "Abrir proyecto",
+                                   "scope":  "PROJECT",
+                                   "target_view":  "PROJECT_DETAIL",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "",
+                                   "execution_mode":  "NAVIGATION_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  false
+                               },
+                               {
+                                   "action_id":  "OPEN_TASK_DETAIL",
+                                   "label":  "Abrir tarea",
+                                   "scope":  "TASK",
+                                   "target_view":  "TASK_DETAIL",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "TASK-B1",
+                                   "execution_mode":  "NAVIGATION_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  false
+                               },
+                               {
+                                   "action_id":  "OPEN_PROJECT_TASKS",
+                                   "label":  "Ver tareas del proyecto",
+                                   "scope":  "PROJECT",
+                                   "target_view":  "PROJECT_TASKS",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "",
+                                   "execution_mode":  "NAVIGATION_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  false
+                               },
+                               {
+                                   "action_id":  "OPEN_EXECUTION_QUEUE",
+                                   "label":  "Ver cola de ejecución",
+                                   "scope":  "TASK",
+                                   "target_view":  "EXECUTION_QUEUE",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "TASK-B1",
+                                   "execution_mode":  "NAVIGATION_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  false
+                               },
+                               {
+                                   "action_id":  "REQUEST_TASK_EXECUTION",
+                                   "label":  "Solicitar ejecución",
+                                   "scope":  "TASK",
+                                   "target_view":  "TASK_DETAIL",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "TASK-B1",
+                                   "execution_mode":  "REQUEST_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  true
+                               },
+                               {
+                                   "action_id":  "RETURN_TO_WORKSPACE",
+                                   "label":  "Volver al espacio operativo",
+                                   "scope":  "GLOBAL",
+                                   "target_view":  "WORKSPACE_HOME",
+                                   "project_id":  "PROJECT-B",
+                                   "task_id":  "TASK-B1",
+                                   "execution_mode":  "NAVIGATION_ONLY",
+                                   "enabled":  true,
+                                   "requires_human_authorization":  false
+                               }
+                           ],
+    "navigation_routes":  [
+                              {
+                                  "from":  "WORKSPACE_HOME",
+                                  "to":  "PROJECT_DETAIL",
+                                  "context_required":  "project_id"
+                              },
+                              {
+                                  "from":  "PROJECT_DETAIL",
+                                  "to":  "PROJECT_TASKS",
+                                  "context_required":  "project_id"
+                              },
+                              {
+                                  "from":  "PROJECT_TASKS",
+                                  "to":  "TASK_DETAIL",
+                                  "context_required":  "task_id"
+                              },
+                              {
+                                  "from":  "TASK_DETAIL",
+                                  "to":  "EXECUTION_QUEUE",
+                                  "context_required":  "task_id"
+                              },
+                              {
+                                  "from":  "EXECUTION_QUEUE",
+                                  "to":  "TASK_DETAIL",
+                                  "context_required":  "task_id"
+                              },
+                              {
+                                  "from":  "TASK_DETAIL",
+                                  "to":  "PROJECT_DETAIL",
+                                  "context_required":  "project_id"
+                              }
+                          ],
+    "available_views":  [
+                            "WORKSPACE_HOME",
+                            "PROJECT_DETAIL",
+                            "PROJECT_TASKS",
+                            "TASK_DETAIL",
+                            "EXECUTION_QUEUE"
+                        ],
+    "validation":  {
+                       "actions_count":  6,
+                       "navigation_actions_count":  5,
+                       "authorization_actions_count":  1,
+                       "routes_count":  6,
+                       "all_targets_valid":  true,
+                       "active_context_preserved":  true,
+                       "real_execution_performed":  false
+                   },
+    "safety":  {
+                   "google_api":  false,
+                   "sheet_read":  false,
+                   "sheet_write":  false,
+                   "worker_execution":  false,
+                   "ai_execution":  false,
+                   "git":  false
+               }
+}

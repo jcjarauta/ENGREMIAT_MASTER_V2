@@ -1,0 +1,39 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "PROJECT_OPERATIONAL_WORKSPACE_009",
+    "block":  "006",
+    "active_context":  {
+                           "project_id":  "PROJECT-B",
+                           "task_id":  "TASK-B1"
+                       },
+    "project_detail":  {
+                           "project_id":  "PROJECT-B",
+                           "title":  "Project B"
+                       },
+    "task_detail":  {
+                        "task_id":  "TASK-B1",
+                        "project_id":  "PROJECT-B",
+                        "title":  "Task B1"
+                    },
+    "project_tasks":  [
+                          {
+                              "task_id":  "TASK-B1",
+                              "project_id":  "PROJECT-B",
+                              "title":  "Task B1"
+                          }
+                      ],
+    "navigation":  {
+                       "project_selected":  true,
+                       "task_selected":  true,
+                       "task_belongs_to_project":  true,
+                       "project_to_task_ready":  true,
+                       "task_to_project_ready":  true
+                   },
+    "detail_ready":  true,
+    "safety":  {
+                   "google_api":  false,
+                   "sheet_read":  false,
+                   "sheet_write":  false,
+                   "git":  false
+               }
+}

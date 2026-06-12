@@ -1,0 +1,19 @@
+﻿{
+    "ok":  true,
+    "decision":  "CONTEXTUAL_ACTIONS_AND_NAVIGATION_READY",
+    "block":  "007",
+    "contextual_actions":  6,
+    "navigation_routes":  6,
+    "navigation_only_actions":  5,
+    "authorization_gated_actions":  1,
+    "active_context_preserved":  true,
+    "targets_valid":  true,
+    "json_parse":  true,
+    "real_execution":  false,
+    "google_api":  false,
+    "sheet_read":  false,
+    "sheet_write":  false,
+    "worker_execution":  false,
+    "git":  false,
+    "next":  "BLOCK_008_CLOSE_PROJECT_OPERATIONAL_WORKSPACE_OBJECTIVE"
+}

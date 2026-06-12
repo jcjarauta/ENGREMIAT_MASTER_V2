@@ -1,0 +1,18 @@
+﻿{
+    "ok":  true,
+    "decision":  "PROJECT_AND_TASK_SELECTION_CONNECTED_TO_DETAIL",
+    "block":  "006",
+    "project_selection_to_detail":  true,
+    "task_selection_to_detail":  true,
+    "task_parent_project_resolution":  true,
+    "project_related_tasks_resolution":  true,
+    "active_context_preserved":  true,
+    "project_task_consistency":  true,
+    "detail_navigation_ready":  true,
+    "json_parse":  true,
+    "google_api":  false,
+    "sheet_read":  false,
+    "sheet_write":  false,
+    "git":  false,
+    "next":  "BLOCK_007_BUILD_CONTEXTUAL_ACTIONS_AND_NAVIGATION"
+}
