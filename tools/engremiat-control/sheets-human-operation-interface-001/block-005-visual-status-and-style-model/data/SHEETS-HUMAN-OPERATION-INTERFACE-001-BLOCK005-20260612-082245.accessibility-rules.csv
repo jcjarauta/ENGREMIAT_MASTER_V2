@@ -1,0 +1,7 @@
+﻿"rule_id","rule"
+"ACCESS-001","No depender exclusivamente del color para comunicar estado"
+"ACCESS-002","Cada estado debe incluir texto legible y rol visual"
+"ACCESS-003","Los avisos de bloqueo deben usar icono, texto y enfasis"
+"ACCESS-004","Los campos editables deben distinguirse tambien por borde o etiqueta"
+"ACCESS-005","El aviso de no ejecucion debe permanecer siempre visible"
+"ACCESS-006","Evitar parpadeos, animaciones o señales invasivas"

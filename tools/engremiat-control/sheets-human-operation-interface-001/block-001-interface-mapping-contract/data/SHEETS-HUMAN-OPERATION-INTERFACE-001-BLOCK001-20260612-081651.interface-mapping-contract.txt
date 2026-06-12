@@ -1,0 +1,36 @@
+﻿SHEETS HUMAN OPERATION INTERFACE · MAPPING CONTRACT
+=================================================
+objective=SHEETS_HUMAN_OPERATION_INTERFACE_001
+run_id=SHEETS-HUMAN-OPERATION-INTERFACE-001-BLOCK001-20260612-081651
+
+PROPOSED TABS
+-------------
+ENG_HUMAN_QUEUE
+ENG_HUMAN_REVIEW
+ENG_HUMAN_HISTORY
+ENG_HUMAN_CONFIG
+
+HUMAN EDITABLE SURFACE
+----------------------
+tab=ENG_HUMAN_REVIEW
+allowed_zones=ZONE_HUMAN_INPUT|ZONE_HUMAN_DECISION
+
+PROTECTED SURFACES
+------------------
+ENG_HUMAN_QUEUE=READ_ONLY_FOR_HUMANS
+ENG_HUMAN_HISTORY=APPEND_ONLY
+ENG_HUMAN_CONFIG=PROTECTED
+
+EXECUTION CONTRACT
+------------------
+approval_executes_action=False
+automatic_approval_allowed=False
+operational_execution_allowed=False
+
+CURRENT BLOCK
+-------------
+google_api_call=False
+real_sheet_read_by_script=False
+real_sheet_write_by_script=False
+real_tabs_created=False
+git_write=False

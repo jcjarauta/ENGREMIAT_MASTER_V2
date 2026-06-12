@@ -1,0 +1,7 @@
+﻿"component","actor","responsibility","write_mode"
+"HUMAN_QUEUE","ENGREMIAT_SYSTEM","Construir y ordenar la cola","SYSTEM_ONLY"
+"HUMAN_QUEUE","HUMAN_REVIEWER","Consultar y seleccionar elementos","READ_ONLY"
+"HUMAN_REVIEW","HUMAN_REVIEWER","Registrar accion, comentario, decision y confirmacion","HUMAN_FIELDS_ONLY"
+"HUMAN_REVIEW","ENGREMIAT_SYSTEM","Proteger campos y validar transicion","PROTECTED_FIELDS_ONLY"
+"HUMAN_HISTORY","ENGREMIAT_AUDIT","Anexar evidencia de transiciones","APPEND_ONLY"
+"HUMAN_CONFIG","ENGREMIAT_GOVERNANCE","Mantener listas y reglas","SYSTEM_ONLY"

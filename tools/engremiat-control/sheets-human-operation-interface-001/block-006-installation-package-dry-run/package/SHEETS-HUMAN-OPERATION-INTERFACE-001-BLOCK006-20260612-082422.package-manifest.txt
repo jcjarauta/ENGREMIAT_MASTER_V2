@@ -1,0 +1,14 @@
+﻿SHEETS HUMAN OPERATION INTERFACE · INSTALLATION PACKAGE
+======================================================
+objective=SHEETS_HUMAN_OPERATION_INTERFACE_001
+run_id=SHEETS-HUMAN-OPERATION-INTERFACE-001-BLOCK006-20260612-082422
+package_mode=DRY_RUN
+target_tabs=ENG_HUMAN_QUEUE|ENG_HUMAN_REVIEW|ENG_HUMAN_HISTORY|ENG_HUMAN_CONFIG
+source_artifacts_count=9
+installation_steps_count=8
+real_installation_allowed=False
+requires_explicit_human_authorization=True
+google_api_call=False
+real_sheet_read=False
+real_sheet_write=False
+apps_script_execution=False

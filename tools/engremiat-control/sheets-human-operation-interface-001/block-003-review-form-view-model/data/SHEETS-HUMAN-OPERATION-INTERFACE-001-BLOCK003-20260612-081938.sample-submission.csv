@@ -1,0 +1,2 @@
+﻿"queue_item_id","queue_state","requested_action","reviewer","human_comment","decision","decision_reason","human_confirmation","execution_notice","proposed_target_state","submission_mode","external_action_executed","real_sheet_write"
+"HRQ-UI-REVIEW-001","CLAIMED","APPROVE","human-reviewer-interface-001","Revision local de la ficha","APPROVED","","True","La decision queda registrada pero no se ejecuta.","DECIDED","LOCAL_DRY_RUN","False","False"

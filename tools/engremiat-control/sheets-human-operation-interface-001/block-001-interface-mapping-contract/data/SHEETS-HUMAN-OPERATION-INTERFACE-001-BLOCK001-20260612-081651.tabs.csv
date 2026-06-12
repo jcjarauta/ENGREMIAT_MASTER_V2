@@ -1,0 +1,5 @@
+﻿"tab_order","tab_id","proposed_sheet_name","purpose","primary_actor","source_mode","human_write_allowed","system_write_planned","final_tab"
+"1","HUMAN_QUEUE","ENG_HUMAN_QUEUE","Cola principal de elementos pendientes de revision humana","HUMAN_REVIEWER","DERIVED_FROM_OPERATION_QUEUE","False","True","True"
+"2","HUMAN_REVIEW","ENG_HUMAN_REVIEW","Ficha editable para registrar accion, decision y motivo","HUMAN_REVIEWER","HUMAN_EDITABLE_REVIEW_FORM","True","True","True"
+"3","HUMAN_HISTORY","ENG_HUMAN_HISTORY","Historial append-only de transiciones y decisiones","ENGREMIAT_AUDIT","APPEND_ONLY_AUDIT","False","True","True"
+"4","HUMAN_CONFIG","ENG_HUMAN_CONFIG","Listas, validaciones, reglas y parametros protegidos","ENGREMIAT_GOVERNANCE","PROTECTED_CONFIGURATION","False","True","True"

@@ -1,0 +1,7 @@
+﻿"filter_id","label","field","values","default_filter"
+"FILTER_ACTIVE","Activas","queue_state","QUEUED|CLAIMED|NEEDS_DATA|BLOCKED","True"
+"FILTER_UNCLAIMED","Sin asignar","queue_state","QUEUED","False"
+"FILTER_MY_REVIEWS","Mis revisiones","reviewer","CURRENT_HUMAN_REVIEWER","False"
+"FILTER_CRITICAL","Criticas","priority","CRITICAL","False"
+"FILTER_BLOCKED","Bloqueadas","queue_state","BLOCKED|NEEDS_DATA","False"
+"FILTER_CLOSED","Cerradas","queue_state","DECIDED|CLOSED","False"

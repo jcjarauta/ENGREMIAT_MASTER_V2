@@ -1,0 +1,7 @@
+﻿"field_name","validation_type","source_list","reject_invalid","required","error_code"
+"requested_action","DROPDOWN","LIST_HUMAN_ACTION","True","True","ACTION_REQUIRED_OR_INVALID"
+"reviewer","TEXT_REQUIRED","","True","True","REVIEWER_REQUIRED"
+"human_comment","TEXT_MAX_LENGTH","","True","False","COMMENT_MAX_2000"
+"decision","CONDITIONAL_DROPDOWN","LIST_DECISION","True","False","DECISION_REQUIRED_OR_INVALID"
+"decision_reason","CONDITIONAL_TEXT_REQUIRED","","True","False","DECISION_REASON_REQUIRED"
+"human_confirmation","CHECKBOX_TRUE","","True","True","HUMAN_CONFIRMATION_REQUIRED"

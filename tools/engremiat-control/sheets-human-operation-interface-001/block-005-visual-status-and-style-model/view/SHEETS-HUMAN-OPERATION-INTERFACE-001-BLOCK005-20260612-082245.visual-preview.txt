@@ -1,0 +1,20 @@
+﻿ENGREMIAT · HUMAN OPERATION VISUAL MODEL
+=========================================
+CRITICAL + OVERDUE : ALERT | Atencion inmediata | Fuera de plazo
+CLAIMED            : PERSON | Revision asignada
+NEEDS_DATA         : DOCUMENT | Faltan datos
+BLOCKED            : WARNING | Revision bloqueada
+CLOSED             : ARCHIVE | Revision cerrada
+
+EDITABLE FIELDS
+---------------
+requested_action
+reviewer
+human_comment
+decision
+decision_reason
+human_confirmation
+
+SAFETY NOTICE
+-------------
+La decision humana se registra, pero no ejecuta acciones.

@@ -1,0 +1,5 @@
+﻿"proposed_tab","expected_namespace","namespace_compatible","known_name_collision","touches_staging_namespace","create_if_missing","human_write_allowed","append_only","compatibility"
+"ENG_HUMAN_QUEUE","ENG_HUMAN_*","True","False","False","True","False","False","COMPATIBLE_NEW_ISOLATED_TAB"
+"ENG_HUMAN_REVIEW","ENG_HUMAN_*","True","False","False","True","True","False","COMPATIBLE_NEW_ISOLATED_TAB"
+"ENG_HUMAN_HISTORY","ENG_HUMAN_*","True","False","False","True","False","True","COMPATIBLE_NEW_ISOLATED_TAB"
+"ENG_HUMAN_CONFIG","ENG_HUMAN_*","True","False","False","True","False","False","COMPATIBLE_NEW_ISOLATED_TAB"

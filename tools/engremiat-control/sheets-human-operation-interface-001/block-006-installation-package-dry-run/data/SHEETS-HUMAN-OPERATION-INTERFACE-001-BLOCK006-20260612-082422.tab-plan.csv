@@ -1,0 +1,5 @@
+﻿"tab_name","create_if_missing","human_write_allowed","system_write_planned","append_only","protected"
+"ENG_HUMAN_QUEUE","True","False","True","False","True"
+"ENG_HUMAN_REVIEW","True","True","True","False","False"
+"ENG_HUMAN_HISTORY","True","False","True","True","True"
+"ENG_HUMAN_CONFIG","True","False","True","False","True"

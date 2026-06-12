@@ -1,0 +1,14 @@
+﻿SHEETS HUMAN OPERATION INTERFACE · VISUAL STYLE CONTRACT
+=======================================================
+run_id=SHEETS-HUMAN-OPERATION-INTERFACE-001-BLOCK005-20260612-082245
+visual_language=TEXT|ICON|EMPHASIS
+color_only_communication_allowed=False
+queue_readonly=True
+review_editable_fields_visually_distinct=True
+protected_fields_visually_distinct=True
+blocked_and_overdue_visible=True
+closed_rows_excluded_from_overdue_warning=True
+no_execution_notice_always_visible=True
+animations_allowed=False
+google_api_call=False
+real_sheet_write=False

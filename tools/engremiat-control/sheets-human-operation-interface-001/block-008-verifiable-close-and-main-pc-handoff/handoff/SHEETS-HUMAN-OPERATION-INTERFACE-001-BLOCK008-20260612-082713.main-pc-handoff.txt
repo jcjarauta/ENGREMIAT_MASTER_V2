@@ -1,0 +1,36 @@
+﻿SHEETS HUMAN OPERATION INTERFACE · MAIN PC HANDOFF
+=================================================
+objective=SHEETS_HUMAN_OPERATION_INTERFACE_001
+run_id=SHEETS-HUMAN-OPERATION-INTERFACE-001-BLOCK008-20260612-082713
+
+DELIVERABLE
+-----------
+Interface model for:
+ENG_HUMAN_QUEUE
+ENG_HUMAN_REVIEW
+ENG_HUMAN_HISTORY
+ENG_HUMAN_CONFIG
+
+MAIN PC EXECUTION ORDER
+-----------------------
+1. Validate spreadsheet binding and credential presence without exposing secrets.
+2. Execute readonly inventory of the real spreadsheet.
+3. Detect any existing ENG_HUMAN_* tabs and audit their columns.
+4. Confirm STG_* tabs remain outside installation scope.
+5. Present installation dry-run and exact proposed changes.
+6. Request separate explicit human authorization for real write.
+7. Install or validate the four ENG_HUMAN_* tabs.
+8. Run readonly post-install verification before operational use.
+
+SAFETY CONTRACT
+---------------
+current_terminal_real_worker_allowed=False
+main_pc_real_readonly_audit_required=True
+real_installation_allowed_now=False
+requires_explicit_human_authorization_before_write=True
+overwrite_existing_tab=False
+delete_existing_tab=False
+rename_existing_tab=False
+staging_tabs_touched=False
+approval_executes_action=False
+operational_execution_allowed=False

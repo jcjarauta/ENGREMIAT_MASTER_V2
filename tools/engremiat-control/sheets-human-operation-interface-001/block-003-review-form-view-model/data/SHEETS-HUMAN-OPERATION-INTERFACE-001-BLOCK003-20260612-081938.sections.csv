@@ -1,0 +1,5 @@
+﻿"section_order","section_id","label","fields","human_editable"
+"1","CONTEXT","Contexto de la revision","queue_item_id|queue_state","False"
+"2","ACTION","Accion humana","requested_action|reviewer|human_comment","True"
+"3","DECISION","Decision y motivo","decision|decision_reason|human_confirmation","True"
+"4","SAFETY","Aviso de seguridad","execution_notice","False"

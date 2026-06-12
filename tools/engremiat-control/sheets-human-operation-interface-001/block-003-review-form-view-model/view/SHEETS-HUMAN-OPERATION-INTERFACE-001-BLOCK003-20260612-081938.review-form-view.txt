@@ -1,0 +1,28 @@
+﻿ENGREMIAT · ENG_HUMAN_REVIEW
+============================
+
+CONTEXT
+-------
+queue_item_id=HRQ-UI-REVIEW-001
+queue_state=CLAIMED
+
+HUMAN INPUT
+-----------
+requested_action=APPROVE
+reviewer=human-reviewer-interface-001
+human_comment=Revision local de la ficha
+decision=APPROVED
+decision_reason=
+human_confirmation=True
+
+VALIDATION
+----------
+submission_valid=True
+proposed_target_state=DECIDED
+
+SAFETY
+------
+approval_registers_decision_only=True
+approval_executes_action=False
+external_action_executed=False
+real_sheet_write=False

@@ -1,0 +1,7 @@
+﻿"gate_id","condition","required"
+"PKG-GATE-001","All source artifacts exist","True"
+"PKG-GATE-002","Only ENG_HUMAN_REVIEW permits human input","True"
+"PKG-GATE-003","ENG_HUMAN_HISTORY remains append-only","True"
+"PKG-GATE-004","Approval cannot execute external actions","True"
+"PKG-GATE-005","Real installation requires separate explicit authorization","True"
+"PKG-GATE-006","Post-install audit must run before operational use","True"

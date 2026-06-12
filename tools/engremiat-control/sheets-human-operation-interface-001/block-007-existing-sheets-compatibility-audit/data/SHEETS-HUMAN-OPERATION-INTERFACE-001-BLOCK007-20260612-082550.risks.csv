@@ -1,0 +1,5 @@
+﻿"risk_id","risk","severity","mitigation","blocks_local_close"
+"RISK-001","No se ha consultado el estado actual del Sheet real en esta terminal","MEDIUM","Ejecutar auditor readonly en MAIN PC antes de instalar","False"
+"RISK-002","Una pestaña ENG_HUMAN_* podría existir fuera del inventario local","MEDIUM","Aplicar CREATE_IF_MISSING_ELSE_AUDIT","False"
+"RISK-003","Las protecciones reales dependen de permisos del spreadsheet","MEDIUM","Validar permisos antes de cualquier escritura","False"
+"RISK-004","La terminal actual es sensible a workers pesados","HIGH","Diferir Google API y worker real para MAIN PC","False"

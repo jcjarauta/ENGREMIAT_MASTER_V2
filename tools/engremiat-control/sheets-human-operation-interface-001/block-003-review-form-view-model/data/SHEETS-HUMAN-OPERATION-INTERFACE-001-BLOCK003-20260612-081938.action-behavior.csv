@@ -1,0 +1,8 @@
+﻿"action","decision_required","reason_required","allowed_state","target_state"
+"START_REVIEW","False","False","QUEUED","CLAIMED"
+"APPROVE","True","False","CLAIMED","DECIDED"
+"REJECT","True","True","CLAIMED","DECIDED"
+"DEFER","True","True","CLAIMED","DECIDED"
+"REQUEST_DATA","True","True","CLAIMED","NEEDS_DATA"
+"REOPEN","True","True","NEEDS_DATA|BLOCKED|CLOSED","QUEUED"
+"CLOSE_REVIEW","True","False","DECIDED","CLOSED"

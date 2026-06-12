@@ -1,0 +1,24 @@
+﻿ENGREMIAT · ENG_HUMAN_QUEUE
+===========================
+active=4
+critical=1
+overdue=1
+unclaimed=1
+blocked=2
+
+ORDER
+-----
+priority=CRITICAL|HIGH|MEDIUM|LOW
+secondary=target_review_at ASC
+tertiary=queue_item_id ASC
+
+DEFAULT FILTER
+--------------
+QUEUED|CLAIMED|NEEDS_DATA|BLOCKED
+
+SAFETY
+------
+human_write_allowed=False
+row_selection_executes_action=False
+google_api_call=False
+real_sheet_write=False

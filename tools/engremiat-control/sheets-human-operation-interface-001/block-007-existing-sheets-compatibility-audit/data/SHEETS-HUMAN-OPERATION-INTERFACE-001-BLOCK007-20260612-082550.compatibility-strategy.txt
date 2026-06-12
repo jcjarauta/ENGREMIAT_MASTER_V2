@@ -1,0 +1,29 @@
+﻿SHEETS HUMAN OPERATION INTERFACE · COMPATIBILITY STRATEGY
+========================================================
+objective=SHEETS_HUMAN_OPERATION_INTERFACE_001
+run_id=SHEETS-HUMAN-OPERATION-INTERFACE-001-BLOCK007-20260612-082550
+
+KNOWN CURRENT SCOPE
+-------------------
+existing_known_namespace=STG_*
+new_interface_namespace=ENG_HUMAN_*
+namespace_collision_detected=False
+staging_tabs_touched=False
+
+REAL INSTALLATION POLICY
+------------------------
+create_if_missing=True
+overwrite_existing_tab=False
+rename_existing_tab=False
+delete_existing_tab=False
+audit_before_existing_tab_write=True
+explicit_human_authorization_required=True
+
+EXECUTION STRATEGY
+------------------
+current_terminal=LOCAL_CONTRACT_ONLY
+real_worker_target=MAIN_PC
+google_api_call=False
+real_sheet_read=False
+real_sheet_write=False
+apps_script_execution=False

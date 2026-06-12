@@ -1,0 +1,7 @@
+﻿"tab_name","tab_role","protected_scope"
+"STG_ENG_GATES","STAGING","True"
+"STG_ENG_RUNS","STAGING","True"
+"STG_ENG_DICTIONARY","STAGING","True"
+"STG_ENG_MANUALS","STAGING","True"
+"STG_ENG_RESOURCES","STAGING","True"
+"STG_ENG_PROJECTS","STAGING","True"

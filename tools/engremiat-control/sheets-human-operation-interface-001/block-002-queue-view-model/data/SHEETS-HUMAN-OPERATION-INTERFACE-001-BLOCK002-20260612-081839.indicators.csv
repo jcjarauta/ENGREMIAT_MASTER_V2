@@ -1,0 +1,6 @@
+﻿"indicator_id","label","calculation","human_editable"
+"IND_TOTAL_ACTIVE","Activas","COUNT_ACTIVE_STATES","False"
+"IND_CRITICAL","Criticas","COUNT_PRIORITY_CRITICAL","False"
+"IND_OVERDUE","Fuera de plazo","COUNT_TARGET_REVIEW_AT_LT_NOW","False"
+"IND_UNCLAIMED","Sin asignar","COUNT_STATE_QUEUED","False"
+"IND_BLOCKED","Bloqueadas","COUNT_BLOCKED_OR_NEEDS_DATA","False"

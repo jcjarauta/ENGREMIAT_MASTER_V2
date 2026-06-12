@@ -1,0 +1,6 @@
+﻿"case_id","expected_valid","actual_valid","matches_expectation","errors","execution_allowed"
+"VAL-001","True","True","True","","False"
+"VAL-002","True","True","True","","False"
+"VAL-003","False","False","True","DECISION_REASON_REQUIRED","False"
+"VAL-004","False","False","True","STATE_ACTION_MISMATCH","False"
+"VAL-005","False","False","True","HUMAN_CONFIRMATION_REQUIRED","False"
