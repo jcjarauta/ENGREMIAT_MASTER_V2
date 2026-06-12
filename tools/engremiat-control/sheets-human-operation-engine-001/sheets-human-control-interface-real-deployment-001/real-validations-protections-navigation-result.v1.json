@@ -1,0 +1,46 @@
+{
+  "schema": "engremiat.sheets-human-control-interface.real-validations-protections-navigation-result.v1",
+  "ok": true,
+  "decision": "VALIDATIONS_PROTECTIONS_AND_NAVIGATION_APPLIED_AND_VERIFIED",
+  "repair": "SEPARATE_FILTERED_CONFIGURATION_READBACK_FROM_GLOBAL_TAB_EXISTENCE_READBACK",
+  "target_tabs": [
+    "ENG_CONTROL_PANEL",
+    "ENG_TASK_INBOX",
+    "ENG_TASK_DETAIL",
+    "ENG_DECISION_CENTER"
+  ],
+  "named_ranges": [
+    "ENG_VIEW_CONTROL_PANEL",
+    "ENG_VIEW_TASK_INBOX",
+    "ENG_VIEW_TASK_DETAIL",
+    "ENG_VIEW_DECISION_CENTER"
+  ],
+  "named_ranges_count": 4,
+  "named_ranges_verified": true,
+  "warning_protections_count": 4,
+  "protections_warning_only": true,
+  "protections_verified": true,
+  "data_validation_cells": [
+    "ENG_DECISION_CENTER!B8",
+    "ENG_DECISION_CENTER!B14"
+  ],
+  "data_validations_count": 2,
+  "decision_validation_verified": true,
+  "authorization_validation_verified": true,
+  "navigation_notes_count": 4,
+  "navigation_notes_verified": true,
+  "global_tabs_count": 47,
+  "source_tabs_preserved": true,
+  "target_tabs_preserved": true,
+  "source_tabs_write": false,
+  "values_write": false,
+  "formulas_write": false,
+  "notes_write": true,
+  "data_validations_write": true,
+  "protections_write": true,
+  "named_ranges_write": true,
+  "real_task_execution": false,
+  "credential_values_printed": false,
+  "spreadsheet_id_printed": false,
+  "google_api_call": true
+}

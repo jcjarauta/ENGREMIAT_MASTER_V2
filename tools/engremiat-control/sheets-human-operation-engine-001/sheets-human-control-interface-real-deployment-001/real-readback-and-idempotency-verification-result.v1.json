@@ -1,0 +1,17 @@
+{
+  "schema": "engremiat.sheets-human-control-interface.real-readback-result.v1",
+  "ok": true,
+  "semantic_differences": [],
+  "semantic_differences_count": 0,
+  "target_tabs_verified": 4,
+  "source_tabs_verified": 3,
+  "named_ranges_verified": 4,
+  "protections_verified": 4,
+  "validations_verified": 2,
+  "idempotent_second_pass": true,
+  "google_api_mode": "READONLY",
+  "real_sheet_read": true,
+  "real_sheet_write": false,
+  "source_tabs_write": false,
+  "real_task_execution": false
+}

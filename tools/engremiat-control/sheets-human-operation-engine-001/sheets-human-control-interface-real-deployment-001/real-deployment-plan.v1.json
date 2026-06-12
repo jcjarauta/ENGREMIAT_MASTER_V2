@@ -1,0 +1,147 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.real-deployment-plan.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-REAL-DEPLOYMENT-001-20260612-155852",
+    "spreadsheet_binding":  {
+                                "spreadsheet_id_required":  true,
+                                "spreadsheet_id_present_in_local_binding":  true,
+                                "spreadsheet_id_must_not_be_printed":  true,
+                                "credential_source_required":  true,
+                                "credential_values_must_not_be_printed":  true
+                            },
+    "source_tabs":  {
+                        "queue":  "STG_ENG_IMPORT_QUEUE",
+                        "review":  "DECISIONES",
+                        "history":  "STG_ENG_IMPORT_AUDIT",
+                        "read_policy":  "READONLY"
+                    },
+    "target_views":  [
+                         {
+                             "order":  1,
+                             "tab":  "ENG_CONTROL_PANEL",
+                             "model_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-001\\eng-control-panel-model.v1.json",
+                             "managed_range":  "A1:H43",
+                             "columns":  8,
+                             "create_if_missing":  true,
+                             "clear_managed_range_before_write":  true,
+                             "preserve_outside_managed_range":  true,
+                             "human_editable_ranges":  [
+
+                                                       ],
+                             "protection":  "SYSTEM_MANAGED"
+                         },
+                         {
+                             "order":  2,
+                             "tab":  "ENG_TASK_INBOX",
+                             "model_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-001\\eng-task-inbox-model.v1.json",
+                             "managed_range":  "A1:L500",
+                             "columns":  12,
+                             "create_if_missing":  true,
+                             "clear_managed_range_before_write":  true,
+                             "preserve_outside_managed_range":  true,
+                             "human_editable_ranges":  [
+                                                           "A5:A500",
+                                                           "B2",
+                                                           "D2",
+                                                           "F2",
+                                                           "H2"
+                                                       ],
+                             "protection":  "SYSTEM_MANAGED_WITH_CONTROLLED_FILTER_AND_SELECTION_CELLS"
+                         },
+                         {
+                             "order":  3,
+                             "tab":  "ENG_TASK_DETAIL",
+                             "model_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-001\\eng-task-detail-model.v1.json",
+                             "managed_range":  "A1:H43",
+                             "columns":  8,
+                             "create_if_missing":  true,
+                             "clear_managed_range_before_write":  true,
+                             "preserve_outside_managed_range":  true,
+                             "human_editable_ranges":  [
+                                                           "B2"
+                                                       ],
+                             "protection":  "SYSTEM_MANAGED_WITH_SELECTION_CELL"
+                         },
+                         {
+                             "order":  4,
+                             "tab":  "ENG_DECISION_CENTER",
+                             "model_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-001\\eng-decision-center-model.v1.json",
+                             "managed_range":  "A1:H45",
+                             "columns":  8,
+                             "create_if_missing":  true,
+                             "clear_managed_range_before_write":  true,
+                             "preserve_outside_managed_range":  true,
+                             "human_editable_ranges":  [
+                                                           "B8",
+                                                           "B10",
+                                                           "B12",
+                                                           "B14"
+                                                       ],
+                             "protection":  "SYSTEM_MANAGED_WITH_CONTROLLED_HUMAN_INPUT"
+                         }
+                     ],
+    "deployment_order":  [
+                             "PREFLIGHT_METADATA",
+                             "CREATE_MISSING_TABS",
+                             "WRITE_LAYOUT_AND_VALUES",
+                             "APPLY_FORMATS",
+                             "APPLY_VALIDATIONS",
+                             "APPLY_PROTECTIONS",
+                             "VERIFY_MANAGED_RANGES",
+                             "RUN_READONLY_HUMAN_CYCLE_SMOKE"
+                         ],
+    "write_scope":  {
+                        "allowed_target_tabs":  [
+                                                    "ENG_CONTROL_PANEL",
+                                                    "ENG_TASK_INBOX",
+                                                    "ENG_TASK_DETAIL",
+                                                    "ENG_DECISION_CENTER"
+                                                ],
+                        "source_tabs_write_allowed":  false,
+                        "config_tabs_write_allowed":  false,
+                        "maximum_target_tabs":  4,
+                        "managed_ranges_only":  true,
+                        "batch_update_preferred":  true,
+                        "idempotent_refresh_required":  true
+                    },
+    "safety":  {
+                   "real_write_requires_preflight":  true,
+                   "real_write_requires_exact_target_match":  true,
+                   "real_write_requires_post_write_readback":  true,
+                   "rollback_snapshot_required":  true,
+                   "partial_success_policy":  "NO_GO_AND_REPORT",
+                   "unexpected_tab_policy":  "BLOCK",
+                   "unexpected_range_policy":  "BLOCK",
+                   "credentials_exposed":  false
+               },
+    "engine":  {
+                   "entrypoint_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\durable-governed-engine-entrypoint-001\\invoke-governed-human-operation.ps1",
+                   "interface_execution_must_reuse_entrypoint":  true,
+                   "business_logic_duplication_allowed":  false,
+                   "real_task_execution_enabled_during_deployment":  false
+               },
+    "current_mode":  "LOCAL_ONLY_DEPLOYMENT_CONTRACT_NO_GOOGLE_API_NO_SHEET_WRITE_NO_GIT",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "source_tab_resolution":  {
+                                  "queue":  {
+                                                "resolved":  "STG_ENG_IMPORT_QUEUE",
+                                                "method":  "REAL_EXACT_FUNCTIONAL_BINDING"
+                                            },
+                                  "review":  {
+                                                 "resolved":  "DECISIONES",
+                                                 "method":  "REAL_EXACT_FUNCTIONAL_BINDING",
+                                                 "semantic_role":  "HUMAN_DECISIONS_AND_REVIEW"
+                                             },
+                                  "history":  {
+                                                  "resolved":  "STG_ENG_IMPORT_AUDIT",
+                                                  "method":  "REAL_EXACT_FUNCTIONAL_BINDING"
+                                              }
+                              }
+}

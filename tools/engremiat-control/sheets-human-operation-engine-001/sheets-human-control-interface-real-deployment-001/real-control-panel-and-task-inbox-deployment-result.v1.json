@@ -1,0 +1,39 @@
+{
+  "schema": "engremiat.sheets-human-control-interface.real-panel-inbox-deployment-result.v1",
+  "ok": true,
+  "decision": "CONTROL_PANEL_AND_TASK_INBOX_DEPLOYED_AND_VERIFIED",
+  "views": [
+    {
+      "tab": "ENG_CONTROL_PANEL",
+      "managed_range": "A1:H43",
+      "rows_written": 18,
+      "columns_written": 8,
+      "readback_rows": 18,
+      "exact_match": true
+    },
+    {
+      "tab": "ENG_TASK_INBOX",
+      "managed_range": "A1:L500",
+      "rows_written": 3,
+      "columns_written": 12,
+      "readback_rows": 3,
+      "exact_match": true
+    }
+  ],
+  "views_written": 2,
+  "managed_ranges": [
+    "ENG_CONTROL_PANEL!A1:H43",
+    "ENG_TASK_INBOX!A1:L500"
+  ],
+  "source_tabs_preserved": true,
+  "source_tabs_write": false,
+  "values_write": true,
+  "formats_write": true,
+  "protections_write": false,
+  "data_validations_write": false,
+  "real_task_execution": false,
+  "exact_readback_verified": true,
+  "credential_values_printed": false,
+  "spreadsheet_id_printed": false,
+  "google_api_call": true
+}

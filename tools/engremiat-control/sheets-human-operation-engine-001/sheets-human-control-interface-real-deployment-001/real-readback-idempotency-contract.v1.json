@@ -1,0 +1,48 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.real-readback-idempotency-contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001",
+    "targets":  [
+                    {
+                        "tab":  "ENG_CONTROL_PANEL",
+                        "managed_range":  "A1:H43",
+                        "named_range":  "ENG_VIEW_CONTROL_PANEL",
+                        "protection":  "ENGREMIAT_MANAGED_VIEW_ENG_CONTROL_PANEL"
+                    },
+                    {
+                        "tab":  "ENG_TASK_INBOX",
+                        "managed_range":  "A1:L500",
+                        "named_range":  "ENG_VIEW_TASK_INBOX",
+                        "protection":  "ENGREMIAT_MANAGED_VIEW_ENG_TASK_INBOX"
+                    },
+                    {
+                        "tab":  "ENG_TASK_DETAIL",
+                        "managed_range":  "A1:H43",
+                        "named_range":  "ENG_VIEW_TASK_DETAIL",
+                        "protection":  "ENGREMIAT_MANAGED_VIEW_ENG_TASK_DETAIL"
+                    },
+                    {
+                        "tab":  "ENG_DECISION_CENTER",
+                        "managed_range":  "A1:H45",
+                        "named_range":  "ENG_VIEW_DECISION_CENTER",
+                        "protection":  "ENGREMIAT_MANAGED_VIEW_ENG_DECISION_CENTER"
+                    }
+                ],
+    "sources":  [
+                    "STG_ENG_IMPORT_QUEUE",
+                    "DECISIONES",
+                    "STG_ENG_IMPORT_AUDIT"
+                ],
+    "validation_cells":  [
+                             "ENG_DECISION_CENTER!B8",
+                             "ENG_DECISION_CENTER!B14"
+                         ],
+    "expected_decisions":  [
+                               "APPROVE",
+                               "REJECT",
+                               "REQUEST_CHANGES"
+                           ],
+    "authorization_phrase_required":  true,
+    "mode":  "READONLY",
+    "real_sheet_write":  false
+}

@@ -1,0 +1,58 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.real-primary-tabs-report.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-REAL-DEPLOYMENT-001-20260612-155852",
+    "stage_current":  3,
+    "stage_total":  8,
+    "stage_remaining":  5,
+    "decision":  "REAL_PRIMARY_HUMAN_CONTROL_TABS_CREATED_OR_CONFIRMED_AND_READBACK_VERIFIED",
+    "repair":  "MOVE_HIDE_GRIDLINES_INTO_GRID_PROPERTIES_USING_VALID_HIDE_GRIDLINES_FIELD",
+    "result_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-real-deployment-001\\real-primary-tabs-create-result.v1.json",
+    "target_tabs":  [
+                        "ENG_CONTROL_PANEL",
+                        "ENG_TASK_INBOX",
+                        "ENG_TASK_DETAIL",
+                        "ENG_DECISION_CENTER"
+                    ],
+    "created_tabs":  [
+                         "ENG_CONTROL_PANEL",
+                         "ENG_TASK_INBOX",
+                         "ENG_TASK_DETAIL",
+                         "ENG_DECISION_CENTER"
+                     ],
+    "existing_tabs":  [
+
+                      ],
+    "created_count":  4,
+    "existing_count":  0,
+    "target_readback_verified":  true,
+    "source_tabs_preserved":  true,
+    "source_tabs_write":  false,
+    "managed_range_write":  false,
+    "values_write":  false,
+    "formats_write":  false,
+    "protections_write":  false,
+    "explicit_human_authorization":  true,
+    "authorization_reused_from_failed_atomic_attempt":  true,
+    "authorization_phrase_matched":  true,
+    "previous_failed_request_applied_changes":  false,
+    "google_api_call":  true,
+    "google_api_methods":  [
+                               "SPREADSHEETS_GET",
+                               "SPREADSHEETS_BATCH_UPDATE_ADD_SHEET",
+                               "SPREADSHEETS_GET"
+                           ],
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_printed":  false,
+    "credential_path_present":  true,
+    "credential_values_printed":  false,
+    "real_sheet_write":  true,
+    "real_sheet_write_scope":  "ADD_MISSING_TARGET_TABS_ONLY",
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_004_DEPLOY_CONTROL_PANEL_AND_TASK_INBOX",
+    "next":  "BLOCK_004_DEPLOY_CONTROL_PANEL_AND_TASK_INBOX"
+}

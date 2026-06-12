@@ -1,0 +1,72 @@
+{
+  "schema": "engremiat.sheets-human-control-interface.real-primary-tabs-result.v1",
+  "ok": true,
+  "decision": "PRIMARY_HUMAN_CONTROL_TABS_CREATED_OR_CONFIRMED",
+  "tabs_before_count": 43,
+  "tabs_after_count": 47,
+  "target_tabs": [
+    "ENG_CONTROL_PANEL",
+    "ENG_TASK_INBOX",
+    "ENG_TASK_DETAIL",
+    "ENG_DECISION_CENTER"
+  ],
+  "created_tabs": [
+    "ENG_CONTROL_PANEL",
+    "ENG_TASK_INBOX",
+    "ENG_TASK_DETAIL",
+    "ENG_DECISION_CENTER"
+  ],
+  "existing_tabs": [],
+  "created_count": 4,
+  "existing_count": 0,
+  "target_readback_verified": true,
+  "source_tabs_preserved": true,
+  "source_tabs_write": false,
+  "managed_range_write": false,
+  "values_write": false,
+  "formats_write": false,
+  "protections_write": false,
+  "config_write": false,
+  "credential_values_printed": false,
+  "spreadsheet_id_printed": false,
+  "target_metadata": [
+    {
+      "tab": "ENG_CONTROL_PANEL",
+      "sheet_id": 1826704008,
+      "index": 43,
+      "row_count": 500,
+      "column_count": 12,
+      "hide_gridlines": false
+    },
+    {
+      "tab": "ENG_TASK_INBOX",
+      "sheet_id": 1139571831,
+      "index": 44,
+      "row_count": 500,
+      "column_count": 12,
+      "hide_gridlines": false
+    },
+    {
+      "tab": "ENG_TASK_DETAIL",
+      "sheet_id": 807388596,
+      "index": 45,
+      "row_count": 500,
+      "column_count": 12,
+      "hide_gridlines": false
+    },
+    {
+      "tab": "ENG_DECISION_CENTER",
+      "sheet_id": 883981324,
+      "index": 46,
+      "row_count": 500,
+      "column_count": 12,
+      "hide_gridlines": false
+    }
+  ],
+  "google_api_call": true,
+  "google_api_methods": [
+    "SPREADSHEETS_GET",
+    "SPREADSHEETS_BATCH_UPDATE_ADD_SHEET",
+    "SPREADSHEETS_GET"
+  ]
+}

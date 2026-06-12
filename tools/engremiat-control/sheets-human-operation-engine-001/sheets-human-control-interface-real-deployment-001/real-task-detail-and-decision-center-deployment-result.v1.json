@@ -1,0 +1,31 @@
+{
+  "schema": "engremiat.sheets-human-control-interface.real-detail-decision-deployment-result.v1",
+  "ok": true,
+  "decision": "TASK_DETAIL_AND_DECISION_CENTER_DEPLOYED_AND_VERIFIED",
+  "views": [
+    {
+      "tab": "ENG_TASK_DETAIL",
+      "managed_range": "A1:H43",
+      "rows_written": 21,
+      "columns_written": 8,
+      "exact_match": true
+    },
+    {
+      "tab": "ENG_DECISION_CENTER",
+      "managed_range": "A1:H45",
+      "rows_written": 10,
+      "columns_written": 8,
+      "exact_match": true
+    }
+  ],
+  "views_written": 2,
+  "source_tabs_preserved": true,
+  "source_tabs_write": false,
+  "values_write": true,
+  "formats_write": true,
+  "protections_write": false,
+  "data_validations_write": false,
+  "real_task_execution": false,
+  "exact_readback_verified": true,
+  "google_api_call": true
+}

@@ -1,0 +1,122 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.real-deployment-preflight.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-REAL-DEPLOYMENT-001-20260612-155852",
+    "inventory_source":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-oauth-worker\\reports\\real-sheets-readonly-inventory.v1.json",
+    "inventory_last_write_utc":  "2026-06-12T07:43:46.2710456Z",
+    "metadata_age_hours":  6.32,
+    "metadata_fresh_enough":  true,
+    "spreadsheet_id_present":  true,
+    "spreadsheet_id_printed":  false,
+    "credentials_printed":  false,
+    "real_tabs_count":  39,
+    "source_tab_resolution":  [
+                                  {
+                                      "role":  "QUEUE",
+                                      "preferred":  "STG_ENG_IMPORT_QUEUE",
+                                      "resolved":  "STG_ENG_IMPORT_QUEUE",
+                                      "method":  "REAL_EXACT_FUNCTIONAL_BINDING"
+                                  },
+                                  {
+                                      "role":  "REVIEW",
+                                      "preferred":  "DECISIONES",
+                                      "resolved":  "DECISIONES",
+                                      "method":  "REAL_EXACT_FUNCTIONAL_BINDING"
+                                  },
+                                  {
+                                      "role":  "HISTORY",
+                                      "preferred":  "STG_ENG_IMPORT_AUDIT",
+                                      "resolved":  "STG_ENG_IMPORT_AUDIT",
+                                      "method":  "REAL_EXACT_FUNCTIONAL_BINDING"
+                                  }
+                              ],
+    "source_tabs_verified":  {
+                                 "queue":  "STG_ENG_IMPORT_QUEUE",
+                                 "review":  "DECISIONES",
+                                 "history":  "STG_ENG_IMPORT_AUDIT"
+                             },
+    "targets":  [
+                    {
+                        "order":  1,
+                        "tab":  "ENG_CONTROL_PANEL",
+                        "exists":  false,
+                        "action":  "CREATE_TAB",
+                        "managed_range":  "A1:H43",
+                        "columns":  8,
+                        "create_if_missing":  true,
+                        "preserve_outside_managed_range":  true,
+                        "human_editable_ranges":  [
+
+                                                  ],
+                        "protection":  "SYSTEM_MANAGED"
+                    },
+                    {
+                        "order":  2,
+                        "tab":  "ENG_TASK_INBOX",
+                        "exists":  false,
+                        "action":  "CREATE_TAB",
+                        "managed_range":  "A1:L500",
+                        "columns":  12,
+                        "create_if_missing":  true,
+                        "preserve_outside_managed_range":  true,
+                        "human_editable_ranges":  [
+                                                      "A5:A500",
+                                                      "B2",
+                                                      "D2",
+                                                      "F2",
+                                                      "H2"
+                                                  ],
+                        "protection":  "SYSTEM_MANAGED_WITH_CONTROLLED_FILTER_AND_SELECTION_CELLS"
+                    },
+                    {
+                        "order":  3,
+                        "tab":  "ENG_TASK_DETAIL",
+                        "exists":  false,
+                        "action":  "CREATE_TAB",
+                        "managed_range":  "A1:H43",
+                        "columns":  8,
+                        "create_if_missing":  true,
+                        "preserve_outside_managed_range":  true,
+                        "human_editable_ranges":  [
+                                                      "B2"
+                                                  ],
+                        "protection":  "SYSTEM_MANAGED_WITH_SELECTION_CELL"
+                    },
+                    {
+                        "order":  4,
+                        "tab":  "ENG_DECISION_CENTER",
+                        "exists":  false,
+                        "action":  "CREATE_TAB",
+                        "managed_range":  "A1:H45",
+                        "columns":  8,
+                        "create_if_missing":  true,
+                        "preserve_outside_managed_range":  true,
+                        "human_editable_ranges":  [
+                                                      "B8",
+                                                      "B10",
+                                                      "B12",
+                                                      "B14"
+                                                  ],
+                        "protection":  "SYSTEM_MANAGED_WITH_CONTROLLED_HUMAN_INPUT"
+                    }
+                ],
+    "target_tabs_count":  4,
+    "target_tabs_existing":  0,
+    "target_tabs_to_create":  4,
+    "source_tab_collision_count":  0,
+    "managed_ranges_only":  true,
+    "preserve_outside_managed_ranges":  true,
+    "write_authorization_required_next":  true,
+    "write_authorization_phrase":  "AUTORIZO_SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001_MANAGED_RANGES_ONLY_NO_SOURCE_TAB_WRITE",
+    "google_api_call_now":  false,
+    "real_sheet_metadata_evidence_reused":  true,
+    "real_sheet_read_now":  false,
+    "real_sheet_write":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_003_CREATE_OR_NORMALIZE_PRIMARY_TABS_WITH_EXPLICIT_AUTHORIZATION",
+    "next":  "BLOCK_003_CREATE_OR_NORMALIZE_PRIMARY_TABS"
+}

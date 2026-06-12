@@ -1,0 +1,117 @@
+{
+    "schema":  "engremiat.sheets-human-control-interface.real-deployment-contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001",
+    "run_id":  "SHEETS-HUMAN-CONTROL-INTERFACE-REAL-DEPLOYMENT-001-20260612-155852",
+    "stage_current":  1,
+    "stage_total":  8,
+    "stage_remaining":  7,
+    "decision":  "REAL_SHEETS_HUMAN_CONTROL_INTERFACE_DEPLOYMENT_CONTRACT_DEFINED",
+    "purpose":  "Deploy the four validated primary human-control views into the real governed Google Sheets document",
+    "primary_views":  [
+                          "ENG_CONTROL_PANEL",
+                          "ENG_TASK_INBOX",
+                          "ENG_TASK_DETAIL",
+                          "ENG_DECISION_CENTER"
+                      ],
+    "views_count":  4,
+    "source_tabs":  [
+                        "STG_ENG_IMPORT_QUEUE",
+                        "ENG_HUMAN_REVIEW",
+                        "STG_ENG_IMPORT_AUDIT"
+                    ],
+    "source_tabs_readonly":  true,
+    "managed_ranges":  [
+                           {
+                               "tab":  "ENG_CONTROL_PANEL",
+                               "range":  "A1:H43"
+                           },
+                           {
+                               "tab":  "ENG_TASK_INBOX",
+                               "range":  "A1:L500"
+                           },
+                           {
+                               "tab":  "ENG_TASK_DETAIL",
+                               "range":  "A1:H43"
+                           },
+                           {
+                               "tab":  "ENG_DECISION_CENTER",
+                               "range":  "A1:H45"
+                           }
+                       ],
+    "deployment_plan_path":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\sheets-human-control-interface-real-deployment-001\\real-deployment-plan.v1.json",
+    "deployment_policy":  {
+                              "create_missing_tabs":  true,
+                              "overwrite_existing_tabs_entirely":  false,
+                              "managed_ranges_only":  true,
+                              "preserve_outside_managed_ranges":  true,
+                              "apply_formatting":  true,
+                              "apply_data_validation":  true,
+                              "apply_protection":  true,
+                              "post_write_readback_required":  true,
+                              "idempotency_verification_required":  true
+                          },
+    "real_execution_policy":  {
+                                  "interface_deployment_write_allowed_after_preflight":  true,
+                                  "real_task_decision_execution_enabled":  false,
+                                  "durable_entrypoint_reuse_required":  true,
+                                  "exact_authorization_required_for_future_task_execution":  true
+                              },
+    "blocks":  [
+                   {
+                       "block":  1,
+                       "name":  "CONTRACT_AND_DEPLOYMENT_PLAN",
+                       "status":  "COMPLETED"
+                   },
+                   {
+                       "block":  2,
+                       "name":  "REAL_SPREADSHEET_METADATA_AND_TARGET_PREFLIGHT",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  3,
+                       "name":  "CREATE_OR_NORMALIZE_PRIMARY_TABS",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  4,
+                       "name":  "DEPLOY_CONTROL_PANEL_AND_TASK_INBOX",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  5,
+                       "name":  "DEPLOY_TASK_DETAIL_AND_DECISION_CENTER",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  6,
+                       "name":  "APPLY_VALIDATIONS_PROTECTIONS_AND_NAVIGATION",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  7,
+                       "name":  "REAL_READBACK_AND_IDEMPOTENCY_VERIFICATION",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  8,
+                       "name":  "CLOSE_GIT_AND_ASK_NEXT_OBJECTIVE",
+                       "status":  "PENDING"
+                   }
+               ],
+    "authorization":  {
+                          "authorization_required_for_block_002_metadata_read":  false,
+                          "authorization_required_for_first_real_interface_write":  true,
+                          "authorization_phrase":  "AUTORIZO_SHEETS_HUMAN_CONTROL_INTERFACE_REAL_DEPLOYMENT_001_MANAGED_RANGES_ONLY_NO_SOURCE_TAB_WRITE"
+                      },
+    "current_mode":  "LOCAL_ONLY_CONTRACT_NO_GOOGLE_API_NO_SHEET_WRITE_NO_GIT",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "apps_script_execution":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_002_REAL_SPREADSHEET_METADATA_AND_TARGET_PREFLIGHT",
+    "next":  "BLOCK_002_RUN_REAL_SPREADSHEET_METADATA_AND_TARGET_PREFLIGHT"
+}
