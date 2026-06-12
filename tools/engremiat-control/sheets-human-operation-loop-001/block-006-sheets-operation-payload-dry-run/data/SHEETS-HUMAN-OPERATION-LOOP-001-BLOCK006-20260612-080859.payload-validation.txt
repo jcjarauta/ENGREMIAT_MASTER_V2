@@ -1,0 +1,15 @@
+﻿SHEETS OPERATION PAYLOAD · DRY-RUN VALIDATION
+=============================================
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK006-20260612-080859
+payload_id=SHEETS-OPERATION-PAYLOAD-20260612-080859
+ok=True
+blocker_count=0
+blockers=
+allowed_human_write_zones=ZONE_HUMAN_INPUT|ZONE_HUMAN_DECISION
+protected_zones=ZONE_SYSTEM_STATE|ZONE_COMPUTED
+audit_mode=APPEND_ONLY
+operation_mode=DRY_RUN
+execution_authorized=False
+approval_executes_action=False
+google_api_call=False
+real_sheet_write=False

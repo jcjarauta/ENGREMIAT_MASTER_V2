@@ -1,0 +1,7 @@
+﻿"zone_id","purpose","owner","human_read_allowed","human_write_allowed","system_read_allowed","system_write_allowed","immutable","approval_required","execution_allowed"
+"ZONE_HUMAN_INPUT","Datos y decisiones introducidos por una persona autorizada","HUMAN_OPERATOR","True","True","True","False","False","False","False"
+"ZONE_HUMAN_DECISION","Resultado explicito de la revision humana","HUMAN_REVIEWER","True","True","True","False","False","True","False"
+"ZONE_SYSTEM_STATE","Estado operativo mantenido por procesos gobernados","ENGREMIAT_SYSTEM","True","False","True","True","False","True","False"
+"ZONE_COMPUTED","Campos calculados derivados de datos y reglas","ENGREMIAT_CALCULATOR","True","False","True","True","False","False","False"
+"ZONE_AUDIT","Trazabilidad append-only de decisiones y cambios","ENGREMIAT_AUDIT","True","False","True","True","True","False","False"
+"ZONE_CONTROL","Reglas, identificadores y metadatos protegidos","ENGREMIAT_GOVERNANCE","True","False","True","False","True","True","False"

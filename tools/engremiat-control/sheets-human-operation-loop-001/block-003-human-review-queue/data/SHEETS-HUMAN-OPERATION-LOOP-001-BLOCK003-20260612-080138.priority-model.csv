@@ -1,0 +1,5 @@
+﻿"priority","score_min","score_max","target_review_hours","order_rank"
+"CRITICAL","90","100","4","1"
+"HIGH","70","89","24","2"
+"MEDIUM","40","69","72","3"
+"LOW","0","39","168","4"

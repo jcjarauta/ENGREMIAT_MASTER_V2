@@ -1,0 +1,27 @@
+﻿ENGREMIAT · HUMAN OPERATION STATUS
+==================================
+payload_id=SHEETS-OPERATION-PAYLOAD-20260612-080859
+queue_item_id=HRQ-DRYRUN-006-001
+source_record_id=SOURCE-DRYRUN-006-001
+
+HUMAN REVIEW
+------------
+reviewer=human-reviewer-dryrun-001
+human_confirmation=True
+requested_action=APPROVE
+human_decision=APPROVED
+
+STATE
+-----
+current_state=CLAIMED
+proposed_target_state=DECIDED
+review_status=HUMAN_DECISION_RECORDED_DRY_RUN
+
+EXECUTION
+---------
+operation_mode=DRY_RUN
+execution_status=NOT_AUTHORIZED_NOT_EXECUTED
+approval_executes_action=False
+google_api_call=False
+real_sheet_write=False
+external_action_executed=False

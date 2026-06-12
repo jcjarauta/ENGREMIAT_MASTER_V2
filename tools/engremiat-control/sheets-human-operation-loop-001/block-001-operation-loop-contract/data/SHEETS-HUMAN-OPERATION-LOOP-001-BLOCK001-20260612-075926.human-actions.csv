@@ -1,0 +1,8 @@
+﻿"action_order","action_id","visible_name","from_states","to_state","requires_reason","executes_external_action"
+"1","START_REVIEW","INICIAR_REVISION","NEW|PENDING_REVIEW","IN_REVIEW","False","False"
+"2","APPROVE","APROBAR","IN_REVIEW","APPROVED","True","False"
+"3","REJECT","RECHAZAR","IN_REVIEW","REJECTED","True","False"
+"4","DEFER","POSPONER","IN_REVIEW|BLOCKED","DEFERRED","True","False"
+"5","REQUEST_DATA","SOLICITAR_DATOS","IN_REVIEW|BLOCKED","BLOCKED","True","False"
+"6","REOPEN","REABRIR","DEFERRED|BLOCKED","PENDING_REVIEW","True","False"
+"7","CLOSE_REVIEW","CERRAR_REVISION","APPROVED|REJECTED","CLOSED","False","False"

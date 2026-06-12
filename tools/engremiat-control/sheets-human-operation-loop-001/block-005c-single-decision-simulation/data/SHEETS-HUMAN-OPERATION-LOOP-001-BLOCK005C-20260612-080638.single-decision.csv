@@ -1,0 +1,2 @@
+﻿"queue_item_id","source_record_id","source_state","action","decision","target_state","reviewer","human_confirmation","transition_id","decided_at","decision_valid","approval_registered","approval_executes_action","external_action_executed","operational_execution_allowed","real_sheet_write"
+"HRQ-SIM-005C-001","SOURCE-SIM-005C-001","CLAIMED","APPROVE","APPROVED","DECIDED","human-reviewer-simulation-001","True","TRANSITION-B5BA1263FEBA","2026-06-12T06:06:38.2245603Z","True","True","False","False","False","False"

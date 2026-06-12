@@ -1,0 +1,25 @@
+﻿SHEETS HUMAN OPERATION LOOP · READ/WRITE CONTRACT
+=================================================
+objective=SHEETS_HUMAN_OPERATION_LOOP_001
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK002-20260612-080037
+
+HUMAN WRITABLE ZONES
+--------------------
+ZONE_HUMAN_INPUT
+ZONE_HUMAN_DECISION
+
+SYSTEM OR PROTECTED ZONES
+-------------------------
+ZONE_SYSTEM_STATE
+ZONE_COMPUTED
+ZONE_AUDIT
+ZONE_CONTROL
+
+CORE CONTRACT
+-------------
+human_input_does_not_execute_action=True
+human_approval_does_not_execute_action=True
+automatic_approval_allowed=False
+audit_is_append_only=True
+unauthorized_write_policy=FAIL_CLOSED_NO_GO
+google_sheet_write_allowed_in_this_block=False

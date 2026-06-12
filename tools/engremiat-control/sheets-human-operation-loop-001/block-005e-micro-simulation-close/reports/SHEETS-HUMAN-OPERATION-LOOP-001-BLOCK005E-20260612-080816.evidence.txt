@@ -1,0 +1,11 @@
+﻿SHEETS HUMAN OPERATION LOOP · BLOCK 005 MICRO-SIMULATION EVIDENCE
+================================================================
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK005E-20260612-080816
+cycle_path=QUEUED|CLAIMED|DECIDED|CLOSED
+validated_blocks=005B|005C|005D
+
+SOURCE SUMMARIES
+----------------
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-005b-single-transition-simulation\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK005B-20260612-080603.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-005c-single-decision-simulation\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK005C-20260612-080638.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-005d-single-close-simulation\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK005D-20260612-080740.summary.txt

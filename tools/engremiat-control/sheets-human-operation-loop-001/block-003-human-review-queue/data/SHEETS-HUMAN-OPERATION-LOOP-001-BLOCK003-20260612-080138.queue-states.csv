@@ -1,0 +1,7 @@
+﻿"queue_state","description","human_visible","human_claim_allowed","decision_allowed","terminal"
+"QUEUED","Elemento disponible para revision","True","True","False","False"
+"CLAIMED","Elemento asignado a una persona revisora","True","False","True","False"
+"NEEDS_DATA","Revision detenida hasta recibir informacion adicional","True","False","False","False"
+"DECIDED","Decision humana registrada sin ejecucion operativa","True","False","False","False"
+"CLOSED","Revision cerrada y conservada como evidencia","True","False","False","True"
+"BLOCKED","Elemento bloqueado por incumplimiento de contrato","True","False","False","False"

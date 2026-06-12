@@ -1,0 +1,25 @@
+﻿SHEETS HUMAN OPERATION LOOP 001
+CONTRATO DEL CICLO OPERATIVO
+
+Flujo:
+NUEVA
+PENDIENTE_REVISION
+EN_REVISION
+APROBADA | RECHAZADA | POSPUESTA | BLOQUEADA
+CERRADA
+
+Acciones humanas:
+- INICIAR_REVISION
+- APROBAR
+- RECHAZAR
+- POSPONER
+- SOLICITAR_DATOS
+- REABRIR
+- CERRAR_REVISION
+
+Principios:
+- aprobar no significa ejecutar
+- toda decision requiere trazabilidad
+- no hay acciones externas
+- STG permanece en solo lectura
+- datos incompletos producen NO_GO

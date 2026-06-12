@@ -1,0 +1,8 @@
+﻿"action","allowed_source_state","target_state","required_decision","reviewer_required","reason_required","confirmation_required","executes_action"
+"START_REVIEW","QUEUED","CLAIMED","","True","False","True","False"
+"APPROVE","CLAIMED","DECIDED","APPROVED","True","False","True","False"
+"REJECT","CLAIMED","DECIDED","REJECTED","True","True","True","False"
+"DEFER","CLAIMED","DECIDED","DEFERRED","True","True","True","False"
+"REQUEST_DATA","CLAIMED","NEEDS_DATA","DATA_REQUESTED","True","True","True","False"
+"REOPEN","NEEDS_DATA|CLOSED|BLOCKED","QUEUED","REOPENED","True","True","True","False"
+"CLOSE_REVIEW","DECIDED","CLOSED","REVIEW_CLOSED","True","False","True","False"

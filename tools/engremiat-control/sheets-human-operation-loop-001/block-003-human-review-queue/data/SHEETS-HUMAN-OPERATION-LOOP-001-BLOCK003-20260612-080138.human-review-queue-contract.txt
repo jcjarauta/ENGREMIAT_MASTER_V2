@@ -1,0 +1,37 @@
+﻿SHEETS HUMAN OPERATION LOOP · HUMAN REVIEW QUEUE
+================================================
+objective=SHEETS_HUMAN_OPERATION_LOOP_001
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK003-20260612-080138
+
+QUEUE PURPOSE
+-------------
+Presentar elementos gobernados a una persona revisora.
+Registrar asignacion, comentario, decision y trazabilidad.
+No ejecutar automaticamente ninguna accion aprobada.
+
+QUEUE ORDER
+-----------
+1. priority order_rank ascendente
+2. priority_score descendente
+3. created_at ascendente
+4. queue_item_id ascendente
+
+CLAIM CONTRACT
+--------------
+Solo QUEUED puede pasar a CLAIMED.
+El claim requiere identidad humana.
+Un elemento activo solo puede tener una persona revisora.
+
+DECISION CONTRACT
+-----------------
+Solo CLAIMED admite APPROVE, REJECT, DEFER o REQUEST_DATA.
+REJECT, DEFER y REQUEST_DATA requieren motivo.
+APPROVE registra decision pero no ejecuta acciones.
+
+SAFETY
+------
+automatic_approval_allowed=False
+approval_executes_action=False
+external_execution_actions_count=0
+real_sheet_write_allowed=False
+failure_policy=FAIL_CLOSED_NO_GO

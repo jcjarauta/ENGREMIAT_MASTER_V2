@@ -1,0 +1,49 @@
+﻿SHEETS HUMAN OPERATION LOOP · REVIEW FORM CONTRACT
+==================================================
+objective=SHEETS_HUMAN_OPERATION_LOOP_001
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK004-20260612-080259
+
+FORM PURPOSE
+------------
+Recoger una accion y decision humana trazable.
+Validar que el actor, estado, decision y motivo sean coherentes.
+Separar los campos editables de los campos protegidos.
+
+HUMAN EDITABLE ZONES
+--------------------
+ZONE_HUMAN_INPUT
+ZONE_HUMAN_DECISION
+
+PROTECTED ZONES
+---------------
+ZONE_CONTROL
+ZONE_SYSTEM_STATE
+ZONE_COMPUTED
+ZONE_AUDIT
+
+SUBMIT CONTRACT
+---------------
+reviewer_required=True
+human_confirmation_required=True
+state_action_validation_required=True
+decision_action_validation_required=True
+conditional_reason_validation_required=True
+
+EXECUTION CONTRACT
+------------------
+form_submit_executes_action=False
+approval_executes_action=False
+external_execution_actions_count=0
+operational_execution_allowed=False
+
+FAILURE CONTRACT
+----------------
+validation_failure_policy=FAIL_CLOSED_NO_GO
+partial_submission_allowed=False
+automatic_approval_allowed=False
+
+SHEETS CONTRACT
+---------------
+google_api_call=False
+real_sheet_read_by_script=False
+real_sheet_write_by_script=False

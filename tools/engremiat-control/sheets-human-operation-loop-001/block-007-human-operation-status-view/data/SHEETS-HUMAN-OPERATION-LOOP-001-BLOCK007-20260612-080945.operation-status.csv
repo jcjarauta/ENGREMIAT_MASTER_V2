@@ -1,0 +1,2 @@
+﻿"payload_id","queue_item_id","source_record_id","current_state","requested_action","human_decision","proposed_target_state","reviewer","human_confirmation","operation_mode","review_status","execution_status","approval_executes_action","google_api_call","real_sheet_write","external_action_executed"
+"SHEETS-OPERATION-PAYLOAD-20260612-080859","HRQ-DRYRUN-006-001","SOURCE-DRYRUN-006-001","CLAIMED","APPROVE","APPROVED","DECIDED","human-reviewer-dryrun-001","True","DRY_RUN","HUMAN_DECISION_RECORDED_DRY_RUN","NOT_AUTHORIZED_NOT_EXECUTED","False","False","False","False"

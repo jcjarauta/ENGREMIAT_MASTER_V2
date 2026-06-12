@@ -1,0 +1,2 @@
+﻿"queue_item_id","source_record_id","source_state","action","decision","target_state","reviewer","human_confirmation","transition_id","closed_at","close_valid","review_closed","external_action_executed","operational_execution_allowed","real_sheet_write"
+"HRQ-SIM-005D-001","SOURCE-SIM-005D-001","DECIDED","CLOSE_REVIEW","REVIEW_CLOSED","CLOSED","human-reviewer-simulation-001","True","TRANSITION-F86E1211FC14","2026-06-12T06:07:40.3805517Z","True","True","False","False","False"

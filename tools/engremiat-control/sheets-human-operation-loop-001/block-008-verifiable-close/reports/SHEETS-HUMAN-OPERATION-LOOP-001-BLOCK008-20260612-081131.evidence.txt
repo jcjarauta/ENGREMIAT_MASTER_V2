@@ -1,0 +1,25 @@
+﻿SHEETS HUMAN OPERATION LOOP 001 · VERIFIABLE CLOSE EVIDENCE
+===========================================================
+run_id=SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK008-20260612-081131
+validated_blocks=001|002|003|004|005E|006|007
+human_cycle=QUEUED|CLAIMED|DECIDED|CLOSED
+approval_registers_decision_only=True
+approval_executes_action=False
+external_action_executed=False
+google_api_call=False
+real_sheet_write_by_script=False
+git_write=False
+
+SOURCE SUMMARIES
+----------------
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-001-operation-loop-contract\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK001-20260612-075926.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-002-read-write-zones\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK002-20260612-080037.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-003-human-review-queue\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK003-20260612-080138.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-004-review-form-and-validation\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK004-20260612-080259.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-005e-micro-simulation-close\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK005E-20260612-080816.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-006-sheets-operation-payload-dry-run\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK006-20260612-080859.summary.txt
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-007-human-operation-status-view\reports\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK007-20260612-080945.summary.txt
+
+STATUS VIEW
+-----------
+C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\sheets-human-operation-loop-001\block-007-human-operation-status-view\view\SHEETS-HUMAN-OPERATION-LOOP-001-BLOCK007-20260612-080945.operation-status.html

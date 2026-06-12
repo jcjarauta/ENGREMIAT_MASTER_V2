@@ -1,0 +1,2 @@
+﻿"queue_item_id","source_record_id","source_state","action","target_state","reviewer","human_confirmation","transition_id","transition_at","transition_valid","external_action_executed","real_sheet_write"
+"HRQ-SIM-005B-001","SOURCE-SIM-005B-001","QUEUED","START_REVIEW","CLAIMED","human-reviewer-simulation-001","True","TRANSITION-1F97695DF692","2026-06-12T06:06:03.7673042Z","True","False","False"

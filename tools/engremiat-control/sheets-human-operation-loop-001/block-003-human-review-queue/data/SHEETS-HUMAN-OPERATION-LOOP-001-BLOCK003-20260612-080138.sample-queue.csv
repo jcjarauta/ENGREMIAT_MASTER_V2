@@ -1,0 +1,2 @@
+﻿"queue_item_id","source_record_id","queue_state","priority","priority_score","requested_action","reviewer","human_comment","decision","decision_reason","created_at","claimed_at","reviewed_at","last_transition_id","sample_only","operational_execution_allowed"
+"HRQ-SAMPLE-001","SOURCE-SAMPLE-001","QUEUED","HIGH","75","START_REVIEW","","Elemento de ejemplo para validar el contrato de cola","","","2026-06-12T06:01:38.8340645Z","","","TRACE-SAMPLE-001","True","False"
