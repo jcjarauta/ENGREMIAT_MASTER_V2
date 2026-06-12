@@ -1,0 +1,18 @@
+{
+    "schema":  "engremiat.sheets-operational-control-panel.launcher-packet.v1",
+    "ok":  true,
+    "mode":  "DRY_RUN_PREPARE",
+    "queue_id":  "ENG-NO-WRITE-SMOKE-20260612-152306",
+    "queue_row_number":  999999,
+    "queue_current_status":  "PENDING",
+    "decision":  "REQUEST_CHANGES",
+    "queue_target_status":  "CHANGES_REQUESTED",
+    "authorization_required":  true,
+    "authorization_granted":  false,
+    "real_execution_allowed":  false,
+    "engine_binding_required":  true,
+    "duplicate_policy":  "BLOCK",
+    "stale_state_policy":  "BLOCK",
+    "rollback_required":  true,
+    "real_sheet_write":  false
+}

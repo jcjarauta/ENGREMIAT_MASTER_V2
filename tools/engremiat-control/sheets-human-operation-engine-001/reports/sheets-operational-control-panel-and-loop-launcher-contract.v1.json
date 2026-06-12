@@ -1,0 +1,149 @@
+{
+    "schema":  "engremiat.sheets-operational-control-panel-and-loop-launcher.contract.v1",
+    "ok":  true,
+    "objective":  "SHEETS_OPERATIONAL_CONTROL_PANEL_AND_LOOP_LAUNCHER_001",
+    "run_id":  "SHEETS-OPERATIONAL-CONTROL-PANEL-LOOP-LAUNCHER-001-20260612-151357",
+    "stage_current":  1,
+    "stage_total":  8,
+    "stage_remaining":  7,
+    "decision":  "OPERATIONAL_CONTROL_PANEL_AND_REUSABLE_LAUNCHER_CONTRACT_CREATED",
+    "purpose":  "Convert Sheets into the first daily human control and supervision space for Engremiat while reusing the governed human operation engine",
+    "source_engine":  {
+                          "objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+                          "close_evidence":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-reusable-governed-human-operation-loop-close.v1.json",
+                          "readiness":  100,
+                          "real_cycles_verified":  2,
+                          "atomic_batches_verified":  2,
+                          "total_governed_mutations_verified":  6,
+                          "selector_reusable":  true,
+                          "generic_atomic_executor_verified":  true
+                      },
+    "architecture":  {
+                         "sheets_role":  "CONTROL_SUPERVISION_AND_PERSISTENCE",
+                         "engine_role":  "GOVERNANCE_PREFLIGHT_AUTHORIZATION_AND_EXECUTION",
+                         "panel_role":  "HUMAN_OPERATIONAL_EXPERIENCE",
+                         "telegram_future_role":  "REMOTE_INTERFACE_OVER_THE_SAME_ENGINE",
+                         "duplicate_business_logic_allowed":  false,
+                         "launcher_must_reuse_existing_engine":  true
+                     },
+    "panel":  {
+                  "mode":  "LOCAL_HTML_FROM_READONLY_SHEETS_SNAPSHOT",
+                  "output_dir":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\operational-control-panel-and-loop-launcher-001",
+                  "html_file":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\operational-control-panel-and-loop-launcher-001\\index.html",
+                  "auto_open_html":  true,
+                  "sections":  [
+                                   "SYSTEM_STATUS",
+                                   "QUEUE_SUMMARY",
+                                   "PENDING_TASKS",
+                                   "RECENT_REVIEWS",
+                                   "RECENT_HISTORY",
+                                   "HUMAN_PRESSURE",
+                                   "NEXT_RECOMMENDED_ACTION"
+                               ],
+                  "required_metrics":  [
+                                           "queue_total",
+                                           "pending_count",
+                                           "approved_count",
+                                           "rejected_count",
+                                           "changes_requested_count",
+                                           "review_total",
+                                           "history_total",
+                                           "human_pressure_score"
+                                       ],
+                  "must_render_without_external_dependencies":  true,
+                  "must_embed_snapshot_data":  true,
+                  "must_not_expose_credentials":  true
+              },
+    "launcher":  {
+                     "mode":  "LOCAL_REUSABLE_GOVERNED_LOOP_LAUNCHER",
+                     "entry_script":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\operational-control-panel-and-loop-launcher-001\\run-governed-human-loop.ps1",
+                     "selector_mode":  "NEXT_PENDING_QUEUE_ITEM",
+                     "supported_decisions":  [
+                                                 "APPROVE",
+                                                 "REJECT",
+                                                 "REQUEST_CHANGES"
+                                             ],
+                     "must_show_selected_queue_item":  true,
+                     "must_require_explicit_human_decision":  true,
+                     "must_require_exact_authorization_phrase":  true,
+                     "must_call_existing_governed_engine":  true,
+                     "must_not_duplicate_execution_logic":  true,
+                     "dry_run_default":  true,
+                     "real_write_default":  false
+                 },
+    "snapshot":  {
+                     "source_tabs":  [
+                                         "STG_ENG_IMPORT_QUEUE",
+                                         "STG_ENG_REVIEW",
+                                         "STG_ENG_HISTORY"
+                                     ],
+                     "read_only":  true,
+                     "google_api_call_allowed_from_block_002":  true,
+                     "real_sheet_write_allowed":  false,
+                     "config_write_allowed":  false,
+                     "credential_values_must_not_be_logged":  true
+                 },
+    "governance":  {
+                       "duplicate_policy":  "BLOCK",
+                       "stale_state_policy":  "BLOCK",
+                       "rollback_required_before_real_write":  true,
+                       "explicit_human_authorization_required":  true,
+                       "one_queue_update_max":  1,
+                       "one_review_append_max":  1,
+                       "one_history_append_max":  1,
+                       "config_mutations_max":  0,
+                       "git_deferred_until_stage_close":  true
+                   },
+    "blocks":  [
+                   {
+                       "block":  1,
+                       "name":  "CONTRACT",
+                       "status":  "COMPLETED"
+                   },
+                   {
+                       "block":  2,
+                       "name":  "READONLY_SNAPSHOT",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  3,
+                       "name":  "OPERATIONAL_METRICS",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  4,
+                       "name":  "LOCAL_HTML_PANEL",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  5,
+                       "name":  "REUSABLE_LAUNCHER",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  6,
+                       "name":  "ENGINE_BINDING",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  7,
+                       "name":  "NO_WRITE_SMOKE",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  8,
+                       "name":  "CLOSE_GIT_AND_VALUE_TELEGRAM_LAYER",
+                       "status":  "PENDING"
+                   }
+               ],
+    "current_mode":  "LOCAL_ONLY_CONTRACT_NO_GOOGLE_API_NO_WRITE_NO_GIT",
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_002_READONLY_OPERATIONAL_SNAPSHOT",
+    "next":  "BLOCK_002_BUILD_READONLY_OPERATIONAL_SNAPSHOT"
+}

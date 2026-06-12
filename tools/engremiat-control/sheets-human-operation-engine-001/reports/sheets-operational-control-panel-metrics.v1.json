@@ -1,0 +1,64 @@
+{
+    "schema":  "engremiat.sheets-operational-control-panel.metrics.v1",
+    "ok":  true,
+    "objective":  "SHEETS_OPERATIONAL_CONTROL_PANEL_AND_LOOP_LAUNCHER_001",
+    "run_id":  "SHEETS-OPERATIONAL-CONTROL-PANEL-LOOP-LAUNCHER-001-20260612-151357",
+    "stage_current":  3,
+    "stage_total":  8,
+    "stage_remaining":  5,
+    "decision":  "OPERATIONAL_METRICS_CALCULATED_FROM_READONLY_SNAPSHOT",
+    "calculated_at":  "2026-06-12T13:16:50.9850449Z",
+    "snapshot_source":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\sheets-human-operation-engine-001\\reports\\sheets-operational-control-panel-readonly-snapshot.v1.json",
+    "resolved_tabs":  {
+                          "queue":  "STG_ENG_IMPORT_QUEUE",
+                          "review":  "ENG_HUMAN_REVIEW",
+                          "history":  "STG_ENG_IMPORT_AUDIT"
+                      },
+    "metrics":  {
+                    "queue_total":  2,
+                    "pending_count":  0,
+                    "approved_count":  2,
+                    "rejected_count":  0,
+                    "changes_requested_count":  0,
+                    "other_status_count":  0,
+                    "unresolved_count":  0,
+                    "review_total":  3,
+                    "history_total":  2,
+                    "human_pressure_score":  0,
+                    "operational_health":  "STABLE"
+                },
+    "queue_status_counts":  {
+                                "PENDING":  0,
+                                "APPROVED":  2,
+                                "REJECTED":  0,
+                                "CHANGES_REQUESTED":  0,
+                                "OTHER":  0
+                            },
+    "review_decision_counts":  {
+                                   "APPROVE":  3,
+                                   "REJECT":  0,
+                                   "REQUEST_CHANGES":  0,
+                                   "OTHER":  0
+                               },
+    "history_action_counts":  [
+                                  {
+                                      "action":  "QUEUE_APPROVED",
+                                      "count":  2
+                                  }
+                              ],
+    "pending_items":  [
+
+                      ],
+    "next_recommended_action":  "REFRESH_SNAPSHOT_AND_MONITOR",
+    "panel_ready":  true,
+    "credentials_exposed":  false,
+    "google_api_call":  false,
+    "real_sheet_read":  false,
+    "real_sheet_write":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_004_LOCAL_HTML_PANEL",
+    "next":  "BLOCK_004_BUILD_AND_OPEN_LOCAL_HTML_PANEL"
+}

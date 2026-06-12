@@ -1,0 +1,242 @@
+{
+    "schema":  "engremiat.sheets-operational-control-panel.readonly-snapshot.v1",
+    "ok":  true,
+    "objective":  "SHEETS_OPERATIONAL_CONTROL_PANEL_AND_LOOP_LAUNCHER_001",
+    "run_id":  "SHEETS-OPERATIONAL-CONTROL-PANEL-LOOP-LAUNCHER-001-20260612-151357",
+    "stage_current":  2,
+    "stage_total":  8,
+    "stage_remaining":  6,
+    "decision":  "READONLY_OPERATIONAL_SNAPSHOT_CAPTURED_WITH_REAL_TAB_DISCOVERY",
+    "captured_at":  "2026-06-12T13:15:26.3725744Z",
+    "snapshot_mode":  "REAL_SHEETS_METADATA_DISCOVERY_AND_READONLY_BATCH_GET",
+    "available_tabs":  [
+                           "BANDEJA_TAREAS",
+                           "DECISIONES",
+                           "CONOCIMIENTO",
+                           "materialization-manifest",
+                           "README-MATERIALIZACION",
+                           "PANEL_CONTROL",
+                           "STG_ENG_PROCESSES",
+                           "STG_ENG_PROJECTS",
+                           "control_dashboard",
+                           "control_dashboard_review_log",
+                           "control_dashboard_deep_audit_log",
+                           "control_dashboard_render_log",
+                           "control_bridge_inbox",
+                           "control_bridge_log",
+                           "control_snapshot",
+                           "control_state",
+                           "ENG_HI18_AUDIT_LOG",
+                           "ENG_HI19_READBACK_REPORT",
+                           "STG_ENG_GATES",
+                           "STG_ENG_RUNS",
+                           "STG_ENG_TASKS",
+                           "STG_ENG_DICTIONARY",
+                           "STG_ENG_MANUALS",
+                           "REVISION_MANUAL_STG_TARGET",
+                           "STG_ENG_SECTIONS",
+                           "STG_ENG_CONTROL_INDEX",
+                           "STG_ENG_IMPORT_AUDIT",
+                           "STG_ENG_IMPORT_QUEUE",
+                           "ENG_HI18_CONTROL_BRIDGE",
+                           "ENG_HI23B_FINAL_STAGING_AUDIT",
+                           "control_events",
+                           "control_projects",
+                           "control_tasks",
+                           "control_workers",
+                           "control_human_gates",
+                           "control_evidence",
+                           "control_actions",
+                           "control_config",
+                           "control_review_log",
+                           "ENG_HUMAN_QUEUE",
+                           "ENG_HUMAN_REVIEW",
+                           "ENG_HUMAN_HISTORY",
+                           "ENG_HUMAN_CONFIG"
+                       ],
+    "resolved_tabs":  {
+                          "queue":  "STG_ENG_IMPORT_QUEUE",
+                          "review":  "ENG_HUMAN_REVIEW",
+                          "history":  "STG_ENG_IMPORT_AUDIT"
+                      },
+    "tabs_count":  3,
+    "queue":  {
+                  "tab":  "STG_ENG_IMPORT_QUEUE",
+                  "header_count":  11,
+                  "headers":  [
+                                  "queue_id",
+                                  "created_at",
+                                  "source",
+                                  "target_tab",
+                                  "status",
+                                  "priority",
+                                  "rows_count",
+                                  "payload_ref",
+                                  "approved_by_human",
+                                  "processed_at",
+                                  "result_message"
+                              ],
+                  "row_count":  2,
+                  "rows":  [
+                               {
+                                   "sheet_row":  2,
+                                   "values":  [
+                                                  "ENG-FIRST-WRITE-20260612-134035",
+                                                  "2026-06-12T11:40:35.9427392Z",
+                                                  "SHEETS_FIRST_GOVERNED_REAL_WRITE_001",
+                                                  "",
+                                                  "APPROVED",
+                                                  "NORMAL",
+                                                  "",
+                                                  "",
+                                                  "",
+                                                  "",
+                                                  ""
+                                              ]
+                               },
+                               {
+                                   "sheet_row":  3,
+                                   "values":  [
+                                                  "ENG-REUSABLE-LOOP-20260612-150327",
+                                                  "2026-06-12T13:03:27.0125936Z",
+                                                  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001_SECOND_REAL_TASK",
+                                                  "",
+                                                  "APPROVED",
+                                                  "NORMAL",
+                                                  "",
+                                                  "",
+                                                  "",
+                                                  "",
+                                                  ""
+                                              ]
+                               }
+                           ]
+              },
+    "review":  {
+                   "tab":  "ENG_HUMAN_REVIEW",
+                   "header_count":  10,
+                   "headers":  [
+                                   "review_id",
+                                   "queue_item_id",
+                                   "reviewed_at",
+                                   "reviewer",
+                                   "decision",
+                                   "status",
+                                   "comment",
+                                   "required_change",
+                                   "evidence_ref",
+                                   "next_action"
+                               ],
+                   "row_count":  3,
+                   "rows":  [
+                                {
+                                    "sheet_row":  2,
+                                    "values":  [
+                                                   "REVIEW-20260612-105353",
+                                                   "HUMAN-OP-20260612-104919",
+                                                   "2026-06-12T10:53:53",
+                                                   "HUMAN_OPERATOR",
+                                                   "APPROVE",
+                                                   "APPROVED",
+                                                   "FIRST_REAL_HUMAN_OPERATION_REVIEW",
+                                                   "",
+                                                   "tools\\engremiat-control\\sheets-oauth-worker\\reports\\human-core-first-operation-write-result.v1.json",
+                                                   "WRITE_REVIEW_UPDATE_QUEUE_AND_HISTORY"
+                                               ]
+                                },
+                                {
+                                    "sheet_row":  3,
+                                    "values":  [
+                                                   "REVIEW-ENG-FIRST-WRITE-20260612-134035",
+                                                   "",
+                                                   "2026-06-12T12:53:19.8850390Z",
+                                                   "ENGREMIAT_HUMAN_OPERATOR",
+                                                   "APPROVE",
+                                                   "COMPLETED",
+                                                   "",
+                                                   "",
+                                                   "",
+                                                   ""
+                                               ]
+                                },
+                                {
+                                    "sheet_row":  4,
+                                    "values":  [
+                                                   "REVIEW-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+                                                   "",
+                                                   "2026-06-12T13:07:24.0862834Z",
+                                                   "ENGREMIAT_HUMAN_OPERATOR",
+                                                   "APPROVE",
+                                                   "COMPLETED",
+                                                   "",
+                                                   "",
+                                                   "",
+                                                   ""
+                                               ]
+                                }
+                            ]
+               },
+    "history":  {
+                    "tab":  "STG_ENG_IMPORT_AUDIT",
+                    "header_count":  11,
+                    "headers":  [
+                                    "audit_id",
+                                    "created_at",
+                                    "action",
+                                    "status",
+                                    "target_tab",
+                                    "rows_expected",
+                                    "rows_written",
+                                    "warnings_count",
+                                    "errors_count",
+                                    "payload_sha256",
+                                    "message"
+                                ],
+                    "row_count":  2,
+                    "rows":  [
+                                 {
+                                     "sheet_row":  2,
+                                     "values":  [
+                                                    "AUDIT-ENG-FIRST-WRITE-20260612-134035",
+                                                    "2026-06-12T12:53:19.8850390Z",
+                                                    "QUEUE_APPROVED",
+                                                    "",
+                                                    "STG_ENG_IMPORT_QUEUE",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "Primera aprobacion humana gobernada real"
+                                                ]
+                                 },
+                                 {
+                                     "sheet_row":  3,
+                                     "values":  [
+                                                    "AUDIT-APPROVE-ENG-REUSABLE-LOOP-20260612-150327",
+                                                    "2026-06-12T13:07:24.0862834Z",
+                                                    "QUEUE_APPROVED",
+                                                    "",
+                                                    "STG_ENG_IMPORT_QUEUE",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "Reusable governed human operation APPROVE | queue_id=ENG-REUSABLE-LOOP-20260612-150327"
+                                                ]
+                                 }
+                             ]
+                },
+    "total_rows":  7,
+    "credentials_exposed":  false,
+    "google_api_call":  true,
+    "real_sheet_read":  true,
+    "real_sheet_write":  false,
+    "config_write":  false,
+    "git_write":  false,
+    "commit":  false,
+    "push":  false,
+    "gate":  "OPEN_READY_FOR_BLOCK_003_OPERATIONAL_METRICS",
+    "next":  "BLOCK_003_BUILD_OPERATIONAL_METRICS"
+}

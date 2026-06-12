@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="engremiat-panel-id" content="ENGREMIAT_OPERATIONAL_CONTROL_PANEL_V1">
+<title>ENGREMIAT - Control operativo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#eef2f7;color:#172033}.wrap{max-width:1280px;margin:auto;padding:24px}.hero{background:linear-gradient(135deg,#172033,#33486c);color:white;padding:28px;border-radius:18px;margin-bottom:18px}.hero h1{margin:0 0 8px;font-size:30px}.hero p{margin:4px 0;opacity:.88}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:18px}.card,.panel{background:white;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(23,32,51,.08)}.card .value{font-size:30px;font-weight:700;margin-top:8px}.card .label{font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.05em}.panel{margin-bottom:18px}.panel h2{margin:0 0 14px;font-size:19px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}.health{display:inline-block;padding:7px 12px;border-radius:999px;background:#dcfce7;color:#166534;font-weight:700}.pressure{height:14px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:10px}.pressure span{display:block;height:100%;background:#33486c}.next{padding:15px;border-left:5px solid #33486c;background:#f8fafc;border-radius:10px;font-weight:600}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px;border-bottom:1px solid #e2e8f0}th{color:#64748b;font-size:12px;text-transform:uppercase}code{font-size:12px;word-break:break-all}.status{padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700}.approved{background:#dcfce7;color:#166534}.pending{background:#fef3c7;color:#92400e}.rejected{background:#fee2e2;color:#991b1b}.changes_requested{background:#dbeafe;color:#1e40af}.footer{font-size:12px;color:#64748b;text-align:center;padding:8px}@media(max-width:800px){.layout{grid-template-columns:1fr}.wrap{padding:12px}.hero{padding:20px}}
+</style>
+</head>
+<body>
+<!-- SECTION_SYSTEM_STATUS -->
+<main class="wrap">
+<section class="hero"><h1>ENGREMIAT - Control operativo</h1><p>Sheets como espacio de supervision humana y persistencia gobernada.</p><p>Actualizado: 
+2026-06-12 15:18:48
+ - Fuente readonly real</p></section>
+<!-- SECTION_QUEUE_SUMMARY -->
+<section class="grid">
+<article class="card"><div class="label">Tareas totales</div><div class="value">
+2
+</div></article>
+<article class="card"><div class="label">Pendientes</div><div class="value">
+0
+</div></article>
+<article class="card"><div class="label">Aprobadas</div><div class="value">
+2
+</div></article>
+<article class="card"><div class="label">Rechazadas</div><div class="value">
+0
+</div></article>
+<article class="card"><div class="label">Cambios solicitados</div><div class="value">
+0
+</div></article>
+<article class="card"><div class="label">Revisiones</div><div class="value">
+3
+</div></article>
+<article class="card"><div class="label">Eventos historicos</div><div class="value">
+2
+</div></article>
+</section>
+<section class="layout">
+<!-- SECTION_HUMAN_PRESSURE -->
+<article class="panel"><h2>Estado del sistema</h2><span class="health">
+STABLE
+</span><p>Presion humana: <strong>
+0
+/100</strong></p><div class="pressure"><span style="width:
+0
+%"></span></div></article>
+<!-- SECTION_NEXT_RECOMMENDED_ACTION -->
+<article class="panel"><h2>Siguiente accion recomendada</h2><div class="next">
+REFRESH_SNAPSHOT_AND_MONITOR
+</div><p>El lanzador reutilizable se conectara al motor gobernado existente.</p></article>
+</section>
+<!-- SECTION_PENDING_TASKS -->
+<section class="panel"><h2>Cola operativa</h2><table><thead><tr><th>Fila</th><th>Queue ID</th><th>Estado</th></tr></thead><tbody>
+<tr><td>2</td><td><code>ENG-FIRST-WRITE-20260612-134035</code></td><td><span class="status approved">APPROVED</span></td></tr><tr><td>3</td><td><code>ENG-REUSABLE-LOOP-20260612-150327</code></td><td><span class="status approved">APPROVED</span></td></tr>
+</tbody></table></section>
+<section class="layout">
+<!-- SECTION_RECENT_REVIEWS -->
+<article class="panel"><h2>Revisiones recientes</h2><table><thead><tr><th>Fila</th><th>Review ID</th><th>Decision</th></tr></thead><tbody>
+<tr><td>4</td><td><code>REVIEW-APPROVE-ENG-REUSABLE-LOOP-20260612-150327</code></td><td>APPROVE</td></tr><tr><td>3</td><td><code>REVIEW-ENG-FIRST-WRITE-20260612-134035</code></td><td>APPROVE</td></tr><tr><td>2</td><td><code>REVIEW-20260612-105353</code></td><td>APPROVE</td></tr>
+</tbody></table></article>
+<!-- SECTION_RECENT_HISTORY -->
+<article class="panel"><h2>Historial reciente</h2><table><thead><tr><th>Fila</th><th>Audit ID</th><th>Accion</th></tr></thead><tbody>
+<tr><td>3</td><td><code>AUDIT-APPROVE-ENG-REUSABLE-LOOP-20260612-150327</code></td><td>QUEUE_APPROVED</td></tr><tr><td>2</td><td><code>AUDIT-ENG-FIRST-WRITE-20260612-134035</code></td><td>QUEUE_APPROVED</td></tr>
+</tbody></table></article>
+</section>
+<div class="footer">Sin dependencias externas - Sin credenciales embebidas - Sin escritura real</div>
+</main>
+</body>
+</html>

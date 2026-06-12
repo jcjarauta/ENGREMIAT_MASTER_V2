@@ -1,0 +1,28 @@
+{
+    "schema":  "engremiat.sheets-operational-control-panel.engine-handoff.v1",
+    "ok":  true,
+    "mode":  "NO_WRITE_CONTROLLED_HANDOFF",
+    "queue_id":  "ENG-NO-WRITE-SMOKE-20260612-152306",
+    "queue_row_number":  999999,
+    "queue_current_status":  "PENDING",
+    "decision":  "REQUEST_CHANGES",
+    "queue_target_status":  "CHANGES_REQUESTED",
+    "engine_objective":  "SHEETS_REUSABLE_GOVERNED_HUMAN_OPERATION_LOOP_001",
+    "workflow":  [
+                     "SELECT_NEXT_PENDING",
+                     "CHOOSE_DECISION",
+                     "PREPARE_PAYLOAD",
+                     "RUN_PREFLIGHT",
+                     "OBTAIN_EXPLICIT_AUTHORIZATION",
+                     "EXECUTE_ATOMIC_OPERATION",
+                     "VERIFY_AND_REFRESH_PANEL"
+                 ],
+    "authorization_required":  true,
+    "authorization_granted":  false,
+    "real_execution_allowed":  false,
+    "adapter_can_execute_real_write":  false,
+    "duplicate_policy":  "BLOCK",
+    "stale_state_policy":  "BLOCK",
+    "rollback_required":  true,
+    "real_sheet_write":  false
+}
