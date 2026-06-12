@@ -1,0 +1,26 @@
+﻿SHEETS_BRIDGE_STAGE_GIT_CLOSE_STEP_003R_BEGIN
+ok=False
+decision=SHEETS_BRIDGE_STAGE_COMMITTED_PUSHED_WITH_SCOPED_REMAINDERS
+readiness=89
+gate=OPEN_REVIEW_SCOPED_REMAINING
+objective=CLOSE_SHEETS_BRIDGE_STAGE
+step_current=3R
+step_total=3
+steps_remaining=0
+mode=SCOPED_GIT_COMMIT_PUSH_REPAIR_COMPLETED
+branch=main
+head_before=03fe72d
+head_after=fb28303
+staged_files_count=138
+scoped_remaining_count=6
+out_of_scope_remaining_count=72
+remote_behind=0
+remote_ahead=0
+remote_synced=True
+commit=True
+push=True
+commit_message=close sheets bridge independence and manual stg validation
+result_json=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\git-close\SHEETS-BRIDGE-GIT-CLOSE-STEP003R-20260612-060904.json
+result_txt=C:\ENGREMIAT_REPO_CLEAN\ENGREMIAT_MASTER_V2\tools\engremiat-control\next-objective-manual-stg-import-execution\git-close\SHEETS-BRIDGE-GIT-CLOSE-STEP003R-20260612-060904.txt
+recommended_next=VALUE_NEXT_OBJECTIVE_AFTER_SHEETS_BRIDGE_CLOSE
+SHEETS_BRIDGE_STAGE_GIT_CLOSE_STEP_003R_END

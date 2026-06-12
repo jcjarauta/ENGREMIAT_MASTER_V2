@@ -1,0 +1,21 @@
+﻿{
+    "ok":  false,
+    "decision":  "SHEETS_BRIDGE_STAGE_COMMITTED_PUSHED_WITH_SCOPED_REMAINDERS",
+    "readiness":  89,
+    "gate":  "OPEN_REVIEW_SCOPED_REMAINING",
+    "mode":  "SCOPED_GIT_COMMIT_PUSH_REPAIR_COMPLETED",
+    "branch":  "main",
+    "head_before":  "03fe72d",
+    "head_after":  "fb28303",
+    "staged_files_count":  138,
+    "scoped_remaining_count":  6,
+    "out_of_scope_remaining_count":  72,
+    "remote_behind":  0,
+    "remote_ahead":  0,
+    "remote_synced":  true,
+    "commit":  true,
+    "push":  true,
+    "commit_message":  "close sheets bridge independence and manual stg validation",
+    "recommended_next":  "VALUE_NEXT_OBJECTIVE_AFTER_SHEETS_BRIDGE_CLOSE",
+    "created_at":  "2026-06-12T06:09:04"
+}

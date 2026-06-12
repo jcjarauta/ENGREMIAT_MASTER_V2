@@ -1,0 +1,37 @@
+﻿{
+    "objective":  "CLOSE_SHEETS_BRIDGE_STAGE",
+    "step":  "2/3",
+    "ok":  true,
+    "decision":  "SCOPED_GIT_CLOSE_DRY_RUN_READY_FOR_STEP_003_COMMIT_PUSH",
+    "readiness":  98,
+    "gate":  "OPEN_READY_FOR_STEP_003_SCOPED_COMMIT_AND_PUSH",
+    "mode":  "LOCAL_ONLY_SCOPED_GIT_CLOSE_DRY_RUN_NO_WRITE",
+    "branch":  "main",
+    "head":  "03fe72d",
+    "scope_paths":  [
+                        "tools/engremiat-control/control-sheets-main-pc-real-001",
+                        "tools/engremiat-control/control-bridge-independence-001",
+                        "tools/engremiat-control/next-objective-manual-stg-import-execution"
+                    ],
+    "total_changed_files_count":  208,
+    "scoped_status_count":  138,
+    "included_files_count":  138,
+    "excluded_files_count":  0,
+    "out_of_scope_files_count":  70,
+    "invalid_status_count":  0,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ],
+    "commit_message":  "close sheets bridge independence and manual stg validation",
+    "files_list":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\next-objective-manual-stg-import-execution\\git-close\\SHEETS-BRIDGE-GIT-CLOSE-DRY-RUN-20260612-060444.files-list.txt",
+    "excluded_list":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\next-objective-manual-stg-import-execution\\git-close\\SHEETS-BRIDGE-GIT-CLOSE-DRY-RUN-20260612-060444.excluded-list.txt",
+    "out_of_scope_list":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\next-objective-manual-stg-import-execution\\git-close\\SHEETS-BRIDGE-GIT-CLOSE-DRY-RUN-20260612-060444.out-of-scope-list.txt",
+    "step_003_script":  "C:\\ENGREMIAT_REPO_CLEAN\\ENGREMIAT_MASTER_V2\\tools\\engremiat-control\\next-objective-manual-stg-import-execution\\git-close\\SHEETS_BRIDGE_STAGE_GIT_CLOSE_STEP_003_COMMIT_PUSH.ps1",
+    "git_write":  false,
+    "git_add":  false,
+    "commit":  false,
+    "push":  false,
+    "recommended_next":  "STEP_003_SCOPED_COMMIT_PUSH_AND_FINAL_VALUE",
+    "created_at":  "2026-06-12T06:04:44"
+}
