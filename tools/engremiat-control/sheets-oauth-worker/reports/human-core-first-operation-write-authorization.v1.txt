@@ -1,0 +1,15 @@
+﻿schema=engremiat.human-core-first-operation-write-authorization.v1
+objective=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001
+authorization_recorded=True
+authorization_phrase=AUTORIZO_UNA_FILA_PRUEBA_EN_ENG_HUMAN_QUEUE
+authorized_tab=ENG_HUMAN_QUEUE
+authorized_rows_count=1
+append_allowed=True
+update_allowed=False
+delete_allowed=False
+other_tabs_write_allowed=False
+review_write_allowed=False
+history_write_allowed=False
+config_write_allowed=False
+decision=ONE_QUEUE_TEST_ROW_WRITE_AUTHORIZED
+next=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_005

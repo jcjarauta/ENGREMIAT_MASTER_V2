@@ -1,0 +1,17 @@
+﻿schema=engremiat.human-core-first-review-payload.v1
+objective=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001
+item_id=HUMAN-OP-20260612-104919
+run_id=HUMAN-LOOP-20260612-104919
+review_id=REVIEW-20260612-105353
+history_id=HISTORY-20260612-105353
+reviewed_at=2026-06-12T10:53:53
+reviewer=HUMAN_OPERATOR
+decision=APPROVE
+new_status=APPROVED
+comment=FIRST_REAL_HUMAN_OPERATION_REVIEW
+required_change=
+evidence_ref=tools\engremiat-control\sheets-oauth-worker\reports\human-core-first-operation-write-result.v1.json
+next_action=WRITE_REVIEW_UPDATE_QUEUE_AND_HISTORY
+google_api_call=False
+real_sheet_write=False
+next=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_006B

@@ -1,0 +1,23 @@
+{
+  "schema": "engremiat.human-core-first-review-result.v1",
+  "ok": true,
+  "objective": "SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001",
+  "item_id": "HUMAN-OP-20260612-104919",
+  "review_id": "REVIEW-20260612-105353",
+  "history_id": "HISTORY-20260612-105353",
+  "decision": "APPROVE",
+  "new_status": "APPROVED",
+  "review_rows_written": 1,
+  "queue_rows_updated": 1,
+  "history_rows_written": 1,
+  "google_api_call": true,
+  "google_api_read": true,
+  "google_api_write": true,
+  "real_sheet_write": true,
+  "config_write": false,
+  "decision_result": "FIRST_HUMAN_REVIEW_QUEUE_HISTORY_VERIFIED",
+  "gate": "OPEN_READY_FOR_BLOCK_007",
+  "recommended_next": "SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_007",
+  "commit": false,
+  "push": false
+}

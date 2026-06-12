@@ -1,0 +1,27 @@
+﻿'use strict';
+const fs=require('fs'),path=require('path'),{google}=require('googleapis');
+const root=process.cwd(),base=path.join(root,'tools','engremiat-control'),w=path.join(base,'sheets-oauth-worker'),r=path.join(w,'reports'),c=path.join(base,'config');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const save=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2),'utf8');
+const binding=read(path.join(c,'control-sheets-binding.local.json')),credentials=read(path.join(c,'credentials.json')),token=read(path.join(c,'token.json'));
+const spreadsheetId=binding.spreadsheet_id||binding.spreadsheetId||binding.sheet_id||binding.sheetId,client=credentials.installed||credentials.web;
+if(!spreadsheetId||!client)throw new Error('CONFIG_NOT_READY');
+const authText=fs.readFileSync(path.join(r,'human-core-first-operation-write-authorization.v1.txt'),'utf8');
+if(!authText.includes('authorization_recorded=True'))throw new Error('WRITE_NOT_AUTHORIZED');
+const row=fs.readFileSync(path.join(r,'human-core-first-operation-queue-row.v1.txt'),'utf8').replace(/^\uFEFF/,'').trim().split('\t');
+if(row.length!==11)throw new Error('QUEUE_ROW_COLUMN_COUNT_INVALID');
+const oauth=new google.auth.OAuth2(client.client_id,client.client_secret,(client.redirect_uris&&client.redirect_uris[0])||'http://localhost');oauth.setCredentials(token);
+const sheets=google.sheets({version:'v4',auth:oauth});
+(async()=>{
+const itemId=row[0];
+const before=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_QUEUE!A:A'});
+const beforeRows=(before.data.values||[]).flat().map(String);
+if(beforeRows.includes(itemId))throw new Error('NO_GO_ITEM_ID_ALREADY_EXISTS');
+const write=await sheets.spreadsheets.values.append({spreadsheetId,range:'ENG_HUMAN_QUEUE!A:K',valueInputOption:'RAW',insertDataOption:'INSERT_ROWS',requestBody:{majorDimension:'ROWS',values:[row]}});
+const after=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_QUEUE!A:K'});
+const rows=after.data.values||[];
+const matches=rows.filter(x=>String(x[0]||'')===itemId);
+const ok=matches.length===1&&matches[0].length===11;
+save(path.join(r,'human-core-first-operation-write-result.v1.json'),{schema:'engremiat.human-core-first-operation-write-result.v1',ok,objective:'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001',item_id:itemId,target_tab:'ENG_HUMAN_QUEUE',rows_written:ok?1:0,columns_written:ok?11:0,item_id_matches:matches.length,google_api_call:true,google_api_read:true,google_api_write:true,real_sheet_write:ok,decision:ok?'FIRST_HUMAN_QUEUE_ROW_WRITTEN_AND_VERIFIED':'FIRST_HUMAN_QUEUE_ROW_NOT_VERIFIED',gate:ok?'OPEN_READY_FOR_BLOCK_006':'STOP_REVIEW_QUEUE_WRITE',recommended_next:ok?'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_006':'REVIEW_FIRST_HUMAN_QUEUE_WRITE',commit:false,push:false});
+if(!ok)process.exitCode=40;
+})().catch(e=>{save(path.join(r,'human-core-first-operation-write-result.v1.json'),{schema:'engremiat.human-core-first-operation-write-result.v1',ok:false,objective:'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001',decision:String(e&&e.message?e.message:e),google_api_call:true,google_api_write:false,real_sheet_write:false,commit:false,push:false});process.exitCode=41;});

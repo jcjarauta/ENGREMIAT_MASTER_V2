@@ -1,0 +1,20 @@
+﻿'use strict';
+const fs=require('fs'),path=require('path'),{google}=require('googleapis');
+const root=process.cwd(),base=path.join(root,'tools','engremiat-control'),w=path.join(base,'sheets-oauth-worker'),r=path.join(w,'reports'),c=path.join(base,'config');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'')),save=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2),'utf8');
+const binding=read(path.join(c,'control-sheets-binding.local.json')),credentials=read(path.join(c,'credentials.json')),token=read(path.join(c,'token.json'));
+const spreadsheetId=binding.spreadsheet_id||binding.spreadsheetId||binding.sheet_id||binding.sheetId,client=credentials.installed||credentials.web;
+const result=read(path.join(r,'human-core-first-review-result.v1.json'));
+const oauth=new google.auth.OAuth2(client.client_id,client.client_secret,(client.redirect_uris&&client.redirect_uris[0])||'http://localhost');oauth.setCredentials(token);
+const sheets=google.sheets({version:'v4',auth:oauth});
+(async()=>{
+const q=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_QUEUE!A:K'});
+const v=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_REVIEW!A:J'});
+const h=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_HISTORY!A:K'});
+const c0=await sheets.spreadsheets.values.get({spreadsheetId,range:'ENG_HUMAN_CONFIG!A:J'});
+const qr=(q.data.values||[]).slice(1).filter(x=>String(x[0]||'')===String(result.item_id)&&String(x[5]||'')===String(result.new_status));
+const vr=(v.data.values||[]).slice(1).filter(x=>String(x[0]||'')===String(result.review_id)&&String(x[1]||'')===String(result.item_id));
+const hr=(h.data.values||[]).slice(1).filter(x=>String(x[0]||'')===String(result.history_id)&&String(x[3]||'')===String(result.item_id));
+const configRows=Math.max(0,(c0.data.values||[]).length-1);
+const ok=qr.length===1&&vr.length===1&&hr.length===1;
+save(path.join(r,'human-core-first-loop-audit-result.v1.json'),{schema:'engremiat.human-core-first-loop-audit-result.v1',ok,objective:'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001',item_id:result.item_id,review_id:result.review_id,history_id:result.history_id,queue_matches:qr.length,review_matches:vr.length,history_matches:hr.length,config_rows_read:configRows,config_read_completed:true,google_api_call:true,google_api_read:true,google_api_write:false,real_sheet_write:false,decision:ok?'FIRST_HUMAN_OPERATION_LOOP_AUDITED_OK':'FIRST_HUMAN_OPERATION_LOOP_AUDIT_MISMATCH',readiness:ok?99:90,gate:ok?'OPEN_READY_FOR_BLOCK_008_CLOSE':'STOP_REVIEW_FIRST_HUMAN_LOOP_AUDIT',recommended_next:ok?'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_008':'REVIEW_FIRST_HUMAN_LOOP_AUDIT',commit:false,push:false});if(!ok)process.exitCode=60;})().catch(e=>{save(path.join(r,'human-core-first-loop-audit-result.v1.json'),{schema:'engremiat.human-core-first-loop-audit-result.v1',ok:false,objective:'SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001',decision:'FIRST_HUMAN_OPERATION_LOOP_AUDIT_FAILED',error_message:String(e&&e.message?e.message:e),google_api_call:true,google_api_write:false,real_sheet_write:false,commit:false,push:false});process.exitCode=61;});

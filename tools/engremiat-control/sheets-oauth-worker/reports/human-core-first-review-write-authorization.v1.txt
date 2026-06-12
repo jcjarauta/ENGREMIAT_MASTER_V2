@@ -1,0 +1,16 @@
+﻿schema=engremiat.human-core-first-review-write-authorization.v1
+objective=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001
+authorization_recorded=True
+authorization_phrase=AUTORIZO_CERRAR_PRIMER_CICLO_HUMANO_REVIEW_QUEUE_HISTORY
+review_tab=ENG_HUMAN_REVIEW
+review_rows_allowed=1
+queue_tab=ENG_HUMAN_QUEUE
+queue_status_updates_allowed=1
+history_tab=ENG_HUMAN_HISTORY
+history_rows_allowed=1
+config_write_allowed=False
+delete_allowed=False
+rename_allowed=False
+other_tabs_write_allowed=False
+decision=FIRST_HUMAN_REVIEW_QUEUE_HISTORY_WRITE_AUTHORIZED
+next=SHEETS_HUMAN_CORE_FIRST_OPERATION_LOOP_001_BLOCK_006C
